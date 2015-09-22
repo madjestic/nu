@@ -2,9 +2,7 @@
 
 class my_application : public sb7::application
 {
-public:
-	//my_application();
-	//virtual ~my_application();
+public:	
 	void render(double currentTime)
 	{
 		static const GLfloat red[] = { 1.0f, 0.0f, 0.0f, 1.0f };
