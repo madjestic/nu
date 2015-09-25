@@ -16,6 +16,8 @@
  '(ac-show-menu-immediately-on-auto-complete t)
  '(browse-url-browser-function (quote browse-url-generic))
  '(browse-url-generic-program "chromium-browser" t)
+ '(circe-default-directory "~/.circe")
+ '(circe-format-self-say "me > {body}")
  '(cua-enable-cua-keys nil)
  '(cua-mode t nil (cua-base))
  '(custom-safe-themes
@@ -59,7 +61,7 @@
 		 ("gnu" . "http://elpa.gnu.org/packages/")
 		 ("melpa" . "http://melpa.milkbox.net/packages/")
 		 ("org" . "http://orgmode.org/elpa/"))))
- '(powerline-default-separator (quote wave))
+ '(powerline-default-separator (quote slant))
  '(scalable-fonts-allowed t)
  '(scroll-bar-mode nil)
  '(server-mode t)
