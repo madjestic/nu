@@ -2,6 +2,8 @@
 (add-to-list 'exec-path "~/.cabal/bin")
 
 (menu-bar-mode -1)
+;;(global-set-key (kbd "C-M m") 'menu-bar-mode)
+
 (font-lock-mode -1)
 (server-force-delete)
 

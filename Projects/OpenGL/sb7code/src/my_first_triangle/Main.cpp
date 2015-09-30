@@ -16,8 +16,7 @@ class singlepoint_app : public sb7::application
 	{
 		static const char * vs_source[] =
 			{
-				"#version 450 core                                                 \n"
-				"layout (location = 0) in vec4 offset;                             \n"
+				"#version 420 core                                                 \n"
 				"                                                                  \n"
 				"void main(void)                                                   \n"
 				"{                                                                 \n"
@@ -25,13 +24,13 @@ class singlepoint_app : public sb7::application
 				"                                   vec4(-0.25, -0.25, 0.5, 1.0),  \n"
 				"                                   vec4( 0.25,  0.25, 0.5, 1.0)); \n"
 				"                                                                  \n"
-				"    gl_Position = vertices[gl_VertexID] + offset;                 \n"
+				"    gl_Position = vertices[gl_VertexID];                          \n"
 				"}                                                                 \n"
 			};
 
 		static const char * fs_source[] =
 			{
-				"#version 450 core                                                 \n"
+				"#version 420 core                                                 \n"
 				"                                                                  \n"
 				"out vec4 color;                                                   \n"
 				"                                                                  \n"
@@ -40,6 +39,49 @@ class singlepoint_app : public sb7::application
 				"    color = vec4(0.0, 0.8, 1.0, 1.0);                             \n"
 				"}                                                                 \n"
 			};
+		// static const char * vs_source[] =
+		// 	{
+		// 		"#version 450 core                             "				
+		// 		"void main(void)                               "
+		// 		"{                                             "
+		// 		"    const vec4 vertices[3] = vec4[3](vec4( 0.25, -0.25, 0.5, 1.0), "
+		// 		"                                     vec4(-0.25, -0.25, 0.5, 1.0), "
+		// 		"                                     vec4( 0.25,  0.25, 0.5, 1.0));"
+		// 		"    gl_Position = vertices[gl_VertexID];"
+		// 		"}                                             "
+		// 	};
+
+		// static const char * fs_source[] =
+		// 	{
+		// 		"#version 450 core                             "
+		// 		"out vec4 color;                               "
+		// 		"void main(void)                               "
+		// 		"{                                             "
+		// 		"    color = vec4(0.0, 0.8, 1.0, 1.0);         "
+		// 		"}                                             "
+		// 	};
+
+		// static const char * vs_source[] =
+		// 	{
+		// 		"#version 420 core                             \n"
+		// 		"                                              \n"
+		// 		"void main(void)                               \n"
+		// 		"{                                             \n"
+		// 		"    gl_Position = vec4(0.0, 0.0, 0.0, 1.0);   \n"
+		// 		"}                                             \n"
+		// 	};
+
+		// static const char * fs_source[] =
+		// 	{
+		// 		"#version 420 core                             \n"
+		// 		"                                              \n"
+		// 		"out vec4 color;                               \n"
+		// 		"                                              \n"
+		// 		"void main(void)                               \n"
+		// 		"{                                             \n"
+		// 		"    color = vec4(0.0, 0.8, 1.0, 1.0);         \n"
+		// 		"}                                             \n"
+		// 	};
 				
 		program = glCreateProgram();
 		GLuint fs = glCreateShader(GL_FRAGMENT_SHADER);
@@ -69,13 +111,8 @@ class singlepoint_app : public sb7::application
 
 		glUseProgram(program);
 
-		GLfloat attrib[] = { (float)sin(currentTime) * 0.5f,
-		                     (float)cos(currentTime) * 0.6f,
-		                     0.0f, 0.0f };
-		// Update the value of input attribute 0
-		glVertexAttrib4fv(0, attrib);
-		
 		//glPointSize(40.0f);
+
 		glDrawArrays(GL_TRIANGLES, 0, 3);
 	}
 

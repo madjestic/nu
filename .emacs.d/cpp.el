@@ -1,3 +1,5 @@
+;;(minimap-mode)
+
 ;;;;;;;;;;;
 ;; gtags ;;
 ;;;;;;;;;;;
@@ -17,8 +19,20 @@
 
 (define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
 (global-set-key (kbd "M-.") 'ggtags-find-tag-dwim)
-(global-set-key (kbd "M-m") 'minimap-toggle)
+(global-set-key (kbd "C-M-m") 'minimap-toggle)
 ;; (define-key ggtags-mode-map (kbd "M-.") 'ggtags-find-tag-dwim)
+
+;; Package: smartparens
+(require 'smartparens-config)
+(show-smartparens-global-mode +1)
+(smartparens-global-mode 1)
+
+;; when you press RET, the curly braces automatically
+;; add another newline
+(sp-with-modes '(c-mode c++-mode)
+  (sp-local-pair "{" nil :post-handlers '(("||\n[i]" "RET")))
+  (sp-local-pair "/*" "*/" :post-handlers '((" | " "SPC")
+                                            ("* ||\n[i]" "RET"))))
 
 ;;;;;;;;;;
 ;; helm ;;
@@ -61,11 +75,10 @@
 
 (load-user-file "cedet.el")
 
-;; (minimap-create)
 
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 
-(global-linum-mode)
-(minimap-mode)
+;; (global-linum-mode)
 
+;;(minimap-create)

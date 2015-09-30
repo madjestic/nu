@@ -2,6 +2,8 @@
 (add-to-list 'auto-mode-alist '("\\.cpp\\'" . (lambda ()(c++-mode))))
 (add-to-list 'auto-mode-alist '("\\.c\\'"   . (lambda ()(c++-mode))))
 (add-to-list 'auto-mode-alist '("\\.h\\'"   . (lambda ()(c++-mode))))
+(add-to-list 'auto-mode-alist '("\\.vert\\'"   . (lambda ()(c++-mode))))
+(add-to-list 'auto-mode-alist '("\\.frag\\'"   . (lambda ()(c++-mode))))
 (add-to-list 'auto-mode-alist '("\\.hs\\'" . (lambda ()(haskell-mode))))
 (add-to-list 'auto-mode-alist '("\\.py\\'" . (lambda ()(python-mode))))
 
