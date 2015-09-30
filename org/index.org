@@ -1,0 +1,741 @@
+#+TAGS: math haskell
+
+* Kappa Quick Notes
+	Quick notes:
+
+** ### VIM TIPS           ###
+
+1) <Ctrl>+l to switch off highlights in vim
+2) ds" - to remove "" around a word
+3) \\cc   - comment out
+3.5) \\cu - uncomment
+4) cs]} - surround with {}
+5) :%s/foo/bar/g - exchange all instances of foo with bar
+6) ctrl+R - redo
+
+2) Start ghci with gloss, so that it does not hang:
+ghci -fno-ghci-sandbox 
+
+** ### SYSTEM MAINTENANCE ###
+
+3) UPDATE PORTAGE:
+Emerge --sync
+emerge --update --deep --with-bdeps=y --newuse world
+emerge --update --deep --newuse world
+# delete unused dependencies:
+emerge --depclean 
+# rebuild missing dependencies
+# revdep-rebuild
+revdep-rebuild -ip
+
+** ### Kernel Upgrade     ###
+# copy old config
+
+	 make oldconfig
+	 make modules_prepare
+	 make && make modules_install
+	 cp ./arch/x86/boot/bzImage /boot/kernel-3.10.7-gentoo
+	 eselect kernel list
+	 eselect kernel set 1
+	 grub2-mkconfig -o /boot/grub/grub.cfg
+
+** ### EMACS TIPS         ###
+# turn off line-wrapping:
+M-x toggle-truncate-linesd
+
+** ### MISC               ###
+4) Find out your own IP:
+wget -q -O - checkip.dyndns.org|sed -e 's/.*Current IP Address: //' -e 's/<.*$//'
+5)check running services:
+rc-status
+6)make ghc keep intermediary files: it will create (won't delete technically) /tmp/ghc${pid} with intermediate files
+ghc -keep-tmp-files foo.hs
+
+** ### PYTHON             ###
+python -m cProfile foo.py
+
+** ### iptables           ###
+/etc/init.d/iptables 
+/etc/conf.d/iptables
+
+** ### GIT                ###
+http://git-scm.com/book/en/Git-on-the-Server-Hosted-Git
+
+# add all files in 
+git add ./Projects
+# commit added files
+git commit -a
+# write the changes
+git push
+
+# syncing a fork:
+[[https://help.github.com/articles/syncing-a-fork/][Syncing a fork]]
+
+# UnrealEngine4 
+[[https://github.com/EpicGames/UnrealEngine/blob/promoted/Engine/Build/BatchFiles/Linux/README.md]]
+
+** ### XMONAD             ###
+# application fast start
+# WINDOWS button is the one with the MSWindows logo on it
+WINDOWS-p
+
+** ### EMACS              ###
+*** ## CPP
+		# Enable semantic auto-complete (?)
+		semantic-complete-self-insert
+		# Browses the local document with your browser. On a module import line, the document of the module is browsed. On a function or type, its document is browsed.
+		M-C-d 
+		# Envoke help on a topic:
+		C-h f iedit-mode <RET>
+		# Assigning keys
+		(global-set-key (kbd "C-c a") 'doodlebug)
+		# not sure what it is but may be useful:
+		(lookup-key (current-global-map) (kbd "C-c a"))
+		# Turn on/off line breaks:
+		(toggle-truncate-lines)
+
+		# A Backup Script with rsnapshot
+		#!/bin/sh
+		#
+		#echo "### RSNAPSHOT DAILY ###"
+		#mount /mnt/backup && rsnapshot -c /etc/rsnapshot.d/daily.conf daily || echo "Backup failure"
+		#umount /mnt/backup
+		#echo
+		qmake -o Makefile triangle.pro
+
+		# Backup using dd's
+		dd if=/dev/sda of=/dev/sdb bs=4096 conv=noerror,sync
+
+** ### STEAM              ###
+	 MESA_GL_VERSION_OVERRIDE=4.0 MESA_GLSL_VERSION_OVERRIDE=400 %command%
+** ### MISC               ###
+	 ffmpeg -i movie.%04d.png -c:v libx264 -r 30 out_x264.avi
+* How to use Journal?
+
+** Basics
+
+M-return       | to start a new entry |
+M-right/M-left | to change the depthe of insertion |
+C-u M-! date   | to insert date |
+
+*** Haskell
+		[[*Haskell%20tips][Haskell tips]]
+** New Deep Entry
+
+** TODOs
+
+	 S-right/S-left to change the status
+
+	 C-c . to insert timestamp
+
+** List and markup
+  + one
+  + two
+*bold*
+/italic/
+=code=
+
+** Links [[*Links][*]]
+   C-c l     (org-store-link)       | to store link to current location
+   C-c C-L to store the link        |
+   C-c C-l to inser the link        |
+   C-c C-l on existin link to edit  |
+   [[http://orgmode.org/manual/Handling-links.html][on_Links]]
+   [[http://orgmode.org/manual/External-links.html][gentoo]]
+   [[docview:~/Downloads/Abbelian_Categories.pdf::100][PDF]]
+	 [[docview:~/Projects/gmsg/basic_des/basic.pdf::1][open_pdf with docview]]
+
+* Bash
+	an interesting example of "loop over all files in a directory 
+	and do stuff to each file:"
+	[[file:/usr/local/include/Field3D/relink.sh]]
+	[[~/Documents/Bourne_Shell_Scripting.pdf]]
+* Editin a movie:
+	(lossless codec)
+	ffmpeg -i model.rop_comp1.%04d.png -c:v huffyuv out.avi
+	then import and re-export through pitivi
+* Emacs tips
+	‘M-x toggle-truncate-lines’ - turn on long lines warp
+	'<C-S-left>' - swap buffers
+
+	'C-x n n' - narrow region/scope
+	'C-x n w' - widen region/scope
+
+	(paredit mode)
+	selection + ( -> (selection)
+	... same with [, {
+
+	(selection)	<M-s> -> selection
+
+	(paren-mode)
+	<M-S> ( : foo -> (foo)
+	M-up    : (foo) -> foo
+* Haskell tips																											:haskell:
+** Commenting code:
+  {-| @Event t a@ represents a stream of events as they occur in time.
+Semantically, you can think of @Event t a@ as an infinite list of values
+that are tagged with their corresponding time of occurence,
+
+> type Event t a = [(Time,a)]
+-}
+
+this code should be shown in haddock
+
+** Comments with shm:
+	 M-; # comment text region
+	 (with commented region selected) M-; # uncomment text region
+** Tags:
+	 to generate tags use:
+	 ~/bin/tags
+*** hothasktags
+find . | egrep '\.hs$' | xargs hothasktags > tags
+
+** Executable size
+[[http://stackoverflow.com/questions/6115459/small-haskell-program-compiled-with-ghc-into-huge-binary][Don Stuart on stack exchange]]
+
+** a working GLFW/reactive-banana example?
+stack overflow question
+* Life Hacks
+** Tax-return related papers:
+	  Annual Mortgage Statement 
+		Jaaropgraaf
+		Student Costs
+		WOZ
+* New Task Example
+
+** Create a Design
+
+
+*** Design Ideas:
+
+		[[http://wordpress.org/themes/][Cool_Ideas]]
+		procedural houses in Houdini -> Godot
+		notes to waves translator
+		
+* Projects
+** HNGL
+
+*** on HNGL
+
+>> Fri Dec 20 11:07:18 CET 2013
+>> Fri Dec 20 16:58:16 CET 2013
+>> Journal #3 (#1 and #2 got lost -_-)
+
+Editable -> Instancable -> Drawabale
+
+
+Graphics.HNGL.Rendering
+Graphics.HNGL.Data
+
+
+
+toInstancable :: Editable -> Instancable
+
+toDrawable :: Instancable -> Drawable
+
+draw :: Drawable -> IO ()
+
+toAnimatable :: Drawable -> Animation -> Animatable
+
+data Animation = Time Freq
+
+data Time = Float
+
+data Freq = Float
+
+animate :: Animatable -> IO ()
+*** HNGL progress
+***** TODO : simplify tutorial10 to only do what it's supposed to do:
+	it's supposed to draw a textured square in the simplest way possible.
+	
+[Sun Dec 22 20:31:19 CET 2013]
+>> on HNGL:
+
+managed to do inital HNGL commit with basic modules functioning OK
+next thing to do is introducing support for basic shapes instances draw, e.g.:
+
+draw Square pos side
+... too tired now, need to switch tasks for a 
+
+[[file:~/Projects/Haskell/OpenGL/Haskell-OpenGL-Tutorial/tutorial04/HNGL][Finished Here]]
+<2013-12-27 Fri>
+
+
+
+[Thu Jan 16 21:42:27 CET 2014]
+>> On FFI
+Looking into FFI.  Created Bookmarks on [[*FFI][FFI/Haskell]]
+
+[Wed Jan 22 18:45:13 CET 2014]
+Uploaded the preview version of tutorial03 to GitHub
+Noticed 2 stars - it looks like someone found code useful
+
+**** DONE : port the code to GLFW -> GLFW-b
+[[https://github.com/madjestic/Haskell-OpenGL-Tutorial/issues/2][proposed by listx]]
+[[http://hackage.haskell.org/package/GLFW-0.5.2.0/docs/Graphics-UI-GLFW.html][GLFW on Hackage]]
+[[http://hackage.haskell.org/package/GLFW-b][GLFW-b on hackage]]
+[[http://www.tapdancinggoats.com/opengl-in-haskell-glfw-b-boilerplate.htm][GLFW-b Boilerplate]]
+[[http://www.tapdancinggoats.com/haskell-life-repa.htm][Conway's Game of Life with GLFW-b]]
+
+**** DONE : introduce support for vertex colors
+[[https://github.com/madjestic/Haskell-OpenGL-Tutorial/issues/3][link to the issue]]
+
+http://www.opengl-tutorial.org/beginners-tutorials/tutorial-1-opening-a-window/][Modern OpenGL tutorial C++/Qt
+
+[[http://nopper.tv/norbert/opengl.html][OpenGL 3 and OpenGL 4 with GLSL]]
+[[https://github.com/McNopper/OpenGL]]
+
+[[http://www.swiftless.com/opengl4tuts.html][OpenGL4 Tutorial]]
+
+[[http://openglbook.com/the-book/preface-what-is-opengl/][OpenGL Book]]
+
+[[http://antongerdelan.net/opengl/][Anton's tutorials]]
+
+**** DONE : Vertex2 -> Vertex4
+**** DONE : polivariadic createWindow:
+createWindow title (sizex, sizey)
+createWindow title (sizex, sizey) color
+**** DONE : polivariadic intiResources:
+initResources vs = ...
+initResources cs vs = ...
+
+**** Wed Jan 29 00:35:22 CET 2014 on Rendering.hs, missing square
+I eddited the [[~/Projects/Haskell/OpenGL/Haskell-OpenGL-Tutorial/tutorial04/NGL/Rendering.hs][Rendering.hs]] file with intention to introduce a second 
+vertex array object to store color data, the code compiles, but the
+blue square seems to be missing now - need to investigate the situation.
+Too tired now.
+
+> Fixed.
+
+**** DONE : Animation Support
+***** DONE : time to take a look into FRP and animation :)
+[[file:~/Projects/Haskell/reactive-banana/reactive-banana][reactive-banana source and examples]]
+See the project homepage <http://haskell.org/haskellwiki/Reactive-banana>
+
+Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blob/master/reactive-banana/doc/examples/Counter.hs][Added a Counter example]]
+***** DONE : I am in the middle of hooking up FRP to GL calls
+			[[https://github.com/cdxr/reactive-banana-glfw][reactive-banana-glfw]] serves as a glue,
+			but I yet to figure out how to combine GL calls 
+			with the reactive banana event loops
+			[[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/tutorial08/Main.hs::--%20|%20I%20probably%20need%20to%20make%20a%20GL%20call%20from%20a%20reactimate%20function%20call.%20Sersious%20refactoring%20pending][Fri May 30 00:32:51 CEST 2014]]
+
+			[[http://hackage.haskell.org/package/reactive-banana-0.8.0.2/docs/Control-Event-Handler.html#t:AddHandler][Read on AddHandlers]]
+			[[http://en.wikibooks.org/wiki/Haskell/Concurrency][Read on Concurrency]]
+			[[file:~/Projects/Haskell/Junk/GameLoop.hs][GameLoop example]] - maybe some clues from here
+
+			It looks like I will need to call an update event from
+			a separate sleeper thread.  It should be connected to 
+			reactive-banana event system via addHandlers interface
+			Sat Jun  7 18:20:36 CEST 
+
+			The above sounds very similar to:
+			[[https://github.com/fumieval/free-game/issues/30]]
+			Sat Oct 18 00:26:23 CEST 2014
+
+			
+
+**** DONE : Texture Support
+		 [[http://stackoverflow.com/questions/23540558/haskell-opengl-texture-glfw]]
+		 [[http://stackoverflow.com/questions/24114767/haskell-opengl-texture-only-average-colour]]
+		 [[http://stackoverflow.com/questions/10468845/juicypixels-texture-loading-in-haskell-opengl]]
+		 [[https://github.com/fiendfan1/Haskell-OpenGL]]
+		 http://eax.me/haskell-opengl-textures/
+		 Sat Oct 18 00:26:32 CEST 2014
+
+		 accomplished in tutorial10 thanks to tips from haskell@cafe mail-list
+
+**** IN-PROGRESS : Make Elegant, Clean-up
+		 Sun Oct 26 00:14:41 CEST 2014
+		 refactoring Rendering.hs, Shape.hs
+
+		 [2015-02-16 Mon]
+		 Made some progress with refactoring stuff:  
+		 added a Primitive type-class in Shape module:
+		         toDrawable :: Color -> a -> Drawable
+						 toPoints   :: a -> Points
+
+						 Color should probably be a Property instead
+						 e.g.:
+						 Property = Color | Some other property
+						 however at the moment it has no value and I don't know better.
+
+		[2015-04-17 Fri]
+		tutorial10 - more concise version of tutorial11
+		tutorial11 - Typeclasses in NGL.Rendering with some commented 
+		             redundant code, that could still be useful
+		tutorial12 - has bits and pieces of tutorial 11
+***** WAITING : create a UV-projection:
+			toUV :: Projection -> UV in module Shape.hs
+
+		  The foundation is there, I decided to postpone concrete implementation
+			till the need arrives.
+***** TODO : Create a boilerplate:
+****** TODO : All code on one page:  draw a textured sqaure.
+** FRP
+*** Reactive Banana
+[[*:%20Animation%20Support...][Reactive Banana Animation Support...]]
+**** TODO Reading: [[http://johnlato.blogspot.nl/2011/04/thoughts-on-frp.html][Sound and Software]]
+**** TODO Reading: [[http://www.kazachonak.com/2012/06/reactive-programming.html][Reactive Programming]]
+**** TODO Reading: [[http://conal.net/fran/tutorial.htm][Fran Tutorial (Connal Elliot)]]
+**** TODO Watch  : [[http://vimeo.com/6686570][Push-pull Functional Reactive Programming]]
+*** NetWire
+[[http://hackage.haskell.org/package/netwire-4.0.5/docs/Control-Wire.html][Control.Wire]]
+[[http://hub.darcs.net/ertes/netwire/browse/README.md][Netwire on Darcs]]
+[[http://www.haskell.org/haskellwiki/Netwire][Netwire on Haskell Wiki]]
+[[https://github.com/MaxDaten/netwire-examples][Netwire Examples on GitHub]]
+
+** on Emacs
+
+*** DONE Lear to use Org-mode
+
+*** DONE Lear how to open pdfs at a given page with Okular
+[[http://stackoverflow.com/questions/20792659/how-do-i-make-org-mode-open-pdf-files-in-okulus-at-page-nnn][stackoverflow_topi]]c
+<2013-12-27 Fri>
+
+** on Blogs
+*** TurtlesTurtlesTurtles
+**** DONE Update the content, according to the latest state of NGL tutorial
+**** DONE : Write a prime number calculator.
+*** PuurBliss.NL
+**** DONE : fix glyphicons:
+		 It turns out that the < > glyphs are not being displayed correctly.
+** Reading
+*** DONE Prime Obsession
+** Houdini
+*** DONE : Hook up a PS3 controller to mu
+		It's working.
+		Event stream can be read from [[file:/dev/input/js0]]
+		Fri May 30 00:31:18 CEST 2014
+*** TODO : Figure out how to read input:
+		http://scaryreasoner.wordpress.com/2008/02/22/programming-joysticks-with-linux/
+		https://www.kernel.org/doc/Documentation/input/joystick-api.txt
+		http://stackoverflow.com/questions/16032982/getting-live-info-from-dev-input
+
+*** DONE : Waves tutorial sidefx
+*** DONE : Waves tutorial cmivfx 1
+*** DONE : Waves tutorial cmivfx 2
+*** DONE : Investigate how to render ocean nicely
+		[2015-01-12 Mon]
+** General
+*** TODO : Read on setting up cron Jobs [[http://stackoverflow.com/questions/1603109/how-to-make-a-python-script-run-like-a-service-or-daemon-in-linux][{Stack Overflow}]]
+*** DONE : Set up a TODO directory with all active TODO's
+		[[*TODO:][here]]
+
+** Genome
+	 [[http://en.wikipedia.org/wiki/Human_Genome_Project][Human Genome Project]] on wiki
+	 [[http://en.wikipedia.org/wiki/Ploidy#Haploid_and_monoploid][Ploidy]] on wiki
+	 [[http://en.wikipedia.org/wiki/Cytokinesis][Cytokinesis]] on wiki
+	 [[http://en.wikipedia.org/wiki/Fission_(biology)][Binary Fission]] on wiki
+** GTK+
+	 [[http://www.micahcarrick.com/gtk-glade-tutorial-part-1.html]]
+* Study
+** M140: Introducing Statistics
+*** DONE : TMA02:
+*** DONE 26 April 2014
+**** DONE : TMA02: Q1: 
+Computer Book 1: pp.35-48
+surgeons.mtw (box-plotting in Minitab)
+**** DONE : TMA02: Q2
+***** DONE : Book2 pp.39-47 (on different sampling types)
+finished at p.44.
+done
+Sat Apr 26 16:03:45 CEST 2014
+
+
+**** DONE : TMA02: Q3
+*** DONE : TMA03
+*** TODO : [[file:~/Documents/M140/TMA04/m140_tma04.pdf][TMA04]]
+*** TODO : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D963365][ICMA43]]
+
+*** IN-PROGRESS : Learn Basic R
+* Godot Engine
+** Animated Ocean surface:
+	 Something along the lines with:
+	 program a new object in C++, sample verted positions..:
+	 [[https://github.com/okamstudio/godot/wiki/advanced]]
+	 [[https://github.com/okamstudio/godot/wiki/class_mesh]]
+	
+* Unreal Engine
+	- contacted popcornfx:
+		The Linux build is not here for now, but should not be a problem, once we get the plugin stabilized on Win64, we will begin to build for other platform.
+	  The PopcornFX Editor is currently only compatible with Windows, but stay in touch...
+
+	urls:
+	https://docs.unrealengine.com/latest/INT/GettingStarted/FromUnity/index.html
+	https://docs.unrealengine.com/latest/INT/Gameplay/ClassCreation/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Classes/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Functions/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Properties/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Structs/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Interfaces/index.html
+
+** 101
+	 export LD_LIBRARY_PATH=.
+	 ./UE4Editor ~/Projects/Unreal_Projects/MyProject4/MyProject4.uproject
+	 primusrun ./UE4Editor ~/Projects/Unreal_Projects/MyProject/MyProject.uproject -opengl4
+
+* MST124: Essential Mathematics 1
+** DONE :	[[file:~/Documents/MST124/TMA02/mst124_unit4.pdf][Unit 4]] (textbook)
+** DONE :	[[file:~/Documents/MST124/TMA02/TMA_02.pdf][TMA 02]]
+** DONE : TMA_03
+** TODO : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965296&page%3D1&scrollpos%3D0#q3][Unit 9 Practice Quiz]]
+** TODO : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965295&page%3D1&scrollpos%3D0#q5][ICMA44]]
+** TODO : [[file:~/Documents/MST124/TMA04/mst124_14b_tma04.pdf][TMA_04]]
+* MST125: Essential Mathematics 2
+	One characteristic of a reflection that distinguishes it from a rotation or a
+	translation is that it reverses vertex order.
+
+	An isometry maps any polygon to a polygon of the same size and
+	shape. In particular, the vertices of the polygon are mapped to the
+	vertices of the image polygon.
+
+	A linear transformation leaves the origin fixed.
+
+	If an implication is true, then its converse is either true or false.
+
+** One-to-one linear transformations
+	 Determinant of One-to-one linear transformations does not equal 0.
+	 One-to-one linear transformations preserve linearity
+	 One-to-one linear transformations map lines to lines
+
+** TODO : p 48
+
+* Houdini
+	/home/madjestic/Projects/Houdini/Fractals/model.hipnc
+	- fractals
+	- line intersection
+* SIGGRAPH 2015
+** Paper ideas
+*** Feature-preserving curve resampling
+*** Lindenmayer: Procedurally-assisted LOD generation.
+* edX: FP101x
+	[[https://courses.edx.org/courses/DelftX/FP101x/3T2014/courseware/7c7ec15948b84b1a9c14673bddbcf8aa/9441ebb13fad49dca4dee53107b3ce5a/][Continue with HW]]
+	Mon Nov 10 22:38:53 CET 2014
+
+* Mathematics																													 :math:
+	The Zakon Series on Mathematical Analysis
+	[[~/Documents/Mathematics/zakon-basic-a4-one.pdf][Basic Concepts of Mathematics]]
+	[[file:~/Documents/Mathematics/multivariable.pdf][Multivariable Calculus by David Guichard]]
+
+** W.S. Jevons
+	 [[https://en.wikipedia.org/wiki/William_Stanley_Jevons]]
+	 [[https://www.marxists.org/reference/subject/economics/jevons/mathem.htm]]
+
+* Principia Mathemtica
+	Analysis and Geometry, Theory of agregates (Cantor)
+	Symbolic Logic (Peano)
+	
+
+** Guerrilla Math Study Group (GMSG)
+	 [[https://sites.google.com/site/guerrillamathstudygroup/][google sites link]]
+* Active Links:
+	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D935459&page%3D1][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=935459&page=1]]
+	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D913986&page%3D13][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=913986&page=13]]
+* Tree Parser
+** DONE : for a cluster of connected points it id attr, 
+	 pick the point with the lowest id
+
+	 (lowest point should have the list with all nodes above)
+** IN-PROGRESS : create a point attribute (String -> Tree)
+	 Tree -> Tree of id's -> flatten -> point string attr
+* Pitivi Missing Dependencies
+	emerge -av gnome-icon-theme
+	
+	asked a question, related to gnome GUI issues on #pitivi
+	>> guys said gentoo is still 0.93. Should try later.
+	[2014-11-10 Mon]
+	
+* LaTeX
+** Google Sites Template
+<img src="http://www.google.com/chart?cht=tx&chf=bg,s,FFFFFF00&chco=000000&chl=
+\sqrt(x^2+y^2)=\exp^x+\sum_{i=1}^nx^i
+" />
+	 
+* Stylistic Analysis, Bias filtering, etc
+	 http://en.wikipedia.org/wiki/Natural_language_processing
+	 http://en.wikipedia.org/wiki/Sentiment_analysis
+	 http://www.kaspik.com/ (web sentiment analysis)
+
+	 N.Chomsky: "Three models for the description of language"
+	 http://chomsky.info/articles/195609--.pdf
+
+	 http://www.its.caltech.edu/~matilde/GraphGrammarsLing.pdf
+*** Related Read:
+		http://en.wikipedia.org/wiki/Framework_Programmes_for_Research_and_Technological_Development
+		http://en.wikipedia.org/wiki/European_Atomic_Energy_Community
+
+* Books
+	[[/home/madjestic/Documents/Physically_Based_Rendering.pdf][Physically Based Rendering]]
+	[[/home/madjestic/Documents/Naming_Infinity.pdf][Kolmogorov: "Imena beskonechnosti"
+	Naming Infinity]]
+	sonin.ru
+	Мифы экономики
+	[[/home/madjestic/Documents/Freakonomics.djvu][Freakonomics]]	
+	libgen.ru - fake DNA
+
+* Markov Chains...
+	http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter11.pdf
+* Bookmarks:
+** Programming
+*** Haskell
+		[[https://github.com/madjestic/mu/tree/master/Projects/Haskell/Junk/heterogenous_lists][finished a small heterogenous collections example.]]
+		[2014-11-10 Mon]
+		
+		[[*edX:%20FP101x][edX]] A course I intend to finish
+		Mon Nov 10 22:40:49 CET 2014
+
+**** FFI
+[[http://www.haskell.org/haskellwiki/FFI_cook_book][FFI Cook Book]]
+[[http://book.realworldhaskell.org/read/interfacing-with-c-the-ffi.html][RealWorldHaskell FFI]]
+** Emacs
+*** Org Mode
+**** Links
+		 [[http://orgmode.org/manual/Handling-links.html][Handling Links]]
+
+* History
+	[[/home/madjestic/houdini/houdini/python2.7libs/dopparticlefluidtoolutils.py]]
+	[[file:~/Projects/Python/Tree/Main.py][/Projects/Python/Tree/Main.py]] Fri Oct 17 23:47:43 CEST 2014
+
+	[[*:%20Make%20Elegant,%20Clean-up][Sun Oct 26 00:10:42 CEST 2014
+	refactoring, cleaning up Rendering.hs and Shape.hs]]
+
+	
+
+	nmcli device wifi connect Lambda password *********
+	[2015-01-12 Mon]
+	Biology (Micosis)
+	[[*:%20Investigate%20how%20to%20render%20ocean%20nicely][Ocean Shader (displacement issues)]]
+	
+
+
+	[2015-02-01 Sun]
+	Found a nice article on GTK+, continue reading later.
+
+	[2015-09-21 Mon]
+	Trying to make PVR compile.  [[*PVR][Getting some linker errors:]]
+* Cognitive science
+	P != NP
+	http://en.wikipedia.org/wiki/P_versus_NP_problem
+
+	Vertex Cover problem:
+	http://en.wikipedia.org/wiki/Vertex_cover
+
+	Multivariad Revolving algorythmic complexity (book)
+
+	http://fpt.wikidot.com/
+
+	https://www.mturk.com/mturk/welcome
+
+	http://en.wikipedia.org/wiki/Computers_and_Intractability (book on algorithms)
+
+	http://www.amazon.com/Computers-Intractability-NP-Completeness-Mathematical-Sciences/dp/0716710455
+
+	Theory of the mind:
+	- How do agents know what other agents know?
+	- How do you simulate orders of the mind?
+
+	Prediction building part of the brain is not a result of processing by
+	Sensor-Motoric part of the brain.
+
+	Satisfaction of search problem.
+
+	http://www.rageproject.eu/
+
+	Higher-order theory of mind in Tacit Communication Game
+	http://www.harmendeweerd.nl/papers/20140908_Tacit_Communication_Game.pdf
+
+** Music and congnition II
+	 
+	~4% of the population share amusia
+
+	Scale, Contour, interval, Rhythm, Meter (Memory)
+	Pitch test
+
+	Dysmusia vs. Dysmelodia
+
+	Information content of a note
+
+	florence foster jenkins (amusic opera singer)
+
+	Bayesuan generative models
+
+	posterior       = likelihood, priority
+	                  P(cause|signal)*P(cause)/P(signal)
+	P(cause|signal)
+	...
+
+	P(M): the likelhood  of individual metres (estimated from a corpus of data)
+
+	
+
+	Melody segmentation:
+	
+	Unexpected note - high information content, low probability
+
+	On Entropy in Music:
+	http://ir.uiowa.edu/cgi/viewcontent.cgi?article=1844&context=etd (p.7)
+
+	https://mitpress.mit.edu/books/platos-camera
+
+	Steven Pinker
+	http://www.newrepublic.com/
+
+* TODO:
+** IN-PROGRESS [[*:%20Make%20Elegant,%20Clean-up][Make Elegant, Clean-up]]
+** IN-PROGRESS : Write a make file that can be run like this:
+	 make clean
+	   - and it will choose from a number of options
+		 [2015-02-17 Tue]
+		 - made a clean.sh file that cleans up stuff [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/tutorial10/clean][here]]
+
+** DONE : Finish ICMA 41 questions
+** TODO : Experiment with caustics (an example from Houdini Help)
+** TODO : Write a python daemon
+
+* IRC
+	IRCnet Server : open.ircnet.net
+
+* sb7code
+	OpenGL Super Bible ed.7
+	Projects/OpenGL/sb7code/src/book - Makefile works now
+
+	[2015-09-23 Wed]
+	hack cpp/emacs environment: http://tuhdo.github.io/c-ide.html
+	read on the bible: [[file:~/Documents/Programming/OpenGL/Graham%20Sellers,%20Richard%20S.%20Wright%20Jr.,%20Nicholas%20Haemel%20-%20OpenGL%20SuperBible%20Comprehensive%20Tutorial%20and%20Reference,%207th%20Edition%20-%202015/OpenGL_Bible.pdf][file:~/Documents/Programming/OpenGL/Graham Sellers, Richard S. Wright Jr., Nicholas Haemel - OpenGL SuperBible Comprehensive Tutorial and Reference, 7th Edition - 2015/OpenGL_Bible.pdf]]
+* pvr
+	export PVR_PYTHON_PATH="/usr/include/python2.7/"
+	scons lib
+	scons pylib
+
+	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lboost_python
+	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lpython2.6
+
+	[2015-09-22 Tue]
+	[[file:~/Projects/pvr/CMakeLists.txt]] works now, submitted to github
+	# Compile flags
+	...
+	SET( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pipe -fPIC -fpermissive")
+	...
+
+	... however, (~/Projects/pvr/libpvr) 'scons pylib' from 
+	https://github.com/pvrbook/pvr still fails:
+	Linking    build/linux2/g++/m64/release/python26/_pvr.so
+	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lboost_python
+	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lpython2.6
+	collect2: error: ld returned 1 exit status
+	scons: *** [build/linux2/g++/m64/release/python26/_pvr.so] Error 1
+	scons: building terminated because of errors.
+	
+	, finish digging here: [[file:~/Projects/pvr/libpvr/BuildSupport.py]]
+
+	[2015-09-23 Wed]
+	compilation issues solved by:
+	ln -s ./libboost_python-2.7.so ./libboost_python.so
+	ln -s ./libpython2.7.so ./libpython2.6.so
+
+	[2015-09-24 Thu]
+	Solved:
+	[[https://github.com/pvrbook/pvr/pull/12]] (Build instructions for Gentoo)
+	
+	
