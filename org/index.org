@@ -739,3 +739,11 @@ Sat Apr 26 16:03:45 CEST 2014
 	[[https://github.com/pvrbook/pvr/pull/12]] (Build instructions for Gentoo)
 	
 	
+* iptables
+	https://wiki.archlinux.org/index.php/Iptables
+	https://wiki.gentoo.org/wiki/Iptables#IPv6.5B2.5D.5B.E2.80.93_1.5D
+	http://www.howtogeek.com/177621/the-beginners-guide-to-iptables-the-linux-firewall/
+
+	quick search shows that iptables requires to set up the rules for each connection
+	individually, which seems tedious.  https://github.com/themighty1/lpfw seems to 
+	address that, however it seems to support IPv4 only.... investigate further.
