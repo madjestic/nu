@@ -6,6 +6,7 @@
 (add-to-list 'auto-mode-alist '("\\.frag\\'"   . (lambda ()(c++-mode))))
 (add-to-list 'auto-mode-alist '("\\.hs\\'" . (lambda ()(haskell-mode))))
 (add-to-list 'auto-mode-alist '("\\.py\\'" . (lambda ()(python-mode))))
+(add-to-list 'auto-mode-alist '("\\.org\\'" . (lambda ()(org-mode))))
 
 (add-hook 'c++-mode-hook
           (lambda()						
@@ -16,10 +17,15 @@
           (lambda()						
 						(load-haskell)))
 
-;; (add-hook 'erc-mode-hook
-;;           (lambda()
-;; 						(load-erc)
-;; 						))
+(add-hook 'circe-mode-hook
+          (lambda()
+						(load-circe)
+						))
+
+(add-hook 'org-mode-hook
+          (lambda()
+						(load-org)
+						))
 
 (add-hook 'html-mode-hook
           (lambda()

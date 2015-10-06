@@ -20,6 +20,12 @@
  '(browse-url-generic-program "chromium-browser" t)
  '(circe-default-directory "~/.circe")
  '(circe-format-self-say "me > {body}")
+ '(circe-network-options
+	 (quote
+		(("Freenode" :nick "madjestic" :channels
+			("#emacs" "#odforce" "#haskell-beginners")
+			:nickserv-password asdfg))))
+ '(circe-server-connected-hook nil)
  '(cua-enable-cua-keys nil)
  '(cua-mode t nil (cua-base))
  '(custom-safe-themes
@@ -113,7 +119,6 @@
  '(highlight ((t (:background "chocolate"))))
  '(hl-line ((t (:inherit highlight :background "#454857"))))
  '(iedit-occurrence ((t (:inherit highlight))))
- '(linum ((t (:inherit (shadow default) :background "#2d3743" :foreground "#9999aa"))))
  '(menu ((t (:background "#222244" :foreground "#797985" :inverse-video t))))
  '(minimap-active-region-background ((t (:background "#454857"))))
  '(minimap-font-face ((t (:height 0.1))))
@@ -168,26 +173,6 @@
 (set-default 'truncate-lines t)
 (powerline-default-theme)
 
-
-
-
-;;;;;;;;;;;;;;
-;; Org-mode ;;
-;;;;;;;;;;;;;;
-
-(global-set-key (kbd "C-c C-S-l") 'org-store-link)
-(global-set-key (kbd "C-c C-S-c") 'org-capture)
-(global-set-key (kbd "C-c C-S-a") 'org-agenda)
-(global-set-key (kbd "C-c C-S-b") 'org-iswitchb)
-
-(setq org-todo-keywords
-  '((sequence "TODO" "IN-PROGRESS" "WAITING" "DONE")))
-
-(global-set-key (kbd "C-c a") 'org-agenda)
-
-(setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "chromium-browser")
-(setq browse-url-default-browser "chromium")
 
 ;;;;;;;;;;;;;;;
 ;; YASnippet ;;
