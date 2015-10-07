@@ -1,7 +1,7 @@
 #include "math.h"
 #include <sb7.h>
 
-class test_app : public sb7::application
+class singlepoint_app : public sb7::application
 {
 	void init()
 	{
@@ -22,7 +22,7 @@ class test_app : public sb7::application
 				"// Declare VS_OUT as an output interface block                      \n"
 				"out VS_OUT                                                          \n"
 				"{                                                                   \n"
-				"vec4 color;  // Send color to the next stage                        \n"
+					"vec4 color;  // Send color to the next stage                      \n"
 				"} vs_out;                                                           \n"
 				"                                                                    \n"
 				"void main(void)                                                     \n"
@@ -39,19 +39,19 @@ class test_app : public sb7::application
 
 		static const char * tcs_source[] =
 			{
-				"#version 450 core                                                   \n"
-				"layout (vertices = 3) out;                                          \n"
-				"void main(void)                                                     \n"
-				"{                                                                   \n"
-				"if (gl_InvocationID == 0)                                           \n"
-				"{                                                                   \n"
-				"gl_TessLevelInner[0] = 5.0;                                         \n"
-				"gl_TessLevelOuter[0] = 5.0;                                         \n"
-				"gl_TessLevelOuter[1] = 5.0;                                         \n"
-				"gl_TessLevelOuter[2] = 5.0;                                         \n"
-				"}                                                                   \n"
-				"gl_out[gl_InvocationID].gl_Position = gl_in[gl_InvocationID].gl_Position; \n"
-				"}                                                                   \n"
+				"#version 450 core                                                                     \n"
+				"layout (vertices = 3) out;                                                            \n"
+				"void main(void)                                                                       \n"
+				"{                                                                                     \n"
+					"if (gl_InvocationID == 0)                                                           \n"
+				    "{                                                                                 \n"
+							"gl_TessLevelInner[0] = 5.0;                                                     \n"
+							"gl_TessLevelOuter[0] = 5.0;                                                     \n"
+							"gl_TessLevelOuter[1] = 5.0;                                                     \n"
+							"gl_TessLevelOuter[2] = 5.0;                                                     \n"
+						"}                                                                                 \n"
+				    "gl_out[gl_InvocationID].gl_Position = gl_in[gl_InvocationID].gl_Position;         \n"
+				"}                                                                                     \n"
 			};
 
 		static const char * gs_source[] =
@@ -63,13 +63,13 @@ class test_app : public sb7::application
 				"                                                                    \n"
 				"void main(void)                                                     \n"
 				"{                                                                   \n"
-				"int i;                                                              \n"
+					"int i;                                                            \n"
 				"                                                                    \n"
-				"for (i = 0; i < gl_in.length(); i++)                                \n"
-				"{                                                                   \n"
-				"gl_Position = gl_in[i].gl_Position;                                 \n"
-				"EmitVertex();                                                       \n"
-				"}                                                                   \n"
+					"for (i = 0; i < gl_in.length(); i++)                              \n"
+						"{                                                               \n"
+							"gl_Position = gl_in[i].gl_Position;                           \n"
+							"EmitVertex();                                                 \n"
+						"}                                                               \n"
 				"}                                                                   \n"
 			};
 
@@ -79,9 +79,9 @@ class test_app : public sb7::application
 				"layout (triangles, equal_spacing, cw) in;                           \n"
 				"void main(void)                                                     \n"
 				"{                                                                   \n"
-				"gl_Position = (gl_TessCoord.x * gl_in[0].gl_Position) +             \n"
-				"(gl_TessCoord.y * gl_in[1].gl_Position) +                           \n"
-				"(gl_TessCoord.z * gl_in[2].gl_Position);                            \n"
+					"gl_Position = (gl_TessCoord.x * gl_in[0].gl_Position) +           \n"
+						            "(gl_TessCoord.y * gl_in[1].gl_Position) +           \n"
+						            "(gl_TessCoord.z * gl_in[2].gl_Position);            \n"
 				"}                                                                   \n"
 			};
 
@@ -91,7 +91,7 @@ class test_app : public sb7::application
 				"                                                                    \n"
 				"in VS_OUT                                                           \n"
 				"{                                                                   \n"
-				"vec4 color;                                                         \n"
+					"vec4 color;                                                       \n"
 				"} fs_in;                                                            \n"
 				"                                                                    \n"
 				"out vec4 color;                                                     \n"
@@ -175,13 +175,7 @@ class test_app : public sb7::application
 	{
 		glDeleteVertexArrays(1, &vao);
 		glDeleteProgram(program);
-	}
-
-private:
-	GLuint          program;
 	GLuint          vao;
 };
 
-	
-
-DECLARE_MAIN(test_app)
+DECLARE_MAIN(singlepoint_app)
