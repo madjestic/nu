@@ -173,6 +173,12 @@
 (set-default 'truncate-lines t)
 (powerline-default-theme)
 
+;;;;;;;;;;;;;;
+;; Org-mode ;;
+;;;;;;;;;;;;;;
+
+(global-set-key (kbd "C-c l") 'org-store-link) ;; for storing links in dired
+
 
 ;;;;;;;;;;;;;;;
 ;; YASnippet ;;

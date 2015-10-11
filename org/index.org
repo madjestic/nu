@@ -614,6 +614,49 @@ Sat Apr 26 16:03:45 CEST 2014
 
 	[2015-09-21 Mon]
 	Trying to make PVR compile.  [[*PVR][Getting some linker errors:]]
+* Entropy
+** Machine Learning
+	 http://www.cs.cmu.edu/~tom/mlbook.html	 
+
+	 [[file:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf]]
+	 "...or personal software assistants learning the evolving interests of their users in order to highlight especially relevant stories from the online morning newspaper."
+
+	 Definition: A computer program is said to learn from experience E with respect
+	 to some class of tasks T and performance measure P, if its performance at tasks in
+	 T, as measured by P, improves with experience E.
+
+	 three features: the class of tasks, the measure of performance to be improved, and
+	 the source of experience.
+
+	  a database system that allows users to update data entries
+
+		"learning" -  the class of programs that improve through experience. 
+
+		problem of credit assignment, or determining the degree to which each move in
+		the sequence deserves credit or blame for the final outcome. 
+
+		The first design choice we face is to choose the type of training experience from
+		which our system will learn.
+		A second important attribute of the training experience is the degree to which
+		the learner controls the sequence of training examples. 
+		A third important attribute of the training experience is how well it repre-
+		sents the distribution of examples over which the final system performance P must
+		be measured.
+
+		most current theory of machine learning rests on the crucial assumption that
+		the distribution of training examples is identical to the distribution of test ex-
+		amples.
+
+		On the other hand, the more expressive the representation, the more training data
+		the program will require in order to choose among the alternative hypotheses it
+		can represent
+
+		 the approach of iteratively estimating training values based on estimates of
+		 successor state values can be proven to converge toward perfect estimates of V_train
+
+		 performance system, critic; generalizer, and experiment generator. Many machine learning systems can-be usefully characterized in terms of these four generic modules.
+
+
 * Cognitive science
 	P != NP
 	http://en.wikipedia.org/wiki/P_versus_NP_problem
@@ -737,8 +780,14 @@ Sat Apr 26 16:03:45 CEST 2014
 	[2015-09-24 Thu]
 	Solved:
 	[[https://github.com/pvrbook/pvr/pull/12]] (Build instructions for Gentoo)
+
+	[2015-10-12 Mon]
+	~/Projects/pvr_fork@madjestic/pvr/scenes/book/chapter_1 $ python fig_1_1.py
 	
-	
+* mantra
+	Houdini Help:
+	http://127.0.0.1:48626/render/
+	http://127.0.0.1:48626/vex/contexts/shading_contexts
 * iptables
 	https://wiki.archlinux.org/index.php/Iptables
 	https://wiki.gentoo.org/wiki/Iptables#IPv6.5B2.5D.5B.E2.80.93_1.5D
