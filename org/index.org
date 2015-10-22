@@ -739,15 +739,17 @@ Sat Apr 26 16:03:45 CEST 2014
 * IRC
 	IRCnet Server : open.ircnet.net
 
-* sb7code
+* sb7code reading, examples
 	OpenGL Super Bible ed.7
 	Projects/OpenGL/sb7code/src/book - Makefile works now
 
 	[2015-09-23 Wed]
 	hack cpp/emacs environment: http://tuhdo.github.io/c-ide.html
 	read on the bible: [[file:~/Documents/Programming/OpenGL/Graham%20Sellers,%20Richard%20S.%20Wright%20Jr.,%20Nicholas%20Haemel%20-%20OpenGL%20SuperBible%20Comprehensive%20Tutorial%20and%20Reference,%207th%20Edition%20-%202015/OpenGL_Bible.pdf][file:~/Documents/Programming/OpenGL/Graham Sellers, Richard S. Wright Jr., Nicholas Haemel - OpenGL SuperBible Comprehensive Tutorial and Reference, 7th Edition - 2015/OpenGL_Bible.pdf]]
+
+	try the ../book code in VS, see if it autocompletes struct APPINFO
 	
-* OpenGL
+* OpenGL notes
 	Coordinate Systems, Spaces:
 	http://www.songho.ca/opengl/gl_projectionmatrix.html
 	http://learnopengl.com/#!Getting-started/Coordinate-Systems
