@@ -411,6 +411,11 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 		https://www.kernel.org/doc/Documentation/input/joystick-api.txt
 		http://stackoverflow.com/questions/16032982/getting-live-info-from-dev-input
 
+		[2015-10-25 Sun]
+		As a temporary measure: https://github.com/ArthurYidi/Houdini-Joystick
+
+		Sony PLAYSTATION(R)3 Controller (/dev/input/js0)
+
 *** DONE : Waves tutorial sidefx
 *** DONE : Waves tutorial cmivfx 1
 *** DONE : Waves tutorial cmivfx 2
