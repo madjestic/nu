@@ -510,6 +510,10 @@ Sat Apr 26 16:03:45 CEST 2014
 	/home/madjestic/Projects/Houdini/Fractals/model.hipnc
 	- fractals
 	- line intersection
+
+		[2015-10-27 Tue]
+		Continue reading about VRAY procedural:
+		http://www.peterclaes.be/blog/?tag=vrayprocedural
 * SIGGRAPH 2015
 ** Paper ideas
 *** Feature-preserving curve resampling

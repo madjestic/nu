@@ -1,7 +1,5 @@
 #include <sb7.h>
 #include <vmath.h>
-#include <string>
-#include <iostream>
 
 class spinningcube_app : public sb7::application
 {
@@ -35,16 +33,8 @@ class spinningcube_app : public sb7::application
 
 		static const char * fs_source[] =
 			{
-/*				"#version 450 core                                           \n"
-				"uniform scale; \n"
-				"uniform vec3 bias; \n"
-				"void main(void) \n"
-				"{ \n"
-					"color = vec4(1.0, 0.5, 0.2, 1.0) * scale + bias; \n"
-				"} \n"
-*/
 				"#version 450 core                                           \n"
-				"out vec4 color;                                                  \n"
+				"out vec4 color;                                             \n"
 				"in VS_OUT                                                   \n"
 				"{                                                           \n"
 					"vec4 color;                                               \n"
@@ -52,7 +42,7 @@ class spinningcube_app : public sb7::application
 				"void main(void)                                             \n"
 				"{                                                           \n"
 					"color = fs_in.color;                                      \n"
-				"}                                                           \n"				
+				"}                                                           \n"
 			};
 
 		GLuint vs = glCreateShader(GL_VERTEX_SHADER);
@@ -62,13 +52,6 @@ class spinningcube_app : public sb7::application
 		GLuint fs = glCreateShader(GL_FRAGMENT_SHADER);
 		glShaderSource(fs, 1, fs_source, NULL);
 		glCompileShader(fs);
-
-		GLint log_length;
-		glGetShaderiv(fs, GL_INFO_LOG_LENGTH, &log_length);
-		std::string str;
-		str.reserve(log_length);
-		glGetShaderInfoLog(fs, log_length, NULL, str.c_str());
-		std::cout << "LOG: \n" << str.c_str();
 
 		program = glCreateProgram();
 		glAttachShader(program, vs);
@@ -162,17 +145,31 @@ class spinningcube_app : public sb7::application
 
 		glUniformMatrix4fv(proj_location, 1, GL_FALSE, proj_matrix);
 
-		float f = (float)currentTime * 0.3;
-		vmath::mat4 mv_matrix =
-			vmath::translate(0.0f, 0.0f, -0.4f) *
-			vmath::translate(sinf(2.1f * f) * 0.5f,
-											 cosf(1.7f * f) * 0.5f,
-											 sinf(1.3f * f) * cosf(1.5f * f) * 2.0f) *
-			vmath::rotate((float)currentTime * 45.0f, 0.0f, 1.0f, 0.0f) *
-			vmath::rotate((float)currentTime * 81.0f, 1.0f, 0.0f, 0.0f);
+		// float f = (float)currentTime * 0.3;
+		// vmath::mat4 mv_matrix =
+		// 	vmath::translate(0.0f, 0.0f, -0.4f) *
+		// 	vmath::translate(sinf(2.1f * f) * 0.5f,
+		// 									 cosf(1.7f * f) * 0.5f,
+		// 									 sinf(1.3f * f) * cosf(1.5f * f) * 2.0f) *
+		// 	vmath::rotate((float)currentTime * 45.0f, 0.0f, 1.0f, 0.0f) *
+		// 	vmath::rotate((float)currentTime * 81.0f, 1.0f, 0.0f, 0.0f);
 
-		glUniformMatrix4fv(mv_location, 1, GL_FALSE, mv_matrix);
-		glDrawArrays(GL_TRIANGLES, 0, 36);
+		// glUniformMatrix4fv(mv_location, 1, GL_FALSE, mv_matrix);
+		// glDrawArrays(GL_TRIANGLES, 0, 36);
+
+		int i;
+        for (i = 0; i < 24; i++)
+        {
+            float f = (float)i + (float)currentTime * 0.3f;
+            vmath::mat4 mv_matrix = vmath::translate(0.0f, 0.0f, -6.0f) *
+                                    vmath::rotate((float)currentTime * 45.0f, 0.0f, 1.0f, 0.0f) *
+                                    vmath::rotate((float)currentTime * 21.0f, 1.0f, 0.0f, 0.0f) *
+                                    vmath::translate(sinf(2.1f * f) * 2.0f,
+                                                     cosf(1.7f * f) * 2.0f,
+                                                     sinf(1.3f * f) * cosf(1.5f * f) * 2.0f);
+            glUniformMatrix4fv(mv_location, 1, GL_FALSE, mv_matrix);
+            glDrawArrays(GL_TRIANGLES, 0, 36);
+        }
 	}
 
 	virtual void shutdown()
