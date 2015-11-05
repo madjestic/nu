@@ -1,202 +1,155 @@
 #include <sb7.h>
 #include <vmath.h>
 
-class spinningcube_app : public sb7::application
+#include <object.h>
+#include <shader.h>
+#include <sb7ktx.h>
+
+class simpletexcoords_app: public sb7::application
 {
-	void init()
-	{
-		static const char title[] = "Spinny Cube";
+public:
+    simpletexcoords_app()
+        : render_prog(0),
+          tex_index(0)
+    {
+    }
 
-		sb7::application::init();
+protected:
+    void init()
+    {
+        static const char title[] = "OpenGL SuperBible - Texture Coordinates";
 
-		memcpy (info.title, title, sizeof (title));		
-	}
+        sb7::application::init();
 
-	virtual void startup ()
-	{
-		static const char * vs_source [] =
-			{
-				"#version 450 core                                           \n"
-				"in vec4 position;                                           \n"
-				"out VS_OUT                                                  \n"
-				"{                                                           \n"
-					"vec4 color;                                               \n"
-				"} vs_out;                                                   \n"
-				"uniform mat4 mv_matrix;                                     \n"
-				"uniform mat4 proj_matrix;                                   \n"
-				"void main(void)                                             \n"
-				"{                                                           \n"
-					"gl_Position = proj_matrix * mv_matrix * position;         \n"
-					"vs_out.color = position * 2.0 + vec4(0.5, 0.5, 0.5, 0.0); \n"
-				"}                                                           \n"
-			};
+        memcpy(info.title, title, sizeof(title));
+    }
 
-		static const char * fs_source[] =
-			{
-				"#version 450 core                                           \n"
-				"out vec4 color;                                             \n"
-				"in VS_OUT                                                   \n"
-				"{                                                           \n"
-					"vec4 color;                                               \n"
-				"} fs_in;                                                    \n"
-				"void main(void)                                             \n"
-				"{                                                           \n"
-					"color = fs_in.color;                                      \n"
-				"}                                                           \n"
-			};
-
-		GLuint vs = glCreateShader(GL_VERTEX_SHADER);
-		glShaderSource(vs, 1, vs_source, NULL);
-		glCompileShader(vs);
-
-		GLuint fs = glCreateShader(GL_FRAGMENT_SHADER);
-		glShaderSource(fs, 1, fs_source, NULL);
-		glCompileShader(fs);
-
-		program = glCreateProgram();
-		glAttachShader(program, vs);
-		glAttachShader(program, fs);
-		glLinkProgram(program);
-
-		mv_location = glGetUniformLocation(program, "mv_matrix");
-		proj_location = glGetUniformLocation(program, "proj_matrix");
-
-		glGenVertexArrays(1, &vao);
-		glBindVertexArray(vao);
-
-		static const GLfloat vertex_positions[] =
-			{
-				-0.25f,  0.25f, -0.25f,
-				-0.25f, -0.25f, -0.25f,
-				0.25f, -0.25f, -0.25f,
-
-				0.25f, -0.25f, -0.25f,
-				0.25f,  0.25f, -0.25f,
-				-0.25f,  0.25f, -0.25f,
-
-				0.25f, -0.25f, -0.25f,
-				0.25f, -0.25f,  0.25f,
-				0.25f,  0.25f, -0.25f,
-
-				0.25f, -0.25f,  0.25f,
-				0.25f,  0.25f,  0.25f,
-				0.25f,  0.25f, -0.25f,
-
-				0.25f, -0.25f,  0.25f,
-				-0.25f, -0.25f,  0.25f,
-				0.25f,  0.25f,  0.25f,
-
-				-0.25f, -0.25f,  0.25f,
-				-0.25f,  0.25f,  0.25f,
-				0.25f,  0.25f,  0.25f,
-
-				-0.25f, -0.25f,  0.25f,
-				-0.25f, -0.25f, -0.25f,
-				-0.25f,  0.25f,  0.25f,
-
-				-0.25f, -0.25f, -0.25f,
-				-0.25f,  0.25f, -0.25f,
-				-0.25f,  0.25f,  0.25f,
-
-				-0.25f, -0.25f,  0.25f,
-				0.25f, -0.25f,  0.25f,
-				0.25f, -0.25f, -0.25f,
-
-				0.25f, -0.25f, -0.25f,
-				-0.25f, -0.25f, -0.25f,
-				-0.25f, -0.25f,  0.25f,
-
-				-0.25f,  0.25f, -0.25f,
-				0.25f,  0.25f, -0.25f,
-				0.25f,  0.25f,  0.25f,
-
-				0.25f,  0.25f,  0.25f,
-				-0.25f,  0.25f,  0.25f,
-				-0.25f,  0.25f, -0.25f
-			};
-
-		glGenBuffers(1, &buffer);
-		glBindBuffer(GL_ARRAY_BUFFER, buffer);
-		glBufferData(GL_ARRAY_BUFFER,
-								 sizeof(vertex_positions),
-								 vertex_positions,
-								 GL_STATIC_DRAW);
-		glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 0, NULL);
-		glEnableVertexAttribArray(0);
-
-		glEnable(GL_CULL_FACE);
-		glFrontFace(GL_CW);
-
-		glEnable(GL_DEPTH_TEST);
-		glDepthFunc(GL_LEQUAL);
-		
-	}
-
-	virtual void render(double currentTime)
-	{
-		static const GLfloat color[] = {0.0f, 0.25f, 0.0f, 1.0f};
-		static const GLfloat one = 1.0f;
-
-		glViewport(0, 0, info.windowWidth, info.windowHeight);
-		glClearBufferfv(GL_COLOR, 0, color);
-		glClearBufferfv(GL_DEPTH, 0, &one);
-
-		glUseProgram(program);
-
-		glUniformMatrix4fv(proj_location, 1, GL_FALSE, proj_matrix);
-
-		// float f = (float)currentTime * 0.3;
-		// vmath::mat4 mv_matrix =
-		// 	vmath::translate(0.0f, 0.0f, -0.4f) *
-		// 	vmath::translate(sinf(2.1f * f) * 0.5f,
-		// 									 cosf(1.7f * f) * 0.5f,
-		// 									 sinf(1.3f * f) * cosf(1.5f * f) * 2.0f) *
-		// 	vmath::rotate((float)currentTime * 45.0f, 0.0f, 1.0f, 0.0f) *
-		// 	vmath::rotate((float)currentTime * 81.0f, 1.0f, 0.0f, 0.0f);
-
-		// glUniformMatrix4fv(mv_location, 1, GL_FALSE, mv_matrix);
-		// glDrawArrays(GL_TRIANGLES, 0, 36);
-
-		int i;
-        for (i = 0; i < 24; i++)
+    virtual void startup()
+    {
+#define B 0x00, 0x00, 0x00, 0x00
+#define W 0xFF, 0xFF, 0xFF, 0xFF
+        static const GLubyte tex_data[] =
         {
-            float f = (float)i + (float)currentTime * 0.3f;
-            vmath::mat4 mv_matrix = vmath::translate(0.0f, 0.0f, -6.0f) *
-                                    vmath::rotate((float)currentTime * 45.0f, 0.0f, 1.0f, 0.0f) *
-                                    vmath::rotate((float)currentTime * 21.0f, 1.0f, 0.0f, 0.0f) *
-                                    vmath::translate(sinf(2.1f * f) * 2.0f,
-                                                     cosf(1.7f * f) * 2.0f,
-                                                     sinf(1.3f * f) * cosf(1.5f * f) * 2.0f);
-            glUniformMatrix4fv(mv_location, 1, GL_FALSE, mv_matrix);
-            glDrawArrays(GL_TRIANGLES, 0, 36);
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+        };
+#undef B
+#undef W
+
+        glGenTextures(1, &tex_object[0]);
+        glBindTexture(GL_TEXTURE_2D, tex_object[0]);
+        glTexStorage2D(GL_TEXTURE_2D, 1, GL_RGB8, 16, 16);
+        glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 16, 16, GL_RGBA, GL_UNSIGNED_BYTE, tex_data);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
+        glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
+        tex_object[1] = sb7::ktx::file::load("media/textures/pattern1.ktx");
+
+        object.load("media/objects/torus_nrms_tc.sbm");
+
+        load_shaders();
+
+        glEnable(GL_DEPTH_TEST);
+        glDepthFunc(GL_LEQUAL);
+    }
+
+    virtual void render(double currentTime)
+    {
+        static const GLfloat gray[] = { 0.4f, 0.2f, 0.2f, 1.0f };
+        static const GLfloat ones[] = { 1.0f };
+
+        glClearBufferfv(GL_COLOR, 0, gray);
+        glClearBufferfv(GL_DEPTH, 0, ones);
+
+        glViewport(0, 0, info.windowWidth, info.windowHeight);
+
+        glBindTexture(GL_TEXTURE_2D, tex_object[tex_index]);
+
+        glUseProgram(render_prog);
+
+        vmath::mat4 proj_matrix = vmath::perspective(60.0f, (float)info.windowWidth / (float)info.windowHeight, 0.1f, 1000.0f);
+        vmath::mat4 mv_matrix = vmath::translate(0.0f, 0.0f, -3.0f) *
+                                vmath::rotate((float)currentTime * 19.3f, 0.0f, 1.0f, 0.0f) *
+                                vmath::rotate((float)currentTime * 21.1f, 0.0f, 0.0f, 1.0f);
+
+        glUniformMatrix4fv(uniforms.mv_matrix, 1, GL_FALSE, mv_matrix);
+        glUniformMatrix4fv(uniforms.proj_matrix, 1, GL_FALSE, proj_matrix);
+
+        object.render();
+    }
+
+    virtual void shutdown()
+    {
+        glDeleteProgram(render_prog);
+        glDeleteTextures(2, tex_object);
+    }
+
+    void load_shaders()
+    {
+        if (render_prog)
+            glDeleteProgram(render_prog);
+
+        GLuint vs, fs;
+
+        vs = sb7::shader::load("media/shaders/simpletexcoords/render.vs.glsl", GL_VERTEX_SHADER);
+        fs = sb7::shader::load("media/shaders/simpletexcoords/render.fs.glsl", GL_FRAGMENT_SHADER);
+
+        render_prog = glCreateProgram();
+        glAttachShader(render_prog, vs);
+        glAttachShader(render_prog, fs);
+        glLinkProgram(render_prog);
+
+        glDeleteShader(vs);
+        glDeleteShader(fs);
+
+        uniforms.mv_matrix = glGetUniformLocation(render_prog, "mv_matrix");
+        uniforms.proj_matrix = glGetUniformLocation(render_prog, "proj_matrix");
+    }
+
+    virtual void onKey(int key, int action)
+    {
+        if (action)
+        {
+            switch (key)
+            {
+                case 'R': load_shaders();
+                    break;
+                case 'T':
+                    tex_index++;
+                    if (tex_index > 1)
+                        tex_index = 0;
+                    break;
+            }
         }
-	}
+    }
 
-	virtual void shutdown()
-	{
-		glDeleteVertexArrays(1, &vao);
-		glDeleteProgram(program);
-		glDeleteBuffers(1, &buffer);
-	}
+protected:
+    GLuint          render_prog;
 
-	void onResize(int w, int h)
-	{
-		sb7::application::onResize(w,h);
+    GLuint          tex_object[2];
+    GLuint          tex_index;
 
-		aspect = (float)w / (float)h;
-		proj_matrix = vmath::perspective(50.0f, aspect, 0.1f, 1000.0f);
-	}
-	
+    struct
+    {
+        GLint       mv_matrix;
+        GLint       proj_matrix;
+    } uniforms;
 
-private:
-	GLuint      vao;
-	GLuint      buffer;
-	GLuint      program;
-	GLint       mv_location;
-	GLint       proj_location;
-
-	float aspect;
-	vmath::mat4 proj_matrix;
+    sb7::object     object;
 };
 
-DECLARE_MAIN(spinningcube_app)
+DECLARE_MAIN(simpletexcoords_app)

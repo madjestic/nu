@@ -421,6 +421,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 *** DONE : Waves tutorial cmivfx 2
 *** DONE : Investigate how to render ocean nicely
 		[2015-01-12 Mon]
+		alias hdk='hdktmp=`pwd`; cd $HFS; source houdini_setup; cd $hdktmp; unset hdktmp'
 ** General
 *** TODO : Read on setting up cron Jobs [[http://stackoverflow.com/questions/1603109/how-to-make-a-python-script-run-like-a-service-or-daemon-in-linux][{Stack Overflow}]]
 *** DONE : Set up a TODO directory with all active TODO's

@@ -1,6 +1,6 @@
 LIBPATH= ./lib
-INCPATH= -I./include
-LDFLAGS= -L/usr/lib64 -lglfw -lGL -lGLEW -lglut -ldl
+INCPATH= -I./include -I/home/madjestic/Projects/OpenGL/sb7code/include -I/home/madjestic/Projects/OpenGL/sb7code/usr/include
+LDFLAGS= -L/usr/lib64 -lglfw -lGL -lGLEW -lglut -ldl -L/Projects/OpenGL/sb7code/lib -rdynamic lib/libsb7.a -lglfw -lX11 -lXrandr -lXinerama -lXi -lXxf86vm -lXcursor -lGL -lrt -ldl -Wl,-rpath,/home/madjestic/Projects/OpenGL/sb7code/lib
 CXX_FLAGS = -D_LINUX -std=c++0x -fpermissive
 
 all:
@@ -10,6 +10,8 @@ all:
 
 gl3w:
 	g++ -c ./src/gl3w.c $(INCPATH) $(LDFLAGS) -o $(LIBPATH)/gl3w.o
+
+
 
 clean:
 	@if [ -f ${LIBPATH}/gl3w.o ];\

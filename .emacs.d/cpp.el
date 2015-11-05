@@ -64,6 +64,18 @@
 
 (helm-mode)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Package: function-args                                                                                     ;;
+;; function-args is a GNU Emacs package for showing an inline arguments hint for the C/C++ function at point. ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(require 'function-args)
+(fa-config-default)
+(define-key c-mode-map  [(control tab)] 'moo-complete)
+(define-key c++-mode-map  [(control tab)] 'moo-complete)
+(define-key c-mode-map (kbd "C-.")  'fa-show)
+(define-key c++-mode-map (kbd "C-.")  'fa-show)
+
 ;;;;;;;;;;
 
 (sr-speedbar)
