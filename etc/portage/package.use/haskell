@@ -1,0 +1,3 @@
+dev-haskell/hoogle fetchdb fetchdb-ghc localdb
+dev-haskell/haddock -doc
+dev-haskell/* doc hoogle hscolour

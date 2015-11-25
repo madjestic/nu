@@ -1,0 +1,6 @@
+>=dev-lang/python-3.4.1 sqlite
+>=dev-lang/python-2.7.9-r1:2.7 sqlite
+>=dev-python/sip-4.16.2 python_targets_python3_3
+>=dev-python/PyQt4-4.11.1 python_targets_python3_3
+>=dev-python/dbus-python-1.2.0-r1 python_targets_python3_3
+>=dev-python/setuptools-12.0.1 python_targets_python3_3

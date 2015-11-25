@@ -1,0 +1,2 @@
+>=dev-libs/elfutils-0.158 static-libs
+app-emulation/winetricks -gtk

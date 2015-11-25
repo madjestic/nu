@@ -1,0 +1,5 @@
+(jedi:setup)
+(global-set-key (kbd "M-.") 'jedi:goto-definition)
+(company-mode)
+(paredit-mode)
+;;(linum-mode)

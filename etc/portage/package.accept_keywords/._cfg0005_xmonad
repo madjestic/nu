@@ -1,0 +1,6 @@
+=x11-wm/xmonad-0.11.1
+=x11-wm/xmonad-contrib-0.11.4# required by 0ad (argument)
+=games-strategy/0ad-0.0.18_alpha-r4 ~amd64
+# required by games-strategy/0ad-0.0.18_alpha-r4::gentoo
+# required by 0ad (argument)
+=games-strategy/0ad-data-0.0.18_alpha ~amd64

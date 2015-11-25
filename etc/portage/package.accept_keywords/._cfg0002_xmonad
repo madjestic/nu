@@ -1,0 +1,6 @@
+=x11-wm/xmonad-0.11.1
+=x11-wm/xmonad-contrib-0.11.4# required by =games-strategy/unknown-horizons-2013.3 (argument)
+=games-strategy/unknown-horizons-2013.3 ~amd64
+# required by games-strategy/unknown-horizons-2013.3::gamerlay
+# required by =games-strategy/unknown-horizons-2013.3 (argument)
+=games-engines/fife-9999 **

@@ -1,0 +1,3 @@
+x11-libs/* abi_x86_32
+x11-proto/* abi_x86_32
+dev-libs/libpthread-stubs abi_x86_32

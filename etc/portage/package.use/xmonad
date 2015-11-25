@@ -1,0 +1,2 @@
+x11-misc/dmenu -xinerama xft
+x11-misc/xmobar xft inotify timezone wifi xft xpm mpd mpris inotify

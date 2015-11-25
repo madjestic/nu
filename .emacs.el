@@ -24,7 +24,7 @@
 	 (quote
 		(("Freenode" :nick "madjestic" :channels
 			("#emacs" "#odforce" "#haskell-beginners")
-			:nickserv-password asdfg))))
+			:nickserv-password asdfg))) t)
  '(circe-server-connected-hook nil)
  '(cua-enable-cua-keys nil)
  '(cua-mode t nil (cua-base))
@@ -56,7 +56,7 @@
  '(minimap-width-fraction 0.1)
  '(minimap-window-location (quote right))
  '(mouse-wheel-scroll-amount (quote (1 ((shift) . 1) ((control)))))
- '(org-agenda-files (quote ("~/journal.org")))
+ '(org-agenda-files (quote ("~/org/index.org")))
  '(org-file-apps
 	 (quote
 		((auto-mode . emacs)

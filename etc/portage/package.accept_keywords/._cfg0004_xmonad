@@ -1,0 +1,3 @@
+=x11-wm/xmonad-0.11.1
+=x11-wm/xmonad-contrib-0.11.4# required by =games-engines/openxcom-1.0.0_p20150806 (argument)
+=games-engines/openxcom-1.0.0_p20150806 ~amd64

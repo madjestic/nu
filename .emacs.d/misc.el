@@ -17,9 +17,9 @@
   (load-user-file "circe.el"))
 
 (defun load-org ()
-  "load Circe config files"
+  "load Org-mode config files"
   (interactive)
-  (load-user-file "circe.el"))
+  (load-user-file "org.el"))
 
 (defun load-latex ()
   "load latex config files"

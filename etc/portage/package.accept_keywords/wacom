@@ -1,0 +1,2 @@
+=x11-drivers/xf86-input-wacom-0.30.0 ~amd64
+=dev-libs/libwacom-0.13 ~amd64

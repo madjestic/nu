@@ -150,7 +150,10 @@ C-u M-! date   | to insert date |
 	and do stuff to each file:"
 	[[file:/usr/local/include/Field3D/relink.sh]]
 	[[~/Documents/Bourne_Shell_Scripting.pdf]]
-* Editin a movie:
+* Xmonad
+** TODO : assign hot-keys for brightness-up/brightness down
+** TODO : assign hot-keys for volume up/down
+* Editing a movie:
 	(lossless codec)
 	ffmpeg -i model.rop_comp1.%04d.png -c:v huffyuv out.avi
 	then import and re-export through pitivi
@@ -170,6 +173,12 @@ C-u M-! date   | to insert date |
 	(paren-mode)
 	<M-S> ( : foo -> (foo)
 	M-up    : (foo) -> foo
+
+** Registers, bookmarks and desktop
+	 http://www.gnu.org/savannah-checkouts/gnu/emacs/manual/html_node/emacs/Saving-Emacs-Sessions.html
+	 https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html#Bookmarks
+	 https://github.com/ffevotte/desktop-plus
+	 
 * Haskell tips																											:haskell:
 ** Commenting code:
   {-| @Event t a@ represents a stream of events as they occur in time.
@@ -201,6 +210,8 @@ stack overflow question
 		Jaaropgraaf
 		Student Costs
 		WOZ
+** Delivery Service
+	 +31686093284
 * New Task Example
 
 ** Create a Design
@@ -399,6 +410,10 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 *** PuurBliss.NL
 **** DONE : fix glyphicons:
 		 It turns out that the < > glyphs are not being displayed correctly.
+**** TODO : work on logo
+		 
+		 [[file:~/.contexts/Puurbliss/Pictures/Puurbliss]]
+		 
 ** Reading
 *** DONE Prime Obsession
 ** Houdini
@@ -539,6 +554,14 @@ Sat Apr 26 16:03:45 CEST 2014
 
 ** Guerrilla Math Study Group (GMSG)
 	 [[https://sites.google.com/site/guerrillamathstudygroup/][google sites link]]
+* Guerrilla
+** Camalot
+	 Curvature filter: Instead of failing back onto 'All' - sort by attribute and leave 1 (or more)
+
+*** DONE If I win this tomorrow, get myself "Pathologic HD" as a present
+		http://www.gog.com/game/pathologic_classic_hd
+		<2015-11-10 Tue>
+		
 * Active Links:
 	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D935459&page%3D1][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=935459&page=1]]
 	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D913986&page%3D13][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=913986&page=13]]
@@ -571,6 +594,26 @@ Sat Apr 26 16:03:45 CEST 2014
 	 http://chomsky.info/articles/195609--.pdf
 
 	 http://www.its.caltech.edu/~matilde/GraphGrammarsLing.pdf
+
+	 [[http://www.cs.dartmouth.edu/reports/TR2014-754.pdf][StyleCheck: An Automated Stylistic Analysis Tool (PDF)]]
+
+	 [[file:~/Pictures/Human_Language_Families_ru.png]]
+
+	 [[https://ru.wikipedia.org/wiki/%25D0%25A2%25D0%25B8%25D0%25BF%25D0%25BE%25D0%25BB%25D0%25BE%25D0%25B3%25D0%25B8%25D1%258F_(%25D0%25BB%25D0%25B8%25D0%25BD%25D0%25B3%25D0%25B2%25D0%25B8%25D1%2581%25D1%2582%25D0%25B8%25D0%25BA%25D0%25B0)][Типология (лингвистика)]]
+
+	 [[https://ru.wikipedia.org/wiki/%25D0%2590%25D0%25BA%25D1%2582%25D0%25B8%25D0%25B2%25D0%25BD%25D1%258B%25D0%25B5_%25D1%258F%25D0%25B7%25D1%258B%25D0%25BA%25D0%25B8][Активные языки]]
+
+	 [[https://en.wikipedia.org/wiki/Ferdinand_de_Saussure][Ferdinand de Saussure]]
+
+	 [[https://en.wikipedia.org/wiki/Roman_Jakobson][Roman Jakobson]]
+
+	 [[https://en.wikipedia.org/wiki/Russian_formalism][Russian formalism]]
+
+	 [[https://en.wikipedia.org/wiki/Stylistics_(field_of_study)][Stylistics (field of study)]]
+
+	 [[https://en.wikipedia.org/wiki/Stylistics_(field_of_study)][Stylistics (field of study)]]
+
+	 
 *** Related Read:
 		http://en.wikipedia.org/wiki/Framework_Programmes_for_Research_and_Technological_Development
 		http://en.wikipedia.org/wiki/European_Atomic_Energy_Community
@@ -595,6 +638,11 @@ Sat Apr 26 16:03:45 CEST 2014
 		[[*edX:%20FP101x][edX]] A course I intend to finish
 		Mon Nov 10 22:40:49 CET 2014
 
+		Monads, Monoids, Functors:
+		http://learnyouahaskell.com/making-our-own-types-and-typeclasses
+		http://learnyouahaskell.com/functors-applicative-functors-and-monoids
+		http://learnyouahaskell.com/a-fistful-of-monads
+
 **** FFI
 [[http://www.haskell.org/haskellwiki/FFI_cook_book][FFI Cook Book]]
 [[http://book.realworldhaskell.org/read/interfacing-with-c-the-ffi.html][RealWorldHaskell FFI]]
@@ -602,28 +650,6 @@ Sat Apr 26 16:03:45 CEST 2014
 *** Org Mode
 **** Links
 		 [[http://orgmode.org/manual/Handling-links.html][Handling Links]]
-
-* History
-	[[/home/madjestic/houdini/houdini/python2.7libs/dopparticlefluidtoolutils.py]]
-	[[file:~/Projects/Python/Tree/Main.py][/Projects/Python/Tree/Main.py]] Fri Oct 17 23:47:43 CEST 2014
-
-	[[*:%20Make%20Elegant,%20Clean-up][Sun Oct 26 00:10:42 CEST 2014
-	refactoring, cleaning up Rendering.hs and Shape.hs]]
-
-	
-
-	nmcli device wifi connect Lambda password *********
-	[2015-01-12 Mon]
-	Biology (Micosis)
-	[[*:%20Investigate%20how%20to%20render%20ocean%20nicely][Ocean Shader (displacement issues)]]
-	
-
-
-	[2015-02-01 Sun]
-	Found a nice article on GTK+, continue reading later.
-
-	[2015-09-21 Mon]
-	Trying to make PVR compile.  [[*PVR][Getting some linker errors:]]
 * Entropy
 ** Machine Learning
 	 http://www.cs.cmu.edu/~tom/mlbook.html	 
@@ -665,8 +691,6 @@ Sat Apr 26 16:03:45 CEST 2014
 		 successor state values can be proven to converge toward perfect estimates of V_train
 
 		 performance system, critic; generalizer, and experiment generator. Many machine learning systems can-be usefully characterized in terms of these four generic modules.
-
-
 * Cognitive science
 	P != NP
 	http://en.wikipedia.org/wiki/P_versus_NP_problem
@@ -733,19 +757,6 @@ Sat Apr 26 16:03:45 CEST 2014
 
 	Steven Pinker
 	http://www.newrepublic.com/
-
-* TODO:
-** IN-PROGRESS [[*:%20Make%20Elegant,%20Clean-up][Make Elegant, Clean-up]]
-** IN-PROGRESS : Write a make file that can be run like this:
-	 make clean
-	   - and it will choose from a number of options
-		 [2015-02-17 Tue]
-		 - made a clean.sh file that cleans up stuff [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/tutorial10/clean][here]]
-
-** DONE : Finish ICMA 41 questions
-** TODO : Experiment with caustics (an example from Houdini Help)
-** TODO : Write a python daemon
-
 * IRC
 	IRCnet Server : open.ircnet.net
 
@@ -777,7 +788,7 @@ Sat Apr 26 16:03:45 CEST 2014
 	glMapBuffer(), glMapNamedBuffer() - map an arbitrary memory address to a Buffer.
 	glMapBufferRange(), glMapNamedBufferRange()
 	
-* pvr
+* PVR
 	export PVR_PYTHON_PATH="/usr/include/python2.7/"
 	scons lib
 	scons pylib
@@ -827,3 +838,169 @@ Sat Apr 26 16:03:45 CEST 2014
 	quick search shows that iptables requires to set up the rules for each connection
 	individually, which seems tedious.  https://github.com/themighty1/lpfw seems to 
 	address that, however it seems to support IPv4 only.... investigate further.
+* tables
+| r | 0/1   | 0  | 1  | 0-1 | rnd | SBR | SBF | ABR | ABF |
+|---+-------+----+----+-----+-----+-----+-----+-----+-----|
+| 1 | 0/1   | -  | +  | 0:- | 0:- | 0:- | 0:- | 0:- | 0:- |
+| 0 | 1/1   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 0 | 2/1   | +  | -  | 0:+ | 1:- | 1:- | 1:- | 1:- | 1:- |
+| 1 | 2/2   | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 1:+ | 1:+ |
+| 1 | 2/3   | -  | +  | 0:- | 0:- | 1:+ | 0:- | 1:+ | 0:- |
+| 0 | 3/3   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 1 | 3/4   | -  | +  | 0:- | 1:+ | 0:- | 1:+ | 1:+ | 1:+ |
+| 0 | 4/4   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 1 | 4/5   | -  | +  | 0:- | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ |
+| 1 | 4/6   | -  | +  | 1:+ | 0:+ | 1:+ | 0:- | 0:- | 0:- |
+| 0 | 5/6   | +  | -  | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 0 | 6/6   | +  | -  | 1:- | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
+| 0 | 7/6   | +  | -  | 0:+ | 0:+ | 1:- | 0:+ | 0:+ | 1:- |
+| 1 | 7/7   | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 1:+ | 1:+ |
+| 0 | 8/7   | +  | -  | 0:+ | 0:+ | 1:- | 0:+ | 0:+ | 0:+ |
+| 1 | 8/8   | -  | +  | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ |
+| 1 | 8/9   | -  | +  | 0:- | 1:+ | 1:+ | 0:- | 0:- | 0:- |
+| 1 | 8/10  | -  | +  | 1:+ | 1:+ | 0:- | 0:- | 0:- | 0:- |
+| 1 | 8/11  | -  | +  | 0:- | 0:- | 0:- | 0:- | 0:- | 0:- |
+| 0 | 9/11  | +  | -  | 1:- | 1:- | 0:+ | 0:+ | 0:+ | 0:+ |
+| 0 | 10/11 | +  | -  | 0:+ | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
+| 1 | 10/12 | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 0:- | 0:- |
+| 1 | 10/13 | -  | +  | 0:- | 0:- | 1:+ | 0:- | 0:- | 0:- |
+| 0 | 11/13 | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 1 | 11/14 | -  | +  | 0:- | 0:- | 0:- | 1:+ | 0:- | 0:- |
+| 1 | 11/15 | -  | +  | 1:+ | 1:+ | 1:+ | 0:- | 0:- | 0:- |
+| 0 | 12/15 | +  | -  | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 0 | 13/15 | +  | -  | 1:- | 1:- | 1:- | 1:- | 0:+ | 0:+ |
+| 0 | 14/15 | +  | -  | 0:+ | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
+|   |       | 14 | 15 |  14 |  18 |  17 |  16 |  19 | 17  |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+|   |       |    |    |     |     |     |     |     |     |
+#+TBLFM: 
+* TODO:
+** IN-PROGRESS [[*:%20Make%20Elegant,%20Clean-up][Make Elegant, Clean-up]]
+** IN-PROGRESS : Write a make file that can be run like this:
+	 make clean
+	   - and it will choose from a number of ons
+		 [2015-02-17 Tue]
+		 - made a clean.sh file that cleans up stuff [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/tutorial10/clean][here]]
+
+** TODO : Experiment with caustics (an example from Houdini Help)
+** TODO : Write a python daemon
+
+** TODO : Nvidia Optimus
+** DONE : link it here
+** TODO : Set up fallout 2 ~/Projects/games/falltergeist: it is missing some files, get them from an official game installation
+
+* History
+	[[/home/madjestic/houdini/houdini/python2.7libs/dopparticlefluidtoolutils.py]]
+	[[file:~/Projects/Python/Tree/Main.py][/Projects/Python/Tree/Main.py]] Fri Oct 17 23:47:43 CEST 2014
+
+	[[*:%20Make%20Elegant,%20Clean-up][Sun Oct 26 00:10:42 CEST 2014
+	refactoring, cleaning up Rendering.hs and Shape.hs]]
+
+	
+
+	nmcli device wifi connect Lambda password *********
+	[2015-01-12 Mon]
+	Biology (Micosis)
+	[[*:%20Investigate%20how%20to%20render%20ocean%20nicely][Ocean Shader (displacement issues)]]
+	
+
+
+	[2015-02-01 Sun]
+	Found a nice article on GTK+, continue reading later.
+
+	[2015-09-21 Mon]
+	Trying to make [[*PVR][PVR]] compile.  [[*PVR][Getting some linker errors:]] (1)
+
+	<2015-11-06 Fri> solved (1)
+
+	<2015-11-08 Sun>
+	#define W 0xFF, 0xFF, 0xFF, 0xFF
+        static const GLubyte tex_data[] =
+        {
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+            B, W, B, W, B, W, B, W, B, W, B, W, B, W, B, W,
+            W, B, W, B, W, B, W, B, W, B, W, B, W, B, W, B,
+        };
+#undef B
+#undef W
+
+        glGenTextures(1, &tex_object[0]);
+        glBindTexture(GL_TEXTURE_2D, tex_object[0]);
+        glTexStorage2D(GL_TEXTURE_2D, 1, GL_RGB8, 16, 16);
+        glTexSubImage2D(GL_TEXTURE_2D, 0, 0, 0, 16, 16, GL_RGBA, GL_UNSIGNED_BYTE, tex_data);
+				...
+
+				it looks like there are 16x16 rows x columns in the B,W,B,W... above as well as in tex-storage size delcaration
+
+				Mipmapping gets its name from the Latin phrase multum in parvo
+
+	Created a [[file:~/.contexts][~/.context]] for keeping clusters of activity together (dirs, pdfs, etc.)
+
+	
+	Figured out how to use parts of agenda-mode.
+	http://orgmode.org/worg/org-tutorials/advanced-searching.html
+	[2015-11-19 Thu]
+
+	Timestamps for agenda-mode:
+	http://orgmode.org/manual/Creating-timestamps.html
+
+	Org-mode Agenda is awesome!
+	http://orgmode.org/worg/org-tutorials/advanced-searching.html
+	[2015-11-19 Thu]
+

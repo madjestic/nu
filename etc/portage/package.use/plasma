@@ -1,0 +1,10 @@
+*/* ~amd64
+=dev-qt/qtcore-5.4.2 ~amd64
+=dev-qt/qtwidgets-5.4.2 ~amd64
+=dev-qt/qtgui-5.4.2-r1 ~amd64
+=dev-qt/qtdbus-5.4.2 ~amd64
+=dev-qt/qtxml-5.4.2 ~amd64
+# =media-libs/harfbuzz-0.9.38 -graphite
+dev-qt/* ~amd64
+
+>=media-libs/mesa-10.3.7-r1 wayland
