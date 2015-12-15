@@ -1,3 +1,4 @@
+(add-to-list 'auto-mode-alist '("\\.org\\'" . (lambda ()(org-mode))))
 (add-to-list 'auto-mode-alist '("\\.vfl\\'" . (lambda ()(c++-mode))))
 (add-to-list 'auto-mode-alist '("\\.cpp\\'" . (lambda ()(c++-mode))))
 (add-to-list 'auto-mode-alist '("\\.c\\'"   . (lambda ()(c++-mode))))
@@ -6,11 +7,14 @@
 (add-to-list 'auto-mode-alist '("\\.frag\\'"   . (lambda ()(c++-mode))))
 (add-to-list 'auto-mode-alist '("\\.hs\\'" . (lambda ()(haskell-mode))))
 (add-to-list 'auto-mode-alist '("\\.py\\'" . (lambda ()(python-mode))))
-(add-to-list 'auto-mode-alist '("\\.org\\'" . (lambda ()(org-mode))))
 
 (add-hook 'c++-mode-hook
           (lambda()						
 						(load-cpp)))
+
+(add-hook 'gnus-group-mode-hook
+          (lambda()						
+						(load-gnus)))
 
 
 (add-hook 'haskell-mode-hook
@@ -22,10 +26,11 @@
 						(load-circe)
 						))
 
-(add-hook 'org-mode-hook
-          (lambda()
-						(load-org)
-						))
+;; (add-hook 'org-mode-hook
+;;           (lambda()
+;; 						(load-org)
+;; 						(org-mode)
+;; 						))
 
 (add-hook 'html-mode-hook
           (lambda()

@@ -144,6 +144,7 @@ C-u M-! date   | to insert date |
    [[http://orgmode.org/manual/External-links.html][gentoo]]
    [[docview:~/Downloads/Abbelian_Categories.pdf::100][PDF]]
 	 [[docview:~/Projects/gmsg/basic_des/basic.pdf::1][open_pdf with docview]]
+	 S-enter create a symlink to a current file in dired
 
 * Bash
 	an interesting example of "loop over all files in a directory 
@@ -151,8 +152,8 @@ C-u M-! date   | to insert date |
 	[[file:/usr/local/include/Field3D/relink.sh]]
 	[[~/Documents/Bourne_Shell_Scripting.pdf]]
 * Xmonad
-** TODO : assign hot-keys for brightness-up/brightness down
-** TODO : assign hot-keys for volume up/down
+** DONE : assign hot-keys for brightness-up/brightness down
+** DONE : assign hot-keys for volume up/down
 * Editing a movie:
 	(lossless codec)
 	ffmpeg -i model.rop_comp1.%04d.png -c:v huffyuv out.avi
@@ -175,6 +176,11 @@ C-u M-! date   | to insert date |
 	M-up    : (foo) -> foo
 
 ** Registers, bookmarks and desktop
+	 C-x r w <register> to store a window configuration in a register
+	 C-x r j <register> (where <register> is a single character) to jump back to a register.
+	 http://stackoverflow.com/questions/2572950/preserve-window-layout-in-emacs
+	 
+	 https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html
 	 http://www.gnu.org/savannah-checkouts/gnu/emacs/manual/html_node/emacs/Saving-Emacs-Sessions.html
 	 https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html#Bookmarks
 	 https://github.com/ffevotte/desktop-plus
@@ -381,7 +387,12 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 		  The foundation is there, I decided to postpone concrete implementation
 			till the need arrives.
 ***** TODO : Create a boilerplate:
-****** TODO : All code on one page:  draw a textured sqaure.
+****** TODO : All code on one page:  draw a textured sqaure
+			 CLOCK: [2015-11-30 Mon 19:12]--[2015-11-30 Mon 19:13] =>  0:01
+******* TODO : in C++
+				CLOCK: [2015-11-30 Mon 19:13]--[2015-11-30 Mon 19:22] =>  0:09
+				
+******* TODO : in Haskell			 
 ** FRP
 *** Reactive Banana
 [[*:%20Animation%20Support...][Reactive Banana Animation Support...]]
@@ -397,9 +408,25 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 
 ** on Emacs
 
-*** DONE Lear to use Org-mode
+*** IN-PROGRESS Learn to use Org-mode
+**** DONE : Learno how to do cumulative timer
+		 CLOCK: [2015-11-30 Mon 19:22]
+		 0:00:00 0:00:04 0:00:11 (C-x .) insert relative timer at point
+		 - 0:00:30 :: one
+		 - 0:00:39 :: two (C-x -) relative timer with a description.
 
-*** DONE Lear how to open pdfs at a given page with Okular
+		 http://orgmode.org/manual/The-clock-table.html#The-clock-table
+		 Time total can be computed in emacs/excel-sheet like manner
+		 [2015-12-01 Tue]
+
+**** DONE : Learn how to work with multiple TODO files
+		 http://orgmode.org/manual/Agenda-views.html#Agenda-views
+		 [2015-12-01 Tue]
+
+		 http://orgmode.org/manual/Agenda-files.html#Agenda-files
+		 (C-c [ ) Add current file to the list of agenda files. 
+		 (C-c ] ) Remove current file from the list of agenda files. 
+*** DONE Learn how to open pdfs at a given page with Okular
 [[http://stackoverflow.com/questions/20792659/how-do-i-make-org-mode-open-pdf-files-in-okulus-at-page-nnn][stackoverflow_topi]]c
 <2013-12-27 Fri>
 
@@ -435,8 +462,23 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 *** DONE : Waves tutorial cmivfx 1
 *** DONE : Waves tutorial cmivfx 2
 *** DONE : Investigate how to render ocean nicely
-		[2015-01-12 Mon]
-		alias hdk='hdktmp=`pwd`; cd $HFS; source houdini_setup; cd $hdktmp; unset hdktmp'
+*** TODO : Work on a small example of gushing water effect :houdini::effect::vfx:
+		<2015-12-02 Wed>
+
+		/home/madjestic/Projects/Houdini/Fluids/Fluid_Test_00
+		<2015-12-03 Thu>
+
+*** TODO : Set up water shader
+		[[https://www.sidefx.com/index.php?option%3Dcom_content&task%3Dview&id%3D3168&Itemid%3D412][H15 | FLIP WORKFLOW ENHANCEMENTS]]
+		[[https://vimeo.com/41314793][Houdini Mantra | Waterfall]]
+		[[http://forums.odforce.net/topic/20467-ocean-area-light-highlights-problem/?hl%3D%252Bocean%2B%252Bwhite%2B%252Bspots%2B%252Bpbr#entry122295][Ocean Area light highlights problem]]
+		
+		
+		
+**** TODO : Simulation and modelling
+**** TODO : Shading
+**** TODO : Rendering
+
 ** General
 *** TODO : Read on setting up cron Jobs [[http://stackoverflow.com/questions/1603109/how-to-make-a-python-script-run-like-a-service-or-daemon-in-linux][{Stack Overflow}]]
 *** DONE : Set up a TODO directory with all active TODO's
@@ -449,6 +491,10 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 	 [[http://en.wikipedia.org/wiki/Fission_(biology)][Binary Fission]] on wiki
 ** GTK+
 	 [[http://www.micahcarrick.com/gtk-glade-tutorial-part-1.html]]
+* Rocket!
+	A simple game project: similar to Angry birds, but in space with planets.  A dynamics-based (gravity, gravitational pool of planets).
+	<2015-12-04 Fri>
+
 * Study
 ** M140: Introducing Statistics
 *** DONE : TMA02:
@@ -465,10 +511,17 @@ Sat Apr 26 16:03:45 CEST 2014
 
 **** DONE : TMA02: Q3
 *** DONE : TMA03
-*** TODO : [[file:~/Documents/M140/TMA04/m140_tma04.pdf][TMA04]]
-*** TODO : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D963365][ICMA43]]
+*** DONE : [[file:~/Documents/M140/TMA04/m140_tma04.pdf][TMA04]]
+*** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D963365][ICMA43]]
 
-*** IN-PROGRESS : Learn Basic R
+*** DONE : Learn Basic R
+   It looks like it's a dead end.
+	 
+	 Julia is a much stronger alternative.  It's much faster than R, Julia is
+	 a propper programmin language, has bindings or interfaces to C++,Python
+
+	 Haskell is a much stronger alternative too.  Obviously.
+
 * Godot Engine
 ** Animated Ocean surface:
 	 Something along the lines with:
@@ -500,9 +553,9 @@ Sat Apr 26 16:03:45 CEST 2014
 ** DONE :	[[file:~/Documents/MST124/TMA02/mst124_unit4.pdf][Unit 4]] (textbook)
 ** DONE :	[[file:~/Documents/MST124/TMA02/TMA_02.pdf][TMA 02]]
 ** DONE : TMA_03
-** TODO : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965296&page%3D1&scrollpos%3D0#q3][Unit 9 Practice Quiz]]
-** TODO : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965295&page%3D1&scrollpos%3D0#q5][ICMA44]]
-** TODO : [[file:~/Documents/MST124/TMA04/mst124_14b_tma04.pdf][TMA_04]]
+** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965296&page%3D1&scrollpos%3D0#q3][Unit 9 Practice Quiz]]
+** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965295&page%3D1&scrollpos%3D0#q5][ICMA44]]
+** DONE : [[file:~/Documents/MST124/TMA04/mst124_14b_tma04.pdf][TMA_04]]
 * MST125: Essential Mathematics 2
 	One characteristic of a reflection that distinguishes it from a rotation or a
 	translation is that it reverses vertex order.
@@ -520,7 +573,7 @@ Sat Apr 26 16:03:45 CEST 2014
 	 One-to-one linear transformations preserve linearity
 	 One-to-one linear transformations map lines to lines
 
-** TODO : p 48
+** DONE : p 48
 
 * Houdini
 	/home/madjestic/Projects/Houdini/Fractals/model.hipnc
@@ -558,7 +611,7 @@ Sat Apr 26 16:03:45 CEST 2014
 ** Camalot
 	 Curvature filter: Instead of failing back onto 'All' - sort by attribute and leave 1 (or more)
 
-*** DONE If I win this tomorrow, get myself "Pathologic HD" as a present
+*** TODO If I win this tomorrow, get myself "Pathologic HD" as a present
 		http://www.gog.com/game/pathologic_classic_hd
 		<2015-11-10 Tue>
 		
@@ -650,6 +703,22 @@ Sat Apr 26 16:03:45 CEST 2014
 *** Org Mode
 **** Links
 		 [[http://orgmode.org/manual/Handling-links.html][Handling Links]]
+*** Mail Mode :problem::luxury:
+		http://www.emacswiki.org/emacs/GnusGmail
+		https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/gnus-guide-en.org
+		https://eschulte.github.io/emacs24-starter-kit/starter-kit-gnus.html
+		<2015-12-02 Wed>
+
+		The initial setup was a breeze.
+**** TODO : Set up message filtering
+		 Use POPFile at Linux:
+		 http://blog.binchen.org/posts/use-popfile-at-linux.html (gnus email antispam and fultering)
+		 <2015-12-03 Thu>
+
+		 
+*** Jabber Mode :problem::luxury:
+		http://www.emacswiki.org/emacs/JabberEl
+		<2015-12-02 Wed>
 * Entropy
 ** Machine Learning
 	 http://www.cs.cmu.edu/~tom/mlbook.html	 
@@ -830,6 +899,17 @@ Sat Apr 26 16:03:45 CEST 2014
 	Houdini Help:
 	http://127.0.0.1:48626/render/
 	http://127.0.0.1:48626/vex/contexts/shading_contexts
+
+** tests
+	 [[/home/madjestic/Projects/Houdini/Mantra/tests/test_01.hipnc]]
+	 A simple sphere, occlusion, GI.
+
+	 [[/home/madjestic/Projects/Houdini/Mantra/tests/test_02.hipnc]]
+	 particles shaded as speric volumes
+	 
+	 [[/home/madjestic/Projects/Houdini/Mantra/tests/test_03.hipnc]]
+	 Basic shapes, experiments with shading
+	 
 * iptables
 	https://wiki.archlinux.org/index.php/Iptables
 	https://wiki.gentoo.org/wiki/Iptables#IPv6.5B2.5D.5B.E2.80.93_1.5D
@@ -917,6 +997,12 @@ Sat Apr 26 16:03:45 CEST 2014
 |   |       |    |    |     |     |     |     |     |     |
 |   |       |    |    |     |     |     |     |     |     |
 #+TBLFM: 
+* RAID 10 project
+** TODO : Build RAID-10.  Project Ksi:
+	 2x500Gb SCI SSD drives as RAID-10: fast IO and reliability, but space is limited to the smallest drive.
+** TODO : Project Omicron:
+	 2x1Tb Raid-10?
+	 <2015-12-10 Thu>
 * TODO:
 ** IN-PROGRESS [[*:%20Make%20Elegant,%20Clean-up][Make Elegant, Clean-up]]
 ** IN-PROGRESS : Write a make file that can be run like this:
@@ -925,13 +1011,51 @@ Sat Apr 26 16:03:45 CEST 2014
 		 [2015-02-17 Tue]
 		 - made a clean.sh file that cleans up stuff [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/tutorial10/clean][here]]
 
-** TODO : Experiment with caustics (an example from Houdini Help)
+** DONE : Experiment with caustics (an example from Houdini Help)
 ** TODO : Write a python daemon
+	 http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
+	 https://pypi.python.org/pypi/python-daemon/
+	 [2015-12-02 Wed]
+	 
+** WAITING : figure out what's up with Nvidia Optimus
+	 Still has some minor(?) issues: https://forums.gentoo.org/viewtopic-t-1032214-highlight-.html
+	 [2015-11-30 Mon]
 
-** TODO : Nvidia Optimus
+	 Bumblebee:
+	 http://bumblebee-project.org/
+	 troubleshooting:
+	 https://github.com/Bumblebee-Project/Bumblebee/wiki/Troubleshooting
+	 reporting issues:
+	 https://github.com/Bumblebee-Project/Bumblebee/wiki/Reporting-Issues
+	 
 ** DONE : link it here
-** TODO : Set up fallout 2 ~/Projects/games/falltergeist: it is missing some files, get them from an official game installation
+** DONE : Set up fallout 2 ~/Projects/games/falltergeist: it is missing some files, get them from an official game installation
 
+** DONE : compile latest Unreal Engine
+	 [2015-11-30 Mon]
+	 tried latest, it fails somewhere during the Setup.sh, reasons unknown, log file does not get produced.
+
+	 https://github.com/EpicGames/UnrealEngine/blob/4.10/Engine/Build/BatchFiles/Linux/README.md
+	 git clone https://github.com/EpicGames/UnrealEngine -b 4.10
+	 (follow README)
+
+	 Latest version worked
+	 <2015-12-11 Fri>
+
+** DONE : set up battery levels color-coding for xmonad
+	 <2015-12-04 Fri>
+	 <2015-12-07 Mon>
+** TODO : Xmonad Fullscrean
+	 https://github.com/Nadrieril/xmonad-config/blob/master/xmonad.hs
+	 http://stackoverflow.com/questions/20446348/xmonad-toggle-fullscreen-xmobar
+	 
+* MIDI :music::synt:
+	Ardouro
+	BitWig
+	http://proaudio.tuxfamily.org/wiki/index.php?title=Realtime_(RT)_Kernel
+	https://wiki.gentoo.org/wiki/Project:Sound/How_to_Enable_Realtime_for_Multimedia_Applications
+	https://packages.gentoo.org/packages/media-plugins/calf
+	
 * History
 	[[/home/madjestic/houdini/houdini/python2.7libs/dopparticlefluidtoolutils.py]]
 	[[file:~/Projects/Python/Tree/Main.py][/Projects/Python/Tree/Main.py]] Fri Oct 17 23:47:43 CEST 2014
@@ -945,11 +1069,9 @@ Sat Apr 26 16:03:45 CEST 2014
 	[2015-01-12 Mon]
 	Biology (Micosis)
 	[[*:%20Investigate%20how%20to%20render%20ocean%20nicely][Ocean Shader (displacement issues)]]
-	
-
 
 	[2015-02-01 Sun]
-	Found a nice article on GTK+, continue reading later.
+	Found a nice article on GTK+, continue reading later. (Which article?! <2015-12-03 Thu> )
 
 	[2015-09-21 Mon]
 	Trying to make [[*PVR][PVR]] compile.  [[*PVR][Getting some linker errors:]] (1)
@@ -999,8 +1121,28 @@ Sat Apr 26 16:03:45 CEST 2014
 
 	Timestamps for agenda-mode:
 	http://orgmode.org/manual/Creating-timestamps.html
+	(C-c ! ) inactive timestamp
+	(C-c . ) timestamp
 
 	Org-mode Agenda is awesome!
 	http://orgmode.org/worg/org-tutorials/advanced-searching.html
-	[2015-11-19 Thu]
+	[2015-11-19 Thu] 
+	(C-c a m) Match: +TIMESTAMP_IA>="<-2w>" (show ineactive timestamps)
 
+** DONE : test todo - start a timer																 :foo::bar:
+	 (C-c C-x C-i) start a timer (in timer)
+	 (C-c C-x C-o) end timer (out-timer)
+	 CLOCK: [2015-11-28 Sat 18:01]--[2015-11-28 Sat 18:03] =>  0:02
+	 
+	 
+	 
+
+	
+
+		[2015-01-12 Mon]
+		(OlexP script to start Houdini)
+		alias hdk='hdktmp=`pwd`; cd $HFS; source houdini_setup; cd $hdktmp; unset hdkt
+
+		While playing with Gnus, I've recovered an old e-mail from Richard,
+		he sent me a few pdf's on machine learning, among which was:
+		[[file:~/Documents/Machine%20Learning%20in%20Action.pdf][file:~/Documents/Machine Learning in Action.pdf]]

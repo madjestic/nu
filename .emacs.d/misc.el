@@ -11,6 +11,16 @@
   "Load a file in current user's configuration directory"
   (load-file (expand-file-name file user-init-dir)))
 
+(defun load-gnus ()
+  "load Gnus config files"
+  (interactive)
+  (load-user-file "gnus.el"))
+
+(defun load-jabber ()
+  "load Jabber config files"
+  (interactive)
+  (load-user-file "jabber.el"))
+
 (defun load-circe ()
   "load Circe config files"
   (interactive)
@@ -122,3 +132,9 @@
 (global-set-key (kbd "M-<up>") 'move-text-up)
 (global-set-key (kbd "M-<down>") 'move-text-down)
 (global-set-key (kbd "M-^") 'server-force-delete)
+
+(defun jabber ()
+    (interactive)
+		(load-jabber)
+;;		(jabber-connect)
+    (switch-to-buffer "*-jabber-*"))
