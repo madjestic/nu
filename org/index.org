@@ -28,6 +28,10 @@ emerge --depclean
 # revdep-rebuild
 revdep-rebuild -ip
 
+# timer/date update
+nu madjestic # hwclock --set --date="12/21/2015 19:23:00"
+nu madjestic # hwclock --hctosys --localtime
+
 ** ### Kernel Upgrade     ###
 # copy old config
 
@@ -391,7 +395,8 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 			 CLOCK: [2015-11-30 Mon 19:12]--[2015-11-30 Mon 19:13] =>  0:01
 ******* TODO : in C++
 				CLOCK: [2015-11-30 Mon 19:13]--[2015-11-30 Mon 19:22] =>  0:09
-				
+				[[~/.contexts/OpenGL_Bible/src/my_first_spinning_cube]] - seems like a good starting point for a spinning textured triangle
+				<2015-12-28 Mon>
 ******* TODO : in Haskell			 
 ** FRP
 *** Reactive Banana
@@ -611,7 +616,7 @@ Sat Apr 26 16:03:45 CEST 2014
 ** Camalot
 	 Curvature filter: Instead of failing back onto 'All' - sort by attribute and leave 1 (or more)
 
-*** TODO If I win this tomorrow, get myself "Pathologic HD" as a present
+*** DONE If I win this tomorrow, get myself "Pathologic HD" as a present
 		http://www.gog.com/game/pathologic_classic_hd
 		<2015-11-10 Tue>
 		
@@ -1052,9 +1057,15 @@ Sat Apr 26 16:03:45 CEST 2014
 * MIDI :music::synt:
 	Ardouro
 	BitWig
-	http://proaudio.tuxfamily.org/wiki/index.php?title=Realtime_(RT)_Kernel
+
+	[[http://proaudio.tuxfamily.org/wiki/index.php?title%3DRealtime_(RT)_Kernel][http://proaudio.tuxfamily.org/wiki/index.php?title=Realtime_(RT)_Kernel]]
 	https://wiki.gentoo.org/wiki/Project:Sound/How_to_Enable_Realtime_for_Multimedia_Applications
 	https://packages.gentoo.org/packages/media-plugins/calf
+
+	https://forums.gentoo.org/viewtopic-p-7330590.html?sid=1fa73569fe3439e99b81625808e0f794
+	http://gentoostudio.org/?p=maninstall&s=kernel
+	http://www.gentoo-wiki.info/Jack
+	<2015-12-27 Sun>
 	
 * History
 	[[/home/madjestic/houdini/houdini/python2.7libs/dopparticlefluidtoolutils.py]]

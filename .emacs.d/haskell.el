@@ -11,9 +11,7 @@
  '(haskell-tags-on-save t))
 
 (global-set-key (kbd "C-c C-k") 'haskell-process-load-file)
-
 (global-set-key (kbd "C-c l") 'linum-mode)
-
 (global-set-key (kbd "C-;") 'iedit-mode)
 
 (require 'flymake-haskell-multi)
@@ -28,9 +26,18 @@
 (turn-on-haskell-doc-mode)
 (interactive-haskell-mode)
 
-(paredit-mode)
-(global-set-key (kbd "M-s") 'paredit-splice-sexp)
+;; (paredit-mode)
+;; (global-set-key (kbd "M-s") 'paredit-splice-sexp)
 
 (add-to-list 'yas/root-directory "~/.emacs.d/snippets/haskell-mode")
-(yas/initialize)
+;;(yas/initialize)
+
+(sr-speedbar)
+(speedbar-add-supported-extension ".hs")
+(speedbar-add-supported-extension ".vert")
+(speedbar-add-supported-extension ".frag")
+(speedbar-add-supported-extension ".tga")
+(speedbar-add-supported-extension ".glsl")
+(setq speedbar-show-unknown-files t)
+(sr-speedbar-open)
 

@@ -11,6 +11,12 @@
   "Load a file in current user's configuration directory"
   (load-file (expand-file-name file user-init-dir)))
 
+(defun load-helm ()
+  "load Helm config files"
+  (interactive)
+  (load-user-file "helm.el"))
+
+
 (defun load-gnus ()
   "load Gnus config files"
   (interactive)
@@ -129,8 +135,8 @@
 (global-set-key (kbd "C-;") 'iedit-mode)
 (global-set-key (kbd "M-+") 'text-scale-increase)
 (global-set-key (kbd "M-_") 'text-scale-decrease)
-(global-set-key (kbd "M-<up>") 'move-text-up)
-(global-set-key (kbd "M-<down>") 'move-text-down)
+(global-set-key (kbd "M-S-<up>") 'move-text-up)
+(global-set-key (kbd "M-S-<down>") 'move-text-down)
 (global-set-key (kbd "M-^") 'server-force-delete)
 
 (defun jabber ()

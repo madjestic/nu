@@ -18,8 +18,9 @@
 
 
 (add-hook 'haskell-mode-hook
-          (lambda()						
-						(load-haskell)))
+          (lambda()
+						(load-haskell)
+						(load-helm)))
 
 (add-hook 'circe-mode-hook
           (lambda()
