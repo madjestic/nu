@@ -72,6 +72,22 @@ git commit -a
 # write the changes
 git push
 
+# list latest commits:
+git log | head
+# commit aed9a0bd3e6ce9168af728991ae85a754a25573a
+# Author: madjestic <madjestic13@gmail.com>
+# Date:   Mon Dec 28 01:29:18 2015 +0100
+
+#     adding things before breaking things
+
+# commit 3a7658b872396f377ac6473f2c827bff0e0d7160
+# Author: madjestic <madjestic13@gmail.com>
+# Date:   Tue Dec 15 09:37:05 2015 +0100
+
+# list files in a commit:
+git ls-tree --name-only aed9a0bd3e6ce9168af728991ae85a754a25573a
+<2015-12-28 Mon>
+
 # syncing a fork:
 [[https://help.github.com/articles/syncing-a-fork/][Syncing a fork]]
 
@@ -155,6 +171,36 @@ C-u M-! date   | to insert date |
 	and do stuff to each file:"
 	[[file:/usr/local/include/Field3D/relink.sh]]
 	[[~/Documents/Bourne_Shell_Scripting.pdf]]
+* b1
+	Stock Exchange programe, written in Haskell
+	[[madjestic/Projects/b1/]]
+** TODO : Broken, fix it:
+	 [[https://github.com/btmura/b1/issues/5][compile error: Ambiguous occurrence ‘defaultTimeLocale’]]
+	 [ 5 of 48] Compiling B1.Data.Price.Google ( src/B1/Data/Price/Google.hs, dist/dist-sandbox-d2346a33/build/b1-chart/b1-chart-tmp/B1/Data/Price/Google.o )
+
+	 src/B1/Data/Price/Google.hs:25:29:
+	 Ambiguous occurrence ‘defaultTimeLocale’
+	 It could refer to either ‘Data.Time.defaultTimeLocale’,
+	 imported from ‘Data.Time’ at src/B1/Data/Price/Google.hs:9:1-16
+	 (and originally defined in ‘time-1.5.0.1:Data.Time.Format.Locale’)
+	 or ‘System.Locale.defaultTimeLocale’,
+	 imported from ‘System.Locale’ at src/B1/Data/Price/Google.hs:13:1-20
+	 
+	 src/B1/Data/Price/Google.hs:98:13:
+	 Ambiguous occurrence ‘defaultTimeLocale’
+	 It could refer to either ‘Data.Time.defaultTimeLocale’,
+	 imported from ‘Data.Time’ at src/B1/Data/Price/Google.hs:9:1-16
+	 (and originally defined in ‘time-1.5.0.1:Data.Time.Format.Locale’)
+	 or ‘System.Locale.defaultTimeLocale’,
+	 imported from ‘System.Locale’ at src/B1/Data/Price/Google.hs:13:1-20
+	 cabal: Error: some packages failed to install:
+	 b1-0.1 failed during the building phase. The exception was:
+	 ExitFailure 1
+	 
+* Assembler
+	I started doing some examples from [[*Assembler][Столяров Ассемблер]]
+	[[/home/madjestic/Projects/ASM]]
+	<2015-12-30 Wed>
 * Xmonad
 ** DONE : assign hot-keys for brightness-up/brightness down
 ** DONE : assign hot-keys for volume up/down
@@ -397,6 +443,18 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 				CLOCK: [2015-11-30 Mon 19:13]--[2015-11-30 Mon 19:22] =>  0:09
 				[[~/.contexts/OpenGL_Bible/src/my_first_spinning_cube]] - seems like a good starting point for a spinning textured triangle
 				<2015-12-28 Mon>
+
+******** DONE : De-couple the shader from the main code
+				 Make it use an outside shader call, like in 
+				[[%20~/Projects/OpenGL/sb7code/src/my_first_textured_torus][ ~/Projects/OpenGL/sb7code/src/my_first_textured_torus]]
+				<2015-12-31 Thu>
+				
+				Finished here:
+				[[/home/madjestic/Projects/OpenGL/sb7code/src/my_first_textured_triangle/]]
+				<2016-01-01 Fri>
+
+******** TODO : Change the shader so that it uses a texture
+				 <2015-12-31 Thu>
 ******* TODO : in Haskell			 
 ** FRP
 *** Reactive Banana
@@ -500,6 +558,9 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 	A simple game project: similar to Angry birds, but in space with planets.  A dynamics-based (gravity, gravitational pool of planets).
 	<2015-12-04 Fri>
 
+* Showreeel / Demoreel
+	[[/home/madjestic/Projects/Houdini/Mantra/tests]]
+	<2016-01-02 Sat>
 * Study
 ** M140: Introducing Statistics
 *** DONE : TMA02:
@@ -764,7 +825,13 @@ Sat Apr 26 16:03:45 CEST 2014
 		 the approach of iteratively estimating training values based on estimates of
 		 successor state values can be proven to converge toward perfect estimates of V_train
 
-		 performance system, critic; generalizer, and experiment generator. Many machine learning systems can-be usefully characterized in terms of these four generic modules.
+		 performance system, critic; generalizer, and experiment generator. Many machine learning systems can-be usefully characterized in 
+
+** Database engines (SQL/NoSQL)
+	 https://www.digitalocean.com/community/tutorials/understanding-sql-and-nosql-databases-and-different-database-models
+	 https://www.digitalocean.com/community/tutorials/a-comparison-of-nosql-database-management-systems-and-models
+	 https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems
+	 <2016-01-04 Mon>
 * Cognitive science
 	P != NP
 	http://en.wikipedia.org/wiki/P_versus_NP_problem
@@ -905,6 +972,14 @@ Sat Apr 26 16:03:45 CEST 2014
 	http://127.0.0.1:48626/render/
 	http://127.0.0.1:48626/vex/contexts/shading_contexts
 
+** TODO :	Investigate Mario's glass shader:
+	[[/home/madjestic/Projects/Houdini/Experiment_with_glass/Marios_Shader/trans_test_v1r15_for_post2.hipnc]]
+	https://www.boundless.com/physics/textbooks/boundless-physics-textbook/geometric-optics-24/reflection-refraction-and-dispersion-169/dispersion-rainbows-and-prisims-611-6326/
+	http://forums.odforce.net/topic/6925-dispersion-bsdf/page-3
+	[[/home/madjestic/Projects/Houdini/Experiment_with_glass/Dispersion]] Dispersion glass shader, very interesting prismatic effects
+	
+	<2016-01-04 Mon>
+
 ** tests
 	 [[/home/madjestic/Projects/Houdini/Mantra/tests/test_01.hipnc]]
 	 A simple sphere, occlusion, GI.
@@ -915,6 +990,13 @@ Sat Apr 26 16:03:45 CEST 2014
 	 [[/home/madjestic/Projects/Houdini/Mantra/tests/test_03.hipnc]]
 	 Basic shapes, experiments with shading
 	 
+** PBR
+	 [[/home/madjestic/Documents/pbr.pdf]]
+	 Physically Based Rendering
+	 <2016-01-05 Tue>
+** Wireframe rendering
+	 [[/home/madjestic/Projects/Houdini/Render/Wire_Frame_Render/model.hipnc]]
+	 <2016-01-05 Tue>
 * iptables
 	https://wiki.archlinux.org/index.php/Iptables
 	https://wiki.gentoo.org/wiki/Iptables#IPv6.5B2.5D.5B.E2.80.93_1.5D
@@ -1054,6 +1136,9 @@ Sat Apr 26 16:03:45 CEST 2014
 	 https://github.com/Nadrieril/xmonad-config/blob/master/xmonad.hs
 	 http://stackoverflow.com/questions/20446348/xmonad-toggle-fullscreen-xmobar
 	 
+** DONE : make (sr-speedbar-open) a shortcut in cpp.el
+	 <2016-01-03 Sun>
+** TODO : sidefx bug-report node changing position in the network view when an object is created by C-LMB on a Shelf
 * MIDI :music::synt:
 	Ardouro
 	BitWig

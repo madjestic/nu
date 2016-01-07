@@ -23,9 +23,9 @@
 ;; ;; (define-key ggtags-mode-map (kbd "M-.") 'ggtags-find-tag-dwim)
 
 ;; Package: smartparens
-;; (require 'smartparens-config)
-;; (show-smartparens-global-mode +1)
-;; (smartparens-global-mode 1)
+(require 'smartparens-config)
+(show-smartparens-global-mode +1)
+(smartparens-global-mode 1)
 
 ;; when you press RET, the curly braces automatically
 ;; add another newline
@@ -65,6 +65,7 @@
 (define-key helm-gtags-mode-map (kbd "C-c >") 'helm-gtags-next-history)
 
 (global-set-key (kbd "C-x r b") 'helm-bookmarks)
+(global-set-key (kbd "C-x C-b") 'helm-buffer-list)
 (global-set-key (kbd "C-x C-m") 'helm-M-x)
 (global-set-key (kbd "M-y") 'helm-show-kill-ring)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
@@ -96,7 +97,9 @@
 (speedbar-add-supported-extension ".tga")
 (speedbar-add-supported-extension ".glsl")
 (setq speedbar-show-unknown-files t)
-(sr-speedbar-open)
+(global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
+;; do the same with minimap and make it into misc.el
+;; (sr-speedbar-open)
 
 (load-user-file "cedet.el")
 

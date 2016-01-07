@@ -1,0 +1,2916 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE kvtml PUBLIC "kvtml2.dtd" "http://edu.kde.org/kvtml/kvtml2.dtd">
+<kvtml version="2.0">
+  <information>
+    <generator>kwordquiz 0.9.2</generator>
+    <title>02.kvtml</title>
+    <date>2016-01-07</date>
+  </information>
+  <identifiers>
+    <identifier id="0">
+      <name>Column 1</name>
+      <locale>en</locale>
+    </identifier>
+    <identifier id="1">
+      <name>Column 2</name>
+      <locale>en</locale>
+    </identifier>
+  </identifiers>
+  <entries>
+    <entry id="0">
+      <translation id="0">
+        <text>opzicht</text>
+      </translation>
+      <translation id="1">
+        <text>respect, (rekening houdend met) with respect</text>
+      </translation>
+    </entry>
+    <entry id="1">
+      <translation id="0">
+        <text>bezadigd</text>
+      </translation>
+      <translation id="1">
+        <text>sober, level-headed, dispassionate</text>
+      </translation>
+    </entry>
+    <entry id="2">
+      <translation id="0">
+        <text>tijdperk</text>
+      </translation>
+      <translation id="1">
+        <text>period, age, era</text>
+      </translation>
+    </entry>
+    <entry id="3">
+      <translation id="0">
+        <text>ondergoed</text>
+      </translation>
+      <translation id="1">
+        <text>underwear</text>
+      </translation>
+    </entry>
+    <entry id="4">
+      <translation id="0">
+        <text>optrekken</text>
+      </translation>
+      <translation id="1">
+        <text>to excercise, accelerate, be busy (with), take care (of); pull up, haul up, raise</text>
+      </translation>
+    </entry>
+    <entry id="5">
+      <translation id="0">
+        <text>voorgekomen</text>
+      </translation>
+      <translation id="1">
+        <text>past tense of 'voorkomen'</text>
+      </translation>
+    </entry>
+    <entry id="6">
+      <translation id="0">
+        <text>voorkomen</text>
+      </translation>
+      <translation id="1">
+        <text>appearance, bearing, occurrence, incidence</text>
+      </translation>
+    </entry>
+    <entry id="7">
+      <translation id="0">
+        <text>schijnen</text>
+      </translation>
+      <translation id="1">
+        <text>appearance, semblance:</text>
+      </translation>
+    </entry>
+    <entry id="8">
+      <translation id="0">
+        <text>verschijnen (verschenen)</text>
+      </translation>
+      <translation id="1">
+        <text>appear, surface, emerge, turn up</text>
+      </translation>
+    </entry>
+    <entry id="9">
+      <translation id="0">
+        <text>vervallen</text>
+      </translation>
+      <translation id="1">
+        <text>decline</text>
+      </translation>
+    </entry>
+    <entry id="10">
+      <translation id="0">
+        <text>armoedige</text>
+      </translation>
+      <translation id="1">
+        <text>poor, shabby</text>
+      </translation>
+    </entry>
+    <entry id="11">
+      <translation id="0">
+        <text>flatgebouw</text>
+      </translation>
+      <translation id="1">
+        <text>flat, block of flats</text>
+      </translation>
+    </entry>
+    <entry id="12">
+      <translation id="0">
+        <text>nadat</text>
+      </translation>
+      <translation id="1">
+        <text>after</text>
+      </translation>
+    </entry>
+    <entry id="13">
+      <translation id="0">
+        <text>voltooid</text>
+      </translation>
+      <translation id="1">
+        <text>complete, finishedd</text>
+      </translation>
+    </entry>
+    <entry id="14">
+      <translation id="0">
+        <text>doorbrengen, bracht door, doorgrbracht</text>
+      </translation>
+      <translation id="1">
+        <text>to spend</text>
+      </translation>
+    </entry>
+    <entry id="15">
+      <translation id="0">
+        <text>afwezigheid</text>
+      </translation>
+      <translation id="1">
+        <text>absence: tijdens Pauls afwezigheid during Paul's absence; in (bij) afwezigheid van in the absence of; (verstrooidheid) absent-mindedness: in een ogenblik van afwezigheid in a forgetful moment, in a momentary fit of absent-mindedness</text>
+      </translation>
+    </entry>
+    <entry id="16">
+      <translation id="0">
+        <text>wenkbrauw</text>
+      </translation>
+      <translation id="1">
+        <text>(eye)brow: de wenkbrauwen fronsen frown</text>
+      </translation>
+    </entry>
+    <entry id="17">
+      <translation id="0">
+        <text>eindigen</text>
+      </translation>
+      <translation id="1">
+        <text>(ophouden) end, finish, come to an end, stop: eindigen waar men begonnen is end up where one started (from); (als einde hebben) end, finish, come to an end, terminate, (tijd ook) run out, (tijd ook) expire: dit woord eindigt op een klinker this word ends in a vowel; zij eindigde als eerste she finished first</text>
+      </translation>
+    </entry>
+    <entry id="18">
+      <translation id="0">
+        <text>teleurstellen</text>
+      </translation>
+      <translation id="1">
+        <text>disappoint, let down, be disappointing: zich teleurgesteld voelen feel disappointed; stel mij niet teleur don't let me down; teleurgesteld zijn over iets (iem.) be disappointed with sth. (in s.o.)</text>
+      </translation>
+    </entry>
+    <entry id="19">
+      <translation id="0">
+        <text>teleurstellend</text>
+      </translation>
+      <translation id="1">
+        <text>disappointing</text>
+      </translation>
+    </entry>
+    <entry id="20">
+      <translation id="0">
+        <text>been</text>
+      </translation>
+      <translation id="1">
+        <text>leg, bone</text>
+      </translation>
+    </entry>
+    <entry id="21">
+      <translation id="0">
+        <text>broos</text>
+      </translation>
+      <translation id="1">
+        <text>fragile, delicate, frail</text>
+      </translation>
+    </entry>
+    <entry id="22">
+      <translation id="0">
+        <text>uitzien</text>
+      </translation>
+      <translation id="1">
+        <text>(tot uitzicht hebben) face, front, look out on: een kamer die op zee uitziet a room with a view of the sea, a room facing the sea</text>
+      </translation>
+    </entry>
+    <entry id="23">
+      <translation id="0">
+        <text>schildpadmontuur</text>
+      </translation>
+      <translation id="1">
+        <text>turtle frame (glasses)</text>
+      </translation>
+    </entry>
+    <entry id="24">
+      <translation id="0">
+        <text>bidden</text>
+      </translation>
+      <translation id="1">
+        <text>pray</text>
+      </translation>
+    </entry>
+    <entry id="25">
+      <translation id="0">
+        <text>nogal</text>
+      </translation>
+      <translation id="1">
+        <text>quite, fairly, pretty, ik vind het nogal duur</text>
+      </translation>
+    </entry>
+    <entry id="26">
+      <translation id="0">
+        <text>schedel</text>
+      </translation>
+      <translation id="1">
+        <text>skull</text>
+      </translation>
+    </entry>
+    <entry id="27">
+      <translation id="0">
+        <text>elkaar</text>
+      </translation>
+      <translation id="1">
+        <text>each other, one another</text>
+      </translation>
+    </entry>
+    <entry id="28">
+      <translation id="0">
+        <text>ruiten</text>
+      </translation>
+      <translation id="1">
+        <text>checkerd (diamonds)</text>
+      </translation>
+    </entry>
+    <entry id="29">
+      <translation id="0">
+        <text>ruiten</text>
+      </translation>
+      <translation id="1">
+        <text>(window)pane, window 2 (vierhoek) diamond (ook kaartspel), (patroon in textiel e.d.) check</text>
+      </translation>
+    </entry>
+    <entry id="30">
+      <translation id="0">
+        <text>evenveel</text>
+      </translation>
+      <translation id="1">
+        <text>(just) as much, (vóór zelfstandig naamwoord) just as, equally: iedereen heeft er evenveel recht op everyone is equally entitled to it; ieder krijgt evenveel everyone gets the same amount</text>
+      </translation>
+    </entry>
+    <entry id="31">
+      <translation id="0">
+        <text>bij elkaar</text>
+      </translation>
+      <translation id="1">
+        <text>altogether</text>
+      </translation>
+    </entry>
+    <entry id="32">
+      <translation id="0">
+        <text>opzicht</text>
+      </translation>
+      <translation id="1">
+        <text>respect, aspect: ten opzichte van (a) (in vergelijking met) compared with (of: to), in relation to; (b) (rekening houdend met) with respect (of: regard) to, as regards; in geen enkel opzicht in no way, not in any sense</text>
+      </translation>
+    </entry>
+    <entry id="33">
+      <translation id="0">
+        <text>gehakt</text>
+      </translation>
+      <translation id="1">
+        <text>minced meat, mince</text>
+      </translation>
+    </entry>
+    <entry id="34">
+      <translation id="0">
+        <text>meestal</text>
+      </translation>
+      <translation id="1">
+        <text>mostly, usually</text>
+      </translation>
+    </entry>
+    <entry id="35">
+      <translation id="0">
+        <text>naartoe</text>
+      </translation>
+      <translation id="1">
+        <text>where to (heen)</text>
+      </translation>
+    </entry>
+    <entry id="36">
+      <translation id="0">
+        <text>heen</text>
+      </translation>
+      <translation id="1">
+        <text>where to (naartoe)</text>
+      </translation>
+    </entry>
+    <entry id="37">
+      <translation id="0">
+        <text>weliswaar</text>
+      </translation>
+      <translation id="1">
+        <text>it's true, to be sure</text>
+      </translation>
+    </entry>
+    <entry id="38">
+      <translation id="0">
+        <text>veilig</text>
+      </translation>
+      <translation id="1">
+        <text>safe, secure</text>
+      </translation>
+    </entry>
+    <entry id="39">
+      <translation id="0">
+        <text>voort</text>
+      </translation>
+      <translation id="1">
+        <text>on(wards), forward</text>
+      </translation>
+    </entry>
+    <entry id="40">
+      <translation id="0">
+        <text>ontwikkelen</text>
+      </translation>
+      <translation id="1">
+        <text>develop</text>
+      </translation>
+    </entry>
+    <entry id="41">
+      <translation id="0">
+        <text>inspelen</text>
+      </translation>
+      <translation id="1">
+        <text>anticipate, take advantage of</text>
+      </translation>
+    </entry>
+    <entry id="42">
+      <translation id="0">
+        <text>feit</text>
+      </translation>
+      <translation id="1">
+        <text>fact, circumstance</text>
+      </translation>
+    </entry>
+    <entry id="43">
+      <translation id="0">
+        <text>opdracht</text>
+      </translation>
+      <translation id="1">
+        <text>assignment</text>
+      </translation>
+    </entry>
+    <entry id="44">
+      <translation id="0">
+        <text>opdrachtregel</text>
+      </translation>
+      <translation id="1">
+        <text>command-line-interface</text>
+      </translation>
+    </entry>
+    <entry id="45">
+      <translation id="0">
+        <text>intikken</text>
+      </translation>
+      <translation id="1">
+        <text>type in/enter</text>
+      </translation>
+    </entry>
+    <entry id="46">
+      <translation id="0">
+        <text>aanwezig</text>
+      </translation>
+      <translation id="1">
+        <text>present</text>
+      </translation>
+    </entry>
+    <entry id="47">
+      <translation id="0">
+        <text>beheerder</text>
+      </translation>
+      <translation id="1">
+        <text>Administrator</text>
+      </translation>
+    </entry>
+    <entry id="48">
+      <translation id="0">
+        <text>stilleggen</text>
+      </translation>
+      <translation id="1">
+        <text>stop, shut down, close down</text>
+      </translation>
+    </entry>
+    <entry id="49">
+      <translation id="0">
+        <text>inschakelen</text>
+      </translation>
+      <translation id="1">
+        <text>to turn on</text>
+      </translation>
+    </entry>
+    <entry id="50">
+      <translation id="0">
+        <text>overigens</text>
+      </translation>
+      <translation id="1">
+        <text>anyway, for that matter, though</text>
+      </translation>
+    </entry>
+    <entry id="51">
+      <translation id="0">
+        <text>wellicht</text>
+      </translation>
+      <translation id="1">
+        <text>perhaps</text>
+      </translation>
+    </entry>
+    <entry id="52">
+      <translation id="0">
+        <text>vermeld</text>
+      </translation>
+      <translation id="1">
+        <text>Stated, mentioned (like in a contract)</text>
+      </translation>
+    </entry>
+    <entry id="53">
+      <translation id="0">
+        <text>aanleiding</text>
+      </translation>
+      <translation id="1">
+        <text>occasion</text>
+      </translation>
+    </entry>
+    <entry id="54">
+      <translation id="0">
+        <text>verwijder</text>
+      </translation>
+      <translation id="1">
+        <text>remove</text>
+      </translation>
+    </entry>
+    <entry id="55">
+      <translation id="0">
+        <text>uitgave</text>
+      </translation>
+      <translation id="1">
+        <text>edition</text>
+      </translation>
+    </entry>
+    <entry id="56">
+      <translation id="0">
+        <text>voordelen</text>
+      </translation>
+      <translation id="1">
+        <text>advantages</text>
+      </translation>
+    </entry>
+    <entry id="57">
+      <translation id="0">
+        <text>dwang</text>
+      </translation>
+      <translation id="1">
+        <text>compulsive</text>
+      </translation>
+    </entry>
+    <entry id="58">
+      <translation id="0">
+        <text>steun</text>
+      </translation>
+      <translation id="1">
+        <text>support</text>
+      </translation>
+    </entry>
+    <entry id="59">
+      <translation id="0">
+        <text>korten</text>
+      </translation>
+      <translation id="1">
+        <text>cut</text>
+      </translation>
+    </entry>
+    <entry id="60">
+      <translation id="0">
+        <text>beperkt</text>
+      </translation>
+      <translation id="1">
+        <text>limited</text>
+      </translation>
+    </entry>
+    <entry id="61">
+      <translation id="0">
+        <text>toonen</text>
+      </translation>
+      <translation id="1">
+        <text>show</text>
+      </translation>
+    </entry>
+    <entry id="62">
+      <translation id="0">
+        <text>toonde</text>
+      </translation>
+      <translation id="1">
+        <text>showed</text>
+      </translation>
+    </entry>
+    <entry id="63">
+      <translation id="0">
+        <text>meting</text>
+      </translation>
+      <translation id="1">
+        <text>measurement</text>
+      </translation>
+    </entry>
+    <entry id="64">
+      <translation id="0">
+        <text>uitvoeren</text>
+      </translation>
+      <translation id="1">
+        <text>export, perform, carry out</text>
+      </translation>
+    </entry>
+    <entry id="65">
+      <translation id="0">
+        <text>aardgas</text>
+      </translation>
+      <translation id="1">
+        <text>natural gas</text>
+      </translation>
+    </entry>
+    <entry id="66">
+      <translation id="0">
+        <text>oorzaak</text>
+      </translation>
+      <translation id="1">
+        <text>cause, origin</text>
+      </translation>
+    </entry>
+    <entry id="67">
+      <translation id="0">
+        <text>oorzaak en gevolg</text>
+      </translation>
+      <translation id="1">
+        <text>cause and effect</text>
+      </translation>
+    </entry>
+    <entry id="68">
+      <translation id="0">
+        <text>rendement</text>
+      </translation>
+      <translation id="1">
+        <text>efficiency</text>
+      </translation>
+    </entry>
+    <entry id="69">
+      <translation id="0">
+        <text>opwekking</text>
+      </translation>
+      <translation id="1">
+        <text>stimulus, excitement</text>
+      </translation>
+    </entry>
+    <entry id="70">
+      <translation id="0">
+        <text>opgave</text>
+      </translation>
+      <translation id="1">
+        <text>statement, task</text>
+      </translation>
+    </entry>
+    <entry id="71">
+      <translation id="0">
+        <text>onver</text>
+      </translation>
+      <translation id="1">
+        <text>unexpected</text>
+      </translation>
+    </entry>
+    <entry id="72">
+      <translation id="0">
+        <text>overblijven</text>
+      </translation>
+      <translation id="1">
+        <text>be left, remain:</text>
+      </translation>
+    </entry>
+    <entry id="73">
+      <translation id="0">
+        <text>invloed</text>
+      </translation>
+      <translation id="1">
+        <text>influence</text>
+      </translation>
+    </entry>
+    <entry id="74">
+      <translation id="0">
+        <text>hoever</text>
+      </translation>
+      <translation id="1">
+        <text>how far</text>
+      </translation>
+    </entry>
+    <entry id="75">
+      <translation id="0">
+        <text>redelijk</text>
+      </translation>
+      <translation id="1">
+        <text>rational</text>
+      </translation>
+    </entry>
+    <entry id="76">
+      <translation id="0">
+        <text>afwezigheid</text>
+      </translation>
+      <translation id="1">
+        <text>absence</text>
+      </translation>
+    </entry>
+    <entry id="77">
+      <translation id="0">
+        <text>beschikken over</text>
+      </translation>
+      <translation id="1">
+        <text>have; possess; own</text>
+      </translation>
+    </entry>
+    <entry id="78">
+      <translation id="0">
+        <text>toegankelijk</text>
+      </translation>
+      <translation id="1">
+        <text>accessible, approachable:</text>
+      </translation>
+    </entry>
+    <entry id="79">
+      <translation id="0">
+        <text>oplossingen</text>
+      </translation>
+      <translation id="1">
+        <text>solution</text>
+      </translation>
+    </entry>
+    <entry id="80">
+      <translation id="0">
+        <text>sjoemelen</text>
+      </translation>
+      <translation id="1">
+        <text>cheat</text>
+      </translation>
+    </entry>
+    <entry id="81">
+      <translation id="0">
+        <text>gewoon</text>
+      </translation>
+      <translation id="1">
+        <text>usual, regular</text>
+      </translation>
+    </entry>
+    <entry id="82">
+      <translation id="0">
+        <text>vakgebeid</text>
+      </translation>
+      <translation id="1">
+        <text>field</text>
+      </translation>
+    </entry>
+    <entry id="83">
+      <translation id="0">
+        <text>gelegen</text>
+      </translation>
+      <translation id="1">
+        <text>situated, convenient</text>
+      </translation>
+    </entry>
+    <entry id="84">
+      <translation id="0">
+        <text>baat</text>
+      </translation>
+      <translation id="1">
+        <text>benefit, advantage</text>
+      </translation>
+    </entry>
+    <entry id="85">
+      <translation id="0">
+        <text>betreffen</text>
+      </translation>
+      <translation id="1">
+        <text>concern, regard, wat mij betreft is - as far as I'm concerned</text>
+      </translation>
+    </entry>
+    <entry id="86">
+      <translation id="0">
+        <text>ontstaan</text>
+      </translation>
+      <translation id="1">
+        <text>origin, creation (van de aarde), development, coming into existence</text>
+      </translation>
+    </entry>
+    <entry id="87">
+      <translation id="0">
+        <text>misgaan</text>
+      </translation>
+      <translation id="1">
+        <text>go wrong</text>
+      </translation>
+    </entry>
+    <entry id="88">
+      <translation id="0">
+        <text>gevaar</text>
+      </translation>
+      <translation id="1">
+        <text>danger, risk</text>
+      </translation>
+    </entry>
+    <entry id="89">
+      <translation id="0">
+        <text>gehakt</text>
+      </translation>
+      <translation id="1">
+        <text>minced meat, mince</text>
+      </translation>
+    </entry>
+    <entry id="90">
+      <translation id="0">
+        <text>meestal</text>
+      </translation>
+      <translation id="1">
+        <text>mostly, usually</text>
+      </translation>
+    </entry>
+    <entry id="91">
+      <translation id="0">
+        <text>lek</text>
+      </translation>
+      <translation id="1">
+        <text>leak</text>
+      </translation>
+    </entry>
+    <entry id="92">
+      <translation id="0">
+        <text>kant-en-klare</text>
+      </translation>
+      <translation id="1">
+        <text>helemaal klaar voor gebruik</text>
+      </translation>
+    </entry>
+    <entry id="93">
+      <translation id="0">
+        <text>aanbieder</text>
+      </translation>
+      <translation id="1">
+        <text>provider</text>
+      </translation>
+    </entry>
+    <entry id="94">
+      <translation id="0">
+        <text>volledig</text>
+      </translation>
+      <translation id="1">
+        <text>full, complete</text>
+      </translation>
+    </entry>
+    <entry id="95">
+      <translation id="0">
+        <text>beschikbaar</text>
+      </translation>
+      <translation id="1">
+        <text>available</text>
+      </translation>
+    </entry>
+    <entry id="96">
+      <translation id="0">
+        <text>reeds</text>
+      </translation>
+      <translation id="1">
+        <text>already</text>
+      </translation>
+    </entry>
+    <entry id="97">
+      <translation id="0">
+        <text>aan de slag</text>
+      </translation>
+      <translation id="1">
+        <text>on the go, (hard) at work</text>
+      </translation>
+    </entry>
+    <entry id="98">
+      <translation id="0">
+        <text>afschermen</text>
+      </translation>
+      <translation id="1">
+        <text>screen, protect</text>
+      </translation>
+    </entry>
+    <entry id="99">
+      <translation id="0">
+        <text>ervoor</text>
+      </translation>
+      <translation id="1">
+        <text>in front (of)</text>
+      </translation>
+    </entry>
+    <entry id="100">
+      <translation id="0">
+        <text>toegang</text>
+      </translation>
+      <translation id="1">
+        <text>entrance, access</text>
+      </translation>
+    </entry>
+    <entry id="101">
+      <translation id="0">
+        <text>verschaffen</text>
+      </translation>
+      <translation id="1">
+        <text>provide (with), supply (with)</text>
+      </translation>
+    </entry>
+    <entry id="102">
+      <translation id="0">
+        <text>herstel</text>
+      </translation>
+      <translation id="1">
+        <text>correction</text>
+      </translation>
+    </entry>
+    <entry id="103">
+      <translation id="0">
+        <text>herstelmogelijkheden</text>
+      </translation>
+      <translation id="1">
+        <text>recoverability</text>
+      </translation>
+    </entry>
+    <entry id="104">
+      <translation id="0">
+        <text>drijfveer</text>
+      </translation>
+      <translation id="1">
+        <text>motive</text>
+      </translation>
+    </entry>
+    <entry id="105">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="106">
+      <translation id="0">
+        <text>waarborgen</text>
+      </translation>
+      <translation id="1">
+        <text>guarantee, security</text>
+      </translation>
+    </entry>
+    <entry id="107">
+      <translation id="0">
+        <text>simpelweg</text>
+      </translation>
+      <translation id="1">
+        <text>just</text>
+      </translation>
+    </entry>
+    <entry id="108">
+      <translation id="0">
+        <text>blijken</text>
+      </translation>
+      <translation id="1">
+        <text>prove, turn out:</text>
+      </translation>
+    </entry>
+    <entry id="109">
+      <translation id="0">
+        <text>bestaan</text>
+      </translation>
+      <translation id="1">
+        <text>existence: die firma viert vandaag haar vijftigjarig bestaan that firm is celebrating its fiftieth anniversary today, possibility, (+ uit) consist (of)</text>
+      </translation>
+    </entry>
+    <entry id="110">
+      <translation id="0">
+        <text>geacht</text>
+      </translation>
+      <translation id="1">
+        <text>respected, esteemed</text>
+      </translation>
+    </entry>
+    <entry id="111">
+      <translation id="0">
+        <text>besmet</text>
+      </translation>
+      <translation id="1">
+        <text>infected, contaminated</text>
+      </translation>
+    </entry>
+    <entry id="112">
+      <translation id="0">
+        <text>verzamelen</text>
+      </translation>
+      <translation id="1">
+        <text>collect</text>
+      </translation>
+    </entry>
+    <entry id="113">
+      <translation id="0">
+        <text>bende</text>
+      </translation>
+      <translation id="1">
+        <text>gang, pack</text>
+      </translation>
+    </entry>
+    <entry id="114">
+      <translation id="0">
+        <text>ofwel</text>
+      </translation>
+      <translation id="1">
+        <text>either ... or, de cobra ofwel brilslang the cobra, or hooded snake</text>
+      </translation>
+    </entry>
+    <entry id="115">
+      <translation id="0">
+        <text>raken</text>
+      </translation>
+      <translation id="1">
+        <text>affect, hit, touch</text>
+      </translation>
+    </entry>
+    <entry id="116">
+      <translation id="0">
+        <text>voorstellen</text>
+      </translation>
+      <translation id="1">
+        <text>introduce, imagine, conceive,zich voorstellen aan introduce o.s. to, stel je voor! just imagine!</text>
+      </translation>
+    </entry>
+    <entry id="117">
+      <translation id="0">
+        <text>bewust</text>
+      </translation>
+      <translation id="1">
+        <text>concerned, involved: op die bewuste dag on the day in question, ik ben me niet bewust van, I am not aware of</text>
+      </translation>
+    </entry>
+    <entry id="118">
+      <translation id="0">
+        <text>de data bewust doorstuuren</text>
+      </translation>
+      <translation id="1">
+        <text>intentionaly send data</text>
+      </translation>
+    </entry>
+    <entry id="119">
+      <translation id="0">
+        <text>opvallen</text>
+      </translation>
+      <translation id="1">
+        <text>strike, be conspicuous, attract attention</text>
+      </translation>
+    </entry>
+    <entry id="120">
+      <translation id="0">
+        <text>omleiding</text>
+      </translation>
+      <translation id="1">
+        <text>detour</text>
+      </translation>
+    </entry>
+    <entry id="121">
+      <translation id="0">
+        <text>bepaald</text>
+      </translation>
+      <translation id="1">
+        <text>particular, specific</text>
+      </translation>
+    </entry>
+    <entry id="122">
+      <translation id="0">
+        <text>netjes</text>
+      </translation>
+      <translation id="1">
+        <text>neat, nice</text>
+      </translation>
+    </entry>
+    <entry id="123">
+      <translation id="0">
+        <text>vooraf</text>
+      </translation>
+      <translation id="1">
+        <text>beforehand</text>
+      </translation>
+    </entry>
+    <entry id="124">
+      <translation id="0">
+        <text>is nog veel erger</text>
+      </translation>
+      <translation id="1">
+        <text>is much worse</text>
+      </translation>
+    </entry>
+    <entry id="125">
+      <translation id="0">
+        <text>besef</text>
+      </translation>
+      <translation id="1">
+        <text>understanding, idea,</text>
+      </translation>
+    </entry>
+    <entry id="126">
+      <translation id="0">
+        <text>beseffen</text>
+      </translation>
+      <translation id="1">
+        <text>realize, be aware (of),</text>
+      </translation>
+    </entry>
+    <entry id="127">
+      <translation id="0">
+        <text>voor ik het besefte, had ik ja gezegd</text>
+      </translation>
+      <translation id="1">
+        <text>before I knew it, I had said yes</text>
+      </translation>
+    </entry>
+    <entry id="128">
+      <translation id="0">
+        <text>massaal</text>
+      </translation>
+      <translation id="1">
+        <text>massive</text>
+      </translation>
+    </entry>
+    <entry id="129">
+      <translation id="0">
+        <text>overgeleverd</text>
+      </translation>
+      <translation id="1">
+        <text>surrendered</text>
+      </translation>
+    </entry>
+    <entry id="130">
+      <translation id="0">
+        <text>afgeleiden</text>
+      </translation>
+      <translation id="1">
+        <text>derive (from), distract, lead away</text>
+      </translation>
+    </entry>
+    <entry id="131">
+      <translation id="0">
+        <text>ophouden</text>
+      </translation>
+      <translation id="1">
+        <text>hold up, delay, stop</text>
+      </translation>
+    </entry>
+    <entry id="132">
+      <translation id="0">
+        <text>ermee</text>
+      </translation>
+      <translation id="1">
+        <text>with it</text>
+      </translation>
+    </entry>
+    <entry id="133">
+      <translation id="0">
+        <text>afgeleide</text>
+      </translation>
+      <translation id="1">
+        <text>derived (from)</text>
+      </translation>
+    </entry>
+    <entry id="134">
+      <translation id="0">
+        <text>afleiden</text>
+      </translation>
+      <translation id="1">
+        <text>distract, derive (from)</text>
+      </translation>
+    </entry>
+    <entry id="135">
+      <translation id="0">
+        <text>voortbrengen</text>
+      </translation>
+      <translation id="1">
+        <text>produce, create</text>
+      </translation>
+    </entry>
+    <entry id="136">
+      <translation id="0">
+        <text>grootbrengen</text>
+      </translation>
+      <translation id="1">
+        <text>bring up</text>
+      </translation>
+    </entry>
+    <entry id="137">
+      <translation id="0">
+        <text>waarschijnlijk</text>
+      </translation>
+      <translation id="1">
+        <text>probably, likely</text>
+      </translation>
+    </entry>
+    <entry id="138">
+      <translation id="0">
+        <text>opletten</text>
+      </translation>
+      <translation id="1">
+        <text>watch, take care</text>
+      </translation>
+    </entry>
+    <entry id="139">
+      <translation id="0">
+        <text>herkennen</text>
+      </translation>
+      <translation id="1">
+        <text>recognize, identify</text>
+      </translation>
+    </entry>
+    <entry id="140">
+      <translation id="0">
+        <text>hangslot</text>
+      </translation>
+      <translation id="1">
+        <text>padlock</text>
+      </translation>
+    </entry>
+    <entry id="141">
+      <translation id="0">
+        <text>betrekking</text>
+      </translation>
+      <translation id="1">
+        <text>relation, connection</text>
+      </translation>
+    </entry>
+    <entry id="142">
+      <translation id="0">
+        <text>inhoud</text>
+      </translation>
+      <translation id="1">
+        <text>content</text>
+      </translation>
+    </entry>
+    <entry id="143">
+      <translation id="0">
+        <text>netwerkverkeer</text>
+      </translation>
+      <translation id="1">
+        <text>network traffic</text>
+      </translation>
+    </entry>
+    <entry id="144">
+      <translation id="0">
+        <text>dergelijk</text>
+      </translation>
+      <translation id="1">
+        <text>similar, such as</text>
+      </translation>
+    </entry>
+    <entry id="145">
+      <translation id="0">
+        <text>onderscheppen</text>
+      </translation>
+      <translation id="1">
+        <text>intercept</text>
+      </translation>
+    </entry>
+    <entry id="146">
+      <translation id="0">
+        <text>vrijwel</text>
+      </translation>
+      <translation id="1">
+        <text>nearly, almost, practically</text>
+      </translation>
+    </entry>
+    <entry id="147">
+      <translation id="0">
+        <text>bankzaken</text>
+      </translation>
+      <translation id="1">
+        <text>banking</text>
+      </translation>
+    </entry>
+    <entry id="148">
+      <translation id="0">
+        <text>bezig</text>
+      </translation>
+      <translation id="1">
+        <text>busy</text>
+      </translation>
+    </entry>
+    <entry id="149">
+      <translation id="0">
+        <text>doel</text>
+      </translation>
+      <translation id="1">
+        <text>target, purpose</text>
+      </translation>
+    </entry>
+    <entry id="150">
+      <translation id="0">
+        <text>leiden</text>
+      </translation>
+      <translation id="1">
+        <text>lead, bring, guide</text>
+      </translation>
+    </entry>
+    <entry id="151">
+      <translation id="0">
+        <text>beweging</text>
+      </translation>
+      <translation id="1">
+        <text>movement, move, motion</text>
+      </translation>
+    </entry>
+    <entry id="152">
+      <translation id="0">
+        <text>noodtoestand</text>
+      </translation>
+      <translation id="1">
+        <text>emergency (situation), crisis</text>
+      </translation>
+    </entry>
+    <entry id="153">
+      <translation id="0">
+        <text>op verdenking van</text>
+      </translation>
+      <translation id="1">
+        <text>on suspicion of</text>
+      </translation>
+    </entry>
+    <entry id="154">
+      <translation id="0">
+        <text>talloze</text>
+      </translation>
+      <translation id="1">
+        <text>innumerable, countless</text>
+      </translation>
+    </entry>
+    <entry id="155">
+      <translation id="0">
+        <text>omzeilde</text>
+      </translation>
+      <translation id="1">
+        <text>skirt, get round, by-pass</text>
+      </translation>
+    </entry>
+    <entry id="156">
+      <translation id="0">
+        <text>samenscholingsverbod</text>
+      </translation>
+      <translation id="1">
+        <text>ban on assembly</text>
+      </translation>
+    </entry>
+    <entry id="157">
+      <translation id="0">
+        <text>ketting</text>
+      </translation>
+      <translation id="1">
+        <text>chain</text>
+      </translation>
+    </entry>
+    <entry id="158">
+      <translation id="0">
+        <text>handboei</text>
+      </translation>
+      <translation id="1">
+        <text>handcuffs</text>
+      </translation>
+    </entry>
+    <entry id="159">
+      <translation id="0">
+        <text>voetbalwedstrijd</text>
+      </translation>
+      <translation id="1">
+        <text>football match</text>
+      </translation>
+    </entry>
+    <entry id="160">
+      <translation id="0">
+        <text>ondanks</text>
+      </translation>
+      <translation id="1">
+        <text>in spite of</text>
+      </translation>
+    </entry>
+    <entry id="161">
+      <translation id="0">
+        <text>onderzoek</text>
+      </translation>
+      <translation id="1">
+        <text>examination, study, research</text>
+      </translation>
+    </entry>
+    <entry id="162">
+      <translation id="0">
+        <text>ervan</text>
+      </translation>
+      <translation id="1">
+        <text>from it</text>
+      </translation>
+    </entry>
+    <entry id="163">
+      <translation id="0">
+        <text>overzetten</text>
+      </translation>
+      <translation id="1">
+        <text>take across</text>
+      </translation>
+    </entry>
+    <entry id="164">
+      <translation id="0">
+        <text>verdienen</text>
+      </translation>
+      <translation id="1">
+        <text>earn money</text>
+      </translation>
+    </entry>
+    <entry id="165">
+      <translation id="0">
+        <text>liever</text>
+      </translation>
+      <translation id="1">
+        <text>(graag), with pleasure</text>
+      </translation>
+    </entry>
+    <entry id="166">
+      <translation id="0">
+        <text>palingstand</text>
+      </translation>
+      <translation id="1">
+        <text>eel stock</text>
+      </translation>
+    </entry>
+    <entry id="167">
+      <translation id="0">
+        <text>berekening</text>
+      </translation>
+      <translation id="1">
+        <text>calculation, computation</text>
+      </translation>
+    </entry>
+    <entry id="168">
+      <translation id="0">
+        <text>uitnodigen</text>
+      </translation>
+      <translation id="1">
+        <text>invite, ask</text>
+      </translation>
+    </entry>
+    <entry id="169">
+      <translation id="0">
+        <text>slagen</text>
+      </translation>
+      <translation id="1">
+        <text>blow. punch, be successfule</text>
+      </translation>
+    </entry>
+    <entry id="170">
+      <translation id="0">
+        <text>degenen</text>
+      </translation>
+      <translation id="1">
+        <text>those, the ones</text>
+      </translation>
+    </entry>
+    <entry id="171">
+      <translation id="0">
+        <text>verdragen</text>
+      </translation>
+      <translation id="1">
+        <text>treaty, agreement</text>
+      </translation>
+    </entry>
+    <entry id="172">
+      <translation id="0">
+        <text>schadelijke</text>
+      </translation>
+      <translation id="1">
+        <text>harmful, damaging</text>
+      </translation>
+    </entry>
+    <entry id="173">
+      <translation id="0">
+        <text>schade</text>
+      </translation>
+      <translation id="1">
+        <text>damage</text>
+      </translation>
+    </entry>
+    <entry id="174">
+      <translation id="0">
+        <text>pleit</text>
+      </translation>
+      <translation id="1">
+        <text>(law)suit, dispute</text>
+      </translation>
+    </entry>
+    <entry id="175">
+      <translation id="0">
+        <text>pleiten</text>
+      </translation>
+      <translation id="1">
+        <text>to plead</text>
+      </translation>
+    </entry>
+    <entry id="176">
+      <translation id="0">
+        <text>belang</text>
+      </translation>
+      <translation id="1">
+        <text>interest, concern</text>
+      </translation>
+    </entry>
+    <entry id="177">
+      <translation id="0">
+        <text>roem</text>
+      </translation>
+      <translation id="1">
+        <text>glory, fame, renown, celebrity</text>
+      </translation>
+    </entry>
+    <entry id="178">
+      <translation id="0">
+        <text>roemen</text>
+      </translation>
+      <translation id="1">
+        <text>praise, speak highly of</text>
+      </translation>
+    </entry>
+    <entry id="179">
+      <translation id="0">
+        <text>afdingen</text>
+      </translation>
+      <translation id="1">
+        <text>bargain</text>
+      </translation>
+    </entry>
+    <entry id="180">
+      <translation id="0">
+        <text>belangstelling (in)</text>
+      </translation>
+      <translation id="1">
+        <text>interest (in), Mama, ik heb geen belangstelling.</text>
+      </translation>
+    </entry>
+    <entry id="181">
+      <translation id="0">
+        <text>pas</text>
+      </translation>
+      <translation id="1">
+        <text>step, pace. only, not until</text>
+      </translation>
+    </entry>
+    <entry id="182">
+      <translation id="0">
+        <text>vent</text>
+      </translation>
+      <translation id="1">
+        <text>fellow, guy</text>
+      </translation>
+    </entry>
+    <entry id="183">
+      <translation id="0">
+        <text>waarop</text>
+      </translation>
+      <translation id="1">
+        <text>what … on, where</text>
+      </translation>
+    </entry>
+    <entry id="184">
+      <translation id="0">
+        <text>maatschap</text>
+      </translation>
+      <translation id="1">
+        <text>partnership</text>
+      </translation>
+    </entry>
+    <entry id="185">
+      <translation id="0">
+        <text>hun</text>
+      </translation>
+      <translation id="1">
+        <text>them, their</text>
+      </translation>
+    </entry>
+    <entry id="186">
+      <translation id="0">
+        <text>werven</text>
+      </translation>
+      <translation id="1">
+        <text>recruit</text>
+      </translation>
+    </entry>
+    <entry id="187">
+      <translation id="0">
+        <text>boodschap</text>
+      </translation>
+      <translation id="1">
+        <text>purchase, message, errand</text>
+      </translation>
+    </entry>
+    <entry id="188">
+      <translation id="0">
+        <text>dienen, dinde, gediend</text>
+      </translation>
+      <translation id="1">
+        <text>to serve</text>
+      </translation>
+    </entry>
+    <entry id="189">
+      <translation id="0">
+        <text>in vergelijking met</text>
+      </translation>
+      <translation id="1">
+        <text>in comparison to</text>
+      </translation>
+    </entry>
+    <entry id="190">
+      <translation id="0">
+        <text>vergelijken/vergeleleek/vergeleken</text>
+      </translation>
+      <translation id="1">
+        <text>to compare to</text>
+      </translation>
+    </entry>
+    <entry id="191">
+      <translation id="0">
+        <text>besteden aan/besteedde/besteed</text>
+      </translation>
+      <translation id="1">
+        <text>spend, devote to</text>
+      </translation>
+    </entry>
+    <entry id="192">
+      <translation id="0">
+        <text>het gevolg (van)</text>
+      </translation>
+      <translation id="1">
+        <text>result, consequence</text>
+      </translation>
+    </entry>
+    <entry id="193">
+      <translation id="0">
+        <text>voraal</text>
+      </translation>
+      <translation id="1">
+        <text>especially, partcularly</text>
+      </translation>
+    </entry>
+    <entry id="194">
+      <translation id="0">
+        <text>bdeanken, bedacht, bedacht</text>
+      </translation>
+      <translation id="1">
+        <text>think of</text>
+      </translation>
+    </entry>
+    <entry id="195">
+      <translation id="0">
+        <text>beide</text>
+      </translation>
+      <translation id="1">
+        <text>both, either, two</text>
+      </translation>
+    </entry>
+    <entry id="196">
+      <translation id="0">
+        <text>in verhouding tot</text>
+      </translation>
+      <translation id="1">
+        <text>in relation to</text>
+      </translation>
+    </entry>
+    <entry id="197">
+      <translation id="0">
+        <text>bovendien</text>
+      </translation>
+      <translation id="1">
+        <text>moreover, in adition</text>
+      </translation>
+    </entry>
+    <entry id="198">
+      <translation id="0">
+        <text>behandelen, behandelde, behandeld</text>
+      </translation>
+      <translation id="1">
+        <text>handle, deal with, treat</text>
+      </translation>
+    </entry>
+    <entry id="199">
+      <translation id="0">
+        <text>het beeld</text>
+      </translation>
+      <translation id="1">
+        <text>picture</text>
+      </translation>
+    </entry>
+    <entry id="200">
+      <translation id="0">
+        <text>lastig</text>
+      </translation>
+      <translation id="1">
+        <text>difficult</text>
+      </translation>
+    </entry>
+    <entry id="201">
+      <translation id="0">
+        <text>rekening houden met</text>
+      </translation>
+      <translation id="1">
+        <text>to take into account</text>
+      </translation>
+    </entry>
+    <entry id="202">
+      <translation id="0">
+        <text>draaien, draaide, gedraaid</text>
+      </translation>
+      <translation id="1">
+        <text>turn, twist, bend, screw</text>
+      </translation>
+    </entry>
+    <entry id="203">
+      <translation id="0">
+        <text>enkele, geen enkel</text>
+      </translation>
+      <translation id="1">
+        <text>a few, few</text>
+      </translation>
+    </entry>
+    <entry id="204">
+      <translation id="0">
+        <text>afnemen</text>
+      </translation>
+      <translation id="1">
+        <text>decrease, decline</text>
+      </translation>
+    </entry>
+    <entry id="205">
+      <translation id="0">
+        <text>gedrag</text>
+      </translation>
+      <translation id="1">
+        <text>behaviour, conduct</text>
+      </translation>
+    </entry>
+    <entry id="206">
+      <translation id="0">
+        <text>het gebrek</text>
+      </translation>
+      <translation id="1">
+        <text>lack, shortage, deficiency</text>
+      </translation>
+    </entry>
+    <entry id="207">
+      <translation id="0">
+        <text>overeenkomst</text>
+      </translation>
+      <translation id="1">
+        <text>similarity, agreement, resemblance</text>
+      </translation>
+    </entry>
+    <entry id="208">
+      <translation id="0">
+        <text>toenemen, nam toe, is toegenomen</text>
+      </translation>
+      <translation id="1">
+        <text>increase, grow, expand</text>
+      </translation>
+    </entry>
+    <entry id="209">
+      <translation id="0">
+        <text>klagen, glaagde, geklaagd</text>
+      </translation>
+      <translation id="1">
+        <text>complain</text>
+      </translation>
+    </entry>
+    <entry id="210">
+      <translation id="0">
+        <text>bereiken, bereikte, bereikt</text>
+      </translation>
+      <translation id="1">
+        <text>reach, arrive, get to</text>
+      </translation>
+    </entry>
+    <entry id="211">
+      <translation id="0">
+        <text>bekend</text>
+      </translation>
+      <translation id="1">
+        <text>know</text>
+      </translation>
+    </entry>
+    <entry id="212">
+      <translation id="0">
+        <text>steeds</text>
+      </translation>
+      <translation id="1">
+        <text>always, constantly</text>
+      </translation>
+    </entry>
+    <entry id="213">
+      <translation id="0">
+        <text>de opleiding</text>
+      </translation>
+      <translation id="1">
+        <text>education</text>
+      </translation>
+    </entry>
+    <entry id="214">
+      <translation id="0">
+        <text>ruim</text>
+      </translation>
+      <translation id="1">
+        <text>hold, spacious, more than</text>
+      </translation>
+    </entry>
+    <entry id="215">
+      <translation id="0">
+        <text>ruimen</text>
+      </translation>
+      <translation id="1">
+        <text>cleat out, clear away</text>
+      </translation>
+    </entry>
+    <entry id="216">
+      <translation id="0">
+        <text>inderdaad</text>
+      </translation>
+      <translation id="1">
+        <text>indeed, really</text>
+      </translation>
+    </entry>
+    <entry id="217">
+      <translation id="0">
+        <text>slechts</text>
+      </translation>
+      <translation id="1">
+        <text>only, merely, just</text>
+      </translation>
+    </entry>
+    <entry id="218">
+      <translation id="0">
+        <text>laten, liet, gelaten</text>
+      </translation>
+      <translation id="1">
+        <text>let. allow</text>
+      </translation>
+    </entry>
+    <entry id="219">
+      <translation id="0">
+        <text>echter</text>
+      </translation>
+      <translation id="1">
+        <text>however, nevertheless</text>
+      </translation>
+    </entry>
+    <entry id="220">
+      <translation id="0">
+        <text>daarna</text>
+      </translation>
+      <translation id="1">
+        <text>after that</text>
+      </translation>
+    </entry>
+    <entry id="221">
+      <translation id="0">
+        <text>na</text>
+      </translation>
+      <translation id="1">
+        <text>after</text>
+      </translation>
+    </entry>
+    <entry id="222">
+      <translation id="0">
+        <text>terecht</text>
+      </translation>
+      <translation id="1">
+        <text>correct, appropriate, found</text>
+      </translation>
+    </entry>
+    <entry id="223">
+      <translation id="0">
+        <text>wijzen op, wees, gewezen</text>
+      </translation>
+      <translation id="1">
+        <text>show, point out</text>
+      </translation>
+    </entry>
+    <entry id="224">
+      <translation id="0">
+        <text>daarmee</text>
+      </translation>
+      <translation id="1">
+        <text>with that</text>
+      </translation>
+    </entry>
+    <entry id="225">
+      <translation id="0">
+        <text>trowens</text>
+      </translation>
+      <translation id="1">
+        <text>by the way</text>
+      </translation>
+    </entry>
+    <entry id="226">
+      <translation id="0">
+        <text>ergens</text>
+      </translation>
+      <translation id="1">
+        <text>somewhere</text>
+      </translation>
+    </entry>
+    <entry id="227">
+      <translation id="0">
+        <text>gaat uit gang</text>
+      </translation>
+      <translation id="1">
+        <text>go ahead</text>
+      </translation>
+    </entry>
+    <entry id="228">
+      <translation id="0">
+        <text>behalve</text>
+      </translation>
+      <translation id="1">
+        <text>except</text>
+      </translation>
+    </entry>
+    <entry id="229">
+      <translation id="0">
+        <text>overal</text>
+      </translation>
+      <translation id="1">
+        <text>everywhere</text>
+      </translation>
+    </entry>
+    <entry id="230">
+      <translation id="0">
+        <text>herhaalen</text>
+      </translation>
+      <translation id="1">
+        <text>repeat</text>
+      </translation>
+    </entry>
+    <entry id="231">
+      <translation id="0">
+        <text>allerlei</text>
+      </translation>
+      <translation id="1">
+        <text>all sorts of</text>
+      </translation>
+    </entry>
+    <entry id="232">
+      <translation id="0">
+        <text>over het algemeen</text>
+      </translation>
+      <translation id="1">
+        <text>in general</text>
+      </translation>
+    </entry>
+    <entry id="233">
+      <translation id="0">
+        <text>af en toe</text>
+      </translation>
+      <translation id="1">
+        <text>from time to time</text>
+      </translation>
+    </entry>
+    <entry id="234">
+      <translation id="0">
+        <text>duidelijk</text>
+      </translation>
+      <translation id="1">
+        <text>clear, obvious, precise</text>
+      </translation>
+    </entry>
+    <entry id="235">
+      <translation id="0">
+        <text>gat</text>
+      </translation>
+      <translation id="1">
+        <text>gap</text>
+      </translation>
+    </entry>
+    <entry id="236">
+      <translation id="0">
+        <text>dracht</text>
+      </translation>
+      <translation id="1">
+        <text>(zwangerschap) gestation, pregnancy (mensen)</text>
+      </translation>
+    </entry>
+    <entry id="237">
+      <translation id="0">
+        <text>kou</text>
+      </translation>
+      <translation id="1">
+        <text>cold, chill</text>
+      </translation>
+    </entry>
+    <entry id="238">
+      <translation id="0">
+        <text>koe</text>
+      </translation>
+      <translation id="1">
+        <text>cow</text>
+      </translation>
+    </entry>
+    <entry id="239">
+      <translation id="0">
+        <text>omstandigheid</text>
+      </translation>
+      <translation id="1">
+        <text>circumstance</text>
+      </translation>
+    </entry>
+    <entry id="240">
+      <translation id="0">
+        <text>slachtoffer</text>
+      </translation>
+      <translation id="1">
+        <text>victim</text>
+      </translation>
+    </entry>
+    <entry id="241">
+      <translation id="0">
+        <text>zomaar</text>
+      </translation>
+      <translation id="1">
+        <text>suddenly</text>
+      </translation>
+    </entry>
+    <entry id="242">
+      <translation id="0">
+        <text>vermogen</text>
+      </translation>
+      <translation id="1">
+        <text>fortune, capital,power, capacity</text>
+      </translation>
+    </entry>
+    <entry id="243">
+      <translation id="0">
+        <text>ontzet</text>
+      </translation>
+      <translation id="1">
+        <text>relief</text>
+      </translation>
+    </entry>
+    <entry id="244">
+      <translation id="0">
+        <text>mening</text>
+      </translation>
+      <translation id="1">
+        <text>opinion</text>
+      </translation>
+    </entry>
+    <entry id="245">
+      <translation id="0">
+        <text>onderwerp</text>
+      </translation>
+      <translation id="1">
+        <text>subject (matter)</text>
+      </translation>
+    </entry>
+    <entry id="246">
+      <translation id="0">
+        <text>daarom</text>
+      </translation>
+      <translation id="1">
+        <text>because of this</text>
+      </translation>
+    </entry>
+    <entry id="247">
+      <translation id="0">
+        <text>vluchtelingen</text>
+      </translation>
+      <translation id="1">
+        <text>refugee</text>
+      </translation>
+    </entry>
+    <entry id="248">
+      <translation id="0">
+        <text>kwijt</text>
+      </translation>
+      <translation id="1">
+        <text>lost: ik ben mijn sleutels kwijt I have lost my keys</text>
+      </translation>
+    </entry>
+    <entry id="249">
+      <translation id="0">
+        <text>schromen</text>
+      </translation>
+      <translation id="1">
+        <text>hesitate</text>
+      </translation>
+    </entry>
+    <entry id="250">
+      <translation id="0">
+        <text>omvangrijk</text>
+      </translation>
+      <translation id="1">
+        <text>sizeable, bulky (boek), extensive (gebied)</text>
+      </translation>
+    </entry>
+    <entry id="251">
+      <translation id="0">
+        <text>afstoten</text>
+      </translation>
+      <translation id="1">
+        <text>dispose of, reject</text>
+      </translation>
+    </entry>
+    <entry id="252">
+      <translation id="0">
+        <text>vloeken</text>
+      </translation>
+      <translation id="1">
+        <text>curse, swear (at)</text>
+      </translation>
+    </entry>
+    <entry id="253">
+      <translation id="0">
+        <text>verschijnsel</text>
+      </translation>
+      <translation id="1">
+        <text>phenomenon, symptom (van ziekte, problemen), sign</text>
+      </translation>
+    </entry>
+    <entry id="254">
+      <translation id="0">
+        <text>beschaving</text>
+      </translation>
+      <translation id="1">
+        <text>civilization, culture</text>
+      </translation>
+    </entry>
+    <entry id="255">
+      <translation id="0">
+        <text>vervelend</text>
+      </translation>
+      <translation id="1">
+        <text>boring, annoying</text>
+      </translation>
+    </entry>
+    <entry id="256">
+      <translation id="0">
+        <text>ervaren</text>
+      </translation>
+      <translation id="1">
+        <text>experience</text>
+      </translation>
+    </entry>
+    <entry id="257">
+      <translation id="0">
+        <text>ergeren</text>
+      </translation>
+      <translation id="1">
+        <text>annoy, irritate</text>
+      </translation>
+    </entry>
+    <entry id="258">
+      <translation id="0">
+        <text>uiteraard</text>
+      </translation>
+      <translation id="1">
+        <text>of course, (van nature) naturally</text>
+      </translation>
+    </entry>
+    <entry id="259">
+      <translation id="0">
+        <text>ongepaster</text>
+      </translation>
+      <translation id="1">
+        <text>improper</text>
+      </translation>
+    </entry>
+    <entry id="260">
+      <translation id="0">
+        <text>opmerkelijk</text>
+      </translation>
+      <translation id="1">
+        <text>remarkable</text>
+      </translation>
+    </entry>
+    <entry id="261">
+      <translation id="0">
+        <text>bijeenkomst</text>
+      </translation>
+      <translation id="1">
+        <text>(vergadering) meeting, gathering</text>
+      </translation>
+    </entry>
+    <entry id="262">
+      <translation id="0">
+        <text>korf</text>
+      </translation>
+      <translation id="1">
+        <text>basket, (voor bijen) hive</text>
+      </translation>
+    </entry>
+    <entry id="263">
+      <translation id="0">
+        <text>bijenkorf</text>
+      </translation>
+      <translation id="1">
+        <text>(bee)hive</text>
+      </translation>
+    </entry>
+    <entry id="264">
+      <translation id="0">
+        <text>riep</text>
+      </translation>
+      <translation id="1">
+        <text>call, cry, shout</text>
+      </translation>
+    </entry>
+    <entry id="265">
+      <translation id="0">
+        <text>tegelijkertijd</text>
+      </translation>
+      <translation id="1">
+        <text>at the same time (of: moment), simultaneously</text>
+      </translation>
+    </entry>
+    <entry id="266">
+      <translation id="0">
+        <text>zowel</text>
+      </translation>
+      <translation id="1">
+        <text>both</text>
+      </translation>
+    </entry>
+    <entry id="267">
+      <translation id="0">
+        <text>heftig</text>
+      </translation>
+      <translation id="1">
+        <text>violent, (aanval ook) fierce</text>
+      </translation>
+    </entry>
+    <entry id="268">
+      <translation id="0">
+        <text>zaak</text>
+      </translation>
+      <translation id="1">
+        <text>thing. object</text>
+      </translation>
+    </entry>
+    <entry id="269">
+      <translation id="0">
+        <text>kan-kunnen, kon-konden</text>
+      </translation>
+      <translation id="1">
+        <text>can, conjucation</text>
+      </translation>
+    </entry>
+    <entry id="270">
+      <translation id="0">
+        <text>opstaan</text>
+      </translation>
+      <translation id="1">
+        <text>stand up</text>
+      </translation>
+    </entry>
+    <entry id="271">
+      <translation id="0">
+        <text>leef-leven, leefde-leefden</text>
+      </translation>
+      <translation id="1">
+        <text>leven conjugation</text>
+      </translation>
+    </entry>
+    <entry id="272">
+      <translation id="0">
+        <text>gemeenschap</text>
+      </translation>
+      <translation id="1">
+        <text>community</text>
+      </translation>
+    </entry>
+    <entry id="273">
+      <translation id="0">
+        <text>afhankelijk van</text>
+      </translation>
+      <translation id="1">
+        <text>depend on</text>
+      </translation>
+    </entry>
+    <entry id="274">
+      <translation id="0">
+        <text>andersom</text>
+      </translation>
+      <translation id="1">
+        <text>the other way round</text>
+      </translation>
+    </entry>
+    <entry id="275">
+      <translation id="0">
+        <text>ingesteld</text>
+      </translation>
+      <translation id="1">
+        <text>establish, create</text>
+      </translation>
+    </entry>
+    <entry id="276">
+      <translation id="0">
+        <text>eb</text>
+      </translation>
+      <translation id="1">
+        <text>ebb(-tide), outgoing tide</text>
+      </translation>
+    </entry>
+    <entry id="277">
+      <translation id="0">
+        <text>verzuipen</text>
+      </translation>
+      <translation id="1">
+        <text>drown</text>
+      </translation>
+    </entry>
+    <entry id="278">
+      <translation id="0">
+        <text>oogst</text>
+      </translation>
+      <translation id="1">
+        <text>harvest, crop</text>
+      </translation>
+    </entry>
+    <entry id="279">
+      <translation id="0">
+        <text>lukken</text>
+      </translation>
+      <translation id="1">
+        <text>succeed</text>
+      </translation>
+    </entry>
+    <entry id="280">
+      <translation id="0">
+        <text>achter het net vissen</text>
+      </translation>
+      <translation id="1">
+        <text>miss out</text>
+      </translation>
+    </entry>
+    <entry id="281">
+      <translation id="0">
+        <text>onverwacht</text>
+      </translation>
+      <translation id="1">
+        <text>unexpected, surprise</text>
+      </translation>
+    </entry>
+    <entry id="282">
+      <translation id="0">
+        <text>smelten</text>
+      </translation>
+      <translation id="1">
+        <text>melt</text>
+      </translation>
+    </entry>
+    <entry id="283">
+      <translation id="0">
+        <text>verdrinken</text>
+      </translation>
+      <translation id="1">
+        <text>drown, dring heavily</text>
+      </translation>
+    </entry>
+    <entry id="284">
+      <translation id="0">
+        <text>dodelijk</text>
+      </translation>
+      <translation id="1">
+        <text>deadely</text>
+      </translation>
+    </entry>
+    <entry id="285">
+      <translation id="0">
+        <text>voorspellen</text>
+      </translation>
+      <translation id="1">
+        <text>predict, forecast</text>
+      </translation>
+    </entry>
+    <entry id="286">
+      <translation id="0">
+        <text>verdringen</text>
+      </translation>
+      <translation id="1">
+        <text>push away, shut out</text>
+      </translation>
+    </entry>
+    <entry id="287">
+      <translation id="0">
+        <text>zich verdringen</text>
+      </translation>
+      <translation id="1">
+        <text>to crowd round (smth.)</text>
+      </translation>
+    </entry>
+    <entry id="288">
+      <translation id="0">
+        <text>ontheemden</text>
+      </translation>
+      <translation id="1">
+        <text>displaced person (vluchteling)</text>
+      </translation>
+    </entry>
+    <entry id="289">
+      <translation id="0">
+        <text>schaarse</text>
+      </translation>
+      <translation id="1">
+        <text>scarce</text>
+      </translation>
+    </entry>
+    <entry id="290">
+      <translation id="0">
+        <text>visstand</text>
+      </translation>
+      <translation id="1">
+        <text>fishstock</text>
+      </translation>
+    </entry>
+    <entry id="291">
+      <translation id="0">
+        <text>gewicht</text>
+      </translation>
+      <translation id="1">
+        <text>weight</text>
+      </translation>
+    </entry>
+    <entry id="292">
+      <translation id="0">
+        <text>spanningen</text>
+      </translation>
+      <translation id="1">
+        <text>tension</text>
+      </translation>
+    </entry>
+    <entry id="293">
+      <translation id="0">
+        <text>rand</text>
+      </translation>
+      <translation id="1">
+        <text>edge</text>
+      </translation>
+    </entry>
+    <entry id="294">
+      <translation id="0">
+        <text>roep</text>
+      </translation>
+      <translation id="1">
+        <text>call, shout, cry</text>
+      </translation>
+    </entry>
+    <entry id="295">
+      <translation id="0">
+        <text>gelukszoeker</text>
+      </translation>
+      <translation id="1">
+        <text>fortuneseeker</text>
+      </translation>
+    </entry>
+    <entry id="296">
+      <translation id="0">
+        <text>verschuiven</text>
+      </translation>
+      <translation id="1">
+        <text>move, shift</text>
+      </translation>
+    </entry>
+    <entry id="297">
+      <translation id="0">
+        <text>touwtrekken</text>
+      </translation>
+      <translation id="1">
+        <text>tug-of-war</text>
+      </translation>
+    </entry>
+    <entry id="298">
+      <translation id="0">
+        <text>schuld</text>
+      </translation>
+      <translation id="1">
+        <text>debt</text>
+      </translation>
+    </entry>
+    <entry id="299">
+      <translation id="0">
+        <text>eigen</text>
+      </translation>
+      <translation id="1">
+        <text>own</text>
+      </translation>
+    </entry>
+    <entry id="300">
+      <translation id="0">
+        <text>geschikt</text>
+      </translation>
+      <translation id="1">
+        <text>suitable</text>
+      </translation>
+    </entry>
+    <entry id="301">
+      <translation id="0">
+        <text>onderwijs</text>
+      </translation>
+      <translation id="1">
+        <text>education, teaching</text>
+      </translation>
+    </entry>
+    <entry id="302">
+      <translation id="0">
+        <text>volwassen</text>
+      </translation>
+      <translation id="1">
+        <text>adult</text>
+      </translation>
+    </entry>
+    <entry id="303">
+      <translation id="0">
+        <text>zakelijke</text>
+      </translation>
+      <translation id="1">
+        <text>business(like), commercial</text>
+      </translation>
+    </entry>
+    <entry id="304">
+      <translation id="0">
+        <text>leveren</text>
+      </translation>
+      <translation id="1">
+        <text>supply, deliver</text>
+      </translation>
+    </entry>
+    <entry id="305">
+      <translation id="0">
+        <text>bedrijven</text>
+      </translation>
+      <translation id="1">
+        <text>commit, perpetrate</text>
+      </translation>
+    </entry>
+    <entry id="306">
+      <translation id="0">
+        <text>gemengd</text>
+      </translation>
+      <translation id="1">
+        <text>mixed</text>
+      </translation>
+    </entry>
+    <entry id="307">
+      <translation id="0">
+        <text>op z'n minst</text>
+      </translation>
+      <translation id="1">
+        <text>at (the very) least</text>
+      </translation>
+    </entry>
+    <entry id="308">
+      <translation id="0">
+        <text>minst</text>
+      </translation>
+      <translation id="1">
+        <text>slightest, lowest</text>
+      </translation>
+    </entry>
+    <entry id="309">
+      <translation id="0">
+        <text>enige</text>
+      </translation>
+      <translation id="1">
+        <text>only, sole</text>
+      </translation>
+    </entry>
+    <entry id="310">
+      <translation id="0">
+        <text>heus</text>
+      </translation>
+      <translation id="1">
+        <text>real, true: hij doet het heus wel he is sure to do it</text>
+      </translation>
+    </entry>
+    <entry id="311">
+      <translation id="0">
+        <text>wekken</text>
+      </translation>
+      <translation id="1">
+        <text>wake (up)</text>
+      </translation>
+    </entry>
+    <entry id="312">
+      <translation id="0">
+        <text>induiken</text>
+      </translation>
+      <translation id="1">
+        <text>dive in(to)</text>
+      </translation>
+    </entry>
+    <entry id="313">
+      <translation id="0">
+        <text>draaien</text>
+      </translation>
+      <translation id="1">
+        <text>turn, revolve, rotate</text>
+      </translation>
+    </entry>
+    <entry id="314">
+      <translation id="0">
+        <text>telkens</text>
+      </translation>
+      <translation id="1">
+        <text>every time</text>
+      </translation>
+    </entry>
+    <entry id="315">
+      <translation id="0">
+        <text>meteen</text>
+      </translation>
+      <translation id="1">
+        <text>immediately</text>
+      </translation>
+    </entry>
+    <entry id="316">
+      <translation id="0">
+        <text>verdeling</text>
+      </translation>
+      <translation id="1">
+        <text>division, (uitdeling) distribution</text>
+      </translation>
+    </entry>
+    <entry id="317">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="318">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="319">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="320">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="321">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="322">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="323">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="324">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+  </entries>
+  <lessons>
+    <container>
+      <name>Default Lesson</name>
+      <inpractice>true</inpractice>
+      <entry id="0"/>
+      <entry id="1"/>
+      <entry id="2"/>
+      <entry id="3"/>
+      <entry id="4"/>
+      <entry id="5"/>
+      <entry id="6"/>
+      <entry id="7"/>
+      <entry id="8"/>
+      <entry id="9"/>
+      <entry id="10"/>
+      <entry id="11"/>
+      <entry id="12"/>
+      <entry id="13"/>
+      <entry id="14"/>
+      <entry id="15"/>
+      <entry id="16"/>
+      <entry id="17"/>
+      <entry id="18"/>
+      <entry id="19"/>
+      <entry id="20"/>
+      <entry id="21"/>
+      <entry id="22"/>
+      <entry id="23"/>
+      <entry id="24"/>
+      <entry id="25"/>
+      <entry id="26"/>
+      <entry id="27"/>
+      <entry id="28"/>
+      <entry id="29"/>
+      <entry id="30"/>
+      <entry id="31"/>
+      <entry id="32"/>
+      <entry id="33"/>
+      <entry id="34"/>
+      <entry id="35"/>
+      <entry id="36"/>
+      <entry id="37"/>
+      <entry id="38"/>
+      <entry id="39"/>
+      <entry id="40"/>
+      <entry id="41"/>
+      <entry id="42"/>
+      <entry id="43"/>
+      <entry id="44"/>
+      <entry id="45"/>
+      <entry id="46"/>
+      <entry id="47"/>
+      <entry id="48"/>
+      <entry id="49"/>
+      <entry id="50"/>
+      <entry id="51"/>
+      <entry id="52"/>
+      <entry id="53"/>
+      <entry id="54"/>
+      <entry id="55"/>
+      <entry id="56"/>
+      <entry id="57"/>
+      <entry id="58"/>
+      <entry id="59"/>
+      <entry id="60"/>
+      <entry id="61"/>
+      <entry id="62"/>
+      <entry id="63"/>
+      <entry id="64"/>
+      <entry id="65"/>
+      <entry id="66"/>
+      <entry id="67"/>
+      <entry id="68"/>
+      <entry id="69"/>
+      <entry id="70"/>
+      <entry id="71"/>
+      <entry id="72"/>
+      <entry id="73"/>
+      <entry id="74"/>
+      <entry id="75"/>
+      <entry id="76"/>
+      <entry id="77"/>
+      <entry id="78"/>
+      <entry id="79"/>
+      <entry id="80"/>
+      <entry id="81"/>
+      <entry id="82"/>
+      <entry id="83"/>
+      <entry id="84"/>
+      <entry id="85"/>
+      <entry id="86"/>
+      <entry id="87"/>
+      <entry id="88"/>
+      <entry id="89"/>
+      <entry id="90"/>
+      <entry id="91"/>
+      <entry id="92"/>
+      <entry id="93"/>
+      <entry id="94"/>
+      <entry id="95"/>
+      <entry id="96"/>
+      <entry id="97"/>
+      <entry id="98"/>
+      <entry id="99"/>
+      <entry id="100"/>
+      <entry id="101"/>
+      <entry id="102"/>
+      <entry id="103"/>
+      <entry id="104"/>
+      <entry id="105"/>
+      <entry id="106"/>
+      <entry id="107"/>
+      <entry id="108"/>
+      <entry id="109"/>
+      <entry id="110"/>
+      <entry id="111"/>
+      <entry id="112"/>
+      <entry id="113"/>
+      <entry id="114"/>
+      <entry id="115"/>
+      <entry id="116"/>
+      <entry id="117"/>
+      <entry id="118"/>
+      <entry id="119"/>
+      <entry id="120"/>
+      <entry id="121"/>
+      <entry id="122"/>
+      <entry id="123"/>
+      <entry id="124"/>
+      <entry id="125"/>
+      <entry id="126"/>
+      <entry id="127"/>
+      <entry id="128"/>
+      <entry id="129"/>
+      <entry id="130"/>
+      <entry id="131"/>
+      <entry id="132"/>
+      <entry id="133"/>
+      <entry id="134"/>
+      <entry id="135"/>
+      <entry id="136"/>
+      <entry id="137"/>
+      <entry id="138"/>
+      <entry id="139"/>
+      <entry id="140"/>
+      <entry id="141"/>
+      <entry id="142"/>
+      <entry id="143"/>
+      <entry id="144"/>
+      <entry id="145"/>
+      <entry id="146"/>
+      <entry id="147"/>
+      <entry id="148"/>
+      <entry id="149"/>
+      <entry id="150"/>
+      <entry id="151"/>
+      <entry id="152"/>
+      <entry id="153"/>
+      <entry id="154"/>
+      <entry id="155"/>
+      <entry id="156"/>
+      <entry id="157"/>
+      <entry id="158"/>
+      <entry id="159"/>
+      <entry id="160"/>
+      <entry id="161"/>
+      <entry id="162"/>
+      <entry id="163"/>
+      <entry id="164"/>
+      <entry id="165"/>
+      <entry id="166"/>
+      <entry id="167"/>
+      <entry id="168"/>
+      <entry id="169"/>
+      <entry id="170"/>
+      <entry id="171"/>
+      <entry id="172"/>
+      <entry id="173"/>
+      <entry id="174"/>
+      <entry id="175"/>
+      <entry id="176"/>
+      <entry id="177"/>
+      <entry id="178"/>
+      <entry id="179"/>
+      <entry id="180"/>
+      <entry id="181"/>
+      <entry id="182"/>
+      <entry id="183"/>
+      <entry id="184"/>
+      <entry id="185"/>
+      <entry id="186"/>
+      <entry id="187"/>
+      <entry id="188"/>
+      <entry id="189"/>
+      <entry id="190"/>
+      <entry id="191"/>
+      <entry id="192"/>
+      <entry id="193"/>
+      <entry id="194"/>
+      <entry id="195"/>
+      <entry id="196"/>
+      <entry id="197"/>
+      <entry id="198"/>
+      <entry id="199"/>
+      <entry id="200"/>
+      <entry id="201"/>
+      <entry id="202"/>
+      <entry id="203"/>
+      <entry id="204"/>
+      <entry id="205"/>
+      <entry id="206"/>
+      <entry id="207"/>
+      <entry id="208"/>
+      <entry id="209"/>
+      <entry id="210"/>
+      <entry id="211"/>
+      <entry id="212"/>
+      <entry id="213"/>
+      <entry id="214"/>
+      <entry id="215"/>
+      <entry id="216"/>
+      <entry id="217"/>
+      <entry id="218"/>
+      <entry id="219"/>
+      <entry id="220"/>
+      <entry id="221"/>
+      <entry id="222"/>
+      <entry id="223"/>
+      <entry id="224"/>
+      <entry id="225"/>
+      <entry id="226"/>
+      <entry id="227"/>
+      <entry id="228"/>
+      <entry id="229"/>
+      <entry id="230"/>
+      <entry id="231"/>
+      <entry id="232"/>
+      <entry id="233"/>
+      <entry id="234"/>
+      <entry id="235"/>
+      <entry id="236"/>
+      <entry id="237"/>
+      <entry id="238"/>
+      <entry id="239"/>
+      <entry id="240"/>
+      <entry id="241"/>
+      <entry id="242"/>
+      <entry id="243"/>
+      <entry id="244"/>
+      <entry id="245"/>
+      <entry id="246"/>
+      <entry id="247"/>
+      <entry id="248"/>
+      <entry id="249"/>
+      <entry id="250"/>
+      <entry id="251"/>
+      <entry id="252"/>
+      <entry id="253"/>
+      <entry id="254"/>
+      <entry id="255"/>
+      <entry id="256"/>
+      <entry id="257"/>
+      <entry id="258"/>
+      <entry id="259"/>
+      <entry id="260"/>
+      <entry id="261"/>
+      <entry id="262"/>
+      <entry id="263"/>
+      <entry id="264"/>
+      <entry id="265"/>
+      <entry id="266"/>
+      <entry id="267"/>
+      <entry id="268"/>
+      <entry id="269"/>
+      <entry id="270"/>
+      <entry id="271"/>
+      <entry id="272"/>
+      <entry id="273"/>
+      <entry id="274"/>
+      <entry id="275"/>
+      <entry id="276"/>
+      <entry id="277"/>
+      <entry id="278"/>
+      <entry id="279"/>
+      <entry id="280"/>
+      <entry id="281"/>
+      <entry id="282"/>
+      <entry id="283"/>
+      <entry id="284"/>
+      <entry id="285"/>
+      <entry id="286"/>
+      <entry id="287"/>
+      <entry id="288"/>
+      <entry id="289"/>
+      <entry id="290"/>
+      <entry id="291"/>
+      <entry id="292"/>
+      <entry id="293"/>
+      <entry id="294"/>
+      <entry id="295"/>
+      <entry id="296"/>
+      <entry id="297"/>
+      <entry id="298"/>
+      <entry id="299"/>
+      <entry id="300"/>
+      <entry id="301"/>
+      <entry id="302"/>
+      <entry id="303"/>
+      <entry id="304"/>
+      <entry id="305"/>
+      <entry id="306"/>
+      <entry id="307"/>
+      <entry id="308"/>
+      <entry id="309"/>
+      <entry id="310"/>
+      <entry id="311"/>
+      <entry id="312"/>
+      <entry id="313"/>
+      <entry id="314"/>
+      <entry id="315"/>
+      <entry id="316"/>
+      <entry id="317"/>
+      <entry id="318"/>
+      <entry id="319"/>
+      <entry id="320"/>
+      <entry id="321"/>
+      <entry id="322"/>
+      <entry id="323"/>
+      <entry id="324"/>
+    </container>
+  </lessons>
+</kvtml>

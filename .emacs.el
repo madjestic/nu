@@ -2,7 +2,6 @@
 (add-to-list 'exec-path "~/.cabal/bin")
 
 (menu-bar-mode -1)
-;;(global-set-key (kbd "C-M m") 'menu-bar-mode)
 
 (font-lock-mode -1)
 (server-force-delete)
@@ -141,7 +140,7 @@
  '(tabbar-button-highlight ((t (:inherit tabbar-default :foreground "black"))))
  '(tabbar-default ((t (:inherit variable-pitch :background "#2d3743" :foreground "grey75"))))
  '(tabbar-highlight ((t (:background "#2d3743" :foreground "aquamarine"))))
- '(tabbar-modified ((t (:inherit tabbar-default :foreground "dark orange" :box (:line-width 1 :color "white" :style released-button)))))
+ '(tabbar-modified ((t (:inherit tabbar-default :foreground "dark orange" ))))
  '(tabbar-selected ((t (:inherit tabbar-default :foreground "medium sea green" :weight bold))))
  '(tabbar-unselected ((t (:inherit tabbar-default))))
  '(tooltip ((t (:inherit variable-pitch :background "#797985" :foreground "black" :height 0.8))))
