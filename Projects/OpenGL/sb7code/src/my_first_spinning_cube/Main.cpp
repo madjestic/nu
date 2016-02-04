@@ -134,7 +134,7 @@ class spinningcube_app : public sb7::application
 
 	virtual void render(double currentTime)
 	{
-		static const GLfloat color[] = {0.0f, 0.25f, 0.0f, 1.0f};
+		static const GLfloat color[] = {1.0f, 0.25f, 0.0f, 1.0f};
 		static const GLfloat one = 1.0f;
 
 		glViewport(0, 0, info.windowWidth, info.windowHeight);

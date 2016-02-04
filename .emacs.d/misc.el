@@ -128,6 +128,15 @@
 	(backward-word 1)
 	)
 
+;; (defun delete-forward-whitespace ()
+;; 	"Delte forward whitespace."
+;; 	(interactive)
+;; 	(back-to-indentation)
+;; 	(set-marker 1) - fails here
+;; 	(move-beginning-of-line)
+;; 	(kill-region))
+;;  did not work 
+
 (global-set-key (kbd "M-#") 'next-word)
 (global-set-key (kbd "C-M-g") 'revert-buffer)
 (global-set-key (kbd "C-x C-k") 'kill-all-dired-buffers)
@@ -138,6 +147,8 @@
 (global-set-key (kbd "M-S-<up>") 'move-text-up)
 (global-set-key (kbd "M-S-<down>") 'move-text-down)
 (global-set-key (kbd "M-^") 'server-force-delete)
+;;(global-set-key (kbd "C-M-x") 'delete-forward-whitespace)
+
 
 (defun jabber ()
     (interactive)

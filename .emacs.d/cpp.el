@@ -19,7 +19,6 @@
 
 ;; (define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
 ;; (global-set-key (kbd "M-.") 'ggtags-find-tag-dwim)
-;; (global-set-key (kbd "C-M-m") 'minimap-toggle)
 ;; ;; (define-key ggtags-mode-map (kbd "M-.") 'ggtags-find-tag-dwim)
 
 ;; Package: smartparens
@@ -90,7 +89,7 @@
 
 ;;;;;;;;;;
 
-(sr-speedbar)
+(require 'speedbar)
 (speedbar-add-supported-extension ".hs")
 (speedbar-add-supported-extension ".vert")
 (speedbar-add-supported-extension ".frag")
@@ -98,6 +97,7 @@
 (speedbar-add-supported-extension ".glsl")
 (setq speedbar-show-unknown-files t)
 (global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
+(global-set-key (kbd "C-c m") 'minimap-toggle)
 ;; do the same with minimap and make it into misc.el
 ;; (sr-speedbar-open)
 
@@ -107,6 +107,6 @@
 (add-hook 'after-init-hook 'global-company-mode)
 (global-company-mode)
 
-(global-linum-mode)
+(linum-mode)
 
 ;; (minimap-create)

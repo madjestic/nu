@@ -832,6 +832,13 @@ Sat Apr 26 16:03:45 CEST 2014
 	 https://www.digitalocean.com/community/tutorials/a-comparison-of-nosql-database-management-systems-and-models
 	 https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems
 	 <2016-01-04 Mon>
+	 Finished reading: apparently SQLite is the best choice for me:
+	 Some extra reading on the topic:
+	 http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/
+	 <2016-01-11 Mon>
+*** TODO : SQLite tutorial
+		http://www.tutorialspoint.com/sqlite/
+		<2016-01-10 Sun>
 * Cognitive science
 	P != NP
 	http://en.wikipedia.org/wiki/P_versus_NP_problem
@@ -1099,10 +1106,22 @@ Sat Apr 26 16:03:45 CEST 2014
 		 - made a clean.sh file that cleans up stuff [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/tutorial10/clean][here]]
 
 ** DONE : Experiment with caustics (an example from Houdini Help)
-** TODO : Write a python daemon
+** IN-PROGRESS : Write a python daemon
 	 http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
 	 https://pypi.python.org/pypi/python-daemon/
 	 [2015-12-02 Wed]
+
+	 I think I should do it.  Write a daemon that, when receives a numeric argument, increases it by 1 and prints out the result.
+	 <2016-01-24 Sun>
+
+   This seems to be a concrete example of creating a python daemon process:
+   http://www.gavinj.net/2012/06/building-python-daemon-process.html
+
+   Haskell daemon seems to be easier than in python.  Weird :) :
+   https://hackage.haskell.org/package/daemons
+   <2016-01-24 Sun>
+
+   
 	 
 ** WAITING : figure out what's up with Nvidia Optimus
 	 Still has some minor(?) issues: https://forums.gentoo.org/viewtopic-t-1032214-highlight-.html
@@ -1139,6 +1158,81 @@ Sat Apr 26 16:03:45 CEST 2014
 ** DONE : make (sr-speedbar-open) a shortcut in cpp.el
 	 <2016-01-03 Sun>
 ** TODO : sidefx bug-report node changing position in the network view when an object is created by C-LMB on a Shelf
+** DONE : test todo - start a timer																 :foo::bar:
+	 (C-c C-x C-i) start a timer (in timer)
+	 (C-c C-x C-o) end timer (out-timer)
+	 CLOCK: [2015-11-28 Sat 18:01]--[2015-11-28 Sat 18:03] =>  0:02
+	 
+	 
+	 
+
+	
+
+		[2015-01-12 Mon]
+		(OlexP script to start Houdini)
+		alias hdk='hdktmp=`pwd`; cd $HFS; source houdini_setup; cd $hdktmp; unset hdkt
+
+		While playing with Gnus, I've recovered an old e-mail from Richard,
+		he sent me a few pdf's on machine learning, among which was:
+		[[file:~/Documents/Machine%20Learning%20in%20Action.pdf][file:~/Documents/Machine Learning in Action.pdf]]
+
+		
+
+	Reading [[file:~/Projects/pbrt-v2][pbrt book]]
+	<2016-01-16 Sat>
+
+	Reading on Phyllotaxis in abop
+	http://tmdag.com/ptakun/eco_system/makeofplants_en_htm.htm
+	<2016-01-16 Sat>
+	
+	[[/home/madjestic/Projects/Houdini/Fractals/model.hipnc]]
+	<2016-01-16 Sat>
+
+	~/.contexts/pbrt  mplay pbrt.exr
+	<2016-01-19 Tue>
+
+	what's the name of this theorem:  Given inifinite that the set uf numbders, formed by decimal representation of digits of Pi, there is a subset of P, Pp, 
+	that is 'fully mutable'.  By 'fully mutable', I mean that if we form a Ppf, whose members are unique subsets of the length, equal to len(Pp), 
+	such that all possible mutations of the original set of len(Pp) are presented and no new members can be added that would not repeat the already
+	existing memeber.
+
+	E.g. N  = 12345e
+
+
+
+	 len(N) = len( [1,2,3,4,5] ) = 5
+	     N1 = 98765
+   len(N1)= len( [9,8,7,6,5] ) = 5
+	     Pp = 
+
+	The lemma of this is that any decimal number N can be represented as a set of 2 numbers: L, representing the length of N taken as a set of digits and
+	number O, representing 'offset' of the offset along Pi and the length of the sequence len (N).
+	<2016-01-22 Fri>
+
+	fail, nearly.  It's a case of reordering a 100 (0-99) numbers from 0-9999 numbers.  Thanks to Jad's input.
+	<2016-01-22 Fri>
+
+	Satisfaction in solving a problem can be intense, but it is short-lived; 
+	our pathos is driven by what we have not yet understood. 
+	André Weil, one of the twentieth century’s dominant mathematicians, described this as “achiev[ing] knowledge and indifference at the same time.” 
+	We never understand more than a finite amount of the limitlessness of what mathematics potentially offers to the understanding. 
+
+	The mathematical soul, embodied in a historical tradition oriented to a limitless future, 
+	can rest secure in the knowledge that its dissatisfaction is guaranteed.
+
+	the essence of mathematics lies in its freedom.  Cantor.
+	
+	https://www.gridmarkets.com/
+	Houdini rendering in the cloud.
+	<2016-01-23 Sat>
+
+** TODO :	Mathematics Without Apologies:
+	stopped at part1: 
+	(Controversies among philosophers,
+	<2016-01-23 Sat>
+
+** TODO : Create a custom overlay:
+	 
 * MIDI :music::synt:
 	Ardouro
 	BitWig
@@ -1225,20 +1319,31 @@ Sat Apr 26 16:03:45 CEST 2014
 	[2015-11-19 Thu] 
 	(C-c a m) Match: +TIMESTAMP_IA>="<-2w>" (show ineactive timestamps)
 
-** DONE : test todo - start a timer																 :foo::bar:
-	 (C-c C-x C-i) start a timer (in timer)
-	 (C-c C-x C-o) end timer (out-timer)
-	 CLOCK: [2015-11-28 Sat 18:01]--[2015-11-28 Sat 18:03] =>  0:02
-	 
-	 
-	 
+  <2016-01-29 Fri>
+  Reading on FRP:
+  http://travis.athougies.net/posts/2015-05-05-frp-made-simple.html !
+  http://www.cs.jhu.edu/~roe/padl2014.pdf
+  http://verify.rwth-aachen.de/proseminar/PK15/ausarbeitungen/reactive_programming.pdf
+  https://www.manning.com/books/functional-reactive-programming
+  https://news.ycombinator.com/item?id=6285149
+  http://lambda-the-ultimate.org/node/3642
 
-	
-
-		[2015-01-12 Mon]
-		(OlexP script to start Houdini)
-		alias hdk='hdktmp=`pwd`; cd $HFS; source houdini_setup; cd $hdktmp; unset hdkt
-
-		While playing with Gnus, I've recovered an old e-mail from Richard,
-		he sent me a few pdf's on machine learning, among which was:
-		[[file:~/Documents/Machine%20Learning%20in%20Action.pdf][file:~/Documents/Machine Learning in Action.pdf]]
+  C++ : getting the basics of Array and String operations according to C++11 standart
+  Reading the STL library reference:
+  [[file:~/Documents/Addison%20Wesley%20-%20The%20C%2B%2B%20standard%20library_a%20tutorial%20and%20reference.pdf][file:~/Documents/Addison Wesley - The C++ standard library_a tutorial and reference.pdf]]
+  [[file:~/Projects/CPP/Junk/file2array]]
+  
+  Emacs Debugger:
+  https://www.gnu.org/software/emacs/manual/html_node/emacs/Commands-of-GUD.html
+  http://www.gnu.org/software/emacs/manual/html_node/emacs/Watch-Expressions.html
+  
+	OpenGL Work:
+  [[~/Projects/OpenGL/sb7code/src/my_first_spinning_cube_v01]]
+  
+  <2016-01-30 Sat>
+  How to add a package to haskell-overlay:
+  https://github.com/gentoo-haskell/gentoo-haskell/blob/master/projects/doc/HOWTO-contribute.rst
+  
+  <2016-02-01 Mon>
+** TODO : look at n-body sim: introduce collision/union between particles:
+   ~/Projects/Houdini/POPs/n_body.hipnc

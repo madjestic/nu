@@ -10,9 +10,6 @@
  '(haskell-stylish-on-save t)
  '(haskell-tags-on-save t))
 
-(global-set-key (kbd "C-c C-k") 'haskell-process-load-file)
-(global-set-key (kbd "C-c l") 'linum-mode)
-(global-set-key (kbd "C-;") 'iedit-mode)
 
 (require 'flymake-haskell-multi)
 (add-hook 'haskell-mode-hook 'flymake-haskell-multi-load)
@@ -20,24 +17,28 @@
 (linum-mode t)
 (structured-haskell-mode t)
 
-(define-key haskell-mode-map (kbd "C-c D") 'haskell-hayoo)
-(global-set-key (kbd "C-c r") 'haskell-process-restart)
 
 (turn-on-haskell-doc-mode)
 (interactive-haskell-mode)
 
-;; (paredit-mode)
-;; (global-set-key (kbd "M-s") 'paredit-splice-sexp)
+(smartparens-mode)
+(rainbow-delimiters-mode)
 
 (add-to-list 'yas/root-directory "~/.emacs.d/snippets/haskell-mode")
 ;;(yas/initialize)
 
-(sr-speedbar)
+(require 'speedbar)
 (speedbar-add-supported-extension ".hs")
 (speedbar-add-supported-extension ".vert")
 (speedbar-add-supported-extension ".frag")
 (speedbar-add-supported-extension ".tga")
 (speedbar-add-supported-extension ".glsl")
-(setq speedbar-show-unknown-files t)
-(sr-speedbar-open)
 
+
+(global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
+(global-set-key (kbd "C-c m") 'minimap-toggle)
+(global-set-key (kbd "C-c C-k") 'haskell-process-load-file)
+(global-set-key (kbd "C-c l") 'linum-mode)
+(global-set-key (kbd "C-;") 'iedit-mode)
+(define-key haskell-mode-map (kbd "C-c D") 'haskell-hayoo)
+(global-set-key (kbd "C-c r") 'haskell-process-restart)

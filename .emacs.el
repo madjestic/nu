@@ -1,10 +1,9 @@
+(server-force-delete)
+
 (package-initialize)
 (add-to-list 'exec-path "~/.cabal/bin")
-
 (menu-bar-mode -1)
-
 (font-lock-mode -1)
-(server-force-delete)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -20,16 +19,16 @@
  '(circe-default-directory "~/.circe")
  '(circe-format-self-say "me > {body}")
  '(circe-network-options
-	 (quote
-		(("Freenode" :nick "madjestic" :channels
-			("#emacs" "#odforce" "#haskell-beginners")
-			:nickserv-password asdfg))) t)
+   (quote
+    (("Freenode" :nick "madjestic" :channels
+      ("#emacs" "#odforce" "#haskell-beginners")
+      :nickserv-password asdfg))))
  '(circe-server-connected-hook nil)
  '(cua-enable-cua-keys nil)
  '(cua-mode t nil (cua-base))
  '(custom-safe-themes
-	 (quote
-		("c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
+   (quote
+    ("c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
  '(desktop-after-read-hook (quote (list-buffers)))
  '(desktop-path (quote ("~/")))
  '(desktop-save-mode f)
@@ -37,10 +36,10 @@
  '(dired-use-ls-dired t)
  '(ecb-layout-name "left2")
  '(ecb-layout-window-sizes
-	 (quote
-		(("leftSpeedbarHistory02"
-			(ecb-speedbar-buffer-name 0.16 . 0.6071428571428571)
-			(ecb-history-buffer-name 0.16 . 0.32142857142857145)))))
+   (quote
+    (("leftSpeedbarHistory02"
+      (ecb-speedbar-buffer-name 0.16 . 0.6071428571428571)
+      (ecb-history-buffer-name 0.16 . 0.32142857142857145)))))
  '(ecb-options-version "2.40")
  '(fancy-splash-image nil)
  '(font-use-system-font 1)
@@ -49,31 +48,41 @@
  '(global-hl-line-mode t)
  '(haskell-stylish-on-save t)
  '(haskell-tags-on-save t)
+ '(holiday-general-holidays
+   (quote
+    ((holiday-fixed 1 1 "New Year's Day")
+     (holiday-fixed 2 14 "Valentine's Day")
+     (holiday-fixed 4 1 "April Fools' Day"))))
+ '(holiday-other-holidays
+   (quote
+    ((holiday-fixed 3 26 "Vlad's Birthday")
+     (holiday-fixed 11 9 "Kasia's Birthday"))))
+ '(indent-tabs-mode nil)
  '(inhibit-startup-screen t)
  '(initial-scratch-message nil)
  '(jabber-account-list
-	 (quote
-		(("madjestic13"
-			(:network-server . "talk.google.com")
-			(:port . 5223)
-			(:connection-type . ssl)))))
+   (quote
+    (("madjestic13"
+      (:network-server . "talk.google.com")
+      (:port . 5223)
+      (:connection-type . ssl)))))
  '(minimap-dedicated-window t)
  '(minimap-width-fraction 0.1)
  '(minimap-window-location (quote right))
  '(mouse-wheel-scroll-amount (quote (1 ((shift) . 1) ((control)))))
  '(org-agenda-files (quote ("~/org/test.org" "~/org/index.org")))
  '(org-file-apps
-	 (quote
-		((auto-mode . emacs)
-		 ("\\.mm\\'" . default)
-		 ("\\.x?html?\\'" . default)
-		 ("\\.pdf\\'" . "/usr/bin/okular"))))
+   (quote
+    ((auto-mode . emacs)
+     ("\\.mm\\'" . default)
+     ("\\.x?html?\\'" . default)
+     ("\\.pdf\\'" . "/usr/bin/okular"))))
  '(package-archives
-	 (quote
-		(("marmalade" . "http://marmalade-repo.org/packages/")
-		 ("gnu" . "http://elpa.gnu.org/packages/")
-		 ("melpa" . "http://melpa.milkbox.net/packages/")
-		 ("org" . "http://orgmode.org/elpa/"))))
+   (quote
+    (("marmalade" . "http://marmalade-repo.org/packages/")
+     ("gnu" . "http://elpa.gnu.org/packages/")
+     ("melpa" . "http://melpa.milkbox.net/packages/")
+     ("org" . "http://orgmode.org/elpa/"))))
  '(powerline-default-separator (quote slant))
  '(scalable-fonts-allowed t)
  '(scroll-bar-mode nil)
@@ -85,21 +94,21 @@
  '(speedbar-default-position (quote left))
  '(speedbar-directory-button-trim-method (quote trim))
  '(speedbar-frame-parameters
-	 (quote
-		((minibuffer)
-		 (width . 10)
-		 (border-width . 0)
-		 (menu-bar-lines . 0)
-		 (tool-bar-lines . 0)
-		 (unsplittable . t)
-		 (left-fringe . 0))))
+   (quote
+    ((minibuffer)
+     (width . 10)
+     (border-width . 0)
+     (menu-bar-lines . 0)
+     (tool-bar-lines . 0)
+     (unsplittable . t)
+     (left-fringe . 0))))
  '(speedbar-hide-button-brackets-flag t)
  '(speedbar-show-unknown-files t)
  '(speedbar-use-images nil)
  '(sr-speedbar-right-side nil)
  '(tab-stop-list
-	 (quote
-		(2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 36 38 40 44 48 52 56 64 72 80 88 96 104 112 120)))
+   (quote
+    (2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 36 38 40 44 48 52 56 64 72 80 88 96 104 112 120)))
  '(tab-width 2)
  '(tabbar-background-color nil)
  '(tabbar-mode t nil (tabbar))
@@ -107,10 +116,10 @@
  '(tabbar-use-images nil)
  '(tool-bar-mode nil)
  '(tooltip-frame-parameters
-	 (quote
-		((name . "tooltip")
-		 (internal-border-width . 2)
-		 (border-width . 1)))))
+   (quote
+    ((name . "tooltip")
+     (internal-border-width . 2)
+     (border-width . 1)))))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -140,7 +149,7 @@
  '(tabbar-button-highlight ((t (:inherit tabbar-default :foreground "black"))))
  '(tabbar-default ((t (:inherit variable-pitch :background "#2d3743" :foreground "grey75"))))
  '(tabbar-highlight ((t (:background "#2d3743" :foreground "aquamarine"))))
- '(tabbar-modified ((t (:inherit tabbar-default :foreground "dark orange" ))))
+ '(tabbar-modified ((t (:inherit tabbar-default :foreground "dark orange"))))
  '(tabbar-selected ((t (:inherit tabbar-default :foreground "medium sea green" :weight bold))))
  '(tabbar-unselected ((t (:inherit tabbar-default))))
  '(tooltip ((t (:inherit variable-pitch :background "#797985" :foreground "black" :height 0.8))))
