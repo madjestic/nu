@@ -15,7 +15,7 @@
  '(ac-quick-help-prefer-pos-tip t)
  '(ac-show-menu-immediately-on-auto-complete t)
  '(browse-url-browser-function (quote browse-url-generic))
- '(browse-url-generic-program "chromium-browser" t)
+ '(browse-url-generic-program "chromium-browser")
  '(circe-default-directory "~/.circe")
  '(circe-format-self-say "me > {body}")
  '(circe-network-options
@@ -138,6 +138,7 @@
  '(minimap-font-face ((t (:height 0.1))))
  '(popup-tip-face ((t (:background "#797985" :foreground "black" :height 0.8))))
  '(powerline-active2 ((t (:inherit mode-line :background "sea green"))))
+ '(rainbow-delimiters-depth-1-face ((t (:foreground "aqua"))))
  '(speedbar-button-face ((t (:foreground "green3" :height 0.8))))
  '(speedbar-directory-face ((t (:foreground "steel blue" :height 0.8))))
  '(speedbar-file-face ((t (:foreground "light blue" :height 0.8))))
