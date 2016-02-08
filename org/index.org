@@ -1347,3 +1347,18 @@ Sat Apr 26 16:03:45 CEST 2014
   <2016-02-01 Mon>
 ** TODO : look at n-body sim: introduce collision/union between particles:
    ~/Projects/Houdini/POPs/n_body.hipnc
+
+  <2016-02-07 Sun>
+  Yampy-Cube: https://youtu.be/T7XwTolu9YI?t=2525
+  Jekor Yampa: https://youtu.be/T3xXebIr8AM?t=1000
+
+  <2016-02-08 Mon>
+  learning FRP:
+  Jekor, Yampa:
+  https://youtu.be/T3xXebIr8AM?t=980
+  Yampy Cube:
+  https://youtu.be/T7XwTolu9YI?t=2506
+
+  Learning AI/Machine Learning/Deep Learning
+  http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
+  

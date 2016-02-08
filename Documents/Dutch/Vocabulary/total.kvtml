@@ -4,7 +4,7 @@
   <information>
     <generator>kwordquiz 0.9.2</generator>
     <title>02.kvtml</title>
-    <date>2016-01-25</date>
+    <date>2016-02-08</date>
   </information>
   <identifiers>
     <identifier id="0">
@@ -4094,46 +4094,118 @@
       </translation>
     </entry>
     <entry id="510">
-      <translation id="0"/>
-      <translation id="1"/>
+      <translation id="0">
+        <text>vereniging</text>
+      </translation>
+      <translation id="1">
+        <text>club, association, society</text>
+      </translation>
     </entry>
     <entry id="511">
-      <translation id="0"/>
-      <translation id="1"/>
+      <translation id="0">
+        <text>duurzaam</text>
+      </translation>
+      <translation id="1">
+        <text>permanent, durable</text>
+      </translation>
     </entry>
     <entry id="512">
-      <translation id="0"/>
-      <translation id="1"/>
+      <translation id="0">
+        <text>samenleving</text>
+      </translation>
+      <translation id="1">
+        <text>society</text>
+      </translation>
     </entry>
     <entry id="513">
-      <translation id="0"/>
-      <translation id="1"/>
+      <translation id="0">
+        <text>beleid</text>
+      </translation>
+      <translation id="1">
+        <text>policy</text>
+      </translation>
     </entry>
     <entry id="514">
-      <translation id="0"/>
-      <translation id="1"/>
+      <translation id="0">
+        <text>regelgeving</text>
+      </translation>
+      <translation id="1">
+        <text>rules, (aanwijzingen) instructions</text>
+      </translation>
     </entry>
     <entry id="515">
-      <translation id="0"/>
-      <translation id="1"/>
+      <translation id="0">
+        <text>stinken</text>
+      </translation>
+      <translation id="1">
+        <text>stink, smell</text>
+      </translation>
     </entry>
     <entry id="516">
-      <translation id="0"/>
-      <translation id="1"/>
+      <translation id="0">
+        <text>in kaart brengen</text>
+      </translation>
+      <translation id="1">
+        <text>to map</text>
+      </translation>
     </entry>
     <entry id="517">
-      <translation id="0"/>
-      <translation id="1"/>
+      <translation id="0">
+        <text>naar zijn hand</text>
+      </translation>
+      <translation id="1">
+        <text>to their advantage</text>
+      </translation>
     </entry>
     <entry id="518">
-      <translation id="0"/>
-      <translation id="1"/>
+      <translation id="0">
+        <text>overnemen</text>
+      </translation>
+      <translation id="1">
+        <text>receive, take (over)</text>
+      </translation>
     </entry>
     <entry id="519">
+      <translation id="0">
+        <text>maatregel</text>
+      </translation>
+      <translation id="1">
+        <text>measure</text>
+      </translation>
+    </entry>
+    <entry id="520">
+      <translation id="0">
+        <text>afscheid</text>
+      </translation>
+      <translation id="1">
+        <text>parting, leaving, farewell, departure:</text>
+      </translation>
+    </entry>
+    <entry id="521">
       <translation id="0"/>
       <translation id="1"/>
     </entry>
-    <entry id="520">
+    <entry id="522">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="523">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="524">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="525">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="526">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="527">
       <translation id="0"/>
       <translation id="1"/>
     </entry>
@@ -4663,6 +4735,13 @@
       <entry id="518"/>
       <entry id="519"/>
       <entry id="520"/>
+      <entry id="521"/>
+      <entry id="522"/>
+      <entry id="523"/>
+      <entry id="524"/>
+      <entry id="525"/>
+      <entry id="526"/>
+      <entry id="527"/>
     </container>
   </lessons>
 </kvtml>
