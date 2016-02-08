@@ -1361,4 +1361,4 @@ Sat Apr 26 16:03:45 CEST 2014
 
   Learning AI/Machine Learning/Deep Learning
   http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
-  
+  http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-2/

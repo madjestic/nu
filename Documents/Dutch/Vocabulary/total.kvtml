@@ -4182,12 +4182,20 @@
       </translation>
     </entry>
     <entry id="521">
-      <translation id="0"/>
-      <translation id="1"/>
+      <translation id="0">
+        <text>verbergen</text>
+      </translation>
+      <translation id="1">
+        <text>hide, conceal</text>
+      </translation>
     </entry>
     <entry id="522">
-      <translation id="0"/>
-      <translation id="1"/>
+      <translation id="0">
+        <text>leed</text>
+      </translation>
+      <translation id="1">
+        <text>sorrow</text>
+      </translation>
     </entry>
     <entry id="523">
       <translation id="0"/>
@@ -4206,6 +4214,38 @@
       <translation id="1"/>
     </entry>
     <entry id="527">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="528">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="529">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="530">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="531">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="532">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="533">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="534">
+      <translation id="0"/>
+      <translation id="1"/>
+    </entry>
+    <entry id="535">
       <translation id="0"/>
       <translation id="1"/>
     </entry>
@@ -4742,6 +4782,14 @@
       <entry id="525"/>
       <entry id="526"/>
       <entry id="527"/>
+      <entry id="528"/>
+      <entry id="529"/>
+      <entry id="530"/>
+      <entry id="531"/>
+      <entry id="532"/>
+      <entry id="533"/>
+      <entry id="534"/>
+      <entry id="535"/>
     </container>
   </lessons>
 </kvtml>
