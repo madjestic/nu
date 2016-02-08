@@ -511,7 +511,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 		It's working.
 		Event stream can be read from [[file:/dev/input/js0]]
 		Fri May 30 00:31:18 CEST 2014
-*** TODO : Figure out how to read input:
+*** IN-PROGRESS : Figure out how to read input: :python: :ps3: :houdini: :joystick:
 		http://scaryreasoner.wordpress.com/2008/02/22/programming-joysticks-with-linux/
 		https://www.kernel.org/doc/Documentation/input/joystick-api.txt
 		http://stackoverflow.com/questions/16032982/getting-live-info-from-dev-input
@@ -520,6 +520,13 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 		As a temporary measure: https://github.com/ArthurYidi/Houdini-Joystick
 
 		Sony PLAYSTATION(R)3 Controller (/dev/input/js0)
+    
+    <2016-02-08 Mon>
+    In order to use:
+    houdini joystick-examples.hip
+    python joystick.py
+    Use Chop Pipe In to read the joystick data.
+    
 
 *** DONE : Waves tutorial sidefx
 *** DONE : Waves tutorial cmivfx 1
