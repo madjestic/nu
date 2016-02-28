@@ -3,8 +3,8 @@
 ## To get the list of available wifi access points, type:
 # nmcli d wifi
 #
-# To connect to a wifi access point specified by a SSID (here EEE), type:
-# # nmcli d wifi connect EEE password '12345678901234567890123456'
+# To connect to a wifi access point specified by a SSID (here ZMC-wifigast), type:
+# nmcli d wifi connect ZMC-wifigast password '12345678901234567890123456'
 #
 # To request that NetworkManager rescans for available access points, type:
 # nmcli radio wifi on

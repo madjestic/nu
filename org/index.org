@@ -431,14 +431,15 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 		tutorial11 - Typeclasses in NGL.Rendering with some commented 
 		             redundant code, that could still be useful
 		tutorial12 - has bits and pieces of tutorial 11
+
 ***** WAITING : create a UV-projection:
 			toUV :: Projection -> UV in module Shape.hs
 
 		  The foundation is there, I decided to postpone concrete implementation
 			till the need arrives.
-***** TODO : Create a boilerplate:
-****** TODO : All code on one page:  draw a textured sqaure
-			 CLOCK: [2015-11-30 Mon 19:12]--[2015-11-30 Mon 19:13] =>  0:01
+***** DONE : Create a boilerplate:
+****** DONE : All code on one page:  draw a textured square
+       [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Boilerplate]]
 ******* TODO : in C++
 				CLOCK: [2015-11-30 Mon 19:13]--[2015-11-30 Mon 19:22] =>  0:09
 				[[~/.contexts/OpenGL_Bible/src/my_first_spinning_cube]] - seems like a good starting point for a spinning textured triangle
@@ -456,6 +457,9 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 ******** TODO : Change the shader so that it uses a texture
 				 <2015-12-31 Thu>
 ******* TODO : in Haskell			 
+    
+        <2016-02-29 Mon>
+        Pushed an update to GitHub and sent a blog link to Haskell Planet.
 ** FRP
 *** Reactive Banana
 [[*:%20Animation%20Support...][Reactive Banana Animation Support...]]
@@ -1104,6 +1108,18 @@ Sat Apr 26 16:03:45 CEST 2014
 ** TODO : Project Omicron:
 	 2x1Tb Raid-10?
 	 <2015-12-10 Thu>
+* MIDI :music::synt:
+	Ardouro
+	BitWig
+
+	[[http://proaudio.tuxfamily.org/wiki/index.php?title%3DRealtime_(RT)_Kernel][http://proaudio.tuxfamily.org/wiki/index.php?title=Realtime_(RT)_Kernel]]
+	https://wiki.gentoo.org/wiki/Project:Sound/How_to_Enable_Realtime_for_Multimedia_Applications
+	https://packages.gentoo.org/packages/media-plugins/calf
+
+	https://forums.gentoo.org/viewtopic-p-7330590.html?sid=1fa73569fe3439e99b81625808e0f794
+	http://gentoostudio.org/?p=maninstall&s=kernel
+	http://www.gentoo-wiki.info/Jack
+	<2015-12-27 Sun>
 * TODO:
 ** IN-PROGRESS [[*:%20Make%20Elegant,%20Clean-up][Make Elegant, Clean-up]]
 ** IN-PROGRESS : Write a make file that can be run like this:
@@ -1129,7 +1145,6 @@ Sat Apr 26 16:03:45 CEST 2014
    <2016-01-24 Sun>
 
    
-	 
 ** WAITING : figure out what's up with Nvidia Optimus
 	 Still has some minor(?) issues: https://forums.gentoo.org/viewtopic-t-1032214-highlight-.html
 	 [2015-11-30 Mon]
@@ -1164,7 +1179,6 @@ Sat Apr 26 16:03:45 CEST 2014
 	 
 ** DONE : make (sr-speedbar-open) a shortcut in cpp.el
 	 <2016-01-03 Sun>
-** TODO : sidefx bug-report node changing position in the network view when an object is created by C-LMB on a Shelf
 ** DONE : test todo - start a timer																 :foo::bar:
 	 (C-c C-x C-i) start a timer (in timer)
 	 (C-c C-x C-o) end timer (out-timer)
@@ -1238,21 +1252,23 @@ Sat Apr 26 16:03:45 CEST 2014
 	(Controversies among philosophers,
 	<2016-01-23 Sat>
 
-** TODO : Create a custom overlay:
-	 
-* MIDI :music::synt:
-	Ardouro
-	BitWig
+** IN-PROGRESS : Create a custom overlay:
+   /var/lib/layman/make.conf
+   PORTDIR_OVERLAY="
+   ...
+   /usr/local/portage
+   /usr/local/portage/kde
+   "
+   
+	 /usr/local/portage/haskell/yampa
 
-	[[http://proaudio.tuxfamily.org/wiki/index.php?title%3DRealtime_(RT)_Kernel][http://proaudio.tuxfamily.org/wiki/index.php?title=Realtime_(RT)_Kernel]]
-	https://wiki.gentoo.org/wiki/Project:Sound/How_to_Enable_Realtime_for_Multimedia_Applications
-	https://packages.gentoo.org/packages/media-plugins/calf
+   http://www.astro.ru.nl/~sluys/Public/custom_ebuilds.html
+   https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds
+   
+** TODO : Make colliding n-bodies sim
+** DONE : continue with Mortgage graphing, using VEX
+   [[file:~/Desktop/mortgage.hipnc]]
 
-	https://forums.gentoo.org/viewtopic-p-7330590.html?sid=1fa73569fe3439e99b81625808e0f794
-	http://gentoostudio.org/?p=maninstall&s=kernel
-	http://www.gentoo-wiki.info/Jack
-	<2015-12-27 Sun>
-	
 * History
 	[[/home/madjestic/houdini/houdini/python2.7libs/dopparticlefluidtoolutils.py]]
 	[[file:~/Projects/Python/Tree/Main.py][/Projects/Python/Tree/Main.py]] Fri Oct 17 23:47:43 CEST 2014
@@ -1352,8 +1368,6 @@ Sat Apr 26 16:03:45 CEST 2014
   https://github.com/gentoo-haskell/gentoo-haskell/blob/master/projects/doc/HOWTO-contribute.rst
   
   <2016-02-01 Mon>
-** TODO : look at n-body sim: introduce collision/union between particles:
-   ~/Projects/Houdini/POPs/n_body.hipnc
 
   <2016-02-07 Sun>
   Yampy-Cube: https://youtu.be/T7XwTolu9YI?t=2525
@@ -1369,3 +1383,31 @@ Sat Apr 26 16:03:45 CEST 2014
   Learning AI/Machine Learning/Deep Learning
   http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
   http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-2/
+
+  <2016-02-09 Tue>
+  Bluetooth:
+  http://www.thinkwiki.org/wiki/How_to_setup_Bluetooth
+  http://bricxcc.sourceforge.net/nbc/doc/nxtlinux.txt
+
+  sudo rfcomm bind /dev/rfcomm0 00:16:53:0E:21:14
+  sudo rfcomm release /dev/rfcomm0 00:16:53:0E:21:14
+
+  <2016-02-12 Fri>
+  Julia compilation fails
+  
+  The problems seems to go back to cbals incompatibility between science overlay and main portage.
+  It is currently causing a dependency havoc in the system.  Julia is not ready yet.
+  
+  <2016-02-26 Fri>
+  Everybody seems to enjoy the Vertex Displacement Animation task that I accomplished.  It looks like a propper SIGGRAPH material.
+
+  [[*:%20Make%20Elegant,%20Clean-up][I should polish Haskell OpenGL Tutorial]]
+
+  [[*:%20continue%20with%20Mortgage%20graphing,%20using%20VEX][I should continue with Mortgage graphing, using VEX]]
+
+  <2016-02-28 Sun>
+  LEGONXT
+  ~/Projects/LEGONXT/nxt-python-2.2.2/nxt-python-2.2.2/examples $ python ./mary.py
+
+  <2016-02-29 Mon>
+  Probably I should proceded with Rendering Adventure
