@@ -96,8 +96,8 @@
 (speedbar-add-supported-extension ".tga")
 (speedbar-add-supported-extension ".glsl")
 (setq speedbar-show-unknown-files t)
-(global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
-(global-set-key (kbd "C-c m") 'minimap-toggle)
+;; (global-set-key (kbd "C-c s") 'sr-speedbar-toggle) - moved to misc.el
+;; (global-set-key (kbd "C-c m") 'minimap-toggle)     - moved to misc.el
 ;; do the same with minimap and make it into misc.el
 ;; (sr-speedbar-open)
 

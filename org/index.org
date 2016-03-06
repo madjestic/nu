@@ -259,7 +259,9 @@ find . | egrep '\.hs$' | xargs hothasktags > tags
 [[http://stackoverflow.com/questions/6115459/small-haskell-program-compiled-with-ghc-into-huge-binary][Don Stuart on stack exchange]]
 
 ** a working GLFW/reactive-banana example?
-stack overflow question
+   stack overflow question
+** automatically add a type signature
+   C-u C-c C-t
 * Life Hacks
 ** Tax-return related papers:
 	  Annual Mortgage Statement 
@@ -456,7 +458,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 
 ******** TODO : Change the shader so that it uses a texture
 				 <2015-12-31 Thu>
-******* TODO : in Haskell			 
+******* DONE : in Haskell			 
     
         <2016-02-29 Mon>
         Pushed an update to GitHub and sent a blog link to Haskell Planet.
@@ -472,6 +474,12 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 [[http://hub.darcs.net/ertes/netwire/browse/README.md][Netwire on Darcs]]
 [[http://www.haskell.org/haskellwiki/Netwire][Netwire on Haskell Wiki]]
 [[https://github.com/MaxDaten/netwire-examples][Netwire Examples on GitHub]]
+
+*** Yampa
+    Jekor, Yampa:
+    https://youtu.be/T3xXebIr8AM?t=980
+    Yampy Cube:
+    https://youtu.be/T7XwTolu9YI?t=2506
 
 ** on Emacs
 
@@ -1411,3 +1419,11 @@ Sat Apr 26 16:03:45 CEST 2014
 
   <2016-02-29 Mon>
   Probably I should proceded with Rendering Adventure
+
+  <2016-03-02 Wed>
+  Visualize a graph with Haskell
+  /home/madjestic/Projects/Haskell/Mortgage/
+
+  <2016-03-05 Sat>
+  http://www.slideshare.net/CassEveritt/approaching-zero-driver-overhead
+  http://valhalla.fciencias.unam.mx/lenguajes/EOPL.pdf

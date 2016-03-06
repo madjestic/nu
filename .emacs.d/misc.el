@@ -11,11 +11,15 @@
   "Load a file in current user's configuration directory"
   (load-file (expand-file-name file user-init-dir)))
 
+(defun load-scheme ()
+  "load Scheme config files"
+  (interactive)
+  (load-user-file "scheme.el"))
+
 (defun load-helm ()
   "load Helm config files"
   (interactive)
   (load-user-file "helm.el"))
-
 
 (defun load-gnus ()
   "load Gnus config files"
@@ -140,13 +144,15 @@
 (global-set-key (kbd "M-#") 'next-word)
 (global-set-key (kbd "C-M-g") 'revert-buffer)
 (global-set-key (kbd "C-x C-k") 'kill-all-dired-buffers)
-(global-set-key (kbd "C-c L") 'linum-mode)
+(global-set-key (kbd "C-c n") 'linum-mode)
 (global-set-key (kbd "C-;") 'iedit-mode)
 (global-set-key (kbd "M-+") 'text-scale-increase)
 (global-set-key (kbd "M-_") 'text-scale-decrease)
 (global-set-key (kbd "M-S-<up>") 'move-text-up)
 (global-set-key (kbd "M-S-<down>") 'move-text-down)
 (global-set-key (kbd "M-^") 'server-force-delete)
+(global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
+(global-set-key (kbd "C-c m") 'minimap-toggle)
 ;;(global-set-key (kbd "C-M-x") 'delete-forward-whitespace)
 
 

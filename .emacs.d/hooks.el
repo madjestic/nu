@@ -7,6 +7,11 @@
 (add-to-list 'auto-mode-alist '("\\.frag\\'"   . (lambda ()(c++-mode))))
 (add-to-list 'auto-mode-alist '("\\.hs\\'" . (lambda ()(haskell-mode))))
 (add-to-list 'auto-mode-alist '("\\.py\\'" . (lambda ()(python-mode))))
+(add-to-list 'auto-mode-alist '("\\.scm\\'" . (lambda ()(scheme-mode))))
+
+(add-hook 'scheme-mode-hook
+          (lambda()						
+						(load-scheme)))
 
 (add-hook 'c++-mode-hook
           (lambda()						
