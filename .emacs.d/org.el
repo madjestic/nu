@@ -1,7 +1,7 @@
 ;;;;;;;;;;;;;;
 ;; Org-mode ;;
 ;;;;;;;;;;;;;;
-;; (org-mode)
+
 (smartparens-mode)
 (auto-complete-mode)
 
@@ -34,3 +34,4 @@
 ;;
 ;;  M-x imagex-auto-adjust-mode
 ;; (org-mode)
+

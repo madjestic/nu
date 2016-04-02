@@ -1,9 +1,12 @@
 (server-force-delete)
 
 (package-initialize)
-(add-to-list 'exec-path "~/.cabal/bin")
 (menu-bar-mode -1)
 (font-lock-mode -1)
+
+;; (require 'openwith)
+;; (openwith-mode t)
+;; (setq openwith-associations '(("\\.pdf\\'" "okular" (file))))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -15,7 +18,7 @@
  '(ac-quick-help-prefer-pos-tip t)
  '(ac-show-menu-immediately-on-auto-complete t)
  '(browse-url-browser-function (quote browse-url-generic))
- '(browse-url-generic-program "chromium-browser" t)
+ '(browse-url-generic-program "chromium-browser")
  '(circe-default-directory "~/.circe")
  '(circe-format-self-say "me > {body}")
  '(circe-network-options
@@ -75,8 +78,8 @@
    (quote
     ((auto-mode . emacs)
      ("\\.mm\\'" . default)
-     ("\\.x?html?\\'" . default)
-     ("\\.pdf\\'" . "/usr/bin/okular"))))
+     ("\\.x?html?\\'" . default))))
+ 
  '(package-archives
    (quote
     (("marmalade" . "http://marmalade-repo.org/packages/")
@@ -85,7 +88,7 @@
      ("org" . "http://orgmode.org/elpa/"))))
  '(powerline-default-separator (quote slant))
  '(scalable-fonts-allowed t)
- '(scheme-program-name "guile")
+ '(scheme-program-name "guile" t)
  '(scroll-bar-mode nil)
  '(server-mode t)
  '(sml/theme (quote respectful))
@@ -192,6 +195,10 @@
 ;;;;;;;;;;;;;;
 ;; Org-mode ;;
 ;;;;;;;;;;;;;;
+
+(require 'openwith)
+(openwith-mode t)
+(setq openwith-associations '(("\\.pdf\\'" "okular" (file))))
 
 (smartparens-mode)
 (auto-complete-mode)

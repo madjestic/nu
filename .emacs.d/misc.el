@@ -153,6 +153,7 @@
 (global-set-key (kbd "M-^") 'server-force-delete)
 (global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
 (global-set-key (kbd "C-c m") 'minimap-toggle)
+(global-set-key (kbd "C-c M-m") 'menu-bar-mode)
 ;;(global-set-key (kbd "C-M-x") 'delete-forward-whitespace)
 
 
@@ -161,3 +162,10 @@
 		(load-jabber)
 ;;		(jabber-connect)
     (switch-to-buffer "*-jabber-*"))
+
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
+(global-set-key "\C-x\ \C-r" 'recentf-open-files)
+
+(setenv "PATH" (concat (getenv "PATH") ":~/bin"))

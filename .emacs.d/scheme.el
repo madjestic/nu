@@ -1,3 +1,5 @@
+(smartparens-mode)
+(run-scheme)
 
 (defun slime-tab ()
   "slime-mode tab dwim, either indent, complete symbol or yas/expand"
@@ -6,6 +8,6 @@
     (unless r
       (yas/expand))))
 
-(run-scheme)
-(smartparens-mode)
-(slime-mode)
+
+
+
