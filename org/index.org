@@ -1498,9 +1498,6 @@ Sat Apr 26 16:03:45 CEST 2014
    functional composition?  Then every function could be perceived
    isolated from the rest of the system.  Therefore algorithmic complexity
    is isolated, compartmentalized.
-   
-** <2016-03-23 Wed>                                           :opengl:cpp:
-*** TODO: Mandelbrot OpenGL exmaple in C++: Explore uniforms.
 ** <2016-03-24 Thu>                                           :emacs:
    secondary eshell in emacs:
    C-u M-x eshell
@@ -1509,3 +1506,29 @@ Sat Apr 26 16:03:45 CEST 2014
 
 ** <2016-04-02 Sat>                                           :programming:
    Started reading [[file:~/Documents/%D0%94.%20%D0%9A%D0%BD%D1%83%D1%82%20-%20%20%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20(%D1%82%D0%BE%D0%BC%201,2,3)%20-%202002][D.Knut, the art of programming "Искусство программирования (том 1,2,3) - 2002"]]
+** <2016-04-03 Sun>
+   http://rephial.org/help/command
+   http://rephial.org/help/playing
+   angband commands
+** <2016-04-04 Mon>                                           :julia:
+*** TODO : write a @code_native collatz(10) for for(1:10) loop and see what the ASM code looks like
+** <2016-04-05 Tue>                                           :haskell:julia:
+   Working on a Haskell diagrams plotting example:
+   http://projects.haskell.org/diagrams/doc/quickstart.html
+   [[file:~/Projects/Haskell/Diagrams/test_00/Main.hs]]
+   [[file:~/Projects/Haskell/Diagrams/test_00/plot.svg]]
+   
+   Working through Julia manual:
+   http://docs.julialang.org/en/release-0.4/manual/functions/
+** <2016-04-09 Sat>                                           :opencl:
+   Started reading: http://www.heterogeneouscompute.org/?page_id=7
+   (OpenCL book)
+   [[file:~/Documents/OpenCL_Programming_Guide.pdf]] (hoknamahn's book)
+   
+** <2016-04-11 Mon>                                           :opengl:cpp:haskell:
+*** TODO : Mandelbrot OpenGL exmaple in C++: Explore uniforms.
+    [[file:~/Projects/OpenGL/sb7code/src/my_first_spinning_cube_v01/Main.cpp]]
+    time uniform is sent to vertex shader.
+*** TODO : Do the same in haskell
+    [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot/Main.hs]]
+   
