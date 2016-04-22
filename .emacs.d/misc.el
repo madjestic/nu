@@ -153,7 +153,7 @@
 (global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
 (global-set-key (kbd "C-c m") 'minimap-toggle)
 (global-set-key (kbd "C-c M-m") 'menu-bar-mode)
-(global-set-key (kbd "C-c C-b") 'flymake-compile) ;; build with flymake/Makefile
+(global-set-key (kbd "C-c b") 'flymake-compile) ;; build with flymake/Makefile
 ;;(global-set-key (kbd "C-M-x") 'delete-forward-whitespace)
 
 

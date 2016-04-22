@@ -196,9 +196,16 @@
 ;; Org-mode ;;
 ;;;;;;;;;;;;;;
 
+(defun fixPath(filename)
+  (setq str (split-string filename "//"))
+  (elt (substring (string-to-vector str) 1) 0)
+  )
+
 (require 'openwith)
 (openwith-mode t)
-(setq openwith-associations '(("\\.pdf\\'" "okular" (file))))
+(setq openwith-associations '(("\\.pdf\\'"   "okular"  (file))))
+(setq openwith-associations '(("\\.hip\\'"   "houdini" (file))))
+(setq openwith-associations '(("\\.hipnc\\'" "houdini" (file))))
 
 (smartparens-mode)
 (auto-complete-mode)

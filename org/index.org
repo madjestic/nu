@@ -272,6 +272,11 @@ find . | egrep '\.hs$' | xargs hothasktags > tags
 		WOZ
 ** Delivery Service
 	 +31686093284
+** Building company (the guy who made a good impression of himself)
+   "kenza bouw b.v."
+   Vredeweg 5a
+   1505 hh zaandam
+   
 * New Task Example
 
 ** Create a Design
@@ -1526,9 +1531,36 @@ Sat Apr 26 16:03:45 CEST 2014
    [[file:~/Documents/OpenCL_Programming_Guide.pdf]] (hoknamahn's book)
    
 ** <2016-04-11 Mon>                                           :opengl:cpp:haskell:
+** <2016-04-15 Fri>                                           :deeplearning:ai:pebble:opengl:
+   Started reading deeplearning book.  It seem a nice complement to 
+   Tom Mitchel's book.
+   [[file:~/Documents/Machine_Learning_-Tom_Mitchell.pdf]]
+   http://www.deeplearningbook.org/contents/intro.html#pf6
+
+   Pebble SDK:
+   
+*** TODO : Study the Mandelbrot for Pebble example:
+    https://github.com/mhungerford/pebble-mandelbrot-generator
+    
+    Pebble SDK:
+    https://developer.pebble.com/sdk/install/linux/
+    http://blog.ps0ke.de/2013/09/20/00/54/setting-up-the-pebble-development-environment-on-gentoo-linux-64bit
+
 *** TODO : Mandelbrot OpenGL exmaple in C++: Explore uniforms.
     [[file:~/Projects/OpenGL/sb7code/src/my_first_spinning_cube_v01/Main.cpp]]
     time uniform is sent to vertex shader.
 *** TODO : Do the same in haskell
     [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot/Main.hs]]
-   
+  
+    
+
+*** TODO : Read the Red Book:
+    [[file:~/Documents/opengl_programming_guide_8th_edition.pdf]]
+*** TODO : Read the book of shaders as a supplement:
+    http://patriciogonzalezvivo.com/2015/thebookofshaders/00/
+*** TODO : Take a look at GPipe, it seems like an interesting way to handle OpenGL
+    http://tobbebex.blogspot.nl/2015/09/gpu-programming-in-haskell-using-gpipe.html
+** <2016-04-21 Thu>                                                 :houdini:
+   [[file:~/Projects/Houdini/POPs/n_body_collide.hipnc]]
+   VEX compiler #define:
+   http://127.0.0.1:48626/vex/vcc
