@@ -1,0 +1,40 @@
+Config { font = "xft:DejaVu Sans Mono:size=8:antialias=true"
+       , borderColor = "black"
+       , border = TopB
+       , bgColor = "black"
+       , fgColor = "grey"
+       , position = Top
+       , lowerOnStart = True
+       , commands = [ Run Network "wlp4s0"  ["-t","Wifi: <rx> <tx>"
+                                            ,"-L","500"
+                                            ,"-H","1000000"
+                                            ,"-l","SeaGreen"
+                                            ,"-h","red"
+                                            ,"-n","SpringGreen"] 10
+                    , Run Com "/home/madjestic/bin/wireless.sh" [] "wifi" 30
+                    , Run Cpu               ["-L","3"
+                                            ,"-H","50"
+                                            ,"--normal","#77cc77"
+                                            ,"--high","red"] 10
+                    , Run Memory            ["-t","Mem: <usedratio>%"
+                                            ,"-L","50"
+                                            ,"-H","85"
+                                            ,"-n","SpringGreen"
+                                            ,"-l","SeaGreen"
+                                            ,"-h","red"] 10
+                    , Run Swap              [] 10
+                    , Run Com "uname"       ["-s","-r"] "" 36000
+                    , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
+                    , Run StdinReader
+                    , Run BatteryP ["BAT0"] ["-t", "<left>%"
+                                            ,"-L","10"
+                                            ,"-H","75"
+                                            ,"-h","SeaGreen"
+                                            ,"-n","SpringGreen"
+                                            ,"-l","red"] 50
+                    , Run Volume "default" "Master" [] 10
+                    ]
+       , sepChar = "%"
+       , alignSep = "}{"
+       , template = "%StdinReader% } %cpu% | %memory% | %wlp4s0% | %wifi% | %default:Master% | %battery% { <fc=#ee9a00>%date%</fc> | %uname%"
+       }

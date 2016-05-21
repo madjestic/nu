@@ -11,7 +11,7 @@ houdini() {
 		export HOUDINI=~/houdini_dir
 		export HOUDINI_MAX_FILE_HISTORY=80
 		export HOUDINI_OTLSCAN_PATH=$HOUDINI/houdini/otls:~/Projects/Houdini/otls
-		export FILE=$1
+    export FILE=$(pwd)/$1
 		if [ -e "$1" ]
 		then
 				cd ~/houdini_dir && source ./houdini_setup && /home/madjestic/houdini_dir/bin/houdini $FILE

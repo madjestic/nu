@@ -1,3 +1,16 @@
+* Waterfall
+  @in[
+  [[*:%20Set%20up%20water%20shader][: Set up water shader]]
+  [[*:%20continue%20working%20on%20waterfall%20example][: continue working on waterfall example]]
+  [[*%5B2015-01-12%20Mon%5D][{2015-01-12 Mon}]]
+  [[*:%20Investigate%20how%20to%20render%20ocean%20nicely][: Investigate how to render ocean nicely]]
+  ]
+
+  links:
+  https://rutracker.org/forum/viewtopic.php?t=5114569
+  https://rutracker.org/forum/viewtopic.php?t=5079199
+  https://rutracker.org/forum/viewtopic.php?t=4257762
+  
 * Kappa Quick Notes
 	Quick notes:
 
@@ -29,6 +42,10 @@ revdep-rebuild -ip
 # timer/date update
 nu madjestic # hwclock --set --date="12/21/2015 19:23:00"
 nu madjestic # hwclock --hctosys --localtime
+
+# Backup using dd's
+dd if=/dev/sda of=/dev/sdb bs=4096 conv=noerror,sync
+
 
 ** ### Kernel Upgrade     ###
 # copy old config
@@ -121,8 +138,6 @@ WINDOWS-p
 		#echo
 		qmake -o Makefile triangle.pro
 
-		# Backup using dd's
-		dd if=/dev/sda of=/dev/sdb bs=4096 conv=noerror,sync
 
 ** ### STEAM              ###
 	 MESA_GL_VERSION_OVERRIDE=4.0 MESA_GLSL_VERSION_OVERRIDE=400 %command%
@@ -163,6 +178,18 @@ C-u M-! date   | to insert date |
    [[docview:~/Downloads/Abbelian_Categories.pdf::100][PDF]]
 	 [[docview:~/Projects/gmsg/basic_des/basic.pdf::1][open_pdf with docview]]
 	 S-enter create a symlink to a current file in dired
+
+* AI
+  @in:[[[*<2016-02-08%20Mon>][<2016-02-08 Mon>]]]
+  While playing with Gnus, I've recovered an old e-mail from Richard,
+	he sent me a few pdf's on machine learning, among which was:
+	[[file:~/Documents/Machine%20Learning%20in%20Action.pdf][file:~/Documents/Machine Learning in Action.pdf]]
+
+  [[*Stylistic%20Analysis,%20Bias%20filtering,%20etc][Stylistic Analysis, Bias filtering, etc]]
+
+  Learning AI/Machine Learning/Deep Learning
+  http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
+  http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-2/
 
 * Bash
 	an interesting example of "loop over all files in a directory 
@@ -227,6 +254,11 @@ C-u M-! date   | to insert date |
 	<M-S> ( : foo -> (foo)
 	M-up    : (foo) -> foo
 
+  (C-c C-x C-i) start a timer (in timer)
+	(C-c C-x C-o) end timer (out-timer)
+	CLOCK: [2015-11-28 Sat 18:01]--[2015-11-28 Sat 18:03] =>  0:02
+
+
 ** Registers, bookmarks and desktop
 	 C-x r w <register> to store a window configuration in a register
 	 C-x r j <register> (where <register> is a single character) to jump back to a register.
@@ -289,6 +321,8 @@ find . | egrep '\.hs$' | xargs hothasktags > tags
 		notes to waves translator
 		
 * Projects
+* Yampa
+  @out[[[*Yampa][Yampa]]]
 ** HNGL
 
 *** on HNGL
@@ -470,12 +504,14 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
         <2016-02-29 Mon>
         Pushed an update to GitHub and sent a blog link to Haskell Planet.
 ** FRP
+   @out[[[file:~/Projects/Haskell/FRP]]]
 *** Reactive Banana
 [[*:%20Animation%20Support...][Reactive Banana Animation Support...]]
 **** TODO Reading: [[http://johnlato.blogspot.nl/2011/04/thoughts-on-frp.html][Sound and Software]]
 **** TODO Reading: [[http://www.kazachonak.com/2012/06/reactive-programming.html][Reactive Programming]]
 **** TODO Reading: [[http://conal.net/fran/tutorial.htm][Fran Tutorial (Connal Elliot)]]
 **** TODO Watch  : [[http://vimeo.com/6686570][Push-pull Functional Reactive Programming]]
+Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blob/master/reactive-banana/doc/examples/Counter.hs][Added a Counter example]]
 *** NetWire
 [[http://hackage.haskell.org/package/netwire-4.0.5/docs/Control-Wire.html][Control.Wire]]
 [[http://hub.darcs.net/ertes/netwire/browse/README.md][Netwire on Darcs]]
@@ -484,10 +520,15 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 
 *** Yampa
     Jekor, Yampa:
-    https://youtu.be/T3xXebIr8AM?t=980
+    https://youtu.be/-IpE0CyHK7Q?t=425 - Jekor's yampa tutorial part 1
+    https://youtu.be/T3xXebIr8AM?t=980 - Jekor's yampa tutorial part 2
     Yampy Cube:
     https://youtu.be/T7XwTolu9YI?t=2506
 
+    [[file:~/Projects/Haskell/yampaTutorial/yampa.pdf]]
+
+*** Yampa Tutorial (a pdf tutorial from git)
+    [[file:~/Projects/Haskell/yampaTutorial/yampa.pdf]]
 ** on Emacs
 
 *** IN-PROGRESS Learn to use Org-mode
@@ -551,6 +592,10 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 *** DONE : Waves tutorial cmivfx 1
 *** DONE : Waves tutorial cmivfx 2
 *** DONE : Investigate how to render ocean nicely
+    (cmivfx tutorial)
+    https://rutracker.org/forum/viewtopic.php?t=5114569
+    https://rutracker.org/forum/viewtopic.php?t=5079199
+    https://rutracker.org/forum/viewtopic.php?t=4257762
 *** TODO : Work on a small example of gushing water effect :houdini::effect::vfx:
 		<2015-12-02 Wed>
 
@@ -640,33 +685,6 @@ Sat Apr 26 16:03:45 CEST 2014
 	 export LD_LIBRARY_PATH=.
 	 ./UE4Editor ~/Projects/Unreal_Projects/MyProject4/MyProject4.uproject
 	 primusrun ./UE4Editor ~/Projects/Unreal_Projects/MyProject/MyProject.uproject -opengl4
-
-* MST124: Essential Mathematics 1
-** DONE :	[[file:~/Documents/MST124/TMA02/mst124_unit4.pdf][Unit 4]] (textbook)
-** DONE :	[[file:~/Documents/MST124/TMA02/TMA_02.pdf][TMA 02]]
-** DONE : TMA_03
-** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965296&page%3D1&scrollpos%3D0#q3][Unit 9 Practice Quiz]]
-** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965295&page%3D1&scrollpos%3D0#q5][ICMA44]]
-** DONE : [[file:~/Documents/MST124/TMA04/mst124_14b_tma04.pdf][TMA_04]]
-* MST125: Essential Mathematics 2
-	One characteristic of a reflection that distinguishes it from a rotation or a
-	translation is that it reverses vertex order.
-
-	An isometry maps any polygon to a polygon of the same size and
-	shape. In particular, the vertices of the polygon are mapped to the
-	vertices of the image polygon.
-
-	A linear transformation leaves the origin fixed.
-
-	If an implication is true, then its converse is either true or false.
-
-** One-to-one linear transformations
-	 Determinant of One-to-one linear transformations does not equal 0.
-	 One-to-one linear transformations preserve linearity
-	 One-to-one linear transformations map lines to lines
-
-** DONE : p 48
-
 * Houdini
 	/home/madjestic/Projects/Houdini/Fractals/model.hipnc
 	- fractals
@@ -692,21 +710,39 @@ Sat Apr 26 16:03:45 CEST 2014
 	 [[https://en.wikipedia.org/wiki/William_Stanley_Jevons]]
 	 [[https://www.marxists.org/reference/subject/economics/jevons/mathem.htm]]
 
-* Principia Mathemtica
+** MST124: Essential Mathematics 1
+** DONE :	[[file:~/Documents/MST124/TMA02/mst124_unit4.pdf][Unit 4]] (textbook)
+** DONE :	[[file:~/Documents/MST124/TMA02/TMA_02.pdf][TMA 02]]
+** DONE : TMA_03
+** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965296&page%3D1&scrollpos%3D0#q3][Unit 9 Practice Quiz]]
+** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965295&page%3D1&scrollpos%3D0#q5][ICMA44]]
+** DONE : [[file:~/Documents/MST124/TMA04/mst124_14b_tma04.pdf][TMA_04]]
+** MST125: Essential Mathematics 2
+	One characteristic of a reflection that distinguishes it from a rotation or a
+	translation is that it reverses vertex order.
+
+	An isometry maps any polygon to a polygon of the same size and
+	shape. In particular, the vertices of the polygon are mapped to the
+	vertices of the image polygon.
+
+	A linear transformation leaves the origin fixed.
+
+	If an implication is true, then its converse is either true or false.
+
+** One-to-one linear transformations
+	 Determinant of One-to-one linear transformations does not equal 0.
+	 One-to-one linear transformations preserve linearity
+	 One-to-one linear transformations map lines to lines
+
+** DONE : p 48
+
+** Principia Mathemtica
 	Analysis and Geometry, Theory of agregates (Cantor)
 	Symbolic Logic (Peano)
 	
 
 ** Guerrilla Math Study Group (GMSG)
 	 [[https://sites.google.com/site/guerrillamathstudygroup/][google sites link]]
-* Guerrilla
-** Camalot
-	 Curvature filter: Instead of failing back onto 'All' - sort by attribute and leave 1 (or more)
-
-*** DONE If I win this tomorrow, get myself "Pathologic HD" as a present
-		http://www.gog.com/game/pathologic_classic_hd
-		<2015-11-10 Tue>
-		
 * Active Links:
 	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D935459&page%3D1][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=935459&page=1]]
 	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D913986&page%3D13][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=913986&page=13]]
@@ -804,7 +840,7 @@ Sat Apr 26 16:03:45 CEST 2014
 		The initial setup was a breeze.
 **** TODO : Set up message filtering
 		 Use POPFile at Linux:
-		 http://blog.binchen.org/posts/use-popfile-at-linux.html (gnus email antispam and fultering)
+		 http://blog.binchen.org/posts/use-popfile-at-linux.html (gnus email antispam and filtering)
 		 <2015-12-03 Thu>
 
 		 
@@ -865,6 +901,12 @@ Sat Apr 26 16:03:45 CEST 2014
 *** TODO : SQLite tutorial
 		http://www.tutorialspoint.com/sqlite/
 		<2016-01-10 Sun>
+   [[*<2016-05-09%20Mon>][<2016-05-09 Mon>]]
+   1) rendering a circle with an outline:
+      - render a circle of a radius r
+      - render a circle with a snaller radius on top of it.
+        the result should look like a circle with an outline.
+   2) render an object, consisting of 2 circles, connected by a line.
 * Cognitive science
 	P != NP
 	http://en.wikipedia.org/wiki/P_versus_NP_problem
@@ -1134,7 +1176,12 @@ Sat Apr 26 16:03:45 CEST 2014
 	https://forums.gentoo.org/viewtopic-p-7330590.html?sid=1fa73569fe3439e99b81625808e0f794
 	http://gentoostudio.org/?p=maninstall&s=kernel
 	http://www.gentoo-wiki.info/Jack
+
+** <2016-05-06 Fri>
+   run qjackctl, connect midi devices, link them.
 	<2015-12-27 Sun>
+* Linux Format
+  [[file:~/Documents/Linux_Format_March_2016.pdf]]
 * TODO:
 ** IN-PROGRESS [[*:%20Make%20Elegant,%20Clean-up][Make Elegant, Clean-up]]
 ** IN-PROGRESS : Write a make file that can be run like this:
@@ -1173,7 +1220,6 @@ Sat Apr 26 16:03:45 CEST 2014
 	 
 ** DONE : link it here
 ** DONE : Set up fallout 2 ~/Projects/games/falltergeist: it is missing some files, get them from an official game installation
-
 ** DONE : compile latest Unreal Engine
 	 [2015-11-30 Mon]
 	 tried latest, it fails somewhere during the Setup.sh, reasons unknown, log file does not get produced.
@@ -1194,25 +1240,10 @@ Sat Apr 26 16:03:45 CEST 2014
 	 
 ** DONE : make (sr-speedbar-open) a shortcut in cpp.el
 	 <2016-01-03 Sun>
-** DONE : test todo - start a timer																 :foo::bar:
-	 (C-c C-x C-i) start a timer (in timer)
-	 (C-c C-x C-o) end timer (out-timer)
-	 CLOCK: [2015-11-28 Sat 18:01]--[2015-11-28 Sat 18:03] =>  0:02
 	 
-	 
-	 
-
-	
-
 		[2015-01-12 Mon]
 		(OlexP script to start Houdini)
 		alias hdk='hdktmp=`pwd`; cd $HFS; source houdini_setup; cd $hdktmp; unset hdkt
-
-		While playing with Gnus, I've recovered an old e-mail from Richard,
-		he sent me a few pdf's on machine learning, among which was:
-		[[file:~/Documents/Machine%20Learning%20in%20Action.pdf][file:~/Documents/Machine Learning in Action.pdf]]
-
-		
 
 	Reading [[file:~/Projects/pbrt-v2][pbrt book]]
 	<2016-01-16 Sat>
@@ -1260,6 +1291,8 @@ Sat Apr 26 16:03:45 CEST 2014
 	
 	https://www.gridmarkets.com/
 	Houdini rendering in the cloud.
+
+  
 	<2016-01-23 Sat>
 
 ** TODO :	Mathematics Without Apologies:
@@ -1284,13 +1317,12 @@ Sat Apr 26 16:03:45 CEST 2014
 ** DONE : continue with Mortgage graphing, using VEX
    [[file:~/Desktop/mortgage.hipnc]]
 
-** TODO : Render out a vide, same as for n-bodies.
+** TODO : Render out a video, same as for n-bodies.
 * History
-** [2015-01-12 Mon]
+** [2015-01-12 Mon]                                                  :python:
 
-  asd
 	[[/home/madjestic/houdini/houdini/python2.7libs/dopparticlefluidtoolutils.py]]
-	[[file:~/Projects/Python/Tree/Main.py][/Projects/Python/Tree/Main.py]] Fri Oct 17 23:47:43 CEST 2014
+	[[file:~/Projects/Python/Tree/Main.py][/Projects/Python/Tree/Main.py]] Fri Oct 17 23:47:43 CEST 2014 - python tree-parsing example
 
 	[[*:%20Make%20Elegant,%20Clean-up][Sun Oct 26 00:10:42 CEST 2014
 	refactoring, cleaning up Rendering.hs and Shape.hs]]
@@ -1303,13 +1335,13 @@ Sat Apr 26 16:03:45 CEST 2014
 	
 	Found a nice article on GTK+, continue reading later. (Which article?! <2015-12-03 Thu> )
 
-** [2015-09-21 Mon]
+** [2015-09-21 Mon]                                               :rendering:
 	
 	Trying to make [[*PVR][PVR]] compile.  [[*PVR][Getting some linker errors:]] (1)
 
 	<2015-11-06 Fri> solved (1)
 
-** <2015-11-08 Sun> 
+** <2015-11-08 Sun>                                                  :opengl:
 	
 	#define W 0xFF, 0xFF, 0xFF, 0xFF
         static const GLubyte tex_data[] =
@@ -1346,7 +1378,7 @@ Sat Apr 26 16:03:45 CEST 2014
 
 	Created a [[file:~/.contexts][~/.context]] for keeping clusters of activity together (dirs, pdfs, etc.)
 
-** [2015-11-19 Thu] 
+** [2015-11-19 Thu]                                               :emacs:org:
 	
 	Figured out how to use parts of agenda-mode.
 	http://orgmode.org/worg/org-tutorials/advanced-searching.html
@@ -1359,11 +1391,11 @@ Sat Apr 26 16:03:45 CEST 2014
 	Org-mode Agenda is awesome!
 	http://orgmode.org/worg/org-tutorials/advanced-searching.html
 
-** [2015-11-19 Thu] 
+** [2015-11-19 Thu]                                               :emacs:org:
 	
 	(C-c a m) Match: +TIMESTAMP_IA>="<-2w>" (show ineactive timestamps)
 
-** <2016-01-29 Fri> 
+** <2016-01-29 Fri>                            :frp:haskell:opengl:emacs:cpp:
   
   Reading on FRP:
   http://travis.athougies.net/posts/2015-05-05-frp-made-simple.html !
@@ -1391,22 +1423,24 @@ Sat Apr 26 16:03:45 CEST 2014
   https://github.com/gentoo-haskell/gentoo-haskell/blob/master/projects/doc/HOWTO-contribute.rst
   
 ** <2016-02-07 Sun> 
-  Yampy-Cube: https://youtu.be/T7XwTolu9YI?t=2525
-  Jekor Yampa: https://youtu.be/T3xXebIr8AM?t=1000
+   @outs[[[*<2016-02-08%20Mon>][<2016-02-08 Mon>]]]
+   Yampy-Cube: https://youtu.be/T7XwTolu9YI?t=2525
+   Jekor Yampa: https://youtu.be/T3xXebIr8AM?t=1000
 
-** <2016-02-08 Mon>
-  
-  learning FRP:
-  Jekor, Yampa:
-  https://youtu.be/T3xXebIr8AM?t=980
-  Yampy Cube:
-  https://youtu.be/T7XwTolu9YI?t=2506
+** <2016-02-08 Mon>                                          :haskell:frp:ai:
+   @in[[[*<2016-02-07%20Sun>][<2016-02-07 Sun>]]]
+   @out[[[*Yampa][Yampa]]]
+   learning FRP:
+   Jekor, Yampa:
+   https://youtu.be/T3xXebIr8AM?t=980
+   Yampy Cube:
+   https://youtu.be/T7XwTolu9YI?t=2506
+   
+   Learning AI/Machine Learning/Deep Learning
+   http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
+   http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-2/
 
-  Learning AI/Machine Learning/Deep Learning
-  http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
-  http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-2/
-
-** <2016-02-09 Tue>
+** <2016-02-09 Tue>                                                     :nxt:
   
   Bluetooth:
   http://www.thinkwiki.org/wiki/How_to_setup_Bluetooth
@@ -1415,14 +1449,20 @@ Sat Apr 26 16:03:45 CEST 2014
   sudo rfcomm bind /dev/rfcomm0 00:16:53:0E:21:14
   sudo rfcomm release /dev/rfcomm0 00:16:53:0E:21:14
 
-** <2016-02-12 Fri> 
+** <2016-02-12 Fri>                                                   :julia:
   
   Julia compilation fails
   
   The problems seems to go back to cbals incompatibility between science overlay and main portage.
   It is currently causing a dependency havoc in the system.  Julia is not ready yet.
+
+*** <2016-05-10 Tue> Update: works when installed through github/cabal
+    [[file:~/Projects/Julia/julia]]
+    
   
 ** <2016-02-26 Fri>                                           :opengl:
+   @outs[[[*:%20Make%20Elegant,%20Clean-up][: Make Elegant, Clean-up]]
+         [[*:%20continue%20with%20Mortgage%20graphing,%20using%20VEX][: continue with Mortgage graphing, using VEX]]]
   
   Everybody seems to enjoy the Vertex Displacement Animation task that I accomplished.  It looks like a propper SIGGRAPH material.
 
@@ -1430,32 +1470,33 @@ Sat Apr 26 16:03:45 CEST 2014
 
   [[*:%20continue%20with%20Mortgage%20graphing,%20using%20VEX][I should continue with Mortgage graphing, using VEX]]
 
-** <2016-02-28 Sun>
+** <2016-02-28 Sun>                                                     :nxt:
   
   LEGONXT
   ~/Projects/LEGONXT/nxt-python-2.2.2/nxt-python-2.2.2/examples $ python ./mary.py
 
 ** <2016-02-29 Mon>
   
-  Probably I should proceded with Rendering Adventure
+   Probably I should proceded with Rendering Adventure
 
 ** <2016-03-02 Wed>
+  @outs [[[*<2016-04-05%20Tue>][<2016-04-05 Tue>]]]
   
   Visualize a graph with Haskell
   /home/madjestic/Projects/Haskell/Mortgage/
-
+  
 ** <2016-03-05 Sat> 
   
   http://www.slideshare.net/CassEveritt/approaching-zero-driver-overhead
   http://valhalla.fciencias.unam.mx/lenguajes/EOPL.pdf
 
-** <2016-03-11 Fri>
+** <2016-03-11 Fri>                                                 :houdini:
   
   Laplace Operator games:
   /home/madjestic/Desktop/DRS.hipnc
   [[*:%20Render%20out%20a%20vide,%20same%20as%20for%20n-bodies.][TODO : Render out a vide, same as for n-bodies.]]
 
-** <2016-03-16 Wed> 
+** <2016-03-16 Wed>                                                 :houdini:
   
   /home/madjestic/Projects/Houdini/POPs/n_body_collide.hipnc
   colliding particles - works in principles, but with errors.  Needs a second pass.
@@ -1511,13 +1552,14 @@ Sat Apr 26 16:03:45 CEST 2014
 
 ** <2016-04-02 Sat>                                           :programming:
    Started reading [[file:~/Documents/%D0%94.%20%D0%9A%D0%BD%D1%83%D1%82%20-%20%20%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20(%D1%82%D0%BE%D0%BC%201,2,3)%20-%202002][D.Knut, the art of programming "Искусство программирования (том 1,2,3) - 2002"]]
-** <2016-04-03 Sun>
+** <2016-04-03 Sun>                                                   :games:
    http://rephial.org/help/command
    http://rephial.org/help/playing
    angband commands
 ** <2016-04-04 Mon>                                           :julia:
 *** TODO : write a @code_native collatz(10) for for(1:10) loop and see what the ASM code looks like
 ** <2016-04-05 Tue>                                           :haskell:julia:
+   @in [[[*<2016-03-02%20Wed>][<2016-03-02 Wed>]]]
    Working on a Haskell diagrams plotting example:
    http://projects.haskell.org/diagrams/doc/quickstart.html
    [[file:~/Projects/Haskell/Diagrams/test_00/Main.hs]]
@@ -1560,7 +1602,119 @@ Sat Apr 26 16:03:45 CEST 2014
     http://patriciogonzalezvivo.com/2015/thebookofshaders/00/
 *** TODO : Take a look at GPipe, it seems like an interesting way to handle OpenGL
     http://tobbebex.blogspot.nl/2015/09/gpu-programming-in-haskell-using-gpipe.html
-** <2016-04-21 Thu>                                                 :houdini:
+** <2016-04-21 Thu>                                           :houdini:
    [[file:~/Projects/Houdini/POPs/n_body_collide.hipnc]]
    VEX compiler #define:
    http://127.0.0.1:48626/vex/vcc
+** <2016-04-25 Mon>                                           :skate:houdini:
+*** TODO : A skating timer:
+    Raspberry Pi 
+    LCD+Keyboard kit for RP http://goo.gl/e4YPJC
+                            https://goo.gl/hnC9Uc
+    Ribbon Switch https://www.tapeswitch.com/onlinestore/products.php?cat=11
+    http://razzpisampler.oreilly.com/ch07.html Connecting a Push Switch tutorial
+    
+*** TODO : Ecosystem sim:
+    [[/home/madjestic/Projects/Houdini/Ecosystem/Model.hipnc]]
+
+** <2016-04-29 Fri>                                           :houdini:vfx:
+   I am trying to establish an efficient way to work with Houdini, using emacs
+*** DONE : create a houdini-starting script for emacs, solve urxvt
+*** TODO : continue working on waterfall example
+**** DONE : catch up on the latest fluid test examples:
+     [[file:~/Projects/Houdini/Fluids/fluids_test]]
+     it looks like the closest I've got to a waterfall is this:
+     [[file:~/Projects/Houdini/Fluids/Fluid_Test_00/Model.hipnc]]
+
+** <2016-05-04 Wed>
+   file:~/Projects/Houdini/Fluids/Fluid_Test_00/Model.hipnc - a waterfall test
+/home/madjestic/Desktop/cloth_test.hipnc
+** <2016-05-06 Fri>
+   reading [[file:~/Documents/Linux_Format_March_2016.pdf]]
+   p.62 LXF208 March 2016 - OwnCloud 8.0 with RaspberryPi
+
+** <2016-05-09 Mon>                                           :entropy:opengl:
+   [[*Entropy][Entropy]]
+*** Rendering Entropy nodes/edges:
+   1) rendering a circle with an outline:
+      - render a circle of a radius r
+      - render a circle with a snaller radius on top of it.
+        the result should look like a circle with an outline.
+   2) render an object, consisting of 2 circles, connected by a line.
+   
+*** On the data structure:
+   I am probably misusing the terminology here, but whatever:
+   
+**** Theorem 1.0   
+     Data is represented as a tree-like graph, loops are allowed, each
+   piece of information is represented as a node that may be connected to
+   one or more other nodes with one or more edges.
+
+**** Theorem 1.1: FALSE
+   Every node can be represented by a reduced edge: (() - \Gamma), where
+   () is a Null category and \Gamma is a category. : seems to be False
+
+**** Theorem 1.2:
+   a Category consists of:
+     a set of nodes
+     a set of edges (or, more generally, a set of arrows)
+     a partial function that takes a category as an 
+       argument and produces a new category that is "connected" to the the 
+       original (share nodes/arrows).  It's similar to L-systems node-replacement algorithms.
+**** Theorem 1.3:
+   a Category can be a member of another category.
+**** Theorem 1.4:
+   a Category can be a member of itself (connected to itself).
+
+****   Category:
+*****  Subcategory:
+****** Nodes (Categories)
+****** Edges (Arrows)
+****** Partial Function: *
+       Describes a function that takes a category \Gamma as an argument
+       \Eta, producing a new group 
+
+** <2016-05-11 Wed>                                                 :haskell:
+   [[file:~/Projects/Haskell/Entropy/src/Main.hs]] - working on categories, applications and other goodiness.
+   http://lpaste.net/163041 - interesting example with Foldable, so that both 2-tuple and a list can be an argument to a function:
+   
+   newtype SameTuple a = SameTuple (a, a)
+
+   instance Foldable SameTuple where
+   foldMap f (SameTuple (l, r)) = f l `mappend` f r
+   
+   isIn :: (Eq a, Foldable t) => a -> t a -> Bool
+   isIn a xs = foldr (\x acc -> acc || x == a) False xs
+   
+   ---
+   
+   λ> 3 `isIn` SameTuple (3, 4)
+   True
+   λ> 3 `isIn` [3,4]
+   True
+   λ> 2 `isIn` SameTuple (3, 4)
+   False
+** <2016-05-12 Thu>
+   an example with categories seems to work.
+   Now I need to procede with visualizing it:
+
+   visualize cats as squares
+   visualize arrows as lines, connecting squares
+*** TODO : visualize cats as squares
+*** TODO : visualize arrows as lines, connecting squares
+*** TODO (extra) : anti-alias the primitives.
+** <2016-05-13 Fri>                                          :haskell:opengl:
+   https://github.com/tobbebex/GPipe-Core - functional opengl in haskell
+** <2016-05-17 Tue>
+   cool skateboard maker (link from Vlad):
+   www.kaliber-skateboards.de
+   
+   
+** <2016-05-19 Thu>                                           :haskell:yampa:
+   @out:[[[*Yampa][Yampa]]]
+   https://youtu.be/-IpE0CyHK7Q?t=425 - Jekor's yampa tutorial part 1
+   [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
+   
+** <2016-05-19 Thu>
+   https://nixos.org/wiki/Installing_NixOS_from_a_USB_stick
+   https://nixos.org/nixos/download.html

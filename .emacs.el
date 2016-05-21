@@ -204,8 +204,8 @@
 (require 'openwith)
 (openwith-mode t)
 (setq openwith-associations '(("\\.pdf\\'"   "okular"  (file))))
-(setq openwith-associations '(("\\.hip\\'"   "houdini" (file))))
-(setq openwith-associations '(("\\.hipnc\\'" "houdini" (file))))
+(setq openwith-associations '(("\\.hip\\'"   "houdini_emacs" (file))))
+(setq openwith-associations '(("\\.hipnc\\'" "houdini_emacs" (file))))
 
 (smartparens-mode)
 (auto-complete-mode)

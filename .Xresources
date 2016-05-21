@@ -1,0 +1,38 @@
+!URxvt*shading		: 50
+URxvt*depth			: 32 
+URxvt*tintColor		: Grey
+URxvt*saveLines		: 12000
+URxvt*foreground	: rgba:7777/cccc/7777/ffff
+URxvt*background	: rgba:0000/0000/0000/cccc
+URxvt*font			: xft:DejaVu Sans Mono:pixelsize=15:antialias=true:hinting=true
+URxvt*boldFont		: xft:DejaVu Sans Mono:bold:pixelsize=15:antialias=true:hinting=true
+URxvt*color4		: RoyalBlue 
+URxvt*color12		: RoyalBlue
+
+!color of the standard input
+URxvt*color10		: rgba:2222/5555/2222/ffff
+URxvt*color2		: rgba:4444/9999/4444/ffff
+
+URxvt*scrollBar		: true
+URxvt*scrollBar_right	: true
+URxvt*scrollstyle	: plain
+URxvt*scrollColor	: seagreen
+URxvt*cursorBlink	: true
+emacs*borderWidth	: 2
+
+!-*- Perl extensions -*-
+URxvt.perl-ext-common:default,clipboard
+URxvt.keysym.M-u:     perl:url-select:select_next
+URxvt.url-launcher:   /usr/bin/chromium
+URxvt.underlineURLs:  True
+URxvt.matcher.button: 1 
+URxvt.keysym.M-Escape:perl:keyboard-select:activate
+URxvt.keysym.M-w:     perl:clipboard:copy1
+URxvt.keysym.C-y:     perl:clipboard:paste
+!URxvt.keysym.Shift-Control-C:     perl:clipboard:copy
+!URxvt.keysym.Shift-Control-V:     perl:clipboard:paste
+!URxvt.keysym.M-C-v:   perl:clipboard:paste_escaped
+!URxvt.copyCommand:   xsel -ib
+!URxvt.pasteCommand:  xsel -ob
+! Comment this if you don't want copy when text is selected
+URxvt.clipboard.autocopy: true
