@@ -27,8 +27,8 @@ main = do
                  ]
              `additionalKeysP`
                  [ ("<XF86AudioMute>"        , spawn "amixer set Master toggle")
-                 , ("<XF86AudioLowerVolume>" , spawn "amixer set Master 5-")
-                 , ("<XF86AudioRaiseVolume>" , spawn "amixer set Master 5+")
+                 , ("<XF86AudioLowerVolume>" , spawn "amixer set Master 5%-")
+                 , ("<XF86AudioRaiseVolume>" , spawn "amixer set Master 5%+")
                  , ("<XF86MonBrightnessDown>", spawn "/home/madjestic/bin/brightnessdown")
                  , ("<XF86MonBrightnessUp>"  , spawn "/home/madjestic/bin/brightnessup")
                  , ("M-S-,"    , spawn "playerctl previous")

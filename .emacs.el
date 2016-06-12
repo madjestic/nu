@@ -34,7 +34,7 @@
     ("c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
  '(desktop-after-read-hook (quote (list-buffers)))
  '(desktop-path (quote ("~/")))
- '(desktop-save-mode f)
+ '(desktop-save-mode nil)
  '(dired-dwim-target t)
  '(dired-use-ls-dired t)
  '(ecb-layout-name "left2")
@@ -79,7 +79,6 @@
     ((auto-mode . emacs)
      ("\\.mm\\'" . default)
      ("\\.x?html?\\'" . default))))
- 
  '(package-archives
    (quote
     (("marmalade" . "http://marmalade-repo.org/packages/")
@@ -156,6 +155,7 @@
  '(tabbar-highlight ((t (:background "#2d3743" :foreground "aquamarine"))))
  '(tabbar-modified ((t (:inherit tabbar-default :foreground "dark orange"))))
  '(tabbar-selected ((t (:inherit tabbar-default :foreground "medium sea green" :weight bold))))
+ '(tabbar-selected-modified ((t (:inherit tabbar-default :foreground "red"))))
  '(tabbar-unselected ((t (:inherit tabbar-default))))
  '(tooltip ((t (:inherit variable-pitch :background "#797985" :foreground "black" :height 0.8))))
  '(vertical-border ((t (:foreground "#1d2733"))))
@@ -191,6 +191,8 @@
 (show-paren-mode t)
 (set-default 'truncate-lines t)
 (powerline-default-theme)
+(smartparens-mode)
+(paredit-mode)
 
 ;;;;;;;;;;;;;;
 ;; Org-mode ;;
@@ -209,6 +211,11 @@
 
 (smartparens-mode)
 (auto-complete-mode)
+
+
+;; (global-set-key (kbd "C-c 1") '(lambda () (interactive) (jump-to-register "1")))
+;; (global-set-key (kbd "C-c 2") '(lambda () (interactive) (jump-to-register 2)))
+;; (global-set-key (kbd "C-c 3") '(lambda () (interactive) (jump-to-register 3)))
 
 (global-set-key (kbd "C-c l") 'org-store-link)
 (global-set-key (kbd "C-c a") 'org-agenda)
@@ -254,3 +261,5 @@
 (yas-global-mode 1)
 
 (put 'narrow-to-region 'disabled nil)
+
+(put 'scroll-left 'disabled nil)

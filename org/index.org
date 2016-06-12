@@ -1,3 +1,18 @@
+* Computer Science
+  Great Dutch:
+  https://en.wikipedia.org/wiki/Edsger_W._Dijkstra - first compiler for ALGOL-60
+  Haskellers:
+  http://maartenfokkinga.github.io/utwente/
+  http://www.cs.uu.nl/staff/doaitse.html
+  
+* Emacs Calendar:
+  http://blog.idorobots.org/entries/you-earned-15-xp-in-getting-things-done_.html#preview-more
+  http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html
+  http://jameswilliams.be/blog/2016/01/11/Taming-Your-GCal.html
+  https://github.com/kiwanami/emacs-calfw
+  https://www.emacswiki.org/emacs/CalendarMode
+  https://www.emacswiki.org/emacs/DiaryMode
+** TODO : Read the shit above, it's awesome!  
 * Waterfall
   @in[
   [[*:%20Set%20up%20water%20shader][: Set up water shader]]
@@ -61,6 +76,9 @@ dd if=/dev/sda of=/dev/sdb bs=4096 conv=noerror,sync
 ** ### EMACS TIPS         ###
 # turn off line-wrapping:
 M-x toggle-truncate-linesd
+
+# break long lines automatic
+M-x auto-fill-mode
 
 ** ### MISC               ###
 4) Find out your own IP:
@@ -179,6 +197,11 @@ C-u M-! date   | to insert date |
 	 [[docview:~/Projects/gmsg/basic_des/basic.pdf::1][open_pdf with docview]]
 	 S-enter create a symlink to a current file in dired
 
+* Tic-Tac-Toe
+  @out[[[*AI][AI]]]
+  A 'Hello World!' of Machine Learning:
+  [[file:~/Documents/tictactoe.kra]]
+  
 * AI
   @in:[[[*<2016-02-08%20Mon>][<2016-02-08 Mon>]]]
   While playing with Gnus, I've recovered an old e-mail from Richard,
@@ -190,6 +213,13 @@ C-u M-! date   | to insert date |
   Learning AI/Machine Learning/Deep Learning
   http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
   http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-2/
+
+** <2016-06-06 Mon>                                                      :ai:
+   Started working on a tic-tac-toe game as suggested by Tom Mitchel's book:
+   [[file:~/Documents/tictactoe.kra]]
+   [[file:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf]]
+   [[docview:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf::25]]
+*** TODO : fix the ::25 (page number) to match the excercise page   
 
 * Bash
 	an interesting example of "loop over all files in a directory 
@@ -322,7 +352,7 @@ find . | egrep '\.hs$' | xargs hothasktags > tags
 		
 * Projects
 * Yampa
-  @out[[[*Yampa][Yampa]]]
+  @out[[[*Yampa'][Yampa']]]
 ** HNGL
 
 *** on HNGL
@@ -518,7 +548,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 [[http://www.haskell.org/haskellwiki/Netwire][Netwire on Haskell Wiki]]
 [[https://github.com/MaxDaten/netwire-examples][Netwire Examples on GitHub]]
 
-*** Yampa
+*** Yampa'
     Jekor, Yampa:
     https://youtu.be/-IpE0CyHK7Q?t=425 - Jekor's yampa tutorial part 1
     https://youtu.be/T3xXebIr8AM?t=980 - Jekor's yampa tutorial part 2
@@ -550,8 +580,10 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 		 (C-c [ ) Add current file to the list of agenda files. 
 		 (C-c ] ) Remove current file from the list of agenda files. 
 *** DONE Learn how to open pdfs at a given page with Okular
-[[http://stackoverflow.com/questions/20792659/how-do-i-make-org-mode-open-pdf-files-in-okulus-at-page-nnn][stackoverflow_topi]]c
-<2013-12-27 Fri>
+    
+    [[http://stackoverflow.com/questions/20792659/how-do-i-make-org-mode-open-pdf-files-in-okulus-at-page-nnn][stackoverflow_topi]]c
+    <2013-12-27 Fri>
+    But the best is to use docview: [[docview:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf::25]] - opens a pdf on given page in emacs.  Win!
 
 ** on Blogs
 *** TurtlesTurtlesTurtles
@@ -659,6 +691,11 @@ Sat Apr 26 16:03:45 CEST 2014
 
 	 Haskell is a much stronger alternative too.  Obviously.
 
+* Haskell Tutorial
+  @out[[[file:~/Projects/Haskell/haskell-tutorial][haskell-tutorial]]]
+** <2016-05-23 Mon>
+  https://en.wikibooks.org/wiki/Haskell/Getting_set_up
+  [[file:~/Projects/Haskell/haskell-tutorial/Lists_and_tuples/Main.hs]]
 * Godot Engine
 ** Animated Ocean surface:
 	 Something along the lines with:
@@ -1165,6 +1202,34 @@ Sat Apr 26 16:03:45 CEST 2014
 ** TODO : Project Omicron:
 	 2x1Tb Raid-10?
 	 <2015-12-10 Thu>
+* NAS
+  https://forums.freenas.org/index.php?threads/hardware-recommendations-read-this-first.23069/
+** Motherboard
+   ~150$
+   Supermicro X9s
+   http://www.supermicro.com/products/motherboard/Xeon/C202_C204/X9SCM-F.cfm
+
+** CPU
+   ~65$
+   Pentium G2020 (socket 1155) and G3220 (socket 1150) 
+   http://www.amazon.com/Intel-Pentium-Processor-G3220-BX80646G3220/dp/B00EF1G9DW/ref=sr_1_1?s=electronics&ie=UTF8&qid=1409098728&sr=1-1
+
+   ~ 50$
+   http://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=LGA-1150+Pentium+G3258&_sacat=0
+
+** Case
+   ~100
+   Fractal Design R4
+   http://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Fractal+Design+R4&_sacat=0
+
+** RAM
+   ~50-100$
+   ECC RAM 16GB
+      
+* Data Copy solution
+  ~150EURO
+  https://www.amazon.co.uk/Inateck-Docking-Station-Function-Tool-free/dp/B00LN0GX4I/ref=sr_1_3?ie=UTF8&qid=1464472727&sr=8-3&keywords=HDD+docking+station
+  + a couple of HDD
 * MIDI :music::synt:
 	Ardouro
 	BitWig
@@ -1179,7 +1244,16 @@ Sat Apr 26 16:03:45 CEST 2014
 
 ** <2016-05-06 Fri>
    run qjackctl, connect midi devices, link them.
-	<2015-12-27 Sun>
+	 <2015-12-27 Sun>
+** <2016-05-28 Sat>
+   plug in the Keyboard, check if dmesg sees it
+   qjackctl
+   qsynth
+
+   link the MiniKeystation32 input to qsynth output in qjackctl
+
+   Enjoy!
+
 * Linux Format
   [[file:~/Documents/Linux_Format_March_2016.pdf]]
 * TODO:
@@ -1318,6 +1392,8 @@ Sat Apr 26 16:03:45 CEST 2014
    [[file:~/Desktop/mortgage.hipnc]]
 
 ** TODO : Render out a video, same as for n-bodies.
+   [[file:~/Projects/Houdini/Godika]]
+** TODO : create emacs shortcuts for register-switching: C-0, C-1, .. C-9
 * History
 ** [2015-01-12 Mon]                                                  :python:
 
@@ -1459,7 +1535,6 @@ Sat Apr 26 16:03:45 CEST 2014
 *** <2016-05-10 Tue> Update: works when installed through github/cabal
     [[file:~/Projects/Julia/julia]]
     
-  
 ** <2016-02-26 Fri>                                           :opengl:
    @outs[[[*:%20Make%20Elegant,%20Clean-up][: Make Elegant, Clean-up]]
          [[*:%20continue%20with%20Mortgage%20graphing,%20using%20VEX][: continue with Mortgage graphing, using VEX]]]
@@ -1709,7 +1784,6 @@ Sat Apr 26 16:03:45 CEST 2014
    cool skateboard maker (link from Vlad):
    www.kaliber-skateboards.de
    
-   
 ** <2016-05-19 Thu>                                           :haskell:yampa:
    @out:[[[*Yampa][Yampa]]]
    https://youtu.be/-IpE0CyHK7Q?t=425 - Jekor's yampa tutorial part 1
@@ -1718,3 +1792,127 @@ Sat Apr 26 16:03:45 CEST 2014
 ** <2016-05-19 Thu>
    https://nixos.org/wiki/Installing_NixOS_from_a_USB_stick
    https://nixos.org/nixos/download.html
+** <2016-05-23 Mon>                                     :haskell:android:ios:
+   I experimented with haskell on android:
+   https://github.com/neurocyte/ghc-android
+   this sort of worked on my Acer Aspire One with 32bit Ubuntu, till the 'adb' moment, at which point I stopped.
+   http://keera.co.uk/blog/2014/08/13/most-inspiring-green-screen-you-will-ever-see/
+   https://ghc.haskell.org/trac/ghc/wiki/Arm64
+   https://ghc.haskell.org/trac/ghc/wiki/CrossCompilation
+   https://ghc.haskell.org/trac/ghc/wiki/Building/CrossCompiling/iOS
+
+   Also received an email from Ivan Perez:
+   "Hi
+
+   We use debian for android, and obviously macosx for ios.
+
+   We are currently working on releasing a stable environment to compile mobile haskell apps for both platforms."
+
+   
+   Sounds like soon we are going to get some new toys to play with... fingers crossed.
+
+** <2016-05-23 Mon>                                           :yampa:
+   @out[[[*<2016-05-19%20Thu>][<2016-05-19 Thu>]]]
+   going back to learning Yampa:
+** <2016-05-24 Tue>                                                 :haskell:
+   https://www.haskell.org/onlinereport/standard-prelude.html - Prelude specification,
+   describes all the haskell functions bundled with Prelude.
+
+   https://wiki.haskell.org/Simple_unix_tools - Haskell command line tools
+   
+** <2016-05-27 Fri>                                   :graph:haskell:entropy:
+   http://projects.haskell.org/graphviz/faq.html
+   http://www.graphviz.org/
+   http://blog.idorobots.org/entries/you-earned-15-xp-in-getting-things-done_.html#preview-more
+   http://www.1010.co.uk/org/ - crazy emacser website
+
+   https://github.com/RefactoringTools/HaRe
+   https://github.com/emacs-tw/awesome-emacs
+   https://github.com/hbin/molokai-theme
+*** TODO : Read about graphviz/graphviz-org-mode for emacs
+    the problem that I am working on may have a nice backend / partial solution already.
+    more examples of graphviz graphs: http://www.tonyballantyne.com/graphs.html
+** <2016-05-31 Tue>                                                 :haskell:
+   out@[[[*<2016-05-23%20Mon>][<2016-05-23 Mon>]]]
+   https://en.wikibooks.org/wiki/Haskell/Understanding_arrows - arrow notation
+   [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
+** <2016-06-05 Sun>                                                 :haskell:
+   [[file:~/Projects/Haskell/FRP/frp_counter_00/Main.hs]]
+   [[file:~/Projects/Haskell/FRP/yampy-cube/src/Main.hs]]
+
+   https://www.youtube.com/watch?v=-IpE0CyHK7Q&feature=youtu.be&t=425
+   https://www.youtube.com/watch?v=T7XwTolu9YI&feature=youtu.be&t=2506
+
+   https://github.com/nh2/call-haskell-from-anything
+** <2016-06-06 Mon>                                                 :haskell:
+   ~/Projects/Haskell/call-haskell-from-anything/ - fails with:
+   "* Missing C library: HSrts-ghc7.10.3" - both cabal and stack versions.
+*** TODO : Report a bug about HSrts
+    https://github.com/nh2/call-haskell-from-anything#usage
+** <2016-06-07 Tue>                                           :haskell:godot:
+   call haskell from everything - an interesting project but is not ready yet:
+   https://github.com/nh2/call-haskell-from-anything/issues/14
+   [[file:~/Projects/Haskell/call-haskell-from-anything]]
+
+   Also seems related to the stack/stackage issue.  Stackage not ready yet?
+   https://github.com/fpco/stackage/issues/1221
+
+   Godot seems to have a bug atm:
+   https://github.com/godotengine/godot/issues/5060
+
+** <2016-06-08 Wed>
+   https://en.wikibooks.org/wiki/Haskell/Applicative_functors#A_sliding_scale_of_power - very interesting explanation/excercises on Functor, Applicative and Monad
+   and sollutions to exercises: https://en.wikibooks.org/wiki/Haskell/Solutions/Applicative_functors
+
+   [1] https://hackage.haskell.org/package/repa-3.4.0.2/docs/Data-Array-Repa.html - hoknamahn mentioned an interesting link to parallel arrays
+
+*** TODO : check it out REPA (1)
+** <2016-06-09 Thu>
+   search by date
+   $ find ~ -iname 'Makefile' -atime -20 | grep -i haskell
+   /home/madjestic/Projects/Haskell/Haskell-OpenGL-Tutorial/tutorial11/Makefile
+** <2016-06-11 Sat> 
+   https://github.com/emacs-helm/helm/wiki - helm tips
+** <2016-06-12 Sun> Haskell Parsers
+   
+   http://jakewheat.github.io/intro_to_parsing/
+   http://nikobidin.com/arrows-everywhere
+   https://github.com/aslatter/parsec
+   https://kunigami.wordpress.com/2014/01/21/an-introduction-to-the-parsec-library/
+   http://book.realworldhaskell.org/
+   http://unbui.lt/#!/post/haskell-parsec-basics
+   http://unbui.lt/#!/post/haskell-another-lens-tutorial
+*** TODO : Look into Haskell Parsers
+** <2016-06-12 Sun>                       :haskell:entropy:FRP:houdini:emacs:
+   I ended up with OpenGL animation 'sort of working' - buffer update is busted and I should attempt to 
+   follow Jekor's instructions more closely, that is use OpenGL building blocks from cuboid first and then
+   refactor it to use NGL
+   [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor.blinks_sort_of_works]]
+
+   http://data.ceh.vn/Ebook/ebooks.shahed.biz/OS/LINUX/ - interesting collecion of linux-related books material
+
+   [[file:~/Projects/Houdini/MARVE]]
+
+   http://blog.idorobots.org/entries/you-earned-15-xp-in-getting-things-done_.html#preview-more emacs
+
+
+*** TODO : Set Up a Pretty Calendar for emacs:
+    http://jameswilliams.be/blog/2016/01/11/Taming-Your-GCal.html
+    https://github.com/kiwanami/emacs-calfw
+    https://www.emacswiki.org/emacs/CalendarMode
+    https://www.emacswiki.org/emacs/DiaryMode
+    http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html
+*** TODO : investigate WebKit in Emacs:
+    [[file:~/Projects/emacs/deepin-emacs]]
+    https://www.emacswiki.org/emacs/WebKit
+*** TODO : test todo 'Scheduled' setting
+    SCHEDULED: <2016-06-13 Mon>
+*** TODO : Continue reading :   [[file:~/Documents/GNU_Linux_Application_Programming.chm]]
+*** TODO : Finish bringing cuboid code bits, according to Jekor's video:
+    https://www.youtube.com/watch?v=T3xXebIr8AM
+    [[file:~/Projects/Haskell/FRP/cuboid]]
+    [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
+    
+    
+** <2016-06-13 Mon>                                                 :houdini:
+   [[file:~/Projects/Houdini/MARVE/model.hipnc]]
