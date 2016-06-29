@@ -1,3 +1,179 @@
+* Active Links:
+	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D935459&page%3D1][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=935459&page=1]]
+	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D913986&page%3D13][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=913986&page=13]]
+* AI
+  @<-:[[[*<2016-02-08%20Mon>][<2016-02-08 Mon>]]]
+  While playing with Gnus, I've recovered an old e-mail from Richard,
+	he sent me a few pdf's on machine learning, among which was:
+	[[file:~/Documents/Machine%20Learning%20in%20Action.pdf][file:~/Documents/Machine Learning in Action.pdf]]
+
+  [[*Stylistic%20Analysis,%20Bias%20filtering,%20etc][Stylistic Analysis, Bias filtering, etc]]
+
+  Learning AI/Machine Learning/Deep Learning
+  http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
+  http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-2/
+
+  Haskell Machine Learning:
+  https://github.com/mikeizbicki/HLearn - Haskell library for machine learning
+  https://github.com/mikeizbicki/subhask - a rewrite of Prelude for numerical computing
+   
+
+** <2016-06-06 Mon>                                                      :ai:
+   Started working on a tic-tac-toe game as suggested by Tom Mitchel's book:
+   [[file:~/Documents/tictactoe.kra]]
+   [[file:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf]]
+   [[docview:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf::25]]
+*** TODO : fix the ::25 (page number) to match the excercise page   
+* Assembler                                                             :asm:
+  <2016-03-31 Thu>
+	I started doing some examples from [[file:~/Documents/nasm_unix.pdf][Столяров Ассемблер]]
+	[[/home/madjestic/Projects/ASM]]
+
+* b1
+	Stock Exchange programe, written in Haskell
+	[[madjestic/Projects/b1/]]
+** DONE : Broken, fix it:
+	 [[https://github.com/btmura/b1/issues/5][compile error: Ambiguous occurrence ‘defaultTimeLocale’]]
+	 [ 5 of 48] Compiling B1.Data.Price.Google ( src/B1/Data/Price/Google.hs, dist/dist-sandbox-d2346a33/build/b1-chart/b1-chart-tmp/B1/Data/Price/Google.o )
+   
+	 src/B1/Data/Price/Google.hs:25:29:
+	 Ambiguous occurrence ‘defaultTimeLocale’
+	 It could refer to either ‘Data.Time.defaultTimeLocale’,
+	 imported from ‘Data.Time’ at src/B1/Data/Price/Google.hs:9:1-16
+	 (and originally defined in ‘time-1.5.0.1:Data.Time.Format.Locale’)
+	 or ‘System.Locale.defaultTimeLocale’,
+	 imported from ‘System.Locale’ at src/B1/Data/Price/Google.hs:13:1-20
+	 
+	 src/B1/Data/Price/Google.hs:98:13:
+	 Ambiguous occurrence ‘defaultTimeLocale’
+	 It could refer to either ‘Data.Time.defaultTimeLocale’,
+	 imported from ‘Data.Time’ at src/B1/Data/Price/Google.hs:9:1-16
+	 (and originally defined in ‘time-1.5.0.1:Data.Time.Format.Locale’)
+	 or ‘System.Locale.defaultTimeLocale’,
+	 imported from ‘System.Locale’ at src/B1/Data/Price/Google.hs:13:1-20
+	 cabal: Error: some packages failed to install:
+	 b1-0.1 failed during the building phase. The exception was:
+	 ExitFailure 1
+   
+   <2016-03-30 Wed>
+   Fixed: https://github.com/btmura/b1/issues/5
+* Bash
+	an interesting example of "loop over all files in a directory 
+	and do stuff to each file:"
+	[[file:/usr/local/include/Field3D/relink.sh]]
+	[[~/Documents/Bourne_Shell_Scripting.pdf]]
+* Bookmarks:
+** Programming
+*** Haskell
+		[[https://github.com/madjestic/mu/tree/master/Projects/Haskell/Junk/heterogenous_lists][finished a small heterogenous collections example.]]
+		[2014-11-10 Mon]
+		
+		[[*edX:%20FP101x][edX]] A course I intend to finish
+		Mon Nov 10 22:40:49 CET 2014
+
+		Monads, Monoids, Functors:
+		http://learnyouahaskell.com/making-our-own-types-and-typeclasses
+		http://learnyouahaskell.com/functors-applicative-functors-and-monoids
+		http://learnyouahaskell.com/a-fistful-of-monads
+
+**** FFI
+[[http://www.haskell.org/haskellwiki/FFI_cook_book][FFI Cook Book]]
+[[http://book.realworldhaskell.org/read/interfacing-with-c-the-ffi.html][RealWorldHaskell FFI]]
+** Emacs
+*** Org Mode
+**** Links
+		 [[http://orgmode.org/manual/Handling-links.html][Handling Links]]
+*** Mail Mode :problem::luxury:
+		http://www.emacswiki.org/emacs/GnusGmail
+		https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/gnus-guide-en.org
+		https://eschulte.github.io/emacs24-starter-kit/starter-kit-gnus.html
+		<2015-12-02 Wed>
+
+		The initial setup was a breeze.
+**** TODO : Set up message filtering
+		 Use POPFile at Linux:
+		 http://blog.binchen.org/posts/use-popfile-at-linux.html (gnus email antispam and filtering)
+		 <2015-12-03 Thu>
+
+		 
+*** Jabber Mode :problem::luxury:
+		http://www.emacswiki.org/emacs/JabberEl
+		<2015-12-02 Wed>
+* Books
+	[[/home/madjestic/Documents/Physically_Based_Rendering.pdf][Physically Based Rendering]]
+	[[/home/madjestic/Documents/Naming_Infinity.pdf][Kolmogorov: "Imena beskonechnosti"
+	Naming Infinity]]
+	sonin.ru
+	Мифы экономики
+	[[/home/madjestic/Documents/Freakonomics.djvu][Freakonomics]]	
+	libgen.ru - fake DNA
+
+* Cognitive science
+	P != NP
+	http://en.wikipedia.org/wiki/P_versus_NP_problem
+
+	Vertex Cover problem:
+	http://en.wikipedia.org/wiki/Vertex_cover
+
+	Multivariad Revolving algorythmic complexity (book)
+
+	http://fpt.wikidot.com/
+
+	https://www.mturk.com/mturk/welcome
+
+	http://en.wikipedia.org/wiki/Computers_and_Intractability (book on algorithms)
+
+	http://www.amazon.com/Computers-Intractability-NP-Completeness-Mathematical-Sciences/dp/0716710455
+
+	Theory of the mind:
+	- How do agents know what other agents know?
+	- How do you simulate orders of the mind?
+
+	Prediction building part of the brain is not a result of processing by
+	Sensor-Motoric part of the brain.
+
+	Satisfaction of search problem.
+
+	http://www.rageproject.eu/
+
+	Higher-order theory of mind in Tacit Communication Game
+	http://www.harmendeweerd.nl/papers/20140908_Tacit_Communication_Game.pdf
+
+** Music and congnition II
+	 
+	~4% of the population share amusia
+
+	Scale, Contour, interval, Rhythm, Meter (Memory)
+	Pitch test
+
+	Dysmusia vs. Dysmelodia
+
+	Information content of a note
+
+	florence foster jenkins (amusic opera singer)
+
+	Bayesuan generative models
+
+	posterior       = likelihood, priority
+	                  P(cause|signal)*P(cause)/P(signal)
+	P(cause|signal)
+	...
+
+	P(M): the likelhood  of individual metres (estimated from a corpus of data)
+
+	
+
+	Melody segmentation:
+	
+	Unexpected note - high information content, low probability
+
+	On Entropy in Music:
+	http://ir.uiowa.edu/cgi/viewcontent.cgi?article=1844&context=etd (p.7)
+
+	https://mitpress.mit.edu/books/platos-camera
+
+	Steven Pinker
+	http://www.newrepublic.com/
 * Computer Science
   Great Dutch:
   https://en.wikipedia.org/wiki/Edsger_W._Dijkstra - first compiler for ALGOL-60
@@ -5,32 +181,293 @@
   http://maartenfokkinga.github.io/utwente/
   http://www.cs.uu.nl/staff/doaitse.html
   
+* Data Copy solution
+  ~150EURO
+  https://www.amazon.co.uk/Inateck-Docking-Station-Function-Tool-free/dp/B00LN0GX4I/ref=sr_1_3?ie=UTF8&qid=1464472727&sr=8-3&keywords=HDD+docking+station
+  + a couple of HDD
+* Editing a movie:
+	(lossless codec)
+	ffmpeg -i model.rop_comp1.%04d.png -c:v huffyuv out.avi
+	then import and re-export through pitivi
+* Emacs tips
+  @->[
+  [[*###%20EMACS%20TIPS%20###][### EMACS TIPS         ###]]
+  ]
+  @<-[]
+	‘M-x toggle-truncate-lines’ - turn on long lines warp
+	'<C-S-left>' - swap buffers
+
+	'C-x n n' - narrow region/scope
+	'C-x n w' - widen region/scope
+
+	(paredit mode)
+	selection + ( -> (selection)
+	... same with [, {
+
+	(selection)	<M-s> -> selection
+
+	(paren-mode)
+	<M-S> ( : foo -> (foo)
+	M-up    : (foo) -> foo
+
+  (C-c C-x C-i) start a timer (in timer)
+	(C-c C-x C-o) end timer (out-timer)
+	CLOCK: [2015-11-28 Sat 18:01]--[2015-11-28 Sat 18:03] =>  0:02
+
+  C-c C-j - org goto (jump to a 1st level entry/header, while typing interactively)
+
+  M-x org-sort-entries RET a RET # sort org entries alphabetically (?
+
+** Registers, bookmarks and desktop
+	 C-x r w <register> to store a window configuration in a register
+	 C-x r j <register> (where <register> is a single character) to jump back to a register.
+	 http://stackoverflow.com/questions/2572950/preserve-window-layout-in-emacs
+	 
+	 https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html
+	 http://www.gnu.org/savannah-checkouts/gnu/emacs/manual/html_node/emacs/Saving-Emacs-Sessions.html
+	 https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html#Bookmarks
+	 https://github.com/ffevotte/desktop-plus
+** tables
+| r | 0/1   | 0  | 1  | 0-1 | rnd | SBR | SBF | ABR | ABF |
+|---+-------+----+----+-----+-----+-----+-----+-----+-----|
+| 1 | 0/1   | -  | +  | 0:- | 0:- | 0:- | 0:- | 0:- | 0:- |
+| 0 | 1/1   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 0 | 2/1   | +  | -  | 0:+ | 1:- | 1:- | 1:- | 1:- | 1:- |
+| 1 | 2/2   | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 1:+ | 1:+ |
+| 1 | 2/3   | -  | +  | 0:- | 0:- | 1:+ | 0:- | 1:+ | 0:- |
+| 0 | 3/3   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 1 | 3/4   | -  | +  | 0:- | 1:+ | 0:- | 1:+ | 1:+ | 1:+ |
+| 0 | 4/4   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 1 | 4/5   | -  | +  | 0:- | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ |
+| 1 | 4/6   | -  | +  | 1:+ | 0:+ | 1:+ | 0:- | 0:- | 0:- |
+| 0 | 5/6   | +  | -  | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 0 | 6/6   | +  | -  | 1:- | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
+| 0 | 7/6   | +  | -  | 0:+ | 0:+ | 1:- | 0:+ | 0:+ | 1:- |
+| 1 | 7/7   | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 1:+ | 1:+ |
+| 0 | 8/7   | +  | -  | 0:+ | 0:+ | 1:- | 0:+ | 0:+ | 0:+ |
+| 1 | 8/8   | -  | +  | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ |
+| 1 | 8/9   | -  | +  | 0:- | 1:+ | 1:+ | 0:- | 0:- | 0:- |
+| 1 | 8/10  | -  | +  | 1:+ | 1:+ | 0:- | 0:- | 0:- | 0:- |
+| 1 | 8/11  | -  | +  | 0:- | 0:- | 0:- | 0:- | 0:- | 0:- |
+| 0 | 9/11  | +  | -  | 1:- | 1:- | 0:+ | 0:+ | 0:+ | 0:+ |
+| 0 | 10/11 | +  | -  | 0:+ | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
+| 1 | 10/12 | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 0:- | 0:- |
+| 1 | 10/13 | -  | +  | 0:- | 0:- | 1:+ | 0:- | 0:- | 0:- |
+| 0 | 11/13 | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 1 | 11/14 | -  | +  | 0:- | 0:- | 0:- | 1:+ | 0:- | 0:- |
+| 1 | 11/15 | -  | +  | 1:+ | 1:+ | 1:+ | 0:- | 0:- | 0:- |
+| 0 | 12/15 | +  | -  | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
+| 0 | 13/15 | +  | -  | 1:- | 1:- | 1:- | 1:- | 0:+ | 0:+ |
+| 0 | 14/15 | +  | -  | 0:+ | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
+|   |       | 14 | 15 |  14 |  18 |  17 |  16 |  19 | 17  |
+#+TBLFM: 
+** Emacs Calendar
+   [[*Emacs%20Calendar:][Emacs Calendar:]]
+** TODO : Read the shit above, it's awesome!  
+	 
 * Emacs Calendar:
-  http://blog.idorobots.org/entries/you-earned-15-xp-in-getting-things-done_.html#preview-more
+  http://blog.idorobots.org/entries/you-earned-15-xp-in-getting-things-done_.html#preview-more - gamification, it turned out to be not so great.
+  I think a better idea would be to count entries by date and accumulate days per tag, hence giving an overall score.
+  TODOs do not need a score, that's a stupid idea.
   http://members.optusnet.com.au/~charles57/GTD/gtd_workflow.html
   http://jameswilliams.be/blog/2016/01/11/Taming-Your-GCal.html
   https://github.com/kiwanami/emacs-calfw
   https://www.emacswiki.org/emacs/CalendarMode
   https://www.emacswiki.org/emacs/DiaryMode
-** TODO : Read the shit above, it's awesome!  
-* Waterfall
-  @in[
-  [[*:%20Set%20up%20water%20shader][: Set up water shader]]
-  [[*:%20continue%20working%20on%20waterfall%20example][: continue working on waterfall example]]
-  [[*%5B2015-01-12%20Mon%5D][{2015-01-12 Mon}]]
-  [[*:%20Investigate%20how%20to%20render%20ocean%20nicely][: Investigate how to render ocean nicely]]
-  ]
 
-  links:
-  https://rutracker.org/forum/viewtopic.php?t=5114569
-  https://rutracker.org/forum/viewtopic.php?t=5079199
-  https://rutracker.org/forum/viewtopic.php?t=4257762
-  
+  M-x load-calendar
+  M-x cfw:open-org-calendar
+  . - go to today: https://www.gnu.org/software/emacs/manual/html_node/emacs/Specified-Dates.html
+
+* Entropy
+** Machine Learning
+	 http://www.cs.cmu.edu/~tom/mlbook.html	 
+
+	 [[file:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf]]
+	 "...or personal software assistants learning the evolving interests of their users in order to highlight especially relevant stories from the online morning newspaper."
+
+	 Definition: A computer program is said to learn from experience E with respect
+	 to some class of tasks T and performance measure P, if its performance at tasks in
+	 T, as measured by P, improves with experience E.
+
+	 three features: the class of tasks, the measure of performance to be improved, and
+	 the source of experience.
+
+	  a database system that allows users to update data entries
+
+		"learning" -  the class of programs that improve through experience. 
+
+		problem of credit assignment, or determining the degree to which each move in
+		the sequence deserves credit or blame for the final outcome. 
+
+		The first design choice we face is to choose the type of training experience from
+		which our system will learn.
+		A second important attribute of the training experience is the degree to which
+		the learner controls the sequence of training examples. 
+		A third important attribute of the training experience is how well it repre-
+		sents the distribution of examples over which the final system performance P must
+		be measured.
+
+		most current theory of machine learning rests on the crucial assumption that
+		the distribution of training examples is identical to the distribution of test ex-
+		amples.
+
+		On the other hand, the more expressive the representation, the more training data
+		the program will require in order to choose among the alternative hypotheses it
+		can represent
+
+		 the approach of iteratively estimating training values based on estimates of
+		 successor state values can be proven to converge toward perfect estimates of V_train
+
+		 performance system, critic; generalizer, and experiment generator. Many machine learning systems can-be usefully characterized in 
+
+** Database engines (SQL/NoSQL)
+	 https://www.digitalocean.com/community/tutorials/understanding-sql-and-nosql-databases-and-different-database-models
+	 https://www.digitalocean.com/community/tutorials/a-comparison-of-nosql-database-management-systems-and-models
+	 https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems
+	 <2016-01-04 Mon>
+	 Finished reading: apparently SQLite is the best choice for me:
+	 Some extra reading on the topic:
+	 http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/
+	 <2016-01-11 Mon>
+*** TODO : SQLite tutorial
+		http://www.tutorialspoint.com/sqlite/
+		<2016-01-10 Sun>
+   [[*<2016-05-09%20Mon>][<2016-05-09 Mon>]]
+   1) rendering a circle with an outline:
+      - render a circle of a radius r
+      - render a circle with a snaller radius on top of it.
+        the result should look like a circle with an outline.
+   2) render an object, consisting of 2 circles, connected by a line.
+* FRP
+  @->[[[*FRP][FRP]]
+      [[*<2016-05-19%20Thu>][<2016-05-19 Thu>]]
+      [[*<2016-06-12%20Sun>][<2016-06-12 Sun>]]
+  ]
+     I ended up with OpenGL animation 'sort of working' - buffer update is busted and I should attempt to 
+   follow Jekor's instructions more closely, that is use OpenGL building blocks from cuboid first and then
+   refactor it to use NGL
+   [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor.blinks_sort_of_works]]
+   [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
+
+    Jekor, Yampa:
+    https://youtu.be/-IpE0CyHK7Q?t=425 - Jekor's yampa tutorial part 1
+    [[file:~/Documents/FRP%20(Haskell_Yampa)%20with%20the%20game%20Cuboid%20(Part%201)%20-%20Episode%209--IpE0CyHK7Q.mkv][file:~/Documents/FRP (Haskell_Yampa) with the game Cuboid (Part 1) - Episode 9--IpE0CyHK7Q.mkv]]
+
+    https://youtu.be/T3xXebIr8AM?t=980 - Jekor's yampa tutorial part 2
+    [[file:~/Documents/FRP%20(Haskell_Yampa)%20and%20OpenGL%20with%20Cuboid%20(Part%202)%20-%20Episode%2010-T3xXebIr8AM.mkv][file:~/Documents/FRP (Haskell_Yampa) and OpenGL with Cuboid (Part 2) - Episode 10-T3xXebIr8AM.mkv]]
+    :: stopped at 00:15:19
+    Yampy Cube:
+    https://youtu.be/T7XwTolu9YI?t=2506
+
+    [[file:~/Projects/Haskell/yampaTutorial/yampa.pdf]]
+
+** <2016-06-25 Sat>
+    stopped watching at 00:15:19
+    [[file:~/Documents/FRP%20(Haskell_Yampa)%20and%20OpenGL%20with%20Cuboid%20(Part%202)%20-%20Episode%2010-T3xXebIr8AM.mkv][file:~/Documents/FRP (Haskell_Yampa) and OpenGL with Cuboid (Part 2) - Episode 10-T3xXebIr8AM.mkv]]
+
+    It's working, but need to make it work with NGL now
+
+
+* Godot Engine
+** Animated Ocean surface:
+	 Something along the lines with:
+	 program a new object in C++, sample verted positions..:
+	 [[https://github.com/okamstudio/godot/wiki/advanced]]
+	 [[https://github.com/okamstudio/godot/wiki/class_mesh]]
+* Haskell tips																											:haskell:
+** Commenting code:
+  {-| @Event t a@ represents a stream of events as they occur in time.
+Semantically, you can think of @Event t a@ as an infinite list of values
+that are tagged with their corresponding time of occurence,
+
+> type Event t a = [(Time,a)]
+-}
+
+this code should be shown in haddock
+
+** Comments with shm:
+	 M-; # comment text region
+	 (with commented region selected) M-; # uncomment text region
+** Tags:
+	 to generate tags use:
+	 ~/bin/tags
+*** hothasktags
+find . | egrep '\.hs$' | xargs hothasktags > tags
+
+** Executable size
+[[http://stackoverflow.com/questions/6115459/small-haskell-program-compiled-with-ghc-into-huge-binary][Don Stuart on stack exchange]]
+
+** a working GLFW/reactive-banana example?
+   stack overflow question
+** automatically add a type signature
+   C-u C-c C-t
+** flymake-compile
+   C-c b
+* Haskell Tutorial
+  @->[[[file:~/Projects/Haskell/haskell-tutorial][haskell-tutorial]]]
+** <2016-05-23 Mon>
+  https://en.wikibooks.org/wiki/Haskell/Getting_set_up
+  [[file:~/Projects/Haskell/haskell-tutorial/Lists_and_tuples/Main.hs]]
+* Houdini
+	/home/madjestic/Projects/Houdini/Fractals/model.hipnc
+	- fractals
+	- line intersection
+
+		[2015-10-27 Tue]
+		Continue reading about VRAY procedural:
+		http://www.peterclaes.be/blog/?tag=vrayprocedural
+* How to use Journal?
+
+** Basics
+
+M-return       | to start a new entry |
+M-right/M-left | to change the depthe of insertion |
+C-u M-! date   | to insert date |
+
+*** Haskell
+		[[*Haskell%20tips][Haskell tips]]
+** New Deep Entry
+
+** TODOs
+
+	 S-right/S-left to change the status
+
+	 C-c . to insert timestamp
+
+** List and markup
+  + one
+  + two
+*bold*
+/italic/
+=code=
+
+** Links [[*Links][*]]
+   C-c l     (org-store-link)       | to store link to current location
+   C-c C-L to store the link        |
+   C-c C-l to inser the link        |
+   C-c C-l on existin link to edit  |
+   [[http://orgmode.org/manual/Handling-links.html][on_Links]]
+   [[http://orgmode.org/manual/External-links.html][gentoo]]
+   [[docview:~/Downloads/Abbelian_Categories.pdf::100][PDF]]
+	 [[docview:~/Projects/gmsg/basic_des/basic.pdf::1][open_pdf with docview]]
+	 S-enter create a symlink to a current file in dired
+* iptables
+	https://wiki.archlinux.org/index.php/Iptables
+	https://wiki.gentoo.org/wiki/Iptables#IPv6.5B2.5D.5B.E2.80.93_1.5D
+	http://www.howtogeek.com/177621/the-beginners-guide-to-iptables-the-linux-firewall/
+
+	quick search shows that iptables requires to set up the rules for each connection
+	individually, which seems tedious.  https://github.com/themighty1/lpfw seems to 
+	address that, however it seems to support IPv4 only.... investigate further.
+* IRC
+	IRCnet Server : open.ircnet.net
+
 * Kappa Quick Notes
 	Quick notes:
 
 ** ### VIM TIPS           ###
-
+   
 1) <Ctrl>+l to switch off highlights in vim
 2) ds" - to remove "" around a word
 3) \\cc   - comment out
@@ -38,7 +475,7 @@
 4) cs]} - surround with {}
 5) :%s/foo/bar/g - exchange all instances of foo with bar
 6) ctrl+R - redo
-
+   
 2) Start ghci with gloss, so that it does not hang:
 ghci -fno-ghci-sandbox 
 
@@ -61,9 +498,8 @@ nu madjestic # hwclock --hctosys --localtime
 # Backup using dd's
 dd if=/dev/sda of=/dev/sdb bs=4096 conv=noerror,sync
 
-
 ** ### Kernel Upgrade     ###
-# copy old config
+   # copy old config
 
 	 make oldconfig
 	 make modules_prepare
@@ -74,11 +510,14 @@ dd if=/dev/sda of=/dev/sdb bs=4096 conv=noerror,sync
 	 grub2-mkconfig -o /boot/grub/grub.cfg
 
 ** ### EMACS TIPS         ###
-# turn off line-wrapping:
-M-x toggle-truncate-linesd
-
-# break long lines automatic
-M-x auto-fill-mode
+   @<->[
+   [[*Emacs%20tips][Emacs tips]]
+   ]
+   # turn off line-wrapping:
+   M-x toggle-truncate-linesd
+   
+   # break long lines automatic
+   M-x auto-fill-mode
 
 ** ### MISC               ###
 4) Find out your own IP:
@@ -156,176 +595,10 @@ WINDOWS-p
 		#echo
 		qmake -o Makefile triangle.pro
 
-
 ** ### STEAM              ###
 	 MESA_GL_VERSION_OVERRIDE=4.0 MESA_GLSL_VERSION_OVERRIDE=400 %command%
 ** ### MISC               ###
 	 ffmpeg -i movie.%04d.png -c:v libx264 -r 30 out_x264.avi
-* How to use Journal?
-
-** Basics
-
-M-return       | to start a new entry |
-M-right/M-left | to change the depthe of insertion |
-C-u M-! date   | to insert date |
-
-*** Haskell
-		[[*Haskell%20tips][Haskell tips]]
-** New Deep Entry
-
-** TODOs
-
-	 S-right/S-left to change the status
-
-	 C-c . to insert timestamp
-
-** List and markup
-  + one
-  + two
-*bold*
-/italic/
-=code=
-
-** Links [[*Links][*]]
-   C-c l     (org-store-link)       | to store link to current location
-   C-c C-L to store the link        |
-   C-c C-l to inser the link        |
-   C-c C-l on existin link to edit  |
-   [[http://orgmode.org/manual/Handling-links.html][on_Links]]
-   [[http://orgmode.org/manual/External-links.html][gentoo]]
-   [[docview:~/Downloads/Abbelian_Categories.pdf::100][PDF]]
-	 [[docview:~/Projects/gmsg/basic_des/basic.pdf::1][open_pdf with docview]]
-	 S-enter create a symlink to a current file in dired
-
-* Tic-Tac-Toe
-  @out[[[*AI][AI]]]
-  A 'Hello World!' of Machine Learning:
-  [[file:~/Documents/tictactoe.kra]]
-  
-* AI
-  @in:[[[*<2016-02-08%20Mon>][<2016-02-08 Mon>]]]
-  While playing with Gnus, I've recovered an old e-mail from Richard,
-	he sent me a few pdf's on machine learning, among which was:
-	[[file:~/Documents/Machine%20Learning%20in%20Action.pdf][file:~/Documents/Machine Learning in Action.pdf]]
-
-  [[*Stylistic%20Analysis,%20Bias%20filtering,%20etc][Stylistic Analysis, Bias filtering, etc]]
-
-  Learning AI/Machine Learning/Deep Learning
-  http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
-  http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-2/
-
-** <2016-06-06 Mon>                                                      :ai:
-   Started working on a tic-tac-toe game as suggested by Tom Mitchel's book:
-   [[file:~/Documents/tictactoe.kra]]
-   [[file:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf]]
-   [[docview:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf::25]]
-*** TODO : fix the ::25 (page number) to match the excercise page   
-
-* Bash
-	an interesting example of "loop over all files in a directory 
-	and do stuff to each file:"
-	[[file:/usr/local/include/Field3D/relink.sh]]
-	[[~/Documents/Bourne_Shell_Scripting.pdf]]
-* b1
-	Stock Exchange programe, written in Haskell
-	[[madjestic/Projects/b1/]]
-** DONE : Broken, fix it:
-	 [[https://github.com/btmura/b1/issues/5][compile error: Ambiguous occurrence ‘defaultTimeLocale’]]
-	 [ 5 of 48] Compiling B1.Data.Price.Google ( src/B1/Data/Price/Google.hs, dist/dist-sandbox-d2346a33/build/b1-chart/b1-chart-tmp/B1/Data/Price/Google.o )
-   
-	 src/B1/Data/Price/Google.hs:25:29:
-	 Ambiguous occurrence ‘defaultTimeLocale’
-	 It could refer to either ‘Data.Time.defaultTimeLocale’,
-	 imported from ‘Data.Time’ at src/B1/Data/Price/Google.hs:9:1-16
-	 (and originally defined in ‘time-1.5.0.1:Data.Time.Format.Locale’)
-	 or ‘System.Locale.defaultTimeLocale’,
-	 imported from ‘System.Locale’ at src/B1/Data/Price/Google.hs:13:1-20
-	 
-	 src/B1/Data/Price/Google.hs:98:13:
-	 Ambiguous occurrence ‘defaultTimeLocale’
-	 It could refer to either ‘Data.Time.defaultTimeLocale’,
-	 imported from ‘Data.Time’ at src/B1/Data/Price/Google.hs:9:1-16
-	 (and originally defined in ‘time-1.5.0.1:Data.Time.Format.Locale’)
-	 or ‘System.Locale.defaultTimeLocale’,
-	 imported from ‘System.Locale’ at src/B1/Data/Price/Google.hs:13:1-20
-	 cabal: Error: some packages failed to install:
-	 b1-0.1 failed during the building phase. The exception was:
-	 ExitFailure 1
-   
-   <2016-03-30 Wed>
-   Fixed: https://github.com/btmura/b1/issues/5
-	 
-* Assembler                                                             :asm:
-  <2016-03-31 Thu>
-	I started doing some examples from [[file:~/Documents/nasm_unix.pdf][Столяров Ассемблер]]
-	[[/home/madjestic/Projects/ASM]]
-
-* Xmonad
-** DONE : assign hot-keys for brightness-up/brightness down
-** DONE : assign hot-keys for volume up/down
-* Editing a movie:
-	(lossless codec)
-	ffmpeg -i model.rop_comp1.%04d.png -c:v huffyuv out.avi
-	then import and re-export through pitivi
-* Emacs tips
-	‘M-x toggle-truncate-lines’ - turn on long lines warp
-	'<C-S-left>' - swap buffers
-
-	'C-x n n' - narrow region/scope
-	'C-x n w' - widen region/scope
-
-	(paredit mode)
-	selection + ( -> (selection)
-	... same with [, {
-
-	(selection)	<M-s> -> selection
-
-	(paren-mode)
-	<M-S> ( : foo -> (foo)
-	M-up    : (foo) -> foo
-
-  (C-c C-x C-i) start a timer (in timer)
-	(C-c C-x C-o) end timer (out-timer)
-	CLOCK: [2015-11-28 Sat 18:01]--[2015-11-28 Sat 18:03] =>  0:02
-
-
-** Registers, bookmarks and desktop
-	 C-x r w <register> to store a window configuration in a register
-	 C-x r j <register> (where <register> is a single character) to jump back to a register.
-	 http://stackoverflow.com/questions/2572950/preserve-window-layout-in-emacs
-	 
-	 https://www.gnu.org/software/emacs/manual/html_node/emacs/Registers.html
-	 http://www.gnu.org/savannah-checkouts/gnu/emacs/manual/html_node/emacs/Saving-Emacs-Sessions.html
-	 https://www.gnu.org/software/emacs/manual/html_node/emacs/Bookmarks.html#Bookmarks
-	 https://github.com/ffevotte/desktop-plus
-	 
-* Haskell tips																											:haskell:
-** Commenting code:
-  {-| @Event t a@ represents a stream of events as they occur in time.
-Semantically, you can think of @Event t a@ as an infinite list of values
-that are tagged with their corresponding time of occurence,
-
-> type Event t a = [(Time,a)]
--}
-
-this code should be shown in haddock
-
-** Comments with shm:
-	 M-; # comment text region
-	 (with commented region selected) M-; # uncomment text region
-** Tags:
-	 to generate tags use:
-	 ~/bin/tags
-*** hothasktags
-find . | egrep '\.hs$' | xargs hothasktags > tags
-
-** Executable size
-[[http://stackoverflow.com/questions/6115459/small-haskell-program-compiled-with-ghc-into-huge-binary][Don Stuart on stack exchange]]
-
-** a working GLFW/reactive-banana example?
-   stack overflow question
-** automatically add a type signature
-   C-u C-c C-t
 * Life Hacks
 ** Tax-return related papers:
 	  Annual Mortgage Statement 
@@ -338,21 +611,495 @@ find . | egrep '\.hs$' | xargs hothasktags > tags
    "kenza bouw b.v."
    Vredeweg 5a
    1505 hh zaandam
-   
-* New Task Example
+* Linux Format
+  [[file:~/Documents/Linux_Format_March_2016.pdf]]
+* mantra
+	Houdini Help:
+	http://127.0.0.1:48626/render/
+	http://127.0.0.1:48626/vex/contexts/shading_contexts
 
-** Create a Design
+** TODO :	Investigate Mario's glass shader:
+	[[/home/madjestic/Projects/Houdini/Experiment_with_glass/Marios_Shader/trans_test_v1r15_for_post2.hipnc]]
+	https://www.boundless.com/physics/textbooks/boundless-physics-textbook/geometric-optics-24/reflection-refraction-and-dispersion-169/dispersion-rainbows-and-prisims-611-6326/
+	http://forums.odforce.net/topic/6925-dispersion-bsdf/page-3
+	[[/home/madjestic/Projects/Houdini/Experiment_with_glass/Dispersion]] Dispersion glass shader, very interesting prismatic effects
+	
+	<2016-01-04 Mon>
+
+** tests
+	 [[/home/madjestic/Projects/Houdini/Mantra/tests/test_01.hipnc]]
+	 A simple sphere, occlusion, GI.
+
+	 [[/home/madjestic/Projects/Houdini/Mantra/tests/test_02.hipnc]]
+	 particles shaded as speric volumes
+	 
+	 [[/home/madjestic/Projects/Houdini/Mantra/tests/test_03.hipnc]]
+	 Basic shapes, experiments with shading
+	 
+** PBR
+	 [[/home/madjestic/Documents/pbr.pdf]]
+	 Physically Based Rendering
+	 <2016-01-05 Tue>
+** Wireframe rendering
+	 [[/home/madjestic/Projects/Houdini/Render/Wire_Frame_Render/model.hipnc]]
+	 <2016-01-05 Tue>
+* Markov Chains...
+	http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter11.pdf
+* MARVE
+  Modelling a MARVE character from HGTG
+  [[file:~/Projects/Houdini/MARVE]]
+  [[file:~/Projects/Houdini/MARVE/3d-coat/model.3b]]
+  [[file:~/Projects/Houdini/MARVE/model.hipnc]]
+  [[file:~/.contexts/MARVE]]
+
+* Mathematics																													 :math:
+	The Zakon Series on Mathematical Analysis
+	[[~/Documents/Mathematics/zakon-basic-a4-one.pdf][Basic Concepts of Mathematics]]
+	[[file:~/Documents/Mathematics/multivariable.pdf][Multivariable Calculus by David Guichard]]
+
+** W.S. Jevons
+	 [[https://en.wikipedia.org/wiki/William_Stanley_Jevons]]
+	 [[https://www.marxists.org/reference/subject/economics/jevons/mathem.htm]]
+
+** MST124: Essential Mathematics 1
+** DONE :	[[file:~/Documents/MST124/TMA02/mst124_unit4.pdf][Unit 4]] (textbook)
+** DONE :	[[file:~/Documents/MST124/TMA02/TMA_02.pdf][TMA 02]]
+** DONE : TMA_03
+** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965296&page%3D1&scrollpos%3D0#q3][Unit 9 Practice Quiz]]
+** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965295&page%3D1&scrollpos%3D0#q5][ICMA44]]
+** DONE : [[file:~/Documents/MST124/TMA04/mst124_14b_tma04.pdf][TMA_04]]
+** MST125: Essential Mathematics 2
+	One characteristic of a reflection that distinguishes it from a rotation or a
+	translation is that it reverses vertex order.
+
+	An isometry maps any polygon to a polygon of the same size and
+	shape. In particular, the vertices of the polygon are mapped to the
+	vertices of the image polygon.
+
+	A linear transformation leaves the origin fixed.
+
+	If an implication is true, then its converse is either true or false.
+
+** One-to-one linear transformations
+	 Determinant of One-to-one linear transformations does not equal 0.
+	 One-to-one linear transformations preserve linearity
+	 One-to-one linear transformations map lines to lines
+
+** DONE : p 48
+
+** Principia Mathemtica
+	Analysis and Geometry, Theory of agregates (Cantor)
+	Symbolic Logic (Peano)
+	
+
+** Guerrilla Math Study Group (GMSG)
+	 [[https://sites.google.com/site/guerrillamathstudygroup/][google sites link]]
+* MIDI :music::synt:
+	Ardouro
+	BitWig
+
+	[[http://proaudio.tuxfamily.org/wiki/index.php?title%3DRealtime_(RT)_Kernel][http://proaudio.tuxfamily.org/wiki/index.php?title=Realtime_(RT)_Kernel]]
+	https://wiki.gentoo.org/wiki/Project:Sound/How_to_Enable_Realtime_for_Multimedia_Applications
+	https://packages.gentoo.org/packages/media-plugins/calf
+
+	https://forums.gentoo.org/viewtopic-p-7330590.html?sid=1fa73569fe3439e99b81625808e0f794
+	http://gentoostudio.org/?p=maninstall&s=kernel
+	http://www.gentoo-wiki.info/Jack
+
+** <2016-05-06 Fri>
+   run qjackctl, connect midi devices, link them.
+	 <2015-12-27 Sun>
+** <2016-05-28 Sat>
+   plug in the Keyboard, check if dmesg sees it
+   qjackctl
+   qsynth
+
+   link the MiniKeystation32 input to qsynth output in qjackctl
+
+   Enjoy!
+* NAS
+  https://forums.freenas.org/index.php?threads/hardware-recommendations-read-this-first.23069/
+** Motherboard
+   ~150$
+   Supermicro X9s
+   http://www.supermicro.com/products/motherboard/Xeon/C202_C204/X9SCM-F.cfm
+
+** CPU
+   ~65$
+   Pentium G2020 (socket 1155) and G3220 (socket 1150) 
+   http://www.amazon.com/Intel-Pentium-Processor-G3220-BX80646G3220/dp/B00EF1G9DW/ref=sr_1_1?s=electronics&ie=UTF8&qid=1409098728&sr=1-1
+
+   ~ 50$
+   http://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=LGA-1150+Pentium+G3258&_sacat=0
+
+** Case
+   ~100
+   Fractal Design R4
+   http://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Fractal+Design+R4&_sacat=0
+
+** RAM
+   ~50-100$
+   ECC RAM 16GB
+* OpenGL notes
+	Coordinate Systems, Spaces:
+	http://www.songho.ca/opengl/gl_projectionmatrix.html
+	http://learnopengl.com/#!Getting-started/Coordinate-Systems
+
+	taking the cross product of the forward vector and our sideways
+	vector to produce a third that is orthogonal to both and that represents up with respect to
+	the camera.
+
+	[2015-10-13 Tue]
+	Continue reading on p.137 - Data structures and buffers.
+
+	glBufferSubData(), glNamedBufferSubData() - map a datastore to a Buffer,
+	(defined with  glBufferStorage() glNamedBufferStorage() )
+
+	glMapBuffer(), glMapNamedBuffer() - map an arbitrary memory address to a Buffer.
+	glMapBufferRange(), glMapNamedBufferRange()
+	
+* Parsing
+  @<-[[[*<2016-06-19%20Sun>%20Haskell%20parsing,%20regex][<2016-06-19 Sun> Haskell parsing, regex]]
+      [[*<2016-06-12%20Sun>%20Haskell%20Parsers][<2016-06-12 Sun> Haskell Parsers]]
+  ]
+
+  @->[
+  
+  ]
+  
+  http://jakewheat.github.io/intro_to_parsing/
+  http://nikobidin.com/arrows-everywhere
+  https://github.com/aslatter/parsec
+  https://kunigami.wordpress.com/2014/01/21/an-introduction-to-the-parsec-library/
+  http://book.realworldhaskell.org/
+  http://unbui.lt/#!/post/haskell-parsec-basics
+  http://unbui.lt/#!/post/haskell-another-lens-tutorial
+  
+  https://github.com/ChrisKuklewicz/regex-tdfa
+  https://two-wrongs.com/parser-combinators-parsing-for-haskell-beginners a parsing tutorial/intro
+
+  https://courses.edx.org/courses/DelftX/FP101x/3T2014/courseware/f2b543ac0250428aa0a3f141797b35ae/022f142c0b5d4b4bb9488112c8afc9cc/
+  Edx - Functional parsers and monads.
 
 
-*** Design Ideas:
+** IN-PROGRESS : create a point attribute (String -> Tree)
+	 Tree -> Tree of id's -> flatten -> point string attr
+  
+** DONE : for a cluster of connected points it id attr, 
+	 pick the point with the lowest id
 
-		[[http://wordpress.org/themes/][Cool_Ideas]]
-		procedural houses in Houdini -> Godot
-		notes to waves translator
-		
+	 (lowest point should have the list with all nodes above)
+** Tree Parser
 * Projects
+* PVR
+	export PVR_PYTHON_PATH="/usr/include/python2.7/"
+	scons lib
+	scons pylib
+
+	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lboost_python
+	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lpython2.6
+
+	[2015-09-22 Tue]
+	[[file:~/Projects/pvr/CMakeLists.txt]] works now, submitted to github
+	# Compile flags
+	...
+	SET( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pipe -fPIC -fpermissive")
+	...
+
+	... however, (~/Projects/pvr/libpvr) 'scons pylib' from 
+	https://github.com/pvrbook/pvr still fails:
+	Linking    build/linux2/g++/m64/release/python26/_pvr.so
+	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lboost_python
+	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lpython2.6
+	collect2: error: ld returned 1 exit status
+	scons: *** [build/linux2/g++/m64/release/python26/_pvr.so] Error 1
+	scons: building terminated because of errors.
+	
+	, finish digging here: [[file:~/Projects/pvr/libpvr/BuildSupport.py]]
+
+	[2015-09-23 Wed]
+	compilation issues solved by:
+	ln -s ./libboost_python-2.7.so ./libboost_python.so
+	ln -s ./libpython2.7.so ./libpython2.6.so
+
+	[2015-09-24 Thu]
+	Solved:
+	[[https://github.com/pvrbook/pvr/pull/12]] (Build instructions for Gentoo)
+
+	[2015-10-12 Mon]
+	~/Projects/pvr_fork@madjestic/pvr/scenes/book/chapter_1 $ python fig_1_1.py
+	
+* RAID 10 project
+** TODO : Build RAID-10.  Project Ksi:
+	 2x500Gb SCI SSD drives as RAID-10: fast IO and reliability, but space is limited to the smallest drive.
+** TODO : Project Omicron:
+	 2x1Tb Raid-10?
+	 <2015-12-10 Thu>
+* Rocket!
+	A simple game project: similar to Angry birds, but in space with planets.  A dynamics-based (gravity, gravitational pool of planets).
+	<2015-12-04 Fri>
+
+* sb7code reading, examples
+	OpenGL Super Bible ed.7
+	Projects/OpenGL/sb7code/src/book - Makefile works now
+
+	[2015-09-23 Wed]
+	hack cpp/emacs environment: http://tuhdo.github.io/c-ide.html
+	read on the bible: [[file:~/Documents/Programming/OpenGL/Graham%20Sellers,%20Richard%20S.%20Wright%20Jr.,%20Nicholas%20Haemel%20-%20OpenGL%20SuperBible%20Comprehensive%20Tutorial%20and%20Reference,%207th%20Edition%20-%202015/OpenGL_Bible.pdf][file:~/Documents/Programming/OpenGL/Graham Sellers, Richard S. Wright Jr., Nicholas Haemel - OpenGL SuperBible Comprehensive Tutorial and Reference, 7th Edition - 2015/OpenGL_Bible.pdf]]
+
+	try the ../book code in VS, see if it autocompletes struct APPINFO
+	
+* Showreeel / Demoreel
+	[[/home/madjestic/Projects/Houdini/Mantra/tests]]
+	<2016-01-02 Sat>
+* SIGGRAPH 2015
+** Paper ideas
+*** Feature-preserving curve resampling
+*** Lindenmayer: Procedurally-assisted LOD generation.
+* Study
+** M140: Introducing Statistics
+*** DONE : TMA02:
+*** DONE 26 April 2014
+**** DONE : TMA02: Q1: 
+Computer Book 1: pp.35-48
+surgeons.mtw (box-plotting in Minitab)
+**** DONE : TMA02: Q2
+***** DONE : Book2 pp.39-47 (on different sampling types)
+finished at p.44.
+done
+Sat Apr 26 16:03:45 CEST 2014
+
+
+**** DONE : TMA02: Q3
+*** DONE : TMA03
+*** DONE : [[file:~/Documents/M140/TMA04/m140_tma04.pdf][TMA04]]
+*** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D963365][ICMA43]]
+
+*** DONE : Learn Basic R
+   It looks like it's a dead end.
+	 
+	 Julia is a much stronger alternative.  It's much faster than R, Julia is
+	 a propper programmin language, has bindings or interfaces to C++,Python
+
+	 Haskell is a much stronger alternative too.  Obviously.
+** edX: FP101x
+  @->[
+  [[*Parsing][Parsing]]
+  ]
+	[[https://courses.edx.org/courses/DelftX/FP101x/3T2014/courseware/7c7ec15948b84b1a9c14673bddbcf8aa/9441ebb13fad49dca4dee53107b3ce5a/][Continue with HW]]
+	Mon Nov 10 22:38:53 CET 2014
+* Stylistic Analysis, Bias filtering, etc
+	 http://en.wikipedia.org/wiki/Natural_language_processing
+	 http://en.wikipedia.org/wiki/Sentiment_analysis
+	 http://www.kaspik.com/ (web sentiment analysis)
+
+	 N.Chomsky: "Three models for the description of language"
+	 http://chomsky.info/articles/195609--.pdf
+
+	 http://www.its.caltech.edu/~matilde/GraphGrammarsLing.pdf
+
+	 [[http://www.cs.dartmouth.edu/reports/TR2014-754.pdf][StyleCheck: An Automated Stylistic Analysis Tool (PDF)]]
+
+	 [[file:~/Pictures/Human_Language_Families_ru.png]]
+
+	 [[https://ru.wikipedia.org/wiki/%25D0%25A2%25D0%25B8%25D0%25BF%25D0%25BE%25D0%25BB%25D0%25BE%25D0%25B3%25D0%25B8%25D1%258F_(%25D0%25BB%25D0%25B8%25D0%25BD%25D0%25B3%25D0%25B2%25D0%25B8%25D1%2581%25D1%2582%25D0%25B8%25D0%25BA%25D0%25B0)][Типология (лингвистика)]]
+
+	 [[https://ru.wikipedia.org/wiki/%25D0%2590%25D0%25BA%25D1%2582%25D0%25B8%25D0%25B2%25D0%25BD%25D1%258B%25D0%25B5_%25D1%258F%25D0%25B7%25D1%258B%25D0%25BA%25D0%25B8][Активные языки]]
+
+	 [[https://en.wikipedia.org/wiki/Ferdinand_de_Saussure][Ferdinand de Saussure]]
+
+	 [[https://en.wikipedia.org/wiki/Roman_Jakobson][Roman Jakobson]]
+
+	 [[https://en.wikipedia.org/wiki/Russian_formalism][Russian formalism]]
+
+	 [[https://en.wikipedia.org/wiki/Stylistics_(field_of_study)][Stylistics (field of study)]]
+
+	 [[https://en.wikipedia.org/wiki/Stylistics_(field_of_study)][Stylistics (field of study)]]
+
+	 
+*** Related Read:
+		http://en.wikipedia.org/wiki/Framework_Programmes_for_Research_and_Technological_Development
+		http://en.wikipedia.org/wiki/European_Atomic_Energy_Community
+* Tic-Tac-Toe
+  @->[[[*AI][AI]]]
+  A 'Hello World!' of Machine Learning:
+  [[file:~/Documents/tictactoe.kra]]
+  
+* TODO:
+** IN-PROGRESS [[*:%20Make%20Elegant,%20Clean-up][Make Elegant, Clean-up]]
+** IN-PROGRESS : Write a make file that can be run like this:
+	 make clean
+	   - and it will choose from a number of ons
+		 [2015-02-17 Tue]
+		 - made a clean.sh file that cleans up stuff [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/tutorial10/clean][here]]
+
+** DONE : Experiment with caustics (an example from Houdini Help)
+** IN-PROGRESS : Write a python daemon
+	 http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
+	 https://pypi.python.org/pypi/python-daemon/
+	 [2015-12-02 Wed]
+
+	 I think I should do it.  Write a daemon that, when receives a numeric argument, increases it by 1 and prints out the result.
+	 <2016-01-24 Sun>
+
+   This seems to be a concrete example of creating a python daemon process:
+   http://www.gavinj.net/2012/06/building-python-daemon-process.html
+
+   Haskell daemon seems to be easier than in python.  Weird :) :
+   https://hackage.haskell.org/package/daemons
+   <2016-01-24 Sun>
+
+   
+** WAITING : figure out what's up with Nvidia Optimus
+	 Still has some minor(?) issues: https://forums.gentoo.org/viewtopic-t-1032214-highlight-.html
+	 [2015-11-30 Mon]
+
+	 Bumblebee:
+	 http://bumblebee-project.org/
+	 troubleshooting:
+	 https://github.com/Bumblebee-Project/Bumblebee/wiki/Troubleshooting
+	 reporting issues:
+	 https://github.com/Bumblebee-Project/Bumblebee/wiki/Reporting-Issues
+	 
+** DONE : link it here
+** DONE : Set up fallout 2 ~/Projects/games/falltergeist: it is missing some files, get them from an official game installation
+** DONE : compile latest Unreal Engine
+	 [2015-11-30 Mon]
+	 tried latest, it fails somewhere during the Setup.sh, reasons unknown, log file does not get produced.
+
+	 https://github.com/EpicGames/UnrealEngine/blob/4.10/Engine/Build/BatchFiles/Linux/README.md
+	 git clone https://github.com/EpicGames/UnrealEngine -b 4.10
+	 (follow README)
+
+	 Latest version worked
+	 <2015-12-11 Fri>
+
+** DONE : set up battery levels color-coding for xmonad
+	 <2015-12-04 Fri>
+	 <2015-12-07 Mon>
+** TODO : Xmonad Fullscrean
+	 https://github.com/Nadrieril/xmonad-config/blob/master/xmonad.hs
+	 http://stackoverflow.com/questions/20446348/xmonad-toggle-fullscreen-xmobar
+	 
+** DONE : make (sr-speedbar-open) a shortcut in cpp.el
+	 <2016-01-03 Sun>
+	 
+		[2015-01-12 Mon]
+		(OlexP script to start Houdini)
+		alias hdk='hdktmp=`pwd`; cd $HFS; source houdini_setup; cd $hdktmp; unset hdkt
+
+	Reading [[file:~/Projects/pbrt-v2][pbrt book]]
+	<2016-01-16 Sat>
+
+	Reading on Phyllotaxis in abop
+	http://tmdag.com/ptakun/eco_system/makeofplants_en_htm.htm
+	<2016-01-16 Sat>
+	
+	[[/home/madjestic/Projects/Houdini/Fractals/model.hipnc]]
+	<2016-01-16 Sat>
+
+	~/.contexts/pbrt  mplay pbrt.exr
+	<2016-01-19 Tue>
+
+	what's the name of this theorem:  Given inifinite that the set uf numbders, formed by decimal representation of digits of Pi, there is a subset of P, Pp, 
+	that is 'fully mutable'.  By 'fully mutable', I mean that if we form a Ppf, whose members are unique subsets of the length, equal to len(Pp), 
+	such that all possible mutations of the original set of len(Pp) are presented and no new members can be added that would not repeat the already
+	existing memeber.
+
+	E.g. N  = 12345e
+
+
+
+	 len(N) = len( [1,2,3,4,5] ) = 5
+	     N1 = 98765
+   len(N1)= len( [9,8,7,6,5] ) = 5
+	     Pp = 
+
+	The lemma of this is that any decimal number N can be represented as a set of 2 numbers: L, representing the length of N taken as a set of digits and
+	number O, representing 'offset' of the offset along Pi and the length of the sequence len (N).
+	<2016-01-22 Fri>
+
+	fail, nearly.  It's a case of reordering a 100 (0-99) numbers from 0-9999 numbers.  Thanks to Jad's input.
+	<2016-01-22 Fri>
+
+	Satisfaction in solving a problem can be intense, but it is short-lived; 
+	our pathos is driven by what we have not yet understood. 
+	André Weil, one of the twentieth century’s dominant mathematicians, described this as “achiev[ing] knowledge and indifference at the same time.” 
+	We never understand more than a finite amount of the limitlessness of what mathematics potentially offers to the understanding. 
+
+	The mathematical soul, embodied in a historical tradition oriented to a limitless future, 
+	can rest secure in the knowledge that its dissatisfaction is guaranteed.
+
+	the essence of mathematics lies in its freedom.  Cantor.
+	
+	https://www.gridmarkets.com/
+	Houdini rendering in the cloud.
+
+  
+	<2016-01-23 Sat>
+
+** TODO :	Mathematics Without Apologies:
+	stopped at part1: 
+	(Controversies among philosophers,
+	<2016-01-23 Sat>
+
+** IN-PROGRESS : Create a custom overlay:
+   /var/lib/layman/make.conf
+   PORTDIR_OVERLAY="
+   ...
+   /usr/local/portage
+   /usr/local/portage/kde
+   "
+   
+	 /usr/local/portage/haskell/yampa
+
+   http://www.astro.ru.nl/~sluys/Public/custom_ebuilds.html
+   https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds
+   
+** TODO : Make colliding n-bodies sim
+** DONE : continue with Mortgage graphing, using VEX
+   [[file:~/Desktop/mortgage.hipnc]]
+
+** TODO : Render out a video, same as for n-bodies.
+   [[file:~/Projects/Houdini/Godika]]
+** TODO : create emacs shortcuts for register-switching: C-0, C-1, .. C-9
+* Unreal Engine
+	- contacted popcornfx:
+		The Linux build is not here for now, but should not be a problem, once we get the plugin stabilized on Win64, we will begin to build for other platform.
+	  The PopcornFX Editor is currently only compatible with Windows, but stay in touch...
+
+	urls:
+	https://docs.unrealengine.com/latest/INT/GettingStarted/FromUnity/index.html
+	https://docs.unrealengine.com/latest/INT/Gameplay/ClassCreation/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Classes/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Functions/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Properties/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Structs/index.html
+	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Interfaces/index.html
+
+** 101
+	 export LD_LIBRARY_PATH=.
+	 ./UE4Editor ~/Projects/Unreal_Projects/MyProject4/MyProject4.uproject
+	 primusrun ./UE4Editor ~/Projects/Unreal_Projects/MyProject/MyProject.uproject -opengl4
+* Waterfall
+  @<-[
+  [[*:%20Set%20up%20water%20shader][: Set up water shader]]
+  [[*:%20continue%20working%20on%20waterfall%20example][: continue working on waterfall example]]
+  [[*%5B2015-01-12%20Mon%5D][{2015-01-12 Mon}]]
+  [[*:%20Investigate%20how%20to%20render%20ocean%20nicely][: Investigate how to render ocean nicely]]
+  ]
+
+  links:
+  https://rutracker.org/forum/viewtopic.php?t=5114569
+  https://rutracker.org/forum/viewtopic.php?t=5079199
+  https://rutracker.org/forum/viewtopic.php?t=4257762
+  
+* Xmonad
+** DONE : assign hot-keys for brightness-up/brightness down
+** DONE : assign hot-keys for volume up/down
 * Yampa
-  @out[[[*Yampa'][Yampa']]]
+  @->[[[*Yampa'][Yampa']]]
 ** HNGL
 
 *** on HNGL
@@ -534,7 +1281,10 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
         <2016-02-29 Mon>
         Pushed an update to GitHub and sent a blog link to Haskell Planet.
 ** FRP
-   @out[[[file:~/Projects/Haskell/FRP]]]
+   @->[[[file:~/Projects/Haskell/FRP]]]
+   @<-[[[*%5B%5B*FRP%5D%5BFRP%5D%5D][FRP]]
+       [[*<2016-06-12%20Sun>][<2016-06-12 Sun>]]
+   ]
 *** Reactive Banana
 [[*:%20Animation%20Support...][Reactive Banana Animation Support...]]
 **** TODO Reading: [[http://johnlato.blogspot.nl/2011/04/thoughts-on-frp.html][Sound and Software]]
@@ -657,743 +1407,8 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 	 [[http://en.wikipedia.org/wiki/Fission_(biology)][Binary Fission]] on wiki
 ** GTK+
 	 [[http://www.micahcarrick.com/gtk-glade-tutorial-part-1.html]]
-* Rocket!
-	A simple game project: similar to Angry birds, but in space with planets.  A dynamics-based (gravity, gravitational pool of planets).
-	<2015-12-04 Fri>
 
-* Showreeel / Demoreel
-	[[/home/madjestic/Projects/Houdini/Mantra/tests]]
-	<2016-01-02 Sat>
-* Study
-** M140: Introducing Statistics
-*** DONE : TMA02:
-*** DONE 26 April 2014
-**** DONE : TMA02: Q1: 
-Computer Book 1: pp.35-48
-surgeons.mtw (box-plotting in Minitab)
-**** DONE : TMA02: Q2
-***** DONE : Book2 pp.39-47 (on different sampling types)
-finished at p.44.
-done
-Sat Apr 26 16:03:45 CEST 2014
 
-
-**** DONE : TMA02: Q3
-*** DONE : TMA03
-*** DONE : [[file:~/Documents/M140/TMA04/m140_tma04.pdf][TMA04]]
-*** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D963365][ICMA43]]
-
-*** DONE : Learn Basic R
-   It looks like it's a dead end.
-	 
-	 Julia is a much stronger alternative.  It's much faster than R, Julia is
-	 a propper programmin language, has bindings or interfaces to C++,Python
-
-	 Haskell is a much stronger alternative too.  Obviously.
-
-* Haskell Tutorial
-  @out[[[file:~/Projects/Haskell/haskell-tutorial][haskell-tutorial]]]
-** <2016-05-23 Mon>
-  https://en.wikibooks.org/wiki/Haskell/Getting_set_up
-  [[file:~/Projects/Haskell/haskell-tutorial/Lists_and_tuples/Main.hs]]
-* Godot Engine
-** Animated Ocean surface:
-	 Something along the lines with:
-	 program a new object in C++, sample verted positions..:
-	 [[https://github.com/okamstudio/godot/wiki/advanced]]
-	 [[https://github.com/okamstudio/godot/wiki/class_mesh]]
-	
-* Unreal Engine
-	- contacted popcornfx:
-		The Linux build is not here for now, but should not be a problem, once we get the plugin stabilized on Win64, we will begin to build for other platform.
-	  The PopcornFX Editor is currently only compatible with Windows, but stay in touch...
-
-	urls:
-	https://docs.unrealengine.com/latest/INT/GettingStarted/FromUnity/index.html
-	https://docs.unrealengine.com/latest/INT/Gameplay/ClassCreation/index.html
-	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/index.html
-	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Classes/index.html
-	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Functions/index.html
-	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Properties/index.html
-	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Structs/index.html
-	https://docs.unrealengine.com/latest/INT/Programming/UnrealArchitecture/Reference/Interfaces/index.html
-
-** 101
-	 export LD_LIBRARY_PATH=.
-	 ./UE4Editor ~/Projects/Unreal_Projects/MyProject4/MyProject4.uproject
-	 primusrun ./UE4Editor ~/Projects/Unreal_Projects/MyProject/MyProject.uproject -opengl4
-* Houdini
-	/home/madjestic/Projects/Houdini/Fractals/model.hipnc
-	- fractals
-	- line intersection
-
-		[2015-10-27 Tue]
-		Continue reading about VRAY procedural:
-		http://www.peterclaes.be/blog/?tag=vrayprocedural
-* SIGGRAPH 2015
-** Paper ideas
-*** Feature-preserving curve resampling
-*** Lindenmayer: Procedurally-assisted LOD generation.
-* edX: FP101x
-	[[https://courses.edx.org/courses/DelftX/FP101x/3T2014/courseware/7c7ec15948b84b1a9c14673bddbcf8aa/9441ebb13fad49dca4dee53107b3ce5a/][Continue with HW]]
-	Mon Nov 10 22:38:53 CET 2014
-
-* Mathematics																													 :math:
-	The Zakon Series on Mathematical Analysis
-	[[~/Documents/Mathematics/zakon-basic-a4-one.pdf][Basic Concepts of Mathematics]]
-	[[file:~/Documents/Mathematics/multivariable.pdf][Multivariable Calculus by David Guichard]]
-
-** W.S. Jevons
-	 [[https://en.wikipedia.org/wiki/William_Stanley_Jevons]]
-	 [[https://www.marxists.org/reference/subject/economics/jevons/mathem.htm]]
-
-** MST124: Essential Mathematics 1
-** DONE :	[[file:~/Documents/MST124/TMA02/mst124_unit4.pdf][Unit 4]] (textbook)
-** DONE :	[[file:~/Documents/MST124/TMA02/TMA_02.pdf][TMA 02]]
-** DONE : TMA_03
-** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965296&page%3D1&scrollpos%3D0#q3][Unit 9 Practice Quiz]]
-** DONE : [[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D965295&page%3D1&scrollpos%3D0#q5][ICMA44]]
-** DONE : [[file:~/Documents/MST124/TMA04/mst124_14b_tma04.pdf][TMA_04]]
-** MST125: Essential Mathematics 2
-	One characteristic of a reflection that distinguishes it from a rotation or a
-	translation is that it reverses vertex order.
-
-	An isometry maps any polygon to a polygon of the same size and
-	shape. In particular, the vertices of the polygon are mapped to the
-	vertices of the image polygon.
-
-	A linear transformation leaves the origin fixed.
-
-	If an implication is true, then its converse is either true or false.
-
-** One-to-one linear transformations
-	 Determinant of One-to-one linear transformations does not equal 0.
-	 One-to-one linear transformations preserve linearity
-	 One-to-one linear transformations map lines to lines
-
-** DONE : p 48
-
-** Principia Mathemtica
-	Analysis and Geometry, Theory of agregates (Cantor)
-	Symbolic Logic (Peano)
-	
-
-** Guerrilla Math Study Group (GMSG)
-	 [[https://sites.google.com/site/guerrillamathstudygroup/][google sites link]]
-* Active Links:
-	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D935459&page%3D1][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=935459&page=1]]
-	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D913986&page%3D13][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=913986&page=13]]
-* Tree Parser
-** DONE : for a cluster of connected points it id attr, 
-	 pick the point with the lowest id
-
-	 (lowest point should have the list with all nodes above)
-** IN-PROGRESS : create a point attribute (String -> Tree)
-	 Tree -> Tree of id's -> flatten -> point string attr
-* Pitivi Missing Dependencies
-	emerge -av gnome-icon-theme
-	
-	asked a question, related to gnome GUI issues on #pitivi
-	>> guys said gentoo is still 0.93. Should try later.
-	[2014-11-10 Mon]
-	
-* LaTeX
-** Google Sites Template
-<img src="http://www.google.com/chart?cht=tx&chf=bg,s,FFFFFF00&chco=000000&chl=
-\sqrt(x^2+y^2)=\exp^x+\sum_{i=1}^nx^i
-" />
-	 
-* Stylistic Analysis, Bias filtering, etc
-	 http://en.wikipedia.org/wiki/Natural_language_processing
-	 http://en.wikipedia.org/wiki/Sentiment_analysis
-	 http://www.kaspik.com/ (web sentiment analysis)
-
-	 N.Chomsky: "Three models for the description of language"
-	 http://chomsky.info/articles/195609--.pdf
-
-	 http://www.its.caltech.edu/~matilde/GraphGrammarsLing.pdf
-
-	 [[http://www.cs.dartmouth.edu/reports/TR2014-754.pdf][StyleCheck: An Automated Stylistic Analysis Tool (PDF)]]
-
-	 [[file:~/Pictures/Human_Language_Families_ru.png]]
-
-	 [[https://ru.wikipedia.org/wiki/%25D0%25A2%25D0%25B8%25D0%25BF%25D0%25BE%25D0%25BB%25D0%25BE%25D0%25B3%25D0%25B8%25D1%258F_(%25D0%25BB%25D0%25B8%25D0%25BD%25D0%25B3%25D0%25B2%25D0%25B8%25D1%2581%25D1%2582%25D0%25B8%25D0%25BA%25D0%25B0)][Типология (лингвистика)]]
-
-	 [[https://ru.wikipedia.org/wiki/%25D0%2590%25D0%25BA%25D1%2582%25D0%25B8%25D0%25B2%25D0%25BD%25D1%258B%25D0%25B5_%25D1%258F%25D0%25B7%25D1%258B%25D0%25BA%25D0%25B8][Активные языки]]
-
-	 [[https://en.wikipedia.org/wiki/Ferdinand_de_Saussure][Ferdinand de Saussure]]
-
-	 [[https://en.wikipedia.org/wiki/Roman_Jakobson][Roman Jakobson]]
-
-	 [[https://en.wikipedia.org/wiki/Russian_formalism][Russian formalism]]
-
-	 [[https://en.wikipedia.org/wiki/Stylistics_(field_of_study)][Stylistics (field of study)]]
-
-	 [[https://en.wikipedia.org/wiki/Stylistics_(field_of_study)][Stylistics (field of study)]]
-
-	 
-*** Related Read:
-		http://en.wikipedia.org/wiki/Framework_Programmes_for_Research_and_Technological_Development
-		http://en.wikipedia.org/wiki/European_Atomic_Energy_Community
-
-* Books
-	[[/home/madjestic/Documents/Physically_Based_Rendering.pdf][Physically Based Rendering]]
-	[[/home/madjestic/Documents/Naming_Infinity.pdf][Kolmogorov: "Imena beskonechnosti"
-	Naming Infinity]]
-	sonin.ru
-	Мифы экономики
-	[[/home/madjestic/Documents/Freakonomics.djvu][Freakonomics]]	
-	libgen.ru - fake DNA
-
-* Markov Chains...
-	http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter11.pdf
-* Bookmarks:
-** Programming
-*** Haskell
-		[[https://github.com/madjestic/mu/tree/master/Projects/Haskell/Junk/heterogenous_lists][finished a small heterogenous collections example.]]
-		[2014-11-10 Mon]
-		
-		[[*edX:%20FP101x][edX]] A course I intend to finish
-		Mon Nov 10 22:40:49 CET 2014
-
-		Monads, Monoids, Functors:
-		http://learnyouahaskell.com/making-our-own-types-and-typeclasses
-		http://learnyouahaskell.com/functors-applicative-functors-and-monoids
-		http://learnyouahaskell.com/a-fistful-of-monads
-
-**** FFI
-[[http://www.haskell.org/haskellwiki/FFI_cook_book][FFI Cook Book]]
-[[http://book.realworldhaskell.org/read/interfacing-with-c-the-ffi.html][RealWorldHaskell FFI]]
-** Emacs
-*** Org Mode
-**** Links
-		 [[http://orgmode.org/manual/Handling-links.html][Handling Links]]
-*** Mail Mode :problem::luxury:
-		http://www.emacswiki.org/emacs/GnusGmail
-		https://github.com/redguardtoo/mastering-emacs-in-one-year-guide/blob/master/gnus-guide-en.org
-		https://eschulte.github.io/emacs24-starter-kit/starter-kit-gnus.html
-		<2015-12-02 Wed>
-
-		The initial setup was a breeze.
-**** TODO : Set up message filtering
-		 Use POPFile at Linux:
-		 http://blog.binchen.org/posts/use-popfile-at-linux.html (gnus email antispam and filtering)
-		 <2015-12-03 Thu>
-
-		 
-*** Jabber Mode :problem::luxury:
-		http://www.emacswiki.org/emacs/JabberEl
-		<2015-12-02 Wed>
-* Entropy
-** Machine Learning
-	 http://www.cs.cmu.edu/~tom/mlbook.html	 
-
-	 [[file:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf]]
-	 "...or personal software assistants learning the evolving interests of their users in order to highlight especially relevant stories from the online morning newspaper."
-
-	 Definition: A computer program is said to learn from experience E with respect
-	 to some class of tasks T and performance measure P, if its performance at tasks in
-	 T, as measured by P, improves with experience E.
-
-	 three features: the class of tasks, the measure of performance to be improved, and
-	 the source of experience.
-
-	  a database system that allows users to update data entries
-
-		"learning" -  the class of programs that improve through experience. 
-
-		problem of credit assignment, or determining the degree to which each move in
-		the sequence deserves credit or blame for the final outcome. 
-
-		The first design choice we face is to choose the type of training experience from
-		which our system will learn.
-		A second important attribute of the training experience is the degree to which
-		the learner controls the sequence of training examples. 
-		A third important attribute of the training experience is how well it repre-
-		sents the distribution of examples over which the final system performance P must
-		be measured.
-
-		most current theory of machine learning rests on the crucial assumption that
-		the distribution of training examples is identical to the distribution of test ex-
-		amples.
-
-		On the other hand, the more expressive the representation, the more training data
-		the program will require in order to choose among the alternative hypotheses it
-		can represent
-
-		 the approach of iteratively estimating training values based on estimates of
-		 successor state values can be proven to converge toward perfect estimates of V_train
-
-		 performance system, critic; generalizer, and experiment generator. Many machine learning systems can-be usefully characterized in 
-
-** Database engines (SQL/NoSQL)
-	 https://www.digitalocean.com/community/tutorials/understanding-sql-and-nosql-databases-and-different-database-models
-	 https://www.digitalocean.com/community/tutorials/a-comparison-of-nosql-database-management-systems-and-models
-	 https://www.digitalocean.com/community/tutorials/sqlite-vs-mysql-vs-postgresql-a-comparison-of-relational-database-management-systems
-	 <2016-01-04 Mon>
-	 Finished reading: apparently SQLite is the best choice for me:
-	 Some extra reading on the topic:
-	 http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/
-	 <2016-01-11 Mon>
-*** TODO : SQLite tutorial
-		http://www.tutorialspoint.com/sqlite/
-		<2016-01-10 Sun>
-   [[*<2016-05-09%20Mon>][<2016-05-09 Mon>]]
-   1) rendering a circle with an outline:
-      - render a circle of a radius r
-      - render a circle with a snaller radius on top of it.
-        the result should look like a circle with an outline.
-   2) render an object, consisting of 2 circles, connected by a line.
-* Cognitive science
-	P != NP
-	http://en.wikipedia.org/wiki/P_versus_NP_problem
-
-	Vertex Cover problem:
-	http://en.wikipedia.org/wiki/Vertex_cover
-
-	Multivariad Revolving algorythmic complexity (book)
-
-	http://fpt.wikidot.com/
-
-	https://www.mturk.com/mturk/welcome
-
-	http://en.wikipedia.org/wiki/Computers_and_Intractability (book on algorithms)
-
-	http://www.amazon.com/Computers-Intractability-NP-Completeness-Mathematical-Sciences/dp/0716710455
-
-	Theory of the mind:
-	- How do agents know what other agents know?
-	- How do you simulate orders of the mind?
-
-	Prediction building part of the brain is not a result of processing by
-	Sensor-Motoric part of the brain.
-
-	Satisfaction of search problem.
-
-	http://www.rageproject.eu/
-
-	Higher-order theory of mind in Tacit Communication Game
-	http://www.harmendeweerd.nl/papers/20140908_Tacit_Communication_Game.pdf
-
-** Music and congnition II
-	 
-	~4% of the population share amusia
-
-	Scale, Contour, interval, Rhythm, Meter (Memory)
-	Pitch test
-
-	Dysmusia vs. Dysmelodia
-
-	Information content of a note
-
-	florence foster jenkins (amusic opera singer)
-
-	Bayesuan generative models
-
-	posterior       = likelihood, priority
-	                  P(cause|signal)*P(cause)/P(signal)
-	P(cause|signal)
-	...
-
-	P(M): the likelhood  of individual metres (estimated from a corpus of data)
-
-	
-
-	Melody segmentation:
-	
-	Unexpected note - high information content, low probability
-
-	On Entropy in Music:
-	http://ir.uiowa.edu/cgi/viewcontent.cgi?article=1844&context=etd (p.7)
-
-	https://mitpress.mit.edu/books/platos-camera
-
-	Steven Pinker
-	http://www.newrepublic.com/
-* IRC
-	IRCnet Server : open.ircnet.net
-
-* sb7code reading, examples
-	OpenGL Super Bible ed.7
-	Projects/OpenGL/sb7code/src/book - Makefile works now
-
-	[2015-09-23 Wed]
-	hack cpp/emacs environment: http://tuhdo.github.io/c-ide.html
-	read on the bible: [[file:~/Documents/Programming/OpenGL/Graham%20Sellers,%20Richard%20S.%20Wright%20Jr.,%20Nicholas%20Haemel%20-%20OpenGL%20SuperBible%20Comprehensive%20Tutorial%20and%20Reference,%207th%20Edition%20-%202015/OpenGL_Bible.pdf][file:~/Documents/Programming/OpenGL/Graham Sellers, Richard S. Wright Jr., Nicholas Haemel - OpenGL SuperBible Comprehensive Tutorial and Reference, 7th Edition - 2015/OpenGL_Bible.pdf]]
-
-	try the ../book code in VS, see if it autocompletes struct APPINFO
-	
-* OpenGL notes
-	Coordinate Systems, Spaces:
-	http://www.songho.ca/opengl/gl_projectionmatrix.html
-	http://learnopengl.com/#!Getting-started/Coordinate-Systems
-
-	taking the cross product of the forward vector and our sideways
-	vector to produce a third that is orthogonal to both and that represents up with respect to
-	the camera.
-
-	[2015-10-13 Tue]
-	Continue reading on p.137 - Data structures and buffers.
-
-	glBufferSubData(), glNamedBufferSubData() - map a datastore to a Buffer,
-	(defined with  glBufferStorage() glNamedBufferStorage() )
-
-	glMapBuffer(), glMapNamedBuffer() - map an arbitrary memory address to a Buffer.
-	glMapBufferRange(), glMapNamedBufferRange()
-	
-* PVR
-	export PVR_PYTHON_PATH="/usr/include/python2.7/"
-	scons lib
-	scons pylib
-
-	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lboost_python
-	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lpython2.6
-
-	[2015-09-22 Tue]
-	[[file:~/Projects/pvr/CMakeLists.txt]] works now, submitted to github
-	# Compile flags
-	...
-	SET( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pipe -fPIC -fpermissive")
-	...
-
-	... however, (~/Projects/pvr/libpvr) 'scons pylib' from 
-	https://github.com/pvrbook/pvr still fails:
-	Linking    build/linux2/g++/m64/release/python26/_pvr.so
-	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lboost_python
-	/usr/lib/gcc/x86_64-pc-linux-gnu/4.8.5/../../../../x86_64-pc-linux-gnu/bin/ld: cannot find -lpython2.6
-	collect2: error: ld returned 1 exit status
-	scons: *** [build/linux2/g++/m64/release/python26/_pvr.so] Error 1
-	scons: building terminated because of errors.
-	
-	, finish digging here: [[file:~/Projects/pvr/libpvr/BuildSupport.py]]
-
-	[2015-09-23 Wed]
-	compilation issues solved by:
-	ln -s ./libboost_python-2.7.so ./libboost_python.so
-	ln -s ./libpython2.7.so ./libpython2.6.so
-
-	[2015-09-24 Thu]
-	Solved:
-	[[https://github.com/pvrbook/pvr/pull/12]] (Build instructions for Gentoo)
-
-	[2015-10-12 Mon]
-	~/Projects/pvr_fork@madjestic/pvr/scenes/book/chapter_1 $ python fig_1_1.py
-	
-* mantra
-	Houdini Help:
-	http://127.0.0.1:48626/render/
-	http://127.0.0.1:48626/vex/contexts/shading_contexts
-
-** TODO :	Investigate Mario's glass shader:
-	[[/home/madjestic/Projects/Houdini/Experiment_with_glass/Marios_Shader/trans_test_v1r15_for_post2.hipnc]]
-	https://www.boundless.com/physics/textbooks/boundless-physics-textbook/geometric-optics-24/reflection-refraction-and-dispersion-169/dispersion-rainbows-and-prisims-611-6326/
-	http://forums.odforce.net/topic/6925-dispersion-bsdf/page-3
-	[[/home/madjestic/Projects/Houdini/Experiment_with_glass/Dispersion]] Dispersion glass shader, very interesting prismatic effects
-	
-	<2016-01-04 Mon>
-
-** tests
-	 [[/home/madjestic/Projects/Houdini/Mantra/tests/test_01.hipnc]]
-	 A simple sphere, occlusion, GI.
-
-	 [[/home/madjestic/Projects/Houdini/Mantra/tests/test_02.hipnc]]
-	 particles shaded as speric volumes
-	 
-	 [[/home/madjestic/Projects/Houdini/Mantra/tests/test_03.hipnc]]
-	 Basic shapes, experiments with shading
-	 
-** PBR
-	 [[/home/madjestic/Documents/pbr.pdf]]
-	 Physically Based Rendering
-	 <2016-01-05 Tue>
-** Wireframe rendering
-	 [[/home/madjestic/Projects/Houdini/Render/Wire_Frame_Render/model.hipnc]]
-	 <2016-01-05 Tue>
-* iptables
-	https://wiki.archlinux.org/index.php/Iptables
-	https://wiki.gentoo.org/wiki/Iptables#IPv6.5B2.5D.5B.E2.80.93_1.5D
-	http://www.howtogeek.com/177621/the-beginners-guide-to-iptables-the-linux-firewall/
-
-	quick search shows that iptables requires to set up the rules for each connection
-	individually, which seems tedious.  https://github.com/themighty1/lpfw seems to 
-	address that, however it seems to support IPv4 only.... investigate further.
-* tables
-| r | 0/1   | 0  | 1  | 0-1 | rnd | SBR | SBF | ABR | ABF |
-|---+-------+----+----+-----+-----+-----+-----+-----+-----|
-| 1 | 0/1   | -  | +  | 0:- | 0:- | 0:- | 0:- | 0:- | 0:- |
-| 0 | 1/1   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 0 | 2/1   | +  | -  | 0:+ | 1:- | 1:- | 1:- | 1:- | 1:- |
-| 1 | 2/2   | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 1:+ | 1:+ |
-| 1 | 2/3   | -  | +  | 0:- | 0:- | 1:+ | 0:- | 1:+ | 0:- |
-| 0 | 3/3   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 1 | 3/4   | -  | +  | 0:- | 1:+ | 0:- | 1:+ | 1:+ | 1:+ |
-| 0 | 4/4   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 1 | 4/5   | -  | +  | 0:- | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ |
-| 1 | 4/6   | -  | +  | 1:+ | 0:+ | 1:+ | 0:- | 0:- | 0:- |
-| 0 | 5/6   | +  | -  | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 0 | 6/6   | +  | -  | 1:- | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
-| 0 | 7/6   | +  | -  | 0:+ | 0:+ | 1:- | 0:+ | 0:+ | 1:- |
-| 1 | 7/7   | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 1:+ | 1:+ |
-| 0 | 8/7   | +  | -  | 0:+ | 0:+ | 1:- | 0:+ | 0:+ | 0:+ |
-| 1 | 8/8   | -  | +  | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ |
-| 1 | 8/9   | -  | +  | 0:- | 1:+ | 1:+ | 0:- | 0:- | 0:- |
-| 1 | 8/10  | -  | +  | 1:+ | 1:+ | 0:- | 0:- | 0:- | 0:- |
-| 1 | 8/11  | -  | +  | 0:- | 0:- | 0:- | 0:- | 0:- | 0:- |
-| 0 | 9/11  | +  | -  | 1:- | 1:- | 0:+ | 0:+ | 0:+ | 0:+ |
-| 0 | 10/11 | +  | -  | 0:+ | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
-| 1 | 10/12 | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 0:- | 0:- |
-| 1 | 10/13 | -  | +  | 0:- | 0:- | 1:+ | 0:- | 0:- | 0:- |
-| 0 | 11/13 | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 1 | 11/14 | -  | +  | 0:- | 0:- | 0:- | 1:+ | 0:- | 0:- |
-| 1 | 11/15 | -  | +  | 1:+ | 1:+ | 1:+ | 0:- | 0:- | 0:- |
-| 0 | 12/15 | +  | -  | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 0 | 13/15 | +  | -  | 1:- | 1:- | 1:- | 1:- | 0:+ | 0:+ |
-| 0 | 14/15 | +  | -  | 0:+ | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
-|   |       | 14 | 15 |  14 |  18 |  17 |  16 |  19 | 17  |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-|   |       |    |    |     |     |     |     |     |     |
-#+TBLFM: 
-* RAID 10 project
-** TODO : Build RAID-10.  Project Ksi:
-	 2x500Gb SCI SSD drives as RAID-10: fast IO and reliability, but space is limited to the smallest drive.
-** TODO : Project Omicron:
-	 2x1Tb Raid-10?
-	 <2015-12-10 Thu>
-* NAS
-  https://forums.freenas.org/index.php?threads/hardware-recommendations-read-this-first.23069/
-** Motherboard
-   ~150$
-   Supermicro X9s
-   http://www.supermicro.com/products/motherboard/Xeon/C202_C204/X9SCM-F.cfm
-
-** CPU
-   ~65$
-   Pentium G2020 (socket 1155) and G3220 (socket 1150) 
-   http://www.amazon.com/Intel-Pentium-Processor-G3220-BX80646G3220/dp/B00EF1G9DW/ref=sr_1_1?s=electronics&ie=UTF8&qid=1409098728&sr=1-1
-
-   ~ 50$
-   http://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=LGA-1150+Pentium+G3258&_sacat=0
-
-** Case
-   ~100
-   Fractal Design R4
-   http://www.ebay.com/sch/i.html?_from=R40&_trksid=m570.l1313&_nkw=Fractal+Design+R4&_sacat=0
-
-** RAM
-   ~50-100$
-   ECC RAM 16GB
-      
-* Data Copy solution
-  ~150EURO
-  https://www.amazon.co.uk/Inateck-Docking-Station-Function-Tool-free/dp/B00LN0GX4I/ref=sr_1_3?ie=UTF8&qid=1464472727&sr=8-3&keywords=HDD+docking+station
-  + a couple of HDD
-* MIDI :music::synt:
-	Ardouro
-	BitWig
-
-	[[http://proaudio.tuxfamily.org/wiki/index.php?title%3DRealtime_(RT)_Kernel][http://proaudio.tuxfamily.org/wiki/index.php?title=Realtime_(RT)_Kernel]]
-	https://wiki.gentoo.org/wiki/Project:Sound/How_to_Enable_Realtime_for_Multimedia_Applications
-	https://packages.gentoo.org/packages/media-plugins/calf
-
-	https://forums.gentoo.org/viewtopic-p-7330590.html?sid=1fa73569fe3439e99b81625808e0f794
-	http://gentoostudio.org/?p=maninstall&s=kernel
-	http://www.gentoo-wiki.info/Jack
-
-** <2016-05-06 Fri>
-   run qjackctl, connect midi devices, link them.
-	 <2015-12-27 Sun>
-** <2016-05-28 Sat>
-   plug in the Keyboard, check if dmesg sees it
-   qjackctl
-   qsynth
-
-   link the MiniKeystation32 input to qsynth output in qjackctl
-
-   Enjoy!
-
-* Linux Format
-  [[file:~/Documents/Linux_Format_March_2016.pdf]]
-* TODO:
-** IN-PROGRESS [[*:%20Make%20Elegant,%20Clean-up][Make Elegant, Clean-up]]
-** IN-PROGRESS : Write a make file that can be run like this:
-	 make clean
-	   - and it will choose from a number of ons
-		 [2015-02-17 Tue]
-		 - made a clean.sh file that cleans up stuff [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/tutorial10/clean][here]]
-
-** DONE : Experiment with caustics (an example from Houdini Help)
-** IN-PROGRESS : Write a python daemon
-	 http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
-	 https://pypi.python.org/pypi/python-daemon/
-	 [2015-12-02 Wed]
-
-	 I think I should do it.  Write a daemon that, when receives a numeric argument, increases it by 1 and prints out the result.
-	 <2016-01-24 Sun>
-
-   This seems to be a concrete example of creating a python daemon process:
-   http://www.gavinj.net/2012/06/building-python-daemon-process.html
-
-   Haskell daemon seems to be easier than in python.  Weird :) :
-   https://hackage.haskell.org/package/daemons
-   <2016-01-24 Sun>
-
-   
-** WAITING : figure out what's up with Nvidia Optimus
-	 Still has some minor(?) issues: https://forums.gentoo.org/viewtopic-t-1032214-highlight-.html
-	 [2015-11-30 Mon]
-
-	 Bumblebee:
-	 http://bumblebee-project.org/
-	 troubleshooting:
-	 https://github.com/Bumblebee-Project/Bumblebee/wiki/Troubleshooting
-	 reporting issues:
-	 https://github.com/Bumblebee-Project/Bumblebee/wiki/Reporting-Issues
-	 
-** DONE : link it here
-** DONE : Set up fallout 2 ~/Projects/games/falltergeist: it is missing some files, get them from an official game installation
-** DONE : compile latest Unreal Engine
-	 [2015-11-30 Mon]
-	 tried latest, it fails somewhere during the Setup.sh, reasons unknown, log file does not get produced.
-
-	 https://github.com/EpicGames/UnrealEngine/blob/4.10/Engine/Build/BatchFiles/Linux/README.md
-	 git clone https://github.com/EpicGames/UnrealEngine -b 4.10
-	 (follow README)
-
-	 Latest version worked
-	 <2015-12-11 Fri>
-
-** DONE : set up battery levels color-coding for xmonad
-	 <2015-12-04 Fri>
-	 <2015-12-07 Mon>
-** TODO : Xmonad Fullscrean
-	 https://github.com/Nadrieril/xmonad-config/blob/master/xmonad.hs
-	 http://stackoverflow.com/questions/20446348/xmonad-toggle-fullscreen-xmobar
-	 
-** DONE : make (sr-speedbar-open) a shortcut in cpp.el
-	 <2016-01-03 Sun>
-	 
-		[2015-01-12 Mon]
-		(OlexP script to start Houdini)
-		alias hdk='hdktmp=`pwd`; cd $HFS; source houdini_setup; cd $hdktmp; unset hdkt
-
-	Reading [[file:~/Projects/pbrt-v2][pbrt book]]
-	<2016-01-16 Sat>
-
-	Reading on Phyllotaxis in abop
-	http://tmdag.com/ptakun/eco_system/makeofplants_en_htm.htm
-	<2016-01-16 Sat>
-	
-	[[/home/madjestic/Projects/Houdini/Fractals/model.hipnc]]
-	<2016-01-16 Sat>
-
-	~/.contexts/pbrt  mplay pbrt.exr
-	<2016-01-19 Tue>
-
-	what's the name of this theorem:  Given inifinite that the set uf numbders, formed by decimal representation of digits of Pi, there is a subset of P, Pp, 
-	that is 'fully mutable'.  By 'fully mutable', I mean that if we form a Ppf, whose members are unique subsets of the length, equal to len(Pp), 
-	such that all possible mutations of the original set of len(Pp) are presented and no new members can be added that would not repeat the already
-	existing memeber.
-
-	E.g. N  = 12345e
-
-
-
-	 len(N) = len( [1,2,3,4,5] ) = 5
-	     N1 = 98765
-   len(N1)= len( [9,8,7,6,5] ) = 5
-	     Pp = 
-
-	The lemma of this is that any decimal number N can be represented as a set of 2 numbers: L, representing the length of N taken as a set of digits and
-	number O, representing 'offset' of the offset along Pi and the length of the sequence len (N).
-	<2016-01-22 Fri>
-
-	fail, nearly.  It's a case of reordering a 100 (0-99) numbers from 0-9999 numbers.  Thanks to Jad's input.
-	<2016-01-22 Fri>
-
-	Satisfaction in solving a problem can be intense, but it is short-lived; 
-	our pathos is driven by what we have not yet understood. 
-	André Weil, one of the twentieth century’s dominant mathematicians, described this as “achiev[ing] knowledge and indifference at the same time.” 
-	We never understand more than a finite amount of the limitlessness of what mathematics potentially offers to the understanding. 
-
-	The mathematical soul, embodied in a historical tradition oriented to a limitless future, 
-	can rest secure in the knowledge that its dissatisfaction is guaranteed.
-
-	the essence of mathematics lies in its freedom.  Cantor.
-	
-	https://www.gridmarkets.com/
-	Houdini rendering in the cloud.
-
-  
-	<2016-01-23 Sat>
-
-** TODO :	Mathematics Without Apologies:
-	stopped at part1: 
-	(Controversies among philosophers,
-	<2016-01-23 Sat>
-
-** IN-PROGRESS : Create a custom overlay:
-   /var/lib/layman/make.conf
-   PORTDIR_OVERLAY="
-   ...
-   /usr/local/portage
-   /usr/local/portage/kde
-   "
-   
-	 /usr/local/portage/haskell/yampa
-
-   http://www.astro.ru.nl/~sluys/Public/custom_ebuilds.html
-   https://wiki.gentoo.org/wiki/Basic_guide_to_write_Gentoo_Ebuilds
-   
-** TODO : Make colliding n-bodies sim
-** DONE : continue with Mortgage graphing, using VEX
-   [[file:~/Desktop/mortgage.hipnc]]
-
-** TODO : Render out a video, same as for n-bodies.
-   [[file:~/Projects/Houdini/Godika]]
-** TODO : create emacs shortcuts for register-switching: C-0, C-1, .. C-9
 * History
 ** [2015-01-12 Mon]                                                  :python:
 
@@ -1499,13 +1514,13 @@ Sat Apr 26 16:03:45 CEST 2014
   https://github.com/gentoo-haskell/gentoo-haskell/blob/master/projects/doc/HOWTO-contribute.rst
   
 ** <2016-02-07 Sun> 
-   @outs[[[*<2016-02-08%20Mon>][<2016-02-08 Mon>]]]
+   @->s[[[*<2016-02-08%20Mon>][<2016-02-08 Mon>]]]
    Yampy-Cube: https://youtu.be/T7XwTolu9YI?t=2525
    Jekor Yampa: https://youtu.be/T3xXebIr8AM?t=1000
 
 ** <2016-02-08 Mon>                                          :haskell:frp:ai:
-   @in[[[*<2016-02-07%20Sun>][<2016-02-07 Sun>]]]
-   @out[[[*Yampa][Yampa]]]
+   @<-[[[*<2016-02-07%20Sun>][<2016-02-07 Sun>]]]
+   @->[[[*Yampa][Yampa]]]
    learning FRP:
    Jekor, Yampa:
    https://youtu.be/T3xXebIr8AM?t=980
@@ -1536,7 +1551,7 @@ Sat Apr 26 16:03:45 CEST 2014
     [[file:~/Projects/Julia/julia]]
     
 ** <2016-02-26 Fri>                                           :opengl:
-   @outs[[[*:%20Make%20Elegant,%20Clean-up][: Make Elegant, Clean-up]]
+   @->s[[[*:%20Make%20Elegant,%20Clean-up][: Make Elegant, Clean-up]]
          [[*:%20continue%20with%20Mortgage%20graphing,%20using%20VEX][: continue with Mortgage graphing, using VEX]]]
   
   Everybody seems to enjoy the Vertex Displacement Animation task that I accomplished.  It looks like a propper SIGGRAPH material.
@@ -1555,7 +1570,7 @@ Sat Apr 26 16:03:45 CEST 2014
    Probably I should proceded with Rendering Adventure
 
 ** <2016-03-02 Wed>
-  @outs [[[*<2016-04-05%20Tue>][<2016-04-05 Tue>]]]
+  @->s [[[*<2016-04-05%20Tue>][<2016-04-05 Tue>]]]
   
   Visualize a graph with Haskell
   /home/madjestic/Projects/Haskell/Mortgage/
@@ -1634,7 +1649,7 @@ Sat Apr 26 16:03:45 CEST 2014
 ** <2016-04-04 Mon>                                           :julia:
 *** TODO : write a @code_native collatz(10) for for(1:10) loop and see what the ASM code looks like
 ** <2016-04-05 Tue>                                           :haskell:julia:
-   @in [[[*<2016-03-02%20Wed>][<2016-03-02 Wed>]]]
+   @<- [[[*<2016-03-02%20Wed>][<2016-03-02 Wed>]]]
    Working on a Haskell diagrams plotting example:
    http://projects.haskell.org/diagrams/doc/quickstart.html
    [[file:~/Projects/Haskell/Diagrams/test_00/Main.hs]]
@@ -1785,7 +1800,9 @@ Sat Apr 26 16:03:45 CEST 2014
    www.kaliber-skateboards.de
    
 ** <2016-05-19 Thu>                                           :haskell:yampa:
-   @out:[[[*Yampa][Yampa]]]
+   @->:[[[*Yampa][Yampa]]
+        [[*%5B%5B*FRP%5D%5BFRP%5D%5D][FRP]]
+   ]
    https://youtu.be/-IpE0CyHK7Q?t=425 - Jekor's yampa tutorial part 1
    [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
    
@@ -1812,7 +1829,7 @@ Sat Apr 26 16:03:45 CEST 2014
    Sounds like soon we are going to get some new toys to play with... fingers crossed.
 
 ** <2016-05-23 Mon>                                           :yampa:
-   @out[[[*<2016-05-19%20Thu>][<2016-05-19 Thu>]]]
+   @->[[[*<2016-05-19%20Thu>][<2016-05-19 Thu>]]]
    going back to learning Yampa:
 ** <2016-05-24 Tue>                                                 :haskell:
    https://www.haskell.org/onlinereport/standard-prelude.html - Prelude specification,
@@ -1874,7 +1891,12 @@ Sat Apr 26 16:03:45 CEST 2014
 ** <2016-06-11 Sat> 
    https://github.com/emacs-helm/helm/wiki - helm tips
 ** <2016-06-12 Sun> Haskell Parsers
-   
+   @->[
+   [[*Parsing][Parsing]]
+   [[*<2016-06-19%20Sun>%20Haskell%20parsing,%20regex][<2016-06-19 Sun> Haskell parsing, regex]]
+   ]
+   @<-[[[*<2016-06-19%20Sun>%20Haskell%20parsing,%20regex][<2016-06-19 Sun> Haskell parsing, regex]]]
+
    http://jakewheat.github.io/intro_to_parsing/
    http://nikobidin.com/arrows-everywhere
    https://github.com/aslatter/parsec
@@ -1884,6 +1906,7 @@ Sat Apr 26 16:03:45 CEST 2014
    http://unbui.lt/#!/post/haskell-another-lens-tutorial
 *** TODO : Look into Haskell Parsers
 ** <2016-06-12 Sun>                       :haskell:entropy:FRP:houdini:emacs:
+   @->[[[*FRP][FRP]]]
    I ended up with OpenGL animation 'sort of working' - buffer update is busted and I should attempt to 
    follow Jekor's instructions more closely, that is use OpenGL building blocks from cuboid first and then
    refactor it to use NGL
@@ -1908,11 +1931,103 @@ Sat Apr 26 16:03:45 CEST 2014
 *** TODO : test todo 'Scheduled' setting
     SCHEDULED: <2016-06-13 Mon>
 *** TODO : Continue reading :   [[file:~/Documents/GNU_Linux_Application_Programming.chm]]
-*** TODO : Finish bringing cuboid code bits, according to Jekor's video:
+*** DONE : Finish bringing cuboid code bits, according to Jekor's video:
     https://www.youtube.com/watch?v=T3xXebIr8AM
     [[file:~/Projects/Haskell/FRP/cuboid]]
     [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
     
-    
 ** <2016-06-13 Mon>                                                 :houdini:
+   [[*MARVE][MARVE]]
    [[file:~/Projects/Houdini/MARVE/model.hipnc]]
+** <2016-06-14 Tue> Idiots never give up!
+   M-x load-jabber
+   M-x jabber-connect
+   M-x jabber-display-roster
+
+   M-x load-calendar
+   M-x cfw:open-org-calendar
+   Working on: [[*MARVE][MARVE]]
+   - I managed to set up 3D Coat to open a linked file:
+   [[file:~/Projects/Houdini/MARVE]]
+   [[file:~/Projects/Houdini/MARVE/3d-coat/model.3b]]
+   [[file:~/Projects/Houdini/MARVE/model.hipnc]]
+
+*** TODO : export a leg mesh mockup from Houdini to 3d-coat
+    SCHEDULED: <2016-06-14 Tue>
+*** DONE : Tell Hok that he is a Barmaly
+    SCHEDULED: <2016-06-15 Wed> 
+** <2016-06-15 Wed> Mathematical Methods for Quantitative Finance     :MARVE:
+   out@[[[*MARVE][MARVE]]]
+   a course @coursera https://www.coursera.org/course/mathematicalmethods
+
+   continuing with [[*MARVE][MARVE]] :
+   [[file:~/.contexts/MARVE/]]
+   [[file:~/Projects/Houdini/MARVE]]
+   [[file:~/Projects/Houdini/MARVE/3d-coat/model.3b]]
+   [[file:~/Projects/Houdini/MARVE/model.hipnc]]
+
+** <2016-06-16 Thu>                                              :AI:haskell:
+   out@[[[*AI][AI]]]
+   http://www.dualthegame.com/careers
+   Novaquark, Dual Univers, space sandbox game.
+   Maybe I should apply?
+
+   https://github.com/mikeizbicki/HLearn - Haskell library for machine learning
+   https://github.com/mikeizbicki/subhask - a rewrite of Prelude for numerical computing
+   
+** <2016-06-18 Sat> 3D-coa UV'ing tutorial
+   https://www.youtube.com/watch?v=0LWnVLO5lYU - 3D-Coat UV'ing tutorial
+** <2016-06-20 Mon> Writing a haskell parser for geo Houdini format
+   started working on a parser for Houdini geo files,
+   of course I want it to be fun, so it must be written in Haskell:
+   
+   [[file:~/.contexts/Parser]]
+   [[file:~/.contexts/Parser/Parser(Haskell)/Parsec]]
+   [[file:~/.contexts/Parser/Parser(Houdini)/Model.hipnc]]
+   [[file:~/.contexts/Parser/Parser(Houdini)/export/model.geo]] 
+      
+   http://unbui.lt/#!/post/haskell-parsec-basics - seems like a good starting place
+   https://two-wrongs.com/parser-combinators-parsing-for-haskell-beginners - also interesting
+
+   https://artyom.me/aeson - Haskell JSON Parser, thank hok
+   
+   [[file:~/Pictures/parser_notes_00.png]]
+
+*** Daggerfall
+    In order to play:
+    
+    mount c ~/dosbox -freesize 1000
+    mount d ~/dosbox/DAGGERFALL/DFCD -t cdrom -label Daggerfall
+    c:
+    cd \dagger
+**** DONE : install Daggerfall:
+     [[file:~/DAGGERFALL]]
+     [[file:~/DAGGERFALL/daggerfall_legal_and_installation.pdf]]
+** <2016-06-23 Thu> IDO                                               :emacs:
+*** TODO : set up emacs ido mode
+** <2016-06-24 Fri>
+   busy with [[*FRP][FRP]]
+** <2016-06-25 Sat>
+   @->[[[*FRP][FRP]]]
+   [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
+
+   # Setting a mutable variable :
+   main :: IO ()
+   main = do
+     foo <- newIORef (0 :: Int)
+     readIORef foo >>=  print
+     foo <- newIORef (1 :: Int)
+     readIORef foo >>=  print
+
+  # more here:
+  http://blog.jakubarnold.cz/2014/07/20/mutable-state-in-haskell.html 
+
+  # flymake-compile
+  C-c b
+
+  stopped watching at 00:15:19
+  [[file:~/Documents/FRP%20(Haskell_Yampa)%20and%20OpenGL%20with%20Cuboid%20(Part%202)%20-%20Episode%2010-T3xXebIr8AM.mkv][file:~/Documents/FRP (Haskell_Yampa) and OpenGL with Cuboid (Part 2) - Episode 10-T3xXebIr8AM.mkv]]
+  
+  Ivan Perez on game dev for Android:
+  https://github.com/ivanperez-keera/introgameshaskell
+  

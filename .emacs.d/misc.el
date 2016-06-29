@@ -10,6 +10,11 @@
   "Load a file in current user's configuration directory"
   (load-file (expand-file-name file user-init-dir)))
 
+(defun load-calendar ()
+  "load glfw Calendar"
+  (interactive)
+  (load-user-file "calendar.el"))
+
 (defun load-scheme ()
   "load Scheme config files"
   (interactive)
@@ -140,6 +145,7 @@
 ;; 	(kill-region))
 ;;  did not work 
 
+(global-set-key (kbd "C-c t") 'toggle-truncate-lines)
 (global-set-key (kbd "M-#") 'next-word)
 (global-set-key (kbd "C-M-g") 'revert-buffer)
 (global-set-key (kbd "C-x C-k") 'kill-all-dired-buffers)

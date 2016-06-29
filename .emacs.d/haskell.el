@@ -1,33 +1,21 @@
-;;(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
-;;(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
-;;(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
-
 (add-to-list 'load-path "/home/madjestic/Projects/structured-haskell-mode/elisp")
 (require 'shm)
-(structured-haskell-mode)
+(structured-haskell-mode t)
 
 (custom-set-variables
  '(haskell-stylish-on-save t)
  '(haskell-tags-on-save t))
 
-
 (require 'flymake-haskell-multi)
 (add-hook 'haskell-mode-hook 'flymake-haskell-multi-load)
 
 (linum-mode t)
-(structured-haskell-mode t)
-
-
-(turn-on-haskell-doc-mode)
-(interactive-haskell-mode)
-
-(smartparens-mode)
-(paredit-mode)
-(rainbow-delimiters-mode)
+(turn-on-haskell-doc-mode t)
+(interactive-haskell-mode t)
+(rainbow-delimiters-mode t)
 
 (add-to-list 'yas/root-directory "~/.emacs.d/snippets/haskell-mode")
-;;(yas/initialize)
-
+;; (yas/initialize)
 
 (require 'speedbar)
 (speedbar-add-supported-extension ".hs")
@@ -48,3 +36,8 @@
 (global-set-key (kbd "C-;") 'iedit-mode)
 (define-key haskell-mode-map (kbd "C-c D") 'haskell-hoogle)
 (global-set-key (kbd "C-c r") '(restartHaskell ()))
+(global-set-key (kbd "M-g M-f") 'first-error)
+(global-set-key (kbd "M-<up>") 'paredit-splice-sexp)
+
+(paredit-mode t)
+(smartparens-mode t)

@@ -3,12 +3,23 @@
 ;;;;;;;;;;
 
 (setq
- helm-gtags-ignore-case t
- helm-gtags-auto-update t
- helm-gtags-use-input-at-cursor t
- helm-gtags-pulse-at-cursor t
+ helm-gtags-ignore-case                t
+ helm-gtags-auto-update                t
+ helm-gtags-use-input-at-cursor        t
+ helm-gtags-pulse-at-cursor            t
+ helm-gtags-suggested-key-mapping      t
+ helm-M-x-fuzzy-match                  t
+ helm-bookmark-show-location           t
+ helm-buffers-fuzzy-matching           t
+ helm-completion-in-region-fuzzy-match t
+ helm-file-cache-fuzzy-match           t
+ helm-imenu-fuzzy-match                t
+ helm-mode-fuzzy-match                 t
+ helm-locate-fuzzy-match               t 
+ helm-quick-update                     t
+ helm-recentf-fuzzy-match              t
+ helm-semantic-fuzzy-match             t
  helm-gtags-prefix-key "\C-cg"
- helm-gtags-suggested-key-mapping t
  )
 
 ;; Enable helm-gtags-mode
@@ -38,3 +49,4 @@
 (define-key ac-complete-mode-map (kbd "C-:") 'ac-complete-with-helm)
 
 (helm-mode)
+(helm-swoop)

@@ -191,8 +191,6 @@
 (show-paren-mode t)
 (set-default 'truncate-lines t)
 (powerline-default-theme)
-(smartparens-mode)
-(paredit-mode)
 
 ;;;;;;;;;;;;;;
 ;; Org-mode ;;
@@ -205,13 +203,15 @@
 
 (require 'openwith)
 (openwith-mode t)
-(setq openwith-associations '(("\\.pdf\\'"   "okular"  (file))))
-(setq openwith-associations '(("\\.hip\\'"   "houdini_emacs" (file))))
-(setq openwith-associations '(("\\.hipnc\\'" "houdini_emacs" (file))))
+;;(setq openwith-associations '(("\\.pdf\\'"   "okular"  (file))))
+(setq openwith-associations '(("\\.hipnc\\'" "houdini_emacs" (file))
+                              ("\\.hip\\'"   "houdini_emacs" (file))
+                              ("\\.3b\\'"    "3D-coat"       (file))
+                              ("\\.mkv\\'"   "mpv"           (file))
+                              ))
 
-(smartparens-mode)
-(auto-complete-mode)
-
+(setq org-goto-interface 'outline-path-completion
+      org-goto-max-level 10)
 
 ;; (global-set-key (kbd "C-c 1") '(lambda () (interactive) (jump-to-register "1")))
 ;; (global-set-key (kbd "C-c 2") '(lambda () (interactive) (jump-to-register 2)))
@@ -248,7 +248,6 @@
 ;; (org-mode)
 
 
-
 ;;;;;;;;;;;;;;;
 ;; YASnippet ;;
 ;;;;;;;;;;;;;;;
@@ -259,7 +258,9 @@
 (setq yas-snippet-dirs
       '("~/.emacs.d/plugins/yasnippet/snippets"))
 (yas-global-mode 1)
-
 (put 'narrow-to-region 'disabled nil)
-
 (put 'scroll-left 'disabled nil)
+
+;;;;;;;;;;;
+;; STUFF ;;
+;;;;;;;;;;;
