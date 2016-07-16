@@ -6,8 +6,8 @@
  '(haskell-stylish-on-save t)
  '(haskell-tags-on-save t))
 
-(require 'flymake-haskell-multi)
-(add-hook 'haskell-mode-hook 'flymake-haskell-multi-load)
+;; (require 'flymake-haskell-multi)
+;; (add-hook 'haskell-mode-hook 'flymake-haskell-multi-load)
 
 (linum-mode t)
 (turn-on-haskell-doc-mode t)
@@ -30,14 +30,16 @@
      (haskell-process-restart)
      )
 
-(global-set-key (kbd "C-c s") 'sr-speedbar-toggle)
-(global-set-key (kbd "C-c m") 'minimap-toggle)
-(global-set-key (kbd "C-c C-k") 'haskell-process-load-file)
-(global-set-key (kbd "C-;") 'iedit-mode)
+(global-set-key (kbd "C-c c")      'hide/show-comments-toggle)
+(global-set-key (kbd "C-c s")      'sr-speedbar-toggle)
+(global-set-key (kbd "C-c m")      'minimap-toggle)
+(global-set-key (kbd "C-c C-k")    'haskell-process-load-file)
+(global-set-key (kbd "C-;")        'iedit-mode)
+(global-set-key (kbd "C-c r")      '(restartHaskell ()))
+(global-set-key (kbd "M-g M-f")    'first-error)
+(global-set-key (kbd "M-<up>")     'paredit-splice-sexp)
+
 (define-key haskell-mode-map (kbd "C-c D") 'haskell-hoogle)
-(global-set-key (kbd "C-c r") '(restartHaskell ()))
-(global-set-key (kbd "M-g M-f") 'first-error)
-(global-set-key (kbd "M-<up>") 'paredit-splice-sexp)
 
 (paredit-mode t)
 (smartparens-mode t)

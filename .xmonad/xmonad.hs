@@ -37,7 +37,6 @@ main = do
                  , ("M-C-c"    , spawn "chromium")
                  , ("M-S-C-e"  , spawn "emacs")
                  , ("M-C-e"    , spawn "emacsclient -c")
-                 , ("M-C-d"    , spawn "dolphin")
                  , ("M-C-k"    , spawn "krusader")
                  , ("M-C-s"    , spawn "spotify")
                  , ("<Print>"  , spawn "ksnapshot")

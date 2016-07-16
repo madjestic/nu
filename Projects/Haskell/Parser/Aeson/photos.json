@@ -1,0 +1,50 @@
+{
+  "photoset": {
+    "id": "72157694654577774",
+    "primary": "9774229501",
+    "owner": "101926234@N03",
+    "ownername": "mayer_tom",
+    "photo": [
+      {
+        "id": "9771234001",
+        "secret": "82sd0454a2",
+        "server": "7348",
+        "farm": 7,
+        "title": "photo A",
+        "isprimary": "0",
+        "ispublic": 1,
+        "isfriend": 0,
+        "isfamily": 0
+      },
+      {
+        "id": "9771234002",
+        "secret": "82sd0454a3",
+        "server": "7348",
+        "farm": 7,
+        "title": "photo B",
+        "isprimary": "0",
+        "ispublic": 1,
+        "isfriend": 0,
+        "isfamily": 0
+      },
+      {
+        "id": "9771234003",
+        "secret": "82sd0454a4",
+        "server": "7348",
+        "farm": 7,
+        "title": "photo C",
+        "isprimary": "0",
+        "ispublic": 1,
+        "isfriend": 0,
+        "isfamily": 0
+      }
+    ],
+    "page": 1,
+    "per_page": 500,
+    "perpage": 500,
+    "pages": 1,
+    "total": "34",
+    "title": "TESTConf test"
+  },
+  "stat": "ok"
+}

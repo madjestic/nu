@@ -30,7 +30,8 @@
 	[[/home/madjestic/Projects/ASM]]
 
 * b1
-	Stock Exchange programe, written in Haskell
+  @<-[[[*<2016-07-04%20Mon>%20I%20should%20look%20into%20Repa,%20Looking%20into%20Parsec,%20Leaving%20links%20for%20GLFW%20to%20look%20into%20later%20on%20b1:][<2016-07-04 Mon> I should look into Repa, Looking into Parsec, Leaving links for GLFW to look into later on b1:]]]
+ 	Stock Exchange program, written in Haskell
 	[[madjestic/Projects/b1/]]
 ** DONE : Broken, fix it:
 	 [[https://github.com/btmura/b1/issues/5][compile error: Ambiguous occurrence ‘defaultTimeLocale’]]
@@ -645,8 +646,8 @@ WINDOWS-p
 	 <2016-01-05 Tue>
 * Markov Chains...
 	http://www.dartmouth.edu/~chance/teaching_aids/books_articles/probability_book/Chapter11.pdf
-* MARVE
-  Modelling a MARVE character from HGTG
+* MARVIN
+  Modelling a MARVIN character from HGTG
   [[file:~/Projects/Houdini/MARVE]]
   [[file:~/Projects/Houdini/MARVE/3d-coat/model.3b]]
   [[file:~/Projects/Houdini/MARVE/model.hipnc]]
@@ -1082,6 +1083,12 @@ Sat Apr 26 16:03:45 CEST 2014
 	 export LD_LIBRARY_PATH=.
 	 ./UE4Editor ~/Projects/Unreal_Projects/MyProject4/MyProject4.uproject
 	 primusrun ./UE4Editor ~/Projects/Unreal_Projects/MyProject/MyProject.uproject -opengl4
+* VR
+  Virtual Reality
+  http://osvr.github.io/contributing/
+  http://www.osvr.org/hdk2.html
+  http://www.vrdb.com/
+  https://github.com/OSVR
 * Waterfall
   @<-[
   [[*:%20Set%20up%20water%20shader][: Set up water shader]]
@@ -1601,7 +1608,14 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    that the article is available in) - the result shold be the variance
    of the data accross different languages.
 
+   secondary selection:
+   M-mouse1
+
    M-x yank-secondary
+   M-mouse2
+
+   https://www.gnu.org/software/emacs/manual/html_node/ses/Copy_002fcut_002fpaste.html
+   https://www.gnu.org/software/emacs/manual/html_node/emacs/Secondary-Selection.html
 
 *** On Complexity and Entropy                                       :entropy:
    Added complexity is non-lineary correleated to Entropy: in other words,
@@ -2031,3 +2045,49 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
   Ivan Perez on game dev for Android:
   https://github.com/ivanperez-keera/introgameshaskell
   
+** <2016-07-04 Mon> I should look into Repa, Looking into Parsec, Leaving links for GLFW to look into later on b1: :haskell:
+   @->[[[*b1][b1]] - main]
+   https://wiki.haskell.org/Numeric_Haskell:_A_Repa_Tutorial - I should look into REPA some time
+
+   [[file:~/Projects/Haskell/Parser/Parsec]] - writing a haskell Parser, first steps
+
+*** Parsec study:
+    https://www.ietf.org/rfc/rfc4627.txt RFC4627 (JSON RFC)
+    Possible JSON values are: strings
+                              numbers 
+                              booleans 
+                              null 
+                              
+                              arrays (one-dimensional)
+                              objects
+
+*** TODO : GLFW-b : b1 need to be converted from GLFW to GLFW-b: study b1 source-code meanwhile
+    https://wiki.haskell.org/GLFW
+    http://www.glfw.org/docs/latest/input_guide.html
+*** TODO : Look into REPA
+** <2016-07-06 Wed> VR stuff, Parser, Finance Currency JSON API, Jabber History
+   http://fixer.io/
+   http://api.fixer.io/latest
+
+*** TODO : Set Up Jabber History
+    http://emacs-jabber.sourceforge.net/manual-0.8.0/Message-history.html
+   
+** <2016-07-08 Fri> Anonymous records                               :haskell:
+*** DONE : Try out anonymous records:
+    http://ruhaskell.org/files/meetup-2015-summer/3_Anonymous_Records.pdf
+    https://hackage.haskell.org/package/record-0.4.1.1/docs/Record.html
+
+    Result:
+    It's not worth it.  Overloaded Records is worked on as a standard feature
+    of ghc 8.x:
+    https://ghc.haskell.org/trac/ghc/wiki/Status/GHC-8.0.1
+** <2016-07-09 Sat> Aeson open tabs                                 :haskell:
+   Last set of tabs open related to Aeson/Parsec :: chromium->bookmarks->last->Aeson
+   
+   Nested JSON:
+   http://gnclmorais.com/blog/aeson-and-nested-json/ - working through an example of nesting JSON file:
+   [[file:~/Projects/Haskell/Parser/Aeson/Flickr.hs]]
+** <2016-07-14 Thu> working on Flickr example, Haskell, JSON        :haskell:
+*** TODO : finish the example from:
+    http://gnclmorais.com/blog/aeson-and-nested-json/
+    [[file:~/Projects/Haskell/Parser/Aeson/Flickr.hs]]

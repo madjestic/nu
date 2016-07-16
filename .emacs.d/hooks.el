@@ -1,13 +1,18 @@
-(add-to-list 'auto-mode-alist '("\\.org\\'" . (lambda ()(org-mode))))
-(add-to-list 'auto-mode-alist '("\\.vfl\\'" . (lambda ()(c++-mode))))
-(add-to-list 'auto-mode-alist '("\\.cpp\\'" . (lambda ()(c++-mode))))
-(add-to-list 'auto-mode-alist '("\\.c\\'"   . (lambda ()(c++-mode))))
-(add-to-list 'auto-mode-alist '("\\.h\\'"   . (lambda ()(c++-mode))))
-(add-to-list 'auto-mode-alist '("\\.vert\\'"   . (lambda ()(c++-mode))))
-(add-to-list 'auto-mode-alist '("\\.frag\\'"   . (lambda ()(c++-mode))))
-(add-to-list 'auto-mode-alist '("\\.hs\\'" . (lambda ()(haskell-mode))))
-(add-to-list 'auto-mode-alist '("\\.py\\'" . (lambda ()(python-mode))))
-(add-to-list 'auto-mode-alist '("\\.scm\\'" . (lambda ()(scheme-mode))))
+(add-to-list 'auto-mode-alist '("\\.geo\\'"  . (lambda ()(json-mode))))
+(add-to-list 'auto-mode-alist '("\\.org\\'"  . (lambda ()(org-mode))))
+(add-to-list 'auto-mode-alist '("\\.vfl\\'"  . (lambda ()(c++-mode))))
+(add-to-list 'auto-mode-alist '("\\.cpp\\'"  . (lambda ()(c++-mode))))
+(add-to-list 'auto-mode-alist '("\\.c\\'"    . (lambda ()(c++-mode))))
+(add-to-list 'auto-mode-alist '("\\.h\\'"    . (lambda ()(c++-mode))))
+(add-to-list 'auto-mode-alist '("\\.vert\\'" . (lambda ()(c++-mode))))
+(add-to-list 'auto-mode-alist '("\\.frag\\'" . (lambda ()(c++-mode))))
+(add-to-list 'auto-mode-alist '("\\.hs\\'"   . (lambda ()(haskell-mode))))
+(add-to-list 'auto-mode-alist '("\\.py\\'"   . (lambda ()(python-mode))))
+(add-to-list 'auto-mode-alist '("\\.scm\\'"  . (lambda ()(scheme-mode))))
+
+(add-hook 'json-mode-hook
+          (lambda()						
+						(load-json)))
 
 (add-hook 'scheme-mode-hook
           (lambda()						
@@ -24,6 +29,9 @@
 
 (add-hook 'haskell-mode-hook
           (lambda()
+            (autoload 'ghc-init "ghc" nil t)
+            (autoload 'ghc-debug "ghc" nil t)
+            (ghc-init)
 						(load-haskell)
 						(load-helm)))
 

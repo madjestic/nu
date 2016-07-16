@@ -4,9 +4,9 @@ d_coat() {
     export FILE=$1
     if [ -e "$1" ]
     then
-        cd ~/Projects/3D-CoatV4-5 && ./3d-coat-64 $FILE
+        cd ~/3D-CoatV4-7 && ./3d-coat-64 $FILE
     else
-        cd ~/Projects/3D-CoatV4-5 && ./3d-coat-64
+        cd ~/3D-CoatV4-7 && ./3d-coat-64
     fi
 
 }
