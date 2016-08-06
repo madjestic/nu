@@ -203,7 +203,6 @@
 
 (require 'openwith)
 (openwith-mode t)
-;;(setq openwith-associations '(("\\.pdf\\'"   "okular"  (file))))
 (setq openwith-associations '(("\\.hipnc\\'" "houdini_emacs" (file))
                               ("\\.hip\\'"   "houdini_emacs" (file))
                               ("\\.3b\\'"    "3D-coat"       (file))
@@ -232,6 +231,10 @@
 (setq browse-url-browser-function 'browse-url-generic
       browse-url-generic-program "chromium-browser")
 (setq browse-url-default-browser "chromium")
+
+;;(require 'org-pdfview)
+;;(eval-after-load 'org '(require 'org-pdfview))
+
 
 ;; * To manupulate a image under cursor.
 ;;

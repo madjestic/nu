@@ -9,6 +9,10 @@
 (add-to-list 'auto-mode-alist '("\\.hs\\'"   . (lambda ()(haskell-mode))))
 (add-to-list 'auto-mode-alist '("\\.py\\'"   . (lambda ()(python-mode))))
 (add-to-list 'auto-mode-alist '("\\.scm\\'"  . (lambda ()(scheme-mode))))
+(add-to-list 'auto-mode-alist '("\\.pdf\\'"  . org-pdfview-open))
+(add-to-list 'auto-mode-alist '("\\.pdf::\\([[:digit:]]+\\)\\'"
+                                             . org-pdfview-open))
+
 
 (add-hook 'json-mode-hook
           (lambda()						

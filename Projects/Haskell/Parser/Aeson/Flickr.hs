@@ -9,8 +9,7 @@ import qualified Data.ByteString.Lazy as B
 import Data.Text
 import GHC.Generics
 
--- instance ToJSON Photoset where
---     toEncoding = genericToEncoding defaultOptions
+
 instance FromJSON Photoset where
   parseJSON (Object o) =
     Photoset
@@ -46,12 +45,9 @@ instance FromJSON Photo where
 instance FromJSON FlickResponce where
   parseJSON (Object v) =
     FlickResponce
-      <$> v .: "photoset"
+      <$> v .: "suka"
+      <*> v .: "photoset"
       <*> v .: "stat"
-
--- instance ToJSON Photo where
---     toEncoding = genericToEncoding defaultOptions                                   
--- instance FromJSON Photo
 
 
 data Photoset =
@@ -86,7 +82,8 @@ data Photo =
 
 data FlickResponce =
      FlickResponce
-        { photoset   :: Photoset
+        { suka       :: Text
+        , photoset   :: Photoset
         , stat       :: Text
         } deriving (Show, Generic)
 
@@ -102,4 +99,3 @@ main = do
       case d of
         Left err -> putStrLn err
         Right ps -> print ps
-

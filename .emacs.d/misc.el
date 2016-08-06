@@ -10,11 +10,33 @@
   "Load a file in current user's configuration directory"
   (load-file (expand-file-name file user-init-dir)))
 
+;; (defun load-pdf ()
+;;   (interactive))
+
+(defun load-pdf (link)
+  "Open LINK in pdf-view-mode."
+  (cond ((string-match "\\(.*\\)::\\([0-9]*\\)\\+\\+\\([[0-9]\\.*[0-9]*\\)"  link)
+         (let* ((path (match-string 1 link))
+  ;;               (page (string-to-number (match-string 2 link)))
+  ;;               (height (string-to-number (match-string 3 link))))
+  ;;          (org-open-file path 1)
+  ;;          (pdf-view-goto-page page)
+  ;;          (image-set-window-vscroll
+  ;;           (round (/ (* height (car (pdf-view-image-size))) (frame-char-height))))))
+  ;;       ((string-match "\\(.*\\)::\\([0-9]+\\)$"  link)
+  ;;        (let* ((path (match-string 1 link))
+  ;;               (page (string-to-number (match-string 2 link))))
+  ;;          (org-open-file path 1)
+  ;;          (pdf-view-goto-page page)))
+  ;;       (t
+  ;;        (org-open-file link 1))
+        (interactive)) ))))
+
+
 (defun load-json ()
   "load json options"
   (interactive)
   (load-user-file "json.el"))
-
 
 (defun load-folding ()
   "load folding options"
@@ -146,6 +168,25 @@
 	(forward-word 1)
 	(backward-word 1)
 	)
+
+;; (defun org-pdfview-open (link)
+;;   "Open LINK in pdf-view-mode."
+;;   (cond ((string-match "\\(.*\\)::\\([0-9]*\\)\\+\\+\\([[0-9]\\.*[0-9]*\\)"  link)
+;;          (let* ((path (match-string 1 link))
+;;                 (page (string-to-number (match-string 2 link)))
+;;                 (height (string-to-number (match-string 3 link))))
+;;            (org-open-file path 1)
+;;            (pdf-view-goto-page page)
+;;            (image-set-window-vscroll
+;;             (round (/ (* height (car (pdf-view-image-size))) (frame-char-height))))))
+;;         ((string-match "\\(.*\\)::\\([0-9]+\\)$"  link)
+;;          (let* ((path (match-string 1 link))
+;;                 (page (string-to-number (match-string 2 link))))
+;;            (org-open-file path 1)
+;;            (pdf-view-goto-page page)))
+;;         (t
+;;          (org-open-file link 1))
+;;         ))
 
 ;; (defun delete-forward-whitespace ()
 ;; 	"Delte forward whitespace."

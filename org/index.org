@@ -1,3 +1,4 @@
+
 * Active Links:
 	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D935459&page%3D1][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=935459&page=1]]
 	[[https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt%3D913986&page%3D13][https://learn2.open.ac.uk/mod/quiz/attempt.php?attempt=913986&page=13]]
@@ -280,8 +281,12 @@
   M-x cfw:open-org-calendar
   . - go to today: https://www.gnu.org/software/emacs/manual/html_node/emacs/Specified-Dates.html
 
+  https://www.gnu.org/software/emacs/manual/html_node/emacs/Diary.html (dates format)
+  
 * Entropy
 ** Machine Learning
+   @<-[
+   ]
 	 http://www.cs.cmu.edu/~tom/mlbook.html	 
 
 	 [[file:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf]]
@@ -369,13 +374,17 @@
 
     It's working, but need to make it work with NGL now
 
-
 * Godot Engine
 ** Animated Ocean surface:
 	 Something along the lines with:
 	 program a new object in C++, sample verted positions..:
 	 [[https://github.com/okamstudio/godot/wiki/advanced]]
 	 [[https://github.com/okamstudio/godot/wiki/class_mesh]]
+* HaskellBook
+  @<-[[[*<2016-07-23%20Sat>%20Theory%20of%20Perception:%20The%20theory%20of%20Approximation%20Spaces,%20and%20Rough%20Sets%3B%20Parser%20Combinators][<2016-07-23 Sat> Theory of Perception: The theory of Approximation Spaces, and Rough Sets; Parser Combinators]]
+     ]
+  [[file:~/Documents/haskell-programming-0.11.2-screen.pdf][HaskellBook]]
+     
 * Haskell tips																											:haskell:
 ** Commenting code:
   {-| @Event t a@ represents a stream of events as they occur in time.
@@ -1997,8 +2006,12 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    
    [[file:~/.contexts/Parser]]
    [[file:~/.contexts/Parser/Parser(Haskell)/Parsec]]
+
    [[file:~/.contexts/Parser/Parser(Houdini)/Model.hipnc]]
+   [[file:~/Projects/Haskell_Parser/Parser/Model.hipnc]]
+
    [[file:~/.contexts/Parser/Parser(Houdini)/export/model.geo]] 
+   [[file:~/Projects/Haskell_Parser/Parser/export/model.geo]]fliq
       
    http://unbui.lt/#!/post/haskell-parsec-basics - seems like a good starting place
    https://two-wrongs.com/parser-combinators-parsing-for-haskell-beginners - also interesting
@@ -2088,6 +2101,59 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    http://gnclmorais.com/blog/aeson-and-nested-json/ - working through an example of nesting JSON file:
    [[file:~/Projects/Haskell/Parser/Aeson/Flickr.hs]]
 ** <2016-07-14 Thu> working on Flickr example, Haskell, JSON        :haskell:
-*** TODO : finish the example from:
+*** DONE : finish the example from:
     http://gnclmorais.com/blog/aeson-and-nested-json/
     [[file:~/Projects/Haskell/Parser/Aeson/Flickr.hs]]
+** <2016-07-16 Sat> Houdini Geo parser                      :haskell:houdini:
+*** TODO : Parse a Houdini Cube example:
+    [[file:~/Projects/Haskell_Parser/Parser/Model.hipnc]]
+    [[file:~/Projects/Haskell_Parser/Parser/export/model.geo]]
+    [[file:~/Projects/Haskell/Parser/Aeson/Geo.hs]] - Haskell 
+** <2016-07-20 Wed> Prepare lambda for Alex and robots, Parsers in HaskellBook
+   pdf-tools:
+   https://github.com/politza/pdf-tools
+   
+*** TODO : prepare second laptop for Alex
+    DEADLINE: <2016-07-30 Sat>
+** <2016-07-21 Thu> Continue learning Parsers, following Julia manual
+   [[file:~/Documents/haskell-programming-0.11.2-screen.pdf::917]] Parser Combinators
+   
+** <2016-07-23 Sat> Theory of Perception: The theory of Approximation Spaces, and Rough Sets; Parser Combinators :maths:cs:philosophy:haskellbook:
+   [[file:~/Documents/A%20Geometry%20of%20Approximation:%20Rough%20Set%20Theory%20Logic,%20Algebra%20and%20Topology%20of%20Conceptual%20Patterns.pdf][file:~/Documents/A Geometry of Approximation: Rough Set Theory Logic, Algebra and Topology of Conceptual Patterns.pdf]]::32
+   
+   @->[[[*HaskellBook][HaskellBook]]
+      ]
+   [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/examples.hs]]
+   
+   [[docview:~/Documents/haskell-programming-0.11.2-screen.pdf::925]]
+   [[docview:~/Documents/haskell-programming-0.11.2-screen.pdf::932]]
+   [[docview:~/Documents/haskell-programming-0.11.2-screen.pdf::934]]
+
+** <2016-07-24 Sun> Helm-Swoop search results, Machine Learning links
+   https://github.com/ShingoFukuyama/helm-swoop M-i to switch to helm-swoop when searching (C-s, C-r)
+   
+   Machine Learning:
+   http://neuralnetworksanddeeplearning.com/chap1.html
+   http://codereview.stackexchange.com/questions/135794/neural-network-in-haskell - Neural Networks (NN) in Haskell
+** <2016-07-27 Wed> Continue with Parsers
+   [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/Main.hs]]
+   [[file:~/Projects/Haskell/Parser/Trifecta/LearnParsers.hs]]
+** <2016-07-28 Thu> Diary time format
+   12/22/1988  Twentieth wedding anniversary!!
+   &1/1.       Happy New Year!
+   10/22       Ruth's birthday.
+   * 21, *:    Payday
+   Tuesday--weekly meeting with grad students at 10am
+   Supowit, Shen, Bitner, and Kapoor to attend.
+   1/13/89     Friday the thirteenth!!
+   &thu 4pm    squash game with Lloyd.
+   mar 16      Dad's birthday
+   April 15, 1989 Income tax due.
+   &* 15       time cards due.
+   
+*** TODO : write about Parsec/Trifecta differnce on blog.
+** <2016-07-28 Thu> Fabric Engine:
+   http://docs.fabric-engine.com/FabricEngine/2.3.0/HTML/GettingStartedGuide/canvastutorials.html
+*** TODO : finish a tutorial when I've got nothing else to do.
+** <2016-08-05 Fri> Raspberri Pi
+   https://www.raspberrypi.org/documentation/

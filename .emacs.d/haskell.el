@@ -35,7 +35,7 @@
 (global-set-key (kbd "C-c m")      'minimap-toggle)
 (global-set-key (kbd "C-c C-k")    'haskell-process-load-file)
 (global-set-key (kbd "C-;")        'iedit-mode)
-(global-set-key (kbd "C-c r")      '(restartHaskell ()))
+(global-set-key (kbd "C-c r")      'restartHaskell)
 (global-set-key (kbd "M-g M-f")    'first-error)
 (global-set-key (kbd "M-<up>")     'paredit-splice-sexp)
 

@@ -21,6 +21,12 @@ connect2wifi() {
 		then
 				echo "connecting to FreeStation..."
 				nmcli c up uuid 578f4b92-c99a-482e-a310-fe36aa0afc4e
+    elif [ "$1" = "Pohodkino" ]
+		then
+				echo "connecting to Pohodkino..."
+				nmcli --ask c up uuid 7e60c4fc-3eb2-4432-aacc-de47eb811491
+        # nmcli c up uuid 7e60c4fc-3eb2-4432-aacc-de47eb811491 passwd-file ~/psswds
+        # passkey: UG7EH8MEY4
 		else
 				echo "connecting to MADHotspot..."
 				nmcli --ask c up uuid 09db4507-d855-40b4-becc-462f0f31811b
@@ -29,4 +35,4 @@ connect2wifi() {
 
 # sudo ifconfig wlp4s0 up
 connect2wifi $1
-		
+

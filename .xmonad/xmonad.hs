@@ -39,7 +39,7 @@ main = do
                  , ("M-C-e"    , spawn "emacsclient -c")
                  , ("M-C-k"    , spawn "krusader")
                  , ("M-C-s"    , spawn "spotify")
-                 , ("<Print>"  , spawn "ksnapshot")
+                 , ("<Print>"  , spawn "spectacle")
                  , ("M-C-<Esc>", spawn "ksysguard")
                  , ("M-C-l"    , spawn "slock")
                  , ("M-C-h"    , spawn "houdini")
