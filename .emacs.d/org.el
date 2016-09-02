@@ -21,10 +21,13 @@
       browse-url-generic-program "chromium-browser")
 (setq browse-url-default-browser "chromium")
 
+(lambda (file link) (org-pdfview-open file))
+
 ;; * To manupulate a image under cursor.
 ;;
 ;;  M-x imagex-global-sticky-mode
 (imagex-global-sticky-mode)
+;; * C-c C-x C-v org-mode-toggle-inline-images
 ;;
 ;; * C-c + / C-c -: Zoom in/out image.
 ;; * C-c M-m: Adjust image to current frame size.
@@ -35,3 +38,4 @@
 ;;  M-x imagex-auto-adjust-mode
 ;; (org-mode)
 
+(pdf-tools-install)

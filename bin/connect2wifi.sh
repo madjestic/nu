@@ -9,8 +9,10 @@
 # To request that NetworkManager rescans for available access points, type:
 # nmcli radio wifi on
 # nmcli d wifi rescan
-# nmcli connect # shows available networks
-# nmcli d # shows current connections
+# nmcli connect # list memorized networks
+# nmcli d wifi  # list current wifi connections
+
+# nmtui - just use it :P
 
 connect2wifi() {
 		if [ "$1" = "Lambda" ]

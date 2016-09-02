@@ -207,6 +207,7 @@
                               ("\\.hip\\'"   "houdini_emacs" (file))
                               ("\\.3b\\'"    "3D-coat"       (file))
                               ("\\.mkv\\'"   "mpv"           (file))
+                              ("\\.djvu\\'"  "djview"        (file))
                               ))
 
 (setq org-goto-interface 'outline-path-completion
@@ -232,10 +233,6 @@
       browse-url-generic-program "chromium-browser")
 (setq browse-url-default-browser "chromium")
 
-;;(require 'org-pdfview)
-;;(eval-after-load 'org '(require 'org-pdfview))
-
-
 ;; * To manupulate a image under cursor.
 ;;
 ;;  M-x imagex-global-sticky-mode
@@ -249,7 +246,7 @@
 ;;
 ;;  M-x imagex-auto-adjust-mode
 ;; (org-mode)
-
+(pdf-tools-install)
 
 ;;;;;;;;;;;;;;;
 ;; YASnippet ;;
