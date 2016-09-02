@@ -812,7 +812,7 @@ WINDOWS-p
    [[*<2016-06-12 Sun> Haskell Parsers][<2016-06-12 Sun> Haskell Parsers]]
    [[*Parsing][Parsing]]
    ]
-** IN-PROGRESS : create a point attribute (String -> Tree)
+** IN-PROGRESS [#C] : create a point attribute (String -> Tree)
 	 Tree -> Tree of id's -> flatten -> point string attr
   
 * Projects
@@ -860,12 +860,19 @@ WINDOWS-p
 ** TODO [#E]: Project Omicron:
 	 2x1Tb Raid-10?
 	 <2015-12-10 Thu>
-* Rocket! n-body sim, particles, houdini
+* Rocket! n-body sim, particles, houdini, Godika
   @<->[
   [[*<2016-03-16 Wed> Gravity, Rocket][<2016-03-16 Wed> Gravity, Rocket]]
+  [[*<2016-08-23 Tue> Rocket, Gravity, n-body][<2016-08-23 Tue> Rocket, Gravity, n-body]]
+  [[*: Render out a video, same as for n-bodies.][: Render out a video, same as for n-bodies.]]
   ]
 	A simple game project: similar to Angry birds, but in space with planets.  A dynamics-based (gravity, gravitational pool of planets).
 	<2015-12-04 Fri>
+
+** TODO [#B] : Continue with Gravity/Rocket Houdini project:
+** Work Files:  
+   [[file:~/Projects/Houdini/Godika]]
+   [[file:~/Projects/Houdini/POPs/n_body_collide.hipnc][file:~/Projects/Houdini/POPs/n_body_collide.hipnc]]
 
 * sb7code reading, examples
 	OpenGL Super Bible ed.7
@@ -957,7 +964,6 @@ Sat Apr 26 16:03:45 CEST 2014
   [[file:~/Documents/tictactoe.kra]]
   
 * TODO:
-** IN-PROGRESS [[*:%20Make%20Elegant,%20Clean-up][Make Elegant, Clean-up]]
 ** DONE : Write a make file that can be run like this:
 	 make clean
 	   - and it will choose from a number of ons
@@ -965,7 +971,7 @@ Sat Apr 26 16:03:45 CEST 2014
 		 - made a clean.sh file that cleans up stuff [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/tutorial10/clean][here]]
 
 ** DONE : Experiment with caustics (an example from Houdini Help)
-** IN-PROGRESS [#B]: Write a python daemon
+** IN-PROGRESS [#C]: Write a python daemon
 	 http://www.jejik.com/articles/2007/02/a_simple_unix_linux_daemon_in_python/
 	 https://pypi.python.org/pypi/python-daemon/
 	 [2015-12-02 Wed]
@@ -980,7 +986,6 @@ Sat Apr 26 16:03:45 CEST 2014
    https://hackage.haskell.org/package/daemons
    <2016-01-24 Sun>
 
-   
 ** DONE : figure out what's up with Nvidia Optimus
 	 Still has some minor(?) issues: https://forums.gentoo.org/viewtopic-t-1032214-highlight-.html
 	 [2015-11-30 Mon]
@@ -1094,9 +1099,10 @@ Sat Apr 26 16:03:45 CEST 2014
 ** DONE : continue with Mortgage graphing, using VEX
    [[file:~/Desktop/mortgage.hipnc]]
 
-** TODO : Render out a video, same as for n-bodies.
+** TODO [#B] : Render out a video, same as for n-bodies.
+   @->[[[*Rocket! n-body sim, particles, houdini][Rocket! n-body sim, particles, houdini]]]
    [[file:~/Projects/Houdini/Godika]]
-** TODO : create emacs shortcuts for register-switching: C-0, C-1, .. C-9
+** TODO [#D] : create emacs shortcuts for register-switching: C-0, C-1, .. C-9
 * Unreal Engine
 	- contacted popcornfx:
 		The Linux build is not here for now, but should not be a problem, once we get the plugin stabilized on Win64, we will begin to build for other platform.
@@ -1271,7 +1277,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 
 		 accomplished in tutorial10 thanks to tips from haskell@cafe mail-list
 
-**** IN-PROGRESS : Make Elegant, Clean-up
+**** IN-PROGRESS [#B] : Make Elegant, Clean-up
 		 Sun Oct 26 00:14:41 CEST 2014
 		 refactoring Rendering.hs, Shape.hs
 
@@ -1300,7 +1306,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 ***** DONE : Create a boilerplate:
 ****** DONE : All code on one page:  draw a textured square
        [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Boilerplate]]
-******* TODO : in C++
+******* TODO [#C] : Textured triangle in C++
 				CLOCK: [2015-11-30 Mon 19:13]--[2015-11-30 Mon 19:22] =>  0:09
 				[[~/.contexts/OpenGL_Bible/src/my_first_spinning_cube]] - seems like a good starting point for a spinning textured triangle
 				<2015-12-28 Mon>
@@ -1314,10 +1320,9 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 				[[/home/madjestic/Projects/OpenGL/sb7code/src/my_first_textured_triangle/]]
 				<2016-01-01 Fri>
 
-******** TODO : Change the shader so that it uses a texture
+******** TODO [#C] : Change the shader so that it uses a texture
 				 <2015-12-31 Thu>
 ******* DONE : in Haskell			 
-    
         <2016-02-29 Mon>
         Pushed an update to GitHub and sent a blog link to Haskell Planet.
 ** FRP
@@ -1627,7 +1632,9 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    @<->[[[*Rocket!][Rocket!]]
    ]
   [[file:~/Projects/Houdini/POPs/n_body_collide.hipnc][file:~/Projects/Houdini/POPs/n_body_collide.hipnc]]
-  colliding particles - works in principles, but with errors.  Needs a second pass.
+  * colliding particles - works in principles, but with errors.  Needs a second pass.
+  * I think it is fixed now (gluing is based on proximity clasterization)
+    <2016-09-03 Sat>
   
 ** <2016-03-22 Tue>                                           :tags:entropy:
    http://orgmode.org/manual/Setting-tags.html#Setting-tags
@@ -2249,7 +2256,8 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    [[file:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf]]
    [[file:~/Documents/tictactoe.kra]]
    [[file:~/Pictures/Mathematics/tictactoe.png][file:~/Pictures/Mathematics/tictactoe.png]]
-** <2016-08-23 Tue> ROcket, Gravity, n-body
+** <2016-08-23 Tue> Rocket, Gravity, n-body
+   @<-[[[*Rocket! n-body sim, particles, houdini][Rocket! n-body sim, particles, houdini]]]
    @->[[[*<2016-03-16 Wed> Gravity, Rocket][<2016-03-16 Wed> Gravity, Rocket]]
    ]
    [[file:~/Projects/Houdini/POPs/n_body_collide.hipnc][file:~/Projects/Houdini/POPs/n_body_collide.hipnc]]
@@ -2280,8 +2288,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    @->[
    [[*Parsing][Parsing]]
    ]
-*** TODO Continue with Parsers:
-    DEADLINE: <2016-08-26 Thu>
+*** Continue with Parsers:
     @<-[[[*: Continue working on Haskell Parser][: Continue working on Haskell Parser]]
     ]
     @->[[[*Parsing][Parsing]]]
@@ -2321,8 +2328,7 @@ main = do
                             -- representation is converted into [Char]
     
 **** PROGRESS: finished a basic setup:
-**** TODO : continue with parser combinators, parsing the geo file
-     DEADELINE: <2016-08-30 Tue>
+**** continue with parser combinators, parsing the geo file
      [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/Main.hs][file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/Main.hs]]
 
 **** Study material:
