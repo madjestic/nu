@@ -213,6 +213,7 @@
 (global-set-key (kbd "C-c m")      'minimap-toggle)
 (global-set-key (kbd "C-c M-m")    'menu-bar-mode)
 (global-set-key (kbd "C-c b")      'flymake-compile) ;; build with flymake/Makefile
+(global-set-key (kbd "C-M-y")      'secondary-dwim)
 
 
 (defun jabber ()

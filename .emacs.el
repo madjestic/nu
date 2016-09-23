@@ -73,7 +73,7 @@
  '(minimap-width-fraction 0.1)
  '(minimap-window-location (quote right))
  '(mouse-wheel-scroll-amount (quote (1 ((shift) . 1) ((control)))))
- '(org-agenda-files (quote ("~/org/test.org" "~/org/index.org")))
+ '(org-agenda-files (quote ("~/org/index.org" "~/org/test.org")))
  '(org-file-apps
    (quote
     ((auto-mode . emacs)
@@ -207,6 +207,7 @@
                               ("\\.hip\\'"   "houdini_emacs" (file))
                               ("\\.3b\\'"    "3D-coat"       (file))
                               ("\\.mkv\\'"   "mpv"           (file))
+                              ("\\.mp4\\'"   "mpv"           (file))
                               ("\\.djvu\\'"  "djview"        (file))
                               ))
 

@@ -184,7 +184,7 @@
 * Data Copy solution
   ~150EURO
   https://www.amazon.co.uk/Inateck-Docking-Station-Function-Tool-free/dp/B00LN0GX4I/ref=sr_1_3?ie=UTF8&qid=1464472727&sr=8-3&keywords=HDD+docking+station
-  + a couple of HDD
+  1 a couple of HDD
 * Editing a movie:
 	(lossless codec)
 	ffmpeg -i model.rop_comp1.%04d.png -c:v huffyuv out.avi
@@ -202,7 +202,7 @@
 	'C-x n w' - widen region/scope
 
 	(paredit mode)
-	selection + ( -> (selection)
+	selection 1 ( -> (selection)
 	... same with [, {
 
 	(selection)	<M-s> -> selection
@@ -226,6 +226,9 @@
    C-x r j r
      Jump to the position and buffer saved in register
 
+  Display inline images
+  C-c C-x C-v
+
 
 ** Registers, bookmarks and desktop
 	 C-x r w <register> to store a window configuration in a register
@@ -239,40 +242,39 @@
 ** tables
 | r | 0/1   | 0  | 1  | 0-1 | rnd | SBR | SBF | ABR | ABF |
 |---+-------+----+----+-----+-----+-----+-----+-----+-----|
-| 1 | 0/1   | -  | +  | 0:- | 0:- | 0:- | 0:- | 0:- | 0:- |
-| 0 | 1/1   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 0 | 2/1   | +  | -  | 0:+ | 1:- | 1:- | 1:- | 1:- | 1:- |
-| 1 | 2/2   | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 1:+ | 1:+ |
-| 1 | 2/3   | -  | +  | 0:- | 0:- | 1:+ | 0:- | 1:+ | 0:- |
-| 0 | 3/3   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 1 | 3/4   | -  | +  | 0:- | 1:+ | 0:- | 1:+ | 1:+ | 1:+ |
-| 0 | 4/4   | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 1 | 4/5   | -  | +  | 0:- | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ |
-| 1 | 4/6   | -  | +  | 1:+ | 0:+ | 1:+ | 0:- | 0:- | 0:- |
-| 0 | 5/6   | +  | -  | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 0 | 6/6   | +  | -  | 1:- | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
-| 0 | 7/6   | +  | -  | 0:+ | 0:+ | 1:- | 0:+ | 0:+ | 1:- |
-| 1 | 7/7   | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 1:+ | 1:+ |
-| 0 | 8/7   | +  | -  | 0:+ | 0:+ | 1:- | 0:+ | 0:+ | 0:+ |
-| 1 | 8/8   | -  | +  | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ | 1:+ |
-| 1 | 8/9   | -  | +  | 0:- | 1:+ | 1:+ | 0:- | 0:- | 0:- |
-| 1 | 8/10  | -  | +  | 1:+ | 1:+ | 0:- | 0:- | 0:- | 0:- |
-| 1 | 8/11  | -  | +  | 0:- | 0:- | 0:- | 0:- | 0:- | 0:- |
-| 0 | 9/11  | +  | -  | 1:- | 1:- | 0:+ | 0:+ | 0:+ | 0:+ |
-| 0 | 10/11 | +  | -  | 0:+ | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
-| 1 | 10/12 | -  | +  | 1:+ | 0:- | 1:+ | 1:+ | 0:- | 0:- |
-| 1 | 10/13 | -  | +  | 0:- | 0:- | 1:+ | 0:- | 0:- | 0:- |
-| 0 | 11/13 | +  | -  | 1:- | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 1 | 11/14 | -  | +  | 0:- | 0:- | 0:- | 1:+ | 0:- | 0:- |
-| 1 | 11/15 | -  | +  | 1:+ | 1:+ | 1:+ | 0:- | 0:- | 0:- |
-| 0 | 12/15 | +  | -  | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ | 0:+ |
-| 0 | 13/15 | +  | -  | 1:- | 1:- | 1:- | 1:- | 0:+ | 0:+ |
-| 0 | 14/15 | +  | -  | 0:+ | 0:+ | 1:- | 1:- | 0:+ | 0:+ |
-|   |       | 14 | 15 |  14 |  18 |  17 |  16 |  19 | 17  |
+| 1 | 0/1   | -  | 1  | 0:- | 0:- | 0:- | 0:- | 0:- | 0:- |
+| 0 | 1/1   | 1  | -  | 1:- | 0:1 | 0:1 | 0:1 | 0:1 | 0:1 |
+| 0 | 2/1   | 1  | -  | 0:1 | 1:- | 1:- | 1:- | 1:- | 1:- |
+| 1 | 2/2   | -  | 1  | 1:1 | 0:- | 1:1 | 1:1 | 1:1 | 1:1 |
+| 1 | 2/3   | -  | 1  | 0:- | 0:- | 1:1 | 0:- | 1:1 | 0:- |
+| 0 | 3/3   | 1  | -  | 1:- | 0:1 | 0:1 | 0:1 | 0:1 | 0:1 |
+| 1 | 3/4   | -  | 1  | 0:- | 1:1 | 0:- | 1:1 | 1:1 | 1:1 |
+| 0 | 4/4   | 1  | -  | 1:- | 0:1 | 0:1 | 0:1 | 0:1 | 0:1 |
+| 1 | 4/5   | -  | 1  | 0:- | 1:1 | 1:1 | 1:1 | 1:1 | 1:1 |
+| 1 | 4/6   | -  | 1  | 1:1 | 0:1 | 1:1 | 0:- | 0:- | 0:- |
+| 0 | 5/6   | 1  | -  | 0:1 | 0:1 | 0:1 | 0:1 | 0:1 | 0:1 |
+| 0 | 6/6   | 1  | -  | 1:- | 0:1 | 1:- | 1:- | 0:1 | 0:1 |
+| 0 | 7/6   | 1  | -  | 0:1 | 0:1 | 1:- | 0:1 | 0:1 | 1:- |
+| 1 | 7/7   | -  | 1  | 1:1 | 0:- | 1:1 | 1:1 | 1:1 | 1:1 |
+| 0 | 8/7   | 1  | -  | 0:1 | 0:1 | 1:- | 0:1 | 0:1 | 0:1 |
+| 1 | 8/8   | -  | 1  | 1:1 | 1:1 | 1:1 | 1:1 | 1:1 | 1:1 |
+| 1 | 8/9   | -  | 1  | 0:- | 1:1 | 1:1 | 0:- | 0:- | 0:- |
+| 1 | 8/10  | -  | 1  | 1:1 | 1:1 | 0:- | 0:- | 0:- | 0:- |
+| 1 | 8/11  | -  | 1  | 0:- | 0:- | 0:- | 0:- | 0:- | 0:- |
+| 0 | 9/11  | 1  | -  | 1:- | 1:- | 0:1 | 0:1 | 0:1 | 0:1 |
+| 0 | 10/11 | 1  | -  | 0:1 | 0:1 | 1:- | 1:- | 0:1 | 0:1 |
+| 1 | 10/12 | -  | 1  | 1:1 | 0:- | 1:1 | 1:1 | 0:- | 0:- |
+| 1 | 10/13 | -  | 1  | 0:- | 0:- | 1:1 | 0:- | 0:- | 0:- |
+| 0 | 11/13 | 1  | -  | 1:- | 0:1 | 0:1 | 0:1 | 0:1 | 0:1 |
+| 1 | 11/14 | -  | 1  | 0:- | 0:- | 0:- | 1:1 | 0:- | 0:- |
+| 1 | 11/15 | -  | 1  | 1:1 | 1:1 | 1:1 | 0:- | 0:- | 0:- |
+| 0 | 12/15 | 1  | -  | 0:1 | 0:1 | 0:1 | 0:1 | 0:1 | 0:1 |
+| 0 | 13/15 | 1  | -  | 1:- | 1:- | 1:- | 1:- | 0:1 | 0:1 |
+| 0 | 14/15 | 1  | -  | 0:1 | 0:1 | 1:- | 1:- | 0:1 | 0:1 |
+|   |       | 14 | 15 |  14 |  18 |  17 |  16 |  19 |  17 |
 #+TBLFM: 
-** Emacs Calendar
-   [[*Emacs%20Calendar:][Emacs Calendar:]]
-** DONE : Read the shit above (Emacs calendar), it's awesome!  
+  M-x table-insert - create table
+  http://orgmode.org/manual/Built_002din-table-editor.html
 * Emacs Calendar: cfw-calendar
   http://blog.idorobots.org/entries/you-earned-15-xp-in-getting-things-done_.html#preview-more - gamification, it turned out to be not so great.
   I think a better idea would be to count entries by date and accumulate days per tag, hence giving an overall score.
@@ -289,7 +291,7 @@
 
   https://www.gnu.org/software/emacs/manual/html_node/emacs/Diary.html (dates format)
 
-  cfw-calendar https://github.com/kiwanami/emacs-calfw
+  cfw-calendar https://github.com/kiwanami/eWmacs-calfw
   # TIPS:
   r - refresh view, redraw cells (also re-scale to fit the window)
   
@@ -384,7 +386,6 @@
    
    This will be a functinal equivalent of the solution.
 
-  
 * FRP
   @->[[[*FRP][FRP]]
       [[*<2016-05-19%20Thu>][<2016-05-19 Thu>]]
@@ -468,7 +469,7 @@ find . | egrep '\.hs$' | xargs hothasktags > tags
 		Continue reading about VRAY procedural:
 		http://www.peterclaes.be/blog/?tag=vrayprocedural
 * Ocean Effect
-** TODO [#B] : Create Ocean effect in Houdini
+** IN-PROGRESS [#A] : Create Ocean effect in Houdini
    @<->[[[*<2016-09-04 Sun> Houdini Ocean, CmiVFX][<2016-09-04 Sun> Houdini Ocean, CmiVFX]]
    ]
 *** Study Materials   
@@ -500,8 +501,8 @@ C-u M-! date   | to insert date |
 	 C-c . to insert timestamp
 
 ** List and markup
-  + one
-  + two
+  1 one
+  1 two
 *bold*
 /italic/
 =code=
@@ -849,6 +850,14 @@ WINDOWS-p
   
   https://courses.edx.org/courses/DelftX/FP101x/3T2014/courseware/f2b543ac0250428aa0a3f141797b35ae/022f142c0b5d4b4bb9488112c8afc9cc/
   Edx - Functional parsers and monads.
+
+** Haskell GeoParser:  
+   [[file:img/parsing_progress_00.png][file:~/org/img/parsing_progress_00.png]]
+   - it seems like most basics are covered (short of aeson).
+     I should continue with parsing the geo file in one go,
+     populating relevant data structure in the process,
+     returning the resulting data.
+     [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/GeoParser.hs]]
 
 
 ** DONE : for a cluster of connected points it id attr, 
@@ -1470,13 +1479,13 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
     https://rutracker.org/forum/viewtopic.php?t=5114569
     https://rutracker.org/forum/viewtopic.php?t=5079199
     https://rutracker.org/forum/viewtopic.php?t=4257762
-*** TODO : Work on a small example of gushing water effect :houdini::effect::vfx:
+*** TODO [#B] : Work on a small example of gushing water effect :houdini::effect::vfx:
 		<2015-12-02 Wed>
 
 		/home/madjestic/Projects/Houdini/Fluids/Fluid_Test_00
 		<2015-12-03 Thu>
 
-*** TODO : Set up water shader
+*** TODO [#B] : Set up water shader
 		[[https://www.sidefx.com/index.php?option%3Dcom_content&task%3Dview&id%3D3168&Itemid%3D412][H15 | FLIP WORKFLOW ENHANCEMENTS]]
 		[[https://vimeo.com/41314793][Houdini Mantra | Waterfall]]
 		[[http://forums.odforce.net/topic/20467-ocean-area-light-highlights-problem/?hl%3D%252Bocean%2B%252Bwhite%2B%252Bspots%2B%252Bpbr#entry122295][Ocean Area light highlights problem]]
@@ -1485,8 +1494,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
     [[file:~/Documents/cmiVFX%20-%20Houdini%20Fluid%20Effects%20For%20TDs][file:~/Documents/cmiVFX - Houdini Fluid Effects For TDs]]
 		
 		
-**** TODO : Simulation and modelling
-**** TODO : Shading
+**** TODO [#B] : Simulation and modelling
 ** General
 *** DONE : Read on setting up cron Jobs [[http://stackoverflow.com/questions/1603109/how-to-make-a-python-script-run-like-a-service-or-daemon-in-linux][{Stack Overflow}]]
 *** DONE : Set up a TODO directory with all active TODO's
@@ -1500,6 +1508,117 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 ** GTK+
 	 [[http://www.micahcarrick.com/gtk-glade-tutorial-part-1.html]]
 
+
+* Progress Matrix
+|------------------+---------+------+---------+-------+--------+------+-----+-----+--------+-------+---------+-------------+-------+---------+-------+-------|
+| Date             | Haskell | Prog | Houdini | Emacs | OpenGL | Math |  CG |  AI | Tinker | Games | Finance | Maintenance | Skate | History | House | Dutch |
+| 168              |      53 |   24 |      18 |    17 |     10 |    8 |   7 |   6 |      6 |     5 |       4 |           5 |     2 |       2 |     2 |     1 |
+| %                |    31.5 | 14.3 |    10.7 |  10.1 |    6.0 |  4.8 | 4.2 | 3.6 |    3.6 |   3.0 |     2.4 |         3.0 |   1.2 |     1.2 |   1.2 |   0.6 |
+|------------------+---------+------+---------+-------+--------+------+-----+-----+--------+-------+---------+-------------+-------+---------+-------+-------|
+| [[*%5B2015-01-12%20Mon%5D][{2015-01-12 Mon}]] |       1 |    1 |       1 |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*%5B2015-02-01%20Sun%5D][{2015-02-01 Sun}]] |         |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*%5B2015-09-21%20Mon%5D][{2015-09-21 Mon}]] |         |    1 |         |       |        |      |   1 |     |        |       |         |             |       |         |       |       |
+| [[*<2015-11-08 Sun>][<2015-11-08 Sun>]] |         |    1 |         |       |      1 |      |     |     |        |       |         |             |       |         |       |       |
+| [[*%5B2015-11-19%20Thu%5D][{2015-11-19 Thu}]] |         |      |         |     1 |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*%5B2015-11-19%20Thu%5D][{2015-11-19 Thu}]] |         |      |         |     1 |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-01-29 Fri>][<2016-01-29 Fri>]] |       1 |    1 |         |     1 |      1 |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-01-30 Sat>][<2016-01-30 Sat>]] |       1 |      |         |       |        |      |     |     |        |       |         |           1 |       |         |       |       |
+| [[*<2016-02-07 Sun>][<2016-02-07 Sun>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-02-08 Mon>][<2016-02-08 Mon>]] |       1 |      |         |       |        |      |     |   1 |        |       |         |             |       |         |       |       |
+| [[*<2016-02-09 Tue>][<2016-02-09 Tue>]] |         |      |         |       |        |      |     |     |      1 |       |         |             |       |         |       |       |
+| [[*<2016-02-12 Fri>][<2016-02-12 Fri>]] |         |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-02-26 Fri>][<2016-02-26 Fri>]] |       1 |      |       1 |       |      1 |      |     |     |        |       |       1 |             |       |         |       |       |
+| [[*<2016-02-28 Sun>][<2016-02-28 Sun>]] |         |      |         |       |        |      |     |     |      1 |       |         |             |       |         |       |       |
+| [[*<2016-03-02 Wed>][<2016-03-02 Wed>]] |         |      |         |       |        |      |   1 |     |        |       |         |             |       |         |       |       |
+| [[*<2016-03-02 Wed>][<2016-03-02 Wed>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-03-05 Sat>][<2016-03-05 Sat>]] |         |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-03-11 Fri>][<2016-03-11 Fri>]] |         |      |       1 |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-03-16 Wed> Gravity, Rocket][<2016-03-16 Wed>]] |         |      |       1 |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-03-22 Tue>][<2016-03-22 Tue>]] |         |      |         |     1 |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-03-24 Thu>][<2016-03-24 Thu>]] |         |      |         |     1 |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-03-30 Wed>][<2016-03-30 Wed>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-04-02 Sat>][<2016-04-02 Sat>]] |         |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-04-03 Sun>][<2016-04-03 Sun>]] |         |      |         |       |        |      |     |     |        |     1 |         |             |       |         |       |       |
+| [[*<2016-04-04 Mon>][<2016-04-04 Mon>]] |         |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-04-05 Tue>][<2016-04-05 Tue>]] |       1 |    1 |         |       |        |      |   1 |     |        |       |         |             |       |         |       |       |
+| [[*<2016-04-09 Sat>][<2016-04-09 Sat>]] |         |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-05-13 Fri>][<2016-05-13 Fri>]] |       1 |    1 |         |       |      1 |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-04-15 Fri>][<2016-04-15 Fri>]] |       1 |    1 |         |       |      1 |      |     |   1 |        |       |         |             |       |         |       |       |
+| [[*<2016-04-21 Thu>][<2016-04-21 Thu>]] |         |      |       1 |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-04-25 Mon>][<2016-04-25 Mon>]] |         |      |       1 |       |        |      |     |     |        |       |         |             |     1 |         |       |       |
+| [[*<2016-04-29 Fri>][<2016-04-29 Fri>]] |         |      |       1 |     1 |        |      |     |     |      1 |       |         |             |       |         |       |       |
+| [[*<2016-05-04 Wed>][<2016-05-04 Wed>]] |         |      |       1 |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-05-06 Fri>][<2016-05-06 Fri>]] |         |      |         |       |        |      |     |     |      1 |       |         |             |       |         |       |       |
+| [[*<2016-05-09 Mon>][<2016-05-09 Mon>]] |       1 |    1 |         |       |        |    1 |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-05-11 Wed>][<2016-05-11 Wed>]] |       1 |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-05-12 Thu>][<2016-05-12 Thu>]] |       1 |    1 |         |       |      1 |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-05-13 Fri>][<2016-05-13 Fri>]] |       1 |      |         |       |      1 |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-05-17 Tue>][<2016-05-17 Tue>]] |         |      |         |       |        |      |     |     |        |       |         |             |     1 |         |       |       |
+| [[*<2016-05-19 Thu>][<2016-05-19 Thu>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-05-19 Thu>][<2016-05-19 Thu>]] |         |      |         |       |        |      |     |     |        |       |         |           1 |       |         |       |       |
+| [[*<2016-05-23 Mon>][<2016-05-23 Mon>]] |       1 |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-05-24 Tue>][<2016-05-24 Tue>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-05-27 Fri>][<2016-05-27 Fri>]] |         |      |         |     1 |        |    1 |   1 |     |        |       |         |             |       |         |       |       |
+| [[*<2016-05-31 Tue>][<2016-05-31 Tue>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-05 Sun>][<2016-06-05 Sun>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-06 Mon>][<2016-06-06 Mon>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-07 Tue>][<2016-06-07 Tue>]] |       1 |      |         |       |        |      |     |     |        |     1 |         |             |       |         |       |       |
+| [[*<2016-06-08 Wed>][<2016-06-08 Wed>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-09 Thu>][<2016-06-09 Thu>]] |       1 |      |         |       |      1 |      |     |     |        |       |         |           1 |       |         |       |       |
+| [[*<2016-06-11 Sat>][<2016-06-11 Sat>]] |         |      |         |     1 |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-12 Sun> Haskell Parsers][<2016-06-12 Sun>]] |         |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-12 Sun>][<2016-06-12 Sun>]] |       1 |      |       1 |       |      1 |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-13 Mon>][<2016-06-13 Mon>]] |         |      |       1 |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-14 Tue> Idiots never give up!][<2016-06-14 Tue>]] |         |      |       1 |     1 |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-15 Wed> Mathematical Methods for Quantitative Finance, Marve, Houdini][<2016-06-15 Wed>]] |         |      |       1 |       |        |    1 |     |     |        |       |       1 |             |       |         |       |       |
+| [[*<2016-06-16 Thu> Dual Univers, Haskell, AI][<2016-06-16 Thu>]] |       1 |      |         |       |        |      |     |   1 |        |     1 |         |             |       |         |       |       |
+| [[*<2016-06-18 Sat> 3D-coa UV'ing tutorial][<2016-06-18 Sat>]] |         |      |         |       |        |      |   1 |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-20 Mon> Writing a haskell parser for geo Houdini format][<2016-06-20 Mon>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-23 Thu> IDO][<2016-06-23 Thu>]] |         |      |         |     1 |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-24 Fri>][<2016-06-24 Fri>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-06-25 Sat> Haskell FRP, Yampa, OpenGL][<2016-06-25 Sat>]] |       1 |    1 |         |       |      1 |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-07-04 Mon> I should look into Repa, Looking into Parsec, Leaving links for GLFW to look into later on b1:][<2016-07-04 Mon>]] |       1 |      |         |       |        |      |     |     |        |       |       1 |             |       |         |       |       |
+| [[*<2016-07-06 Wed> VR stuff, Parser, Finance Currency JSON API, Jabber History][<2016-07-06 Wed>]] |       1 |      |         |     1 |        |      |     |     |        |       |       1 |             |       |         |       |       |
+| [[*<2016-07-08 Fri> Anonymous records][<2016-07-08 Fri>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-07-09 Sat> Aeson open tabs][<2016-07-09 Sat>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-07-14 Thu> working on Flickr example, Haskell, JSON][<2016-07-14 Thu>]] |       1 |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-07-16 Sat> Houdini Geo parser][<2016-07-16 Sat>]] |       1 |      |       1 |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-07-20 Wed> Prepare lambda for Alex and robots, Parsers in HaskellBook][<2016-07-20 Wed>]] |         |      |         |     1 |        |      |     |     |      1 |     1 |         |             |       |         |     1 |       |
+| [[*<2016-07-21 Thu> Continue learning Parsers, following Julia manual][<2016-07-21 Thu>]] |       1 |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-07-23 Sat> Theory of Perception: The theory of Approximation Spaces, and Rough Sets; Parser Combinators][<2016-07-23 Sat>]] |       1 |      |         |       |        |    1 |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-07-24 Sun> Helm-Swoop search results, Machine Learning links][<2016-07-24 Sun>]] |         |      |         |     1 |        |      |     |   1 |        |       |         |             |       |         |       |       |
+| [[*<2016-07-27 Wed> Continue with Parsers][<2016-07-27 Wed>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-07-28 Thu> Diary time format][<2016-07-28 Thu>]] |         |      |         |     1 |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-07-28 Thu> Fabric Engine:][<2016-07-28 Thu>]] |         |      |         |       |        |      |   1 |     |        |       |         |             |       |         |       |       |
+| [[*<2016-08-05 Fri> Raspberri Pi][<2016-08-05 Fri>]] |         |      |         |       |        |      |     |     |      1 |       |         |             |       |         |       |       |
+| [[*<2016-08-07 Sun> Org-mode images][<2016-08-07 Sun>]] |         |      |         |     1 |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-08-08 Mon> Machine Learning][<2016-08-08 Mon>]] |         |      |         |       |        |      |     |   1 |        |       |         |             |       |         |       |       |
+| [[*<2016-08-18 Thu> X3: Litcube mods:][<2016-08-18 Thu>]] |         |      |         |       |        |      |     |     |        |     1 |         |             |       |         |       |       |
+| [[*<2016-08-19 Fri> Anki, Dutch, Tesaurus][<2016-08-19 Fri>]] |         |      |         |       |        |      |     |     |        |       |         |             |       |         |       |     1 |
+| [[*<2016-08-21 Sun> HaskellBook][<2016-08-21 Sun>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-08-22 Mon> Machine Learning by Tom Mitchel:][<2016-08-22 Mon>]] |         |      |         |       |        |      |     |   1 |        |       |         |             |       |         |       |       |
+| [[*<2016-08-23 Tue> Rocket, Gravity, n-body][<2016-08-23 Tue>]] |         |      |       1 |       |        |    1 |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-08-24 Wed> Parsers, Backup, Fixing sink][<2016-08-24 Wed>]] |       1 |      |         |       |        |      |     |     |        |       |         |           1 |       |         |     1 |       |
+| [[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-08-26 Fri> continue][<2016-08-26 Fri>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-08-28 Sun> continue][<2016-08-28 Sun>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-08-30 Tue> continue][<2016-08-30 Tue>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-08-31 Wed> Rust language][<2016-08-31 Wed>]] |         |    1 |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-09-02 Fri> Trying out Substance Designer, Rust language, Haskell Parser][<2016-09-02 Fri>]] |       1 |    1 |         |       |        |      |   1 |     |        |       |         |             |       |         |       |       |
+| [[*<2016-09-04 Sun> Parsers][<2016-09-04 Sun>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-09-05 Mon> Jad Nohra gitHub][<2016-09-05 Mon>]] |         |    1 |         |       |        |    1 |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-09-06 Tue> Guns Germs and Steal, Haskell Parser][<2016-09-06 Tue>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |       1 |       |       |
+| [[*<2016-09-07 Wed> Parsers, Manstein plan][<2016-09-07 Wed>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |       1 |       |       |
+| [[*<2016-09-09 Fri> Parsers progress, Fluids:][<2016-09-09 Fri>]] |       1 |      |       1 |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-09-11 Sun> Maths][<2016-09-11 Sun>]] |         |      |         |       |        |    1 |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-09-13 Tue> Haskell, Category Theory][<2016-09-13 Tue>]] |       1 |      |         |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-09-14 Wed> Emacs Progress Matrix][<2016-09-14 Wed>]] |       1 |      |         |     1 |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-09-15 Thu> Houdini Lorenz][<2016-09-15 Thu>]] |         |      |       1 |       |        |      |     |     |        |       |         |             |       |         |       |       |
+| [[*<2016-09-16 Fri> Category Theory for Haskell programmers][<2016-09-16 Fri>]] |       1 |      |         |     1 |        |    1 |     |     |        |       |         |           1 |       |         |       |       |
+| [[*<2016-09-19 Mon> Continue with Houdini Fluids][<2016-09-19 Mon>]] |         |      |       1 |       |        |      |     |     |        |       |         |             |       |         |       |       |
+|                  |       1 |      |       1 |       |        |      |     |     |        |       |         |             |       |         |       |       |
+|------------------+---------+------+---------+-------+--------+------+-----+-----+--------+-------+---------+-------------+-------+---------+-------+-------|
+#+TBLFM: @2$2=vsum(@4..@>)::@2$3=vsum(@4..@>)::@2$5=vsum(@4..@>)::@2$4=vsum(@4..@>)::@2$6=vsum(@4..@>)::@2$7=vsum(@4..@>)::@2$8=vsum(@4..@>)::@2$9=vsum(@4..@>)::@2$10=vsum(@4..@>)::@2$11=vsum(@4..@>)::@2$12=vsum(@4..@>)::@2$13=vsum(@4..@>)::@2$15=vsum(@4..@>)::@2$16=vsum(@4..@>)::@2$14=vsum(@4..@>)::@2$17=vsum(@4..@>)::@3$2=(@2$2/@2$1)*100;%.1f::@3$3=(@2$3 /@2$1)*100;%.1f::@3$5=(@2$5 /@2$1)*100;%.1f::@3$4=(@2$4 /@2$1)*100;%.1f::@3$6=(@2$6 /@2$1)*100;%.1f::@3$7=(@2$7 /@2$1)*100;%.1f::@3$8=(@2$8 /@2$1)*100;%.1f::@3$9=(@2$9 /@2$1)*100;%.1f::@3$10=(@2$10/@2$1)*100;%.1f::@3$11=(@2$11/@2$1)*100;%.1f::@3$12=(@2$12/@2$1)*100;%.1f::@3$13=(@2$13/@2$1)*100;%.1f::@3$15=(@2$15/@2$1)*100;%.1f::@3$16=(@2$16/@2$1)*100;%.1f::@3$14=(@2$14/@2$1)*100;%.1f::@3$17=(@2$17/@2$1)*100;%.1f::@2$1='(apply '+ '($2..$>));N
 
 * History
 ** [2015-01-12 Mon]                                                  :python:
@@ -1788,9 +1907,9 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
     [[/home/madjestic/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP/Main.hs]]
     
 
-*** TODO : Read the Red Book:
+*** TODO [#B] : Read the Red Book:
     [[file:~/Documents/opengl_programming_guide_8th_edition.pdf]]
-*** TODO : Read the book of shaders as a supplement:
+*** TODO [#B] : Read the book of shaders as a supplement:
     http://patriciogonzalezvivo.com/2015/thebookofshaders/00/
 *** TODO [#D] : Take a look at GPipe, it seems like an interesting way to handle OpenGL
     http://tobbebex.blogspot.nl/2015/09/gpu-programming-in-haskell-using-gpipe.html
@@ -1806,13 +1925,13 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
     Ribbon Switch https://www.tapeswitch.com/onlinestore/products.php?cat=11
     http://razzpisampler.oreilly.com/ch07.html Connecting a Push Switch tutorial
     
-*** TODO : Ecosystem sim:
+*** TODO [#C] : Ecosystem sim:
     [[/home/madjestic/Projects/Houdini/Ecosystem/Model.hipnc]]
 
 ** <2016-04-29 Fri>                                           :houdini:vfx:
    I am trying to establish an efficient way to work with Houdini, using emacs
 *** DONE : create a houdini-starting script for emacs, solve urxvt
-*** TODO : continue working on waterfall example
+*** TODO [#B] : continue working on waterfall example
 **** DONE : catch up on the latest fluid test examples:
      [[file:~/Projects/Houdini/Fluids/fluids_test]]
      it looks like the closest I've got to a waterfall is this:
@@ -1820,7 +1939,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 
 ** <2016-05-04 Wed>
    file:~/Projects/Houdini/Fluids/Fluid_Test_00/Model.hipnc - a waterfall test
-/home/madjestic/Desktop/cloth_test.hipnc
+   /home/madjestic/Desktop/cloth_test.hipnc
 ** <2016-05-06 Fri>
    reading [[file:~/Documents/Linux_Format_March_2016.pdf]]
    p.62 LXF208 March 2016 - OwnCloud 8.0 with RaspberryPi
@@ -1887,14 +2006,15 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    λ> 2 `isIn` SameTuple (3, 4)
    False
 ** <2016-05-12 Thu>
+   @->[[[*<2016-05-11 Wed>][<2016-05-11 Wed>]]]
    an example with categories seems to work.
    Now I need to procede with visualizing it:
 
    visualize cats as squares
    visualize arrows as lines, connecting squares
-*** TODO : visualize cats as squares
-*** TODO : visualize arrows as lines, connecting squares
-*** TODO (extra) : anti-alias the primitives.
+*** TODO [#B] : visualize cats as squares
+*** TODO [#B] : visualize arrows as lines, connecting squares
+*** TODO [#C] : (extra) : anti-alias the primitives.
 ** <2016-05-13 Fri>                                          :haskell:opengl:
    https://github.com/tobbebex/GPipe-Core - functional opengl in haskell
 ** <2016-05-17 Tue>
@@ -2009,7 +2129,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    http://book.realworldhaskell.org/
    http://unbui.lt/#!/post/haskell-parsec-basics
    http://unbui.lt/#!/post/haskell-another-lens-tutorial
-*** TODO : Look into Haskell Parsers
+*** DONE : Look into Haskell Parsers
 ** <2016-06-12 Sun>                       :haskell:entropy:FRP:houdini:emacs:
    @->[[[*FRP][FRP]]]
    I ended up with OpenGL animation 'sort of working' - buffer update is busted and I should attempt to 
@@ -2035,7 +2155,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
     https://www.emacswiki.org/emacs/WebKit
 *** DONE : test todo 'Scheduled' setting
     SCHEDULED: <2016-06-13 Mon>
-*** TODO : Continue reading :   [[file:~/Documents/GNU_Linux_Application_Programming.chm]]
+*** TODO [#C] : Continue reading :   [[file:~/Documents/GNU_Linux_Application_Programming.chm]]
 *** DONE : Finish bringing cuboid code bits, according to Jekor's video:
     https://www.youtube.com/watch?v=T3xXebIr8AM
     [[file:~/Projects/Haskell/FRP/cuboid]]
@@ -2044,7 +2164,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 ** <2016-06-13 Mon>                                                 :houdini:
    [[*MARVE][MARVE]]
    [[file:~/Projects/Houdini/MARVE/model.hipnc]]
-** <2016-06-14 Tue> Idiots never give up!
+** <2016-06-14 Tue> Idiots never give up!                     :houdini:emacs:
    M-x load-jabber
    M-x jabber-connect
    M-x jabber-display-roster
@@ -2061,8 +2181,8 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
     SCHEDULED: <2016-06-14 Tue>
 *** DONE : Tell Hok that he is a Barmaly
     SCHEDULED: <2016-06-15 Wed> 
-** <2016-06-15 Wed> Mathematical Methods for Quantitative Finance     :MARVE:
-   out@[[[*MARVE][MARVE]]]
+** <2016-06-15 Wed> Mathematical Methods for Quantitative Finance, Marve, Houdini :MARVE:houdini:
+   @->[[[*MARVE][MARVE]]]
    a course @coursera https://www.coursera.org/course/mathematicalmethods
 
    continuing with [[*MARVE][MARVE]] :
@@ -2071,7 +2191,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    [[file:~/Projects/Houdini/MARVE/3d-coat/model.3b]]
    [[file:~/Projects/Houdini/MARVE/model.hipnc]]
 
-** <2016-06-16 Thu>                                              :AI:haskell:
+** <2016-06-16 Thu> Dual Univers, Haskell, AI                    :AI:haskell:
    out@[[[*AI][AI]]]
    http://www.dualthegame.com/careers
    Novaquark, Dual Univers, space sandbox game.
@@ -2116,10 +2236,10 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
      [[file:~/DAGGERFALL]]
      [[file:~/DAGGERFALL/daggerfall_legal_and_installation.pdf]]
 ** <2016-06-23 Thu> IDO                                               :emacs:
-*** TODO : set up emacs ido mode
+*** TODO [#C] : set up emacs ido mode
 ** <2016-06-24 Fri>
    busy with [[*FRP][FRP]]
-** <2016-06-25 Sat>
+** <2016-06-25 Sat> Haskell FRP, Yampa, OpenGL
    @->[[[*FRP][FRP]]]
    [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
 
@@ -2163,7 +2283,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
                               arrays (one-dimensional)
                               objects
 
-*** TODO : GLFW-b : b1 need to be converted from GLFW to GLFW-b: study b1 source-code meanwhile
+*** TODO [#C] : GLFW-b : b1 need to be converted from GLFW to GLFW-b: study b1 source-code meanwhile
     https://wiki.haskell.org/GLFW
     http://www.glfw.org/docs/latest/input_guide.html
 *** TODO [#D] : Look into REPA
@@ -2197,7 +2317,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
     http://gnclmorais.com/blog/aeson-and-nested-json/
     [[file:~/Projects/Haskell/Parser/Aeson/Flickr.hs]]
 ** <2016-07-16 Sat> Houdini Geo parser                      :haskell:houdini:
-*** TODO : Parse a Houdini Cube example:
+   @->[[[*: Continue with Haskell Parsing][: Continue with Haskell Parsing]]]
     [[file:~/Projects/Haskell_Parser/Parser/Model.hipnc]]
     [[file:~/Projects/Haskell_Parser/Parser/export/model.geo]]
     [[file:~/Projects/Haskell/Parser/Aeson/Geo.hs]] - Haskell 
@@ -2247,7 +2367,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    April 15, 1989 Income tax due.
    &* 15       time cards due.
    
-*** TODO : write about Parsec/Trifecta differnce on blog.
+*** TODO [#C] : write about Parsec/Trifecta differnce on blog.
 ** <2016-07-28 Thu> Fabric Engine:
 *** TODO [#D] : finish a Fabric Engine tutorial when I've got nothing else to do.
    http://docs.fabric-engine.com/FabricEngine/2.3.0/HTML/GettingStartedGuide/canvastutorials.html
@@ -2255,7 +2375,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    https://www.raspberrypi.org/documentation/
 ** <2016-08-07 Sun> Org-mode images
    C-c C-x C-v org-mode-toggle-inline-images
-** <2016-08-08 Mon>
+** <2016-08-08 Mon> Machine Learning                                     :ai:
    [[file:~/Documents/A%20'Brief'%20History%20of%20Neural%20Nets%20and%20Deep%20Learning,%20Part%201%20%E2%80%93%20Andrey%20Kurenkov's%20Web%20World.html][file:~/Documents/A 'Brief' History of Neural Nets and Deep Learning, Part 1 – Andrey Kurenkov's Web World.html]]
    (local files, html copies), etc.
 ** <2016-08-18 Thu> X3: Litcube mods:
@@ -2264,7 +2384,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    [[file:~/Downloads/CockpitmodNGforLU.zip][file:~/Downloads/CockpitmodNGforLU.zip]] - cockpit mod.
 
 ** <2016-08-19 Fri> Anki, Dutch, Tesaurus
-*** TODO : Continue converting [[file:~/Documents/Dutch/Vocabulary/total.kvtml][file:~/Documents/Dutch/Vocabulary/total.kvtml]] into Anki
+*** TODO [#A] : Continue converting [[file:~/Documents/Dutch/Vocabulary/total.kvtml][file:~/Documents/Dutch/Vocabulary/total.kvtml]] into Anki
 ** <2016-08-21 Sun> HaskellBook
 *** Notes on HaskellBook:
     Polymorphism in Haskell means being able to write code in terms
@@ -2313,9 +2433,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
    [[file:~/Projects/Houdini/POPs/n_body_collide.hipnc][file:~/Projects/Houdini/POPs/n_body_collide.hipnc]]
 ** <2016-08-24 Wed> Parsers, Backup, Fixing sink
    @->[[[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]]
-   @<-[]
-*** DONE : Continue working on Haskell Parser
-    DEADLINE: <2016-08-24 Wed>
+*** IN-PROGRESS : Continue working on Haskell Parser
     @<-[[[*<2016-07-27 Wed> Continue with Parsers][<2016-07-27 Wed> Continue with Parsers]]]
     @->[[[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]]
     "Understanding the parsing process", p.918
@@ -2326,77 +2444,13 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
 *** DONE : Fill in the holes betwee the tiles near the sink with fugas (in the schoor)
     DEADLINE : <2016-08-24 Wed>
 *** DONE [#A] : Backup pictures from MacBookPro to a HDD
-*** TODO [#A] : Clone the backup HDD    
+*** DONE [#A] : Clone the backup HDD    
     SCHEDULED: <2016-09-05 Mon>
 ** <2016-08-25 Thu> Continue with parsing:
-   <2016-08-26 Fri>
-   <2016-08-28 Sun>
-   <2016-08-30 Tue>
-   <2016-09-02 Fri>
-   <2016-09-04 Sun>
-   @<-[[[*: Continue working on Haskell Parser][: Continue working on Haskell Parser]]
-       [[*: Continue with Haskell Parsing][: Continue with Haskell Parsing]]
-   ]
-   @->[
-   [[*Parsing][Parsing]]
-   ]
-*** Continue with Parsers:
-    @<-[[[*: Continue working on Haskell Parser][: Continue working on Haskell Parser]]
-    ]
-    @->[[[*Parsing][Parsing]]]
-    
-    A parser combinator is a higher-order function that takes parsers
-    as input and reqqturns a new parser as output. You may remember
-    our brief discussion of combinators way back in the lambda calculus
-    chapter. Combinators are expressions with no free variables.
-
-    Among other things,
-    combinators allow for recursion and for gluing together parsers in a
-    modular fashion to parse data according to complex rules.
-    
-    Since we didn’t use an analogy for Monad
-    p923
-
-**** PROGRESS: finished working on reading a file as a ByteString and converting to String ([Char])
-
-{-# LANGUAGE FlexibleContexts #-}
-module Maine where
-
-import qualified Text.Parsec  as Parsec
-import qualified Data.ByteString.Lazy.Char8 as BC       
-import qualified Data.ByteString.Lazy as B       
-
-parse rule text = Parsec.parse rule "source" text  
-                               
-jsonFile :: FilePath
-jsonFile = "model.geo"            
-
-getJson :: IO B.ByteString
-getJson = B.readFile jsonFile          
-
-main = do
-  text <- getJson
-  putStrLn $ BC.unpack text -- here file gets read as a bytesting and byte8
-                            -- representation is converted into [Char]
-    
-**** PROGRESS: finished a basic setup:
-**** continue with parser combinators, parsing the geo file
-     [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/Main.hs][file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/Main.hs]]
-
-**** Study material:
-    [[/home/madjestic/Documents/haskell-programming-0.11.2-screen.pdf]]
-    http://unbui.lt/#!/post/haskell-parsec-basics
-    [[file:~/Downloads/examples.hs][file:~/Downloads/examples.hs]]
-
-**** Work material:
-    [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/Main.hs]]
-    [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/ByteSring.hs][file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/ByteSring.hs]]
-
-    [[file:~/Projects/Haskell/Parser/Trifecta/LearnParsers.hs]]
-    [[file:~/Projects/Houdini/Parser/Parser/export/model.geo][file:~/Projects/Houdini/Parser/Parser/export/model.geo]] - Houdini cube geometry
-    [[/home/madjestic/Projects/Haskell/Parser/Parsec/Pizza.hs]]
-
-    
+   [[*: Continue working on Haskell Parser][: Continue working on Haskell Parser]]
+** <2016-08-26 Fri> [[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]   
+** <2016-08-28 Sun> [[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]
+** <2016-08-30 Tue> [[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]
 ** <2016-08-31 Wed> Rust language
    The language looks like an intersting blend between C and Haskell.
    https://www.reddit.com/r/haskell/comments/47rjr4/comparing_haskell_and_rust_which_to_choose_when/
@@ -2449,7 +2503,8 @@ echo "Installation Complete"
 *** TODO [#A] : Continue with Haskell Parsing
     @->[[[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]]
 
-** <2016-09-04 Sun> Houdini Ocean, CmiVFX
+** <2016-09-04 Sun> Houdini Ocean, Haskell Parsers
+*** Houdini Ocean, CmiVFX
    @->[[[*: Create Ocean effect in Houdini][: Create Ocean effect in Houdini]]
    ]
 
@@ -2457,10 +2512,9 @@ echo "Installation Complete"
    /home/madjestic/Projects/Houdini/Ocean/initial.hipnc
    [[file:~/Projects/Houdini/Ocean][file:~/Projects/Houdini/Ocean]]
 
-** <2016-09-04 Sun>
    @->[[[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]
    ]
-** <2016-09-05 Mon> Jad Nohra gitHub
+** <2016-09-05 Mon> Jad Nohra gitHub                            :programming:
    https://github.com/jadnohra/tag
    https://github.com/jadnohra/learn
 
@@ -2483,8 +2537,7 @@ echo "Installation Complete"
 
    [[/home/madjestic/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/][/home/madjestic/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/]]
 
-** <2016-09-06 Tue> Guns Germs and Steal, Haskell Parser
-
+** <2016-09-06 Tue> Guns Germs and Steal, Haskell Parser    :haskell:history:
 *** Reading Guns Germs and Steal
    [[file:~/Documents/Jared%20Diamond%20-%20Guns%20Germs%20and%20Steel.pdf][file:~/Documents/Jared Diamond - Guns Germs and Steel.pdf]]
 
@@ -2575,13 +2628,60 @@ data Geo = Geo { fileversion :: String
 --      bar <- parse1 (fileVersion) text
 --      print $ toString bar     
 
-** <2016-09-07 Wed>
+** <2016-09-07 Wed> Parsers, Manstein plan :history:
 *** TODO [#D] : Read about Manstein plan on wiki
     https://en.wikipedia.org/wiki/Manstein_Plan
 
-*** TODO [#A] : Refactor GeoParser with Trifecta:
+*** TODO [#C] : Refactor GeoParser with Trifecta:
     SCHEDULED : <2016-09-07 Wed> <2016-09-08 Thu>
     [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/GeoParserTrifecta.hs][file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/GeoParserTrifecta.hs]]
     [[file:~/Projects/Haskell/Parser/Trifecta/LearnParsers.hs]]
     [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/model.geo][file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/model.geo]]
     
+** <2016-09-09 Fri> Parsers progress, Fluids                :haskell:houdini:
+
+   [[file:img/parsing_progress_00.png][file:~/org/img/parsing_progress_00.png]]
+   - it seems like most basics are covered (short of aeson).
+     I should continue with parsing the geo file in one go,
+     populating relevant data structure in the process,
+     returning the resulting data.
+     [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/GeoParser.hs]]
+
+    [[/home/madjestic/Documents/cmiVFX%20-%20Houdini%20Advanced%20FLIP%20Fluid%20Systems/cmivfx%20Houdini%20AdFLIP.mp4]]
+    @->[[[*<2016-09-10 Sat>][<2016-09-10 Sat>]]]
+
+** <2016-09-10 Sat>
+   stopped at 9:02 @->[[[*Fluids][Fluids]]]
+** <2016-09-11 Sun> Maths :math:
+** <2016-09-12 Mon> cont.
+   Reading G.H.Hardy "A Mathematician's Apology" :
+   [[file:~/Documents/Hardy-AMathematiciansApology.pdf][file:~/Documents/Hardy-AMathematiciansApology.pdf]] p.101
+   Appearance and Reality. F.H.Bradley
+** <2016-09-13 Tue> Haskell, Category Theory
+   Bartosz Milewski, Category Theory 1.2
+   https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/
+   https://www.youtube.com/watch?v=p54Hd7AmVFU&list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_&index=2
+** <2016-09-14 Wed> Emacs Progress Matrix
+*** DONE : set up formulas for Progress Matrix   
+    http://orgmode.org/org.html#Advanced-features vsum
+    [[*Progress Matrix][Progress Matrix]]
+** <2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids
+   [[file:~/Projects/Houdini/Lorenz/lorenz.hipnc][file:~/Projects/Houdini/Lorenz/lorenz.hipnc]] - made it pretty, just hit play
+
+   @<-[[[*: Create Ocean effect in Houdini][: Create Ocean effect in Houdini]]]
+   [[file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/model.hipnc][file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/model.hipnc]]
+   [[file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/cmivfx_Houdini_AdFLIP.mp4][file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/cmivfx_Houdini_AdFLIP.mp4]] 22:54
+   /home/madjestic/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/PRJ_Houdini_FLIP_Fluid_Systems/PRJ_Houdini_Ocean_Waves/chapter_1/houdini_files
+   [[file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/PRJ_Houdini_FLIP_Fluid_Systems/PRJ_Houdini_Ocean_Waves/chapter_1/houdini_files/ocean_waves_v02.hip][file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/PRJ_Houdini_FLIP_Fluid_Systems/PRJ_Houdini_Ocean_Waves/chapter_1/houdini_files/ocean_waves_v02.hip]]
+
+** <2016-09-16 Fri> Category Theory for Haskell programmers
+*** DONE [#A] : Finish prioritizing tasks in Agenda mode   
+*** TODO [#B] : Continue with watching Category Theory for Haskell programmers
+   https://youtu.be/p54Hd7AmVFU?t=1594
+** <2016-09-19 Mon> Continue with Houdini Fluids
+   @->[[[*<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids][<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids]]]
+   file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/cmivfx_Houdini_AdFLIP.mp4 15:06
+** <2016-09-21 Wed> Haskell Parsers, Houdini fluids
+   @->[[[*Parsers][Parsers]]
+       [[*Haskell GeoParser:][Haskell GeoParser:]]
+       [[*<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids][<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids]]]
