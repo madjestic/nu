@@ -1,6 +1,7 @@
 (add-to-list 'load-path "/home/madjestic/Projects/structured-haskell-mode/elisp")
-(require 'shm)
-(structured-haskell-mode t)
+;; (require 'shm)
+;; (structured-haskell-mode t)
+(ghc-core-mode)
 
 (custom-set-variables
  '(haskell-stylish-on-save t)

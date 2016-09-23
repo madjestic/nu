@@ -2685,3 +2685,5 @@ data Geo = Geo { fileversion :: String
    @->[[[*Parsers][Parsers]]
        [[*Haskell GeoParser:][Haskell GeoParser:]]
        [[*<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids][<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids]]]
+** <2016-09-23 Fri> Haskell, JSON, parser
+   https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json - pizza example

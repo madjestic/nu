@@ -9,8 +9,12 @@ import qualified Data.ByteString.Lazy as B
 
 data Geo = 
      Geo
-       { fileversion :: String
-       , hasindex    :: String 
+       { fileversion    :: String 
+       , hasindex       :: String 
+       , pointcount     :: String 
+       , vertexcount    :: String
+       , primitivecount :: String
+       , info           :: Info
        } deriving Show
 
 data Info =
@@ -91,66 +95,6 @@ matchString a =
     P.manyTill P.anyChar (P.string a)
     return ()
   
-
-fileVersion :: P.ParsecT String () Identity ([Char])
-fileVersion =
-  do
-    matchString "fileversion" >> slash >> comma >> slash
-    majorVer <- P.many1 P.digit
-    dot
-    minorVer <- P.many1 P.digit
-    dot
-    buildVer <- P.many1 P.digit
-    let result = majorVer ++ "." ++ minorVer ++ "." ++ buildVer
-    return result
-
-hasIndex :: P.ParsecT String () Identity [Char]
-hasIndex = 
-  do
-    matchString "hasindex" >> slash >> comma
-    indexVal <- P.many1 P.letter
-    return (indexVal)
-
-pointCount :: P.ParsecT String () Identity [Char]
-pointCount = 
-  do
-    matchString "pointcount" >> slash >> comma
-    pointcount <- P.many1 P.digit
-    return (pointcount)
-
-vertexCount :: P.ParsecT String () Identity [Char]
-vertexCount = 
-  do
-    P.try (matchString "vertexcount") <|> (matchString "fileversion" >> matchString "vertexcount")
-    slash >> comma
-    vertexcount <- P.many1 P.digit
-    return (vertexcount)
-  
-primitiveCount :: P.ParsecT String () Identity [Char]
-primitiveCount = 
-  do
-    P.try (matchString "primitivecount") <|> (matchString "pointcount" >> matchString "primitivecount") >> slash >> comma
-    pointcount <- P.many1 P.digit
-    return (pointcount)
-
-infoVal =
-  do
-    fileVersion >> hasIndex >> pointCount >> vertexCount >> primitiveCount
-    matchString "info"
-  
-    matchString "software" >> slash >> semicol >> slash
-    software <- P.many1 P.letter
-    P.spaces
-    majorVer <- P.many1 P.digit
-    dot
-    minorVer <- P.many1 P.digit
-    dot
-    buildVer <- P.many1 P.digit
-    let formatted = software ++ " " ++ majorVer ++ "." ++ minorVer ++ "." ++ buildVer
-  
-    let result = ( Info formatted )
-    return (result)  
-
 -- | I should probably parse it on one go, populating a respective
 -- | data structure with relevant data.
 geoParser = 
@@ -165,8 +109,38 @@ geoParser =
 
     matchString "hasindex" >> slash >> comma
     index <- P.many1 P.letter
+  
+    matchString "pointcount" >> slash >> comma
+    pointcount <- P.many1 P.digit
 
-    return ( Geo fileversion index )
+    P.try (matchString "vertexcount") <|> (matchString "fileversion" >> matchString "vertexcount")
+    slash >> comma
+    vertexcount <- P.many1 P.digit
+  
+    P.try (matchString "primitivecount") <|> (matchString "pointcount" >> matchString "primitivecount") >> slash >> comma
+    primitivecount <- P.many1 P.digit
+
+    matchString "info"
+    matchString "software" >> slash >> semicol >> slash
+    software <- P.many1 P.letter
+    P.spaces
+    majorVer <- P.many1 P.digit
+    dot
+    minorVer <- P.many1 P.digit
+    dot
+    buildVer <- P.many1 P.digit
+    let softwareFormatted =
+          software ++ " " ++ majorVer ++ "." ++ minorVer ++ "." ++ buildVer
+
+    return ( Geo 
+               fileversion
+               index                  
+               pointcount             
+               vertexcount            
+               primitivecount
+               ( Info
+                   softwareFormatted )
+           )  
 
 main :: IO ()
 main = 
@@ -175,18 +149,6 @@ main =
     let text1 = lines text
     mapM_ print text1
 
-    fileversion    <- parse (fileVersion)    text
-    index          <- parse (hasIndex)       text
-    pointcount     <- parse (pointCount)     text
-    vertexcount    <- parse (vertexCount)    text
-    primitivecount <- parse (primitiveCount) text
-    info           <- parse (infoVal)        text
-
-    putStrLn $ toString fileversion
-    putStrLn $ toString index
-    putStrLn $ toString pointcount
-    putStrLn $ toString vertexcount
-    putStrLn $ toString primitivecount
-    print $ info
-
+    foo <- parse (geoParser) text
+    print foo
 
