@@ -1,7 +1,6 @@
-(add-to-list 'load-path "/home/madjestic/Projects/structured-haskell-mode/elisp")
+;; (add-to-list 'load-path "/home/madjestic/Projects/structured-haskell-mode/elisp")
 ;; (require 'shm)
 ;; (structured-haskell-mode t)
-(ghc-core-mode)
 
 (custom-set-variables
  '(haskell-stylish-on-save t)
@@ -42,5 +41,5 @@
 
 (define-key haskell-mode-map (kbd "C-c D") 'haskell-hoogle)
 
-(paredit-mode t)
 (smartparens-mode t)
+(paredit-mode t)

@@ -1404,7 +1404,7 @@ Thu Apr 24 17:56:30 CEST 2014 [[https://github.com/madjestic/reactive-banana/blo
     Jekor, Yampa:
     https://youtu.be/-IpE0CyHK7Q?t=425 - Jekor's yampa tutorial part 1
     https://youtu.be/T3xXebIr8AM?t=980 - Jekor's yampa tutorial part 2
-    Yampy Cube:
+    Yampy Cube: (flappy bird clone in Haskell)
     https://youtu.be/T7XwTolu9YI?t=2506
 
     [[file:~/Projects/Haskell/yampaTutorial/yampa.pdf]]
@@ -2675,6 +2675,7 @@ data Geo = Geo { fileversion :: String
    [[file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/PRJ_Houdini_FLIP_Fluid_Systems/PRJ_Houdini_Ocean_Waves/chapter_1/houdini_files/ocean_waves_v02.hip][file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/PRJ_Houdini_FLIP_Fluid_Systems/PRJ_Houdini_Ocean_Waves/chapter_1/houdini_files/ocean_waves_v02.hip]]
 
 ** <2016-09-16 Fri> Category Theory for Haskell programmers
+   @->[[[*<2016-09-28 Wed> Parsec links, Category Theory][<2016-09-28 Wed> Parsec links, Category Theory]]]
 *** DONE [#A] : Finish prioritizing tasks in Agenda mode   
 *** TODO [#B] : Continue with watching Category Theory for Haskell programmers
    https://youtu.be/p54Hd7AmVFU?t=1594
@@ -2687,3 +2688,31 @@ data Geo = Geo { fileversion :: String
        [[*<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids][<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids]]]
 ** <2016-09-23 Fri> Haskell, JSON, parser
    https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json - pizza example
+** <2016-09-26 Mon> Credit Cards, BF2142
+   https://www.icscards.nl/abnamrogb/login
+   Login to ABNAmro -> Tools -> Credit Cards Online
+
+   https://www.gnu.org/software/emacs/manual/html_node/emacs/Position-Registers.html marker registers position
+
+   https://battlelog.co/post.php?id=14194 BF2142
+** <2016-09-28 Wed> Parsec links, Category Theory
+   @<-[[[*<2016-09-16 Fri> Category Theory for Haskell programmers][<2016-09-16 Fri> Category Theory for Haskell programmers]]]
+   https://github.com/madjestic/nu/blob/master/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/GeoParser.hs
+   https://artyom.me/aeson
+   http://book.realworldhaskell.org/read/using-parsec.html
+   https://gist.github.com/zearen-wover/1692518
+   http://newartisans.com/2012/08/parsing-with-haskell-and-attoparsec/
+   http://stackoverflow.com/questions/2705386/parsec-haskell-lists
+   https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/attoparsec
+   https://hackage.haskell.org/package/parsec-3.1.11/docs/src/Text.Parsec.Char.html#oneOf
+   http://unbui.lt/#!/post/haskell-parsec-basics
+   
+   https://goo.gl/Vm5K7e Category Theory 2.1
+   epic  - surjectiv
+   monic - injective
+
+   epimorphism
+   monomorphism
+   https://www.youtube.com/watch?v=aZjhqkD6k6w Category Theory 3.1
+
+   Emacs folding mode (yafolding-mode) M-RET - yafolding-toggle-element

@@ -1,5 +1,5 @@
 {-# LANGUAGE FlexibleContexts #-}
-module GeoParserTrifecta where
+module GeoParser where
 
 import qualified Text.Parsec as P
 import qualified Data.ByteString.Lazy.Char8 as BC       
@@ -20,15 +20,38 @@ data Geo =
 data Info =
      Info 
        { software    :: String
-       -- , hostname    :: String
-       -- , artist      :: String
-       -- , timetocook  :: String
-       -- , date        :: String
-       -- , time        :: String
-       -- , bounds      :: String
-       -- , prim_sum    :: String
-       -- , attr_sum    :: String 
+       , hostname    :: String
+       , artist      :: String
+       , date        :: String
+       , time        :: String
+       , bounds      :: [Double]
+       , primsum     :: (Integer, String)
+       -- , attrsum     :: String
        } deriving Show
+
+csv :: P.Parsec String () ()
+csv = 
+  do
+    P.endBy line closedScBr
+    return ()
+
+line :: P.Parsec String () ()
+line = 
+  do
+    P.sepBy cell (P.char ',')
+    return ()
+
+cell :: P.Parsec String () ()
+cell = 
+  do
+    (P.many P.digit) <|> P.many (P.noneOf ",\n[]")
+    return ()
+    
+eol :: P.Parsec String () ()
+eol =
+  do
+    P.char '\n'
+    return ()
 
 jsonFile :: FilePath
 jsonFile = "model.geo"            
@@ -71,11 +94,17 @@ comma =
     P.spaces
     return ()
   
-slash :: P.Parsec String () ()
-slash = 
+quotes :: P.Parsec String () ()
+quotes = 
   do
     P.char '\"'
     return ()
+
+dash :: P.Parsec String () ()
+dash = 
+  do
+    P.char '-'
+    return ()    
 
 newline :: P.Parsec String () ()  
 newline =
@@ -83,11 +112,23 @@ newline =
     P.char '\n'
     return ()
 
-semicol :: P.Parsec String () ()  
-semicol =
+col :: P.Parsec String () ()  
+col =
   do
     P.char ':'
     return ()
+
+openScBr :: P.Parsec String () ()
+openScBr =
+  do
+    P.char '['
+    return ()
+
+closedScBr :: P.Parsec String () ()
+closedScBr =
+  do
+    P.char ']'
+    return ()    
 
 matchString :: P.Stream s m Char => String -> P.ParsecT s u m ()
 matchString a =
@@ -99,48 +140,92 @@ matchString a =
 -- | data structure with relevant data.
 geoParser = 
   do
-    matchString "fileversion" >> slash >> comma >> slash
-    majorVer <- P.many1 P.digit
-    dot
-    minorVer <- P.many1 P.digit
-    dot
-    buildVer <- P.many1 P.digit
+    matchString "fileversion" >> quotes >> comma >> quotes
+    majorVer     <- P.many1 P.digit
+    dot             
+    minorVer     <- P.many1 P.digit
+    dot             
+    buildVer     <- P.many1 P.digit
     let fileversion = majorVer ++ "." ++ minorVer ++ "." ++ buildVer
 
-    matchString "hasindex" >> slash >> comma
+    matchString "hasindex" >> quotes >> comma
     index <- P.many1 P.letter
   
-    matchString "pointcount" >> slash >> comma
-    pointcount <- P.many1 P.digit
+    matchString "pointcount" >> quotes >> comma
+    pointcount   <- P.many1 P.digit
 
     P.try (matchString "vertexcount") <|> (matchString "fileversion" >> matchString "vertexcount")
-    slash >> comma
-    vertexcount <- P.many1 P.digit
+    quotes >> comma
+    vertexcount  <- P.many1 P.digit
   
-    P.try (matchString "primitivecount") <|> (matchString "pointcount" >> matchString "primitivecount") >> slash >> comma
-    primitivecount <- P.many1 P.digit
+    P.try (matchString "primitivecount") <|> (matchString "pointcount" >> matchString "primitivecount") >> quotes >> comma
+    primcount    <- P.many1 P.digit
 
     matchString "info"
-    matchString "software" >> slash >> semicol >> slash
-    software <- P.many1 P.letter
+    matchString "software" >> quotes >> col >> quotes
+    softwareName <- P.many1 P.letter
     P.spaces
-    majorVer <- P.many1 P.digit
-    dot
-    minorVer <- P.many1 P.digit
-    dot
-    buildVer <- P.many1 P.digit
-    let softwareFormatted =
-          software ++ " " ++ majorVer ++ "." ++ minorVer ++ "." ++ buildVer
+    majorVer     <- P.many1 P.digit 
+    dot                             
+    minorVer     <- P.many1 P.digit   
+    dot                               
+    buildVer     <- P.many1 P.digit 
+    let software =
+          softwareName ++ " " ++ majorVer ++ "." ++ minorVer ++ "." ++ buildVer
 
+    matchString "hostname" >> quotes >> col >> quotes
+    hostname     <- P.many1 P.letter
+
+    matchString "artist" >> quotes >> col >> quotes
+    artist       <- P.many1 P.letter
+
+    matchString "date" >> quotes >> col >> quotes
+    year         <- P.many1 P.digit
+    dash
+    month        <- P.many1 P.digit
+    dash
+    day          <- P.many1 P.digit
+    P.spaces 
+    hours        <- P.many1 P.digit
+    col
+    minutes      <- P.many1 P.digit
+    col
+    seconds      <- P.many1 P.digit
+
+    let date     = year ++ "-" ++ month ++ "-" ++ day        
+                   ++ " " ++                                 
+                   hours ++ ":" ++ minutes ++ ":" ++ seconds 
+
+    matchString "time" >> quotes >> col
+    time         <- P.many1 P.digit
+
+    matchString "bounds" >> quotes >> col >> openScBr
+    bounds'      <- P.sepBy (P.many (P.oneOf "-.0123456789")) comma
+    let bounds   = fmap read bounds'
+
+    matchString "primcount_summary" >> quotes >> col >> quotes
+    P.spaces
+    primsum      <- P.many1 P.digit
+    P.spaces
+    primsum'    <- P.many1 P.letter
+    
     return ( Geo 
                fileversion
                index                  
                pointcount             
                vertexcount            
-               primitivecount
+               primcount
                ( Info
-                   softwareFormatted )
-           )  
+                   software
+                   hostname
+                   artist
+                   date
+                   time
+                   bounds
+                   (read primsum, primsum')
+               )
+           )
+
 
 main :: IO ()
 main = 

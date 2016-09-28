@@ -38,6 +38,7 @@
             (ghc-init)
 						(load-haskell)
 						(load-helm)))
+            
 
 (add-hook 'circe-mode-hook
           (lambda()
