@@ -46,8 +46,8 @@ instance FromJSON FlickResponce where
   parseJSON (Object v) =
     FlickResponce
       <$> v .: "suka"
-      <*> v .: "photoset"
-      <*> v .: "stat"
+      -- <*> v .: "photoset"
+      -- <*> v .: "stat"
 
 
 data Photoset =

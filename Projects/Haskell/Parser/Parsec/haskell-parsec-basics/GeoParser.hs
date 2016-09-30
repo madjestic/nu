@@ -1,3 +1,4 @@
+{-# LANGUAGE OverloadedStrings #-}
 {-# LANGUAGE FlexibleContexts #-}
 module GeoParser where
 
@@ -5,29 +6,58 @@ import qualified Text.Parsec as P
 import qualified Data.ByteString.Lazy.Char8 as BC       
 import Control.Applicative
 import Control.Monad.Identity (Identity)
-import qualified Data.ByteString.Lazy as B       
+import Control.Monad (mzero)
+import Data.Aeson
+import qualified Data.ByteString.Lazy as B
+import Data.Text (Text)
 
 data Geo = 
      Geo
-       { fileversion    :: String 
-       , hasindex       :: String 
-       , pointcount     :: String 
-       , vertexcount    :: String
-       , primitivecount :: String
-       , info           :: Info
+       { fileversion :: String 
+       , pointcount  :: String 
+       , hasindex    :: String 
+       , vertexcount :: String 
+       , primcount   :: String 
+       , info        :: Info
+       , topolology  :: String
+       } deriving    Show            
+                     
+data Info =          
+     Info            
+       { software    :: String            
+       , hostname    :: String            
+       , artist      :: String            
+       , date        :: String            
+       , time        :: String            
+       , bounds      :: [Double]          
+       , primsum     :: (Integer, String) 
+       , attrsum     :: String 
        } deriving Show
 
-data Info =
-     Info 
-       { software    :: String
-       , hostname    :: String
-       , artist      :: String
-       , date        :: String
-       , time        :: String
-       , bounds      :: [Double]
-       , primsum     :: (Integer, String)
-       -- , attrsum     :: String
-       } deriving Show
+-- data Topology =
+--      Topology
+--        { indeces     :: [Integer] }
+
+data Attributes =                       
+     Attributes
+       { vertexattributes :: ()
+       , pointattributes  :: ()
+       }
+
+data Person =
+  Person { firstName :: !Text
+         , lastName  :: !Text
+         , age       :: Int
+         , likesPizza:: Bool
+         } deriving Show
+
+instance FromJSON Person where
+  parseJSON (Object v) =
+    Person <$> v     .: "firstName"
+           <*> v     .: "lastName"   
+           <*> v     .: "age"        
+           <*> v     .: "likesPizza" 
+  parseJSON _ = mzero
 
 csv :: P.Parsec String () ()
 csv = 
@@ -41,6 +71,12 @@ line =
     P.sepBy cell (P.char ',')
     return ()
 
+tab :: P.Parsec String () ()
+tab = 
+  do
+    matchString "\\t"
+    return ()
+
 cell :: P.Parsec String () ()
 cell = 
   do
@@ -50,7 +86,7 @@ cell =
 eol :: P.Parsec String () ()
 eol =
   do
-    P.char '\n'
+    matchString "\\n"
     return ()
 
 jsonFile :: FilePath
@@ -106,14 +142,8 @@ dash =
     P.char '-'
     return ()    
 
-newline :: P.Parsec String () ()  
-newline =
-  do
-    P.char '\n'
-    return ()
-
-col :: P.Parsec String () ()  
-col =
+colon :: P.Parsec String () ()  
+colon =
   do
     P.char ':'
     return ()
@@ -158,11 +188,11 @@ geoParser =
     quotes >> comma
     vertexcount  <- P.many1 P.digit
   
-    P.try (matchString "primitivecount") <|> (matchString "pointcount" >> matchString "primitivecount") >> quotes >> comma
+    P.try (matchString "primitivecount") <|> (matchString "pointcount" >> matchString "primcount") >> quotes >> comma
     primcount    <- P.many1 P.digit
 
     matchString "info"
-    matchString "software" >> quotes >> col >> quotes
+    matchString "software" >> quotes >> colon >> quotes
     softwareName <- P.many1 P.letter
     P.spaces
     majorVer     <- P.many1 P.digit 
@@ -173,13 +203,13 @@ geoParser =
     let software =
           softwareName ++ " " ++ majorVer ++ "." ++ minorVer ++ "." ++ buildVer
 
-    matchString "hostname" >> quotes >> col >> quotes
+    matchString "hostname" >> quotes >> colon >> quotes
     hostname     <- P.many1 P.letter
 
-    matchString "artist" >> quotes >> col >> quotes
+    matchString "artist" >> quotes >> colon >> quotes
     artist       <- P.many1 P.letter
 
-    matchString "date" >> quotes >> col >> quotes
+    matchString "date" >> quotes >> colon >> quotes
     year         <- P.many1 P.digit
     dash
     month        <- P.many1 P.digit
@@ -187,27 +217,59 @@ geoParser =
     day          <- P.many1 P.digit
     P.spaces 
     hours        <- P.many1 P.digit
-    col
+    colon
     minutes      <- P.many1 P.digit
-    col
+    colon
     seconds      <- P.many1 P.digit
 
     let date     = year ++ "-" ++ month ++ "-" ++ day        
                    ++ " " ++                                 
                    hours ++ ":" ++ minutes ++ ":" ++ seconds 
 
-    matchString "time" >> quotes >> col
+    matchString "time" >> quotes >> colon
     time         <- P.many1 P.digit
 
-    matchString "bounds" >> quotes >> col >> openScBr
+    matchString "bounds" >> quotes >> colon >> openScBr
     bounds'      <- P.sepBy (P.many (P.oneOf "-.0123456789")) comma
     let bounds   = fmap read bounds'
 
-    matchString "primcount_summary" >> quotes >> col >> quotes
+    matchString "primcount_summary" >> quotes >> colon >> quotes
     P.spaces
     primsum      <- P.many1 P.digit
     P.spaces
-    primsum'    <- P.many1 P.letter
+    primsum'     <- P.many1 P.letter
+
+    matchString "attribute_summary" >> quotes >> colon >> quotes
+    P.spaces
+    nvtxattrs    <- P.many1 P.digit
+    P.spaces
+    vertex       <- P.many1 P.letter
+    P.spaces
+    vtxattrs     <- P.many1 P.letter
+    colon >> tab
+    vtxattrname  <- P.many1 P.letter
+    eol >> P.spaces
+    nptattrs     <- P.many1 P.digit
+    P.spaces
+    point        <- P.many1 P.letter
+    P.spaces
+    ptattrs      <- P.many1 P.letter
+    colon >> tab
+    ptattrname   <- P.many1 P.letter
+
+    let attrsum  = nvtxattrs ++ " " ++ vertex ++ " " ++ vtxattrs ++ ":" ++ vtxattrname
+                   ++ ", " ++
+                   nptattrs  ++ " " ++ point  ++ " " ++ ptattrs  ++ ":" ++ ptattrname
+
+    matchString "topology"
+    topology     <- P.many1 P.anyChar
+    let topology'= "[\\n\"topology\\n" ++ topology
+    -- matchString "pointref"
+    -- matchString "indices"
+    -- matchString "attributes"
+    -- matchString "vertexattributes"
+
+    -- topology <- (return "suka")
     
     return ( Geo 
                fileversion
@@ -223,7 +285,9 @@ geoParser =
                    time
                    bounds
                    (read primsum, primsum')
+                   attrsum
                )
+               topology'
            )
 
 
