@@ -46,8 +46,16 @@ instance FromJSON FlickResponce where
   parseJSON (Object v) =
     FlickResponce
       <$> v .: "suka"
-      -- <*> v .: "photoset"
-      -- <*> v .: "stat"
+      <*> v .: "pizda"
+--      <*> v .: "photoset"
+--      <*> v .: "stat"
+  parseJSON _ = mzero
+
+instance FromJSON Pizda where
+  parseJSON (Object v) =
+    Pizda
+      <$> v .: "size"
+  parseJSON _ = mzero
 
 
 data Photoset =
@@ -83,10 +91,15 @@ data Photo =
 data FlickResponce =
      FlickResponce
         { suka       :: Text
-        , photoset   :: Photoset
-        , stat       :: Text
+        , pizda      :: Pizda
+--        , photoset   :: Photoset
+--        , stat       :: Text
         } deriving (Show, Generic)
 
+data Pizda =
+     Pizda
+        { size       :: Int
+        } deriving (Show, Generic)
 
 jsonFile :: FilePath
 jsonFile = "photos.json"            

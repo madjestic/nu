@@ -276,6 +276,10 @@
   M-x table-insert - create table
   http://orgmode.org/manual/Built_002din-table-editor.html
 * Emacs Calendar: cfw-calendar
+  cfw-calendar https://github.com/kiwanami/eWmacs-calfw
+  # TIPS:
+  r - refresh view, redraw cells (also re-scale to fit the window)
+** Extras
   http://blog.idorobots.org/entries/you-earned-15-xp-in-getting-things-done_.html#preview-more - gamification, it turned out to be not so great.
   I think a better idea would be to count entries by date and accumulate days per tag, hence giving an overall score.
   TODOs do not need a score, that's a stupid idea.
@@ -291,10 +295,6 @@
 
   https://www.gnu.org/software/emacs/manual/html_node/emacs/Diary.html (dates format)
 
-  cfw-calendar https://github.com/kiwanami/eWmacs-calfw
-  # TIPS:
-  r - refresh view, redraw cells (also re-scale to fit the window)
-  
 * Entropy
 ** Machine Learning
    @<-[
@@ -2735,3 +2735,8 @@ data Geo = Geo { fileversion :: String
    https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json
    
 *** TODO [#A] : I need to add Aeson to GeoParser.hs - specify nested JSON desctiption as in Flickr.hs example.
+** <2016-10-10 Mon> 3D Coat 4.7 71% discount for Pro version, Callendar mode
+   https://github.com/kiwanami/emacs-calfw - useful tips
+*** TODO : decide on buying a Pro license for 199$   
+    DEADLINE : <2016-10-23 Sun>
+   
