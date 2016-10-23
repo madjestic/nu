@@ -34,7 +34,7 @@
     ("c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "a27c00821ccfd5a78b01e4f35dc056706dd9ede09a8b90c6955ae6a390eb1c1e" default)))
  '(desktop-after-read-hook (quote (list-buffers)))
  '(desktop-path (quote ("~/")))
- '(desktop-save-mode nil)
+ '(desktop-save-mode t)
  '(dired-dwim-target t)
  '(dired-use-ls-dired t)
  '(ecb-layout-name "left2")
@@ -265,3 +265,13 @@
 ;;;;;;;;;;;
 ;; STUFF ;;
 ;;;;;;;;;;;
+
+(require 'session)
+(add-hook 'after-init-hook 'session-initialize)
+(autoload 'save-current-configuration "revive" "Save status" t)
+(autoload 'resume "revive" "Resume Emacs" t)
+(autoload 'wipe "revive" "Wipe Emacs" t)
+
+(define-key ctl-x-map "S" 'save-current-configuration)
+(define-key ctl-x-map "R" 'resume)
+(define-key ctl-x-map "K" 'wipe)

@@ -2740,3 +2740,7 @@ data Geo = Geo { fileversion :: String
 *** TODO : decide on buying a Pro license for 199$   
     DEADLINE : <2016-10-23 Sun>
    
+** <2016-10-20 Thu> Haskell Parser, Nested JSON
+   [[file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.hs][file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.hs]]
+   [[file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.json][file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.json]]
+   
