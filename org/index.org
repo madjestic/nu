@@ -2744,3 +2744,28 @@ data Geo = Geo { fileversion :: String
    [[file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.hs][file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.hs]]
    [[file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.json][file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.json]]
    
+** <2016-10-23 Sun>
+   http://www.gentei.org/~yuuji/software/revive.el
+   (define-key ctl-x-map "S" 'save-current-configuration)
+   (define-key ctl-x-map "R" 'resume)
+   (define-key ctl-x-map "K" 'wipe)
+** <2016-10-26 Wed> Emacs Rectangels cua-mode (a type of region select, red rectangle select)
+   https://www.emacswiki.org/emacs/CuaMode
+** <2016-10-29 Sat> 0ad
+   Manual: http://trac.wildfiregames.com/wiki/0adManual
+   Getting Started for Programmers: http://trac.wildfiregames.com/wiki/GettingStartedProgrammers
+   Tickets: http://trac.wildfiregames.com/query?status=assigned&status=new&status=reopened&keywords=~simple&col=id&col=summary&col=status&col=type&col=priority&col=milestone&col=component&report=16&order=priority
+
+   Unreal Engine compiling for Linux
+   https://github.com/madjestic/UnrealEngine/blob/release/Engine/Build/BatchFiles/Linux/README.md
+
+   Lambda Cube 3d
+   https://lambdacube3d.wordpress.com/
+   http://lambdacube3d.com/
+   Overview: http://www.lambdacube3d.com/overview
+** <2016-10-31 Mon> HVC Afval - (trash, garbage collectors)
+   https://www.hvcgroep.nl/particulier/klantenservice/contact-met-hvc
+** <2016-11-17 Thu>
+   http://harry.garrood.me/blog/aeson-better-errors/
+   http://stackoverflow.com/questions/20269101/how-to-trace-back-parsing-errors-with-aeson-answer
+   http://stackoverflow.com/questions/20269101/how-to-trace-back-parsing-errors-with-aeson-answer

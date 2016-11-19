@@ -1,0 +1,12 @@
+{
+    "resultSet" : {
+        "location" : [{
+                "desc" : "Tuality Hospital/SE 8th Ave MAX Station",
+                "locid" : 9843,
+                "dir" : "Eastbound",
+                "lng" : -122.978016886765,
+                "lat" : 45.5212880911494
+            }
+        ]
+        }
+}

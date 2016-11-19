@@ -10,7 +10,7 @@ xsetroot -cursor_name left_ptr
 urxvtd --quiet --opendisplay --fork
 export ALTERNATE_EDITOR=""
 export EDITOR=emacsclient
-emacs --daemon
+# emacs --daemon
 exec ck-launch-session dbus-launch --sh-syntax --exit-with-session xmonad
 
 # Start Openbox
