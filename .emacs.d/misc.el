@@ -32,6 +32,10 @@
   ;;        (org-open-file link 1))
         (interactive)) ))))
 
+(defun load-octave ()
+  "load octave options"
+  (interactive)
+  (load-user-file "octave.el"))
 
 (defun load-json ()
   "load json options"

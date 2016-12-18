@@ -47,7 +47,7 @@
 ;; COMPILATION ;;
 ;;;;;;;;;;;;;;;;;
 
-(global-set-key (kbd "<f5>") (lambda ()
+(local-set-key (kbd "C-c C-l") (lambda ()
                                (interactive)
                                (setq-local compilation-read-command nil)
                                (call-interactively 'compile)))

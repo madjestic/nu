@@ -73,7 +73,9 @@
  '(minimap-width-fraction 0.1)
  '(minimap-window-location (quote right))
  '(mouse-wheel-scroll-amount (quote (1 ((shift) . 1) ((control)))))
- '(org-agenda-files (quote ("~/org/index.org" "~/org/test.org")))
+ '(org-agenda-files
+   (quote
+    ("~/org/todo.org" "~/org/progress_matrix.org" "~/org/index.org" "~/org/test.org")))
  '(org-file-apps
    (quote
     ((auto-mode . emacs)
@@ -90,6 +92,7 @@
  '(scheme-program-name "guile" t)
  '(scroll-bar-mode nil)
  '(server-mode t)
+ '(session-use-package t nil (session))
  '(sml/theme (quote respectful))
  '(smooth-scroll-mode t)
  '(speedbar-after-create-hook (quote (speedbar-frame-reposition-smartly)))
@@ -130,6 +133,18 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit nil :stipple nil :background "#2d3743" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 125 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
+ '(agda2-highlight-coinductive-constructor-face ((t (:foreground "gold"))))
+ '(agda2-highlight-datatype-face ((t (:foreground "cyan"))))
+ '(agda2-highlight-function-face ((t (:foreground "deep sky blue"))))
+ '(agda2-highlight-inductive-constructor-face ((t (:foreground "lime green"))))
+ '(agda2-highlight-keyword-face ((t (:foreground "orange"))))
+ '(agda2-highlight-module-face ((t (:foreground "magenta"))))
+ '(agda2-highlight-number-face ((t (:foreground "magenta"))))
+ '(agda2-highlight-postulate-face ((t (:foreground "cyan"))))
+ '(agda2-highlight-primitive-face ((t (:foreground "cyan"))))
+ '(agda2-highlight-primitive-type-face ((t (:foreground "cyan"))))
+ '(agda2-highlight-record-face ((t (:foreground "cyan"))))
+ '(agda2-highlight-string-face ((t (:foreground "orange red"))))
  '(border ((t nil)))
  '(cursor ((t (:background "#707080"))))
  '(fringe ((t (:background "#2d3743"))))
