@@ -9,7 +9,7 @@ import qualified XMonad.StackSet as W
 
 main = do
      xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc"
-     xmonad $ defaultConfig
+     xmonad $ def
                  { manageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig
                  , layoutHook = avoidStruts $ layoutHook defaultConfig
                  , logHook    = dynamicLogWithPP xmobarPP
@@ -40,7 +40,7 @@ main = do
                  , ("M-C-k"    , spawn "krusader")
                  , ("M-C-s"    , spawn "spotify")
                  , ("<Print>"  , spawn "spectacle")
-                 , ("M-C-<Esc>", spawn "ksysguard")
+                 , ("M-C-<Esc>", spawn "htop")
                  , ("M-C-l"    , spawn "slock")
                  , ("M-C-h"    , spawn "houdini")
                  ]              

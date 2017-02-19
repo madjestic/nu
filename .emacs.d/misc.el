@@ -226,6 +226,10 @@
 ;;		(jabber-connect)
     (switch-to-buffer "*-jabber-*"))
 
+(defun truncate-lines ()
+  (toggle-truncate-lines))
+
+
 (require 'recentf)
 (recentf-mode 1)
 (setq recentf-max-menu-items 25)

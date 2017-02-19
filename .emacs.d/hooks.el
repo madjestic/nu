@@ -1,3 +1,4 @@
+(add-to-list 'auto-mode-alist '("\\.m\\'"    . (lambda ()(octave-mode))))
 (add-to-list 'auto-mode-alist '("\\.geo\\'"  . (lambda ()(json-mode))))
 (add-to-list 'auto-mode-alist '("\\.org\\'"  . (lambda ()(org-mode))))
 (add-to-list 'auto-mode-alist '("\\.vfl\\'"  . (lambda ()(c++-mode))))

@@ -321,7 +321,8 @@ this code should be shown in haddock
 	 to generate tags use:
 	 ~/bin/tags
 *** hothasktags
-find . | egrep '\.hs$' | xargs hothasktags > tags
+find . | egrep '\.hs$' | xargs hasktags > TAGS
+[[file:~/bin/tags][file:~/bin/tags]]
 
 ** Executable size
 [[http://stackoverflow.com/questions/6115459/small-haskell-program-compiled-with-ghc-into-huge-binary][Don Stuart on stack exchange]]
@@ -350,6 +351,9 @@ find . | egrep '\.hs$' | xargs hothasktags > tags
 		Continue reading about VRAY procedural:
 		http://www.peterclaes.be/blog/?tag=vrayprocedural
 
+* JS
+  http://elm-lang.org/
+  Haskell-like language for Web-GUIs
 * Ocean Effect
 ** IN-PROGRESS [#A] : Create Ocean effect in Houdini
    @<->[[[*<2016-09-04 Sun> Houdini Ocean, CmiVFX][<2016-09-04 Sun> Houdini Ocean, CmiVFX]]
@@ -806,7 +810,8 @@ WINDOWS-p
 * Python
   [[file:todo.org::*:%20Write%20a%20python%20daemon%20%5B%5Bfile:index.org::*Python%5D%5B@Python%5D%5D][@<{#C}: Write a python daemon]]
 * Gentoo
-  [[file:todo.org::*:%20Create%20a%20custom%20overlay:][@<{#E}: Create a custom overlay:]]
+  [[file:todo.org::*Create%20a%20custom%20overlay][Create a custom overlay]]
+
 * Rocket! n-body sim, particles, houdini, Godika
   [[*<2016-03-16 Wed> Gravity, Rocket][@<<2016-03-16 Wed> Gravity, Rocket]]
   [[*<2016-08-23 Tue> Rocket, Gravity, n-body][@<<2016-08-23 Tue> Rocket, Gravity, n-body]]
@@ -847,7 +852,7 @@ WINDOWS-p
 *** Lindenmayer: Procedurally-assisted LOD generation.
 * SIGGRAPH 2017
   [[file:~/Documents/acmsiggraph][file:~/Documents/acmsiggraph]] - ACM template
-  [[*VDA: Virtual Bones][VDA: Virtual Bones]]
+  [[*VDA Virtual Bones][VDA Virtual Bones]]
 
   http://s2017.siggraph.org/technical-papers-submissions#quickset-tech_papers_accordion_0
   http://s2017.siggraph.org/technical-papers-submissions
@@ -952,8 +957,15 @@ Sat Apr 26 16:03:45 CEST 2014
   http://www.vrdb.com/
   https://github.com/OSVR
 
-* VDA: Virtual Bones
+* VDA Virtual Bones
+  [[*SIGGRAPH 2017][SIGGRAPH 2017]]
   [[file:~/Documents/VDA][file:~/Documents/VDA]]
+  [[file:~/Documents/VDA/acm/acmsiggraph/template.tex][file:~/Documents/VDA/acm/acmsiggraph/template.tex]]
+
+  plot_00 : 
+  [[file:~/Documents/VDA/acm/acmsiggraph/data/plot_00.gnu][file:~/Documents/VDA/acm/acmsiggraph/data/plot_00.gnu]]
+
+  
 * Waterfall
   @<-[
   [[*:%20Set%20up%20water%20shader][: Set up water shader]]
@@ -1095,7 +1107,7 @@ Too tired now.
 	 [[http://www.micahcarrick.com/gtk-glade-tutorial-part-1.html]]
 
 * History
-** [2015-01-12 Mon]
+** 2015-01-12 Mon
 
 	[[/home/madjestic/houdini/houdini/python2.7libs/dopparticlefluidtoolutils.py]]
 	[[file:~/Projects/Python/Tree/Main.py][/Projects/Python/Tree/Main.py]] Fri Oct 17 23:47:43 CEST 2014 - python tree-parsing example
@@ -1107,17 +1119,17 @@ Too tired now.
 	Biology (Micosis)
 	[[*:%20Investigate%20how%20to%20render%20ocean%20nicely][Ocean Shader (displacement issues)]]
 
-** [2015-02-01 Sun] 
+** 2015-02-01 Sun
 	
 	Found a nice article on GTK+, continue reading later. (Which article?! <2015-12-03 Thu> )
 
-** [2015-09-21 Mon] 
-	
+** 2015-09-21 Mon
+
 	Trying to make [[*PVR][PVR]] compile.  [[*PVR][Getting some linker errors:]] (1)
 
 	<2015-11-06 Fri> solved (1)
 
-** <2015-11-08 Sun> 
+** 2015-11-08 Sun
 	
 	#define W 0xFF, 0xFF, 0xFF, 0xFF
         static const GLubyte tex_data[] =
@@ -1154,8 +1166,7 @@ Too tired now.
 
 	Created a [[file:~/.contexts][~/.context]] for keeping clusters of activity together (dirs, pdfs, etc.)
 
-** [2015-11-19 Thu] 
-	
+** 2015-11-19 Thu
 	Figured out how to use parts of agenda-mode.
 	http://orgmode.org/worg/org-tutorials/advanced-searching.html
 
@@ -1167,11 +1178,11 @@ Too tired now.
 	Org-mode Agenda is awesome!
 	http://orgmode.org/worg/org-tutorials/advanced-searching.html
 
-** [2015-11-19 Thu]
+** 2015-11-19 Thu
 	
 	(C-c a m) Match: +TIMESTAMP_IA>="<-2w>" (show ineactive timestamps)
 
-** <2016-01-29 Fri> 
+** 2016-01-29 Fri
   
   Reading on FRP:
   http://travis.athougies.net/posts/2015-05-05-frp-made-simple.html !
@@ -1193,17 +1204,17 @@ Too tired now.
 	OpenGL Work:
   [[~/Projects/OpenGL/sb7code/src/my_first_spinning_cube_v01]]
   
-** <2016-01-30 Sat> 
+** 2016-01-30 Sat
   
   How to add a package to haskell-overlay:
   https://github.com/gentoo-haskell/gentoo-haskell/blob/master/projects/doc/HOWTO-contribute.rst
   
-** <2016-02-07 Sun> 
+** 2016-02-07 Sun
    @->s[[[*<2016-02-08%20Mon>][<2016-02-08 Mon>]]]
    Yampy-Cube: https://youtu.be/T7XwTolu9YI?t=2525
    Jekor Yampa: https://youtu.be/T3xXebIr8AM?t=1000
 
-** <2016-02-08 Mon>
+** 2016-02-08 Mon
    @<-[[[*<2016-02-07%20Sun>][<2016-02-07 Sun>]]]
    @->[[[*Yampa][Yampa]]]
    learning FRP:
@@ -1216,7 +1227,7 @@ Too tired now.
    http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning/
    http://www.andreykurenkov.com/writing/a-brief-history-of-neural-nets-and-deep-learning-part-2/
 
-** <2016-02-09 Tue>
+** 2016-02-09 Tue
   
   Bluetooth:
   http://www.thinkwiki.org/wiki/How_to_setup_Bluetooth
@@ -1225,7 +1236,7 @@ Too tired now.
   sudo rfcomm bind /dev/rfcomm0 00:16:53:0E:21:14
   sudo rfcomm release /dev/rfcomm0 00:16:53:0E:21:14
 
-** <2016-02-12 Fri>
+** 2016-02-12 Fri
   
   Julia compilation fails
   
@@ -1236,7 +1247,7 @@ Too tired now.
     [[file:~/Projects/Julia/julia]]
     
 [[*test][test]]
-** <2016-02-26 Fri>
+** 2016-02-26 Fri
    @->s[[[*:%20Make%20Elegant,%20Clean-up][: Make Elegant, Clean-up]]
          [[*:%20continue%20with%20Mortgage%20graphing,%20using%20VEX][: continue with Mortgage graphing, using VEX]]]
   
@@ -1246,32 +1257,32 @@ Too tired now.
 
   [[*:%20continue%20with%20Mortgage%20graphing,%20using%20VEX][I should continue with Mortgage graphing, using VEX]]
 
-** <2016-02-28 Sun>
+** 2016-02-28 Sun
   
   LEGONXT
   ~/Projects/LEGONXT/nxt-python-2.2.2/nxt-python-2.2.2/examples $ python ./mary.py
 
-** <2016-02-29 Mon>
+** 2016-02-29 Mon
   
    Probably I should proceded with Rendering Adventure
 
-** <2016-03-02 Wed>
+** 2016-03-02 Wed
   @->s [[[*<2016-04-05%20Tue>][<2016-04-05 Tue>]]]
   
   Visualize a graph with Haskell
   /home/madjestic/Projects/Haskell/Mortgage/
   
-** <2016-03-05 Sat>
+** 2016-03-05 Sat
    http://www.slideshare.net/CassEveritt/approaching-zero-driver-overhead
    http://valhalla.fciencias.unam.mx/lenguajes/EOPL.pdf
 
-** <2016-03-11 Fri>
+** 2016-03-11 Fri
   
   Laplace Operator games:
   /home/madjestic/Desktop/DRS.hipnc
   [[*:%20Render%20out%20a%20vide,%20same%20as%20for%20n-bodies.][TODO : Render out a vide, same as for n-bodies.]]
 
-** <2016-03-16 Wed> Gravity, Rocket
+** 2016-03-16 Wed Gravity, Rocket
    @<->[[[*Rocket!][Rocket!]]
    ]
   [[file:~/Projects/Houdini/POPs/n_body_collide.hipnc][file:~/Projects/Houdini/POPs/n_body_collide.hipnc]]
@@ -1280,7 +1291,7 @@ Too tired now.
     <2016-09-03 Sat>
 
 [[*test][test]]
-** <2016-03-22 Tue>
+** 2016-03-22 Tue
    http://orgmode.org/manual/Setting-tags.html#Setting-tags
    C-c C-q - insert a tag into a headline
 
@@ -1300,21 +1311,21 @@ Too tired now.
    https://www.gnu.org/software/emacs/manual/html_node/emacs/Secondary-Selection.html
 
 *** On Complexity and Entropy
-** <2016-03-24 Thu>
+** 2016-03-24 Thu
    secondary eshell in emacs:
    C-u M-x eshell
-** <2016-03-30 Wed>
+** 2016-03-30 Wed
    http://katychuang.com/cabal-guide/ - simple cabal guide
 
-** <2016-04-02 Sat>
+** 2016-04-02 Sat
    Started reading [[file:~/Documents/%D0%94.%20%D0%9A%D0%BD%D1%83%D1%82%20-%20%20%D0%98%D1%81%D0%BA%D1%83%D1%81%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D1%8F%20(%D1%82%D0%BE%D0%BC%201,2,3)%20-%202002][D.Knut, the art of programming "Искусство программирования (том 1,2,3) - 2002"]]
-** <2016-04-03 Sun>
+** 2016-04-03 Sun
    http://rephial.org/help/command
    http://rephial.org/help/playing
    angband commands
-** <2016-04-04 Mon> Julia
+** 2016-04-04 Mon Julia
    [[file:todo.org::*:%20write%20a%20@code_native%20collatz(10)%20for%20for(1:10)%20loop%20and%20see%20what%20the%20ASM%20code%20looks%20like][>: write a @code_native collatz(10) for for(1:10) loop and see what the ASM code looks like]]
-** <2016-04-05 Tue>
+** 2016-04-05 Tue
    @<- [[[*<2016-03-02%20Wed>][<2016-03-02 Wed>]]]
    Working on a Haskell diagrams plotting example:
    http://projects.haskell.org/diagrams/doc/quickstart.html
@@ -1323,12 +1334,12 @@ Too tired now.
    
    Working through Julia manual:
    http://docs.julialang.org/en/release-0.4/manual/functions/
-** <2016-04-09 Sat>
+** 2016-04-09 Sat
    Started reading: http://www.heterogeneouscompute.org/?page_id=7
    (OpenCL book)
    [[file:~/Documents/OpenCL_Programming_Guide.pdf]] (hoknamahn's book)
    
-** <2016-04-15 Fri> Pebble
+** 2016-04-15 Fri Pebble
    Started reading deeplearning book.  It seem a nice complement to 
    Tom Mitchel's book.
    [[file:~/Documents/Machine_Learning_-Tom_Mitchell.pdf]]
@@ -1343,25 +1354,25 @@ Too tired now.
    [[file:todo.org::*:%20Read%20the%20Red%20Book:][>: Read the Red Book:]]
    [[file:todo.org::*:%20Read%20the%20book%20of%20shaders%20as%20a%20supplement:][>: Read the book of shaders as a supplement:]]
    [[file:todo.org::*:%20Take%20a%20look%20at%20GPipe,%20it%20seems%20like%20an%20interesting%20way%20to%20handle%20OpenGL][>: Take a look at GPipe, it seems like an interesting way to handle OpenGL]]
-** <2016-04-21 Thu>
+** 2016-04-21 Thu
    [[file:~/Projects/Houdini/POPs/n_body_collide.hipnc]]
    VEX compiler #define:
    http://127.0.0.1:48626/vex/vcc
-** <2016-04-25 Mon> Scating, Ecosystem sim
+** 2016-04-25 Mon Scating, Ecosystem sim
    [[file:todo.org::*:%20A%20skating%20timer:][>: A skating timer:]]
    [[file:todo.org::*:%20Ecosystem%20sim:][>: Ecosystem sim:]]
-** <2016-04-29 Fri> Houdini, Emacs
+** 2016-04-29 Fri Houdini, Emacs
    I am trying to establish an efficient way to work with Houdini, using emacs
    [[file:todo.org::*:%20create%20a%20houdini-starting%20script%20for%20emacs,%20solve%20urxvt][>: create a houdini-starting script for emacs, solve urxvt]]
    [[file:todo.org::*:%20continue%20working%20on%20waterfall%20example][>: continue working on waterfall example]]
-** <2016-05-04 Wed>
+** 2016-05-04 Wed
    file:~/Projects/Houdini/Fluids/Fluid_Test_00/Model.hipnc - a waterfall test
    /home/madjestic/Desktop/cloth_test.hipnc
-** <2016-05-06 Fri>
+** 2016-05-06 Fri
    reading [[file:~/Documents/Linux_Format_March_2016.pdf]]
    p.62 LXF208 March 2016 - OwnCloud 8.0 with RaspberryPi
 
-** <2016-05-09 Mon>
+** 2016-05-09 Mon
    [[*Entropy][Entropy]]
 *** Rendering Entropy nodes/edges:
    1) rendering a circle with an outline:
@@ -1402,7 +1413,7 @@ Too tired now.
        Describes a function that takes a category \Gamma as an argument
        \Eta, producing a new group 
 
-** <2016-05-11 Wed>
+** 2016-05-11 Wed
    [[file:~/Projects/Haskell/Entropy/src/Main.hs]] - working on categories, applications and other goodiness.
    http://lpaste.net/163041 - interesting example with Foldable, so that both 2-tuple and a list can be an argument to a function:
    
@@ -1422,7 +1433,7 @@ Too tired now.
    True
    λ> 2 `isIn` SameTuple (3, 4)
    False
-** <2016-05-12 Thu> NGL, Visualizing Categories
+** 2016-05-12 Thu NGL, Visualizing Categories
    @->[[[*<2016-05-11 Wed>][<2016-05-11 Wed>]]]
    an example with categories seems to work.
    Now I need to procede with visualizing it:
@@ -1432,23 +1443,23 @@ Too tired now.
 *** TODO [#B] : visualize cats as squares
 *** TODO [#B] : visualize arrows as lines, connecting squares
 *** TODO [#C] : (extra) : anti-alias the primitives.
-** <2016-05-13 Fri>
+** 2016-05-13 Fri
    https://github.com/tobbebex/GPipe-Core - functional opengl in haskell
-** <2016-05-17 Tue>
+** 2016-05-17 Tue
    cool skateboard maker (link from Vlad):
    www.kaliber-skateboards.de
    
-** <2016-05-19 Thu>
+** 2016-05-19 Thu
    @->:[[[*Yampa][Yampa]]
         [[*%5B%5B*FRP%5D%5BFRP%5D%5D][FRP]]
    ]
    https://youtu.be/-IpE0CyHK7Q?t=425 - Jekor's yampa tutorial part 1
    [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
    
-** <2016-05-19 Thu>
+** 2016-05-19 Thu
    https://nixos.org/wiki/Installing_NixOS_from_a_USB_stick
    https://nixos.org/nixos/download.html
-** <2016-05-23 Mon>
+** 2016-05-23 Mon
    I experimented with haskell on android:
    https://github.com/neurocyte/ghc-android
    this sort of worked on my Acer Aspire One with 32bit Ubuntu, till the 'adb' moment, at which point I stopped.
@@ -1467,16 +1478,16 @@ Too tired now.
    
    Sounds like soon we are going to get some new toys to play with... fingers crossed.
 
-** <2016-05-23 Mon>
+** 2016-05-23 Mon
    @->[[[*<2016-05-19%20Thu>][<2016-05-19 Thu>]]]
    going back to learning Yampa:
-** <2016-05-24 Tue>
+** 2016-05-24 Tue
    https://www.haskell.org/onlinereport/standard-prelude.html - Prelude specification,
    describes all the haskell functions bundled with Prelude.
 
    https://wiki.haskell.org/Simple_unix_tools - Haskell command line tools
    
-** <2016-05-27 Fri>
+** 2016-05-27 Fri
    http://projects.haskell.org/graphviz/faq.html
    http://www.graphviz.org/
    http://blog.idorobots.org/entries/you-earned-15-xp-in-getting-things-done_.html#preview-more
@@ -1488,11 +1499,11 @@ Too tired now.
 *** TODO [#D] : Read about graphviz/graphviz-org-mode for emacs
     the problem that I am working on may have a nice backend / partial solution already.
     more examples of graphviz graphs: http://www.tonyballantyne.com/graphs.html
-** <2016-05-31 Tue>
+** 2016-05-31 Tue
    out@[[[*<2016-05-23%20Mon>][<2016-05-23 Mon>]]]
    https://en.wikibooks.org/wiki/Haskell/Understanding_arrows - arrow notation
    [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
-** <2016-06-05 Sun>
+** 2016-06-05 Sun
    [[file:~/Projects/Haskell/FRP/frp_counter_00/Main.hs]]
    [[file:~/Projects/Haskell/FRP/yampy-cube/src/Main.hs]]
 
@@ -1500,12 +1511,12 @@ Too tired now.
    https://www.youtube.com/watch?v=T7XwTolu9YI&feature=youtu.be&t=2506
 
    https://github.com/nh2/call-haskell-from-anything
-** <2016-06-06 Mon>
+** 2016-06-06 Mon
    ~/Projects/Haskell/call-haskell-from-anything/ - fails with:
    "* Missing C library: HSrts-ghc7.10.3" - both cabal and stack versions.
 *** DONE : Report a bug about HSrts
     https://github.com/nh2/call-haskell-from-anything#usage
-** <2016-06-07 Tue>
+** 2016-06-07 Tue
    call haskell from everything - an interesting project but is not ready yet:
    https://github.com/nh2/call-haskell-from-anything/issues/14
    [[file:~/Projects/Haskell/call-haskell-from-anything]]
@@ -1516,20 +1527,20 @@ Too tired now.
    Godot seems to have a bug atm:
    https://github.com/godotengine/godot/issues/5060
 
-** <2016-06-08 Wed>
+** 2016-06-08 Wed
    https://en.wikibooks.org/wiki/Haskell/Applicative_functors#A_sliding_scale_of_power - very interesting explanation/excercises on Functor, Applicative and Monad
    and sollutions to exercises: https://en.wikibooks.org/wiki/Haskell/Solutions/Applicative_functors
 
    [1] https://hackage.haskell.org/package/repa-3.4.0.2/docs/Data-Array-Repa.html - hoknamahn mentioned an interesting link to parallel arrays
 
 *** TODO [#D]: check it out REPA (1)
-** <2016-06-09 Thu>
+** 2016-06-09 Thu
    search by date
    $ find ~ -iname 'Makefile' -atime -20 | grep -i haskell
    /home/madjestic/Projects/Haskell/Haskell-OpenGL-Tutorial/tutorial11/Makefile
-** <2016-06-11 Sat>
+** 2016-06-11 Sat
    https://github.com/emacs-helm/helm/wiki - helm tips
-** <2016-06-12 Sun> Haskell Parsers
+** 2016-06-12 Sun Haskell Parsers
    @<-[[[*<2016-06-19%20Sun>%20Haskell%20parsing,%20regex][<2016-06-19 Sun> Haskell parsing, regex]]
    [[*Tree Parser][Tree Parser]]
    ]
@@ -1548,7 +1559,7 @@ Too tired now.
    http://unbui.lt/#!/post/haskell-another-lens-tutorial
 *** DONE : Look into Haskell Parsers
 
-** <2016-06-12 Sun>
+** 2016-06-12 Sun
    @->[[[*FRP][FRP]]]
    I ended up with OpenGL animation 'sort of working' - buffer update is busted and I should attempt to 
    follow Jekor's instructions more closely, that is use OpenGL building blocks from cuboid first and then
@@ -1579,10 +1590,10 @@ Too tired now.
     [[file:~/Projects/Haskell/FRP/cuboid]]
     [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
     
-** <2016-06-13 Mon>
+** 2016-06-13 Mon
    [[*MARVE][MARVE]]
    [[file:~/Projects/Houdini/MARVE/model.hipnc]]
-** <2016-06-14 Tue> Idiots never give up!
+** 2016-06-14 Tue Idiots never give up!
    M-x load-jabber
    M-x jabber-connect
    M-x jabber-display-roster
@@ -1599,7 +1610,7 @@ Too tired now.
     SCHEDULED: <2016-06-14 Tue>
 *** DONE : Tell Hok that he is a Barmaly
     SCHEDULED: <2016-06-15 Wed> 
-** <2016-06-15 Wed> Mathematical Methods for Quantitative Finance, Marve, Houdini
+** 2016-06-15 Wed Mathematical Methods for Quantitative Finance, Marve, Houdini
    @->[[[*MARVE][MARVE]]]
    a course @coursera https://www.coursera.org/course/mathematicalmethods
 
@@ -1609,7 +1620,7 @@ Too tired now.
    [[file:~/Projects/Houdini/MARVE/3d-coat/model.3b]]
    [[file:~/Projects/Houdini/MARVE/model.hipnc]]
 
-** <2016-06-16 Thu> Dual Univers, Haskell, AI
+** 2016-06-16 Thu Dual Univers, Haskell, AI
    out@[[[*AI][AI]]]
    http://www.dualthegame.com/careers
    Novaquark, Dual Univers, space sandbox game.
@@ -1618,9 +1629,9 @@ Too tired now.
    https://github.com/mikeizbicki/HLearn - Haskell library for machine learning
    https://github.com/mikeizbicki/subhask - a rewrite of Prelude for numerical computing
    
-** <2016-06-18 Sat> 3D-coa UV'ing tutorial
+** 2016-06-18 Sat 3D-coa UV'ing tutorial
    https://www.youtube.com/watch?v=0LWnVLO5lYU - 3D-Coat UV'ing tutorial
-** <2016-06-20 Mon> Writing a haskell parser for geo Houdini format
+** 2016-06-20 Mon Writing a haskell parser for geo Houdini format
    @<-[[[*<2016-06-12 Sun> Haskell Parsers][<2016-06-12 Sun> Haskell Parsers]]
    ]
    @->[[[*<2016-07-04 Mon> I should look into Repa, Looking into Parsec, Leaving links for GLFW to look into later on b1:][<2016-07-04 Mon> I should look into Repa, Looking into Parsec, Leaving links for GLFW to look into later on b1:]]
@@ -1653,11 +1664,11 @@ Too tired now.
 **** DONE : install Daggerfall:
      [[file:~/DAGGERFALL]]
      [[file:~/DAGGERFALL/daggerfall_legal_and_installation.pdf]]
-** <2016-06-23 Thu> IDO
+** 2016-06-23 Thu IDO
 *** TODO [#C] : set up emacs ido mode
-** <2016-06-24 Fri>
+** 2016-06-24 Fri
    busy with [[*FRP][FRP]]
-** <2016-06-25 Sat> Haskell FRP, Yampa, OpenGL
+** 2016-06-25 Sat Haskell FRP, Yampa, OpenGL
    @->[[[*FRP][FRP]]]
    [[file:~/Projects/Haskell/FRP/yampa-tutorial-jekor]]
 
@@ -1681,7 +1692,7 @@ Too tired now.
   Ivan Perez on game dev for Android:
   https://github.com/ivanperez-keera/introgameshaskell
   
-** <2016-07-04 Mon> I should look into Repa, Looking into Parsec, Leaving links for GLFW to look into later on b1:
+** 2016-07-04 Mon I should look into Repa, Looking into Parsec, Leaving links for GLFW to look into later on b1:
    @->[[[*b1][b1]] - main
        [[*<2016-07-06 Wed> VR stuff, Parser, Finance Currency JSON API, Jabber History][<2016-07-06 Wed> VR stuff, Parser, Finance Currency JSON API, Jabber History]]
    ]
@@ -1705,7 +1716,7 @@ Too tired now.
     https://wiki.haskell.org/GLFW
     http://www.glfw.org/docs/latest/input_guide.html
 *** TODO [#D] : Look into REPA
-** <2016-07-06 Wed> VR stuff, Parser, Finance Currency JSON API, Jabber History
+** 2016-07-06 Wed VR stuff, Parser, Finance Currency JSON API, Jabber History
    @->[[[*: Parse a Houdini Cube example:][: Parse a Houdini Cube example:]]
    ]
    http://fixer.io/
@@ -1715,7 +1726,7 @@ Too tired now.
     http://emacs-jabber.sourceforge.net/manual-0.8.0/Message-history.html
     (jabber-history-enabled t)
    
-** <2016-07-08 Fri> Anonymous records
+** 2016-07-08 Fri Anonymous records
 *** DONE : Try out anonymous records:
     http://ruhaskell.org/files/meetup-2015-summer/3_Anonymous_Records.pdf
     https://hackage.haskell.org/package/record-0.4.1.1/docs/Record.html
@@ -1724,31 +1735,31 @@ Too tired now.
     It's not worth it.  Overloaded Records is worked on as a standard feature
     of ghc 8.x:
     https://ghc.haskell.org/trac/ghc/wiki/Status/GHC-8.0.1
-** <2016-07-09 Sat> Aeson open tabs
+** 2016-07-09 Sat Aeson open tabs
    Last set of tabs open related to Aeson/Parsec :: chromium->bookmarks->last->Aeson
    
    Nested JSON:
    http://gnclmorais.com/blog/aeson-and-nested-json/ - working through an example of nesting JSON file:
    [[file:~/Projects/Haskell/Parser/Aeson/Flickr.hs]]
-** <2016-07-14 Thu> working on Flickr example, Haskell, JSON
+** 2016-07-14 Thu working on Flickr example, Haskell, JSON
 *** DONE : finish the example from:
     http://gnclmorais.com/blog/aeson-and-nested-json/
     [[file:~/Projects/Haskell/Parser/Aeson/Flickr.hs]]
-** <2016-07-16 Sat> Houdini Geo parser
+** 2016-07-16 Sat Houdini Geo parser
    @->[[[*: Continue with Haskell Parsing][: Continue with Haskell Parsing]]]
     [[file:~/Projects/Haskell_Parser/Parser/Model.hipnc]]
     [[file:~/Projects/Haskell_Parser/Parser/export/model.geo]]
     [[file:~/Projects/Haskell/Parser/Aeson/Geo.hs]] - Haskell 
-** <2016-07-20 Wed> Prepare lambda for Alex and robots, Parsers in HaskellBook
+** 2016-07-20 Wed Prepare lambda for Alex and robots, Parsers in HaskellBook
    pdf-tools:
    https://github.com/politza/pdf-tools
    
 *** DONE : prepare second laptop for Alex
     DEADLINE: <2016-07-30 Sat>
-** <2016-07-21 Thu> Continue learning Parsers, following Julia manual
+** 2016-07-21 Thu Continue learning Parsers, following Julia manual
    [[file:~/Documents/haskell-programming-0.11.2-screen.pdf::917]] Parser Combinators
    
-** <2016-07-23 Sat> Theory of Perception: The theory of Approximation Spaces, and Rough Sets; Parser Combinators
+** 2016-07-23 Sat Theory of Perception: The theory of Approximation Spaces, and Rough Sets; Parser Combinators
    [[file:~/Documents/A%20Geometry%20of%20Approximation:%20Rough%20Set%20Theory%20Logic,%20Algebra%20and%20Topology%20of%20Conceptual%20Patterns.pdf::30][file:~/Documents/A Geometry of Approximation: Rough Set Theory Logic, Algebra and Topology of Conceptual Patterns.pdf]]
    @<-[[[*<2016-07-21 Thu> Continue learning Parsers, following Julia manual][<2016-07-21 Thu> Continue learning Parsers, following Julia manual]]
    ]
@@ -1758,13 +1769,13 @@ Too tired now.
    [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/examples.hs]]
    [[docview:~/Documents/haskell-programming-0.11.2-screen.pdf::925]]
 
-** <2016-07-24 Sun> Helm-Swoop search results, Machine Learning links
+** 2016-07-24 Sun Helm-Swoop search results, Machine Learning links
    https://github.com/ShingoFukuyama/helm-swoop M-i to switch to helm-swoop when searching (C-s, C-r)
    
    Machine Learning:
    http://neuralnetworksanddeeplearning.com/chap1.html
    http://codereview.stackexchange.com/questions/135794/neural-network-in-haskell - Neural Networks (NN) in Haskell
-** <2016-07-27 Wed> Continue with Parsers
+** 2016-07-27 Wed Continue with Parsers
    @<-[[[*<2016-07-23 Sat> Theory of Perception: The theory of Approximation Spaces, and Rough Sets; Parser Combinators][<2016-07-23 Sat> Theory of Perception: The theory of Approximation Spaces, and Rough Sets; Parser Combinators]]
    ]
    @->[[[*: Continue working on Haskell Parser][: Continue working on Haskell Parser]]
@@ -1772,7 +1783,7 @@ Too tired now.
 
    [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/Main.hs]]
    [[file:~/Projects/Haskell/Parser/Trifecta/LearnParsers.hs]]
-** <2016-07-28 Thu> Diary time format
+** 2016-07-28 Thu Diary time format
    12/22/1988  Twentieth wedding anniversary!!
    &1/1.       Happy New Year!
    10/22       Ruth's birthday.
@@ -1786,24 +1797,24 @@ Too tired now.
    &* 15       time cards due.
    
 *** TODO [#C] : write about Parsec/Trifecta differnce on blog.
-** <2016-07-28 Thu> Fabric Engine:
+** 2016-07-28 Thu Fabric Engine:
 *** TODO [#D] : finish a Fabric Engine tutorial when I've got nothing else to do.
    http://docs.fabric-engine.com/FabricEngine/2.3.0/HTML/GettingStartedGuide/canvastutorials.html
-** <2016-08-05 Fri> Raspberri Pi
+** 2016-08-05 Fri Raspberri Pi
    https://www.raspberrypi.org/documentation/
-** <2016-08-07 Sun> Org-mode images
+** 2016-08-07 Sun Org-mode images
    C-c C-x C-v org-mode-toggle-inline-images
-** <2016-08-08 Mon> Machine Learning
+** 2016-08-08 Mon Machine Learning
    [[file:~/Documents/A%20'Brief'%20History%20of%20Neural%20Nets%20and%20Deep%20Learning,%20Part%201%20%E2%80%93%20Andrey%20Kurenkov's%20Web%20World.html][file:~/Documents/A 'Brief' History of Neural Nets and Deep Learning, Part 1 – Andrey Kurenkov's Web World.html]]
    (local files, html copies), etc.
-** <2016-08-18 Thu> X3: Litcube mods:
+** 2016-08-18 Thu X3: Litcube mods:
    http://forum.egosoft.com/viewtopic.php?t=370506
    http://forum.egosoft.com/viewtopic.php?t=370506
    [[file:~/Downloads/CockpitmodNGforLU.zip][file:~/Downloads/CockpitmodNGforLU.zip]] - cockpit mod.
 
-** <2016-08-19 Fri> Anki, Dutch, Tesaurus
+** 2016-08-19 Fri Anki, Dutch, Tesaurus
 *** TODO [#A] : Continue converting [[file:~/Documents/Dutch/Vocabulary/total.kvtml][file:~/Documents/Dutch/Vocabulary/total.kvtml]] into Anki
-** <2016-08-21 Sun> HaskellBook
+** 2016-08-21 Sun HaskellBook
 *** Notes on HaskellBook:
     Polymorphism in Haskell means being able to write code in terms
     of values which may be one of several, or any, type. Polymor-
@@ -1833,7 +1844,7 @@ Too tired now.
 
     188p.
     
-** <2016-08-22 Mon> Machine Learning by Tom Mitchel:
+** 2016-08-22 Mon Machine Learning by Tom Mitchel:
    [[*AI][@>AI]]
    WELL-POSED LEARNING PROBLEMS:
 
@@ -1845,12 +1856,12 @@ Too tired now.
    [[file:~/Documents/Mathematics/Machine_Learning_-Tom_Mitchell.pdf]]
    [[file:~/Documents/tictactoe.kra]]
    [[file:~/Pictures/Mathematics/tictactoe.png][file:~/Pictures/Mathematics/tictactoe.png]]
-** <2016-08-23 Tue> Rocket, Gravity, n-body
+** 2016-08-23 Tue Rocket, Gravity, n-body
    @<-[[[*Rocket! n-body sim, particles, houdini][Rocket! n-body sim, particles, houdini]]]
    @->[[[*<2016-03-16 Wed> Gravity, Rocket][<2016-03-16 Wed> Gravity, Rocket]]
    ]
    [[file:~/Projects/Houdini/POPs/n_body_collide.hipnc][file:~/Projects/Houdini/POPs/n_body_collide.hipnc]]
-** <2016-08-24 Wed> Parsers, Backup, Fixing sink
+** 2016-08-24 Wed Parsers, Backup, Fixing sink
    @->[[[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]]
 *** IN-PROGRESS : Continue working on Haskell Parser
     @<-[[[*<2016-07-27 Wed> Continue with Parsers][<2016-07-27 Wed> Continue with Parsers]]]
@@ -1865,13 +1876,13 @@ Too tired now.
 *** DONE [#A] : Backup pictures from MacBookPro to a HDD
 *** DONE [#A] : Clone the backup HDD    
     SCHEDULED: <2016-09-05 Mon>
-** <2016-08-25 Thu> Continue with parsing:
+** 2016-08-25 Thu Continue with parsing:
    [[*: Continue working on Haskell Parser][: Continue working on Haskell Parser]]
 
-** <2016-08-26 Fri> [[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]   
-** <2016-08-28 Sun> [[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]
-** <2016-08-30 Tue> [[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]
-** <2016-08-31 Wed> Rust language
+** 2016-08-26 Fri [[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]   
+** 2016-08-28 Sun [[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]
+** 2016-08-30 Tue [[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]
+** 2016-08-31 Wed Rust language
    The language looks like an intersting blend between C and Haskell.
    https://www.reddit.com/r/haskell/comments/47rjr4/comparing_haskell_and_rust_which_to_choose_when/
 
@@ -1881,7 +1892,7 @@ Too tired now.
    https://github.com/phaazon/luminance-rs - Phazon's implementation of Luminance in Rust
    https://github.com/phaazon/luminance    - Phazon's Luminance graphics lib
 
-** <2016-09-02 Fri> Trying out Substance Designer, Rust language, Haskell Parser
+** 2016-09-02 Fri Trying out Substance Designer, Rust language, Haskell Parser
    [[file:~/Documents/Allegorithmic/Substance%20Designer/5/test.sbs][file:~/Documents/Allegorithmic/Substance Designer/5/test.sbs]] - playing with basic materials
 *** Houdini Plugin for Substance Designer
 INSTALLER_PATH=`pwd`
@@ -1923,7 +1934,7 @@ echo "Installation Complete"
 *** TODO [#A] : Continue with Haskell Parsing
     @->[[[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]]
 
-** <2016-09-04 Sun> Houdini Ocean, Haskell Parsers
+** 2016-09-04 Sun Houdini Ocean, Haskell Parsers
 *** Houdini Ocean, CmiVFX
    @->[[[*: Create Ocean effect in Houdini][: Create Ocean effect in Houdini]]
    ]
@@ -1934,7 +1945,7 @@ echo "Installation Complete"
 
    @->[[[*<2016-08-25 Thu> Continue with parsing:][<2016-08-25 Thu> Continue with parsing:]]
    ]
-** <2016-09-05 Mon> Jad Nohra gitHub
+** 2016-09-05 Mon Jad Nohra gitHub
    https://github.com/jadnohra/tag
    https://github.com/jadnohra/learn
 
@@ -1957,7 +1968,7 @@ echo "Installation Complete"
 
    [[/home/madjestic/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/][/home/madjestic/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/]]
 
-** <2016-09-06 Tue> Guns Germs and Steal, Haskell Parser
+** 2016-09-06 Tue Guns Germs and Steal, Haskell Parser
 *** Reading Guns Germs and Steal
    [[file:~/Documents/Jared%20Diamond%20-%20Guns%20Germs%20and%20Steel.pdf][file:~/Documents/Jared Diamond - Guns Germs and Steel.pdf]]
 
@@ -2048,7 +2059,7 @@ data Geo = Geo { fileversion :: String
 --      bar <- parse1 (fileVersion) text
 --      print $ toString bar     
 
-** <2016-09-07 Wed> Parsers, Manstein plan :history:
+** 2016-09-07 Wed Parsers, Manstein plan                            :history:
 *** TODO [#D] : Read about Manstein plan on wiki
     https://en.wikipedia.org/wiki/Manstein_Plan
 
@@ -2058,7 +2069,7 @@ data Geo = Geo { fileversion :: String
     [[file:~/Projects/Haskell/Parser/Trifecta/LearnParsers.hs]]
     [[file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/model.geo][file:~/Projects/Haskell/Parser/Haskell_Parsec_Basics/haskell-parsec-basics/model.geo]]
     
-** <2016-09-09 Fri> Parsers progress, Fluids
+** 2016-09-09 Fri Parsers progress, Fluids
 
    [[file:img/parsing_progress_00.png][file:~/org/img/parsing_progress_00.png]]
    - it seems like most basics are covered (short of aeson).
@@ -2070,21 +2081,21 @@ data Geo = Geo { fileversion :: String
     [[/home/madjestic/Documents/cmiVFX%20-%20Houdini%20Advanced%20FLIP%20Fluid%20Systems/cmivfx%20Houdini%20AdFLIP.mp4]]
     @->[[[*<2016-09-10 Sat>][<2016-09-10 Sat>]]]
 
-** <2016-09-10 Sat>
+** 2016-09-10 Sat
    stopped at 9:02 @->[[[*Fluids][Fluids]]]
-** <2016-09-12 Mon> cont.
+** 2016-09-12 Mon cont.
    Reading G.H.Hardy "A Mathematician's Apology" :
    [[file:~/Documents/Hardy-AMathematiciansApology.pdf][file:~/Documents/Hardy-AMathematiciansApology.pdf]] p.101
    Appearance and Reality. F.H.Bradley
-** <2016-09-13 Tue> Haskell, Category Theory
+** 2016-09-13 Tue Haskell, Category Theory
    Bartosz Milewski, Category Theory 1.2
    https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/
    https://www.youtube.com/watch?v=p54Hd7AmVFU&list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_&index=2
-** <2016-09-14 Wed> Emacs Progress Matrix
+** 2016-09-14 Wed Emacs Progress Matrix
 *** DONE : set up formulas for Progress Matrix   
     http://orgmode.org/org.html#Advanced-features vsum
     [[*Progress Matrix][Progress Matrix]]
-** <2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids
+** 2016-09-15 Thu Houdini Lorenz, cmiVFX advanced fluids
    [[file:~/Projects/Houdini/Lorenz/lorenz.hipnc][file:~/Projects/Houdini/Lorenz/lorenz.hipnc]] - made it pretty, just hit play
 
    @<-[[[*: Create Ocean effect in Houdini][: Create Ocean effect in Houdini]]]
@@ -2093,21 +2104,21 @@ data Geo = Geo { fileversion :: String
    /home/madjestic/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/PRJ_Houdini_FLIP_Fluid_Systems/PRJ_Houdini_Ocean_Waves/chapter_1/houdini_files
    [[file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/PRJ_Houdini_FLIP_Fluid_Systems/PRJ_Houdini_Ocean_Waves/chapter_1/houdini_files/ocean_waves_v02.hip][file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/PRJ_Houdini_FLIP_Fluid_Systems/PRJ_Houdini_Ocean_Waves/chapter_1/houdini_files/ocean_waves_v02.hip]]
 
-** <2016-09-16 Fri> Category Theory for Haskell programmers
+** 2016-09-16 Fri Category Theory for Haskell programmers
    @->[[[*<2016-09-28 Wed> Parsec links, Category Theory][<2016-09-28 Wed> Parsec links, Category Theory]]]
 *** DONE [#A] : Finish prioritizing tasks in Agenda mode   
 *** TODO [#B] : Continue with watching Category Theory for Haskell programmers
    https://youtu.be/p54Hd7AmVFU?t=1594
-** <2016-09-19 Mon> Continue with Houdini Fluids
+** 2016-09-19 Mon Continue with Houdini Fluids
    @->[[[*<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids][<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids]]]
    file:~/Documents/cmiVFX_-_Houdini_Advanced_FLIP_Fluid_Systems/cmivfx_Houdini_AdFLIP.mp4 15:06
-** <2016-09-21 Wed> Haskell Parsers, Houdini fluids
+** 2016-09-21 Wed Haskell Parsers, Houdini fluids
    @->[[[*Parsers][Parsers]]
        [[*Haskell GeoParser:][Haskell GeoParser:]]
        [[*<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids][<2016-09-15 Thu> Houdini Lorenz, cmiVFX advanced fluids]]]
-** <2016-09-23 Fri> Haskell, JSON, parser
+** 2016-09-23 Fri Haskell, JSON, parser
    https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json - pizza example
-** <2016-09-26 Mon> Credit Cards, BF2142
+** 2016-09-26 Mon Credit Cards, BF2142
    https://www.icscards.nl/abnamrogb/login
    Login to ABNAmro -> Tools -> Credit Cards Online
 
@@ -2116,7 +2127,7 @@ data Geo = Geo { fileversion :: String
    C-x r j r   - jump to position 'r'
 
    https://battlelog.co/post.php?id=14194 BF2142
-** <2016-09-28 Wed> Parsec links, Category Theory
+** 2016-09-28 Wed Parsec links, Category Theory
    @<-[[[*<2016-09-16 Fri> Category Theory for Haskell programmers][<2016-09-16 Fri> Category Theory for Haskell programmers]]]
    https://github.com/madjestic/nu/blob/master/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/GeoParser.hs
    https://artyom.me/aeson
@@ -2140,7 +2151,7 @@ data Geo = Geo { fileversion :: String
    
 *** IN-PROGRESS [#A] : Continue with parsing: introduce Aeson for parsing JSON part of Geo (topology), based on Pizza example:
     https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json
-** <2016-09-29 Thu> Haskell Parser
+** 2016-09-29 Thu Haskell Parser
    [[/home/madjestic/Projects/Haskell/Parser/Aeson/Flickr.hs]]
    [[file:~/Projects/Haskell/Parser/Aeson/photos.json::"farm":%207,]]
    http://gnclmorais.com/blog/aeson-and-nested-json/
@@ -2150,24 +2161,24 @@ data Geo = Geo { fileversion :: String
    https://www.schoolofhaskell.com/school/starting-with-haskell/libraries-and-frameworks/text-manipulation/json
    
 *** TODO [#A] : I need to add Aeson to GeoParser.hs - specify nested JSON desctiption as in Flickr.hs example.
-** <2016-10-10 Mon> 3D Coat 4.7 71% discount for Pro version, Callendar mode
+** 2016-10-10 Mon 3D Coat 4.7 71% discount for Pro version, Callendar mode
    https://github.com/kiwanami/emacs-calfw - useful tips
 *** TODO : decide on buying a Pro license for 199$   
     DEADLINE : <2016-10-23 Sun>
    
-** <2016-10-20 Thu> Haskell Parser, Nested JSON
+** 2016-10-20 Thu Haskell Parser, Nested JSON
    [[file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.hs][file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.hs]]
    [[file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.json][file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/stack_overflow/data.json]]
    
-** <2016-10-23 Sun>
+** 2016-10-23 Sun
 
    http://www.gentei.org/~yuuji/software/revive.el
    (define-key ctl-x-map "S" 'save-current-configuration)
    (define-key ctl-x-map "R" 'resume)
    (define-key ctl-x-map "K" 'wipe)
-** <2016-10-26 Wed> Emacs Rectangels cua-mode (a type of region select, red rectangle select)
+** 2016-10-26 Wed Emacs Rectangels cua-mode (a type of region select, red rectangle select)
    https://www.emacswiki.org/emacs/CuaMode
-** <2016-10-29 Sat> 0ad
+** 2016-10-29 Sat 0ad
    Manual: http://trac.wildfiregames.com/wiki/0adManual
    Getting Started for Programmers: http://trac.wildfiregames.com/wiki/GettingStartedProgrammers
    Tickets: http://trac.wildfiregames.com/query?status=assigned&status=new&status=reopened&keywords=~simple&col=id&col=summary&col=status&col=type&col=priority&col=milestone&col=component&report=16&order=priority
@@ -2179,9 +2190,9 @@ data Geo = Geo { fileversion :: String
    https://lambdacube3d.wordpress.com/
    http://lambdacube3d.com/
    Overview: http://www.lambdacube3d.com/overview
-** <2016-10-31 Mon> HVC Afval - (trash, garbage collectors)
+** 2016-10-31 Mon HVC Afval - (trash, garbage collectors)
    https://www.hvcgroep.nl/particulier/klantenservice/contact-met-hvc
-** <2016-11-17 Thu>
+** 2016-11-17 Thu
    http://harry.garrood.me/blog/aeson-better-errors/
    http://stackoverflow.com/questions/20269101/how-to-trace-back-parsing-errors-with-aeson-answer
    http://stackoverflow.com/questions/20269101/how-to-trace-back-parsing-errors-with-aeson-answer
@@ -2203,23 +2214,23 @@ data Geo = Geo { fileversion :: String
      http://json.parser.online.fr/
      http://oleg.fi/relaxed-json/ - a JSON formatter by Oleg
 
-** <2016-11-20 Sun> Haskell Books: Parallel and Concurrent Programming in Haskell: Techniques for Multicore and Multithreaded Programming
+** 2016-11-20 Sun Haskell Books: Parallel and Concurrent Programming in Haskell: Techniques for Multicore and Multithreaded Programming
    [[file:~/Documents/Parallel_and_Concurrent_Programming_in_Haskell.pdf][file:~/Documents/Parallel_and_Concurrent_Programming_in_Haskell.pdf]]
-** <2016-11-20 Sun> Haskell, Category Theory
+** 2016-11-20 Sun Haskell, Category Theory
    [[file:todo.org::*:%20Continue%20Watchin%20Bartozh%20Category%20Theory:][< : Continue Watchin Bartozh Category Theory:]]
-** <2016-11-21 Mon>
+** 2016-11-21 Mon
    Reading Simon Marlow's book:
    [[file:~/Projects/Haskell/Parallel_and_Concurrent_Programming_in_Haskell][file:~/Projects/Haskell/Parallel_and_Concurrent_Programming_in_Haskell]]
-** <2016-11-29 Tue> Installing Kivy Designer
+** 2016-11-29 Tue Installing Kivy Designer
    http://kivy-designer.readthedocs.io/en/latest/installation.html
-** <2016-11-30 Wed> Playing with Haskell Core IR, FFI
+** 2016-11-30 Wed Playing with Haskell Core IR, FFI
    
    ghc -ddump-simpl -ddump-to-file -dsuppress-all -dynamic reading_ghc_core.hs
-** <2016-12-02 Fri> Setting up Emacs as a C IDE, Machine Learning
+** 2016-12-02 Fri Setting up Emacs as a C IDE Machine Learning
    [[file:todo.org::*:%20Set%20up%20Emacs%20as%20IDE][@< : Set up Emacs as IDE]]
    https://www.coursera.org/learn/machine-learning/lecture/RKFpn/welcome
    https://www.coursera.org/learn/neural-networks/supplement/gKXYz/lecture-slides-and-resources
-** <2016-12-04 Sun>
+** 2016-12-04 Sun
    [[*<2016-12-12 Mong> Agda, Magit][><2016-12-12 Mong> Agda, Magit]]
    Coursera Machine Learning course:
 *** Machine Learning:
@@ -2232,22 +2243,22 @@ data Geo = Geo { fileversion :: String
      Square Root Cost Function
      https://www.coursera.org/learn/machine-learning/lecture/rkTp3/cost-function
      https://www.coursera.org/learn/machine-learning/supplement/nhzyF/cost-function
-** <2016-12-05 Mon>
+** 2016-12-05 Mon
    C-h m - emacs help on mode
-** <2016-12-06 Tue>
+** 2016-12-06 Tue
    [[*<2016-12-04 Sun>][@<<2016-12-04 Sun>]]
    Feature Scaling
    Mean Normalization
 
-** <2016-12-07 Wed> VPN, Work from Home, Checkpoint Security
+** 2016-12-07 Wed VPN Work from Home Checkpoint Security
    https://www.checkpoint.com/try-our-products/
    https://supportcenter.checkpoint.com/supportcenter/portal/user/anon/page/default.psml/media-type/html?action=portlets.DCFileAction&eventSubmit_doGetdcdetails=&fileid=45789
    https://supportcenter.checkpoint.com/supportcenter/portal?eventSubmit_doShowprelanding&all
-** <2016-12-11 Sun> Haskell, GeoParser
+** 2016-12-11 Sun Haskell GeoParser
    [[file:~/Projects/Haskell/Parser/Aeson/GeoParser][file:~/Projects/Haskell/Parser/Aeson/GeoParser]]
    [[file:todo.org::*:%20make%20a%20box:%20parse%20positions%20with%20python][: make a box: parse positions with python]]
    [[file:todo.org::*:%20make%20a%20pig:%20do%20the%20same%20and%20verify%20if%20array%20indixes%20are%20the%20same.][: make a pig: do the same and verify if array indixes are the same.]]
-** <2016-12-12 Mong> Agda, Magit
+** 2016-12-12 Mon Agda Magit
    [[*<2016-12-04 Sun>][<<2016-12-04 Sun>]]
    [[*<2016-12-16 Fri> Machine Learning][><2016-12-16 Fri> Machine Learning]]
    I played around with Agda a bit:  things seem much easier than 2-3 y.a.  Everything is ready to use from portage.
@@ -2260,14 +2271,120 @@ data Geo = Geo { fileversion :: String
    Magit:
    https://magit.vc/manual/magit/Editing-commit-messages.html
    https://www.emacswiki.org/emacs/Magit
-** <2016-12-16 Fri> Machine Learning
-   [[*<2016-12-12 Mong> Agda, Magit][<<2016-12-12 Mong> Agda, Magit]]
-   [[*<2016-12-17 Sat> Machine Learning][><2016-12-17 Sat> Machine Learning]]
+** 2016-12-16 Fri Machine Learning
+   [[*2016-12-17 Sat Machine Learning][>2016-12-17 Sat Machine Learning]]
    "The undecided values are called parameters, and the description is referred to as the
    model. Your job is to write an algorithm that observes existing examples to figure out how to
    best tune parameters to achieve the best model."
 
-** <2016-12-17 Sat> Machine Learning
-   [[*<2016-12-16 Fri> Machine Learning][<<2016-12-16 Fri> Machine Learning]]
+** 2016-12-17 Sat Machine Learning
+   [[*2016-12-16 Fri Machine Learning][<2016-12-16 Fri Machine Learning]]
    [[file:~/Documents/Machine_Learning_with_TensorFlow_v5_MEAP.pdf][file:~/Documents/Machine_Learning_with_TensorFlow_v5_MEAP.pdf]] Tensorflow Book
    p.25
+
+** 2016-12-20 Tue Cursera Machine Learning
+   [[file:~/Projects/Octave/Coursera_Machine_Learning][file:~/Projects/Octave/Coursera_Machine_Learning]]
+** 2016-12-20 Tue Siggraph, VDA
+   [[*VDA Virtual Bones][VDA Virtual Bones]]
+   [[file:~/Documents/VDA/acm/acmsiggraph/template.tex][file:~/Documents/VDA/acm/acmsiggraph/template.tex]]
+   (auto-revert-mode t) - updates pdf when tex is recompiled.
+   http://www.gnuplotting.org/plotting-data/
+   http://www.gnuplotting.org/data/plotting_data1.dat
+   http://www.gnuplotting.org/code/plotting_data1.gnu
+** 2017-01-02 Mon Coursera Machine Learning
+   https://www.coursera.org/learn/machine-learning/lecture/rkTp3/cost-function
+   https://www.coursera.org/learn/machine-learning/supplement/ExY6Z/lecture-slides
+   https://d3c33hcgiwev3.cloudfront.net/_ec21cea314b2ac7d9e627706501b5baa_Lecture2.pdf?Expires=1483401600&Signature=BTGxMAqGPszzMB0COvrPlK8PDKpvGrRBQEp9cxKHek-LLcwNDnu4p5Qw1UQhc5YiZD-bR93T0VIJM-nhjUu60pCjyrq8mIYuM21Q9zG2vk-XpgYvhM6H3qE7u13lsJ3dxfuNBTyTTldJHdsa2mxVTdd0UudL66QTew5pg~RmnoY_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A
+** 2017-01-06 Fri
+   https://www.amazon.com/Tensors-Mathematics-Relativity-Continuum-Mechanics/dp/0387694684
+   https://www.amazon.co.uk/Manifolds-Tensors-Forms-Introduction-Mathematicians/dp/1107042194/ref=sr_1_1?ie=UTF8&qid=1483675921&sr=8-1&keywords=Manifolds%2C+Tensors%2C+and+Forms
+** 2017-01-08 Sun Dyson vs Dwekins, Stanislav Lem
+   https://www.edge.org/discourse/dawkins_dyson.html
+   http://psylib.org.ua/books/lemst01/txt04.htm
+   https://en.wikipedia.org/wiki/Kardashev_scale
+   https://en.wikipedia.org/wiki/The_High_Frontier:_Human_Colonies_in_Space
+   
+   https://www.youtube.com/watch?v=zJGppi9hBtQ Aubrey de Grey: Death Will Be Optional
+   http://emacs-fu.blogspot.nl/2011/02/keeping-your-secrets-secret.html emacs encryption storing passwords
+
+** 2017-01-09 Mon
+   http://www.motherjones.com/politics/2017/01/read-us-intelligence-report-russian-hacking-2016-campaign
+
+** 2017-01-10 Tue SIGGRAPH Virtual Bones paper
+   [[*SIGGRAPH 2017][@>SIGGRAPH 2017]]
+   https://pdfs.semanticscholar.org/d862/614077b59eeb599bf446c19fb5758cd47e59.pdf - somewhat related with useful links
+   http://www.cs.uoi.gr/tech_reports/publications/skinning.pdf - useful references
+   http://fabiensanglard.net/doom3_documentation/37728-293750.pdf relate + references
+   https://www.google.nl/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=skinning+on+GPU&start=10 - google search results
+   http://www.gamasutra.com/blogs/TequilaWorks/20160620/275347/How_to_take_advantage_of_textures_in_the_vertex_shader.php - Gamasutra guys doing something very similar
+** 2017-01-17 Tue Optics Refraction IOR and wavelength
+   http://physics.stackexchange.com/questions/65812/why-do-prisms-work-why-is-refraction-frequency-dependent
+** 2017-01-25 Wed Virtual Bones paper
+   [[file:~/Documents/VDA/acm/acmsiggraph/template.bbl][file:~/Documents/VDA/acm/acmsiggraph/template.bbl]]
+   [[file:~/Documents/VDA/acm/acmsiggraph/template.tex][file:~/Documents/VDA/acm/acmsiggraph/template.tex]]
+   
+   [[file:~/Projects/Octave/Coursera_Machine_Learning/machine-learning-ex1/ex1/test.m][file:~/Projects/Octave/Coursera_Machine_Learning/machine-learning-ex1/ex1/test.m]]
+   [[file:~/Projects/Octave/Coursera_Machine_Learning/machine-learning-ex1/ex1.pdf][file:~/Projects/Octave/Coursera_Machine_Learning/machine-learning-ex1/ex1.pdf]]
+** 2017-02-01 Wed Diffusion Reaction System
+   [[file:todo.org::*Render%20out%20a%20video,%20same%20as%20for%20n-bodies.][@>(todo) : Render out a video, same as for n-bodies.]]
+   [[file:~/Projects/Houdini/DRS][file:~/Projects/Houdini/DRS]]
+   [[file:~/Projects/Houdini/DRS/DRS.hipnc][file:~/Projects/Houdini/DRS/DRS.hipnc]]
+** Omega Elite inspired game VDA
+   [[file:~/Projects/Omega][file:~/Projects/Omega]]
+   [[*VDA Virtual Bones][@> VDA Virtual Bones]]
+
+*** Robot Raptor Entity performance capture:
+    N  | Total CPU Time| GPU         | Draw  | Total        | FPS        
+       | (microsec)     tris         | Calls | time this frame (%) 
+
+    1    2700  + 468    4652/4767    | 49/1    0.317/0.100  |   
+    2    3195  + 956    9304         | 98      0.582/0.192            
+    3    5459  + 1270   13956        | 147     0.642/0.281            
+    4    6741  + 1813   18608        | 196     0.704/0.354            
+    5    7550  + 2339   23260        | 245     0.834/0.423            
+    6    9264  + 2665   27912        | 294     1.117/0.501            
+    7    10389 + 2709   32564        | 343     1.141/0.581            
+    8    11855 + 2916   37216        | 392     1.179/0.645            
+    9    13379 + 3310   41868        | 441     1.267/0.706            
+    10   14942 + 4458   46520/47670  | 490/1   1.385/0.756            
+    20   22355 + 7159   93040        | 980/12  2.550/1.449  |   
+    30   36645 + 10859  139560       | 1470    3.258/2.170  | 30
+    40   103231+ 15757  186080       | 1960    3.974/2.884  | 24
+    50   132818+ 21013  232600/238350| 2450/1  5.083/3.607  | 15/30
+    60   146811+ 23849  279129/286020| 2940/16 5.897/4.178  | 13
+    70   182697+ 10081  325640       | 3430/28 6.709/4.609  | 12
+    80   195700+ 31005  372160       | 3920    7.340/5.031  | 10
+    90   219740+ 34405  418680       | 4410/   8.513/5.580  | 9 
+    100  246989+ 36485  465200/476700| 4900/33 9.305/5.987  | 8/30
+    200                 953400       |     /23      /11.183
+    300                 1430100      |     /22      /13.680
+    400                 1906800      |     /48      /17.443
+    500                 2383500      |     /83      /21.040
+    600                 2860200      |     /83      /24.027
+
+    512x64 64bit 256Kb
+** 2017-02-10 Fri
+   VDA links
+   https://pdfs.semanticscholar.org/d862/614077b59eeb599bf446c19fb5758cd47e59.pdf
+   http://www.mcihanozer.com/tips/computer-graphics/skinning/
+   http://ruh.li/AnimationVertexSkinning.html
+   http://www.gamasutra.com/blogs/TequilaWorks/20160620/275347/How_to_take_advantage_of_textures_in_the_vertex_shader.php
+   http://fabiensanglard.net/doom3_documentation/37728-293750.pdf
+   http://www.cs.uoi.gr/tech_reports/publications/skinning.pdf
+   
+** 2017-02-11 Sat
+   [[*2016-06-05 Sun][Yampy Cube]] - finish that flappy cube game already.
+
+** 2017-02-14 Tue Siggraph papers
+   https://sis.siggraph.org/cgi-bin/SIS.py?preparsed=1&command=report&name=forms_manager&realm=siscore&SMON=J6akPMJK
+   Submitted the Siggraph 2017 talk:
+   [[file:~/Documents/VDA/acm/acmsiggraph/draft.tex][file:~/Documents/VDA/acm/acmsiggraph/draft.tex]]
+
+** 2017-02-17 Fri Yampy Cube
+   [[file:~/Documents/FRP_Yampy_Cube_Flappy_Bird_Haskell_clone.mp4][file:~/Documents/FRP_Yampy_Cube_Flappy_Bird_Haskell_clone.mp4]]
+   [[file:~/Projects/Haskell/FRP/yampy-cube/yampy-cube.cabal][file:~/Projects/Haskell/FRP/yampy-cube/yampy-cube.cabal]] - finish editing my-yampy...
+** 2017-02-19 Sun FRP Yampa Coursera Machine Learning
+   [[file:~/Documents/FRP/session.dump][file:~/Documents/FRP/session.dump]] - playing with arrow combinators
+
+   Logicstic regression, gradient descent, cost function:
+   [[file:~/Pictures/Screenshot_20170219_221601.png][file:~/Pictures/Screenshot_20170219_221601.png]]

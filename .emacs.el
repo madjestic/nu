@@ -69,7 +69,7 @@
       (:network-server . "talk.google.com")
       (:port . 5223)
       (:connection-type . ssl)))))
- '(minimap-dedicated-window t)
+;; '(minimap-dedicated-window t)
  '(minimap-width-fraction 0.1)
  '(minimap-window-location (quote right))
  '(mouse-wheel-scroll-amount (quote (1 ((shift) . 1) ((control)))))
@@ -87,7 +87,8 @@
      ("gnu" . "http://elpa.gnu.org/packages/")
      ("melpa" . "http://melpa.milkbox.net/packages/")
      ("org" . "http://orgmode.org/elpa/"))))
- '(powerline-default-separator (quote slant))
+ '(recenter-positions (quote (top middle bottom)))
+ '(recenter-redisplay t)
  '(scalable-fonts-allowed t)
  '(scheme-program-name "guile" t)
  '(scroll-bar-mode nil)
@@ -155,7 +156,6 @@
  '(minimap-active-region-background ((t (:background "#454857"))))
  '(minimap-font-face ((t (:height 0.1))))
  '(popup-tip-face ((t (:background "#797985" :foreground "black" :height 0.8))))
- '(powerline-active2 ((t (:inherit mode-line :background "sea green"))))
  '(rainbow-delimiters-depth-1-face ((t (:foreground "aqua"))))
  '(speedbar-button-face ((t (:foreground "green3" :height 0.8))))
  '(speedbar-directory-face ((t (:foreground "steel blue" :height 0.8))))
@@ -205,7 +205,7 @@
 (swap-buffer-mode)
 (show-paren-mode t)
 (set-default 'truncate-lines t)
-(powerline-default-theme)
+;;(powerline-default-theme)
 
 ;;;;;;;;;;;;;;
 ;; Org-mode ;;
@@ -290,3 +290,16 @@
 (define-key ctl-x-map "S" 'save-current-configuration)
 (define-key ctl-x-map "R" 'resume)
 (define-key ctl-x-map "K" 'wipe)
+
+;;
+;; BACKUP
+;;
+
+(setq
+ backup-by-copying t      ; don't clobber symlinks
+ backup-directory-alist
+ '(("." . "~/.backup"))    ; don't litter my fs tree
+ delete-old-versions t
+ kept-new-versions 6
+ kept-old-versions 2
+ version-control t)       ; use versioned backups
