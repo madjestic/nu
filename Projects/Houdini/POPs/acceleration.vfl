@@ -1,0 +1,143 @@
+#pragma opname cvex_newtonian
+#pragma oplabel "Local Vop Code"
+#pragma opmininputs 0
+#pragma opmaxinputs 0
+
+vector sum_attrs(const int handle; string attr; vector data)
+{
+  int    success   = 0;
+  int    iter      = 0;
+  vector result    = {0,0,0};
+  vector accum     = {0,0,0};
+  do
+    {             
+      success = pciterate(handle);
+      if (success)
+        {
+          pcimport(handle, attr, data);
+          accum += data;
+        }
+      iter += 1;
+    }
+  while (success);  
+  result = accum;
+  return result;
+}
+
+vector avg_attrs(const int handle; string attr; vector data)
+{
+  int    success   = 0;
+  int    iter      = 0;
+  vector result    = {0,0,0};
+  vector accum     = {0,0,0};
+  do
+    {             
+      success = pciterate(handle);
+      if (success)
+        {
+          pcimport(handle, attr, data);
+          accum += data;
+        }
+    }
+  while (success);
+  result = accum/(iter-1);
+  return result;
+}
+
+vector acceleration(const int handle; const float mass; const vector P)
+{
+  int    success = 0;
+  int    iter    = 0;
+  float  F       = 0.0f;
+  float  G       = 6.673f*pow(10.0f, (1.0f)); // Gravitational constant    
+  float  dist    = 0.0f;
+  float  m2      = 0.0f;
+  vector dir     = {0,0,0};
+  vector accel   = {0,0,0};
+  vector P2      = {0,0,0};
+  vector v2      = {0,0,0};
+  do
+    {             
+      success = pciterate(handle);
+      if (success)
+        {
+          pcimport(handle, "P", P2);
+          dir   = set(P2 - P);
+          dist  = length(dir);
+          pcimport(handle, "mass", m2);
+          //pcimport(handle, "v", v2);
+          F     = G*mass*m2/(pow(dist, 2.0f)); //  Newton's gravity equation            
+          accel += (F/mass)*normalize(dir);    // Acceleration
+        }
+    }
+  while (success);
+  return accel;
+}
+
+vector accelerationLod(const int handle; const float mass; const vector P)
+{
+  int    success = 0;
+  int    iter    = 0;
+  float  F       = 0.0f;
+  float  G       = 6.673f*pow(10.0f, (1.0f)); // Gravitational constant    
+  float  dist    = 0.0f;
+  float  m2      = 0.0f;
+  vector dir     = {0,0,0};
+  vector accel   = {0,0,0};
+  vector P2      = {0,0,0};
+  vector v2      = {0,0,0};
+  do
+    {             
+      success = pciterate(handle);
+      if (success)
+        {
+          pcimport(handle, "P", P2);
+          dir   = set(P2 - P);
+          dist  = length(dir);
+          pcimport(handle, "mass", m2);
+          //printf("mass: %d\n", m2);
+          F     = G*mass*m2/(pow(dist, 2.0f));     //  Newton's gravity equation            
+          accel += (F/mass)*normalize(dir);    // Acceleration
+        }      
+    }
+  while (success);
+  return accel;
+}
+
+
+cvex
+main
+(
+ string str       = "";
+ int    mode      = 0;
+ int    maxpoints = 2; 
+ int    minpoints = 8;
+ float  radius    = 10000.0f;
+ float  mass      = 0.0f;
+ vector P         = { 0, 0, 0 };
+ export vector v  = { 0, 0, 0 };
+ export vector N  = { 0, 0, 0 };
+ float  scale     = 1.0f;
+ )
+{
+  int    handle;
+  int    FPS      = 30;
+  vector a        = { 0, 0, 0 };
+  if (mode == 0)
+    {
+      handle = pcopen(0, "P", P, radius, maxpoints);
+      a =  acceleration(handle, mass, P);
+    }
+  else
+    {
+      handle = pcopenlod(str, "P", P, minpoints,
+                         "measure", "distance", "threshold", radius,
+                         "aggregate:P", "mean",
+                         "aggregate:mass", "sum");
+      a =  accelerationLod(handle, mass, P);
+    }
+  pcclose(handle);
+  a *= scale;
+  v += a/float(FPS);
+  N = v;
+}

@@ -1,0 +1,80 @@
+﻿#include <math.h> 
+
+#pragma opname cvex_collision
+#pragma oplabel "CVEX n-body Collision Code"
+#pragma opmininputs 0
+#pragma opmaxinputs 0
+
+struct hitBoolList
+{
+  int   hit       = 0;
+  float dist      = 0.0f;
+  int   hitList[] = {};
+}
+
+  hitBoolList collision( const int closept[]; const int c_ptnum; const float mass; const vector P)
+  {
+    int    success  = 0;
+    int    hit      = 0;
+    int    hitList[]= {};
+    int    id       = 0;
+    float  dist     = 0.0f;
+    float  r1; 
+    float  r2;
+    float  m2       = 0.0f;
+    vector P2       = {0,0,0};
+    vector dir      = {0,0,0};
+    hitBoolList result;
+  
+    do
+      {
+        foreach (int ptnum; closept)
+          if(c_ptnum != ptnum)
+            {
+              {
+                P2    = point(0, "P", ptnum);
+                m2    = point(0, "mass", ptnum);
+                dir   = set(P2-P);
+                dist  = length(dir);
+                r1    = cbrt((3*mass)/(4*M_PI));
+                r2    = cbrt((3*m2)/(4*M_PI));
+                if(dist < (r1+r2))
+                  {
+                    push(hitList, ptnum);
+                    hit = 1;
+                  }  
+              }
+            }
+      }
+    while (success);
+    result = hitBoolList(hit, dist, hitList);
+    return result;
+  }
+
+
+cvex
+main
+(
+ int    maxpoints   = 2;
+ int    ptnum       = 0;
+ float  radius      = 1.0f;
+ float  mass        = 0.0f;
+ vector P           = { 0, 0, 0 };
+ export int hitId[] = {};
+ export int hit     = 0;
+ export float dist  = 0.0f;
+ int    collision   = 1;
+ )
+{
+  int handle;
+  hitBoolList result;
+  
+  int closept[] = pcfind(0, "P", P, radius, maxpoints);
+  if(collision)
+    {
+      result  = collision(closept, ptnum, mass, P);
+      hit     = result.hit;
+      dist    = result.dist;
+      hitId   = result.hitList;
+    }
+}
