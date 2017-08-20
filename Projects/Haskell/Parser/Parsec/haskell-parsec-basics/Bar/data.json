@@ -1,0 +1,91 @@
+{
+    "resultSet" : {
+        "location" : [{
+                "desc" : "Tuality Hospital/SE 8th Ave MAX Station",
+                "locid" : 9843,
+                "dir" : "Eastbound",
+                "lng" : -122.978016886765,
+                "lat" : 45.5212880911494
+            }
+        ],
+        "arrival" : [{
+                "detour" : false,
+                "status" : "estimated",
+                "locid" : 9843,
+                "block" : 9024,
+                "scheduled" : "2014-03-02T16:48:15.000-0800",
+                "shortSign" : "Blue to Gresham",
+                "dir" : 0,
+                "estimated" : "2014-03-02T16:48:15.000-0800",
+                "route" : 100,
+                "departed" : false,
+                "blockPosition" : {
+                    "at" : "2014-03-02T16:16:43.579-0800",
+                    "feet" : 3821,
+                    "lng" : -122.9909514,
+                    "trip" : [{
+                            "progress" : 171494,
+                            "desc" : "Hatfield Government Center",
+                            "pattern" : 140,
+                            "dir" : 1,
+                            "route" : 100,
+                            "tripNum" : "4365647",
+                            "destDist" : 171739
+                        }, {
+                            "progress" : 0,
+                            "desc" : "Cleveland Ave",
+                            "pattern" : 10,
+                            "dir" : 0,
+                            "route" : 100,
+                            "tripNum" : "4365248",
+                            "destDist" : 3577
+                        }
+                    ],
+                    "lat" : 45.5215368,
+                    "heading" : 328
+                },
+                "fullSign" : "MAX Blue Line to Gresham",
+                "piece" : "1"
+            }, {
+                "detour" : false,
+                "status" : "estimated",
+                "locid" : 9843,
+                "block" : 9003,
+                "scheduled" : "2014-03-02T17:05:45.000-0800",
+                "shortSign" : "Blue to Gresham",
+                "dir" : 0,
+                "estimated" : "2014-03-02T17:05:45.000-0800",
+                "route" : 100,
+                "departed" : false,
+                "blockPosition" : {
+                    "at" : "2014-03-02T16:34:33.787-0800",
+                    "feet" : 3794,
+                    "lng" : -122.9909918,
+                    "trip" : [{
+                            "progress" : 171521,
+                            "desc" : "Hatfield Government Center",
+                            "pattern" : 140,
+                            "dir" : 1,
+                            "route" : 100,
+                            "tripNum" : "4365648",
+                            "destDist" : 171739
+                        }, {
+                            "progress" : 0,
+                            "desc" : "Cleveland Ave",
+                            "pattern" : 10,
+                            "dir" : 0,
+                            "route" : 100,
+                            "tripNum" : "4365250",
+                            "destDist" : 3577
+                        }
+                    ],
+                    "lat" : 45.5216054,
+                    "heading" : 345
+                },
+                "fullSign" : "MAX Blue Line to Gresham",
+                "piece" : "1"
+            }
+        ],
+        "queryTime" : "2014-03-02T16:35:21.039-0800"
+    }
+}
