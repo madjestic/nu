@@ -1,13 +1,10 @@
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE DeriveGeneric #-}
 import Data.Aeson
-import Data.Aeson.BetterErrors
 import Control.Monad (mzero)
 import qualified Data.ByteString.Lazy as B
-import GHC.Generics
 
 data Tuples = Tuples [Point3] deriving Show
-data Point3 = Point3 Double Double Double deriving Show
+type Point3 = (Double, Double, Double)
 
 instance FromJSON Tuples where
     parseJSON (Object o) =
@@ -15,11 +12,6 @@ instance FromJSON Tuples where
         pts <- o .: "tuples"
         fmap Tuples $ parseJSON pts
     parseJSON _ = mzero
-
-instance FromJSON Point3 where
-    parseJSON obj = do
-        [x, y, z] <- parseJSON obj
-        return $ Point3 x y z
 
 jsonFile :: FilePath
 jsonFile = "tuples.pgeo"           

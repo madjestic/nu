@@ -1,10 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
-{-# LANGUAGE DeriveGeneric #-}
 import Data.Aeson
-import Data.Aeson.BetterErrors
 import Control.Monad (mzero)
 import qualified Data.ByteString.Lazy as B
-import GHC.Generics
 
 data Tuples = Tuples [Point3] deriving Show
 type Point3 = (Double, Double, Double)
@@ -34,6 +31,19 @@ jsonFile = "model.pgeo"
 getJSON :: IO B.ByteString
 getJSON = B.readFile jsonFile
 
+fromEitherDecode :: Either t a -> Maybe a
+fromEitherDecode d =
+  do
+    case d of
+      Left err -> Nothing
+      Right ps -> Just ps
+
+fromMaybe :: Maybe Geo -> Geo
+fromMaybe (Just x) = x
+
+fromGeo :: Geo -> [Point3]
+fromGeo (Geo {tuples = x}) = x
+
 main :: IO ()
 main =
   do
@@ -41,3 +51,6 @@ main =
     case d of
       Left err -> putStrLn err
       Right ps -> print ps
+    let geoPoints =
+          fromGeo $ fromMaybe $ fromEitherDecode d
+    print geoPoints
