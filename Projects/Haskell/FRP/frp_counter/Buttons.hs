@@ -2,7 +2,7 @@ module Buttons where
 
 import Data.Monoid
 import Graphics.Gloss
-import Graphics.Gloss.Data.Extent
+-- import Graphics.Gloss.Data.Extent
 import Graphics.Gloss.Interface.Pure.Game
 import Text.Printf
 

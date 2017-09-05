@@ -11,6 +11,8 @@ houdini() {
 		export HOUDINI=~/houdini_dir
 		export HOUDINI_MAX_FILE_HISTORY=80
 		export HOUDINI_OTLSCAN_PATH=$HOUDINI/houdini/otls:~/Projects/Houdini/otls
+    export HOUDINI_DSO_ERROR=2
+    export HOUDINI_USE_HFS_PYTHON=1
 		export FILE=$1
 		if [ -e "$1" ]
 		then

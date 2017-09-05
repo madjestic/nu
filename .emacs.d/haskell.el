@@ -39,7 +39,8 @@
 (global-set-key (kbd "M-g M-f")    'first-error)
 (global-set-key (kbd "M-<up>")     'paredit-splice-sexp)
 
-(define-key haskell-mode-map (kbd "C-c D") 'haskell-hoogle)
+(define-key haskell-mode-map (kbd "C-c d") 'haskell-hayoo)
+(define-key haskell-mode-map [f8] 'haskell-navigate-imports)
 
 (smartparens-mode t)
 (paredit-mode t)

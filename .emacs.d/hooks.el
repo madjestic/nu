@@ -14,10 +14,13 @@
 (add-to-list 'auto-mode-alist '("\\.pdf::\\([[:digit:]]+\\)\\'"
                                              . org-pdfview-open))
 
+(add-hook 'python-mode-hook
+          (lambda()
+						(load-python-ide)))
+
 (add-hook 'octave-mode-hook
           (lambda()						
 						(load-octave)))
-
 
 (add-hook 'json-mode-hook
           (lambda()						

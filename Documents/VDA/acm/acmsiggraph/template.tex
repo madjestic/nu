@@ -49,7 +49,7 @@
 %%% The next five lines define the rights management block on the first page.
 %%% Replace them with the LaTeX commands provided when the form has been completed.
 
-% \CopyrightYear{2016}
+% \CopyrightYear{2017}
 % \setcopyright{acmcopyright}
 % \conferenceinfo{CONFERENCE PROGRAM NAME}{MONTH, DAY, and YEAR} 
 % \isbn{THIS-IS-A-SAMPLE-ISBN}\acmPrice{\$15.00}
@@ -70,16 +70,7 @@
 \maketitle
 
 \begin{abstract}
-
-  Thanks to recent advances in hardware development and mainstream adoption of  multicore GPU and CPU devices, software developers are able to tap into a pool of parallel computational resources.
-
-%  At the same time as hardware is getting more computational threads, computer graphics standards in realtime applications are being pushed further: many things that have been, traditionally, a part of repertoir of non-realtime computer graphics,  are increasingly getting into real-time applications: modern audience often expects large quantities of high-quality characters and assets. That presents developers with new chalanges and opportunities.
-
-  Traditionally, characters in CG applications are created as skinned meshes with CPU-driven skeletons and associated control-structures.  Due to computational constraints, running a large number of such characters on a CPU is cost-prohobitive and does not scale well.  When large numbers are needed, some form of impostor technique may be used, such as 2D sprites, which poses a different set of problems such as shading issues due to geometric discrapancy between original polygonal models and flat sprites, generating and storing sprite textures, etc.
-
-  In this paper the authors are describing a shading algorithm that allows rendering animated 3D impostors (3D sprites), labeled here and further as `Virtual Bones`, developed by engineers at Guerrilla-Games during the production of open-world game `Horizon: Zero Dawn` (HZD) to cover the need to render a large number of animated assets in real-time, such as crowds and locations heavily decorated with animated cloth-like assets, taking advantage of modern multi-threaded hardware by reducing and offsetting computational costs from CPU to GPU.
-
-  The paper is structured in the following way: \textbf{chapter 1} describes previous work and motivation, \textbf{chapter 2} describes implementation, \textbf{chapter 3} presents performance test results, \textbf{chapter 4} is about known limitations and future work, followed by \textbf{acknowledgemtents} and \textbf{refrences}.
+  During the production of open-world game ‘Horizon: Zero Dawn‘, we had to find a way to render large amounts of animated assets in real-time, such as crowds and locations heavily decorated with animated cloth-like assets. Analysis showed that existing assets are CPU-heavy and are resisting scaling to large numbers. Instead of using skinned meshes, driven by skeletons with complex CPU controll structures, assets had to become vastly simpler and computations had to be offset to GPU. That required creating a new pipeline that includes generating and authoring new content. We wanted to reuse existing content, so it had to be compatible with existing pipeline. We already had an implementation of [Norman], which allowed us creating assets with animationions baked into a texture that drives a vertex displacement program on GPU. However, [Norman] approach is vertex-count bound, which meant that for large meshes the animation texture size had to be large. Because our assets already had skeleton, animation and skinning data, we decided to develop a method that would do a form of skinning on GPU, but would be bound by bones, instead of vertices as in [Norman], and use existing skinning data. These challenges had to be met when programmers support time is very limited. Instead, we decided to use SideFX Houdini Animation Tools to set up a VFX pipeline to process existing assets and use existing shading programs in a version of Autodesk Maya, which did not require any extra work from programmers. This allowed us to keep animation texture size small, offset nearly all computations to GPU while keeping CPU footprint minimal or nill; we could reuse existing content, it did not require changing existing pipeline or code support from programmers, while significanly improving the visual results by allowing us to render a large amount of animated assets.
 \end{abstract}
 
 %
@@ -117,7 +108,7 @@
 
 \conceptlist
 
-\printcopyright
+% \printcopyright
 
 
 
@@ -126,7 +117,9 @@
 
 Conceptually similar ideas have been expressed before, among others are:
 texture-driven vertex displacement by [Norman 2015], [ratchet et al.].
-It seems though that a general technique that would undergo a formal treatment and scrutiny in a form of SIGGRAPH paper is yet to be proposed.
+
+We already had an implementation of [Norman], which allowed us creating assets with animations baked to a texture that drives a vertex displacement program on GPU.
+However, this approach is vertex-count bound, i.e. vertex count = horizontal texture resolution; it requires additional normal transformation texture. We had to look for a method to keep the texture size small. 
 
 \section{Implementation}
 
@@ -153,27 +146,25 @@ where $ T^{rot}_j$ is a $3 \times 3$ rotation matrix, $\bar 0$ is a $1 \times 3$
 Since we are not trying to preserve the skeleton relationships and are only interested in the influence of a set of bones on a vertex position and normal orientation, we discard the relationships that have no influence and treat each joint orientation and position as a transfomation $4 \times 4$ matrix.  Then we perform a linear blend between a set of such transformation matrixes to get a final transformation matrix that we apply to a vertex.  The linear blend is controlled by weights.  Weights can be stored as a texture or as a secondary uv-set as proposed in [Norman]. We do that for every vertex in a vertex displacement shader, hence a vertex position can be computed as:
 
 \begin{equation}
-  P_i = \sum^n_{j=0} ((p^{rest}_i - t^{trans}_j) \cdot T^{-1}_j + t^{trans}_j) \cdot \omega_j
+  \bar{P}_i = \sum^n_{j=0} ((\bar{p}^{rest}_i - \bar{t}^{trans}_j) \cdot T^{-1}_j + \bar{t}^{trans}_j) \cdot \omega_j
 \end{equation}
 
-where $P_i$ is the resulting vertex position, $p^{rest}_i$ - rest vertex position and $n$ - number of bones that influence $i^{th}$ vertex, $t^{trans}_j$ is a rest-pose translation of $j^{th}$ joint and $\omega_j$ is it's respective weight.
-
-Naturally, a vertex normal can be computed as:
+where $\bar{P}_i$ is the resulting vertex position, $\bar{p}^{rest}_i$ - rest vertex position and $n$ - number of bones that influence $i^{th}$ vertex, $\bar{t}^{trans}_j$ is a rest-pose translation of $j^{th}$ joint and $\omega_j$ is it's respective weight.
 
 \begin{equation}
-  N_i = \sum^n_{j=0} ( N^{rest}_i \cdot T^{-1}_j) \cdot \omega_j
+  \bar{N}_i = \sum^n_{j=0} ( \bar{N}^{rest}_i \cdot T^{-1}_j) \cdot \omega_j
 \end{equation}
 
-where $N_i$ - normal of $i^{th}$ vertex. As we can see, (3) and (2) are nearly identical except for translation.
+where $\bar{N}_i$ - normal of $i^{th}$ vertex. As we can see, (3) and (2) are nearly identical except for translation.
 
 We store $T_j$ and $T^{rest}_j$ as a reduced matrix (we store 2 rotation vector components and restore the 3rd as a cross product of the two).  The joints rest position and rotation is stored in the first row of pixels, hence it's deemed a technical row and is not a part of animation loop. % (Figure \ref{bones_texture}).
 
-Vertex rest positon $p^{rest}_i$ and rest normal $N^{rest}_i$ are supplied by the rest-mesh.  Bone indices that influence each vertex correspond to horizontal pixel offset in the texture and are saved as vertex colors in the mesh (Figure \ref{mesh_vertex_colors}).  By using 4 8-bit vertex colors (RGBA), we can map up to 256 bones with 4 influences per vertex, resulting in a form of smooth-skinning, or use a single channel, resulting in hard-skinning.  In other words we store a bone number (or, equivalently, a horizontal pixel offset) as a vertex color and later read it in a shader in order to drive the horizontal offset of a texture lookup (Figure \ref{mesh_vertex_colors})
+Vertex rest positon $\bar{p}^{rest}_i$ and rest normal $\bar{N}^{rest}_i$ are supplied by the rest-mesh.  Bone indices that influence each vertex correspond to horizontal pixel offset in the texture and are saved as vertex colors in the mesh (Figure \ref{mesh_vertex_colors}).  By using 4 8-bit vertex colors (RGBA), we can map up to 256 bones with 4 influences per vertex, resulting in a form of smooth-skinning, or use a single channel, resulting in hard-skinning.  In other words we store a bone number (or, equivalently, a horizontal pixel offset) as a vertex color and later read it in a shader in order to drive the horizontal offset of a texture lookup (Figure \ref{mesh_vertex_colors})
 
 Let $\bar\theta, \bar\phi, \bar\zeta$ be the vector components of the rotation matrix $T^{rot}_j$:
 
 \begin{equation} 
-  T^{rot}_j =
+  [T^{rot}_j]^{T} =
   \begin{pmatrix}
     \theta_1 & \theta_2 & \theta_3 \\
     \phi_1   & \phi_2   & \phi_3 \\
@@ -181,7 +172,7 @@ Let $\bar\theta, \bar\phi, \bar\zeta$ be the vector components of the rotation m
   \end{pmatrix}
 \end{equation}
 
-and let \textit{texture(u,v)} be a function, that, given \textit{(u,v)}, where \{$ u,v \in R, {0\leq u,v \leq 1}$\}, returns a pixel (RGB) from a texture, then, since
+and let \textit{texture(u,v)} be a function, that, given \textit{(u,v)}, where \{$ u,v \in \textbf{R}; u,v \in \{0,1\}$\}, returns a pixel (RGB) from a texture, then, since
 
 \begin{equation} 
   \theta =
@@ -207,8 +198,9 @@ and let \textit{texture(u,v)} be a function, that, given \textit{(u,v)}, where \
   \end{split}
 \end{equation}
   
-where $n$ - number of bones, $t$ - animation offset (time), $Cd.j_i$ is a vertex color, $j^{th}$ component (RGBA) of a vertex $i$, multiplication by $256$ is necessary to map \{0-255\} (bone index) to \{0-1\} (8bit vertex color value), $C\in\bold{R}$ is a scalar value: since we are storing position and rotation data in a color-space of a texture, the Object Space transformation has to be scaled by a factor of $C$ in order to fit into the $\{0-1\}$ range of a color channel of a texture.
-Hence the horizontal texture reolution is $n \cdot 3$, rounded to the closes power of 2, vertical resolutoin equals the number of frames (Figure \ref{bones_texture}).
+where $n$ - number of bones, $t \in \textbf{R}$ - animation offset (time), $Cd.j_i$ is a vertex color, $j^{th}$ component (RGBA) of a vertex $i$, multiplication by $256$ is necessary to map \{0-255\} (bone index) to \{0-1\} (8bit vertex color value), $C\in\bold{R}$ is a scalar space-normalisation constant
+
+The resulting horizontal texture resolution is $n \cdot 3$, rounded to the closes power of 2, vertical resolutoin equals the number of frames (Figure \ref{bones_texture}).
 
 \begin{figure}[ht]
   \centering
@@ -359,7 +351,7 @@ Looking at GPU frame time, we can see that BL curve is growing much faster, conv
 
 \section{Limitations and Future Work}
 
-Texture space waste, 64-bit uncompressed - texture size concers, compression optimization, quaternion optimization, shader initialization.
+Because the horizonral texture resolution was rounded to the closest power of 2, that led to some texture space waste.  We used transformation matrices, instead of quaternions - using quaternions would allow further reducing texture size.  In order to minimize rounding errors, the animation texture had to be stored as 32bit uncompressed. Storing rotation and translation components in 2 separate textures may improve packing and reduce space waste. More research is required in regards to losless compression of animation texture.
 
 \section*{Acknowledgements}
 

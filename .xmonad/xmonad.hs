@@ -9,7 +9,7 @@ import qualified XMonad.StackSet as W
 
 main = do
      xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc"
-     xmonad $ def
+     xmonad $ docks $ defaultConfig
                  { manageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook defaultConfig
                  , layoutHook = avoidStruts $ layoutHook defaultConfig
                  , logHook    = dynamicLogWithPP xmobarPP
@@ -18,7 +18,8 @@ main = do
                                     }
                  , terminal   = "urxvt"
                  , modMask    = mod4Mask
-                 , focusedBorderColor 	= "SeaGreen"
+                 , focusedBorderColor 	= "#444444" --"SeaGreen"
+                 , normalBorderColor    = "SeaGreen"
                  , borderWidth		= 2
                  }
              `additionalKeys`
@@ -38,6 +39,7 @@ main = do
                  , ("M-S-C-e"  , spawn "emacs")
                  , ("M-C-e"    , spawn "emacsclient -c")
                  , ("M-C-k"    , spawn "krusader")
+                 , ("M-C-d"    , spawn "dolphin")
                  , ("M-C-s"    , spawn "spotify")
                  , ("<Print>"  , spawn "spectacle")
                  , ("M-C-<Esc>", spawn "htop")

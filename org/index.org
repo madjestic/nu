@@ -25,6 +25,11 @@
 
 * Games
   Witcher Steam: optirun -b primus %command%
+  ~/Projects/Games/HoMM3/Heroes of Might and Magic III Complete Edition [GOG]
+  ~/Projects/Games/wanger - maybe convert to ISO with app-cdr/iat ?
+  (related thread:)
+  https://forums.gentoo.org/viewtopic-t-797744-start-0.html
+
 * Assembler
   [[*test][test]]
 	I started doing some examples from [[file:~/Documents/nasm_unix.pdf][Столяров Ассемблер]]
@@ -33,7 +38,8 @@
 * b1
   @<-[[[*<2016-07-04%20Mon>%20I%20should%20look%20into%20Repa,%20Looking%20into%20Parsec,%20Leaving%20links%20for%20GLFW%20to%20look%20into%20later%20on%20b1:][<2016-07-04 Mon> I should look into Repa, Looking into Parsec, Leaving links for GLFW to look into later on b1:]]]
  	Stock Exchange program, written in Haskell
-	[[madjestic/Projects/b1/]]  
+  https://github.com/btmura/b1
+  [[file:~/Projects/b1_glfw-b/b1/src/B1/Program/Chart/Main.hs][file:~/Projects/b1_glfw-b/b1/src/B1/Program/Chart/Main.hs]]
 * Bash
 	an interesting example of "loop over all files in a directory 
 	and do stuff to each file:"
@@ -155,6 +161,20 @@
   http://maartenfokkinga.github.io/utwente/
   http://www.cs.uu.nl/staff/doaitse.html
 
+* Coursera
+** Machine Learning  
+   [[*Machine Learning][-> Machine Learning]]
+   [[*AI][-> AI]]
+   [[*2016-08-22 Mon Machine Learning by Tom Mitchel:][-> 2016-08-22 Mon Machine Learning by Tom Mitchel:]]
+   
+*** Week 2 Logistic Regress
+*** Week 3 Neural Networks and multiclass classification
+**** Excercise
+     [[file:~/Documents/machine-learning-ex3][file:~/Documents/machine-learning-ex3]]
+* Dutch
+  http://context.reverso.net/vertaling/nederlands-engels
+  http://www.verbix.com/webverbix/go.php?T1=uitkomen&Submit=Go&D1=24&H1=124
+  
 * Editing a movie:
 	(lossless codec)
 	ffmpeg -i model.rop_comp1.%04d.png -c:v huffyuv out.avi
@@ -291,6 +311,17 @@
 
     It's working, but need to make it work with NGL now
 
+* Genome
+	 [[http://en.wikipedia.org/wiki/Human_Genome_Project][Human Genome Project]] on wiki
+	 [[http://en.wikipedia.org/wiki/Ploidy#Haploid_and_monoploid][Ploidy]] on wiki
+	 [[http://en.wikipedia.org/wiki/Cytokinesis][Cytokinesis]] on wiki
+	 [[http://en.wikipedia.org/wiki/Fission_(biology)][Binary Fission]] on wiki
+** GTK+
+	 [[http://www.micahcarrick.com/gtk-glade-tutorial-part-1.html]]
+
+* Gentoo
+  [[file:todo.org::*Create%20a%20custom%20overlay][Create a custom overlay]]
+
 * Godot Engine
 ** Animated Ocean surface:
 	 Something along the lines with:
@@ -351,6 +382,57 @@ find . | egrep '\.hs$' | xargs hasktags > TAGS
 		Continue reading about VRAY procedural:
 		http://www.peterclaes.be/blog/?tag=vrayprocedural
 
+  - FLIP:
+   [[file:~/Documents/FLIP%20Fluids%20(Jeff%20Wagner)%20_%20Houdini%20ILLUME%20Webinar-182074285.mp4][file:~/Documents/FLIP Fluids (Jeff Wagner) _ Houdini ILLUME Webinar-182074285.mp4]]
+   [[file:~/Documents/FLIP%20Part%20Two%20(Jeff%20Wagner)%20_%20Houdini%20ILLUME%20Webinar-189254805.mp4][file:~/Documents/FLIP Part Two (Jeff Wagner) _ Houdini ILLUME Webinar-189254805.mp4]]
+   [[file:~/Documents/FLIP_webinar_share_files][file:~/Documents/FLIP_webinar_share_files]]
+
+  - Mandepbrot, FRP, OpenGL, Yampa:
+    [[*: @Yampa @SDL2 @Mandelbrot Re-write to support key-hold][: @Yampa @SDL2 @Mandelbrot Re-write to support key-hold]]
+
+  [[file:todo.org::*:%20Waves%20tutorial%20sidefx][< : Waves tutorial sidefx]]
+  [[file:todo.org::*:%20Waves%20tutorial%20cmivfx%202%20%5B%5Bfile:index.org::*Houdini%5D%5BHoudini%5D%5D][< : Waves tutorial cmivfx 2 Houdini]]
+*** Hooking up a PS3 controller to mu
+		It's working.
+		Event stream can be read from [[file:/dev/input/js0]]
+		Fri May 30 00:31:18 CEST 2014
+*** Reading joystick input: :python: :ps3: :houdini:               :joystick:
+
+		http://scaryreasoner.wordpress.com/2008/02/22/programming-joysticks-with-linux/
+		https://www.kernel.org/doc/Documentation/input/joystick-api.txt
+		http://stackoverflow.com/questions/16032982/getting-live-info-from-dev-input
+
+		[2015-10-25 Sun]
+		As a temporary measure: https://github.com/ArthurYidi/Houdini-Joystick
+    
+		Sony PLAYSTATION(R)3 Controller (/dev/input/js0)
+    
+    <2016-02-08 Mon>
+    In order to use:
+    houdini joystick-examples.hip
+    python joystick.py
+    Use Chop Pipe In to read the joystick data.
+
+
+*** Rendering ocean nicely
+    (cmivfx tutorial)
+    https://rutracker.org/forum/viewtopic.php?t=5114569
+    https://rutracker.org/forum/viewtopic.php?t=5079199
+    https://rutracker.org/forum/viewtopic.php?t=4257762
+    [[file:todo.org::*:%20Work%20on%20a%20small%20example%20of%20gushing%20water%20effect][>: Work on a small example of gushing water effect]]
+    [[file:todo.org::*:%20Set%20up%20water%20shader][>: Set up water shader]]
+* iptables
+	https://wiki.archlinux.org/index.php/Iptables
+	https://wiki.gentoo.org/wiki/Iptables#IPv6.5B2.5D.5B.E2.80.93_1.5D
+	http://www.howtogeek.com/177621/the-beginners-guide-to-iptables-the-linux-firewall/
+
+	quick search shows that iptables requires to set up the rules for each connection
+	individually, which seems tedious.  https://github.com/themighty1/lpfw seems to 
+	address that, however it seems to support IPv4 only.... investigate further.
+
+* IRC
+	IRCnet Server : open.ircnet.net
+
 * JS
   http://elm-lang.org/
   Haskell-like language for Web-GUIs
@@ -404,17 +486,58 @@ C-u M-! date   | to insert date |
 	 [[docview:~/Projects/gmsg/basic_des/basic.pdf::1][open_pdf with docview]]
 	 S-enter create a symlink to a current file in dired
 
-* iptables
-	https://wiki.archlinux.org/index.php/Iptables
-	https://wiki.gentoo.org/wiki/Iptables#IPv6.5B2.5D.5B.E2.80.93_1.5D
-	http://www.howtogeek.com/177621/the-beginners-guide-to-iptables-the-linux-firewall/
+* HNGL
+*** on HNGL
 
-	quick search shows that iptables requires to set up the rules for each connection
-	individually, which seems tedious.  https://github.com/themighty1/lpfw seems to 
-	address that, however it seems to support IPv4 only.... investigate further.
+>> Fri Dec 20 11:07:18 CET 2013
+>> Fri Dec 20 16:58:16 CET 2013
+>> Journal #3 (#1 and #2 got lost -_-)
 
-* IRC
-	IRCnet Server : open.ircnet.net
+Editable -> Instancable -> Drawabale
+
+
+Graphics.HNGL.Rendering
+Graphics.HNGL.Data
+
+
+
+toInstancable :: Editable -> Instancable
+
+toDrawable :: Instancable -> Drawable
+
+draw :: Drawable -> IO ()
+
+toAnimatable :: Drawable -> Animation -> Animatable
+
+data Animation = Time Freq
+
+data Time = Float
+
+data Freq = Float
+
+animate :: Animatable -> IO ()
+*** HNGL progress
+[[file:todo.org::*:%20simplify%20tutorial10%20to%20only%20do%20what%20it's%20supposed%20to%20do:][: simplify tutorial10 to only do what it's supposed to do:]]
+[[file:todo.org::*:%20port%20the%20code%20to%20GLFW%20->%20GLFW-b][: port the code to GLFW -> GLFW-b]]
+[[https://github.com/madjestic/Haskell-OpenGL-Tutorial/issues/2][proposed by listx]]
+[[http://hackage.haskell.org/package/GLFW-0.5.2.0/docs/Graphics-UI-GLFW.html][GLFW on Hackage]]
+[[http://hackage.haskell.org/package/GLFW-b][GLFW-b on hackage]]
+[[http://www.tapdancinggoats.com/opengl-in-haskell-glfw-b-boilerplate.htm][GLFW-b Boilerplate]]
+[[http://www.tapdancinggoats.com/haskell-life-repa.htm][Conway's Game of Life with GLFW-b]]
+[[file:todo.org::*:%20introduce%20support%20for%20vertex%20colors][: introduce support for vertex colors]]
+[[file:todo.org::*:%20Vertex2%20->%20Vertex4][: Vertex2 -> Vertex4]]
+[[file:todo.org::*:%20polivariadic%20createWindow:][: polivariadic createWindow:]]
+[[file:todo.org::*:%20polivariadic%20intiResources:][: polivariadic intiResources:]]
+**** Wed Jan 29 00:35:22 CET 2014 on Rendering.hs, missing square
+I eddited the [[~/Projects/Haskell/OpenGL/Haskell-OpenGL-Tutorial/tutorial04/NGL/Rendering.hs][Rendering.hs]] file with intention to introduce a second 
+vertex array object to store color data, the code compiles, but the
+blue square seems to be missing now - need to investigate the situation.
+Too tired now.
+
+> Fixed.
+
+[[file:todo.org::*:%20Texture%20Support][< : Texture Support]]
+[[file:todo.org::*:%20Make%20Elegant,%20Clean-up][< : Make Elegant, Clean-up]]
 
 * Kappa Quick Notes
 	Quick notes:
@@ -450,6 +573,8 @@ ghci -fno-ghci-sandbox
    # timer/date update
    nu madjestic # hwclock --set --date="12/21/2015 19:23:00"
    nu madjestic # hwclock --hctosys --localtime
+   nu madjestic # ntpdate pool.ntp.org
+
 
    # Backup using dd's
    dd if=/dev/sda of=/dev/sdb bs=4096 conv=noerror,sync
@@ -556,6 +681,10 @@ WINDOWS-p
 ** ### MISC               ###
 	 ffmpeg -i movie.%04d.png -c:v libx264 -r 30 out_x264.avi
 
+* Kind of interesting
+  [[*2017-05-05 Fri Links][2017-05-05 Fri Links]]
+    Build Your Own Lisp:
+    http://buildyourownlisp.com/chapter1_introduction#about
 * Life Hacks
 ** Tax-return related papers:
 	  Annual Mortgage Statement 
@@ -801,16 +930,13 @@ WINDOWS-p
 	[2015-10-12 Mon]
 	~/Projects/pvr_fork@madjestic/pvr/scenes/book/chapter_1 $ python fig_1_1.py
 
+* Python
+  [[file:todo.org::*:%20Write%20a%20python%20daemon%20%5B%5Bfile:index.org::*Python%5D%5B@Python%5D%5D][@<{#C}: Write a python daemon]]
 * RAID 10 project
   @->[
   [[file:todo.org::*:%20Build%20RAID-10.%20Project%20Ksi:][{#E}: Build RAID-10.  Project Ksi:]]
   [[file:todo.org::*:%20Project%20Omicron:][{#E}: Project Omicron:]]
   ]
-
-* Python
-  [[file:todo.org::*:%20Write%20a%20python%20daemon%20%5B%5Bfile:index.org::*Python%5D%5B@Python%5D%5D][@<{#C}: Write a python daemon]]
-* Gentoo
-  [[file:todo.org::*Create%20a%20custom%20overlay][Create a custom overlay]]
 
 * Rocket! n-body sim, particles, houdini, Godika
   [[*<2016-03-16 Wed> Gravity, Rocket][@<<2016-03-16 Wed> Gravity, Rocket]]
@@ -926,6 +1052,10 @@ Sat Apr 26 16:03:45 CEST 2014
 		http://en.wikipedia.org/wiki/Framework_Programmes_for_Research_and_Technological_Development
 		http://en.wikipedia.org/wiki/European_Atomic_Energy_Community
 
+* SDL2
+  https://github.com/palf/haskell-sdl2-examples
+  http://lazyfoo.net/tutorials/SDL/index.php
+  https://thebookofshaders.com/03/
 * Tic-Tac-Toe
   @->[[[*AI][AI]]]
   A 'Hello World!' of Machine Learning:
@@ -965,7 +1095,6 @@ Sat Apr 26 16:03:45 CEST 2014
   plot_00 : 
   [[file:~/Documents/VDA/acm/acmsiggraph/data/plot_00.gnu][file:~/Documents/VDA/acm/acmsiggraph/data/plot_00.gnu]]
 
-  
 * Waterfall
   @<-[
   [[*:%20Set%20up%20water%20shader][: Set up water shader]]
@@ -979,133 +1108,12 @@ Sat Apr 26 16:03:45 CEST 2014
   https://rutracker.org/forum/viewtopic.php?t=5079199
   https://rutracker.org/forum/viewtopic.php?t=4257762
 
-* HNGL
-*** on HNGL
-
->> Fri Dec 20 11:07:18 CET 2013
->> Fri Dec 20 16:58:16 CET 2013
->> Journal #3 (#1 and #2 got lost -_-)
-
-Editable -> Instancable -> Drawabale
-
-
-Graphics.HNGL.Rendering
-Graphics.HNGL.Data
-
-
-
-toInstancable :: Editable -> Instancable
-
-toDrawable :: Instancable -> Drawable
-
-draw :: Drawable -> IO ()
-
-toAnimatable :: Drawable -> Animation -> Animatable
-
-data Animation = Time Freq
-
-data Time = Float
-
-data Freq = Float
-
-animate :: Animatable -> IO ()
-*** HNGL progress
-[[file:todo.org::*:%20simplify%20tutorial10%20to%20only%20do%20what%20it's%20supposed%20to%20do:][: simplify tutorial10 to only do what it's supposed to do:]]
-[[file:todo.org::*:%20port%20the%20code%20to%20GLFW%20->%20GLFW-b][: port the code to GLFW -> GLFW-b]]
-[[https://github.com/madjestic/Haskell-OpenGL-Tutorial/issues/2][proposed by listx]]
-[[http://hackage.haskell.org/package/GLFW-0.5.2.0/docs/Graphics-UI-GLFW.html][GLFW on Hackage]]
-[[http://hackage.haskell.org/package/GLFW-b][GLFW-b on hackage]]
-[[http://www.tapdancinggoats.com/opengl-in-haskell-glfw-b-boilerplate.htm][GLFW-b Boilerplate]]
-[[http://www.tapdancinggoats.com/haskell-life-repa.htm][Conway's Game of Life with GLFW-b]]
-[[file:todo.org::*:%20introduce%20support%20for%20vertex%20colors][: introduce support for vertex colors]]
-[[file:todo.org::*:%20Vertex2%20->%20Vertex4][: Vertex2 -> Vertex4]]
-[[file:todo.org::*:%20polivariadic%20createWindow:][: polivariadic createWindow:]]
-[[file:todo.org::*:%20polivariadic%20intiResources:][: polivariadic intiResources:]]
-**** Wed Jan 29 00:35:22 CET 2014 on Rendering.hs, missing square
-I eddited the [[~/Projects/Haskell/OpenGL/Haskell-OpenGL-Tutorial/tutorial04/NGL/Rendering.hs][Rendering.hs]] file with intention to introduce a second 
-vertex array object to store color data, the code compiles, but the
-blue square seems to be missing now - need to investigate the situation.
-Too tired now.
-
-> Fixed.
-
-[[file:todo.org::*:%20Texture%20Support][< : Texture Support]]
-[[file:todo.org::*:%20Make%20Elegant,%20Clean-up][< : Make Elegant, Clean-up]]
-
-* FRP
-   @->[[[file:~/Projects/Haskell/FRP]]]
-   @<-[[[*%5B%5B*FRP%5D%5BFRP%5D%5D][FRP]]
-       [[*<2016-06-12%20Sun>][<2016-06-12 Sun>]]
-   ]
-*** Reactive Banana
-[[*:%20Animation%20Support...][Reactive Banana Animation Support...]]
-[[file:todo.org::*Reading:%20%5B%5Bhttp:/johnlato.blogspot.nl/2011/04/thoughts-on-frp.html%5D%5BSound%20and%20Software%5D%5D][< Reading: Sound and Software]]
-[[file:todo.org::*Reading:%20%5B%5Bhttp:/www.kazachonak.com/2012/06/reactive-programming.html%5D%5BReactive%20Programming%5D%5D][< Reading: Reactive Programming]]
-[[file:todo.org::*Watch%20:%20%5B%5Bhttp:/vimeo.com/6686570%5D%5BPush-pull%20Functional%20Reactive%20Programming%5D%5D][< Watch  : Push-pull Functional Reactive Programming]]
-*** NetWire
-[[http://hackage.haskell.org/package/netwire-4.0.5/docs/Control-Wire.html][Control.Wire]]
-[[http://hub.darcs.net/ertes/netwire/browse/README.md][Netwire on Darcs]]
-[[http://www.haskell.org/haskellwiki/Netwire][Netwire on Haskell Wiki]]
-[[https://github.com/MaxDaten/netwire-examples][Netwire Examples on GitHub]]
-
-*** Yampa
-    Jekor, Yampa:
-    https://youtu.be/-IpE0CyHK7Q?t=425 - Jekor's yampa tutorial part 1
-    https://youtu.be/T3xXebIr8AM?t=980 - Jekor's yampa tutorial part 2
-    Yampy Cube: (flappy bird clone in Haskell)
-    https://youtu.be/T7XwTolu9YI?t=2506
-
-    [[file:~/Projects/Haskell/yampaTutorial/yampa.pdf]]
-
-*** Yampa Tutorial (a pdf tutorial from git)
-    [[file:~/Projects/Haskell/yampaTutorial/yampa.pdf]]
-
 * on Blogs
 ** TurtlesTurtlesTurtles
 **** DONE Update the content, according to the latest state of NGL tutorial
 **** DONE : Write a prime number calculator.
 ** PuurBliss.NL
     [[file:todo.org::*:%20work%20on%20logo%20%5B%5Bfile:index.org::*PuurBliss.NL%5D%5BPuurBliss.NL%5D%5D][< : work on logo PuurBliss.NL]]
-* Houdini
-[[file:todo.org::*:%20Waves%20tutorial%20sidefx][< : Waves tutorial sidefx]]
-[[file:todo.org::*:%20Waves%20tutorial%20cmivfx%202%20%5B%5Bfile:index.org::*Houdini%5D%5BHoudini%5D%5D][< : Waves tutorial cmivfx 2 Houdini]]
-*** Hooking up a PS3 controller to mu
-		It's working.
-		Event stream can be read from [[file:/dev/input/js0]]
-		Fri May 30 00:31:18 CEST 2014
-*** Reading joystick input: :python: :ps3: :houdini:               :joystick:
-
-		http://scaryreasoner.wordpress.com/2008/02/22/programming-joysticks-with-linux/
-		https://www.kernel.org/doc/Documentation/input/joystick-api.txt
-		http://stackoverflow.com/questions/16032982/getting-live-info-from-dev-input
-
-		[2015-10-25 Sun]
-		As a temporary measure: https://github.com/ArthurYidi/Houdini-Joystick
-    
-		Sony PLAYSTATION(R)3 Controller (/dev/input/js0)
-    
-    <2016-02-08 Mon>
-    In order to use:
-    houdini joystick-examples.hip
-    python joystick.py
-    Use Chop Pipe In to read the joystick data.
-
-
-*** Rendering ocean nicely
-    (cmivfx tutorial)
-    https://rutracker.org/forum/viewtopic.php?t=5114569
-    https://rutracker.org/forum/viewtopic.php?t=5079199
-    https://rutracker.org/forum/viewtopic.php?t=4257762
-    [[file:todo.org::*:%20Work%20on%20a%20small%20example%20of%20gushing%20water%20effect][>: Work on a small example of gushing water effect]]
-    [[file:todo.org::*:%20Set%20up%20water%20shader][>: Set up water shader]]
-* Genome
-	 [[http://en.wikipedia.org/wiki/Human_Genome_Project][Human Genome Project]] on wiki
-	 [[http://en.wikipedia.org/wiki/Ploidy#Haploid_and_monoploid][Ploidy]] on wiki
-	 [[http://en.wikipedia.org/wiki/Cytokinesis][Cytokinesis]] on wiki
-	 [[http://en.wikipedia.org/wiki/Fission_(biology)][Binary Fission]] on wiki
-** GTK+
-	 [[http://www.micahcarrick.com/gtk-glade-tutorial-part-1.html]]
-
 * History
 ** 2015-01-12 Mon
 
@@ -1715,7 +1723,9 @@ Too tired now.
 *** TODO [#C] : GLFW-b : b1 need to be converted from GLFW to GLFW-b: study b1 source-code meanwhile
     https://wiki.haskell.org/GLFW
     http://www.glfw.org/docs/latest/input_guide.html
-*** TODO [#D] : Look into REPA
+*** DONE [#D] : Look into REPA
+    repa is ok, use it for arrays
+    also see the Accelerate-REPA backend
 ** 2016-07-06 Wed VR stuff, Parser, Finance Currency JSON API, Jabber History
    @->[[[*: Parse a Houdini Cube example:][: Parse a Houdini Cube example:]]
    ]
@@ -1845,7 +1855,7 @@ Too tired now.
     188p.
     
 ** 2016-08-22 Mon Machine Learning by Tom Mitchel:
-   [[*AI][@>AI]]
+   [[*AI][->AI]]
    WELL-POSED LEARNING PROBLEMS:
 
    Definition: A computer program is said to learn from experience E with respect
@@ -2311,7 +2321,7 @@ data Geo = Geo { fileversion :: String
    http://www.motherjones.com/politics/2017/01/read-us-intelligence-report-russian-hacking-2016-campaign
 
 ** 2017-01-10 Tue SIGGRAPH Virtual Bones paper
-   [[*SIGGRAPH 2017][@>SIGGRAPH 2017]]
+   [[*SIGGRAPH 2017][->SIGGRAPH 2017]]
    https://pdfs.semanticscholar.org/d862/614077b59eeb599bf446c19fb5758cd47e59.pdf - somewhat related with useful links
    http://www.cs.uoi.gr/tech_reports/publications/skinning.pdf - useful references
    http://fabiensanglard.net/doom3_documentation/37728-293750.pdf relate + references
@@ -2326,12 +2336,12 @@ data Geo = Geo { fileversion :: String
    [[file:~/Projects/Octave/Coursera_Machine_Learning/machine-learning-ex1/ex1/test.m][file:~/Projects/Octave/Coursera_Machine_Learning/machine-learning-ex1/ex1/test.m]]
    [[file:~/Projects/Octave/Coursera_Machine_Learning/machine-learning-ex1/ex1.pdf][file:~/Projects/Octave/Coursera_Machine_Learning/machine-learning-ex1/ex1.pdf]]
 ** 2017-02-01 Wed Diffusion Reaction System
-   [[file:todo.org::*Render%20out%20a%20video,%20same%20as%20for%20n-bodies.][@>(todo) : Render out a video, same as for n-bodies.]]
+   [[file:todo.org::*Render%20out%20a%20video,%20same%20as%20for%20n-bodies.][->(todo) : Render out a video, same as for n-bodies.]]
    [[file:~/Projects/Houdini/DRS][file:~/Projects/Houdini/DRS]]
    [[file:~/Projects/Houdini/DRS/DRS.hipnc][file:~/Projects/Houdini/DRS/DRS.hipnc]]
-** Omega Elite inspired game VDA
+** "Godika: 22 century" : Elite inspired game VDA
    [[file:~/Projects/Omega][file:~/Projects/Omega]]
-   [[*VDA Virtual Bones][@> VDA Virtual Bones]]
+   [[*VDA Virtual Bones][-> VDA Virtual Bones]]
 
 *** Robot Raptor Entity performance capture:
     N  | Total CPU Time| GPU         | Draw  | Total        | FPS        
@@ -2388,3 +2398,821 @@ data Geo = Geo { fileversion :: String
 
    Logicstic regression, gradient descent, cost function:
    [[file:~/Pictures/Screenshot_20170219_221601.png][file:~/Pictures/Screenshot_20170219_221601.png]]
+** 2017-02-20 Mon Quaternions
+   [[file:~/Documents/Visualizing%20Quaternions.pdf][file:~/Documents/Visualizing Quaternions.pdf]]
+
+   Id paper on Matrix and Quaternion transformation
+   [[file:~/Documents/SIMD-From-Quaternion-to-Matrix-and-Back.pdf][file:~/Documents/SIMD-From-Quaternion-to-Matrix-and-Back.pdf]]
+** 2017-02-27 Mon Godika
+   GOdika: playing with a Solar system:
+   The update works ok for 9 planets, though when trying to add the Moon,
+   the system seems to fail (Earth orbital velocity is too high to let 
+   the Moon adequately compute it's orbital position relative to the Earth).
+   It seems that it needs an update cycle of it's own, which is relative to
+   the Earth's orbital time/velocity.
+   [[file:~/Projects/Houdini/POPs/star_system/Model_.hipnc][file:~/Projects/Houdini/POPs/star_system/Model_.hipnc]]
+** 2017-02-28 Tue GOdika...
+   [[file:~/Projects/Omega/Model.hipnc][file:~/Projects/Omega/Model.hipnc]]
+   [[file:~/Projects/Houdini/POPs/star_system][file:~/Projects/Houdini/POPs/star_system]]
+   [[file:~/Projects/Houdini/Godika][file:~/Projects/Houdini/Godika]]
+   /home/madjestic/Projects/Omega/ships/Model.hipnc
+** 2017-03-01 Wed Redshift GPU Houdin
+   http://lesterbanks.com/2017/02/volume-effects-redshift-houdini/
+   /home/madjestic/Desktop/redshift.hipnc
+** 2017-03-02 Thu Houdini Water test
+   [[/home/madjestic/Desktop/water_test.hipnc]] - water test
+   https://vimeo.com/182074285
+   https://sidefx.com/education/illume-webinars/
+   https://www.sidefx.com/tutorials/houdini-illume-webinar-flip-fluids/
+** 2017-03-08 Wed Houdini Water videos
+   [[file:~/Documents/FLIP%20Part%20Two%20(Jeff%20Wagner)%20_%20Houdini%20ILLUME%20Webinar-189254805.mp4][file:~/Documents/FLIP Part Two (Jeff Wagner) _ Houdini ILLUME Webinar-189254805.mp4]]
+** 2017-03-10 Fri Allegorithmic Substance Designer Houdini FLIP
+   https://youtu.be/0rqmXRFCO7s?t=252
+   [[*2017-03-08 Wed Houdini Water videos][->2017-03-08 Wed Houdini Water videos]]
+   [[file:~/Documents/FLIP%20Part%20Two%20(Jeff%20Wagner)%20_%20Houdini%20ILLUME%20Webinar-189254805.mp4][file:~/Documents/FLIP Part Two (Jeff Wagner) _ Houdini ILLUME Webinar-189254805.mp4]] 1:25:40
+   
+** 2017-03-11 Sat Unity3D
+   https://forum.unity3d.com/threads/unity-on-linux-release-notes-and-known-issues.350256/#post-2453359
+   [[file:~/bin/unity3d.sh][file:~/bin/unity3d.sh]]
+
+** 2017-03-12 Sun Substance Designer tuts
+   https://youtu.be/61TmAi7hoc0?t=107
+   https://tutorials.allegorithmic.com/courses/18593d4ddd754a1ba28dc72bfc54f64d/youtube-61TmAi7hoc0
+   https://support.allegorithmic.com/documentation/display/SD5/Getting+Started
+** 2017-03-16 Thu Coursera Dutch
+   [[file:~/Documents/machine-learning-ex3][file:~/Documents/machine-learning-ex3]]
+   https://www.coursera.org/learn/machine-learning/programming/Y54Zu/multi-class-classification-and-neural-networks
+   https://d3c33hcgiwev3.cloudfront.net/_48018e8190fedff87b572550690056d2_Lecture8.pdf?Expires=1489708800&Signature=kz5XZOc6EUK0uBGhQy-N66g-Iu9naMm7r3vZIr-1JYXhXudRvJ0wTTVoXKSS5fAcMmYoPnwRsbixFLBeoUOfL7yAbr4w5VCvbRY0qxRyWWQRa1xgwszui5MRzh3Jevlxbe~flLrqNbM5TJ9chjhan8ncRmoJn0hqDLzXYEE969k_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A
+   https://www.coursera.org/learn/machine-learning/exam/HrMM9/neural-networks-representation
+   
+   Dutch
+   http://www.verbix.com/webverbix/go.php?T1=uitkomen&Submit=Go&D1=24&H1=124
+   
+** 2017-03-19 Sun Haskell Linear Types
+   http://blog.tweag.io/posts/2017-03-13-linear-types.html
+   
+** 2017-03-26 Sun Communism
+   [[file:~/Documents/Communism][file:~/Documents/Communism]]
+** 2017-03-27 Mon
+*** TODO : add a vectorized version of costFunction, befor regularized ver.: 
+    [[file:~/Documents/machine-learning-ex2/ex2/costFunction.m][file:~/Documents/machine-learning-ex2/ex2/costFunction.m]]
+   
+** 2017-03-29 Wed
+   https://sites.google.com/site/77neuronsprojectperelman/
+   https://www.ibisc.univ-evry.fr/~belardinelli/Documents/Logique/Mathematical-Logic-ChiswellHodges.pdf
+   [[file:~/Documents/Mathematical-Logic-ChiswellHodges.pdf][file:~/Documents/Mathematical-Logic-ChiswellHodges.pdf]] Math Logic, Jad
+** 2017-04-01 Sat
+   https://github.com/schneems/Octave/blob/master/mlclass-ex2/mlclass-ex2/costFunction.m
+   
+** 2017-04-02 Sun
+   https://github.com/George66/Textbook
+   
+** 2017-04-03 Mon Magit
+   https://github.com/jkitchin/magit-tutorial
+** 2017-04-07 Fri Yampa haskell-overlay custom-overlay
+   /usr/local/portage/haskell/dev-haskell/yampa
+   I experimented with adding a custom ebuild to a local portage branch:
+   /usr/local/portage/haskell/dev-haskell/yampa
+   cp /usr/portage/header.txt ./hello-world-1.0.ebuild
+   ebuild hello-world-1.0.ebuild manifest clean merge
+   - this will add the custom ebuild to portage tree, it can be emerged now.
+
+     Still, a better option, haskell-wise, is to use hackport:
+     ~/overlays/gentoo-haskell
+     hackport make-ebuild dev-haskell ~/Projects/Haskell/Yampa/Yampa.cabal
+     sudo hackport merge yampa  - (e)merges the ebuild.
+
+   - working with Magit:
+     magit-status window: M - remote popup window (can change remote links)
+
+   - Yampa cube: Synthesizer programming
+     [[file:~/Documents/FRP_Yampy_Cube_Flappy_Bird_Haskell_clone.mp4][file:~/Documents/FRP_Yampy_Cube_Flappy_Bird_Haskell_clone.mp4]] 
+     [[file:~/Documents/Modular_Synthesizer_Programming_in_Haskell.pdf][file:~/Documents/Modular_Synthesizer_Programming_in_Haskell.pdf]]
+*** DONE : Continue watching since 00:24
+    [[file:~/Documents/FRP_Yampy_Cube_Flappy_Bird_Haskell_clone.mp4][file:~/Documents/FRP_Yampy_Cube_Flappy_Bird_Haskell_clone.mp4]] 
+    [[file:~/Projects/Haskell/FRP/yampy-cube/src/Main.hs][file:~/Projects/Haskell/FRP/yampy-cube/src/Main.hs]]
+** 2017-04-10 Mon FRP Yampa Haskanoid Unreal Engine Pong game Machine Learning Coursera
+   - Coursera, Week 5:
+   https://www.coursera.org/learn/machine-learning/discussions/weeks/5
+   https://www.coursera.org/learn/machine-learning/resources/go98N
+   https://www.coursera.org/learn/machine-learning/resources/EcbzQ
+   https://www.coursera.org/learn/machine-learning/lecture/na28E/cost-function
+
+   - Unreal Engine Pong:
+   https://www.youtube.com/watch?v=0Cmr4maZEyY
+   [[file:~/Documents/Unreal%20Projects/UE4_Pong][file:~/Documents/Unreal Projects/UE4_Pong]]
+   UE4Editor "/home/madjestic/Documents/Unreal Projects/UE4_Pong/UE4_Pong.uproject"
+
+   - Haskell Haskanoid:
+   [[file:~/Projects/Haskell/haskanoid/src/Main.hs][file:~/Projects/Haskell/haskanoid/src/Main.hs]]
+
+   
+   
+     
+   
+** 2017-04-14 Fri Haskell, Simon Marlow
+   - Parallel and Concurrent Programming in Haskell
+   http://chimera.labs.oreilly.com/books/1230000000929
+
+   Chapter on Repa and Accelerate:
+   http://chimera.labs.oreilly.com/books/1230000000929/ch05.html
+   
+   - Gen, Sander docs
+     [[file:~/Documents/2016_Construction][file:~/Documents/2016_Construction]]
+** 2017-04-15 Sat Tensorflow Haskell
+   - Free Google course about Deep Learning:
+     https://www.udacity.com/course/deep-learning--ud730
+   
+   - Installing Tensorflow from source:
+     https://www.tensorflow.org/install/install_sources
+
+   - Parallel and Concurrent Haskell
+     https://github.com/simonmar/parconc-examples
+     
+   - HDMI:
+     $ xrandr --output HDMI1 --mode 1920x1080
+     $ xrandr -s 1600x900
+** 2017-04-22 Sat itch.io 
+   https://itch.io/ - game launch platform for "Project: Omega"
+*** from IRC log:
+    me > http://pasteboard.co/76m0AI0Vh.png
+    <Eisenhans> are you trying to compete with Elite now? ;)
+    me > itching a scratch :)
+    me > the bloody thing does not get released on Linux, so what choice
+    do I have?
+    <Eisenhans> none, really.
+    <Eisenhans> if you are looking for a portal to do an initial
+    release.. itch.io
+    <Eisenhans> (I have very good experiences with them)
+    me > thanks :)
+    me > it's far from being done, but I will keep that in mind
+    me > never heard about them by the way, a weird conoinsidence with the
+    name
+    me > conoinsidence -> coinsidence
+    <Eisenhans> I have dealt with them in varying capacity and roles over
+    the last 4 years. they have managed to gather a unique audience of
+    open minded people
+    <Eisenhans> have a wireframe duo-tone text-graphic adventure with a
+    heavy story? that's the place to release it
+    <Eisenhans> also they are super reliable with payouts etc, and have
+    exactly zero API requirements
+    <Eisenhans> upload a tar.gz, done.
+    me > sounds good
+** 2017-04-23 Sun Haskell Jump to next error:
+   M-g-f
+** 2017-04-25 Tue GLFW-b Politics
+*** TODO : create an infographics for Oil trade in 1065-1985 USSR vs 1995-2017 RF also Oil Price
+    http://www.globalaffairs.ru/number/n_4831
+    https://ru.wikipedia.org/wiki/%D0%AD%D0%BA%D0%BE%D0%BD%D0%BE%D0%BC%D0%B8%D0%BA%D0%B0_%D0%A1%D0%A1%D0%A1%D0%A0
+   
+** 2017-04-26 Wed О защите прав потребителей: OZPP
+   http://www.ozpp.ru/laws/zpp.php
+   http://www.consultant.ru/document/cons_doc_LAW_305/
+
+   - Longboards:
+   http://www.yankodesign.com/2011/04/18/infinite-combo-longboar/
+   
+   - GLFW-b/SDL2
+     wtf is SDL.Scancode?  What's the GLFW-b equivalent?
+*** TODO : convert SDL2 Input handling to GLFW-b
+    [[file:~/Projects/Haskell/yampy-cube/src/Input.hs][file:~/Projects/Haskell/yampy-cube/src/Input.hs]]
+** 2017-04-29 Sat Haskell
+   [[file:~/Projects/Haskell/sdl2-test/test_00/Main.hs][file:~/Projects/Haskell/sdl2-test/test_00/Main.hs]]
+** 2017-04-30 Sun Haskell Mandelbrot SDL2 Yampa OpenGL example
+*** DONE : Continue refactoring
+    - This is almos working (UI does not work)
+      /home/madjestic/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2/
+
+    - SDL2 OpenGL example:
+      /home/madjestic/Projects/Haskell/opengl-sdl-tutorial/3-Rendering-with-OpenGL/
+
+    - Yampy Cube
+      /home/madjestic/Projects/Haskell/yampy-cube/src/
+*** DONE : refactor yampy-cube to draw a single rectangle (a minimal SDL Yampa app example)      
+*** DONE : replace SDL draw call with OpenGL
+     [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2-asInYampyCube/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2-asInYampyCube/Main.hs]]
+*** DONE : clean up (rename, etc.)
+     [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2-asInYampyCube/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2-asInYampyCube/Main.hs]]
+*** WAITING : refactor for yampa+glfw+opengl
+     I got stuck (SDL.eventPayload):
+     [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-glfw-b/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-glfw-b/Main.hs]]
+     https://github.com/madjestic/Haskell-OpenGL-Tutorial/tree/master/Mandelbrot-FRP-io-glfw-b
+** 2017-05-03 Wed Haskell, FRP keyboard events, The Book of Shaders
+   - Interesting links:
+   http://thebookofshaders.com/11/
+   https://github.com/lukexi/halive - Haskell Live recompile
+   http://pixelspiritdeck.com/  Taro OpenGL playing cards
+
+   - glslViewer Live GLSL shader update
+   [[file:~/Projects/glslViewer][file:~/Projects/glslViewer]] 
+   https://github.com/patriciogonzalezvivo/glslViewer
+
+   http://buildyourownlisp.com/
+   http://libcello.org/
+*** TODO : figure out how HoldKey works
+** 2017-05-04 Thu Latest youtube links
+   https://www.youtube.com/watch?v=sdeWRieUw2U
+   http://buildyourownlisp.com/chapter1_introduction#about
+   https://www.youtube.com/watch?v=9QveBbn7t_c
+   https://www.youtube.com/watch?v=gEoruozy3mk
+** 2017-05-04 Thu more crazy links Postgresql, Schemavers a space-sim game to learn Postgresql
+   https://schemaverse.com/tutorial/tutorial.php?page=MyResources
+** 2017-05-05 Fri Links
+   Build Your Own Lisp
+     http://buildyourownlisp.com/chapter1_introduction#about
+   FRP with Netwire
+     https://www.youtube.com/watch?v=sdeWRieUw2U
+   Postgresql tutorial
+     https://www.postgresql.org/docs/8.0/static/tutorial-start.html
+     https://www.postgresql.org/docs/8.0/static/install-requirements.html
+       Postgresql-based space sim game:
+           https://schemaverse.com/
+           Rules
+             https://schemaverse.com/tutorial/tutorial.php?page=MyResources
+       Haskell high-level bindings to Postgresql:
+         https://github.com/tomjaguarpaw/haskell-opaleye
+** 2017-05-07 Sun Solving Repeated Events in Yampa:
+   http://stackoverflow.com/questions/43831573/yampa-sdl2-repeating-keypress-button-hold-event-behavior-example
+** 2017-05-08 Mon Yampa/SDL2 Mandelbrot
+*** TODO : @Yampa @SDL2 @Mandelbrot Re-write to support key-hold
+    [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2]]
+    [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2/Main.hs]]
+    [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2/Input.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2/Input.hs]]
+
+    Possible options:
+    a) Event List
+    b) (Scancode, Bool)
+    
+    References: Perez on FRP key-repeat issue
+    http://stackoverflow.com/questions/43831573/yampa-sdl2-repeating-keypress-button-hold-event-behavior-example#comment74711673_43831573
+    https://mail.google.com/mail/u/0/#inbox/15be4878b6ecae3a
+
+    Scratch notes:
+    edge :: SF Bool (Event ())
+
+    keyRepeat                        :: SF AppInput (Event ())
+    >>^  :: Arrow a => a b c -> (c -> d) -> a b d
+    filterE (code ==) >>^ tagWith () :: Event SDL.Scancode -> Event ()
+
+    >>^  :: Arrow a => a b c -> (c -> d) -> a b d
+    tagWith () :: Event a -> Event ()
+
+    ^>>  :: Arrow a => (b -> c) -> a c d -> a b d
+    inpKeyRepeat :: AppInput -> Bool
+    edge         :: SF Bool (Event ())
+
+    ^>>  :: Arrow a => (b -> c) -> a c d -> a b d
+    inpKeyPressed :: AppInput -> SDL.Scancode
+    edgeTag       :: a -> SF Bool (Event a)
+
+*** TODO : Work an a Mandelbrot-io (no FRP) example:
+    possibly have 2 versions: sdl2 and glfw-b
+    [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot/Main.hs]]
+
+*** TODO : study SDL2 examples
+    http://lazyfoo.net/tutorials/SDL/index.php
+    https://github.com/palf/haskell-sdl2-examples
+**** TODO : fix 2-year old sdl2 examples
+     [[file:~/Projects/Haskell/haskell-sdl2-examples][file:~/Projects/Haskell/haskell-sdl2-examples]] 
+    
+** 2017-05-09 Tue Houdini Colliding Particles
+   - OpenGL Precision Qualifiers
+     There are three precision qualifiers: highp, mediump, and lowp.
+   
+   - VPN Noordvpn:
+     https://nordvpn.com/order/?language=en&2year=&coupon=2YDeal2017 - deal
+     https://nordvpn.com/order/?annual&coupon=SPRING
+     https://nordvpn.com/special/holiday-deal/?utm_source=aff896&utm_medium=affiliate&utm_term=&utm_content=netflix&utm_campaign=off81 another deal
+     https://nordvpn.com/tutorials/linux/openvpn/ - Linux instructions
+     https://nordvpn.com/tutorials/android/openvpn/ - Android intructions
+     https://www.reddit.com/r/NetflixViaVPN/comments/4z5fiq/how_to_get_everything_on_netflix_not_only_the_us/
+
+     https://www.azirevpn.com/ - another VPN worth noting
+     https://torguard.net/
+
+     https://www.reddit.com/r/vpnreviews/comments/69f6r0/expressvpn_vs_nordvpn_vspia/ - Reddit disctussion
+
+*** TODO : Render out the sequence
+    [[file:~/Projects/Houdini/POPs/n_body_collide_stable_cloud_render_test.hipnc][file:~/Projects/Houdini/POPs/n_body_collide_stable_cloud_render_test.hipnc]]
+**** TODO : Set up the render:
+***** TODO : fix velocity blur artifacts:
+     [[file:~/Screenshots/Screenshot_20170509_012321.png][file:~/Screenshots/Screenshot_20170509_012321.png]]
+** 2017-05-10 Wed ffmpeg frames to animation
+   ffmpeg -i n_body_collide.%04d.exr -c:v huffyuv out.avi
+*** TODO : add a Makefiile
+    [[file:~/Projects/CPP/01_hello_SDL/01_hello_SDL.cpp][file:~/Projects/CPP/01_hello_SDL/01_hello_SDL.cpp]]
+
+** 2017-05-11 Thu Xmobar icons
+   https://github.com/jaor/xmobar
+
+*** TODO : Send Water Meter data to PWN:   
+    SCHEDULED : <2017-05-12 Fri>
+    https://mijn.pwn.nl/MijnPwn/Meter/EnteringMeterLevel?opnamenummer=21662773070
+    
+** 2017-05-12 Fri Bone weights distance
+   [[file:~/Projects/Haskell/Junk/00/Main.hs][file:~/Projects/Haskell/Junk/00/Main.hs]]
+** 2017-05-13 Sat
+   http://www.linguee.nl
+   https://nl.wikipedia.org/wiki/Vereenigde_Oostindische_Compagnie
+** 2017-05-15 Mon Continue studying SDL2:
+   https://github.com/palf/haskell-sdl2-examples
+   http://lazyfoo.net/tutorials/SDL/index.php
+   https://thebookofshaders.com/03/
+
+   [[file:~/Projects/Haskell/haskell-sdl2-examples/src/lesson02.hs][file:~/Projects/Haskell/haskell-sdl2-examples/src/lesson02.hs]]
+
+*** TODO : Watch some Siraj on Tensorflow:
+    https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A
+    https://www.youtube.com/watch?v=h3l4qz76JhQ
+
+** 2017-05-16 Tue
+   [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2/Input.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2/Input.hs]]
+*** TODO : refactor Input.hs
+    -- |Refactor:
+    -- |inpKeyPressed :: Maybe SDL.Scancode
+    -- |->
+    -- |inpKeyPressed :: Maybe Event
+** 2017-05-17 Wed SDL2 Haskell Python Siraj
+   Learning Tensorflow with Siraj:
+   [[*: Watch some Siraj on Tensorflow:][<@: Watch some Siraj on Tensorflow:]]
+   https://www.youtube.com/watch?v=h3l4qz76JhQ
+   [[file:~/Projects/Python/tensorflow/Build_a_Neural_Net_in_4_Minutes/Main.py][file:~/Projects/Python/tensorflow/Build_a_Neural_Net_in_4_Minutes/Main.py]]
+
+   saved desktop "SDL2" at:
+   /home/madjestic/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2/
+*** TODO : Load the desktop and continue   
+** 2017-05-20 Sat Python Siraj Machine Learning
+   https://www.youtube.com/watch?v=AJVP96tAWxw
+   https://www.kaggle.com/c/word2vec-nlp-tutorial/details/part-1-for-beginners-bag-of-words
+** 2017-05-20 Sat cabal flags
+   
+   Pass the flags to cabal configure, e.g.:
+   cabal configure -f debug
+** 2017-05-23 Tue KeyRepeat
+   I was unable to complete the Key Press Repeat task.
+   I saved a wip copy:
+   [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2.wip/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2.wip/Main.hs]]
+   I saved a set of last opened bookmarks: last/sdl2_23May2017
+   I think that I should proceed and solve the above on the way.
+   I guess the new Elite will not have key-hold events for now...
+** 2017-05-30 Tue Bitwig
+   [ebuild  N     ] app-eselect/eselect-java-0.3.0::gentoo  0 KiB
+   [ebuild  N     ] sys-apps/baselayout-java-0.1.0::gentoo  0 KiB
+   [ebuild  N     ] dev-java/java-config-2.2.0-r3:2::gentoo  USE="{-test}" PYTHON_TARGETS="python2_7 python3_4 (-python3_5) (-python3_6)" 0 KiB
+   [ebuild  N     ] dev-java/icedtea-bin-3.4.0:8::gentoo  USE="alsa cups gtk webstart -doc -examples -headless-awt -multilib -nsplugin -pulseaudio (-selinux) -source" ABI_X86="32 (64) (-x32)" 60,397 KiB
+   [ebuild  N     ] virtual/jdk-1.8.0-r3:1.8::gentoo  0 KiB
+   [ebuild  N     ] virtual/jre-1.8.0-r1:1.8::gentoo  0 KiB
+   [ebuild  N     ] dev-java/icedtea-web-1.6.1-r1::gentoo  USE="-doc -javascript -nsplugin -tagsoup {-test}" 0 KiB
+   
+*** TODO : Make bitwig studio work with JACK (and see the midi keyboard)   
+    https://answers.bitwig.com/questions/8945/jack-not-working
+    https://answers.bitwig.com/questions/6675/no-connection-to-jack-audio-or-alsa-in-xubuntu-1404
+    https://answers.bitwig.com/questions/1134/how-do-i-correctly-setup-audio-under-linux
+** 2017-06-04 Sun
+   /home/madjestic/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2.wip/
+   /home/madjestic/Projects/Haskell/cuboid-sdl/src/
+** 2017-06-05 Mon Python Geo Parser
+   [[file:~/Projects/Parser/geoParser.py][file:~/Projects/Parser/geoParser.py]]
+   /home/madjestic/Projects/Haskell/Haskell-OpenGL-Tutorial/Boilerplate_01_sdl2/
+   [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-sdl2/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-sdl2/Main.hs]] - good example of GLFW->SDL2 transition
+   /home/madjestic/Projects/Haskell/sdl2/examples/lazyfoo/ - sdl2 lessons
+   [[file:~/Projects/Haskell/sdl2/examples/lazyfoo/Lesson03.hs][file:~/Projects/Haskell/sdl2/examples/lazyfoo/Lesson03.hs]]
+   http://lazyfoo.net/SDL_tutorials/lesson01/index2.php - C++ version
+   [[file:~/Documents/visualize.jpeg][file:~/Documents/visualize.jpeg]]----
+
+   http://www.sidefx.com/docs/houdini/vex/functions/
+
+   [[file:~/Projects/Houdini/CVEX/Houdini_Files/hip/cvex_pcloud.hipnc][file:~/Projects/Houdini/CVEX/Houdini_Files/hip/cvex_pcloud.hipnc]]
+   
+*** TODO : add key-callbacks to the SDL2 transition example:   
+    [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Boilerplate_01_sdl2/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Boilerplate_01_sdl2/Main.hs]]
+    
+
+*** CVEX
+http://www.sidefx.com/docs/houdini/vex/functions/
+
+#ifndef VOP_OP
+#define VOP_OP
+#endif
+#ifndef VOP_CVEX
+#define VOP_CVEX
+#endif
+
+#pragma opname cvex_test
+#pragma oplabel "Local Vop Code"
+#pragma opmininputs 0
+#pragma opmaxinputs 0
+//#pragma label   vec3    "Vector 3"
+//#pragma hint    "P"     hidden
+
+
+cvex
+cvex_pc_lookup(
+    int    maxpoints = 2;    
+    float  radius    = 0.1;
+    vector P         = { 0, 0, 0 };
+    string file      = "defgeo.bgeo";
+    export vector N = { 0, 0, 0 };
+    )
+{
+int handle;
+int success;
+int success1;
+int condition_out;
+int condition_out1;
+int added;
+int iter_out;
+int handle_out;
+vector sum;
+vector data;
+vector var1_out = {0,0,0};
+vector var3_out = {0,0,0};
+vector      accum_out = {0,0,0};
+vector      diff;
+vector      nvec;
+
+handle  = pcopen(file, "P", P, radius, maxpoints, "preload", 1);
+//success = pciterate(handle);
+
+    do
+    {             
+        success = pciterate(handle);
+        added = iter_out + 1;
+        condition_out = success;
+        if (condition_out)
+        {
+            success1 = pcimport(handle, "P", data);
+            var1_out = data;
+        }
+        sum = var1_out + accum_out;
+        condition_out1 = success;
+        iter_out = added;
+        accum_out = sum;
+    }
+    while (condition_out1);
+    
+    diff = P - accum_out;
+    nvec = normalize(diff);
+    N    = nvec;
+
+//     if (success)
+//     {                                  
+//     pcimport(handle, "P", data);            
+//     var1_out = data;
+//     }
+//     sum = var1_out + var3_out;
+}
+** 2017-06-06 Tue
+*** TODO : Write out a vertex-cache file from python GeoParser:
+   [[file:~/Projects/Parser/geoParser.py][file:~/Projects/Parser/geoParser.py]]
+   Python help page explaining how to:
+   https://docs.python.org/2/tutorial/inputoutput.html
+** 2017-06-07 Wed Houdini Utrech User Group
+   - Snow Crystal Growth
+     Entagma
+     Snow Crystal
+     http://www.patarnott.com/pdf/SnowCrystalGrowth.pdf
+     [[file:~/Documents/SnowCrystalGrowth.pdf][file:~/Documents/SnowCrystalGrowth.pdf]]
+     space colonization
+     https://en.wikipedia.org/wiki/Honeycomb_(geometry)
+
+
+*** TODO : Read up on pcopenlod:
+     http://127.0.0.1:48626/vex/functions/pcopenlod - how to set up tree-optimization for a pc look-up
+     
+** 2017-06-12 Mon Blender Camera tracking
+   https://youtu.be/3STqy77jG50
+   (look in Downloads folder, there are 2 files:
+   - Blender Basic UI
+   - Camera Tracking
+   
+** 2017-06-14 Wed Houdini OpenCL
+   [[file:~/Projects/Houdini/OpenCL][file:~/Projects/Houdini/OpenCL]]
+** 2017-06-14 Wed
+   https://people.maths.ox.ac.uk/gilesm/cuda/new_lectures/lec1.pdf
+   https://www.khronos.org/registry/OpenCL/sdk/1.0/docs/man/xhtml/get_global_id.html
+   http://sa09.idav.ucdavis.edu/docs/SA09-OpenCLOverview.pdf
+** 2017-06-22 Thu
+   /home/madjestic/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2.ip - hold event seems to work,
+   but signal function to support it is not in place.
+
+   It seems that Jekor's yampa-cuboid tutorial may have a clue
+   https://youtu.be/T3xXebIr8AM?t=1228
+   event <- edge -< pos <= 0
+** 2017-06-24 Sat
+   https://belcour.github.io/blog/research/2017/05/01/brdf-thin-film.html
+   Iridiscence
+** 2017-06-26 Mon Vulkan Mandelbrot Python from Haskell Oanda
+   https://renderdoc.org/vulkan-in-30-minutes.html
+   https://vulkan-tutorial.com/
+
+   - Got the key-hold event working:
+     [[*2017-06-22 Thu][2017-06-22 Thu Previous Attempt to get KeyHold working]]
+     [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2/Main.hs]]
+     [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Mandelbrot-FRP-io-sdl2]]
+   
+   - Python from Haskell
+     https://john-millikin.com/articles/ride-the-snake/
+     [[file:~/Projects/Haskell/Python][file:~/Projects/Haskell/Python]] - calling python process from haskell
+    
+   - Oanda
+     https://github.com/oanda/v20-python-samples
+     http://developer.oanda.com/rest-live-v20/sample-code/
+     http://developer.oanda.com/rest-live-v20/introduction/
+** 2017-06-28 Wed IGAD
+   - Selena, Delubas, educational product
+
+   - Nicky, 
+     - how did you produce textures?
+     - what was difficult with the lighting?
+     - houdini project?
+     - talent/packaging
+
+   - Jeroen
+     - VREE
+     - VR gloves?
+     - robo recall (VR game)
+
+   - Jeroen de Haas
+     - Interstellar rift
+
+   - Jeroen van Dion
+     Game engine programming + music + animation + writing
+
+   - Tizion Keboon
+     - Traditional 2D hand-drawn animation
+
+   - Joren van Leeuwen
+     - quite impressive fight-scene animation "Bar Fight"
+     - good attention to detail
+     - note-taking
+
+   - Jeroen
+     - Rigger (tilting platforms, adjusting rigs).
+       
+   - Alena Anikina
+     - Jand-painted environmetns
+     - 3D Coat (p-tex).
+     - Discworld
+** 2017-07-04 Tue Russian Fairytales VEX Zoom in out images
+   http://www.kostyor.ru/tales/tale89.html
+   [[file:~/Desktop/gaussian.vfl][file:~/Desktop/gaussian.vfl]]
+   [[file:~/Desktop/packing.vfl][file:~/Desktop/packing.vfl]]
+   [[file:~/Projects/Houdini/POPs/acceleration.vfl][file:~/Projects/Houdini/POPs/acceleration.vfl]]
+   [[file:~/Projects/Houdini/POPs/collision.vfl][file:~/Projects/Houdini/POPs/collision.vfl]]
+   [[file:~/Desktop/circle_packing.hipnc][file:~/Desktop/circle_packing.hipnc]]
+
+   ;;; Usage:
+   ;; * To manupulate a image under cursor.
+   ;;
+   ;;  M-x imagex-global-sticky-mode
+   ;;
+   ;; * C-c + / C-c -: Zoom in/out image.
+   ;; * C-c M-m: Adjust image to current frame size.
+   ;; * C-c C-x C-s: Save current image.
+   ;;
+   ;; * Adjusted image when open image file.
+   ;;
+   ;;  M-x imagex-auto-adjust-mode
+
+** 2017-07-05 Wed Sector
+   Sector - a tool for 3D mesh (re)generation.
+** 2017-07-06 Thu Machine Learning Python
+   https://github.com/rasbt/python-machine-learning-book/tree/master/code/ch01
+   [[file:~/Documents/Python_Machine_Learning_proglib.pdf][file:~/Documents/Python_Machine_Learning_proglib.pdf]]
+   [[file:~/Documents/DeepLearningBook.pdf][file:~/Documents/DeepLearningBook.pdf]]
+   [[file:~/Documents/Hands_On_Machine_Learning_Scikit_Tensorflow.pdf][file:~/Documents/Hands_On_Machine_Learning_Scikit_Tensorflow.pdf]]
+
+** 2017-07-06 Thu Machine Learning
+   Ironically, abstract and formal tasks that are among the most diﬃcult mental
+   undertakings for a human being are among the easiest for a computer. Computers
+   have long been able to defeat even the best human chess player, but are only
+   recently matching some of the abilities of average human beings to recognize objects
+   or speech.
+   [[file:~/Documents/DeepLearningBook.pdf][(DeepLearningBook)]]
+
+   When designing features or algorithms for learning features, our goal is usually
+   to separate the factors of variation that explain the observed data.
+   
+** 2017-07-08 Sat
+   [[file:~/Desktop/flip_test_01.hipnc][file:~/Desktop/flip_test_01.hipnc]] corona splash, 8x8 meters.
+   I should try a 10x10cm scale or so, see if that works.
+   [[file:~/Desktop/flip_test_02.hipnc][file:~/Desktop/flip_test_02.hipnc]]
+** 2017-07-09 Sun
+   - DLP
+     1.2.1
+     The Many Names and Changing Fortunes of Neural Net-
+     works
+
+   - It is worth noting that the eﬀort to understand how the brain works on
+     an algorithmic level is alive and well. p.17
+
+   - 
+** 2017-07-13 Thu Snowflake
+   [[*2017-06-07 Wed Houdini Utrech User Group][@>2017-06-07 Wed Houdini Utrech User Group]]
+   [[file:~/Documents/SnowCrystalGrowth.pdf][file:~/Documents/SnowCrystalGrowth.pdf]]
+   2 stages:
+   1) Determine receptive sites.
+      - ice
+      - neighbout ice
+   2) Values of the cells are: values of receptive sites + constant + diffusion term.
+      - diffusion term = local average
+  
+   0 <= gamma <= 1.0  - added constant
+   0 <= \beta <= 0.95 - background level
+   
+** 2017-07-24 Mon Elfeed rss
+   load-rss
+   C-u G - scoped update (somehowe `g` does not have any effect)
+** 2017-07-25 Tue CVEX Snowflake Point SOP
+*** TODO : rewrite the examples using per-point CVEX, 
+    rather than detail (run once).  At the moment the algorithm
+    is using a single core.  The expectation is that using per point
+    operation may lead to greater core utilization.
+    
+   [[file:~/Desktop/cvex_snowflake_point_group_sop.vfl][file:~/Desktop/cvex_snowflake_point_group_sop.vfl]]
+   [[file:~/Desktop/cvex_snowflake_point_sop.vfl][file:~/Desktop/cvex_snowflake_point_sop.vfl]]
+   [[file:~/Desktop/snowflake.hipnc][file:~/Desktop/snowflake.hipnc]]
+
+** 2017-07-27 Thu B1
+   /home/madjestic/Projects/b1_fix/b1/src/B1/Data/Price/
+   QUERY syntax has changed:
+   - New:
+   http://www.google.com/finance/historical?q=NASDAQ%3AGOOG&ei=w0F4WbiKLtSCUYytjoAB&output=csv
+   http://www.google.com/finance/historical?q=NYSE:BAC&ei=7u1tUojBIYHKkwPTHw
+   - Old:
+   http://www.google.com/finance/historical?output=csv&q=RUB&startdate=07/27/15&enddate=07/27/17
+
+   - Shortened down to:
+   http://www.google.com/finance/historical?q=NASDAQ%3AGOOG
+   http://www.google.com/finance/historical?q=NYSE:BAC
+
+   http://www.google.com/finance/historical?output=csv&q=RUB
+
+   The history of intellectual growth and discovery clearly demonstrates the need for unfettered
+   freedom, the right to think the unthinkable, discuss the unmentionable, and challenge the 
+   unchallengeable. To curtail free expression strikes twice at intellectual freedom, for 
+   whoever deprives another of the right to state unpopular views necessarily also deprives 
+   others of the right to listen to those views.
+
+** 2017-07-28 Fri Clouds
+   Andrew's cloud talk:
+   - P.H.Ritchers "The beauty of fractals"
+   - Albert Bierstadt - landscape/cloudscape artist
+   - reprojection?
+** 2017-08-01 Tue
+   https://www.google.com/finance/historical?q=NASDAQ:GOOG&startdate=Aug+3+2016&enddate=Aug+22+2017
+** 2017-08-03 Thu Left-wing Socialistic totalitarian regime:
+   *everbody stands for "nearly total majority", where an exception is
+   negligibly small.
+
+   Ideal socialism is possible when the society is more or less 
+   homogenous in terms of quality of individuals, e.g. the quality of life, expectations,
+   and early life conditions ("everybody is equal").
+   
+   Ideal socialistic system consists of a society genuinely, honestly 
+   accepting the status-quo, using transparency as a natural tool, 
+   like a nervous system of our body 
+   ("total consentual transparency, "there's nothing to hide").
+
+   Such society shares more or less similar set of values and idea of 
+   "happiness", hence everybody naturally speeks what is already socially accepted. 
+   Since all expressions are more or less alike, expression by speech
+   is non-disturbing and serves to share ideologically-friendly ideas,
+   there's no need for censorship ("freedom of speach").
+
+   If such agreement between everybody is true, then ths society is
+   socialistic in ideal sense.  If, however, that is not true and the
+   conformity to "be normal" is enforced through repression machine,
+   then the unfair society will inevitably have to increase the use of
+   repressions, which results in a totalitarian socialistic society.
+
+** 2017-08-04 Fri Comparative Religion
+   http://bit.ly/2vsOV2t Элиаде, Мирча
+   https://en.wikipedia.org/wiki/Mircea_Eliade
+   
+** 2017-08-06 Sun Enery Prices
+   - Russia (Moscow) Kw/h (EURO per Kw/h):
+     0.07 
+   
+   - NL 
+     ~ 0.17630
+     420EURO per year 2461 Kw/h
+     0.17
+
+   - Rig:
+     24 GTX nVidia ~24K EURO
+     ~700 MH ~ 1300$
+** 2017-08-09 Wed Mon geoParser Python
+   [[file:~/Projects/Parser/geoParser.py][file:~/Projects/Parser/geoParser.py]]
+   [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Read_Model-FRP-io-sdl2/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Read_Model-FRP-io-sdl2/Main.hs]]
+   
+   The problem is that a bgeo is not a well-formatted json file, it is non-canonical
+   and improved for serialization reasons.  It's hard for me to both
+   lear parsing and making sure that it's well-formatted, hence I resort
+   to an alternative: parse a necessary chunk of bgeo and later use Haskell
+   to simply read in the array.
+   [[/home/madjestic/Projects/Haskell/Parser/Aeson/Main.hs]]
+do
+   I stopped here:
+   https://github.com/madjestic/nu/blob/master/Projects/Haskell/Parser/Parsec/haskell-parsec-basics/Main.hs
+   This illustrates a basice "parser while consuming" parser.  It's rather dull, but seems to work.  God knows how that thing needs to change
+   if it needs to support varying fields in geo file, probably some godaweful mess of GADT.
+
+*** DONE : Put it all together
+    [[file:~/Projects/Parser/geoParser.py][file:~/Projects/Parser/geoParser.py]]
+    [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Read_Model-FRP-io-sdl2/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Read_Model-FRP-io-sdl2/Main.hs]]
+    [[/home/madjestic/Projects/Haskell/Parser/Aeson/Main.hs]]
+    https://stackoverflow.com/questions/12309269/how-do-i-write-json-data-to-a-file
+    [[file:~/Projects/Parser/Parser(Haskell)/Haskell_Parsec_Basics][file:~/Projects/Parser/Parser(Haskell)/Haskell_Parsec_Basics]] - some interesting results
+
+    Result:
+    [[file:~/Projects/Parser/PGeoParserAeson.hs][file:~/Projects/Parser/PGeoParserAeson.hs]]
+    [[*2017-08-24 Thu Adding a Geo Parser example with Aeson][<@2017-08-24 Thu Adding a Geo Parser example with Aeson]]
+** 2017-08-16 Wed Asgard
+   Ни́фльхе́йм
+   Хвергельмир
+   Ginnungagap — первичный хаос
+
+   [[file:~/Pictures/Yggdrasil.jpg][file:~/Pictures/Yggdrasil.jpg]]
+
+   1. Asgard, the home of the Æsir ruled by the god Odin, Freya, etc.
+   2. Álfheimr/Ljósálfheimr, the home of the Light elves or "Ljósálfar"
+   3. Niðavellir/Svartálfaheimr, the home of the Dwarves, who are also synonymous with the Dark elves "Dökkálfar" and Black elves "Svartálfar"
+   4. Midgard (Earth), the home of humans
+   5. Jötunheimr/Útgarðr, the home of the Jötnar (Giants)
+   6. Vanaheimr, the home of the Vanir
+   7. Niflheim, a world of ice and snow
+   8. Muspelheim, a world of fire and lava and home of the Jötunn Surtr
+   9. Hel(heimr), the home of the dishonorable dead sometimes synonymous with or located within Niflheim and ruled by the goddess Hel
+** 2017-08-20 Sun Writing a Python JSON file.
+   [[*: Put it all together][<@: Put it all together]]
+   ~/.wine/drive_c/Program Files (x86)/Grinding Gear Games/Path of Exile
+   [[file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics][file:~/Projects/Haskell/Parser/Parsec/haskell-parsec-basics]]
+   /home/madjestic/Projects/Parser/Parser(Haskell)/Haskell_Parsec_Basics/haskell-parsec-basics/Bar/Main.hs
+** 2017-08-23 Wed Haskell Parser
+   [[file:~/Projects/Parser/PGeoParserAeson.hs][file:~/Projects/Parser/PGeoParserAeson.hs]]
+
+** 2017-08-24 Thu Adding a Geo Parser example with Aeson
+   [[file:~/Projects/Parser/PGeoParserAeson.hs][file:~/Projects/Parser/PGeoParserAeson.hs]]
+** 2017-08-27 Sun refactoring 
+   Geo :: Transform Position Normal Color Time
+
+   draw :: Geo -> IO ()
+
+   -- overwrites Position
+   setPos :: Geo -> Position -> Geo
+
+   -- overwrites Normal
+   setNormal :: Geo -> Normal -> Geo
+
+   -- overwrites Normal if supplied, or adds a default Normal
+   addNormal :: Geo -> Maybe Normal -> Geo
+
+   -- overwrites/adds Color
+   setColor ...
+
+   defaultGeo :: Geo
+
+   newGeo :: 
+   -> Maybe Position
+   -> Maybe Normal
+   -> Maybe Color
+   -> Maybe Transform
+   -> Maybe Time
+   -> Geo
+
+   -- Possible TypeClass usage:
+   -- e.g.:
+   Typeclass initGeo =
+    
+     initGeo :: Shape -> Geo
+       Square ((x,y) z)  -> Position -- a function that takes Square ((x,y) z)
+                                     -- and outputs a set of Vertex Positions
+       newGeo :: Nothing -> Position -> Nothing -> Nothing -> Geo
+       return newGeo
+    
+     initGeo :: Shape -> Color -> Geo
+       Square ((x,y) z)  -> Position
+       newGeo :: Nothing -> Position -> Color -> Nothing -> Geo
+
+   -- OTOH: Fuck it for now, let's keep it simple
+
+** 2017-08-27 Sun TypeClasses varying number and type of arguments
+   [[file:~/Projects/Haskell/Gems/typeclass_variable_number_of_arguments/Main.hs][file:~/Projects/Haskell/Gems/typeclass_variable_number_of_arguments/Main.hs]]
+** 2017-09-01 Fri Parser NGL
+   [[file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Read_Model-FRP-io-sdl2/Main.hs][file:~/Projects/Haskell/Haskell-OpenGL-Tutorial/Read_Model-FRP-io-sdl2/Main.hs]]
+   - works:
+     deserializatoin via python
+     parsing via haskell Aeson
+     vizualisation via NGL
+*** TODO : add uv, normals Houdini -> NGL
+**** TODO : add indices (point order)
+** 2017-09-03 Sun Binary JSON
+   /home/madjestic/houdini/houdini/public/binary_json/
+   в а хдк набор заголовков UT_JSON*.h
+   [[file:~/houdini/houdini/public/binary_json/README][file:~/houdini/houdini/public/binary_json/README]]
+** 2017-09-04 Mon Godika
+   refactor so the Geo is read only once and passed to initResources as an argument
+** 2017-09-05 Tue
+   [[file:~/Downloads/Game.of.Thrones.S06E06.HDTV.x264-KILLERS%5Bettv%5D/Game.of.Thrones.S06E06.HDTV.x264-KILLERS%5Bettv%5D.mkv][file:~/Downloads/Game.of.Thrones.S06E06.HDTV.x264-KILLERS{ettv}/Game.of.Thrones.S06E06.HDTV.x264-KILLERS{ettv}.mkv]] (~ middle, when she adds the poison)

@@ -32,10 +32,24 @@
   ;;        (org-open-file link 1))
         (interactive)) ))))
 
+(defun load-feed ()
+  "load RSS options"
+  (load-rss))
+
+(defun load-rss ()
+  "load RSS options"
+  (interactive)
+  (load-user-file "elfeed.el"))
+
 (defun load-octave ()
   "load octave options"
   (interactive)
   (load-user-file "octave.el"))
+
+(defun load-python-ide ()
+  "load python options"
+  (interactive)
+  (load-user-file "python-ide.el"))
 
 (defun load-json ()
   "load json options"

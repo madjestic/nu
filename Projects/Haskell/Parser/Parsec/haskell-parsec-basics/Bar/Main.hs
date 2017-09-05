@@ -73,7 +73,7 @@ asLocation :: Parse e Location
 asLocation =
   Location
     <$> key "desc"  asString
-    <*> key "locid" asIntegral
+    <*> key "locid" asInCtegral
     <*> key "dir"   asString
     <*> key "lng"   asRealFloat
     <*> key "lat"   asRealFloat

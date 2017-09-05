@@ -4,7 +4,7 @@
 
 [[ -f /home/madjestic/.Xresources ]] && xrdb -merge /home/madjestic/.Xresources
 
-feh --bg-scale 1600x900 /home/madjestic/Documents/pics/neutrino3.jpg &
+feh --bg-scale 1920x1080 /home/madjestic/Documents/pics/neutrino3.jpg &
 xcompmgr -cCfF -r7 -o.65 -l-10 -t-8 -D7 &
 xsetroot -cursor_name left_ptr
 urxvtd --quiet --opendisplay --fork

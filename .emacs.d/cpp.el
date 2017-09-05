@@ -1,37 +1,7 @@
-;;(minimap-mode)
-
-;;;;;;;;;;;
-;; gtags ;;
-;;;;;;;;;;;
-
-;; (require 'ggtags)
-;; (add-hook 'c-mode-common-hook
-;;           (lambda ()
-;;             (when (derived-mode-p 'c-mode 'c++-mode 'asm-mode)
-;;               (ggtags-mode 1))))
-
-;; (define-key ggtags-mode-map (kbd "C-c g s") 'ggtags-find-other-symbol)
-;; (define-key ggtags-mode-map (kbd "C-c g h") 'ggtags-view-tag-history)
-;; (define-key ggtags-mode-map (kbd "C-c g r") 'ggtags-find-reference)
-;; (define-key ggtags-mode-map (kbd "C-c g f") 'ggtags-find-file)
-;; (define-key ggtags-mode-map (kbd "C-c g c") 'ggtags-create-tags)
-;; (define-key ggtags-mode-map (kbd "C-c g u") 'ggtags-update-tags)
-
-;; (define-key ggtags-mode-map (kbd "M-,") 'pop-tag-mark)
-;; (global-set-key (kbd "M-.") 'ggtags-find-tag-dwim)
-;; ;; (define-key ggtags-mode-map (kbd "M-.") 'ggtags-find-tag-dwim)
-
 ;; Package: smartparens
 (require 'smartparens-config)
 (show-smartparens-global-mode +1)
 (smartparens-global-mode 1)
-
-;; when you press RET, the curly braces automatically
-;; add another newline
-;; (sp-with-modes '(c-mode c++-mode)
-;;   (sp-local-pair "{" nil :post-handlers '(("||\n[i]" "RET")))
-;;   (sp-local-pair "/*" "*/" :post-handlers '((" | " "SPC")
-;;                                             ("* ||\n[i]" "RET"))))
 
 ;;;;;;;;;;
 ;; helm ;;
@@ -46,13 +16,16 @@
  helm-gtags-suggested-key-mapping t
  )
 
-;; Enable helm-gtags-mode
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Enable helm-gtags-mode ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 (require 'helm-gtags)
-(add-hook 'dired-mode-hook 'helm-gtags-mode)
-(add-hook 'eshell-mode-hook 'helm-gtags-mode)
+;;(add-hook 'dired-mode-hook 'helm-gtags-mode)
+;;(add-hook 'eshell-mode-hook 'helm-gtags-mode)
 (add-hook 'c-mode-hook 'helm-gtags-mode)
 (add-hook 'c++-mode-hook 'helm-gtags-mode)
-(add-hook 'asm-mode-hook 'helm-gtags-mode)
+;;(add-hook 'asm-mode-hook 'helm-gtags-mode)
 
 (define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
 
@@ -87,7 +60,7 @@
 (define-key c-mode-map (kbd "C-.")  'fa-show)
 (define-key c++-mode-map (kbd "C-.")  'fa-show)
 
-;;;;;;;;;;
+;; ;;;;;;;;;;
 
 (require 'speedbar)
 (speedbar-add-supported-extension ".hs")
@@ -96,17 +69,12 @@
 (speedbar-add-supported-extension ".tga")
 (speedbar-add-supported-extension ".glsl")
 (setq speedbar-show-unknown-files t)
-;; (global-set-key (kbd "C-c s") 'sr-speedbar-toggle) - moved to misc.el
-;; (global-set-key (kbd "C-c m") 'minimap-toggle)     - moved to misc.el
-;; do the same with minimap and make it into misc.el
-;; (sr-speedbar-open)
 
-(load-user-file "cedet.el")
+;; (load-user-file "cedet.el")
 
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 (global-company-mode)
+(company-quickhelp-mode 1)
 
 (linum-mode)
-
-;; (minimap-create)

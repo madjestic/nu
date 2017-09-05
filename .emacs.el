@@ -24,7 +24,7 @@
  '(circe-network-options
    (quote
     (("Freenode" :nick "madjestic" :channels
-      ("#emacs" "#odforce" "#haskell-beginners")
+      ("#emacs" "#odforce" "#haskell-beginners" "#gentoo" "#gentoo-haskell")
       :nickserv-password asdfg))))
  '(circe-server-connected-hook nil)
  '(cua-enable-cua-keys nil)
@@ -69,7 +69,6 @@
       (:network-server . "talk.google.com")
       (:port . 5223)
       (:connection-type . ssl)))))
-;; '(minimap-dedicated-window t)
  '(minimap-width-fraction 0.1)
  '(minimap-window-location (quote right))
  '(mouse-wheel-scroll-amount (quote (1 ((shift) . 1) ((control)))))
@@ -85,8 +84,11 @@
    (quote
     (("marmalade" . "http://marmalade-repo.org/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/")
-     ("melpa" . "http://melpa.milkbox.net/packages/")
+     ("melpa-stable" . "http://stable.melpa.org/packages/")
      ("org" . "http://orgmode.org/elpa/"))))
+ '(package-selected-packages
+   (quote
+    (darkroom yafolding weechat w3m vline use-package twittering-mode tabbar sr-speedbar smooth-scrolling smooth-scroll smartparens smart-mode-line-powerline-theme shm session second-sel scheme-here scheme-complete rtags revive realgud rainbow-delimiters python-mode perl6-mode paredit org-pdfview openwith nyan-mode nurumacs nlinum move-text minimap menu-bar+ magit macrostep lui lcs julia-shell json-mode jedi jabber importmagic image+ iedit howm hlint-refactor hide-comnt helm-swoop helm-spotify helm-gtags helm-ghc helm-circe helm-c-yasnippet haskell-snippets guile-scheme gtags google-maps glsl-mode ghci-completion ggtags function-args flymake-hlint flymake-haskell-multi flycheck-perl6 flycheck-irony flycheck-haskell flycheck-ghcmod flycheck-cython fill-column-indicator ess elpy elfeed ecb djvu direx dired-sort-menu desktop desktop+ ctags company-quickhelp company-jedi company-irony company-ghci company-ghc company-auctex cmake-ide calfw buffer-move bash-completion auto-complete-octave auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-complete-auctex ac-octave ac-math ac-helm ac-haskell-process 0blayout)))
  '(recenter-positions (quote (top middle bottom)))
  '(recenter-redisplay t)
  '(scalable-fonts-allowed t)
@@ -223,6 +225,7 @@
                               ("\\.3b\\'"    "3D-coat"       (file))
                               ("\\.mkv\\'"   "mpv"           (file))
                               ("\\.mp4\\'"   "mpv"           (file))
+                              ("\\.mov\\'"   "mpv"           (file))
                               ("\\.djvu\\'"  "djview"        (file))
                               ))
 

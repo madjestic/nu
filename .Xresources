@@ -16,7 +16,7 @@ URxvt*color2		: rgba:4444/9999/4444/ffff
 URxvt*scrollBar		: true
 URxvt*scrollBar_right	: true
 URxvt*scrollstyle	: plain
-URxvt*scrollColor	: seagreen
+URxvt*scrollColor	: rgba:4444/4444/4444/ffff
 URxvt*cursorBlink	: true
 emacs*borderWidth	: 2
 

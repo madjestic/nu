@@ -1,9 +1,13 @@
 (setq circe-network-options
       `(("Freenode"
          :nick "madjestic"
-         :channels ("#emacs" "#odforce" "#haskell-beginners")
 				 :nickserv-nick madjestic
-         :nickserv-password asdfg)))
+         :nickserv-password asdfg
+         :channels ("#emacs"
+                    "#odforce"
+                    "#haskell-beginners"
+                    "#gentoo"
+                    "#gentoo-haskell"))))
 
 (custom-set-variables
 '(browse-url-browser-function (quote browse-url-generic))
