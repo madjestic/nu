@@ -51,12 +51,18 @@ rbp :: SF AppInput (Event ())
 rbp = rbpPos >>^ tagWith ()
 
 -- | Events that indicate right button click and are tagged with mouse position
-rbpPos :: SF AppInput (Event (Double,Double))
+rbpPos :: SF AppInput (Event (Double, Double))
 rbpPos = inpMouseRight ^>> edgeJust
 
 -- | Is right button down
 rbDown :: SF AppInput Bool
 rbDown = arr (isJust . inpMouseRight)
+
+windowResize :: SF AppInput (Event ())
+windowResize = setWinSize >>^ tagWith ()
+
+setWinSize :: SF AppInput (Event (Double, Double))
+setWinSize = inpWindowResized ^>> edgeJust
 
 keyPress :: SF AppInput (Event SDL.Scancode)
 keyPress = inpKeyPressed ^>> edgeJust
@@ -84,23 +90,25 @@ quitEvent = arr inpQuit >>> edge
 
 -- | Exported as abstract type. Fields are accessed with signal functions.
 data AppInput = AppInput
-    { inpMousePos    :: (Double, Double)        -- ^ Current mouse position
-    , inpMouseLeft   :: Maybe (Double, Double)  -- ^ Left button currently down
-    , inpMouseRight  :: Maybe (Double, Double)  -- ^ Right button currently down
-    , inpKeyPressed  :: Maybe SDL.Scancode
-    , inpKeyReleased :: Maybe SDL.Scancode
-    , inpKeyRepeat   :: Bool
-    , inpQuit        :: Bool                    -- ^ SDL's QuitEvent
+    { inpMousePos      :: (Double, Double)        -- ^ Current mouse position
+    , inpMouseLeft     :: Maybe (Double, Double)  -- ^ Left button currently down
+    , inpMouseRight    :: Maybe (Double, Double)  -- ^ Right button currently down
+    , inpKeyPressed    :: Maybe SDL.Scancode
+    , inpKeyReleased   :: Maybe SDL.Scancode
+    , inpKeyRepeat     :: Bool
+    , inpQuit          :: Bool                    -- ^ SDL's QuitEvent
+    , inpWindowResized :: Maybe (Double, Double)        -- ^ SDL's Window Resize Event
     }
 
 initAppInput :: AppInput
-initAppInput = AppInput { inpMousePos   = (0, 0)
-                        , inpMouseLeft  = Nothing
-                        , inpMouseRight = Nothing
-                        , inpKeyPressed = Nothing
-                        , inpKeyReleased= Nothing
-                        , inpKeyRepeat  = False
-                        , inpQuit       = False
+initAppInput = AppInput { inpMousePos      = (0, 0)
+                        , inpMouseLeft     = Nothing
+                        , inpMouseRight    = Nothing
+                        , inpKeyPressed    = Nothing
+                        , inpKeyReleased   = Nothing
+                        , inpKeyRepeat     = False
+                        , inpQuit          = False
+                        , inpWindowResized = Just (640, 480) 
                         }
 
 -- | Filter and transform SDL events into events which are relevant to our
@@ -110,9 +118,13 @@ parseWinInput = accumHoldBy nextAppInput initAppInput
 
 -- | Compute next input
 nextAppInput :: AppInput -> SDL.EventPayload -> AppInput
-nextAppInput inp SDL.QuitEvent = inp { inpQuit = True }
-nextAppInput inp (SDL.MouseMotionEvent ev) =
-    inp { inpMousePos = (fromIntegral x, fromIntegral y) }
+nextAppInput inp SDL.QuitEvent
+  = inp { inpQuit = True }
+nextAppInput inp (SDL.WindowResizedEvent ev)
+  = inp { inpWindowResized = Just (fromIntegral x, fromIntegral y) }
+    where (V2 x y) = SDL.windowResizedEventSize ev 
+nextAppInput inp (SDL.MouseMotionEvent ev)
+  = inp { inpMousePos = (fromIntegral x, fromIntegral y) }
     where P (V2 x y) = SDL.mouseMotionEventPos ev
 nextAppInput inp (SDL.KeyboardEvent ev)
     | SDL.keyboardEventKeyMotion ev == SDL.Pressed &&

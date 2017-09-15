@@ -291,8 +291,7 @@ animate title winWidth winHeight sf = do
             mEvent <- SDL.pollEvent                          
             return (dt, Event . SDL.eventPayload <$> mEvent) 
 
-        renderOutput _ (offset, shouldExit) = do
-            -- (ps, _) <- readPGeo
+        renderOutput _ (offset, shouldExit) = do -- | add (winx, winy) and process it similar to (offset)
             let ps  = pgeo_positions $ model
             let geo = Geo ps
             draw window ( toDrawable geo) offset
