@@ -1,6 +1,6 @@
 ... ectended with a file read / JSON (Aeson) parsing
 
-![](https://raw.github.com/madjestic/Haskell-OpenGL-Tutorial/master/Mandelbrot-FRP-io-sdl2/output.png)
+![](https://raw.github.com/madjestic/nu/tree/master/Projects/Haskell/Godika/ouput.png)
 
 in order to run:
 
