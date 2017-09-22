@@ -1,6 +1,6 @@
 ... ectended with a file read / JSON (Aeson) parsing
 
-![](https://raw.github.com/madjestic/nu/tree/master/Projects/Haskell/Godika/ouput.png)
+![](https://github.com/madjestic/nu/blob/master/Projects/Haskell/Godika/output.png)
 
 in order to run:
 
