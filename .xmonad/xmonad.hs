@@ -45,4 +45,5 @@ main = do
                  , ("M-C-<Esc>", spawn "htop")
                  , ("M-C-l"    , spawn "slock")
                  , ("M-C-h"    , spawn "houdini")
+                 , ("M-i"      , spawn "xcalib -invert -alter")
                  ]              

@@ -20,7 +20,7 @@
 
 
 (company-mode)
-(paredit-mode)
+; (paredit-mode)
 (smartparens-mode)
 (linum-mode)
 ;; (literate-haskell-mode)

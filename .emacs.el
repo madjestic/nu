@@ -18,7 +18,7 @@
  '(ac-quick-help-prefer-pos-tip t)
  '(ac-show-menu-immediately-on-auto-complete t)
  '(browse-url-browser-function (quote browse-url-generic))
- '(browse-url-generic-program "chromium-browser")
+ '(browse-url-generic-program "chromium-browser" t)
  '(circe-default-directory "~/.circe")
  '(circe-format-self-say "me > {body}")
  '(circe-network-options
@@ -82,8 +82,7 @@
      ("\\.x?html?\\'" . default))))
  '(package-archives
    (quote
-    (("marmalade" . "http://marmalade-repo.org/packages/")
-     ("gnu" . "http://elpa.gnu.org/packages/")
+    (("gnu" . "http://elpa.gnu.org/packages/")
      ("melpa-stable" . "http://stable.melpa.org/packages/")
      ("org" . "http://orgmode.org/elpa/"))))
  '(package-selected-packages
@@ -183,9 +182,6 @@
  '(vline ((t (:background "#454857")))))
 
 (require 'package)
-(add-to-list 'package-archives 
-    '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives
     '("melpa" . 
       "http://melpa.milkbox.net/packages/") t)
@@ -226,6 +222,7 @@
                               ("\\.mkv\\'"   "mpv"           (file))
                               ("\\.mp4\\'"   "mpv"           (file))
                               ("\\.mov\\'"   "mpv"           (file))
+                              ("\\.avi\\'"   "mpv"           (file))
                               ("\\.djvu\\'"  "djview"        (file))
                               ))
 

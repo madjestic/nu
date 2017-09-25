@@ -187,34 +187,6 @@
 	(backward-word 1)
 	)
 
-;; (defun org-pdfview-open (link)
-;;   "Open LINK in pdf-view-mode."
-;;   (cond ((string-match "\\(.*\\)::\\([0-9]*\\)\\+\\+\\([[0-9]\\.*[0-9]*\\)"  link)
-;;          (let* ((path (match-string 1 link))
-;;                 (page (string-to-number (match-string 2 link)))
-;;                 (height (string-to-number (match-string 3 link))))
-;;            (org-open-file path 1)
-;;            (pdf-view-goto-page page)
-;;            (image-set-window-vscroll
-;;             (round (/ (* height (car (pdf-view-image-size))) (frame-char-height))))))
-;;         ((string-match "\\(.*\\)::\\([0-9]+\\)$"  link)
-;;          (let* ((path (match-string 1 link))
-;;                 (page (string-to-number (match-string 2 link))))
-;;            (org-open-file path 1)
-;;            (pdf-view-goto-page page)))
-;;         (t
-;;          (org-open-file link 1))
-;;         ))
-
-;; (defun delete-forward-whitespace ()
-;; 	"Delte forward whitespace."
-;; 	(interactive)
-;; 	(back-to-indentation)
-;; 	(set-marker 1) - fails here
-;; 	(move-beginning-of-line)
-;; 	(kill-region))
-;;  did not work 
-
 (global-set-key (kbd "C-c h")      'vline-mode)
 (global-set-key (kbd "C-c t")      'toggle-truncate-lines)
 (global-set-key (kbd "M-#")        'next-word)
