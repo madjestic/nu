@@ -1,5 +1,5 @@
 #OBJS specifies which files to compile as part of the project
-OBJS = src/Main.cpp
+OBJS = src/Main.cpp src/glad.c
 
 #CC specifies which compiler we're using
 CC = g++
@@ -9,8 +9,7 @@ CC = g++
 COMPILER_FLAGS = -Iinclude
 
 #LINKER_FLAGS specifies the libraries we're linking against
-LINKER_FLAGS = -Llib -lglfw
-
+LINKER_FLAGS = -Llib -lglfw -ldl
 #OBJ_NAME specifies the name of our exectuable
 OBJ_NAME = Main
 
