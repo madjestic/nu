@@ -47,6 +47,7 @@
 (define-key ac-complete-mode-map (kbd "C-:") 'ac-complete-with-helm)
 
 (helm-mode)
+(ggtags-mode)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Package: function-args                                                                                     ;;

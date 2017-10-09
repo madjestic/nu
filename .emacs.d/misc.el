@@ -1,3 +1,26 @@
+(defvar winstack-stack '()
+  "A Stack holding window configurations.
+  Use `winstack-push' and
+  `winstack-pop' to modify it.")
+
+(defun winstack-push()
+  "Push the current window configuration onto `winstack-stack'."
+  (interactive)
+  (if (and (window-configuration-p (first winstack-stack))
+           (compare-window-configurations (first winstack-stack) (current-window-configuration)))
+      (message "Current config already pushed")
+    (progn (push (current-window-configuration) winstack-stack)
+           (message (concat "pushed " (number-to-string
+                                       (length (window-list (selected-frame)))) " frame config")))))
+
+(defun winstack-pop()
+  "Pop the last window configuration off `winstack-stack' and apply it."
+  (interactive)
+  (if (first winstack-stack)
+      (progn (set-window-configuration (pop winstack-stack))
+             (message "popped"))
+    (message "End of window stack")))
+
 (defconst user-init-dir
   (cond ((boundp 'user-emacs-directory)
          user-emacs-directory)
@@ -17,20 +40,20 @@
   "Open LINK in pdf-view-mode."
   (cond ((string-match "\\(.*\\)::\\([0-9]*\\)\\+\\+\\([[0-9]\\.*[0-9]*\\)"  link)
          (let* ((path (match-string 1 link))
-  ;;               (page (string-to-number (match-string 2 link)))
-  ;;               (height (string-to-number (match-string 3 link))))
-  ;;          (org-open-file path 1)
-  ;;          (pdf-view-goto-page page)
-  ;;          (image-set-window-vscroll
-  ;;           (round (/ (* height (car (pdf-view-image-size))) (frame-char-height))))))
-  ;;       ((string-match "\\(.*\\)::\\([0-9]+\\)$"  link)
-  ;;        (let* ((path (match-string 1 link))
-  ;;               (page (string-to-number (match-string 2 link))))
-  ;;          (org-open-file path 1)
-  ;;          (pdf-view-goto-page page)))
-  ;;       (t
-  ;;        (org-open-file link 1))
-        (interactive)) ))))
+                ;;               (page (string-to-number (match-string 2 link)))
+                ;;               (height (string-to-number (match-string 3 link))))
+                ;;          (org-open-file path 1)
+                ;;          (pdf-view-goto-page page)
+                ;;          (image-set-window-vscroll
+                ;;           (round (/ (* height (car (pdf-view-image-size))) (frame-char-height))))))
+                ;;       ((string-match "\\(.*\\)::\\([0-9]+\\)$"  link)
+                ;;        (let* ((path (match-string 1 link))
+                ;;               (page (string-to-number (match-string 2 link))))
+                ;;          (org-open-file path 1)
+                ;;          (pdf-view-goto-page page)))
+                ;;       (t
+                ;;        (org-open-file link 1))
+                (interactive)) ))))
 
 (defun load-feed ()
   "load RSS options"
@@ -161,23 +184,23 @@
 	(load "~/.emacs.d/sr-speedbar.el"))
 
 (defun kill-all-dired-buffers ()
-      "Kill all dired buffers."
-      (interactive)
-      (save-excursion
-        (let ((count 0))
-          (dolist (buffer (buffer-list))
-            (set-buffer buffer)
-            (when (equal major-mode 'dired-mode)
-              (setq count (1+ count))
-              (kill-buffer buffer)))
-          (message "Killed %i dired buffer(s)." count))))
+  "Kill all dired buffers."
+  (interactive)
+  (save-excursion
+    (let ((count 0))
+      (dolist (buffer (buffer-list))
+        (set-buffer buffer)
+        (when (equal major-mode 'dired-mode)
+          (setq count (1+ count))
+          (kill-buffer buffer)))
+      (message "Killed %i dired buffer(s)." count))))
 
 (defun kill-other-buffers ()
-    "Kill all other buffers."
-    (interactive)
-    (mapc 'kill-buffer 
-          (delq (current-buffer) 
-                (remove-if-not 'buffer-file-name (buffer-list)))))
+  "Kill all other buffers."
+  (interactive)
+  (mapc 'kill-buffer 
+        (delq (current-buffer) 
+              (remove-if-not 'buffer-file-name (buffer-list)))))
 
 (defun next-word ()
 	"Goto next word."
@@ -204,13 +227,15 @@
 (global-set-key (kbd "C-c M-m")    'menu-bar-mode)
 (global-set-key (kbd "C-c b")      'flymake-compile) ;; build with flymake/Makefile
 (global-set-key (kbd "C-M-y")      'secondary-dwim)
+(global-set-key (kbd "C-x p")      'winstack-push)
+(global-set-key (kbd "C-x M-p")    'winstack-pop)
 
 
 (defun jabber ()
-    (interactive)
-		(load-jabber)
-;;		(jabber-connect)
-    (switch-to-buffer "*-jabber-*"))
+  (interactive)
+  (load-jabber)
+  ;;		(jabber-connect)
+  (switch-to-buffer "*-jabber-*"))
 
 (defun truncate-lines ()
   (toggle-truncate-lines))
