@@ -1,0 +1,87 @@
+* 一
+  [[file:eng_00.org::*one%20(y-i)][one (y-i)]]
+* 二
+  [[file:eng_00.org::*two%20(\er)][two (\er)]]
+* 三
+  [[file:eng_00.org::*three%20(s-an)][three (s-an)]]
+* 四
+  [[file:eng_00.org::*four%20(s\i)][four (s\i)]]
+* 五
+  [[file:eng_00.org::*five%20(w^u)][five (w^u)]]
+* 六
+  [[file:eng_00.org::*six%20(li\u)][six (li\u)]]
+* 七
+  [[file:eng_00.org::*seven%20(q-i)][seven (q-i)]]
+* 八
+  [[file:eng_00.org::*eight%20(b-a)][eight (b-a)]]
+* 九
+  [[file:eng_00.org::*nine%20(ji^u)][nine (ji^u)]]
+* 十  
+  [[file:eng_00.org::*ten%20(sh/i)][ten (sh/i)]]
+* 零
+  [[file:eng_00.org::*zero%20(l/ing)][zero (l/ing)]]
+* 你
+  [[file:eng_00.org::*you%20(n^i)][you (n^i)]]
+* 你好
+  [[file:eng_00.org::*hello%20(n^i%20h^ao)][hello (n^i h^ao)]]
+* 您
+  [[file:eng_00.org::*you%20(polite%20form)%20(n/in)][you (polite form) (n/in)]]
+* 您好
+  [[file:eng_00.org::*hello,%20how%20do%20you%20do%20(n/in%20h^ao)][hello, how do you do (n/in h^ao)]]
+* 我
+  [[file:eng_00.org::*I%20(w^o)][I (w^o)]]
+* 好
+  [[file:eng_00.org::*good,%20to%20be%20well%20(h^ao)][good, to be well (h^ao)]]
+* 很
+  [[file:eng_00.org::*very,%20rather%20(h^en)][very, rather (h^en)]]
+* 不
+  [[file:eng_00.org::*no%20(b\u)][no (b\u)]]
+* 不谢
+  [[file:eng_00.org::*not%20at%20all%20(b/u%20xi\e)][not at all (b/u xi\e)]]
+* 中国
+  [[file:eng_00.org::*Middle%20Kingdom%20(Zh-onggu/o)][Middle Kingdom (Zh-onggu/o)]]
+* 谢谢
+  [[file:eng_00.org::*thank%20you,%20thanks%20(xi\e%20xi\e)][thank you, thanks (xi\e xi\e)]]
+* 再见
+  [[file:eng_00.org::*goodbuy%20(z\aiji\an)][goodbuy (z\aiji\an)]]
+* 马
+  [[file:eng_00.org::*a%20question%20particle%20(m-a)][a question particle (m-a)]]
+* 王
+  [[file:eng_00.org::*W/ang][W/ang]]
+* 李
+  [[file:eng_00.org::*L^i][L^i]]
+* 方
+  [[file:eng_00.org::*F-ang][F-ang]]
+* 陈
+  [[file:eng_00.org::*Ch/en][Ch/en]]
+* 钱
+  [[file:eng_00.org::*Qi/an][Qi/an]]
+* 张
+  [[file:eng_00.org::*Zh-ang][Zh-ang]]
+* 他
+  [[file:eng_00.org::*he%20(t-a)][he (t-a)]]
+* 她
+  [[file:eng_00.org::*she%20(t-a)][she (t-a)]]
+* 姓
+  [[file:eng_00.org::*family%20name%20(x\ing)][family name (x\ing)]]
+* 叫
+  [[file:eng_00.org::*name,%20to%20be%20called%20(ji\ao)][name, to be called (ji\ao)]]
+* 贵
+  [[file:eng_00.org::*honorable,%20expensive%20(gu\i)][honorable, expensive (gu\i)]]
+* 对
+  [[file:eng_00.org::*correct,%20right%20(du\i)][correct, right (du\i)]]
+* 小
+  [[file:eng_00.org::*small,%20young%20(xi^ao)][small, young (xi^ao)]]
+* 名字
+  [[file:eng_00.org::*name%20(m/ingzi)][name (m/ingzi)]]
+* 也
+  [[file:eng_00.org::*also,%20too,%20either%20(y^e)][also, too, either (y^e)]]
+* 什么
+  [[file:eng_00.org::*what%20(sh/enme)][what (sh/enme)]]
+* 呢
+  [[file:eng_00.org::*a%20question%20particle%20(ne)][a question particle (ne)]]
+
+  
+  
+
+  

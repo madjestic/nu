@@ -1,0 +1,83 @@
+* one (y-i)
+  [[file:chi_00.org::*%E4%B8%80][一]] 
+* two (\er)
+  [[file:chi_00.org::*%E4%BA%8C][二]] 
+* three (s-an)
+  [[file:chi_00.org::*%E4%B8%89][三]] 
+* four (s\i)
+  [[file:chi_00.org::*%E5%9B%9B][四]]
+* five (w^u)
+  [[file:chi_00.org::*%E4%BA%94][五]]
+* six (li\u)
+  [[file:chi_00.org::*%E5%85%AD][六]]
+* seven (q-i)
+  [[file:chi_00.org::*%E4%B8%83][七]]
+* eight (b-a)
+  [[file:chi_00.org::*%E5%85%AB][八]]
+* nine (ji^u)
+  [[file:chi_00.org::*%E4%B9%9D][九]]
+* ten (sh/i)
+  [[file:chi_00.org::*%E5%8D%81][十]]
+* zero (l/ing)
+  [[file:chi_00.org::*%E9%9B%B6][零]]
+* you (n^i)
+  [[file:chi_00.org::*%E4%BD%A0][你]]
+* hello (n^i h^ao)
+  [[file:chi_00.org::*%E4%BD%A0%E5%A5%BD][你好]]
+* you (polite form) (n/in)
+  [[file:chi_00.org::*%E6%82%A8][您]]
+* hello, how do you do (n/in h^ao)
+  [[file:chi_00.org::*%E6%82%A8%E5%A5%BD][您好]]
+* I (w^o)
+  [[file:chi_00.org::*%E6%88%91][我]]
+* good, to be well (h^ao)
+  [[file:chi_00.org::*%E5%A5%BD][好]]
+* very, rather (h^en)
+  [[file:chi_00.org::*%E5%BE%88][很]]
+* no (b\u)
+  [[file:chi_00.org::*%E4%B8%8D][不]]
+* not at all (b/u xi\e)
+  [[file:chi_00.org::*%E4%B8%8D%E8%B0%A2][不谢]]
+* Middle Kingdom (Zh-onggu/o)
+  [[file:chi_00.org::*%E4%B8%AD%E5%9B%BD][中国]]
+* thank you, thanks (xi\e xi\e)
+  [[file:chi_00.org::*%E8%B0%A2%E8%B0%A2][谢谢]]
+* goodbuy (z\aiji\an)
+  [[file:chi_00.org::*%E5%86%8D%E8%A7%81][再见]]
+* a question particle (m-a)
+  [[file:chi_00.org::*%E9%A9%AC][马]]
+* W/ang
+  [[file:chi_00.org::*%E7%8E%8B][王]]
+* L^i
+  [[file:chi_00.org::*%E6%9D%8E][李]]
+* F-ang
+  [[file:chi_00.org::*%E6%96%B9][方]]
+* Ch/en
+  [[file:chi_00.org::*%E9%99%88][陈]]
+* Qi/an
+  [[file:chi_00.org::*%E9%92%B1][钱]]
+* Zh-ang
+  [[file:chi_00.org::*%E5%BC%A0][张]]
+* he (t-a)
+  [[file:chi_00.org::*%E4%BB%96][他]]
+* she (t-a)
+  [[file:chi_00.org::*%E5%A5%B9][她]]
+* family name (x\ing)
+  [[file:chi_00.org::*%E5%A7%93][姓]]
+* name, to be called (ji\ao)
+  [[file:chi_00.org::*%E5%8F%AB][叫]]
+* honorable, expensive (gu\i)
+  [[file:chi_00.org::*%E8%B4%B5][贵]]
+* correct, right (du\i)
+  [[file:chi_00.org::*%E5%AF%B9][对]]
+* small, young (xi^ao)
+  [[file:chi_00.org::*%E5%B0%8F][小]]
+* name (m/ingzi)
+  [[file:chi_00.org::*%E5%90%8D%E5%AD%97][名字]]
+* also, too, either (y^e)
+  [[file:chi_00.org::*%E4%B9%9F][也]]
+* what (sh/enme)
+  [[file:chi_00.org::*%E4%BB%80%E4%B9%88][什么]]
+* a question particle (ne)  
+  [[file:chi_00.org::*%E5%91%A2][呢]]
+
