@@ -18,7 +18,7 @@
  '(ac-quick-help-prefer-pos-tip t)
  '(ac-show-menu-immediately-on-auto-complete t)
  '(browse-url-browser-function (quote browse-url-generic))
- '(browse-url-generic-program "chromium-browser" t)
+ '(browse-url-generic-program "firefox" t)
  '(circe-default-directory "~/.circe")
  '(circe-format-self-say "me > {body}")
  '(circe-network-options
@@ -246,8 +246,8 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "chromium-browser")
-(setq browse-url-default-browser "chromium")
+      browse-url-generic-program "firefox")
+(setq browse-url-default-browser "firefox")
 
 ;; * To manupulate a image under cursor.
 ;;

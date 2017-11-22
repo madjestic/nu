@@ -52,6 +52,7 @@ main = do
                  , ("M-S-."    , spawn "playerctl next")
                  , ("M-S-/"    , spawn "playerctl play-pause")
                  , ("M-C-c"    , spawn "chromium")
+                 , ("M-C-f"    , spawn "firefox")
                  , ("M-S-C-e"  , spawn "emacs")
                  , ("M-C-e"    , spawn "emacsclient -c")
                  , ("M-C-k"    , spawn "krusader")
