@@ -78,4 +78,4 @@
 (global-company-mode)
 (company-quickhelp-mode 1)
 
-(linum-mode)
+(linum-mode t)

@@ -11,3 +11,63 @@
 * eenheid
   [[file:eng_00.org::*unit][unit]]
   
+* hollen
+  [[file:eng_00.org::*run,%20race][run, race]]
+* dringend
+  [[file:eng_00.org::*press,%20urge,%20compel][press, urge, compel]]
+* speuren
+  [[file:eng_00.org::*investigate][investigate]]
+* verdrietig
+  [[file:eng_00.org::*sad,%20grieved][sad, grieved]]
+* klotsen
+  [[file:eng_00.org::*slosh,%20splash][slosh, splash]]
+* hoofdrol
+  [[file:eng_00.org::*leading%20part][leading part]]
+* deun
+  [[file:eng_00.org::*tune][tune]]
+* tegelijk
+  [[file:eng_00.org::*at%20the%20same%20time][at the same time]]
+* potloden
+  [[file:eng_00.org::*pencil][pencil]]
+* wijzigen
+  [[file:eng_00.org::*alter,%20change][alter, change]]
+* pret
+  [[file:eng_00.org::*fun,%20hilarity][fun, hilarity]]
+* vaartuig
+  [[file:eng_00.org::*vessel,%20craft][vessel, craft]]
+* onderwijs
+  [[file:eng_00.org::*education][education]]
+* beschouwen
+  [[file:eng_00.org::*consider,%20contemplate][consider, contemplate]]
+* opvarenden
+  [[file:eng_00.org::*crew][crew]]
+* flink
+  [[file:eng_00.org::*considerably][considerably]]
+* weigeren
+  [[file:eng_00.org::*fail,%20refuse][fail, refuse]]
+* opdracht
+  [[file:eng_00.org::*assignment][assignment]]
+* lanceren  
+  [[file:eng_00.org::*launch][launch]]
+* weigeren
+  [[file:eng_00.org::*faile,%20refuse,%20reject][faile, refuse, reject]]
+* inschatten
+  [[file:eng_00.org::*estimate,%20assess][estimate, assess]]
+* dergelijke  
+  [[file:eng_00.org::*similar][similar]]
+* bevelhebber
+  [[file:eng_00.org::*commander][commander]]
+* geval
+  [[file:eng_00.org::*case][case]]
+* taak
+  [[file:eng_00.org::*task][task]]
+* overeenstemming
+  [[file:eng_00.org::*harnomy,%20agreement][harnomy, agreement]]
+* wettelijke
+  [[file:eng_00.org::*legal][legal]]
+* neerhalen
+  [[file:eng_00.org::*take%20down,%20lower][take down, lower]]
+* vermeende
+  [[file:eng_00.org::*alleged,%20supposed][alleged, supposed]]
+* lamel
+  [[file:eng_00.org::*layer][layer]]

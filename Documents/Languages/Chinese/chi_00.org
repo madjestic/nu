@@ -1,3 +1,78 @@
+* 告诉
+  [[file:eng_00.org::*to%20tell%20(g\aosu)][to tell (g\aosu)]]
+* 祝
+  [[file:eng_00.org::*to%20wish%20(zh\u)][to wish (zh\u)]]
+* 年龄
+  [[file:eng_00.org::*age%20(formal%20term)%20(ni/an%20l/ing)][age (formal term) (ni/an l/ing)]]
+
+
+* 吧
+  [[file:eng_00.org::*%5Ban%20interrogative%20or%20suggestive%20particle%5D%20ba][{an interrogative or suggestive particle} ba]]
+
+* 呢
+  [[file:eng_00.org::*a%20question%20particle%20(ne)][a question particle (ne)]]
+
+* 哪
+  [[file:eng_00.org::*which%20(n^a)][which (n^a)]]
+
+
+* 快乐
+  [[file:eng_00.org::*happy%20(kua\il\e)][happy (kua\il\e)]]
+
+* 几
+  [[file:eng_00.org::*how%20many/how%20old%20%5Bfor%20numbers%20below%2010%5D%20(j^i)][how many/how old {for numbers below 10} (j^i)]]
+
+* 星七
+  [[file:eng_00.org::*week,%20week%20day%20(x-ingq-i)][week, week day (x-ingq-i)]]
+
+* 谁
+  [[file:eng_00.org::*who%20(shu/i;%20sh/ei)][who (shu/i; sh/ei)]]
+
+* 就
+  [[file:eng_00.org::*really,%20precisely%20(j\iu)][really, precisely (j\iu)]]
+
+* 老师
+  [[file:eng_00.org::*teacher%20(l^aosh-i)][teacher (l^aosh-i)]]
+* 太太
+  [[file:eng_00.org::*wife%20(t\aitai)][wife (t\aitai)]]
+
+
+* 这
+  [[file:eng_00.org::*this%20(zh\i;zh\ei)][this (zh\i;zh\ei)]]
+* 对
+  [[file:eng_00.org::*correct,%20right%20(du\i)][correct, right (du\i)]]
+
+
+* 住
+  [[file:eng_00.org::*live%20(zh\u)][live (zh\u)]]
+** [[*祝][祝]]
+   [[file:eng_00.org::*to%20wish%20(zh\u)][to wish (zh\u)]]
+
+* 都
+  [[file:eng_00.org::*all;%20both;%20usually%20(d-ou)][all; both; usually (d-ou)]]
+
+* 那
+  [[file:eng_00.org::*that%20(n\a;n\ei)][that (n\a;n\ei)]]
+
+
+* 先生
+  [[file:eng_00.org::*Mr.,%20husband%20(xi-ansheng)][Mr., husband (xi-ansheng)]]
+* 名字
+  [[file:eng_00.org::*name%20(m/ingzi)][name (m/ingzi)]]
+* 叫
+  [[file:eng_00.org::*name,%20to%20be%20called%20(ji\ao)][name, to be called (ji\ao)]]
+* 很
+  [[file:eng_00.org::*very,%20rather%20(h^en)][very, rather (h^en)]]
+* 贵
+  [[file:eng_00.org::*honorable,%20expensive%20(gu\i)][honorable, expensive (gu\i)]]
+* 姓
+  [[file:eng_00.org::*family%20name%20(x\ing)][family name (x\ing)]]
+* 张
+  [[file:eng_00.org::*Zh-ang][Zh-ang]]
+* 钱
+  [[file:eng_00.org::*Qi/an][Qi/an]]
+* 陈
+  [[file:eng_00.org::*Ch/en][Ch/en]]
 * 一
   [[file:eng_00.org::*one%20(y-i)][one (y-i)]]
 * 二
@@ -16,7 +91,7 @@
   [[file:eng_00.org::*eight%20(b-a)][eight (b-a)]]
 * 九
   [[file:eng_00.org::*nine%20(ji^u)][nine (ji^u)]]
-* 十  
+* 十
   [[file:eng_00.org::*ten%20(sh/i)][ten (sh/i)]]
 * 零
   [[file:eng_00.org::*zero%20(l/ing)][zero (l/ing)]]
@@ -32,8 +107,6 @@
   [[file:eng_00.org::*I%20(w^o)][I (w^o)]]
 * 好
   [[file:eng_00.org::*good,%20to%20be%20well%20(h^ao)][good, to be well (h^ao)]]
-* 很
-  [[file:eng_00.org::*very,%20rather%20(h^en)][very, rather (h^en)]]
 * 不
   [[file:eng_00.org::*no%20(b\u)][no (b\u)]]
 * 不谢
@@ -45,6 +118,8 @@
 * 再见
   [[file:eng_00.org::*goodbuy%20(z\aiji\an)][goodbuy (z\aiji\an)]]
 * 马
+  [[file:eng_00.org::*a%20horse%20(m^a)][a horse (m^a)]]
+* 吗
   [[file:eng_00.org::*a%20question%20particle%20(m-a)][a question particle (m-a)]]
 * 王
   [[file:eng_00.org::*W/ang][W/ang]]
@@ -52,36 +127,188 @@
   [[file:eng_00.org::*L^i][L^i]]
 * 方
   [[file:eng_00.org::*F-ang][F-ang]]
-* 陈
-  [[file:eng_00.org::*Ch/en][Ch/en]]
-* 钱
-  [[file:eng_00.org::*Qi/an][Qi/an]]
-* 张
-  [[file:eng_00.org::*Zh-ang][Zh-ang]]
 * 他
   [[file:eng_00.org::*he%20(t-a)][he (t-a)]]
 * 她
   [[file:eng_00.org::*she%20(t-a)][she (t-a)]]
-* 姓
-  [[file:eng_00.org::*family%20name%20(x\ing)][family name (x\ing)]]
-* 叫
-  [[file:eng_00.org::*name,%20to%20be%20called%20(ji\ao)][name, to be called (ji\ao)]]
-* 贵
-  [[file:eng_00.org::*honorable,%20expensive%20(gu\i)][honorable, expensive (gu\i)]]
-* 对
-  [[file:eng_00.org::*correct,%20right%20(du\i)][correct, right (du\i)]]
 * 小
   [[file:eng_00.org::*small,%20young%20(xi^ao)][small, young (xi^ao)]]
-* 名字
-  [[file:eng_00.org::*name%20(m/ingzi)][name (m/ingzi)]]
 * 也
   [[file:eng_00.org::*also,%20too,%20either%20(y^e)][also, too, either (y^e)]]
 * 什么
   [[file:eng_00.org::*what%20(sh/enme)][what (sh/enme)]]
-* 呢
-  [[file:eng_00.org::*a%20question%20particle%20(ne)][a question particle (ne)]]
+* 京
+  [[file:eng_00.org::*capital%20(j-ing)][capital (j-ing)]]
+* 英
+  [[file:eng_00.org::*hero%20(y-ing)][hero (y-ing)]]
+* 你叫什么
+  [[file:eng_00.org::*what%20is%20your%20name%20(n^i%20j\iao%20sh/enme)][what is your name (n^i j\iao sh/enme)]]
+* 子
+  [[file:eng_00.org::*character,%20letter%20(zi)][character, letter (zi)]]
+* 伦
+  [[file:eng_00.org::*ethics,%20human%20relations%20(l\un)][ethics, human relations (l\un)]]
+* 是
+  [[file:eng_00.org::*to%20be%20(am,%20is,%20are)%20(sh\i)][to be (am, is, are) (sh\i)]]
+* 是的
+  [[file:eng_00.org::*yes%20(sh\ide)][yes (sh\ide)]]
+* 小姐
+  [[file:eng_00.org::*Miss%20(xi^a%20jie)][Miss (xi^a jie)]]
+* 人
+  [[file:eng_00.org::*person,%20people%20(r/en)][person, people (r/en)]]
+* 英国
+  [[file:eng_00.org::*England%20(y-ing%20gu/o)][England (y-ing gu/o)]]
+* 地方
+  [[file:eng_00.org::*place%20(d\ifang)][place (d\ifang)]]
+* 北京
+  [[file:eng_00.org::*Beijing%20(city%20capital)%20(b^eij-ing)][Beijing (city capital) (b^eij-ing)]]
+* 伦敦
+  [[file:eng_00.org::*London%20(l/un%20d-un)][London (l/un d-un)]]
+* 在
+  [[file:eng_00.org::*at;%20in%20(z\ai)][at; in (z\ai)]]
+* 我们
+  [[file:eng_00.org::*we;%20us%20(w^omen)][we; us (w^omen)]]
+* 你们
+  [[file:eng_00.org::*you%20(plural)%20(n^imen)][you (plural) (n^imen)]]
+* 他们
+  [[file:eng_00.org::*they,%20them%20(t-amen)][they, them (t-amen)]]
+* 她们
+  [[file:eng_00.org::*they,%20them%20(feminine%20only)%20(t-amen)][they, them (feminine only) (t-amen)]]
+* 医生
+  [[file:eng_00.org::*doctor%20(y-ish-eng)][doctor (y-ish-eng)]]
+* 今天
+  [[file:eng_00.org::*today%20(j-inti-an)][today (j-inti-an)]]
+* 明天
+  [[file:eng_00.org::*tomorrow%20(m/ingti-an)][tomorrow (m/ingti-an)]]
+* 今年
+  [[file:eng_00.org::*this%20year%20(j-in%20ni/an)][this year (j-in ni/an)]]
+* 年
+  [[file:eng_00.org::*year%20(ni/an)][year (ni/an)]]
+* 月
+  [[file:eng_00.org::*month%20(yu\e)][month (yu\e)]]
+* 生日
+  [[file:eng_00.org::*birthday%20(sh-engr\i)][birthday (sh-engr\i)]]
+* 号
+  [[file:eng_00.org::*date,%20number%20(h\ao)][date, number (h\ao)]]
+* 第第
+  [[file:eng_00.org::*younger%20brother%20(d\id\i)][younger brother (d\id\i)]]
+* 妹妹
+  [[file:eng_00.org::*younger%20sister%20(m\eimei)][younger sister (m\eimei)]]
+* 岁
+  [[file:eng_00.org::*years%20old;%20time%20%5Bformal%5D%20(su\i)][years old; time {formal} (su\i)]]
+* 的
+  [[file:eng_00.org::*%5Ba%20particle,%20indicating%20possession%5D%20(de)][{a particle, indicating possession} (de)]]
+* 是马
+  [[file:eng_00.org::*really?%20/%20is%20that%20right%20(sh\i%20ma)][really? / is that right (sh\i ma)]]
 
-  
+* 多大了
+  [[file:eng_00.org::*how%20old...%20?%20(do-o%20d\a%20le)][how old... ? (do-o d\a le)]]
+* 多
+  [[file:eng_00.org::*many,%20much,%20a%20lot,%20more%20(du-o)][many, much, a lot, more (du-o)]]
+* 大
+  [[file:eng_00.org::*large,%20big%20(d\a)][large, big (d\a)]]
+* 多大
+  [[file:eng_00.org::*how%20old%20(du-o%20d\a)][how old (du-o d\a)]]
+* 对不起
+  [[file:eng_00.org::*sorry,%20excuse%20me,%20pardon%20(du\ibuq^i)][sorry, excuse me, pardon (du\ibuq^i)]]
+* 姐姐
+  [[file:eng_00.org::*elder%20sister%20(ji^ejie)][elder sister (ji^ejie)]]
+
+
+* 工人
+  [[file:eng_00.org::*worker%20(g-ongr/en)][worker (g-ongr/en)]]
+* 农民
+  [[file:eng_00.org::*peasant;%20farmer%20(n/ongm/in)][peasant; farmer (n/ongm/in)]]
+* 演员
+  [[file:eng_00.org::*actor%20(y^anyu/an)][actor (y^anyu/an)]]
+* 护士
+  [[file:eng_00.org::*nurse%20(h\ushi)][nurse (h\ushi)]]
+* 科学家
+  [[file:eng_00.org::*scientist%20(k-exu/eji-a)][scientist (k-exu/eji-a)]]
+* 数学家
+  [[file:eng_00.org::*mathematician%20(sh\uxu/eji-a)][mathematician (sh\uxu/eji-a)]]
+* 服务员
+  [[file:eng_00.org::*waitress%20(f/uw\uyu/an)][waitress (f/uw\uyu/an)]]
+* 校长  
+  [[file:eng_00.org::*head%20of%20a%20school%20(xi\aozh^ang)][head of a school (xi\aozh^ang)]]
+* 厂长
+  [[file:eng_00.org::*head%20of%20a%20factory%20(ch^angzh^ang)][head of a factory (ch^angzh^ang)]]
+* 董事长
+  [[file:eng_00.org::*chairman%20of%20the%20board%20(do^ongsh\izh^ang)][chairman of the board (do^ongsh\izh^ang)]]
+* 总统
+  [[file:eng_00.org::*president%20of%20a%20state%20(z\ongt^ong)][president of a state (z\ongt^ong)]]
+
+* 学
+  [[file:eng_00.org::*study%20(xu/e)][study (xu/e)]]
+* 做
+  [[file:eng_00.org::*to%20make;%20to%20do%20(zu\o)][to make; to do (zu\o)]]
+* 写
+  [[file:eng_00.org::*to%20write%20(xi^e)][to write (xi^e)]]
+* 看
+  [[file:eng_00.org::*to%20see;%20to%20watch;%20to%20look;%20to%20read;%20(k\an)][to see; to watch; to look; to read; (k\an)]]
+* 上网
+  [[file:eng_00.org::*to%20surf%20the%20internet%20(sh\ang%20w^ang)][to surf the internet (sh\ang w^ang)]]
+* 传业
+  [[file:eng_00.org::*major;%20subject%20(zhu-any\e)][major; subject (zhu-any\e)]]
+* 英文
+  [[file:eng_00.org::*English%20language%20(y-ingw/en)][English language (y-ingw/en)]]
+* 中文
+  [[file:eng_00.org::*Chinese%20language%20(zh-ongw/en)][Chinese language (zh-ongw/en)]]
+* 文学
+  [[file:eng_00.org::*literature%20(w/enxu/e)][literature (w/enxu/e)]]
+* 电视
+  [[file:eng_00.org::*TV%20(di\ansh\i)][TV (di\ansh\i)]]
+* 电话
+  [[file:eng_00.org::*telephone%20(di\anhu\a)][telephone (di\anhu\a)]]
+
+* 书
+  [[file:eng_00.org::*book%20(sh-u)][book (sh-u)]]
+* 汉字
+  [[file:eng_00.org::*Chinese%20character%20(h\an%20z\i)][Chinese character (h\an z\i)]]
+* 晚上
+  [[file:eng_00.org::*evening%20(w^anshang)][evening (w^anshang)]]
+* 天天
+  [[file:eng_00.org::*every%20day%20(ti-anti-an)][every day (ti-anti-an)]]
+* 今晚
+  [[file:eng_00.org::*this%20evening,%20tonight%20(j-in%20w^an)][this evening, tonight (j-in w^an)]]
+* 下午
+  [[file:eng_00.org::*afternoon%20(xi\aw^u)][afternoon (xi\aw^u)]]
   
 
-  
+* 喝
+  [[file:eng_00.org::*to%20drink%20(h-e)][to drink (h-e)]]
+* 茶
+  [[file:eng_00.org::*tea%20(ch/a)][tea (ch/a)]]
+* 牛奶
+  [[file:eng_00.org::*(cow's)%20milk%20(ni/un^ai)][(cow's) milk (ni/un^ai)]]
+* 咖啡
+  [[file:eng_00.org::*coffee%20(k-af-ei)][coffee (k-af-ei)]]
+* 啤酒
+  [[file:eng_00.org::*beer%20(p/iji^u)][beer (p/iji^u)]]
+* 可乐
+  [[file:eng_00.org::*coke%20(k^el\e)][coke (k^el\e)]]
+* 果汁
+  [[file:eng_00.org::*fruit%20juice%20(gu^ozh-i)][fruit juice (gu^ozh-i)]]
+* 水
+  [[file:eng_00.org::*water%20(shu^i)][water (shu^i)]]
+
+* 波兰
+  [[file:eng_00.org::*Poland%20(b-ol/an)][Poland (b-ol/an)]]
+* 俄国
+  [[file:eng_00.org::*Russia%20(/egu/o)][Russia (/egu/o)]]
+
+* 千
+  [[file:eng_00.org::*thousand%20(qi-an)][thousand (qi-an)]]
+
+* 百
+  [[file:eng_00.org::*hundred%20(b^ai)][hundred (b^ai)]]
+
+* 早
+  [[file:eng_00.org::*early,%20morning%20(z^ao)][early, morning (z^ao)]]
+
+* 朋友
+  [[file:eng_00.org::*friend%20(p/engy^ou)][friend (p/engy^ou)]]
+
+* 还是
+  [[file:eng_00.org::*or%20(in%20alternative%20question)%20(h/aish\i)][or (in alternative question) (h/aish\i)]]
+* 或
+  [[file:eng_00.org::*or%20(in%20a%20statement)%20(hu\o)][or (in a statement) (hu\o)]]

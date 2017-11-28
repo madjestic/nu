@@ -18,7 +18,7 @@
  '(ac-quick-help-prefer-pos-tip t)
  '(ac-show-menu-immediately-on-auto-complete t)
  '(browse-url-browser-function (quote browse-url-generic))
- '(browse-url-generic-program "chromium-browser")
+ '(browse-url-generic-program "chromium-browser" t)
  '(circe-default-directory "~/.circe")
  '(circe-format-self-say "me > {body}")
  '(circe-network-options
@@ -155,11 +155,17 @@
  '(custom-button-mouse ((t (:background "grey60" :foreground "black"))))
  '(diredp-deletion ((t (:inherit ac-selection-face :background "coral3"))))
  '(diredp-dir-heading ((t (:inherit font-lock-builtin-face))))
- '(diredp-dir-name ((t (:foreground "cyan"))))
- '(diredp-dir-priv ((t (:foreground "#7474FFFFFFFF"))))
+ '(diredp-dir-name ((t (:foreground "#7474FFFF7474"))))
+ '(diredp-dir-priv ((t (:foreground "#7474FFFF7474"))))
+ '(diredp-exec-priv ((t (:background "firebrick"))))
  '(diredp-file-name ((t (:inherit font-lock-builtin-face))))
+ '(diredp-file-suffix ((t (:foreground "medium spring green"))))
  '(diredp-link-priv ((t (:foreground "#7474FFFF7474"))))
- '(diredp-symlink ((t (:foreground "#7474FFFFFFFF"))))
+ '(diredp-other-priv ((t (:background "orange red"))))
+ '(diredp-rare-priv ((t (:foreground "cyan"))))
+ '(diredp-read-priv ((t (:background "#50707e"))))
+ '(diredp-symlink ((t (:foreground "cyan"))))
+ '(diredp-write-priv ((t (:background "#00775a"))))
  '(fringe ((t (:background "#2d3743"))))
  '(highlight ((t (:background "chocolate"))))
  '(hl-line ((t (:inherit highlight :background "#454857"))))
@@ -182,7 +188,7 @@
  '(tabbar-default ((t (:inherit variable-pitch :background "#2d3743" :foreground "grey75"))))
  '(tabbar-highlight ((t (:background "#2d3743" :foreground "aquamarine"))))
  '(tabbar-modified ((t (:inherit tabbar-default :foreground "dark orange"))))
- '(tabbar-selected ((t (:inherit tabbar-default :foreground "medium sea green" :weight bold))))
+ '(tabbar-selected ((t (:inherit tabbar-default :foreground "medium sea green"))))
  '(tabbar-selected-modified ((t (:inherit tabbar-default :foreground "red"))))
  '(tabbar-unselected ((t (:inherit tabbar-default))))
  '(tooltip ((t (:inherit variable-pitch :background "#797985" :foreground "black" :height 0.8))))
@@ -192,6 +198,33 @@
  '(vhdl-speedbar-package-face ((t (:foreground "Grey80" :height 0.8))))
  '(vhdl-speedbar-package-selected-face ((t (:foreground "Grey80" :underline t :height 0.8))))
  '(vline ((t (:background "#454857")))))
+
+(require 'tabbar)
+; turn on the tabbar
+; (tabbar-mode t)
+; define all tabs to be one of 3 possible groups: “Emacs Buffer”, “Dired”,
+;“User Buffer”.
+
+(defun tabbar-buffer-groups ()
+  "Return the list of group names the current buffer belongs to.
+This function is a custom function for tabbar-mode's tabbar-buffer-groups.
+This function group all buffers into 3 groups:
+Those Dired, those user buffer, and those emacs buffer.
+Emacs buffer are those starting with “*”."
+  (list
+   (cond
+    ((string-equal "*" (substring (buffer-name) 0 1))
+     "Emacs Buffer"
+     )
+    ((eq major-mode 'dired-mode)
+     "Dired"
+     )
+    (t
+     "User Buffer"
+     )
+    ))) 
+
+(setq tabbar-buffer-groups-function 'tabbar-buffer-groups)
 
 (require 'package)
 (add-to-list 'package-archives
@@ -302,6 +335,8 @@
 (define-key ctl-x-map "S" 'save-current-configuration)
 (define-key ctl-x-map "R" 'resume)
 (define-key ctl-x-map "K" 'wipe)
+
+(require 'dired+)
 
 ;;
 ;; BACKUP

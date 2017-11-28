@@ -12,3 +12,63 @@
   [[file:ned_00.org::*ingestort][ingestort]]
 * unit
   [[file:ned_00.org::*eenheid][eenheid]]
+* run, race
+  [[file:ned_00.org::*hollen][hollen]]
+* press, urge, compel
+  [[file:ned_00.org::*dringend][dringend]]
+* investigate
+  [[file:ned_00.org::*speuren][speuren]]
+* sad, grieved
+  [[file:ned_00.org::*verdrietig][verdrietig]]
+* slosh, splash
+  [[file:ned_00.org::*klotsen][klotsen]]
+* leading part
+  [[file:ned_00.org::*hoofdrol][hoofdrol]]
+* tune
+  [[file:ned_00.org::*deun][deun]]
+* at the same time
+  [[file:ned_00.org::*tegelijk][tegelijk]]
+* pencil
+  [[file:ned_00.org::*potloden][potloden]]
+* alter, change
+  [[file:ned_00.org::*wijzigen][wijzigen]]
+* fun, hilarity
+  [[file:ned_00.org::*pret][pret]]
+* vessel, craft
+  [[file:ned_00.org::*vaartuig][vaartuig]]
+* education
+  [[file:ned_00.org::*onderwijs][onderwijs]]
+* consider, contemplate
+  [[file:ned_00.org::*beschouwen][beschouwen]]
+* crew
+  [[file:ned_00.org::*opvarenden][opvarenden]]
+* considerably
+  [[file:ned_00.org::*flink][flink]]
+* fail, refuse  
+  [[file:ned_00.org::*weigeren][weigeren]]
+* assignment
+  [[file:ned_00.org::*opdracht][opdracht]]
+* launch
+  [[file:ned_00.org::*lanceren][lanceren]]
+* faile, refuse, reject
+  [[file:ned_00.org::*weigeren][weigeren]]
+* estimate, assess
+  [[file:ned_00.org::*inschatten][inschatten]]
+* similar
+  [[file:ned_00.org::*dergelijke][dergelijke]]
+* commander
+  [[file:ned_00.org::*bevelhebber][bevelhebber]]
+* case
+  [[file:ned_00.org::*geval][geval]]
+* task
+  [[file:ned_00.org::*taak][taak]]
+* harnomy, agreement
+  [[file:ned_00.org::*overeenstemming][overeenstemming]]
+* legal
+  [[file:ned_00.org::*wettelijke][wettelijke]]
+* take down, lower
+  [[file:ned_00.org::*neerhalen][neerhalen]]
+* alleged, supposed
+  [[file:ned_00.org::*vermeende][vermeende]]
+* layer
+  [[file:ned_00.org::*lamel][lamel]]

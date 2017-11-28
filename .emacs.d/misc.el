@@ -229,6 +229,8 @@
 (global-set-key (kbd "C-M-y")      'secondary-dwim)
 (global-set-key (kbd "C-x p")      'winstack-push)
 (global-set-key (kbd "C-x M-p")    'winstack-pop)
+(global-set-key (kbd "M-s <left>") 'tabbar-backward)
+(global-set-key (kbd "M-s <right>")'tabbar-forward)
 
 
 (defun jabber ()

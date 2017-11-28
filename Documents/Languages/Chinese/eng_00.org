@@ -44,6 +44,8 @@
   [[file:chi_00.org::*%E8%B0%A2%E8%B0%A2][谢谢]]
 * goodbuy (z\aiji\an)
   [[file:chi_00.org::*%E5%86%8D%E8%A7%81][再见]]
+* a horse (m^a)
+  [[file:chi_00.org::*%E9%A9%AC][马]]
 * a question particle (m-a)
   [[file:chi_00.org::*%E9%A9%AC][马]]
 * W/ang
@@ -81,3 +83,208 @@
 * a question particle (ne)  
   [[file:chi_00.org::*%E5%91%A2][呢]]
 
+* capital (j-ing)
+* hero (y-ing)
+  [[file:chi_00.org::*%E8%8B%B1][英]]
+
+* what is your name (n^i j\iao sh/enme)
+  [[file:chi_00.org::*%E4%BD%A0%E5%8F%AB%E4%BB%80%E4%B9%88][你叫什么]]
+* character, letter (zi)
+  [[file:chi_00.org::*%E5%AD%90][子]]
+* ethics, human relations (l\un)
+  [[file:chi_00.org::*%E4%BC%A6][伦]]
+* to be (am, is, are) (sh\i)
+  [[file:chi_00.org::*%E6%98%AF][是]]
+* yes (sh\ide)
+  [[file:chi_00.org::*%E6%98%AF%E7%9A%84][是的]]
+* Mr., husband (xi-ansheng)
+  [[file:chi_00.org::*%E5%85%88%E7%94%9F][先生]]
+* Miss (xi^a jie)
+  [[file:chi_00.org::*%E5%B0%8F%E5%A7%90][小姐]]
+* person, people (r/en)
+  [[file:chi_00.org::*%E4%BA%BA][人]]
+* England (y-ing gu/o)
+  [[file:chi_00.org::*%E8%8B%B1%E5%9B%BD][英国]]
+* place (d\ifang)
+  [[file:chi_00.org::*%E5%9C%B0%E6%96%B9][地方]]
+* Beijing (city capital) (b^eij-ing)
+  [[file:chi_00.org::*%E5%8C%97%E4%BA%AC][北京]]
+* London (l/un d-un)
+  [[file:chi_00.org::*%E4%BC%A6%E6%95%A6][伦敦]]
+* which (n^a)
+  [[file:chi_00.org::*%E5%93%AA][哪]]
+* live (zh\u)
+  [[file:chi_00.org::*%E4%BD%8F][住]]
+* at; in (z\ai)
+  [[file:chi_00.org::*%E5%9C%A8][在]]
+* this (zh\i;zh\ei)
+  [[file:chi_00.org::*%E8%BF%99][这]]
+* that (n\a;n\ei)
+  [[file:chi_00.org::*%E9%82%A3][那]]
+* we; us (w^omen)
+  [[file:chi_00.org::*%E6%88%91%E4%BB%AC][我们]]
+* you (plural) (n^imen)
+  [[file:chi_00.org::*%E4%BD%A0%E4%BB%AC][你们]]
+* they, them (t-amen)
+  [[file:chi_00.org::*%E4%BB%96%E4%BB%AC][他们]]
+* they, them (feminine only) (t-amen)
+  [[file:chi_00.org::*%E5%A5%B9%E4%BB%AC][她们]]
+* wife (t\aitai)
+  [[file:chi_00.org::*%E5%A4%AA%E5%A4%AA][太太]]
+* teacher (l^aosh-i)
+  [[file:chi_00.org::*%E8%80%81%E5%B8%88][老师]]
+* doctor (y-ish-eng)
+  [[*wife (t\aitai)][wife (t\aitai)]]
+* all; both; usually (d-ou)
+  [[file:chi_00.org::*%E9%83%BD][都]]
+* really, precisely (j\iu)
+  [[file:chi_00.org::*%E5%B0%B1][就]]
+* who (shu/i; sh/ei)
+  [[file:chi_00.org::*%E8%B0%81][谁]]
+
+
+
+* today (j-inti-an)
+  [[file:chi_00.org::*%E4%BB%8A%E5%A4%A9][今天]]
+* tomorrow (m/ingti-an)
+  [[file:chi_00.org::*%E6%98%8E%E5%A4%A9][明天]]
+* this year (j-in ni/an)
+  [[file:chi_00.org::*%E4%BB%8A%E5%B9%B4][今年]]
+* year (ni/an)
+  [[file:chi_00.org::*%E5%B9%B4][年]]
+* month (yu\e)
+  [[file:chi_00.org::*%E6%9C%88][月]]
+* week, week day (x-ingq-i)
+  [[file:chi_00.org::*%E6%98%9F%E4%B8%83][星七]]
+* birthday (sh-engr\i)
+  [[file:chi_00.org::*%E7%94%9F%E6%97%A5][生日]]
+* date, number (h\ao)
+  [[file:chi_00.org::*%E5%8F%B7][号]]
+* younger brother (d\id\i)
+  [[file:chi_00.org::*%E7%AC%AC%E7%AC%AC][第第]]
+* younger sister (m\eimei)
+  [[file:chi_00.org::*%E5%A6%B9%E5%A6%B9][妹妹]]
+* years old; time [formal] (su\i)
+  [[file:chi_00.org::*%E5%B2%81][岁]]
+* how many/how old [for numbers below 10] (j^i)
+  [[file:chi_00.org::*%E5%87%A0][几]]
+* [a particle, indicating possession] (de)
+  [[file:chi_00.org::*%E7%9A%84][的]]
+* really? / is that right (sh\i ma)
+  [[file:chi_00.org::*%E6%98%AF%E9%A9%AC][是马]]
+* how old... ? (do-o d\a le)
+  [[file:chi_00.org::*%E5%A4%9A%E5%A4%A7%E4%BA%86][多大了]]
+* happy (kua\il\e)
+  [[file:chi_00.org::*%E5%BF%AB%E4%B9%90][快乐]]
+* many, much, a lot, more (du-o)
+  [[file:chi_00.org::*%E5%A4%9A][多]]
+* large, big (d\a)
+  [[file:chi_00.org::*%E5%A4%A7][大]]
+* how old (du-o d\a)
+  [[file:chi_00.org::*%E5%A4%9A%E5%A4%A7][多大]]
+* sorry, excuse me, pardon (du\ibuq^i)
+  [[file:chi_00.org::*%E5%AF%B9%E4%B8%8D%E8%B5%B7][对不起]]
+* [an interrogative or suggestive particle] ba
+  [[file:chi_00.org::*%E5%90%A7][吧]]
+* elder sister (ji^ejie) 
+  [[file:chi_00.org::*%E5%A7%90%E5%A7%90][姐姐]]
+* age (formal term) (ni/an l/ing)
+  [[file:chi_00.org::*%E5%B9%B4%E9%BE%84][年龄]]
+* worker (g-ongr/en)
+  [[file:chi_00.org::*%E5%B7%A5%E4%BA%BA][工人]]
+* peasant; farmer (n/ongm/in)
+  [[file:chi_00.org::*%E5%86%9C%E6%B0%91][农民]]
+* actor (y^anyu/an)
+  [[file:chi_00.org::*%E6%BC%94%E5%91%98][演员]]
+* nurse (h\ushi)
+  [[file:chi_00.org::*%E6%8A%A4%E5%A3%AB][护士]]
+* scientist (k-exu/eji-a)
+  [[file:chi_00.org::*%E7%A7%91%E5%AD%A6%E5%AE%B6][科学家]]
+* mathematician (sh\uxu/eji-a)
+  [[file:chi_00.org::*%E6%95%B0%E5%AD%A6%E5%AE%B6][数学家]]
+* waitress (f/uw\uyu/an)
+  [[file:chi_00.org::*%E6%9C%8D%E5%8A%A1%E5%91%98][服务员]]
+* head of a school (xi\aozh^ang)
+  [[file:chi_00.org::*%E6%A0%A1%E9%95%BF][校长]]
+* head of a factory (ch^angzh^ang)
+  [[file:chi_00.org::*%E5%8E%82%E9%95%BF][厂长]]
+* chairman of the board (do^ongsh\izh^ang)
+  [[file:chi_00.org::*%E8%91%A3%E4%BA%8B%E9%95%BF][董事长]]
+* president of a state (z\ongt^ong)
+  [[file:chi_00.org::*%E6%80%BB%E7%BB%9F][总统]]
+* to tell (g\aosu)
+  [[file:chi_00.org::*%E5%91%8A%E8%AF%89][告诉]]
+* to wish (zh\u)
+  [[file:chi_00.org::*%E7%A5%9D][祝]]
+* telephone (di\anhu\a)
+  [[file:chi_00.org::*%E7%94%B5%E8%AF%9D][电话]]
+
+
+* study (xu/e)
+  [[file:chi_00.org::*%E5%AD%A6][学]]
+* to make; to do (zu\o)
+  [[file:chi_00.org::*%E5%81%9A][做]]
+* to write (xi^e)
+  [[file:chi_00.org::*%E5%86%99][写]]
+* to see; to watch; to look; to read; (k\an)
+  [[file:chi_00.org::*%E7%9C%8B][看]]
+* to surf the internet (sh\ang w^ang)
+  [[file:chi_00.org::*%E4%B8%8A%E7%BD%91][上网]]
+* major; subject (zhu-any\e)
+  [[file:chi_00.org::*%E4%BC%A0%E4%B8%9A][传业]]
+* English language (y-ingw/en)
+  [[file:chi_00.org::*%E8%8B%B1%E6%96%87][英文]]
+* Chinese language (zh-ongw/en)
+  [[file:chi_00.org::*%E4%B8%AD%E6%96%87][中文]]
+* literature (w/enxu/e)
+  [[file:chi_00.org::*%E6%96%87%E5%AD%A6][文学]]
+* TV (di\ansh\i)
+  [[file:chi_00.org::*%E7%94%B5%E8%A7%86][电视]]
+* book (sh-u)
+  [[file:chi_00.org::*%E4%B9%A6][书]]
+* Chinese character (h\an z\i)
+  [[file:chi_00.org::*%E6%B1%89%E5%AD%97][汉字]]
+* evening (w^anshang)
+  [[file:chi_00.org::*%E6%99%9A%E4%B8%8A][晚上]]
+* every day (ti-anti-an)
+  [[file:chi_00.org::*%E5%A4%A9%E5%A4%A9][天天]]
+* this evening, tonight (j-in w^an)
+  [[file:chi_00.org::*%E4%BB%8A%E6%99%9A][今晚]]
+* afternoon (xi\aw^u)
+  [[file:chi_00.org::*%E4%B8%8B%E5%8D%88][下午]]
+* to drink (h-e)
+  [[file:chi_00.org::*%E5%96%9D][喝]]
+* tea (ch/a)
+  [[file:chi_00.org::*%E8%8C%B6][茶]]
+* (cow's) milk (ni/un^ai)
+  [[file:chi_00.org::*%E7%89%9B%E5%A5%B6][牛奶]]
+* coffee (k-af-ei)
+  [[file:chi_00.org::*%E5%92%96%E5%95%A1][咖啡]]
+* beer (p/iji^u)
+  [[file:chi_00.org::*%E5%95%A4%E9%85%92][啤酒]]
+* coke (k^el\e)
+  [[file:chi_00.org::*%E5%8F%AF%E4%B9%90][可乐]]
+* fruit juice (gu^ozh-i)
+  [[file:chi_00.org::*%E6%9E%9C%E6%B1%81][果汁]]
+* water (shu^i)
+  [[file:chi_00.org::*%E6%B0%B4][水]]
+
+* Poland (b-ol/an)
+  [[file:chi_00.org::*%E6%B3%A2%E5%85%B0][波兰]]
+* Russia (/egu/o)
+  [[file:chi_00.org::*%E4%BF%84%E5%9B%BD][俄国]]
+* thousand (qi-an)
+  [[file:chi_00.org::*%E5%8D%83][千]]
+* hundred (b^ai)
+  [[file:chi_00.org::*%E7%99%BE][百]]
+
+* early, morning (z^ao)
+  [[file:chi_00.org::*%E6%97%A9][早]]
+  
+* friend (p/engy^ou)
+  [[file:chi_00.org::*%E6%9C%8B%E5%8F%8B][朋友]]
+
+* or (in alternative question) (h/aish\i)
+  [[file:chi_00.org::*%E8%BF%98%E6%98%AF][还是]]
+* or (in a statement) (hu\o)
+  [[file:chi_00.org::*%E6%88%96][或]]
