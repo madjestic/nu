@@ -18,8 +18,8 @@
 (global-set-key (kbd "C-c a") 'org-agenda)
 
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "chromium-browser")
-(setq browse-url-default-browser "chromium")
+      browse-url-generic-program "firefox")
+(setq browse-url-default-browser "firefox")
 
 (lambda (file link) (org-pdfview-open file))
 

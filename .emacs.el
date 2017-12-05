@@ -18,7 +18,7 @@
  '(ac-quick-help-prefer-pos-tip t)
  '(ac-show-menu-immediately-on-auto-complete t)
  '(browse-url-browser-function (quote browse-url-generic))
- '(browse-url-generic-program "chromium-browser" t)
+ '(browse-url-generic-program "chromium-browser")
  '(circe-default-directory "~/.circe")
  '(circe-format-self-say "me > {body}")
  '(circe-network-options
@@ -88,7 +88,7 @@
      ("org" . "http://orgmode.org/elpa/"))))
  '(package-selected-packages
    (quote
-    (dired+ darkroom yafolding weechat w3m vline use-package twittering-mode tabbar sr-speedbar smooth-scrolling smooth-scroll smartparens smart-mode-line-powerline-theme shm session second-sel scheme-here scheme-complete rtags revive realgud rainbow-delimiters python-mode perl6-mode paredit org-pdfview openwith nyan-mode nurumacs nlinum move-text minimap menu-bar+ magit macrostep lui lcs julia-shell json-mode jedi jabber importmagic image+ iedit howm hlint-refactor hide-comnt helm-swoop helm-spotify helm-gtags helm-ghc helm-circe helm-c-yasnippet haskell-snippets guile-scheme gtags google-maps glsl-mode ghci-completion ggtags function-args flymake-hlint flymake-haskell-multi flycheck-perl6 flycheck-irony flycheck-haskell flycheck-ghcmod flycheck-cython fill-column-indicator ess elpy elfeed ecb djvu direx dired-sort-menu desktop desktop+ ctags company-quickhelp company-jedi company-irony company-ghci company-ghc company-auctex cmake-ide calfw buffer-move bash-completion auto-complete-octave auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-complete-auctex ac-octave ac-math ac-helm ac-haskell-process 0blayout)))
+    (org-gcal calfw-cal calfw-gcal calfw-org dired+ darkroom yafolding weechat w3m vline use-package twittering-mode tabbar sr-speedbar smooth-scrolling smooth-scroll smartparens smart-mode-line-powerline-theme shm session second-sel scheme-here scheme-complete rtags revive realgud rainbow-delimiters python-mode perl6-mode paredit org-pdfview openwith nyan-mode nurumacs nlinum move-text minimap menu-bar+ magit macrostep lui lcs julia-shell json-mode jedi jabber importmagic image+ iedit howm hlint-refactor hide-comnt helm-swoop helm-spotify helm-gtags helm-ghc helm-circe helm-c-yasnippet haskell-snippets guile-scheme gtags google-maps glsl-mode ghci-completion ggtags function-args flymake-hlint flymake-haskell-multi flycheck-perl6 flycheck-irony flycheck-haskell flycheck-ghcmod flycheck-cython fill-column-indicator ess elpy elfeed ecb djvu direx dired-sort-menu desktop desktop+ ctags company-quickhelp company-jedi company-irony company-ghci company-ghc company-auctex cmake-ide calfw buffer-move bash-completion auto-complete-octave auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-complete-auctex ac-octave ac-math ac-helm ac-haskell-process 0blayout)))
  '(pdf-view-midnight-colors (quote ("grey70" . "#2d3743")))
  '(recenter-positions (quote (top middle bottom)))
  '(recenter-redisplay t)

@@ -33,9 +33,6 @@
 
 * 老师
   [[file:eng_00.org::*teacher%20(l^aosh-i)][teacher (l^aosh-i)]]
-* 太太
-  [[file:eng_00.org::*wife%20(t\aitai)][wife (t\aitai)]]
-
 
 * 这
   [[file:eng_00.org::*this%20(zh\i;zh\ei)][this (zh\i;zh\ei)]]
@@ -57,6 +54,16 @@
 
 * 先生
   [[file:eng_00.org::*Mr.,%20husband%20(xi-ansheng)][Mr., husband (xi-ansheng)]]
+* 丈夫
+  [[file:eng_00.org::*husband%20(zh\angfu)][husband (zh\angfu)]]
+
+* 太太
+  [[file:eng_00.org::*wife%20(t\aitai)][wife (t\aitai)]]
+
+* 妻子
+  [[file:eng_00.org::*wife%20(q-izi)][wife (q-izi)]]
+
+
 * 名字
   [[file:eng_00.org::*name%20(m/ingzi)][name (m/ingzi)]]
 * 叫
@@ -111,6 +118,9 @@
   [[file:eng_00.org::*no%20(b\u)][no (b\u)]]
 * 不谢
   [[file:eng_00.org::*not%20at%20all%20(b/u%20xi\e)][not at all (b/u xi\e)]]
+* 对不起
+  [[file:eng_00.org::*sorry,%20excuse%20me,%20pardon%20(du\ibuq^i)][sorry, excuse me, pardon (du\ibuq^i)]]
+
 * 中国
   [[file:eng_00.org::*Middle%20Kingdom%20(Zh-onggu/o)][Middle Kingdom (Zh-onggu/o)]]
 * 谢谢
@@ -208,8 +218,6 @@
   [[file:eng_00.org::*large,%20big%20(d\a)][large, big (d\a)]]
 * 多大
   [[file:eng_00.org::*how%20old%20(du-o%20d\a)][how old (du-o d\a)]]
-* 对不起
-  [[file:eng_00.org::*sorry,%20excuse%20me,%20pardon%20(du\ibuq^i)][sorry, excuse me, pardon (du\ibuq^i)]]
 * 姐姐
   [[file:eng_00.org::*elder%20sister%20(ji^ejie)][elder sister (ji^ejie)]]
 
@@ -237,6 +245,7 @@
 * 总统
   [[file:eng_00.org::*president%20of%20a%20state%20(z\ongt^ong)][president of a state (z\ongt^ong)]]
 
+
 * 学
   [[file:eng_00.org::*study%20(xu/e)][study (xu/e)]]
 * 做
@@ -255,10 +264,12 @@
   [[file:eng_00.org::*Chinese%20language%20(zh-ongw/en)][Chinese language (zh-ongw/en)]]
 * 文学
   [[file:eng_00.org::*literature%20(w/enxu/e)][literature (w/enxu/e)]]
+
 * 电视
   [[file:eng_00.org::*TV%20(di\ansh\i)][TV (di\ansh\i)]]
 * 电话
   [[file:eng_00.org::*telephone%20(di\anhu\a)][telephone (di\anhu\a)]]
+
 
 * 书
   [[file:eng_00.org::*book%20(sh-u)][book (sh-u)]]
@@ -302,6 +313,7 @@
 * 百
   [[file:eng_00.org::*hundred%20(b^ai)][hundred (b^ai)]]
 
+
 * 早
   [[file:eng_00.org::*early,%20morning%20(z^ao)][early, morning (z^ao)]]
 
@@ -312,3 +324,17 @@
   [[file:eng_00.org::*or%20(in%20alternative%20question)%20(h/aish\i)][or (in alternative question) (h/aish\i)]]
 * 或
   [[file:eng_00.org::*or%20(in%20a%20statement)%20(hu\o)][or (in a statement) (hu\o)]]
+
+* 帮助
+  [[file:eng_00.org::*to%20help%20(b-angzh\u)][to help (b-angzh\u)]]
+
+
+* 和
+  [[file:eng_00.org::*and%20(h/e)][and (h/e)]]
+* 爱好
+  [[file:eng_00.org::*to%20like,%20be%20fond%20of%20(\aih\ao)][to like, be fond of (\aih\ao)]]
+* 喜欢
+  [[file:eng_00.org::*to%20like%20(x^ihuan)][to like (x^ihuan)]]
+ 
+* 因为
+  [[file:eng_00.org::*because%20of%20(y-inw\ei)][because of (y-inw\ei)]]

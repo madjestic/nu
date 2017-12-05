@@ -1,6 +1,7 @@
 (require 'calfw)
 (require 'calfw-org)
 (require 'calfw-cal)
+(require 'calfw-gcal)
 ;;(require 'calfw-ical)
 ;;(require 'calfw-howm)
 ;;(require 'calfw-org)

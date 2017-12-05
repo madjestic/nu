@@ -229,9 +229,12 @@
 (global-set-key (kbd "C-M-y")      'secondary-dwim)
 (global-set-key (kbd "C-x p")      'winstack-push)
 (global-set-key (kbd "C-x M-p")    'winstack-pop)
-(global-set-key (kbd "M-s <left>") 'tabbar-backward)
-(global-set-key (kbd "M-s <right>")'tabbar-forward)
-
+(global-set-key ( kbd "M-s <left>") 'tabbar-backward)
+(global-set-key  (kbd "M-s <right>")'tabbar-forward)
+;;; scrollers   
+(global-set-key   "\M-n" "\C-u1\C-v\C-n")
+(global-set-key   "\M-p" "\C-u1\M-v\C-p")  
+  
 
 (defun jabber ()
   (interactive)

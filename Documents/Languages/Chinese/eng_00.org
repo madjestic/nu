@@ -97,8 +97,19 @@
   [[file:chi_00.org::*%E6%98%AF][是]]
 * yes (sh\ide)
   [[file:chi_00.org::*%E6%98%AF%E7%9A%84][是的]]
+
 * Mr., husband (xi-ansheng)
   [[file:chi_00.org::*%E5%85%88%E7%94%9F][先生]]
+* husband (zh\angfu)
+  [[file:chi_00.org::*%E4%B8%88%E5%A4%AB][丈夫]]
+
+* wife (t\aitai)
+  [[file:chi_00.org::*%E5%A4%AA%E5%A4%AA][太太]]
+* wife (q-izi)
+  [[file:chi_00.org::*%E5%A6%BB%E5%AD%90][妻子]]
+
+
+
 * Miss (xi^a jie)
   [[file:chi_00.org::*%E5%B0%8F%E5%A7%90][小姐]]
 * person, people (r/en)
@@ -129,8 +140,6 @@
   [[file:chi_00.org::*%E4%BB%96%E4%BB%AC][他们]]
 * they, them (feminine only) (t-amen)
   [[file:chi_00.org::*%E5%A5%B9%E4%BB%AC][她们]]
-* wife (t\aitai)
-  [[file:chi_00.org::*%E5%A4%AA%E5%A4%AA][太太]]
 * teacher (l^aosh-i)
   [[file:chi_00.org::*%E8%80%81%E5%B8%88][老师]]
 * doctor (y-ish-eng)
@@ -141,7 +150,6 @@
   [[file:chi_00.org::*%E5%B0%B1][就]]
 * who (shu/i; sh/ei)
   [[file:chi_00.org::*%E8%B0%81][谁]]
-
 
 
 * today (j-inti-an)
@@ -288,3 +296,15 @@
   [[file:chi_00.org::*%E8%BF%98%E6%98%AF][还是]]
 * or (in a statement) (hu\o)
   [[file:chi_00.org::*%E6%88%96][或]]
+* to help (b-angzh\u)
+  [[file:chi_00.org::*%E5%B8%AE%E5%8A%A9][帮助]]
+* and (h/e)
+  [[file:chi_00.org::*%E5%92%8C][和]]
+
+* to like, be fond of (\aih\ao)
+  [[file:chi_00.org::*%E7%88%B1%E5%A5%BD][爱好]]
+* to like (x^ihuan)
+  [[file:chi_00.org::*%E5%96%9C%E6%AC%A2][喜欢]]
+
+* because of (y-inw\ei)
+  [[file:chi_00.org::*%E5%9B%A0%E4%B8%BA][因为]]
