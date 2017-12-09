@@ -1,7 +1,8 @@
 ;; Package: smartparens
 (require 'smartparens-config)
-(show-smartparens-global-mode +1)
-(smartparens-global-mode 1)
+(show-smartparens-global-mode t)
+(smartparens-global-mode t)
+(linum-mode t)
 
 ;;;;;;;;;;
 ;; helm ;;
@@ -76,6 +77,4 @@
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 (global-company-mode)
-(company-quickhelp-mode 1)
-
-(linum-mode t)
+(company-quickhelp-mode t)

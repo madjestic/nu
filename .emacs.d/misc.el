@@ -236,7 +236,10 @@
 (global-set-key "\M-p" "\C-u1\M-v\C-p")
 ;;; folding
 (global-set-key (kbd "M-RET")      'yafolding-toggle-element)
-  
+
+(global-set-key (kbd "<C-mouse-4>") 'text-scale-increase)
+(global-set-key (kbd "<C-mouse-5>") 'text-scale-decrease)
+(global-set-key (kbd "<M-down-mouse-2>") 'dired-sort-menu-popup)
 
 (defun jabber ()
   (interactive)
