@@ -1,8 +1,10 @@
 (setq circe-network-options
       `(("Freenode"
          :nick "madjestic"
-				 :nickserv-nick madjestic
-         :nickserv-password asdfg
+				 :nickserv-nick "madjestic"
+         :nickserv-password "asdfg"
+         :sasl-username "madjestic"
+         :sasl-password "asdfg"
          :channels ("#emacs"
                     "#odforce"
                     "#haskell-beginners"

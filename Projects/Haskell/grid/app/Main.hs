@@ -1,3 +1,6 @@
+-- {-# LANGUAGE InstanceSigs #-}
+-- {-# LANGUAGE FlexibleInstances #-}
+-- {-# LANGUAGE TypeSynonymInstances #-}
 module Main where
 
 import Graphics.Rendering.OpenGL as GL
@@ -21,7 +24,7 @@ gridIDX :: (Num a, Enum a) => a -> a -> [[a]]
 gridIDX m n = [[m * r .. m * r + m - 1] | r <- [0 .. n - 1]]
 
 gridP :: (Integral a) => Int -> a -> [[Vec2]]
-gridP    m n = toDouble $ fuseLists (gridRows m n) (gridCols m n)
+gridP    m n = toVec2 $ fuseLists (gridRows m n) (gridCols m n)
 
 gridCols :: (Num t, Enum t) => Int -> t -> [[t]]
 gridCols m n = replicate m [0 .. n - 1]                
@@ -35,8 +38,21 @@ gridCd clr m n = replicate m $ replicate n clr
 gridUV :: Integral a => Int -> a -> [[Vec2]]
 gridUV   m n = mathGrid (*(1/(fromIntegral m-1.0))) $ gridP m n
 
-toDouble :: (Integral a) => [[(a, a)]] -> [[Vec2]]
-toDouble grid = [map (mapT fromIntegral) x | x <- grid]
+toVec2 :: (Integral a) => [[(a, a)]] -> [[Vec2]]
+toVec2 grid = [map (mapT fromIntegral) x | x <- grid]
+
+-- class Doubles a where
+--   toDoubles :: a -> [Double]
+-- instance Doubles Vec2 where
+--   toDoubles :: Vec2 -> [Double]
+--   toDoubles (x ,y) = [x, y]
+-- instance Doubles Vec3 where
+--   toDoubles :: Vec3 -> [Double]
+--   toDoubles (x ,y, z) = [x, y, z]
+-- instance Doubles [Vec2] where
+--   toDoubles :: [Vec2] -> [Double]
+--   toDoubles x = undefined
+  
 
 mathGrid :: (Double -> Double) -> [[Vec2]] -> [[Vec2]]
 mathGrid f g = [map (mapT f) x | x <- g]
@@ -46,15 +62,23 @@ fuseLists (x:xs) (y:ys) = (zip x y) : (fuseLists xs ys)
 fuseLists [] _ = []
 fuseLists _ [] = []
 
--- fuseGrids :: [[(b, b)]] -> [[t]] -> [[(b, b)]] -> [a]
--- fuseGrids [] cd uv =
+fuseGrids :: t2 -> t1 -> t -> [(Vec3, Vec3, Vec2)]
+fuseGrids pos cd uv =
+               zip3 (map (toVec3 0.0) $ concat $ gridP 3 3)
+                    (concat $ gridCd (0.0, 0.0, 0.0) 3 3)
+                    (concat $ gridUV 3 3)
+
+concatGrids :: [(Vec3, Vec3, Vec2)] -> [Double]
+concatGrids fg = concat $ map concatGrids' fg
+concatGrids' :: ((t, t, t), (t, t, t), (t, t)) -> [t]
+concatGrids' (pos, cd, uv) = ( (\(x,y,z) (r,g,b) (u,v) -> [x,y,z,r,g,b,u,v]) pos cd uv )
 
 mapT :: (t1 -> t) -> (t1, t1) -> (t, t)
 mapT f (a1, a2) = (f a1, f a2)
 
 -- | [Vec2] -> [Vec3]
-toVec3 :: Vec2 -> Double -> Vec3
-toVec3 (x,y) z = (x, y, z)
+toVec3 :: Double -> Vec2 -> Vec3
+toVec3 z (x,y) = (x, y, z)
 
 faceVerts i j m n =                  -- face vertices indexes
   [tl, tr, bl, br]

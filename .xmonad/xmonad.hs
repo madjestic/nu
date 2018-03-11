@@ -37,10 +37,10 @@ main = do
                  , borderWidth          = 2
                  }
              `additionalKeys`
-                 [ ((mod4Mask .|. shiftMask, xK_k     ), windows W.swapDown  ) -- %! Swap the focused window with the next window
-                 , ((mod4Mask .|. shiftMask, xK_j     ), windows W.swapUp    )
-                 , ((mod4Mask,               xK_a)    , sendMessage Balance )
-                 , ((mod4Mask .|. shiftMask, xK_a)    , sendMessage Equalize)
+                 [ ((mod4Mask .|. shiftMask, xK_k), windows W.swapDown  ) -- %! Swap the focused window with the next window
+                 , ((mod4Mask .|. shiftMask, xK_j), windows W.swapUp    )
+                 -- , ((mod4Mask              , xK_a), sendMessage Balance )
+                 -- , ((mod4Mask .|. shiftMask, xK_a), sendMessage Equalize)
                  ]
              `additionalKeysP`
                  [ ("<XF86AudioMute>"        , spawn "amixer set Master toggle")
@@ -63,5 +63,16 @@ main = do
                  , ("M-C-l"    , spawn "slock")
                  , ("M-C-h"    , spawn "houdini")
                  , ("M-i"      , spawn "xcalib -invert -alter")
-                 , ("M-r"      , sendMessage $ Rotate) 
+                 , ("M-s"      , sendMessage $ Swap)
+                 , ("M-M1-s"   , sendMessage $ Rotate)
+                 , ("M-a"      , sendMessage $ Balance)
+                 , ("M-M1-a"   , sendMessage $ Equalize)
+                 , ("M-M1-<Left>"   , sendMessage $ ExpandTowards L)
+                 , ("M-M1-<Right>"  , sendMessage $ ShrinkFrom L)
+                 , ("M-M1-<Up>"     , sendMessage $ ExpandTowards U)
+                 , ("M-M1-<Down>"   , sendMessage $ ShrinkFrom U)
+                 , ("M-M1-C-<Left>" , sendMessage $ ShrinkFrom R)
+                 , ("M-M1-C-<Right>", sendMessage $ ExpandTowards R)
+                 , ("M-M1-C-<Up>"   , sendMessage $ ShrinkFrom D)
+                 , ("M-M1-C-<Down>" , sendMessage $ ExpandTowards D)
                  ]              

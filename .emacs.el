@@ -23,7 +23,7 @@
  '(circe-format-self-say "me > {body}")
  '(circe-network-options
    (quote
-    (("Freenode" :nick "madjestic" :channels
+    (("Freenode" :sasl-username "madjestic" :sasl-password "asdfg" :nick "madjestic" :channels
       ("#emacs" "#odforce" "#haskell-beginners" "#gentoo" "#gentoo-haskell")
       :nickserv-password asdfg))))
  '(circe-server-connected-hook nil)
