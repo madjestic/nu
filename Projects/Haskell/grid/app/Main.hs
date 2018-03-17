@@ -1,6 +1,3 @@
--- {-# LANGUAGE InstanceSigs #-}
--- {-# LANGUAGE FlexibleInstances #-}
--- {-# LANGUAGE TypeSynonymInstances #-}
 module Main where
 
 import Graphics.Rendering.OpenGL as GL
@@ -20,14 +17,26 @@ type Vec3 = (Double, Double, Double)
 data Vec = Vec2 
          | Vec3
 
-gridIDX :: GLuint -> GLuint -> [GLuint]
-gridIDX m n = concat $ [[m * r .. m * r + m - 1] | r <- [0 .. n - 1]]
+gridIDX :: [(GLuint, GLuint, GLuint)] -> [GLuint]
+gridIDX ts =
+  concat [[x,y,z] | (x,y,z) <- ts]
 
-gridP :: (Integral a) => Int -> a -> [[Vec2]]
-gridP    m n = toVec2 $ fuseLists (gridRows m n) (gridCols m n)
+gridIDXredux :: GLuint -> GLuint -> [[GLuint]]
+gridIDXredux m n = [[m * r .. m * r + m - 2] | r <- [0 .. n - 2]]
 
-gridCols :: (Num t, Enum t) => Int -> t -> [[t]]
-gridCols m n = replicate m [0 .. n - 1]                
+-- | output triangles
+gridIDXtris :: GLuint -> GLuint -> [(GLuint, GLuint, GLuint)]
+gridIDXtris m n =
+  concat [[(x, x + 1, x + n), (x + 1, x + 1 + n, x + n)] | x <- idx]
+  where
+    idx = concat (gridIDXredux m n)
+
+-- | Rows x Columns
+gridP :: Int -> Int -> [[Vec2]]
+gridP    n m = toVec2 $ fuseLists (gridRows m n) (gridCols m n)
+
+gridCols :: (Num t, Enum t) => t -> Int -> [[t]]
+gridCols n m = replicate m [0 .. n - 1]                
 
 gridRows :: (Num a, Enum a) => Int -> a -> [[a]]
 gridRows m n = [take m (repeat r) | r <- [0 .. n - 1]]
@@ -35,7 +44,7 @@ gridRows m n = [take m (repeat r) | r <- [0 .. n - 1]]
 gridCd :: Vec3 -> Int -> Int -> [[Vec3]]
 gridCd clr m n = replicate m $ replicate n clr
 
-gridUV :: Integral a => Int -> a -> [[Vec2]]
+gridUV :: Int -> Int -> [[Vec2]]
 gridUV   m n = mathGrid (*(1/(fromIntegral m-1.0))) $ gridP m n
 
 toVec2 :: (Integral a) => [[(a, a)]] -> [[Vec2]]
@@ -60,10 +69,10 @@ concatGrid fg = concat $ map concatGrid' fg
 concatGrid' :: ((t, t, t), (t, t, t), (t, t)) -> [t]
 concatGrid' (pos, cd, uv) = ( (\(x,y,z) (r,g,b) (u,v) -> [x,y,z,r,g,b,u,v]) pos cd uv )
 
-grid :: Vec3 -> Int -> Int -> [GLfloat]
-grid cd m n =
+grid :: [[Vec2]] -> [[Vec3]] -> [[Vec2]] -> [GLfloat]
+grid p cd uv =
   map realToFrac $ concatGrid
-                 $ fuseGrids (gridP m n) (gridCd cd m n) (gridUV m n)
+                 $ fuseGrids p cd uv
 
 mapT :: (t1 -> t) -> (t1, t1) -> (t, t)
 mapT f (a1, a2) = (f a1, f a2)
@@ -95,21 +104,6 @@ instance PrintfArg a => Show (GLMatrix a) where
                      m31 m32 m33 m34
                      m41 m42 m43 m44
 
-verticies :: [GLfloat]
-verticies =
-  [ -- | positions    -- | colors      -- | uv
-    0.5,  0.5, 0.0,   1.0, 0.0, 0.0,   1.0, 1.0,
-    0.5, -0.5, 0.0,   0.0, 1.0, 0.0,   1.0, 0.0,
-   -0.5, -0.5, 0.0,   0.0, 0.0, 1.0,   0.0, 0.0,
-   -0.5,  0.5, 0.0,   0.0, 0.0, 0.0,   0.0, 1.0
-  ]
-
-indices :: [GLuint]
-indices =
-  [          -- Note that we start from 0!
-    0, 1, 3, -- First Triangle
-    1, 2, 3  -- Second Triangle
-  ]
      
 keyPressed :: GLFW.KeyCallback 
 keyPressed win GLFW.Key'Escape _ GLFW.KeyState'Pressed _ = shutdown win
@@ -157,10 +151,15 @@ display :: IO ()
 display =
   do
     inWindow <- openWindow "NGL is Not GLoss" (512,512)
-    --descriptor <- initResources verticies indices
-    descriptor <- initResources (grid (1.0, 0.0, 0.0) 2 2) (gridIDX 2 2)
+    descriptor <- initResources (grid p cd uv)
+                                indices
     onDisplay inWindow descriptor
     closeWindow inWindow
+      where
+        indices = gridIDX $ gridIDXtris 3 3
+        p       = mathGrid (-1.0+) $ gridP 3 3
+        cd      = gridCd (1.0, 0.0, 0.0) 3 3
+        uv      = gridUV 3 3
                  
 onDisplay :: GLFW.Window -> Descriptor -> IO ()
 onDisplay win descriptor@(Descriptor triangles numIndices) =
@@ -196,10 +195,10 @@ initResources vs idx =
     -- | EBO
     elementBuffer <- genObjectName
     bindBuffer ElementArrayBuffer $= Just elementBuffer
-    let numIndices = length indices
+    let numIndices = length idx
     withArray idx $ \ptr ->
       do
-        let indicesSize = fromIntegral (numIndices * (length indices))
+        let indicesSize = fromIntegral (numIndices * (length idx))
         bufferData ElementArrayBuffer $= (indicesSize, ptr, StaticDraw)
 
     -- | Bind the pointer to the vertex attribute data
@@ -258,8 +257,8 @@ initResources vs idx =
           [ 1, 0, 0, 0
           , 0, 1, 0, 0
           , 0, 0, 1, 0
-          , 0, 0, 0, 0.5 ] :: [GLfloat]
-          
+          , 0, 0, 0, 1.0 ] :: [GLfloat]
+
     transform <- GL.newMatrix ColumnMajor tr :: IO (GLmatrix GLfloat)
     location2 <- get (uniformLocation program "transform")
     uniform location2 $= (transform)

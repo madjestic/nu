@@ -39,3 +39,26 @@ faceVerts i j m n =                  -- face vertices indexes
     bl = (gridIDX m n)!!(i+1)!!j     -- Bottom Right
     br = (gridIDX m n)!!(i+1)!!(j+1) -- Bottom Right
   
+-- gridIDX :: GLuint -> GLuint -> [[GLuint]]
+-- gridIDX m n = [[m * r .. m * r + m - 1] | r <- [0 .. n - 1]]
+
+verticies :: [GLfloat]
+verticies =
+  [ -- | positions    -- | colors      -- | uv
+    0.5,  0.5, 0.0,   1.0, 0.0, 0.0,   1.0, 1.0,
+    0.5, -0.5, 0.0,   0.0, 1.0, 0.0,   1.0, 0.0,
+   -0.5, -0.5, 0.0,   0.0, 0.0, 1.0,   0.0, 0.0,
+   -0.5,  0.5, 0.0,   0.0, 0.0, 0.0,   0.0, 1.0
+  ]
+
+indices :: [GLuint]
+indices =
+  [          -- Note that we start from 0!
+    0, 1, 3, -- First Triangle
+    1, 2, 3  -- Second Triangle
+  ]
+
+grid' :: Vec3 -> Int -> Int -> [GLfloat]
+grid' cd m n =
+  map realToFrac $ concatGrid
+                 $ fuseGrids (gridP m n) (gridCd cd m n) (gridUV m n)
