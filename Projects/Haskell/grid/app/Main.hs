@@ -175,7 +175,8 @@ display =
       where
         indices = gridIDX $ gridIDXtris 3 3
         p       = mathGrid (-1.0+) $ gridP 3 3
-        cd      = gridCd (1.0, 0.0, 0.0) 3 3
+        --cd      = gridCd (1.0, 0.0, 0.0) 3 3
+        cd      = gridCd' 3 3
         uv      = gridUV 3 3
                  
 onDisplay :: GLFW.Window -> Descriptor -> IO ()
