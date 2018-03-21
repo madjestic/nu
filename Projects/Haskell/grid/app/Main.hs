@@ -11,6 +11,9 @@ import LoadShaders
 import Graphics.GLUtil (readTexture, texture2DWrap)
 import Text.Printf
 
+import Control.Monad.Trans.State (state, evalState, State)
+import System.Random (random, mkStdGen, StdGen)
+
 type Vec2 = (Double, Double)
 type Vec3 = (Double, Double, Double)
 
@@ -43,6 +46,20 @@ gridRows m n = [take m (repeat r) | r <- [0 .. n - 1]]
 
 gridCd :: Vec3 -> Int -> Int -> [[Vec3]]
 gridCd clr m n = replicate m $ replicate n clr
+
+gridCd' :: Int -> Int -> [[Vec3]]
+gridCd' m n =
+  map (map ( toT . (map (evalRand))) ) $ cd
+  where
+    toT = (\[x,y,z] -> (x,y,z))
+    cd  = [ [[3 * s .. 3 * s + 2] | s <- [m * t .. m * t + m - 1]] | t <- [0 .. n - 1]]  
+
+evalRand :: Int -> Double
+evalRand x = evalState randDouble (mkStdGen x)
+
+randDouble :: State StdGen Double
+randDouble =
+  state random
 
 gridUV :: Int -> Int -> [[Vec2]]
 gridUV   m n = mathGrid (*(1/(fromIntegral m-1.0))) $ gridP m n

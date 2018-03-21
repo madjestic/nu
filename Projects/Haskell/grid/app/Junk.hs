@@ -62,3 +62,9 @@ grid' :: Vec3 -> Int -> Int -> [GLfloat]
 grid' cd m n =
   map realToFrac $ concatGrid
                  $ fuseGrids (gridP m n) (gridCd cd m n) (gridUV m n)
+
+-- map (map (map (evalRand))) $ gridCd' 3 3
+
+-- gridCd' :: Vec3 -> Int -> Int -> [[Vec3]]
+-- gridCd' m n = [[m * r .. m * r + m - 1] | r <- [0 .. n - 1]]
+-- evalState randDouble (mkStdGen 0)
