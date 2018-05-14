@@ -1,0 +1,53 @@
+name:                grid-animated
+version:             0.1.0.0
+github:              "madjestic/grid-animated"
+license:             BSD3
+author:              "Vladimir Lopatin"
+maintainer:          "madjestic13@gmail.com"
+copyright:           "Vladimir Lopatin"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Animated Grid of polys to test FRP
+# category:            OpenGL
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/madjestic/grid-animated#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- GLFW-b
+- GLUtil >= 0.9.3
+- OpenGL >= 3.0 && < 4
+- transformers >= 0.5.2.0
+- random >= 1.1      
+
+library:
+  source-dirs: src
+
+executables:
+  grid-animated-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - grid-animated
+
+tests:
+  grid-animated-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - grid-animated
