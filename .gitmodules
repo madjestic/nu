@@ -1,0 +1,3 @@
+[submodule "Projects/Haskell/Pong"]
+	path = Projects/Haskell/Pong
+	url = https://github.com/madjestic/Pong
