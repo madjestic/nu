@@ -3,10 +3,7 @@
 (package-initialize)
 (menu-bar-mode -1)
 (font-lock-mode -1)
-
-;; (require 'openwith)
-;; (openwith-mode t)
-;; (setq openwith-associations '(("\\.pdf\\'" "okular" (file))))
+(paredit-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -18,7 +15,7 @@
  '(ac-quick-help-prefer-pos-tip t)
  '(ac-show-menu-immediately-on-auto-complete t)
  '(browse-url-browser-function (quote browse-url-generic))
- '(browse-url-generic-program "chromium-browser")
+ '(browse-url-generic-program "chromium")
  '(circe-default-directory "~/.circe")
  '(circe-format-self-say "me > {body}")
  '(circe-network-options
@@ -70,9 +67,14 @@
       (:network-server . "talk.google.com")
       (:port . 5223)
       (:connection-type . ssl)))))
+ '(menu-bar-mode nil)
+ '(minimap-always-recenter nil)
+ '(minimap-dedicated-window t)
+ '(minimap-enlarge-certain-faces (quote always))
+ '(minimap-recenter-type (quote middle))
+ '(minimap-update-delay 0.1)
  '(minimap-width-fraction 0.1)
  '(minimap-window-location (quote right))
- '(mouse-wheel-scroll-amount (quote (1 ((shift) . 1) ((control)))))
  '(org-agenda-files
    (quote
     ("~/org/todo.org" "~/org/progress_matrix.org" "~/org/index.org" "~/org/test.org")))
@@ -88,8 +90,9 @@
      ("org" . "http://orgmode.org/elpa/"))))
  '(package-selected-packages
    (quote
-    (dired-sort-menu+ org-gcal calfw-cal calfw-gcal calfw-org dired+ darkroom yafolding weechat w3m vline use-package twittering-mode tabbar sr-speedbar smooth-scrolling smooth-scroll smartparens smart-mode-line-powerline-theme shm session second-sel scheme-here scheme-complete rtags revive realgud rainbow-delimiters python-mode perl6-mode paredit org-pdfview openwith nyan-mode nurumacs nlinum move-text minimap menu-bar+ magit macrostep lui lcs julia-shell json-mode jedi jabber importmagic image+ iedit howm hlint-refactor hide-comnt helm-swoop helm-spotify helm-gtags helm-ghc helm-circe helm-c-yasnippet haskell-snippets guile-scheme gtags google-maps glsl-mode ghci-completion ggtags function-args flymake-hlint flymake-haskell-multi flycheck-perl6 flycheck-irony flycheck-haskell flycheck-ghcmod flycheck-cython fill-column-indicator ess elpy elfeed ecb djvu direx dired-sort-menu desktop desktop+ ctags company-quickhelp company-jedi company-irony company-ghci company-ghc company-auctex cmake-ide calfw buffer-move bash-completion auto-complete-octave auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-complete-auctex ac-octave ac-math ac-helm ac-haskell-process 0blayout)))
+    (intero helm-company lsp-haskell lsp-mode lsp-ui decide xah-find darcsum helm-swoop helm-nixos-options nix-mode nix-update nixos-options ipython-shell-send dired-sort-menu+ org-gcal calfw-cal calfw-gcal calfw-org dired+ darkroom yafolding weechat w3m vline use-package twittering-mode tabbar sr-speedbar smooth-scrolling smooth-scroll smartparens smart-mode-line-powerline-theme shm session second-sel scheme-here scheme-complete rtags revive realgud rainbow-delimiters python-mode perl6-mode paredit org-pdfview openwith nyan-mode nurumacs nlinum move-text minimap menu-bar+ magit macrostep lui lcs julia-shell json-mode jedi jabber importmagic image+ iedit howm hlint-refactor hide-comnt helm-spotify helm-gtags helm-ghc helm-circe helm-c-yasnippet haskell-snippets guile-scheme gtags google-maps glsl-mode ghci-completion ggtags function-args flymake-hlint flymake-haskell-multi flycheck-perl6 flycheck-irony flycheck-haskell flycheck-ghcmod flycheck-cython fill-column-indicator ess elpy elfeed ecb djvu direx dired-sort-menu desktop desktop+ ctags company-quickhelp company-jedi company-irony company-ghci company-ghc company-auctex cmake-ide calfw buffer-move bash-completion auto-complete-octave auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-complete-auctex ac-octave ac-math ac-helm ac-haskell-process 0blayout)))
  '(pdf-view-midnight-colors (quote ("grey70" . "#2d3743")))
+ '(reb-re-syntax (quote read))
  '(recenter-positions (quote (top middle bottom)))
  '(recenter-redisplay t)
  '(scalable-fonts-allowed t)
@@ -97,8 +100,8 @@
  '(scroll-bar-mode nil)
  '(server-mode t)
  '(session-use-package t nil (session))
+ '(show-paren-mode t)
  '(sml/theme (quote respectful))
- '(smooth-scroll-mode t)
  '(speedbar-after-create-hook (quote (speedbar-frame-reposition-smartly)))
  '(speedbar-before-popup-hook nil)
  '(speedbar-default-position (quote left))
@@ -136,7 +139,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "#2d3743" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 125 :width normal :foundry "unknown" :family "DejaVu Sans Mono"))))
+ '(default ((t (:inherit nil :stipple nil :background "#2d3743" :foreground "white" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "PfEd" :family "DejaVu Sans Mono"))))
  '(agda2-highlight-coinductive-constructor-face ((t (:foreground "gold"))))
  '(agda2-highlight-datatype-face ((t (:foreground "cyan"))))
  '(agda2-highlight-function-face ((t (:foreground "deep sky blue"))))
@@ -235,9 +238,6 @@ Emacs buffer are those starting with “*”."
 (load "~/.emacs.d/misc.el" )
 (load "~/.emacs.d/workgroups.el" )
 
-(require 'smooth-scroll)
-(smooth-scroll-mode t)
-
 (require 'dired-sort-menu)
 
 (require 'auto-complete)
@@ -248,7 +248,7 @@ Emacs buffer are those starting with “*”."
 (swap-buffer-mode)
 (show-paren-mode t)
 (set-default 'truncate-lines t)
-;;(powerline-default-theme)
+(powerline-default-theme)
 
 ;;;;;;;;;;;;;;
 ;; Org-mode ;;
@@ -261,43 +261,32 @@ Emacs buffer are those starting with “*”."
 
 (require 'openwith)
 (openwith-mode t)
-(setq openwith-associations '(("\\.hipnc\\'" "houdini_emacs" (file))
-                              ("\\.hip\\'"   "houdini_emacs" (file))
-                              ("\\.3b\\'"    "3D-coat"       (file))
-                              ("\\.mkv\\'"   "mpv"           (file))
-                              ("\\.mp4\\'"   "mpv"           (file))
-                              ("\\.mov\\'"   "mpv"           (file))
-                              ("\\.avi\\'"   "mpv"           (file))
-                              ("\\.djvu\\'"  "djview"        (file))
-                              ))
 
 (setq org-goto-interface 'outline-path-completion
       org-goto-max-level 10)
 
-;; (global-set-key (kbd "C-c 1") '(lambda () (interactive) (jump-to-register "1")))
-;; (global-set-key (kbd "C-c 2") '(lambda () (interactive) (jump-to-register 2)))
-;; (global-set-key (kbd "C-c 3") '(lambda () (interactive) (jump-to-register 3)))
-
-(global-set-key (kbd "C-c l") 'org-store-link)
-(global-set-key (kbd "C-c a") 'org-agenda)
+(global-set-key (kbd "C-c l")     'org-store-link)
+(global-set-key (kbd "C-c a")     'org-agenda)
 (global-set-key (kbd "C-c C-S-l") 'org-store-link)
 (global-set-key (kbd "C-c C-S-c") 'org-capture)
 (global-set-key (kbd "C-c C-S-a") 'org-agenda)
 (global-set-key (kbd "C-c C-S-b") 'org-iswitchb)
+(global-set-key (kbd "C-c m")     'minimap-toggle)
+(global-set-key (kbd "C-c a")     'org-agenda)
 
 (setq org-todo-keywords
   '((sequence "TODO" "IN-PROGRESS" "WAITING" "CANCELLED" "DONE")))
 
-(global-set-key (kbd "C-c a") 'org-agenda)
 
 (setq browse-url-browser-function 'browse-url-generic
-      browse-url-generic-program "firefox")
-(setq browse-url-default-browser "firefox")
+      browse-url-generic-program "chromium")
+(setq browse-url-default-browser "chromium")
 
 ;; * To manupulate a image under cursor.
 ;;
 ;;  M-x imagex-global-sticky-mode
 (imagex-global-sticky-mode)
+(setq org-image-actual-width nil)
 ;;
 ;; * C-c + / C-c -: Zoom in/out image.
 ;; * C-c M-m: Adjust image to current frame size.
@@ -308,6 +297,23 @@ Emacs buffer are those starting with “*”."
 ;;  M-x imagex-auto-adjust-mode
 ;; (org-mode)
 (pdf-tools-install)
+
+;; Smooth Scroll
+(require 'smooth-scrolling)
+(smooth-scrolling-mode t)
+
+(setq redisplay-dont-pause t
+  scroll-margin 1
+  scroll-step 1
+  scroll-conservatively 10000
+  scroll-preserve-screen-position 1)
+
+;;;;;;;;;;;;;
+;; Cedille ;;
+;;;;;;;;;;;;;
+(setq cedille-path "/home/madjestic/Projects/Haskell/cedille")
+(add-to-list 'load-path cedille-path)
+(require 'cedille-mode)
 
 ;;;;;;;;;;;;;;;
 ;; YASnippet ;;
@@ -328,6 +334,7 @@ Emacs buffer are those starting with “*”."
 
 (require 'session)
 (add-hook 'after-init-hook 'session-initialize)
+;;(add-hook 'after-init-hook 'global-company-mode)
 (autoload 'save-current-configuration "revive" "Save status" t)
 (autoload 'resume "revive" "Resume Emacs" t)
 (autoload 'wipe "revive" "Wipe Emacs" t)

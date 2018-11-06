@@ -1,6 +1,0 @@
-x11-misc/dmenu -xinerama xft
-x11-misc/xmobar xft inotify timezone wifi xft xpm mpd mpris inotify# required by kde-plasma/kwin-5.4.95::kde
-# required by kde-plasma/plasma-meta-5.4.95::kde
-# required by @selected
-# required by @world (argument)
->=media-libs/mesa-10.3.7-r1 wayland

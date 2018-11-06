@@ -13,5 +13,5 @@ export EDITOR=emacsclient
 # emacs --daemon
 exec ck-launch-session dbus-launch --sh-syntax --exit-with-session xmonad
 
-# Start Openbox
+# Start Openbox exec ck-launch-session dbus-launch --sh-syntax
 # exec ck-launch-session dbus-launch --sh-syntax --exit-with-session openbox-session

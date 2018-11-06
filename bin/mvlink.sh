@@ -47,7 +47,7 @@
 mvlink() {
     if [ -e "$2" ]
     then 
-	rm $1
+	rm -R $1
 	ln -s $2 $1
     else 
 	ln -s $2 $1

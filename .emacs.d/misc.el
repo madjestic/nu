@@ -69,10 +69,10 @@
   (interactive)
   (load-user-file "octave.el"))
 
-(defun load-python-ide ()
-  "load python options"
+(defun load-cedille ()
+  "load cedille options"
   (interactive)
-  (load-user-file "python-ide.el"))
+  (load-user-file "cedille.el"))
 
 (defun load-json ()
   "load json options"
@@ -223,7 +223,7 @@
 (global-set-key (kbd "M-S-<down>") 'move-text-down)
 (global-set-key (kbd "M-^")        'server-force-delete)
 (global-set-key (kbd "C-c s")      'sr-speedbar-toggle)
-(global-set-key (kbd "C-c m")      'minimap-toggle)
+;; (global-set-key (kbd "C-c m")      'minimap-toggle)
 (global-set-key (kbd "C-c M-m")    'menu-bar-mode)
 (global-set-key (kbd "C-c b")      'flymake-compile) ;; build with flymake/Makefile
 (global-set-key (kbd "C-M-y")      'secondary-dwim)
@@ -232,14 +232,21 @@
 (global-set-key (kbd "M-j")       'tabbar-backward)
 (global-set-key (kbd "M-k")       'tabbar-forward)
 ;;; scrollers   
-(global-set-key "\M-n" "\C-u1\C-v\C-n")
-(global-set-key "\M-p" "\C-u1\M-v\C-p")
-;;; folding
-(global-set-key (kbd "M-RET")      'yafolding-toggle-element)
+;; (global-set-key "\M-n" "\C-u1\C-v\C-n")
+;; (global-set-key "\M-p" "\C-u1\M-v\C-p")
 
-(global-set-key (kbd "<C-mouse-4>") 'text-scale-increase)
-(global-set-key (kbd "<C-mouse-5>") 'text-scale-decrease)
-(global-set-key (kbd "<M-down-mouse-2>") 'dired-sort-menu-popup)
+;; (global-set-key "\C-M-]" "\C-u1\C-v\C-n")
+;; (global-set-key "\C-M-z" "\C-u1\M-v\C-p")
+;;; folding
+
+(global-set-key (kbd "M-n")              "\C-u1\C-v\C-n")
+(global-set-key (kbd "M-p")              "\C-u1\M-v\C-p")
+(global-set-key (kbd "M-[")              "\C-u1\C-v\C-n") ;; haskell-mode conflict with the original
+(global-set-key (kbd "M-]")              "\C-u1\M-v\C-p")
+(global-set-key (kbd "M-RET")              'yafolding-toggle-element)
+(global-set-key (kbd "<C-mouse-4>")        'text-scale-increase)
+(global-set-key (kbd "<C-mouse-5>")        'text-scale-decrease)
+(global-set-key (kbd "<M-down-mouse-2>")   'dired-sort-menu-popup)
 (global-set-key (kbd "<C-M-down-mouse-2>") 'diredp-mouse-3-menu)
 
 (defun jabber ()

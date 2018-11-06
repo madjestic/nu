@@ -20,7 +20,7 @@
   [[file:eng_00.org::*happy%20(kua\il\e)][happy (kua\il\e)]]
 
 * 几
-  [[file:eng_00.org::*how%20many/how%20old%20%5Bfor%20numbers%20below%2010%5D%20(j^i)][how many/how old {for numbers below 10} (j^i)]]
+  [[file:eng_00.org::*how%20many(days%20of%20the%20week)%5Bfor%20numbers%20below%2010%5D%20(j^i)][how many(days of the week){for numbers below 10} (j^i)]]
 
 * 星七
   [[file:eng_00.org::*week,%20week%20day%20(x-ingq-i)][week, week day (x-ingq-i)]]
@@ -275,10 +275,13 @@
   [[file:eng_00.org::*book%20(sh-u)][book (sh-u)]]
 * 汉字
   [[file:eng_00.org::*Chinese%20character%20(h\an%20z\i)][Chinese character (h\an z\i)]]
+
+
 * 晚上
   [[file:eng_00.org::*evening%20(w^anshang)][evening (w^anshang)]]
 * 天天
   [[file:eng_00.org::*every%20day%20(ti-anti-an)][every day (ti-anti-an)]]
+
 * 今晚
   [[file:eng_00.org::*this%20evening,%20tonight%20(j-in%20w^an)][this evening, tonight (j-in w^an)]]
 * 下午
@@ -339,5 +342,199 @@
 * 因为
   [[file:eng_00.org::*because%20of%20(y-inw\ei)][because of (y-inw\ei)]]
 
+* 想
+  [[file:eng_00.org::*would%20like%20to;%20to%20want;%20to%20miss;%20to%20think%20(xi^ang)][would like to; to want; to miss; to think (xi^ang)]]
+* 认识
+  [[file:eng_00.org::*to%20recognize;%20to%20know%20(r\enshi)][to recognize; to know (r\enshi)]]
+* 说
+  [[file:eng_00.org::*to%20speak;%20to%20say%20(shu-o)][to speak; to say (shu-o)]]
+* 汉语
+  [[file:eng_00.org::*Chinese%20(language)%20(h\any^u)][Chinese (language) (h\any^u)]]
+* 外语
+  [[file:eng_00.org::*foreign%20language%20(w\ai%20y^u)][foreign language (w\ai y^u)]]
+* 日语
+  [[file:eng_00.org::*Japanese%20(lang.)%20(r\i%20y^u)][Japanese (lang.) (r\i y^u)]]
+* 法语
+  [[file:eng_00.org::*French%20(lang.)%20(f^a%20y^u)][French (lang.) (f^a y^u)]]
+* 英语  
+  [[file:eng_00.org::*English%20(lang.)][English (lang.)]]
+* 一点儿
+  [[file:eng_00.org::*a%20little;%20a%20bit%20(y-idi^anr)][a little; a bit (y-idi^anr)]]
+* 可是
+  [[file:eng_00.org::*but%20(k^esh\i)][but (k^esh\i)]]
+* 应该
+  [[file:eng_00.org::*should%20(y-ingg-ai)][should (y-ingg-ai)]]
+  
+* 去
+  [[file:eng_00.org::*to%20go%20(q\u)][to go (q\u)]]
+* 话
+  [[file:eng_00.org::*dialect;%20language;%20spoken%20words;%20speech%20(hu\a)][dialect; language; spoken words; speech (hu\a)]]
+  
+* 酒
+  [[file:eng_00.org::*alcoholic%20drink%20(ji^u)][alcoholic drink (ji^u)]]
+* 啤酒
+  [[file:eng_00.org::*beer%20(p/iji^u)][beer (p/iji^u)]]
+* 烤鸭
+  [[file:eng_00.org::*roast%20duck%20(k^ao%20y-a)][roast duck (k^ao y-a)]]
+* 牛肉
+  [[file:eng_00.org::*beef%20(ni/ur\ou)][beef (ni/ur\ou)]]
+* 炒
+  [[file:eng_00.org::*to%20fry,%20stir-fry;%20fried,%20stir-fried%20(ch^ao)][to fry, stir-fry; fried, stir-fried (ch^ao)]]
+* 炒饭
+  [[file:eng_00.org::*fried%20rice%20(ch^ao%20f\an)][fried rice (ch^ao f\an)]]
+* 吃
+  [[file:eng_00.org::*eat%20(ch-i)][eat (ch-i)]]
+* 瓶
+  [[file:eng_00.org::*bottle%20(p/ing)][bottle (p/ing)]]
+* 杯
+  [[file:eng_00.org::*glass,%20cup%20(b-ei)][glass, cup (b-ei)]]
+* 碗
+  [[file:eng_00.org::*bowl%20(w^an)][bowl (w^an)]]
+* 盘
+  [[file:eng_00.org::*dish,%20plate%20(p/an)][dish, plate (p/an)]]
+* 只
+  [[file:eng_00.org::*%5Ba%20measure%20word%20used%20to%20refer%20to%20small%20animals%5D%20(zh-i)][{a measure word used to refer to small animals} (zh-i)]]
+* 要  
+  [[file:eng_00.org::*to%20want,%20would%20like%20(y\ao)][to want, would like (y\ao)]]
+* 有
+  [[file:eng_00.org::*to%20have%20(y^ou)][to have (y^ou)]]
+* 没
+  [[file:eng_00.org::*not%20(m/ei)][not (m/ei)]]
+* 两  
+  [[file:eng_00.org::*two,%2050%20grams%20(li^ang)][two, 50 grams (li^ang)]]
+
+* 白酒
+  [[file:eng_00.org::*Chinese%20white%20wine%20(b/ai%20ji^u)][Chinese white wine (b/ai ji^u)]]
+* 红酒
+  [[file:eng_00.org::*Chinese%20red%20whine%20(h/ong%20ji^u)][Chinese red whine (h/ong ji^u)]]
+* 红烧肉
+  [[file:eng_00.org::*braised%20pork%20in%20soy%20sauce%20(h/ong%20sh-ao%20r\ou)][braised pork in soy sauce (h/ong sh-ao r\ou)]]
+* 白菜
+  [[file:eng_00.org::*Chinese%20cabbage%20(b/ai%20c\ai)][Chinese cabbage (b/ai c\ai)]]
+* 青菜
+  [[file:eng_00.org::*green%20vegetable(s)%20(q-ng%20c\ai)][green vegetable(s) (q-ng c\ai)]]
+* 点
+  [[file:eng_00.org::*would%20like%20to%20order;%20to%20point;%20to%20choose%20(di^an)][would like to order; to point; to choose (di^an)]]
+* 有名  
+  [[file:eng_00.org::*famous%20(y^oum/ing)][famous (y^oum/ing)]]
+* 好吃
+  [[file:eng_00.org::*tasty,%20delicious%20(h^aoch-i)][tasty, delicious (h^aoch-i)]]
+* 只有
+  [[file:eng_00.org::*only%20have%20(zh^i%20y^ou)][only have (zh^i y^ou)]]
+* 个
+  [[file:eng_00.org::*%5Ba%20measure%20word%5D%20(g\e)][{a measure word} (g\e)]]
+* 先
+  [[file:eng_00.org::*first%20of%20all%20(xi-an)][first of all (xi-an)]]
+* 再
+  [[file:eng_00.org::*again,%20also,%20in%20addition%20(z\ai)][again, also, in addition (z\ai)]]
+  
+* 服务员
+  [[file:eng_00.org::*waiter,%20waitress%20(f/uw\u%20yu/an)][waiter, waitress (f/uw\u yu/an)]]
+* 很少
+  [[file:eng_00.org::*seldom%20(h^ensh^ao)][seldom (h^ensh^ao)]]
+* 炒面
+  [[file:eng_00.org::*stir-fried%20noodles%20(ch^aomi\an)][stir-fried noodles (ch^aomi\an)]]
+* 果
+  [[file:eng_00.org::*fruit%20(gu^o)][fruit (gu^o)]]
+* 汁
+  [[file:eng_00.org::*juice%20(zh-i)][juice (zh-i)]]
+
+* 累
+  [[file:eng_00.org::*tired%20(l\ei)][tired (l\ei)]]
+* 忙
+  [[file:eng_00.org::*busy%20(m/ang)][busy (m/ang)]]
+* 渴
+  [[file:eng_00.org::*thirsty%20(k^e)][thirsty (k^e)]]
+* 饿
+  [[file:eng_00.org::*hungry%20(\e)][hungry (\e)]]
+* 有点儿
+  [[file:eng_00.org::*a%20little,%20a%20bit%20(y^oudi^anr)][a little, a bit (y^oudi^anr)]]
+* 两
+  [[file:eng_00.org::*two%20(li^ang)][two (li^ang)]]
+* 还
+  [[file:eng_00.org::*also%20(h/ai)][also (h/ai)]]
 
 
+* 三明治
+  [[file:eng_00.org::*sandwich%20(s%C4%81nm%C3%ADngzh%C3%AC)][sandwich (sānmíngzhì)]]
+* 蛋糕
+  [[file:eng_00.org::*cake%20(d%C3%A0ng%C4%81o)][cake (dàngāo)]]
+* 蛋炒饭
+  [[file:eng_00.org::*egg-fried%20rice%20(d%C3%A0n%20ch%C7%8Eo%20f%C3%A0n)][egg-fried rice (dàn chǎo fàn)]]
+* 炒面
+  [[file:eng_00.org::*stir-fried%20noodle%20(ch%C7%8Eo%20mi%C3%A0n)][stir-fried noodle (chǎo miàn)]]
+* 饺子
+  [[file:eng_00.org::*Chinese%20dumpling%20(ji%C7%8Eozi)][Chinese dumpling (jiǎozi)]]
+* 水果
+  [[file:eng_00.org::*fruit%20(shu%C7%90gu%C7%92)][fruit (shuǐguǒ)]]
+  
+* 高兴
+  [[file:eng_00.org::*happy,%20glad%20(g-aox\ing)][happy, glad (g-aox\ing)]]
+* 葡萄
+  [[file:eng_00.org::*grape%20(p\utao)][grape (p\utao)]]
+* 鱼
+  [[file:eng_00.org::*fish%20(y/u)][fish (y/u)]]
+* 薯条
+  [[file:eng_00.org::*french%20fries,%20chips%20(sh%C7%94ti%C3%A1o)][french fries, chips (shǔtiáo)]]
+
+* 便宜
+  [[file:eng_00.org::*cheap%20(pi%C3%A1nyi)][cheap (piányi)]]
+* 漂亮
+  [[file:eng_00.org::*pretty,%20beautiful%20(pi%C3%A0oliang)][pretty, beautiful (piàoliang)]]
+* 难看
+  [[file:eng_00.org::*ugly%20(n%C3%A1nk%C3%A0n)][ugly (nánkàn)]]
+
+* 还
+  [[file:eng_00.org::*later,%20in%20progress,%20in%20addition%20(h/ai)][later, in progress, in addition (h/ai)]]
+
+* 小说
+  [[file:eng_00.org::*novel%20(xi%C7%8Eoshu%C5%8D)][novel (xiǎoshuō)]]
+
+* 奶奶
+  [[file:eng_00.org::*grandma%20(paternal%20grandmother)%20(n^ainai)][grandma (paternal grandmother) (n^ainai)]]
+* 爷爷
+  [[file:eng_00.org::*grandpa%20(paternal%20grandfather)%20(y/eye)][grandpa (paternal grandfather) (y/eye)]]
+
+* 工作
+  [[file:eng_00.org::*work%20(g-ongzu\o)][work (g-ongzu\o)]]
+* 请问
+  [[file:eng_00.org::*excuse%20me,%20may%20I%20ask...%20(q%C7%90ngw%C3%A8n)][excuse me, may I ask... (qǐngwèn)]]
+* 工程师
+  [[file:eng_00.org::*engineer%20(g%C5%8Dngch%C3%A9ng%20sh%C4%AB)][engineer (gōngchéng shī)]]
+  
+
+* 新
+  [[file:eng_00.org::*new%20(x-in)][new (x-in)]]
+  
+* 久
+  [[file:eng_00.org::*long%20time%20(ji^u)][long time (ji^u)]]
+* 昨天晚上
+  [[file:eng_00.org::*last%20night%20(zu/o%20ti-an%20w^anshang)][last night (zu/o ti-an w^anshang)]]
+* 开始
+  [[file:eng_00.org::*to%20start%20(k-aish^i)][to start (k-aish^i)]]
+* 现在
+  [[file:eng_00.org::*now%20(xi\anz\ai)][now (xi\anz\ai)]]
+
+* 比
+  [[file:eng_00.org::*compared%20with%20(b^i)][compared with (b^i)]]
+* 漂亮
+  [[file:eng_00.org::*beautiful%20(pi\aoliang)][beautiful (pi\aoliang)]]
+* 高
+  [[file:eng_00.org::*tall,%20high%20(g-ao)][tall, high (g-ao)]]
+* 胖
+  [[file:eng_00.org::*fat,%20overweight%20(p\ang)][fat, overweight (p\ang)]]
+* 瘦  
+  [[file:eng_00.org::*thin,%20skinny%20(sh^ao)][thin, skinny (sh^ao)]]
+* 少
+  [[file:eng_00.org::*few,%20less%20(sh^ao)][few, less (sh^ao)]]
+* 多了
+  [[file:eng_00.org::*much,%20a%20lot%20more%20(du-ole)][much, a lot more (du-ole)]]
+* 怎么样
+  [[file:eng_00.org::*how%20are%20you?%20how%20are%20things?%20(z^enme%20y\ang)][how are you? how are things? (z^enme y\ang)]]
+* 好久不见
+  [[file:eng_00.org::*it's%20been%20a%20long%20time%20(h^ao%20ji^u%20b/u%20ji\an)][it's been a long time (h^ao ji^u b/u ji\an)]]
+* 久
+  [[file:eng_00.org::*long%20%5Bas%20in%20'long%20time'%5D%20(ji^u)][long {as in 'long time'} (ji^u)]]
+* 邮票
+  [[file:eng_00.org::*(postage)%20stamp%20(y%C3%B3upi%C3%A0o)][(postage) stamp (yóupiào)]]
+  

@@ -1,3 +1,0 @@
-=x11-wm/xmonad-0.11.1
-=x11-wm/xmonad-contrib-0.11.4# required by =games-roguelike/angband-4.0.3 (argument)
-=games-roguelike/angband-4.0.3 ~amd64

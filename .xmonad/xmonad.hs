@@ -10,17 +10,18 @@ import XMonad.Util.EZConfig
 import XMonad.Util.Run
 import qualified XMonad.StackSet as W
 
-myLayout = renamed [CutWordsLeft 2]
-         $ avoidStruts
-         $ spacing 0
-         $   bsp
-         ||| tall
-         ||| Full
-         ||| mirror
-             where tall   = Tall 1 (3/100) (1/2)
-                   mirror = Mirror tall
-                   bsp    = renamed [Replace "BSP"] emptyBSP
-          
+myLayout =
+  renamed [CutWordsLeft 1]
+  $ avoidStruts
+  $ spacing 0
+  $   bsp
+  ||| tall
+  ||| Full
+  ||| mirror
+  where tall   = Tall 1 (3/100) (1/2)
+        mirror = Mirror tall
+        bsp    = renamed [Replace "BSP"] emptyBSP
+       
 main = do
      xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc"
      xmonad $ docks $ def
@@ -67,12 +68,12 @@ main = do
                  , ("M-M1-s"   , sendMessage $ Rotate)
                  , ("M-a"      , sendMessage $ Balance)
                  , ("M-M1-a"   , sendMessage $ Equalize)
+                 , ("M-<Left>" , sendMessage $ ShrinkFrom R)
+                 , ("M-<Right>", sendMessage $ ExpandTowards R)
+                 , ("M-<Up>"   , sendMessage $ ShrinkFrom D)
+                 , ("M-<Down>" , sendMessage $ ExpandTowards D)
                  , ("M-M1-<Left>"   , sendMessage $ ExpandTowards L)
                  , ("M-M1-<Right>"  , sendMessage $ ShrinkFrom L)
                  , ("M-M1-<Up>"     , sendMessage $ ExpandTowards U)
                  , ("M-M1-<Down>"   , sendMessage $ ShrinkFrom U)
-                 , ("M-M1-C-<Left>" , sendMessage $ ShrinkFrom R)
-                 , ("M-M1-C-<Right>", sendMessage $ ExpandTowards R)
-                 , ("M-M1-C-<Up>"   , sendMessage $ ShrinkFrom D)
-                 , ("M-M1-C-<Down>" , sendMessage $ ExpandTowards D)
                  ]              

@@ -12,7 +12,7 @@ houdini() {
 		export HOUDINI_MAX_FILE_HISTORY=80
 		export HOUDINI_OTLSCAN_PATH=$HOUDINI/houdini/otls:~/Projects/Houdini/otls
     export HOUDINI_DSO_ERROR=2
-    export HOUDINI_USE_HFS_PYTHON=0
+    export HOUDINI_USE_HFS_PYTHON=1
     export LD_LIBRARY_PATH=LD_LIBRARY_PATH:/home/madjestic/.local/lib64/
     export PATH="$PATH"
     export HOUDINI_PATH=";&"

@@ -19,7 +19,9 @@
  helm-quick-update                     t
  helm-recentf-fuzzy-match              t
  helm-semantic-fuzzy-match             t
- helm-gtags-prefix-key "\C-cg"
+ helm-gtags-prefix-key                 "\C-cg"
+; helm-show-completion-use-special-display nil
+ helm-swoop-pattern                    t
  )
 
 ;; Enable helm-gtags-mode
@@ -48,5 +50,7 @@
 (global-set-key (kbd "C-:") 'ac-complete-with-helm)
 (define-key ac-complete-mode-map (kbd "C-:") 'ac-complete-with-helm)
 
+(setq ac-complete-mode-map t)
+
 (helm-mode)
-(helm-swoop)
+;(helm-swoop)

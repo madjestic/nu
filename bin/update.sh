@@ -11,4 +11,4 @@ revdep-rebuild -ip
 read -p "press Enter to continue with revdep-rebuild..."
 revdep-rebuild -i
 # read -p "Finished updating Portage.  Press Enter to run Python Update"
-# python-updater # was maasked around Nov 15 2017
+# python-updater # was masked around Nov 15 2017
