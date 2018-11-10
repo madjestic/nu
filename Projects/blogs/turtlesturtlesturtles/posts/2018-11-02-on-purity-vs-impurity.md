@@ -3,16 +3,24 @@ title: On Purity vs. Impurity in haskell.
 ---
 
 ## On Purity vs Impurity in Haskell
+\
 
-**Me:**: I am trying to understand the concept of purity, and though, on
+*"`IO ()` type signature is like a\ "Danger: Minefield!" sign - it does not mean that everywhere you step there's going to be a mine, but there can be a mine somewhere".*
+<p style="text-align:right;"> \(c\) hoknamahn, a XXII century philosopher.</p>
+
+\
+\
+That's in short. The whole story, however,  is a little bit more complicated and goes somewhere along the lines the conversation I had on #haskell-beginners@freenode some time ago:
+\
+\
+
+**Me:** I am trying to understand the concept of purity, and though, on
 the surface, the distinction seems obvious, there seems to be
 cases, where things are not so blunt as " `IO ()` means *impure*",
 isn't it?
 
-For example, if pure = ref.transparent + no side effects (a definition from the wiki),
-then `fakeIO = return () :: IO ()` - does not it qualify as pure, even though
-its type is `IO ()`?  It has no side effects, it always return the same
-value, it is, presumably, ref.transparent.
+For example, if pure = ref.transparent + no side effects [(a definition from the wiki)
+](https://en.wikipedia.org/wiki/Pure_function), then `fakeIO = return () :: IO ()` - does not it qualify as pure, even though its type is `IO ()`?  It has no side effects, it always return the same value, it is, presumably, ref.transparent.
 
 If ```readLn``` is obviously *impure*, is not ```putStrLn "Hello"```, in a sense, pure? I guess it's *impure*, since it can be printed in different ways (via various output devices), is it why it's *impure*? It always returns the same value and its side effect
 seems limited by printing - can impurity of putStrLn lead to
@@ -41,24 +49,16 @@ Different people mean different things by "*pure*", but referentially transparen
 
 Consider whatever you want to be a "side effect" :)
 
-**jle**: side-effect is basically a concept that applies differently in every context, there's no 'universal' definition; it's pretty much context
+I think it's better to approach this abstractly. Instead of spending a great deal of energy cataloging and categorizing the microscoping activities of the runtime system.
 
 **Me:**: I would like to settle on some solid ground here, if possible - I
 don't want to think of it as a matter of taste
 
-**ab9rf**: I think it's better to approach this abstractly.
+**jle**: side-effect is basically a concept that applies differently in every context, there's no 'universal' definition; it's pretty much context. Basically, you get to define the world you are talking about, and in doing that you define what side effects are and what non-side-effects are 
 
-**jle**: Basically, you get to define the world you are talking about, and in doing that you define what side effects are and what non-side-effects are 
+**Me**: Nice, I like that! My next question after "what is *pure*, what is SE" would be: "what is **world**?" :)
 
-**Me**: Nice, I like that!
-
-**ab9rf**: Instead of spending a great deal of energy cataloging and categorizing the microscoping activities of the runtime system.
-
-**Me:**: My next question after "what is *pure*, what is SE" would be: "what is **world**?" :)
-
-**jle**: right, the definition of world also depends on the context
-
-**jle**: it's sort of like picking the primitives of your deontation, think of it like the idea of 'universe' in set theory, there is no absolute idea of universe, just whatever is useful for what theorem or conclusion you are trying to prove or figure out.
+**jle**: right, the definition of world also depends on the context. It's sort of like picking the primitives of your deontation, think of it like the idea of 'universe' in set theory, there is no absolute idea of universe, just whatever is useful for what theorem or conclusion you are trying to prove or figure out.
 
 **Cale_:**: It might all be much clearer if Haskell still had a formally
 specified [denotational semantics](https://en.wikipedia.org/wiki/Denotational_semantics) (in principle it does, but in practice, nobody's gone to the trouble since the very early versions)
