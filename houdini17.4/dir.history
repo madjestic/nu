@@ -1,0 +1,14 @@
+HIP
+{
+/home/madjestic/Desktop/
+}
+GEO
+{
+$HIP/geo/
+}
+OTL
+{
+/home/madjestic/Projects/Houdini/otls/
+/home/madjestic/houdini_dir/houdini/otls/
+/home/madjestic/houdini17.4/otls/
+}

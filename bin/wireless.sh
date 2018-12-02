@@ -10,18 +10,18 @@ stngth=`iwconfig wlp4s0 | awk -F '=' '/Quality/ {print $2}' | cut -d '/' -f 1`
 bars=`expr $stngth / 10`
 
 case $bars in
-  0)  bar='[----------]' ;;
-  1)  bar='[/---------]' ;;
-  2)  bar='[//--------]' ;;
-  3)  bar='[///-------]' ;;
-  4)  bar='[////------]' ;;
-  5)  bar='[/////-----]' ;;
-  6)  bar='[//////----]' ;;
-  7)  bar='[///////---]' ;;
-  8)  bar='[////////--]' ;;
-  9)  bar='[/////////-]' ;;
-  10) bar='[//////////]' ;;
-  *)  bar='[----!!----]' ;;
+    0)  bar="<fc=#aaaaaa><icon=.icons/wifi_02_s00.xbm/></fc>" ;;
+    1)  bar="<fc=#aaaaaa><icon=.icons/wifi_02_s00.xbm/></fc>" ;;
+    2)  bar="<fc=#aaaaaa><icon=.icons/wifi_02_s01.xbm/></fc>" ;;
+    3)  bar="<fc=#aaaaaa><icon=.icons/wifi_02_s01.xbm/></fc>" ;;
+    4)  bar="<fc=#aaaaaa><icon=.icons/wifi_02_s02.xbm/></fc>" ;;
+    5)  bar="<fc=#aaaaaa><icon=.icons/wifi_02_s02.xbm/></fc>" ;;
+    6)  bar="<fc=#aaaaaa><icon=.icons/wifi_02_s03.xbm/></fc>" ;;
+    7)  bar="<fc=#aaaaaa><icon=.icons/wifi_02_s03.xbm/></fc>" ;;
+    8)  bar="<fc=#aaaaaa><icon=.icons/wifi_02_s04.xbm/></fc>" ;;
+    9)  bar="<fc=#aaaaaa><icon=.icons/wifi_02_s04.xbm/></fc>" ;;
+    10)  bar="<fc=#aaaaaa><icon=.icons/wifi_02_s04.xbm/></fc>" ;;
+    *)  bar="<fc=#aaaaaa><icon=.icons/stop.xbm/></fc>" ;;
 esac
 
 echo $essid $bar

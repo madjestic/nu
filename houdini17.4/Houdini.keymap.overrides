@@ -1,0 +1,44 @@
+h.pane.wsheet.jump_shop	Shaders	"Jump to the Shaders parent network"	 Alt+Ctrl+Shift+S
+h.pane.wsheet.grid_off	"Hide Grid"	"Turn off network editor grid"	 Alt+Ctrl+Shift+H
+h.pane.wsheet.jump_obj	Objects	"Jump to the Objects parent network"	 Alt+Ctrl+Shift+O
+HCONTEXT	h.pane.gview.state.lop.sidefx_lop_edit	"sidefx_lop_edit Operation"	"These keys apply to the sidefx_lop_edit operation."
+h.pane.gview.state.lop.sidefx_lop_edit.log_state	"Log state"	"Log state attributes"	 8
+h.pane.gview.state.lop.sidefx_lop_edit.trace	"Trace callbacks"	"Enable trace for callbacks"	 6
+h.pane.gview.state.lop.sidefx_lop_edit.start_prim_selector	start_prim_selector	start_prim_selector	 1
+HCONTEXT	h.pane.gview.state.sop.sidefx_stroke	"sidefx_stroke Operation"	"These keys apply to the sidefx_stroke operation."
+h.pane.gview.state.sop.sidefx_stroke.debug_msg	"Debug messages"	"Enable debug messages"	 7
+HCONTEXT	h.pane.gview.state.sop.sidefx_bend	"sidefx_bend Operation"	"These keys apply to the sidefx_bend operation."
+h.pane.gview.state.sop.sidefx_bend.squish	Squishing	"Modulate squish parameter with mouse wheel"	 5
+h.pane.gview.state.sop.sidefx_bend.length	"Length Scaling"	"Modulate length scale parameter with mouse wheel"	 3
+h.pane.gview.state.sop.sidefx_bend.twist	Twisting	"Modulate twist parameter with mouse wheel"	 2
+h.pane.wsheet.allowdroponwire	"Allow Dropping Nodes on Wires"	"Toggle the ability to drop a node onto an existing wire"	 Ctrl+8 Ctrl+Pad8 Ctrl+E
+h.pane.stowtabs	"Stow Pane Tabs"	"Stow pane tabs"	 Alt+Ctrl+T
+h.pane.wsheet.opmenu.flag_lock	"Toggle Lock"	"Toggle the Lock flag of the selected node"	 Alt+Ctrl+L
+h.stow_playbar	"Toggle Playbar Stow"	"Toggle playbar stow"	 Alt+Ctrl+P
+h.pane.stowpanebar	"Stow Panebar"	"Stow Panebar"	 Alt+Ctrl+B
+h.pane.gview.state.sop.sidefx_stroke.set_viewport_brush	"Set viewport brush"	"Set viewport brush"	 3
+h.pane.wsheet.grid_points	"Grid as Points"	"Draw network editor grid intersection points"	 Alt+Ctrl+Shift+P
+h.pane.gview.state.sop.sidefx_bend.reload_state	"Reload state"	"Reload state"	 9
+h.pane.wsheet.grid_lines	"Grid as Lines"	"Draw network editor grid lines"	 Alt+Ctrl+Shift+L
+h.pane.gview.state.sop.sidefx_stroke.log_state	"Log state"	"Log state attributes"	 8
+h.pane.gview.state.lop.sidefx_lop_edit.reload_state	"Reload state"	"Reload state"	 9
+h.pane.gview.state.sop.sidefx_bend.taper	Tapering	"Modulate taper parameter with mouse wheel"	 4
+h.pane.wsheet.snap_netbox_bounds	"Snap Borders To Bounds"	"Snaps a network box's borders to its minimum bounding box"	
+h.pane.gview.state.sop.sidefx_bend.bend	Bending	"Modulate bend parameter with mouse wheel"	 1
+h.pane.gview.state.sop.sidefx_bend.trace	"Trace callbacks"	"Enable trace for callbacks"	 6
+h.pane.wsheet.jump_mat	Materials	"Jump to the Materials parent network"	 Alt+Ctrl+Shift+M
+h.pane.gview.state.sop.sidefx_stroke.reload_state	"Reload state"	"Reload state"	 9
+h.pane.gview.state.sop.sidefx_bend.debug_msg	"Debug messages"	"Enable debug messages"	 7
+h.pane.wsheet.jump_out	"Render nodes"	"Jump to the Render node parent network"	 Alt+Ctrl+Shift+R
+h.pane.gview.state.sop.sidefx_stroke.cycle_brushes	"Cycle brushes"	"Cycle stroke tools"	 1
+h.pane.chedit.show_menu_bar	"Show Menu Bar"	"Show the animation editor menu bar."	 Alt+Ctrl+M
+h.pane.gview.state.sop.sidefx_bend.log_state	"Log state"	"Log state attributes"	 8
+h.pane.gview.state.sop.sidefx_stroke.trace	"Trace callbacks"	"Enable trace for callbacks"	 6
+h.pane.perfmon.open_preferences	"Open Preferences"	"Open the Performance Monitor preferences dialog."	
+h.helpcontents	Contents	"Display help contents"	 Alt+Ctrl+H
+h.pane.gview.state.sop.sidefx_stroke.set_wireframe_brush	"Set wireframe brush"	"Set wireframe brush"	 2
+h.pane.gview.state.lop.sidefx_lop_edit.debug_msg	"Debug messages"	"Enable debug messages"	 7
+h.pane.gview.state.sop.sidefx_stroke.realtime_mode	realtime	"Enable realtime mode"	 0
+h.stow_shelf	"Toggle Shelf Stow"	"Toggle shelf stow"	 Alt+Ctrl+S
+h.pane.gview.model.fullselection	"Select Whole Geometry"	"Select whole geometry"	 H
+h.pane.wsheet.opparms	"Show Parameter Dialog"	"Toggle the visibility of the parameter dialog for the current node"	 P Alt+`

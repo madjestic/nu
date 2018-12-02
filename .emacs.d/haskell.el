@@ -40,6 +40,7 @@
 (define-key haskell-mode-map (kbd "M-<iso-lefttab>") 'company-complete)
 
 (smartparens-mode t)
+(sp-point-at-bol-p f)
 (paredit-mode t)
 
 ;; (add-to-list 'company-backends 'company-ghc)

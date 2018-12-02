@@ -2,12 +2,19 @@ import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
-import XMonad.Layout.BinarySpacePartition
-import XMonad.Layout.Fullscreen
-import XMonad.Layout.Renamed
 import XMonad.Layout.Spacing
 import XMonad.Util.EZConfig
 import XMonad.Util.Run
+import XMonad.StackSet
+import XMonad.Layout.AvoidFloats
+import XMonad.Actions.FloatSnap
+import XMonad.Actions.FloatKeys
+import XMonad.Actions.GridSelect
+import XMonad.Hooks.Place
+import XMonad.Layout.BinarySpacePartition
+import XMonad.Layout.Fullscreen
+import XMonad.Layout.Renamed
+import XMonad.Layout.Circle
 import qualified XMonad.StackSet as W
 
 myLayout =
@@ -15,11 +22,9 @@ myLayout =
   $ avoidStruts
   $ spacing 0
   $   bsp
-  ||| tall
+  ||| Circle
   ||| Full
-  ||| mirror
-  where tall   = Tall 1 (3/100) (1/2)
-        mirror = Mirror tall
+  where       
         bsp    = renamed [Replace "BSP"] emptyBSP
        
 main = do
@@ -38,10 +43,27 @@ main = do
                  , borderWidth          = 2
                  }
              `additionalKeys`
-                 [ ((mod4Mask .|. shiftMask, xK_k), windows W.swapDown  ) -- %! Swap the focused window with the next window
-                 , ((mod4Mask .|. shiftMask, xK_j), windows W.swapUp    )
-                 -- , ((mod4Mask              , xK_a), sendMessage Balance )
-                 -- , ((mod4Mask .|. shiftMask, xK_a), sendMessage Equalize)
+                 [ ((mod4Mask .|. shiftMask, xK_k),     windows W.swapDown ) -- %! Swap the focused window with the next window
+                 , ((mod4Mask .|. shiftMask, xK_j),     windows W.swapUp   )
+                 , ((mod4Mask, xK_Tab),                 windows focusUp   >> windows shiftMaster )
+--                 , ((mod4Mask .|. shiftMask, xK_Tab),   windows focusDown >> windows shiftMaster )
+                 , ((mod4Mask .|. mod1Mask, xK_k),  withFocused $ snapGrow   U Nothing)
+                 , ((mod4Mask .|. mod1Mask .|. shiftMask, xK_j),  withFocused $ snapShrink U Nothing)
+                 , ((mod4Mask .|. mod1Mask, xK_j),  withFocused $ snapGrow   D Nothing)
+                 , ((mod4Mask .|. mod1Mask .|. shiftMask, xK_k),  withFocused $ snapShrink D Nothing)
+                 , ((mod4Mask .|. mod1Mask, xK_h),  withFocused $ snapGrow   L Nothing)
+                 , ((mod4Mask .|. mod1Mask .|. shiftMask, xK_l),  withFocused $ snapShrink L Nothing)
+                 , ((mod4Mask .|. mod1Mask, xK_l),  withFocused $ snapGrow   R Nothing)
+                 , ((mod4Mask .|. mod1Mask .|. shiftMask, xK_h),  withFocused $ snapShrink R Nothing)
+                 , ((mod4Mask,               xK_Left),  withFocused $ snapMove   L Nothing)
+                 , ((mod4Mask,               xK_Right), withFocused $ snapMove   R Nothing)
+                 , ((mod4Mask,               xK_Up),    withFocused $ snapMove   U Nothing)
+                 , ((mod4Mask,               xK_Down),  withFocused $ snapMove   D Nothing)
+                 , ((mod4Mask,               xK_Return), windows W.swapMaster)
+                 , ((mod4Mask .|. shiftMask, xK_j     ), windows W.swapDown  )
+                 , ((mod4Mask .|. shiftMask, xK_k     ), windows W.swapUp    )
+                 -- , ((mod4Mask .|. shiftMask, xK_t     ), withFocused $ (W.float RationalRect (1/6) (1/6) (2/3) (2/3)) )
+                 , ((mod4Mask, xK_g), goToSelected defaultGSConfig)
                  ]
              `additionalKeysP`
                  [ ("<XF86AudioMute>"        , spawn "amixer set Master toggle")
@@ -63,17 +85,10 @@ main = do
                  , ("M-C-<Esc>", spawn "htop")
                  , ("M-C-l"    , spawn "slock")
                  , ("M-C-h"    , spawn "houdini")
-                 , ("M-i"      , spawn "xcalib -invert -alter")
-                 , ("M-s"      , sendMessage $ Swap)
-                 , ("M-M1-s"   , sendMessage $ Rotate)
-                 , ("M-a"      , sendMessage $ Balance)
-                 , ("M-M1-a"   , sendMessage $ Equalize)
-                 , ("M-<Left>" , sendMessage $ ShrinkFrom R)
-                 , ("M-<Right>", sendMessage $ ExpandTowards R)
-                 , ("M-<Up>"   , sendMessage $ ShrinkFrom D)
-                 , ("M-<Down>" , sendMessage $ ExpandTowards D)
-                 , ("M-M1-<Left>"   , sendMessage $ ExpandTowards L)
-                 , ("M-M1-<Right>"  , sendMessage $ ShrinkFrom L)
-                 , ("M-M1-<Up>"     , sendMessage $ ExpandTowards U)
-                 , ("M-M1-<Down>"   , sendMessage $ ShrinkFrom U)
+                 , ("M-s"       , sendMessage $ Swap)
+                 , ("M-M1-s"    , sendMessage $ Rotate)
+                 , ("M-r"       , sendMessage $ RotateL)
+                 , ("M-S-r"     , sendMessage $ RotateR)
+                 , ("M-a"       , sendMessage $ Balance)
+                 , ("M-M1-a"    , sendMessage $ Equalize)
                  ]              

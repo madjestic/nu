@@ -210,6 +210,11 @@
 	(backward-word 1)
 	)
 
+(defun truncate-lines ()
+  (interactive)
+  (toggle-truncate-lines)
+  )
+
 (global-set-key (kbd "C-c h")      'vline-mode)
 (global-set-key (kbd "C-c t")      'toggle-truncate-lines)
 (global-set-key (kbd "M-#")        'next-word)

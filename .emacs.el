@@ -15,7 +15,7 @@
  '(ac-quick-help-prefer-pos-tip t)
  '(ac-show-menu-immediately-on-auto-complete t)
  '(browse-url-browser-function (quote browse-url-generic))
- '(browse-url-generic-program "chromium")
+ '(browse-url-generic-program "chromium-browser" t)
  '(circe-default-directory "~/.circe")
  '(circe-format-self-say "me > {body}")
  '(circe-network-options
@@ -179,6 +179,7 @@
  '(minimap-font-face ((t (:height 0.1))))
  '(popup-tip-face ((t (:background "#797985" :foreground "black" :height 0.8))))
  '(rainbow-delimiters-depth-1-face ((t (:foreground "aqua"))))
+ '(region ((t (:background "blue3"))))
  '(speedbar-button-face ((t (:foreground "green3" :height 0.8))))
  '(speedbar-directory-face ((t (:foreground "steel blue" :height 0.8))))
  '(speedbar-file-face ((t (:foreground "light blue" :height 0.8))))
@@ -357,3 +358,11 @@ Emacs buffer are those starting with “*”."
  kept-new-versions 6
  kept-old-versions 2
  version-control t)       ; use versioned backups
+
+;;
+
+(defun my-eshell-mode-faces ()
+    (face-remap-add-relative 'default '((:foreground "#BD9700")))
+    (face-remap-add-relative 'eshell-prompt '((:foreground "#BD9700" :weight bold))))
+
+(add-hook 'eshell-mode-hook 'my-eshell-mode-faces-work)

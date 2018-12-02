@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<shelfDocument>
+  <!-- This file contains definitions of shelves, toolbars, and tools.
+ It should not be hand-edited when it is being used by the application.
+ Note, that two definitions of the same element are not allowed in
+ a single file. -->
+
+  <shelfSetEdit name="shelf_set_td" fileLocation="/home/madjestic/houdini_dir/houdini/toolbar/ShelfDefinitions.shelf">
+    <addMemberToolshelf name="ocean" inPosition="16"/>
+    <addMemberToolshelf name="drive_simulation" inPosition="17"/>
+    <addMemberToolshelf name="collisions" inPosition="18"/>
+    <addMemberToolshelf name="lights_and_cameras" inPosition="19"/>
+  </shelfSetEdit>
+
+  <toolshelfEdit name="collisions" fileLocation="/home/madjestic/houdini_dir/houdini/toolbar/ShelfDefinitions.master_shelf"/>
+</shelfDocument>

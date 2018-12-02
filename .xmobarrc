@@ -5,18 +5,19 @@ Config { font = "xft:DejaVu Sans Mono:size=8:antialias=true"
        , fgColor = "grey"
        , position = Top
        , lowerOnStart = True
-       , commands = [ Run Network "wlp4s0"  ["-t","Wifi: <rx> <tx>"
+       , commands = [ Run Network "wlp4s0"  ["-t","<fc=#aaaaaa><icon=.icons/net_up_03.xbm/></fc><rx><fc=#aaaaaa><icon=.icons/net_down_03.xbm/></fc><tx>"
                                             ,"-L","500"
-                                            ,"-H","1000000"
+                                            ,"-H","40000"
                                             ,"-l","SeaGreen"
                                             ,"-h","red"
                                             ,"-n","SpringGreen"] 10
                     , Run Com "/home/madjestic/bin/wireless.sh" [] "wifi" 30
-                    , Run Cpu               ["-L","3"
+                    , Run Cpu               ["-t","<fc=#aaaaaa><icon=.icons/cpu.xbm/></fc><total>%"
+                                            ,"-L","3"
                                             ,"-H","50"
                                             ,"--normal","#77cc77"
                                             ,"--high","red"] 10
-                    , Run Memory            ["-t","Mem: <usedratio>%"
+                    , Run Memory            ["-t","<fc=#aaaaaa><icon=.icons/mem.xbm/></fc><usedratio>%"
                                             ,"-L","50"
                                             ,"-H","85"
                                             ,"-n","SpringGreen"
@@ -26,13 +27,14 @@ Config { font = "xft:DejaVu Sans Mono:size=8:antialias=true"
                     , Run Com "uname"       ["-s","-r"] "" 36000
                     , Run Date "%a %b %_d %Y %H:%M:%S" "date" 10
                     , Run StdinReader
-                    , Run BatteryP ["BAT0"] ["-t", "<left>%"
-                                            ,"-L","10"
-                                            ,"-H","75"
-                                            ,"-h","SeaGreen"
-                                            ,"-n","SpringGreen"
-                                            ,"-l","red"] 50
-                    , Run Volume "default" "Master" [] 10
+                    , Run BatteryP ["BAT0"] ["-t", "<fc=#aaaaaa><acstatus></fc><watts> <left>% <timeleft>"
+                                            ,"--"
+                                            ,"-O", "<fc=#ff7f00><icon=.icons/ac.xbm/></fc>"
+                                            ,"-i", "<fc=#00ff7f><icon=.icons/ac_01.xbm/></fc>"
+                                            ,"-o", "<icon=.icons/bat_full_01.xbm/>"
+                                            ] 100
+                    , Run Volume "default" "Master" [ "-t", "<fc=#aaaaaa><icon=.icons/spkr_01.xbm/></fc><volume>% <status>"
+                                                    ] 10
                     ]
        , sepChar = "%"
        , alignSep = "}{"
