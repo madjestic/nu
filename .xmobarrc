@@ -5,7 +5,7 @@ Config { font = "xft:DejaVu Sans Mono:size=8:antialias=true"
        , fgColor = "grey"
        , position = Top
        , lowerOnStart = True
-       , commands = [ Run Network "wlp4s0"  ["-t","<fc=#aaaaaa><icon=.icons/net_up_03.xbm/></fc><rx><fc=#aaaaaa><icon=.icons/net_down_03.xbm/></fc><tx>"
+       , commands = [ Run Network "wlp4s0"  ["-t","<fc=#aaaaaa><icon=.icons/net_down_03.xbm/></fc><rx><fc=#aaaaaa><icon=.icons/net_up_03.xbm/></fc><tx>"
                                             ,"-L","500"
                                             ,"-H","40000"
                                             ,"-l","SeaGreen"
