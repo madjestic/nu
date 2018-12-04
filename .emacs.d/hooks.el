@@ -17,8 +17,8 @@
 
 (setq openwith-associations '(("\\.hipnc\\'" "houdini_emacs" (file))
                               ("\\.hip\\'"   "houdini_emacs" (file))
-                              ("\\.pic\\'"   "mplay"         (file))
-                              ("\\.picnc\\'" "mplay"         (file))
+                              ("\\.pic\\'"   "mplay_emacs"   (file))
+                              ("\\.picnc\\'" "mplay_emacs"   (file))
                               ("\\.3b\\'"    "3D-coat"       (file))
                               ("\\.mkv\\'"   "mpv"           (file))
                               ("\\.mp4\\'"   "mpv"           (file))
