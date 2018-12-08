@@ -62,8 +62,10 @@
             ;; (autoload 'ghc-init "ghc" nil t)
             ;; (autoload 'ghc-debug "ghc" nil t)
             ;; (ghc-init)
+            (linum-mode t)
 						(load-haskell)
 						;; (load-helm)
+            ;; (auto-complete-mode nil)
             )
           )
             

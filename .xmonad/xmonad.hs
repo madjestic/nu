@@ -43,9 +43,8 @@ main = do
                  , borderWidth          = 2
                  }
              `additionalKeys`
-                 [ ((mod4Mask .|. shiftMask, xK_k),     windows W.swapDown ) -- %! Swap the focused window with the next window
-                 , ((mod4Mask .|. shiftMask, xK_j),     windows W.swapUp   )
-                 , ((mod4Mask, xK_Tab),                 windows focusUp   >> windows shiftMaster )
+                 [ ((mod4Mask, xK_Tab),                              windows focusUp  )
+                 , ((mod4Mask .|. shiftMask, xK_Tab),                windows focusDown)
                  , ((mod4Mask .|. mod1Mask              , xK_k),     withFocused $ snapGrow   U Nothing)
                  , ((mod4Mask .|. mod1Mask .|. shiftMask, xK_j),     withFocused $ snapShrink U Nothing)
                  , ((mod4Mask .|. mod1Mask              , xK_j),     withFocused $ snapGrow   D Nothing)
