@@ -55,6 +55,16 @@
                 ;;        (org-open-file link 1))
                 (interactive)) ))))
 
+(defun load-rtags ()
+  "load RTags options"
+  (interactive)
+  (load-user-file "rtags.el"))
+
+(defun load-irony ()
+  "load Irony options"
+  (interactive)
+  (load-user-file "irony.el"))
+
 (defun load-feed ()
   "load RSS options"
   (load-rss))
@@ -234,8 +244,8 @@
 (global-set-key (kbd "C-M-y")      'secondary-dwim)
 (global-set-key (kbd "C-x p")      'winstack-push)
 (global-set-key (kbd "C-x M-p")    'winstack-pop)
-(global-set-key (kbd "M-j")       'tabbar-backward)
-(global-set-key (kbd "M-k")       'tabbar-forward)
+(global-set-key (kbd "M-j")        'tabbar-backward)
+(global-set-key (kbd "M-k")        'tabbar-forward)
 ;;; scrollers   
 ;; (global-set-key "\M-n" "\C-u1\C-v\C-n")
 ;; (global-set-key "\M-p" "\C-u1\M-v\C-p")

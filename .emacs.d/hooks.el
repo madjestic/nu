@@ -30,6 +30,7 @@
 
 (add-hook 'python-mode-hook
           (lambda()
+            (linum-mode t)
 						(load-python)))
 
 (add-hook 'cedille-mode-hook
@@ -48,8 +49,11 @@
           (lambda()						
 						(load-scheme)))
 
+(add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
+
 (add-hook 'c++-mode-hook
-          (lambda()						
+          (lambda()
+            (irony-mode)
 						(load-cpp)))
 
 (add-hook 'gnus-group-mode-hook
