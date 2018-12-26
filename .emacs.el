@@ -3,7 +3,6 @@
 (package-initialize)
 (menu-bar-mode -1)
 (font-lock-mode -1)
-(paredit-mode t)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -89,7 +88,7 @@
      ("org" . "http://orgmode.org/elpa/"))))
  '(package-selected-packages
    (quote
-    (req-package company-rtags reverse-theme smartparens magit magit-org-todos iedit intero ac-helm helm-company decide darcsum helm-swoop helm-nixos-options nix-update nixos-options ipython-shell-send dired-sort-menu+ calfw-cal calfw-gcal calfw-org dired+ darkroom yafolding weechat vline tabbar sr-speedbar smooth-scrolling smooth-scroll smart-mode-line-powerline-theme shm session second-sel scheme-here revive rainbow-delimiters perl6-mode paredit org-pdfview openwith nyan-mode nurumacs nlinum move-text minimap menu-bar+ macrostep lui lcs julia-shell json-mode jedi jabber importmagic image+ howm hlint-refactor hide-comnt helm-spotify helm-gtags helm-ghc helm-circe helm-c-yasnippet haskell-snippets guile-scheme gtags glsl-mode ghci-completion function-args flymake-hlint flymake-haskell-multi flycheck-perl6 flycheck-irony flycheck-ghcmod flycheck-cython fill-column-indicator elpy elfeed ecb djvu direx dired-sort-menu desktop desktop+ ctags company-quickhelp company-jedi company-irony company-ghci company-ghc company-auctex cmake-ide calfw buffer-move bash-completion auto-complete-octave auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-complete-auctex ac-octave ac-math ac-haskell-process 0blayout)))
+    (helm-projectile org-projectile projectile req-package company-rtags reverse-theme smartparens magit magit-org-todos iedit intero ac-helm helm-company decide darcsum helm-swoop helm-nixos-options nix-update nixos-options ipython-shell-send dired-sort-menu+ calfw-cal calfw-gcal calfw-org dired+ darkroom yafolding weechat vline tabbar sr-speedbar smooth-scrolling smooth-scroll smart-mode-line-powerline-theme shm session second-sel scheme-here revive rainbow-delimiters perl6-mode paredit org-pdfview openwith nyan-mode nurumacs nlinum move-text minimap menu-bar+ macrostep lui lcs julia-shell json-mode jedi jabber importmagic image+ howm hlint-refactor hide-comnt helm-spotify helm-gtags helm-ghc helm-circe helm-c-yasnippet haskell-snippets guile-scheme gtags glsl-mode ghci-completion function-args flymake-hlint flymake-haskell-multi flycheck-perl6 flycheck-irony flycheck-ghcmod flycheck-cython fill-column-indicator elpy elfeed ecb djvu direx dired-sort-menu desktop desktop+ ctags company-quickhelp company-jedi company-irony company-ghci company-ghc company-auctex cmake-ide calfw buffer-move bash-completion auto-complete-octave auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-complete-auctex ac-octave ac-math ac-haskell-process 0blayout)))
  '(pdf-view-midnight-colors (quote ("grey70" . "#2d3743")))
  '(reb-re-syntax (quote read))
  '(recenter-positions (quote (top middle bottom)))
@@ -241,10 +240,10 @@ Emacs buffer are those starting with “*”."
 ;; (setq dired-listing-switches "-laGht1v --group-directories-first")
 (require 'dired-sort-menu)
 
-;; (require 'auto-complete)
-;; (add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
-;; (require 'auto-complete-config)
-;; (ac-config-default)
+(require 'auto-complete)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/ac-dict")
+(require 'auto-complete-config)
+(ac-config-default)
 
 (swap-buffer-mode)
 (show-paren-mode t)
@@ -354,6 +353,8 @@ Emacs buffer are those starting with “*”."
 ;; (el-get 'sync)
   )
 
+;; (paredit-mode t)
+;; (rainbow-delimiters-mode t)
 
 ;;;;;;;;;;;;
 ;; BACKUP ;;
@@ -368,8 +369,8 @@ Emacs buffer are those starting with “*”."
  kept-old-versions 2
  version-control t)       ; use versioned backups
 
-(defun my-eshell-mode-faces ()
-    (face-remap-add-relative 'default '((:foreground "#BD9700")))
-    (face-remap-add-relative 'eshell-prompt '((:foreground "#BD9700" :weight bold))))
+;; (defun my-eshell-mode-faces ()
+;;     (face-remap-add-relative 'default '((:foreground "#BD9700")))
+;;     (face-remap-add-relative 'eshell-prompt '((:foreground "#BD9700" :weight bold))))
 
-(add-hook 'eshell-mode-hook 'my-eshell-mode-faces-work)
+;; (add-hook 'eshell-mode-hook 'my-eshell-mode-faces-work)

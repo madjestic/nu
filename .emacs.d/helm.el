@@ -2,23 +2,23 @@
 ;; helm ;;
 ;;;;;;;;;;
 
-;; (use-package helm
-;;   :ensure t
-;;   :diminish
-;;   :config
-;;   (use-package helm-config)
-;;   (helm-mode 1)
-;;   (helm-autoresize-mode 1)
-;;   (setq helm-split-window-in-side-p t)
-;;   :bind
-;;   (("M-x" . helm-M-x)
-;;    ("C-x C-f" . helm-find-files)
-;;    ("C-x C-b" . helm-buffers-list)
-;;    ("M-s o" . helm-occur)
-;;    ("M-s i" . helm-imenu)
-;;    ("M-s I" . helm-imenu-in-all-buffers)))
+(use-package helm
+  :ensure t
+  :diminish
+  :config
+  (use-package helm-config)
+  (helm-mode 1)
+  (helm-autoresize-mode 1)
+  (setq helm-split-window-in-side-p t)
+  :bind
+  (("M-x" . helm-M-x)
+   ("C-x C-f" . helm-find-files)
+   ("C-x C-b" . helm-buffers-list)
+   ("M-s o" . helm-occur)
+   ("M-s i" . helm-imenu)
+   ("M-s I" . helm-imenu-in-all-buffers)))
 
-;; (use-package helm-config)
+(use-package helm-config)
 
 (setq
  helm-gtags-ignore-case                t
@@ -40,7 +40,8 @@
  helm-gtags-prefix-key                 "\C-c g"
  helm-swoop-pattern                    t
  helm-split-window-in-side-p           t
-;; helm-split-window-default-side        other
+;; helm-split-window-default-side        t
+ helm-split-window-default-side        'below
  )
 
 ;; Enable helm-gtags-mode
@@ -67,10 +68,8 @@
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
 
 (require 'ac-helm)
-(setq ac-complete-mode-map t)
 (global-set-key (kbd "C-:")     'ac-complete-with-helm)
 
-
 (helm-mode t)
-;; (helm-autoresize-mode t)
-;;(helm-swoop)
+(helm-autoresize-mode t)
+(helm-swoop)

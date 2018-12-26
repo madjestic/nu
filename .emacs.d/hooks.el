@@ -54,6 +54,7 @@
 (add-hook 'c++-mode-hook
           (lambda()
             (irony-mode)
+            (load-rtags)
 						(load-cpp)))
 
 (add-hook 'gnus-group-mode-hook

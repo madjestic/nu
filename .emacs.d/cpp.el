@@ -1,33 +1,40 @@
-(req-package company
-  :config
-  (progn
-    (add-hook 'after-init-hook 'global-company-mode)
-    (global-set-key (kbd "M-/") 'company-complete-common-or-cycle)
-    (setq company-idle-delay 0)))
 
 (req-package flycheck
   :config
   (progn
     (global-flycheck-mode)))
 
+(req-package company
+  :config
+  (progn
+    (add-hook 'after-init-hook 'global-company-mode)
+    (global-set-key (kbd "M-/") 'company-complete-common-or-cycle)
+    (setq company-idle-delay 0.1)))
 
 (setq company-dabbrev-downcase 0.1)
 (setq company-idle-delay 0.1)
 
-(defun tab-indent-or-complete ()
-  (interactive)
-  (if (minibufferp)
-      (minibuffer-complete)
-    (if (or (not yas-minor-mode)
-            (null (do-yas-expand)))
-        (if (check-expansion)
-            (company-complete-common)
-          (indent-for-tab-command)))))
+(define-key c++-mode-map [backtab]   'company-yasnippet)
+(define-key c++-mode-map (kbd "C-:") 'ac-complete-with-helm)
 
-(define-key c++-mode-map [backtab] 'tab-indent-or-complete)
+(req-package projectile
+  :config
+  (progn
+    (projectile-global-mode)
+    ))
 
 (company-mode t)
-
 (smartparens-mode t)
-
+(paredit-mode t)
+(rainbow-delimiters-mode t)
 (linum-mode t)
+
+(defun my-at-expression-paredit-space-for-delimiter-predicate (endp delimiter)
+  (if (and (member major-mode '(c++-mode))
+           (not endp))
+      (not (or (and (memq delimiter '(?\[ ?\{ ?\()))))
+    t))
+
+(add-hook 'paredit-space-for-delimiter-predicates
+          #'my-at-expression-paredit-space-for-delimiter-predicate)
+

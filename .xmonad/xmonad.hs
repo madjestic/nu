@@ -78,7 +78,7 @@ main = do
                  , ("M-C-k"                  , spawn "krusader")
                  , ("M-C-d"                  , spawn "dolphin")
                  , ("M-C-s"                  , spawn "spotify")
-                 , ("<Print>"                , spawn "spectacle")
+                 , ("<Print>"                , spawn "spectacle") -- should be "screen", but that does not seem to work
                  , ("M-C-<Esc>"              , spawn "htop")
                  , ("M-C-l"                  , spawn "slock")
                  , ("M-C-h"                  , spawn "houdini")
