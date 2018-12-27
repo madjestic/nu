@@ -41,15 +41,15 @@
  helm-swoop-pattern                    t
  helm-split-window-in-side-p           t
 ;; helm-split-window-default-side        t
- helm-split-window-default-side        'below
+ helm-split-window-default-side        't
  )
 
 ;; Enable helm-gtags-mode
 (require 'helm-gtags)
 (add-hook 'dired-mode-hook   'helm-gtags-mode)
 (add-hook 'eshell-mode-hook  'helm-gtags-mode)
-(add-hook 'c-mode-hook       'helm-gtags-mode)
-(add-hook 'c++-mode-hook     'helm-gtags-mode)
+;;(add-hook 'c-mode-hook       'helm-gtags-mode)
+;;(add-hook 'c++-mode-hook     'helm-gtags-mode)
 (add-hook 'asm-mode-hook     'helm-gtags-mode)
 (add-hook 'haskell-mode-hook 'helm-gtags-mode)
 

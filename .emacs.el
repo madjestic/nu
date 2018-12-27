@@ -14,7 +14,7 @@
  '(ac-quick-help-prefer-pos-tip t)
  '(ac-show-menu-immediately-on-auto-complete t)
  '(browse-url-browser-function (quote browse-url-generic))
- '(browse-url-generic-program "chromium-browser" t)
+ '(browse-url-generic-program "chromium-browser")
  '(circe-default-directory "~/.circe")
  '(circe-format-self-say "me > {body}")
  '(circe-network-options
@@ -88,7 +88,7 @@
      ("org" . "http://orgmode.org/elpa/"))))
  '(package-selected-packages
    (quote
-    (helm-projectile org-projectile projectile req-package company-rtags reverse-theme smartparens magit magit-org-todos iedit intero ac-helm helm-company decide darcsum helm-swoop helm-nixos-options nix-update nixos-options ipython-shell-send dired-sort-menu+ calfw-cal calfw-gcal calfw-org dired+ darkroom yafolding weechat vline tabbar sr-speedbar smooth-scrolling smooth-scroll smart-mode-line-powerline-theme shm session second-sel scheme-here revive rainbow-delimiters perl6-mode paredit org-pdfview openwith nyan-mode nurumacs nlinum move-text minimap menu-bar+ macrostep lui lcs julia-shell json-mode jedi jabber importmagic image+ howm hlint-refactor hide-comnt helm-spotify helm-gtags helm-ghc helm-circe helm-c-yasnippet haskell-snippets guile-scheme gtags glsl-mode ghci-completion function-args flymake-hlint flymake-haskell-multi flycheck-perl6 flycheck-irony flycheck-ghcmod flycheck-cython fill-column-indicator elpy elfeed ecb djvu direx dired-sort-menu desktop desktop+ ctags company-quickhelp company-jedi company-irony company-ghci company-ghc company-auctex cmake-ide calfw buffer-move bash-completion auto-complete-octave auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-complete-auctex ac-octave ac-math ac-haskell-process 0blayout)))
+    (flycheck-rtags helm-projectile org-projectile projectile req-package company-rtags reverse-theme smartparens magit magit-org-todos iedit intero ac-helm helm-company decide darcsum helm-swoop helm-nixos-options nix-update nixos-options ipython-shell-send dired-sort-menu+ calfw-cal calfw-gcal calfw-org dired+ darkroom yafolding weechat vline tabbar sr-speedbar smooth-scrolling smooth-scroll smart-mode-line-powerline-theme shm session second-sel scheme-here revive rainbow-delimiters perl6-mode paredit org-pdfview openwith nyan-mode nurumacs nlinum move-text minimap menu-bar+ macrostep lui lcs julia-shell json-mode jedi jabber importmagic image+ howm hlint-refactor hide-comnt helm-spotify helm-gtags helm-ghc helm-circe helm-c-yasnippet haskell-snippets guile-scheme gtags glsl-mode ghci-completion function-args flymake-hlint flymake-haskell-multi flycheck-perl6 flycheck-irony flycheck-ghcmod flycheck-cython fill-column-indicator elpy elfeed ecb djvu direx dired-sort-menu desktop desktop+ ctags company-quickhelp company-jedi company-irony company-ghci company-ghc company-auctex cmake-ide calfw buffer-move bash-completion auto-complete-octave auto-complete-clang auto-complete-chunk auto-complete-c-headers auto-complete-auctex ac-octave ac-math ac-haskell-process 0blayout)))
  '(pdf-view-midnight-colors (quote ("grey70" . "#2d3743")))
  '(reb-re-syntax (quote read))
  '(recenter-positions (quote (top middle bottom)))
@@ -248,7 +248,6 @@ Emacs buffer are those starting with “*”."
 (swap-buffer-mode)
 (show-paren-mode t)
 (set-default 'truncate-lines t)
-(powerline-default-theme)
 
 ;;;;;;;;;;;;;;
 ;; Org-mode ;;

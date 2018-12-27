@@ -1,4 +1,3 @@
-
 (req-package flycheck
   :config
   (progn
@@ -17,17 +16,28 @@
 (define-key c++-mode-map [backtab]   'company-yasnippet)
 (define-key c++-mode-map (kbd "C-:") 'ac-complete-with-helm)
 
+
+
 (req-package projectile
   :config
   (progn
     (projectile-global-mode)
     ))
 
-(company-mode t)
-(smartparens-mode t)
-(paredit-mode t)
-(rainbow-delimiters-mode t)
-(linum-mode t)
+;;
+;; RTags
+;;
+(require 'flycheck-rtags)
+(rtags-start-process-unless-running)
+
+(define-key c++-mode-map (kbd "M-.")     'rtags-find-symbol-at-point)
+(define-key c++-mode-map (kbd "M-,")     'rtags-find-references-at-point)
+(define-key c++-mode-map (kbd "M-?")     'rtags-display-summary)
+(define-key c++-mode-map (kbd "C-c C-c") 'rtags-compile-file)
+
+;;
+;; Fix space insertion for paredit-mode
+;;
 
 (defun my-at-expression-paredit-space-for-delimiter-predicate (endp delimiter)
   (if (and (member major-mode '(c++-mode))
@@ -38,3 +48,13 @@
 (add-hook 'paredit-space-for-delimiter-predicates
           #'my-at-expression-paredit-space-for-delimiter-predicate)
 
+;;
+;; Mode Settings
+;;
+
+;; (flycheck-mode t)
+(company-mode t)
+(smartparens-mode t)
+(paredit-mode t)
+(rainbow-delimiters-mode t)
+(linum-mode t)
