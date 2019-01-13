@@ -54,7 +54,7 @@
 
 ;; (flycheck-mode t)
 (company-mode t)
-(smartparens-mode t)
 (paredit-mode t)
 (rainbow-delimiters-mode t)
 (linum-mode t)
+(smartparens-mode t)
