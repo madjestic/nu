@@ -2,5 +2,12 @@
 title: Contact
 ---
 
-I live in a small hut in the mountains of Kumano Kodō on Kii Hantō and would not
-like to be contacted.
+madjestic13@gmail.com
+
+twitter.com @madjestic13
+
+vimeo.com/madjestic
+
+www.linkedin.com/in/vladimir-lopatin/
+
+plus.google.com/+LopatinVladimir

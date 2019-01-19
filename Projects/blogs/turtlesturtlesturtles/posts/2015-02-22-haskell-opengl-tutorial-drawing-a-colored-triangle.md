@@ -2,7 +2,7 @@
 title: Haskell OpenGL Tutorial':'colored triangle.
 ---
 
-## Haskell OpenGL Tutorial: colored triangle. 
+#### Haskell OpenGL Tutorial: colored triangle. 
 \
 \
 Credits:
@@ -28,3 +28,4 @@ next: [Haskell OpenGL Tutorial: Drawing textured triangles.](../posts/2016-02-28
 \
 previous: [Haskell OpenGL Tutorial: Resizing main window, key-events.](../posts/2013-12-30-post-post-modern-opengl-in-haskell-3.html)
 \
+

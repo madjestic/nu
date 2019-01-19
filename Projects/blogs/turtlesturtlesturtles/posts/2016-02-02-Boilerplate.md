@@ -2,7 +2,7 @@
 title: A Haskell OpenGL Boilerplate
 ---
 
-### A Haskell OpenGL Boilerplate
+#### A Haskell OpenGL Boilerplate
 
 An attempt to create a concise modern OpenGL Boilerplate.
 

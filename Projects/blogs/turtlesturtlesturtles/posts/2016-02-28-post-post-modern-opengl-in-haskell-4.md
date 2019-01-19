@@ -2,7 +2,7 @@
 title: Haskell OpenGL Tutorial':'drawing textured triangles.
 ---
 
-## Haskell OpenGL Tutorial: textured triangles. 
+#### Haskell OpenGL Tutorial: textured triangles. 
 \
 \
 

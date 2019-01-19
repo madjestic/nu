@@ -3,7 +3,7 @@ title: VEX':'Better practices
 ---
 
 
-## VEX: Better practices
+#### VEX: Better practices
 \
 
 ``` c
@@ -38,3 +38,4 @@ for(int i = len(sorted_index)-1; i >= 0; i--)
 return index;
 ```
 The latter is go, the former - no go.  (The former is idiomatic to VOPs)
+

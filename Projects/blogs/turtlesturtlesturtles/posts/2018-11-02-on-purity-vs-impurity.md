@@ -2,7 +2,7 @@
 title: On Purity vs. Impurity in haskell.
 ---
 
-## On Purity vs Impurity in Haskell
+#### On Purity vs Impurity in Haskell
 \
 
 *"`IO ()` type signature is like a\ "Danger: Minefield!" sign - it does not mean that everywhere you step there's going to be a mine, but there can be a mine somewhere".*
@@ -83,21 +83,3 @@ It still gives us a language with which to discuss equations between IO actions,
 *The communication ends here.*
 
 
-<!-- <style> -->
-<!-- img {  -->
-<!--     width: 10%;  -->
-<!-- } -->
-<!-- </style> -->
-
-<img src="../images/null.png" 
-style="width:10px;height:10px;">
-
-<!-- ![](../images/null.png) -->
-\
-\
-
-<!-- [ref name](https://ref_link_addres) -->
-<!-- \ -->
-<!-- My Text -->
-<!-- \ -->
-<!-- previous: [Previous Post](../posts/previous_post_name.html) -->

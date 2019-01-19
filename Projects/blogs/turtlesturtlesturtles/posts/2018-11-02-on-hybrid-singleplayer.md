@@ -2,11 +2,11 @@
 title: A new revolutionary hybrid gameplay idea.
 ---
 
-## An idea about a hybrid single/multiplayer gameplay system.
+#### An idea about a hybrid single/multiplayer gameplay system.
 \
 \
 
-### гибридный мульти / сингл плейер.
+**гибридный мульти / сингл плейер.**
 
 Короче, космосим: у каждого игрока - свое дерево событий в пространстве-времени (4Д дерево, или 3Д деревo + рост). Такие деревйя событий (фактически версий реалжности) можно шарить по желанию. 
 

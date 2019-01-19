@@ -2,7 +2,7 @@
 title: Keystaion Mini 32 setup with JACK and qsynth check-list
 ---
 
-## Some notes primarily to myself and others stuck with JACK, keystation mini 32 midi keyborad under Linux
+#### Some notes primarily to myself and others stuck with JACK, keystation mini 32 midi keyborad under Linux
 \
 \
 
