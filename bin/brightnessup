@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# xbacklight -time 0 -inc 1
+# sudo chown madjestic /sys/class/backlight/intel_backlight/brightness
+/home/madjestic/bin/cbacklight --inc 1

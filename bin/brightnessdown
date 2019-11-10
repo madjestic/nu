@@ -1,0 +1,4 @@
+#!/bin/sh
+
+# xbacklight -time 0 -dec 1
+/home/madjestic/bin/cbacklight --dec 1
