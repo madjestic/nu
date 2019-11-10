@@ -1,5 +1,6 @@
 import XMonad
 import XMonad.Hooks.DynamicLog
+import XMonad.Hooks.EwmhDesktops         hiding (ewmh)
 import XMonad.Hooks.ManageDocks
 import XMonad.Hooks.ManageHelpers
 import XMonad.Layout.Spacing
@@ -26,10 +27,18 @@ myLayout =
   ||| Full
   where       
         bsp    = renamed [Replace "BSP"] emptyBSP
+
+ewmh :: XConfig a -> XConfig a
+ewmh c = c { startupHook     = startupHook c     <+> ewmhDesktopsStartup
+           , logHook         = logHook c         <+> ewmhDesktopsLogHook
+             -- But not ewmhDesktopsEventHook, because it's awful!
+           }        
        
 main = do
      xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc"
-     xmonad $ docks $ def
+     xmonad
+       $ docks
+       $ ewmh def
                  { manageHook = manageDocks <+> (isFullscreen --> doFullFloat) <+> manageHook def
                  , layoutHook = myLayout
                  , logHook    = dynamicLogWithPP xmobarPP
@@ -43,8 +52,8 @@ main = do
                  , borderWidth          = 2
                  }
              `additionalKeys`
-                 [ ((mod4Mask, xK_Tab),                              windows focusUp  )
-                 , ((mod4Mask .|. shiftMask, xK_Tab),                windows focusDown)
+                 [ ((mod4Mask                         , xK_Tab),     windows focusUp   >> windows shiftMaster)
+                 , ((mod4Mask .|. shiftMask           , xK_Tab),     windows focusDown )
                  , ((mod4Mask .|. mod1Mask              , xK_k),     withFocused $ snapGrow   U Nothing)
                  , ((mod4Mask .|. mod1Mask .|. shiftMask, xK_j),     withFocused $ snapShrink U Nothing)
                  , ((mod4Mask .|. mod1Mask              , xK_j),     withFocused $ snapGrow   D Nothing)
@@ -71,7 +80,8 @@ main = do
                  , ("M-S-,"                  , spawn "playerctl previous")
                  , ("M-S-."                  , spawn "playerctl next")
                  , ("M-S-/"                  , spawn "playerctl play-pause")
-                 , ("M-C-c"                  , spawn "chromium")
+                 --, ("M-C-c"                  , spawn "chromium")
+                 , ("M-C-c"                  , spawn "google-chrome-stable")
                  , ("M-C-f"                  , spawn "firefox")
                  , ("M-S-C-e"                , spawn "emacs")
                  , ("M-C-e"                  , spawn "emacsclient -c")
@@ -83,6 +93,7 @@ main = do
                  , ("M-C-l"                  , spawn "slock")
                  , ("M-C-h"                  , spawn "houdini")
                  , ("M-i"                    , spawn "xcalib -invert -alter")
+                 , ("M-<Print>"              , spawn "screen")
                  , ("M-s"           , sendMessage $ Swap)
                  , ("M-M1-s"        , sendMessage $ Rotate)
                  , ("M-r"           , sendMessage $ RotateL)
